@@ -1,0 +1,62 @@
+[
+ {
+  "poolId": 1,
+  "unitId": "fridge",
+  "weight": 100
+ },
+ {
+  "poolId": 1,
+  "unitId": "washer",
+  "weight": 100
+ },
+ {
+  "poolId": 1,
+  "unitId": "boiler",
+  "weight": 100
+ },
+ {
+  "poolId": 1,
+  "unitId": "ac",
+  "weight": 340
+ },
+ {
+  "poolId": 1,
+  "unitId": "micro",
+  "weight": 340
+ },
+ {
+  "poolId": 1,
+  "unitId": "pc",
+  "weight": 340
+ },
+ {
+  "poolId": 1,
+  "unitId": "iron",
+  "weight": 340
+ },
+ {
+  "poolId": 1,
+  "unitId": "stove",
+  "weight": 340
+ },
+ {
+  "poolId": 1,
+  "unitId": "vac",
+  "weight": 2000
+ },
+ {
+  "poolId": 1,
+  "unitId": "robot",
+  "weight": 2000
+ },
+ {
+  "poolId": 1,
+  "unitId": "fan",
+  "weight": 2000
+ },
+ {
+  "poolId": 1,
+  "unitId": "gen",
+  "weight": 2000
+ }
+]

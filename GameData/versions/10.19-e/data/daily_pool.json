@@ -1,0 +1,17 @@
+[
+ {
+  "box": 1,
+  "pts": 30,
+  "crystal": 40
+ },
+ {
+  "box": 2,
+  "pts": 60,
+  "crystal": 50
+ },
+ {
+  "box": 3,
+  "pts": 100,
+  "crystal": 60
+ }
+]

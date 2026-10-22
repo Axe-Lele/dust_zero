@@ -1,0 +1,90 @@
+[
+ {
+  "id": "heat",
+  "kind": "a",
+  "nameKey": "tower.rule.heat.name",
+  "descKey": "tower.rule.heat.desc",
+  "p1": 0.4,
+  "p2": 0.15
+ },
+ {
+  "id": "blackout",
+  "kind": "a",
+  "nameKey": "tower.rule.blackout.name",
+  "descKey": "tower.rule.blackout.desc",
+  "p1": 10,
+  "p2": 5
+ },
+ {
+  "id": "mirror",
+  "kind": "a",
+  "nameKey": "tower.rule.mirror.name",
+  "descKey": "tower.rule.mirror.desc",
+  "p1": 3,
+  "p2": 0.6
+ },
+ {
+  "id": "water",
+  "kind": "a",
+  "nameKey": "tower.rule.water.name",
+  "descKey": "tower.rule.water.desc",
+  "p1": 0.5,
+  "p2": 0.25
+ },
+ {
+  "id": "guard",
+  "kind": "b",
+  "nameKey": "tower.rule.guard.name",
+  "descKey": "tower.rule.guard.desc",
+  "p1": 30,
+  "p2": 8
+ },
+ {
+  "id": "golden",
+  "kind": "b",
+  "nameKey": "tower.rule.golden.name",
+  "descKey": "tower.rule.golden.desc",
+  "p1": 15,
+  "p2": 1.2
+ },
+ {
+  "id": "breed",
+  "kind": "b",
+  "nameKey": "tower.rule.breed.name",
+  "descKey": "tower.rule.breed.desc",
+  "p1": 9,
+  "p2": 0
+ },
+ {
+  "id": "guest",
+  "kind": "c",
+  "nameKey": "tower.rule.guest.name",
+  "descKey": "tower.rule.guest.desc",
+  "p1": 0,
+  "p2": 0
+ },
+ {
+  "id": "narrow",
+  "kind": "c",
+  "nameKey": "tower.rule.narrow.name",
+  "descKey": "tower.rule.narrow.desc",
+  "p1": 2,
+  "p2": 4
+ },
+ {
+  "id": "solo",
+  "kind": "c",
+  "nameKey": "tower.rule.solo.name",
+  "descKey": "tower.rule.solo.desc",
+  "p1": 3,
+  "p2": 2
+ },
+ {
+  "id": "boss",
+  "kind": "b",
+  "nameKey": "tower.rule.boss.name",
+  "descKey": "tower.rule.boss.desc",
+  "p1": 0,
+  "p2": 0
+ }
+]

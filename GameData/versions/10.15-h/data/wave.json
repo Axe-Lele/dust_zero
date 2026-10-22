@@ -1,0 +1,2852 @@
+[
+ {
+  "groupId": 101,
+  "seq": 1,
+  "t": 3,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 101,
+  "seq": 2,
+  "t": 9,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 101,
+  "seq": 3,
+  "t": 15,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 101,
+  "seq": 4,
+  "t": 20,
+  "enemy": "fly",
+  "count": 2,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 101,
+  "seq": 5,
+  "t": 26,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 101,
+  "seq": 6,
+  "t": 27,
+  "enemy": "fly",
+  "count": 2,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 101,
+  "seq": 7,
+  "t": 32,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 102,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 1.2,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 102,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 102,
+  "seq": 3,
+  "t": 14,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 102,
+  "seq": 4,
+  "t": 19,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 102,
+  "seq": 5,
+  "t": 24,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.03
+ },
+ {
+  "groupId": 102,
+  "seq": 6,
+  "t": 25,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 2,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 102,
+  "seq": 7,
+  "t": 30,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 102,
+  "seq": 8,
+  "t": 31,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 102,
+  "seq": 9,
+  "t": 36,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.55
+ },
+ {
+  "groupId": 102,
+  "seq": 10,
+  "t": 37,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.61
+ },
+ {
+  "groupId": 102,
+  "seq": 11,
+  "t": 42,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.94
+ },
+ {
+  "groupId": 102,
+  "seq": 12,
+  "t": 43,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 2.02
+ },
+ {
+  "groupId": 102,
+  "seq": 13,
+  "t": 48,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 2.4
+ },
+ {
+  "groupId": 102,
+  "seq": 14,
+  "t": 49,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 2,
+  "hpMul": 2.48
+ },
+ {
+  "groupId": 102,
+  "seq": 15,
+  "t": 54,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.91
+ },
+ {
+  "groupId": 102,
+  "seq": 16,
+  "t": 55,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 103,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 1.2,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 103,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 103,
+  "seq": 3,
+  "t": 14,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 103,
+  "seq": 4,
+  "t": 19,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 103,
+  "seq": 5,
+  "t": 24,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.03
+ },
+ {
+  "groupId": 103,
+  "seq": 6,
+  "t": 25,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 103,
+  "seq": 7,
+  "t": 30,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 103,
+  "seq": 8,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 103,
+  "seq": 9,
+  "t": 36,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.55
+ },
+ {
+  "groupId": 103,
+  "seq": 10,
+  "t": 37,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 2,
+  "hpMul": 1.61
+ },
+ {
+  "groupId": 103,
+  "seq": 11,
+  "t": 42,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.94
+ },
+ {
+  "groupId": 103,
+  "seq": 12,
+  "t": 43,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 2.02
+ },
+ {
+  "groupId": 103,
+  "seq": 13,
+  "t": 48,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 2.4
+ },
+ {
+  "groupId": 103,
+  "seq": 14,
+  "t": 49,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 3,
+  "hpMul": 2.48
+ },
+ {
+  "groupId": 103,
+  "seq": 15,
+  "t": 54,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.91
+ },
+ {
+  "groupId": 103,
+  "seq": 16,
+  "t": 55,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 104,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.2,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 104,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 104,
+  "seq": 3,
+  "t": 14,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 104,
+  "seq": 4,
+  "t": 19,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 104,
+  "seq": 5,
+  "t": 24,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.03
+ },
+ {
+  "groupId": 104,
+  "seq": 6,
+  "t": 25,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 104,
+  "seq": 7,
+  "t": 30,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 104,
+  "seq": 8,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 104,
+  "seq": 9,
+  "t": 36,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.55
+ },
+ {
+  "groupId": 104,
+  "seq": 10,
+  "t": 37,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.61
+ },
+ {
+  "groupId": 104,
+  "seq": 11,
+  "t": 42,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.94
+ },
+ {
+  "groupId": 104,
+  "seq": 12,
+  "t": 43,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 2.02
+ },
+ {
+  "groupId": 104,
+  "seq": 13,
+  "t": 48,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 2.4
+ },
+ {
+  "groupId": 104,
+  "seq": 14,
+  "t": 49,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 3,
+  "hpMul": 2.48
+ },
+ {
+  "groupId": 104,
+  "seq": 15,
+  "t": 54,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.91
+ },
+ {
+  "groupId": 104,
+  "seq": 16,
+  "t": 55,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 105,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.2,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 3,
+  "t": 14,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 4,
+  "t": 19,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 5,
+  "t": 24,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 6,
+  "t": 25,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 7,
+  "t": 30,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.1
+ },
+ {
+  "groupId": 105,
+  "seq": 8,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.14
+ },
+ {
+  "groupId": 105,
+  "seq": 9,
+  "t": 36,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.33
+ },
+ {
+  "groupId": 105,
+  "seq": 10,
+  "t": 37,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 2,
+  "hpMul": 1.38
+ },
+ {
+  "groupId": 105,
+  "seq": 11,
+  "t": 42,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.63
+ },
+ {
+  "groupId": 105,
+  "seq": 12,
+  "t": 43,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.68
+ },
+ {
+  "groupId": 105,
+  "seq": 13,
+  "t": 48,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.99
+ },
+ {
+  "groupId": 105,
+  "seq": 14,
+  "t": 49,
+  "enemy": "mold",
+  "count": 3,
+  "gap": 2.5,
+  "entrance": 1,
+  "hpMul": 2.05
+ },
+ {
+  "groupId": 105,
+  "seq": 15,
+  "t": 54,
+  "enemy": "dust",
+  "count": 8,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.39
+ },
+ {
+  "groupId": 105,
+  "seq": 16,
+  "t": 55,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 2.46
+ },
+ {
+  "groupId": 105,
+  "seq": 17,
+  "t": 60,
+  "enemy": "boss_dust",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 105,
+  "seq": 18,
+  "t": 62,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 105,
+  "seq": 19,
+  "t": 62,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 201,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 3,
+  "t": 14,
+  "enemy": "grease",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 4,
+  "t": 19,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 5,
+  "t": 20,
+  "enemy": "fly",
+  "count": 2,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 6,
+  "t": 24,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 7,
+  "t": 25,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 201,
+  "seq": 8,
+  "t": 30,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 3,
+  "hpMul": 1.12
+ },
+ {
+  "groupId": 201,
+  "seq": 9,
+  "t": 31,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.15
+ },
+ {
+  "groupId": 201,
+  "seq": 10,
+  "t": 36,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.36
+ },
+ {
+  "groupId": 201,
+  "seq": 11,
+  "t": 37,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.4
+ },
+ {
+  "groupId": 201,
+  "seq": 12,
+  "t": 42,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 2,
+  "hpMul": 1.67
+ },
+ {
+  "groupId": 201,
+  "seq": 13,
+  "t": 43,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.72
+ },
+ {
+  "groupId": 201,
+  "seq": 14,
+  "t": 48,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.04
+ },
+ {
+  "groupId": 201,
+  "seq": 15,
+  "t": 49,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.1
+ },
+ {
+  "groupId": 201,
+  "seq": 16,
+  "t": 54,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 1,
+  "hpMul": 2.45
+ },
+ {
+  "groupId": 201,
+  "seq": 17,
+  "t": 55,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.53
+ },
+ {
+  "groupId": 201,
+  "seq": 18,
+  "t": 60,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.92
+ },
+ {
+  "groupId": 201,
+  "seq": 19,
+  "t": 61,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 202,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 3,
+  "t": 14,
+  "enemy": "grease",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 4,
+  "t": 19,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 5,
+  "t": 20,
+  "enemy": "fly",
+  "count": 2,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 6,
+  "t": 24,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 7,
+  "t": 25,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 202,
+  "seq": 8,
+  "t": 30,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 2,
+  "hpMul": 1.12
+ },
+ {
+  "groupId": 202,
+  "seq": 9,
+  "t": 31,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.15
+ },
+ {
+  "groupId": 202,
+  "seq": 10,
+  "t": 36,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.36
+ },
+ {
+  "groupId": 202,
+  "seq": 11,
+  "t": 37,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.4
+ },
+ {
+  "groupId": 202,
+  "seq": 12,
+  "t": 42,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 1,
+  "hpMul": 1.67
+ },
+ {
+  "groupId": 202,
+  "seq": 13,
+  "t": 43,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.72
+ },
+ {
+  "groupId": 202,
+  "seq": 14,
+  "t": 48,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.04
+ },
+ {
+  "groupId": 202,
+  "seq": 15,
+  "t": 49,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.1
+ },
+ {
+  "groupId": 202,
+  "seq": 16,
+  "t": 54,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 3,
+  "hpMul": 2.45
+ },
+ {
+  "groupId": 202,
+  "seq": 17,
+  "t": 55,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.53
+ },
+ {
+  "groupId": 202,
+  "seq": 18,
+  "t": 60,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.92
+ },
+ {
+  "groupId": 202,
+  "seq": 19,
+  "t": 61,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 203,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 3,
+  "t": 14,
+  "enemy": "grease",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 4,
+  "t": 19,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 5,
+  "t": 20,
+  "enemy": "fly",
+  "count": 2,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 6,
+  "t": 24,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 7,
+  "t": 25,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 203,
+  "seq": 8,
+  "t": 30,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 2,
+  "hpMul": 1.12
+ },
+ {
+  "groupId": 203,
+  "seq": 9,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.15
+ },
+ {
+  "groupId": 203,
+  "seq": 10,
+  "t": 36,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.36
+ },
+ {
+  "groupId": 203,
+  "seq": 11,
+  "t": 37,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.4
+ },
+ {
+  "groupId": 203,
+  "seq": 12,
+  "t": 42,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 3,
+  "hpMul": 1.67
+ },
+ {
+  "groupId": 203,
+  "seq": 13,
+  "t": 43,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.72
+ },
+ {
+  "groupId": 203,
+  "seq": 14,
+  "t": 48,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.04
+ },
+ {
+  "groupId": 203,
+  "seq": 15,
+  "t": 49,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.1
+ },
+ {
+  "groupId": 203,
+  "seq": 16,
+  "t": 54,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 1,
+  "hpMul": 2.45
+ },
+ {
+  "groupId": 203,
+  "seq": 17,
+  "t": 55,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.53
+ },
+ {
+  "groupId": 203,
+  "seq": 18,
+  "t": 60,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.92
+ },
+ {
+  "groupId": 203,
+  "seq": 19,
+  "t": 61,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 204,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 3,
+  "t": 14,
+  "enemy": "grease",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 4,
+  "t": 19,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 5,
+  "t": 20,
+  "enemy": "fly",
+  "count": 2,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 6,
+  "t": 24,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 7,
+  "t": 25,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 204,
+  "seq": 8,
+  "t": 30,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 1,
+  "hpMul": 1.12
+ },
+ {
+  "groupId": 204,
+  "seq": 9,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.15
+ },
+ {
+  "groupId": 204,
+  "seq": 10,
+  "t": 36,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.36
+ },
+ {
+  "groupId": 204,
+  "seq": 11,
+  "t": 37,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.4
+ },
+ {
+  "groupId": 204,
+  "seq": 12,
+  "t": 42,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 2,
+  "hpMul": 1.67
+ },
+ {
+  "groupId": 204,
+  "seq": 13,
+  "t": 43,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.72
+ },
+ {
+  "groupId": 204,
+  "seq": 14,
+  "t": 48,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.04
+ },
+ {
+  "groupId": 204,
+  "seq": 15,
+  "t": 49,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.1
+ },
+ {
+  "groupId": 204,
+  "seq": 16,
+  "t": 54,
+  "enemy": "grease",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 3,
+  "hpMul": 2.45
+ },
+ {
+  "groupId": 204,
+  "seq": 17,
+  "t": 55,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.53
+ },
+ {
+  "groupId": 204,
+  "seq": 18,
+  "t": 60,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.92
+ },
+ {
+  "groupId": 204,
+  "seq": 19,
+  "t": 61,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 205,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 2,
+  "t": 8,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 3,
+  "t": 14,
+  "enemy": "grease",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 4,
+  "t": 19,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 5,
+  "t": 20,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 6,
+  "t": 24,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 7,
+  "t": 25,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 8,
+  "t": 30,
+  "enemy": "grease",
+  "count": 3,
+  "gap": 2.5,
+  "entrance": 3,
+  "hpMul": 1.04
+ },
+ {
+  "groupId": 205,
+  "seq": 9,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.06
+ },
+ {
+  "groupId": 205,
+  "seq": 10,
+  "t": 36,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.2
+ },
+ {
+  "groupId": 205,
+  "seq": 11,
+  "t": 37,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 205,
+  "seq": 12,
+  "t": 42,
+  "enemy": "grease",
+  "count": 3,
+  "gap": 2.2,
+  "entrance": 2,
+  "hpMul": 1.44
+ },
+ {
+  "groupId": 205,
+  "seq": 13,
+  "t": 43,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.48
+ },
+ {
+  "groupId": 205,
+  "seq": 14,
+  "t": 48,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.73
+ },
+ {
+  "groupId": 205,
+  "seq": 15,
+  "t": 49,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.78
+ },
+ {
+  "groupId": 205,
+  "seq": 16,
+  "t": 54,
+  "enemy": "grease",
+  "count": 3,
+  "gap": 2.0,
+  "entrance": 1,
+  "hpMul": 2.06
+ },
+ {
+  "groupId": 205,
+  "seq": 17,
+  "t": 55,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.12
+ },
+ {
+  "groupId": 205,
+  "seq": 18,
+  "t": 60,
+  "enemy": "dust",
+  "count": 8,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.44
+ },
+ {
+  "groupId": 205,
+  "seq": 19,
+  "t": 61,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.51
+ },
+ {
+  "groupId": 205,
+  "seq": 20,
+  "t": 66,
+  "enemy": "boss_grease",
+  "count": 1,
+  "gap": 0,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 205,
+  "seq": 21,
+  "t": 68,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 205,
+  "seq": 22,
+  "t": 68,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 301,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 2,
+  "t": 7,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 3,
+  "t": 8,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 4,
+  "t": 13,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 5,
+  "t": 18,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 6,
+  "t": 19,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 7,
+  "t": 20,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 8,
+  "t": 24,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 9,
+  "t": 25,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 301,
+  "seq": 10,
+  "t": 30,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 2,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 301,
+  "seq": 11,
+  "t": 31,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.08
+ },
+ {
+  "groupId": 301,
+  "seq": 12,
+  "t": 36,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 301,
+  "seq": 13,
+  "t": 37,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 301,
+  "seq": 14,
+  "t": 42,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 1,
+  "hpMul": 1.49
+ },
+ {
+  "groupId": 301,
+  "seq": 15,
+  "t": 43,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.54
+ },
+ {
+  "groupId": 301,
+  "seq": 16,
+  "t": 48,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.81
+ },
+ {
+  "groupId": 301,
+  "seq": 17,
+  "t": 49,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.86
+ },
+ {
+  "groupId": 301,
+  "seq": 18,
+  "t": 54,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 2,
+  "hpMul": 2.16
+ },
+ {
+  "groupId": 301,
+  "seq": 19,
+  "t": 55,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.23
+ },
+ {
+  "groupId": 301,
+  "seq": 20,
+  "t": 60,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.56
+ },
+ {
+  "groupId": 301,
+  "seq": 21,
+  "t": 61,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.63
+ },
+ {
+  "groupId": 301,
+  "seq": 22,
+  "t": 66,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 302,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 2,
+  "t": 7,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 3,
+  "t": 8,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 4,
+  "t": 13,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 5,
+  "t": 18,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 6,
+  "t": 19,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 7,
+  "t": 20,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 8,
+  "t": 24,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 9,
+  "t": 25,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 302,
+  "seq": 10,
+  "t": 30,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 3,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 302,
+  "seq": 11,
+  "t": 31,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.08
+ },
+ {
+  "groupId": 302,
+  "seq": 12,
+  "t": 36,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 302,
+  "seq": 13,
+  "t": 37,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 302,
+  "seq": 14,
+  "t": 42,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 2,
+  "hpMul": 1.49
+ },
+ {
+  "groupId": 302,
+  "seq": 15,
+  "t": 43,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.54
+ },
+ {
+  "groupId": 302,
+  "seq": 16,
+  "t": 48,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.81
+ },
+ {
+  "groupId": 302,
+  "seq": 17,
+  "t": 49,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.86
+ },
+ {
+  "groupId": 302,
+  "seq": 18,
+  "t": 54,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 3,
+  "hpMul": 2.16
+ },
+ {
+  "groupId": 302,
+  "seq": 19,
+  "t": 55,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.23
+ },
+ {
+  "groupId": 302,
+  "seq": 20,
+  "t": 60,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.56
+ },
+ {
+  "groupId": 302,
+  "seq": 21,
+  "t": 61,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.63
+ },
+ {
+  "groupId": 302,
+  "seq": 22,
+  "t": 66,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 1,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 303,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 2,
+  "t": 7,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 3,
+  "t": 8,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 4,
+  "t": 13,
+  "enemy": "dust",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 5,
+  "t": 18,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 6,
+  "t": 19,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 7,
+  "t": 20,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 8,
+  "t": 24,
+  "enemy": "fly",
+  "count": 3,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 9,
+  "t": 25,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 303,
+  "seq": 10,
+  "t": 30,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 1,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 303,
+  "seq": 11,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 2,
+  "hpMul": 1.08
+ },
+ {
+  "groupId": 303,
+  "seq": 12,
+  "t": 36,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 303,
+  "seq": 13,
+  "t": 37,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 303,
+  "seq": 14,
+  "t": 42,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 2,
+  "hpMul": 1.49
+ },
+ {
+  "groupId": 303,
+  "seq": 15,
+  "t": 43,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.54
+ },
+ {
+  "groupId": 303,
+  "seq": 16,
+  "t": 48,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.81
+ },
+ {
+  "groupId": 303,
+  "seq": 17,
+  "t": 49,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.86
+ },
+ {
+  "groupId": 303,
+  "seq": 18,
+  "t": 54,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 1,
+  "hpMul": 2.16
+ },
+ {
+  "groupId": 303,
+  "seq": 19,
+  "t": 55,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.23
+ },
+ {
+  "groupId": 303,
+  "seq": 20,
+  "t": 60,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.56
+ },
+ {
+  "groupId": 303,
+  "seq": 21,
+  "t": 61,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.63
+ },
+ {
+  "groupId": 303,
+  "seq": 22,
+  "t": 66,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 304,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 2,
+  "t": 7,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 3,
+  "t": 8,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 4,
+  "t": 13,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 5,
+  "t": 18,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 6,
+  "t": 19,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 7,
+  "t": 20,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 8,
+  "t": 24,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 9,
+  "t": 25,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 304,
+  "seq": 10,
+  "t": 30,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.5,
+  "entrance": 2,
+  "hpMul": 1.05
+ },
+ {
+  "groupId": 304,
+  "seq": 11,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.08
+ },
+ {
+  "groupId": 304,
+  "seq": 12,
+  "t": 36,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.24
+ },
+ {
+  "groupId": 304,
+  "seq": 13,
+  "t": 37,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.28
+ },
+ {
+  "groupId": 304,
+  "seq": 14,
+  "t": 42,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.2,
+  "entrance": 3,
+  "hpMul": 1.49
+ },
+ {
+  "groupId": 304,
+  "seq": 15,
+  "t": 43,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.54
+ },
+ {
+  "groupId": 304,
+  "seq": 16,
+  "t": 48,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.81
+ },
+ {
+  "groupId": 304,
+  "seq": 17,
+  "t": 49,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.86
+ },
+ {
+  "groupId": 304,
+  "seq": 18,
+  "t": 54,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 2,
+  "hpMul": 2.16
+ },
+ {
+  "groupId": 304,
+  "seq": 19,
+  "t": 55,
+  "enemy": "dust",
+  "count": 6,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.23
+ },
+ {
+  "groupId": 304,
+  "seq": 20,
+  "t": 60,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 2.56
+ },
+ {
+  "groupId": 304,
+  "seq": 21,
+  "t": 61,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.63
+ },
+ {
+  "groupId": 304,
+  "seq": 22,
+  "t": 66,
+  "enemy": "mold",
+  "count": 2,
+  "gap": 2.0,
+  "entrance": 1,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 305,
+  "seq": 1,
+  "t": 2,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 2,
+  "t": 7,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 3,
+  "t": 8,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 4,
+  "t": 13,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 5,
+  "t": 18,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 6,
+  "t": 19,
+  "enemy": "mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 7,
+  "t": 20,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 8,
+  "t": 24,
+  "enemy": "fly",
+  "count": 4,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 9,
+  "t": 25,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 10,
+  "t": 30,
+  "enemy": "mold",
+  "count": 3,
+  "gap": 2.5,
+  "entrance": 2,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 11,
+  "t": 31,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 1,
+  "hpMul": 1.02
+ },
+ {
+  "groupId": 305,
+  "seq": 12,
+  "t": 36,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.12
+ },
+ {
+  "groupId": 305,
+  "seq": 13,
+  "t": 37,
+  "enemy": "dust",
+  "count": 5,
+  "gap": 0.9,
+  "entrance": 3,
+  "hpMul": 1.15
+ },
+ {
+  "groupId": 305,
+  "seq": 14,
+  "t": 42,
+  "enemy": "mold",
+  "count": 3,
+  "gap": 2.2,
+  "entrance": 1,
+  "hpMul": 1.32
+ },
+ {
+  "groupId": 305,
+  "seq": 15,
+  "t": 43,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 1.35
+ },
+ {
+  "groupId": 305,
+  "seq": 16,
+  "t": 48,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.56
+ },
+ {
+  "groupId": 305,
+  "seq": 17,
+  "t": 49,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 1.61
+ },
+ {
+  "groupId": 305,
+  "seq": 18,
+  "t": 54,
+  "enemy": "mold",
+  "count": 3,
+  "gap": 2.0,
+  "entrance": 2,
+  "hpMul": 1.85
+ },
+ {
+  "groupId": 305,
+  "seq": 19,
+  "t": 55,
+  "enemy": "dust",
+  "count": 7,
+  "gap": 0.8,
+  "entrance": 3,
+  "hpMul": 1.9
+ },
+ {
+  "groupId": 305,
+  "seq": 20,
+  "t": 60,
+  "enemy": "fly",
+  "count": 5,
+  "gap": 0.8,
+  "entrance": 1,
+  "hpMul": 2.18
+ },
+ {
+  "groupId": 305,
+  "seq": 21,
+  "t": 61,
+  "enemy": "dust",
+  "count": 8,
+  "gap": 0.8,
+  "entrance": 2,
+  "hpMul": 2.24
+ },
+ {
+  "groupId": 305,
+  "seq": 22,
+  "t": 66,
+  "enemy": "mold",
+  "count": 3,
+  "gap": 2.0,
+  "entrance": 3,
+  "hpMul": 2.54
+ },
+ {
+  "groupId": 305,
+  "seq": 23,
+  "t": 71,
+  "enemy": "boss_mold",
+  "count": 1,
+  "gap": 0,
+  "entrance": 1,
+  "hpMul": 1.0
+ },
+ {
+  "groupId": 305,
+  "seq": 24,
+  "t": 73,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 3,
+  "hpMul": 3.0
+ },
+ {
+  "groupId": 305,
+  "seq": 25,
+  "t": 73,
+  "enemy": "dust",
+  "count": 4,
+  "gap": 1.0,
+  "entrance": 2,
+  "hpMul": 3.0
+ }
+]

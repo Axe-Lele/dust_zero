@@ -1,0 +1,299 @@
+[
+ {
+  "id": "living",
+  "floor": "wood",
+  "nameKey": "map.living.name",
+  "goalKey": "map.living.goal",
+  "descKey": "map.living.desc",
+  "noDeployFromEntrance": 2,
+  "noDeployBeforeGoal": 1,
+  "gimKey": "",
+  "spawnKeys": [
+   "map.living.spawn1",
+   "map.living.spawn2",
+   "map.living.spawn3"
+  ],
+  "paths": [
+   [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     3,
+     9
+    ]
+   ],
+   [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     9
+    ]
+   ],
+   [
+    [
+     6,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     3,
+     9
+    ]
+   ]
+  ],
+  "tiles": [
+   "XXHPHXX",
+   "HHHPHXX",
+   "PPHPHXX",
+   "HPPPHHH",
+   "HPPHHPP",
+   "HPPHHPH",
+   "HPPPHPH",
+   "HPHPHPH",
+   "HPPPPPH",
+   "XHHEHHX"
+  ]
+ },
+ {
+  "id": "kitchen",
+  "floor": "kitchen",
+  "nameKey": "map.kitchen.name",
+  "goalKey": "map.kitchen.goal",
+  "gimKey": "map.kitchen.gim",
+  "descKey": "map.kitchen.desc",
+  "noDeployFromEntrance": 2,
+  "noDeployBeforeGoal": 1,
+  "spawnKeys": [
+   "map.kitchen.spawn1",
+   "map.kitchen.spawn2",
+   "map.kitchen.spawn3"
+  ],
+  "paths": [
+   [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     9
+    ]
+   ],
+   [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     2,
+     9
+    ]
+   ],
+   [
+    [
+     6,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     2,
+     9
+    ]
+   ]
+  ],
+  "tiles": [
+   "XXHPHXX",
+   "XHPPHXX",
+   "XHPHXHH",
+   "XHPHHPP",
+   "HHFHHPH",
+   "PPPHHPH",
+   "HPPPFPH",
+   "HPPPHHX",
+   "HPPPHXX",
+   "XHEHXXX"
+  ]
+ },
+ {
+  "id": "bath",
+  "floor": "bath",
+  "nameKey": "map.bath.name",
+  "goalKey": "map.bath.goal",
+  "gimKey": "map.bath.gim",
+  "descKey": "map.bath.desc",
+  "noDeployFromEntrance": 2,
+  "noDeployBeforeGoal": 1,
+  "spawnKeys": [
+   "map.bath.spawn1",
+   "map.bath.spawn2",
+   "map.bath.spawn3"
+  ],
+  "paths": [
+   [
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     9
+    ]
+   ],
+   [
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     9
+    ]
+   ],
+   [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     9
+    ]
+   ]
+  ],
+  "tiles": [
+   "XHPHHPH",
+   "XHPHHPH",
+   "XHPPHPH",
+   "HPHPHPH",
+   "HPHPHWH",
+   "HPHPPPH",
+   "HWHHWPH",
+   "HPPPPPH",
+   "XHHPPPH",
+   "XXXHEHX"
+  ]
+ }
+]

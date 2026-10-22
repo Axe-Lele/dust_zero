@@ -1,0 +1,2729 @@
+[
+ {
+  "groupId": 10101,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1000,
+  "max": 1000,
+  "prob": 10000
+ },
+ {
+  "groupId": 10101,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10102,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1400,
+  "max": 1400,
+  "prob": 10000
+ },
+ {
+  "groupId": 10102,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10103,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1800,
+  "max": 1800,
+  "prob": 10000
+ },
+ {
+  "groupId": 10103,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10104,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2200,
+  "max": 2200,
+  "prob": 10000
+ },
+ {
+  "groupId": 10104,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10105,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2600,
+  "max": 2600,
+  "prob": 10000
+ },
+ {
+  "groupId": 10105,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 10105,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10105,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10105,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10105,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10201,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3000,
+  "max": 3000,
+  "prob": 10000
+ },
+ {
+  "groupId": 10201,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10202,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3400,
+  "max": 3400,
+  "prob": 10000
+ },
+ {
+  "groupId": 10202,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10203,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3800,
+  "max": 3800,
+  "prob": 10000
+ },
+ {
+  "groupId": 10203,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10204,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 4200,
+  "max": 4200,
+  "prob": 10000
+ },
+ {
+  "groupId": 10204,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10205,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 4600,
+  "max": 4600,
+  "prob": 10000
+ },
+ {
+  "groupId": 10205,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 10205,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10205,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10205,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10205,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10301,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 5000,
+  "max": 5000,
+  "prob": 10000
+ },
+ {
+  "groupId": 10301,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10302,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 5400,
+  "max": 5400,
+  "prob": 10000
+ },
+ {
+  "groupId": 10302,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10303,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 5800,
+  "max": 5800,
+  "prob": 10000
+ },
+ {
+  "groupId": 10303,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10304,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 6200,
+  "max": 6200,
+  "prob": 10000
+ },
+ {
+  "groupId": 10304,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 10305,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 6600,
+  "max": 6600,
+  "prob": 10000
+ },
+ {
+  "groupId": 10305,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 10305,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10305,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10305,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 10305,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 15,
+  "max": 15,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2000,
+  "max": 2000,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 1500,
+  "max": 1500,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 7,
+  "kind": 2,
+  "refId": "vac",
+  "min": 1,
+  "max": 1,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 8,
+  "kind": 2,
+  "refId": "ac",
+  "min": 1,
+  "max": 1,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 9,
+  "kind": 2,
+  "refId": "fan",
+  "min": 1,
+  "max": 1,
+  "prob": 10000
+ },
+ {
+  "groupId": 9000,
+  "seq": 10,
+  "kind": 2,
+  "refId": "gen",
+  "min": 1,
+  "max": 1,
+  "prob": 10000
+ },
+ {
+  "groupId": 9001,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 9101,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 9102,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 5000,
+  "max": 5000,
+  "prob": 10000
+ },
+ {
+  "groupId": 9103,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 9104,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 10,
+  "max": 10,
+  "prob": 10000
+ },
+ {
+  "groupId": 9104,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 10,
+  "max": 10,
+  "prob": 10000
+ },
+ {
+  "groupId": 9104,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 10,
+  "max": 10,
+  "prob": 10000
+ },
+ {
+  "groupId": 9104,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 10,
+  "max": 10,
+  "prob": 10000
+ },
+ {
+  "groupId": 9105,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 9106,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 10000,
+  "max": 10000,
+  "prob": 10000
+ },
+ {
+  "groupId": 9107,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 200,
+  "max": 200,
+  "prob": 10000
+ },
+ {
+  "groupId": 9002,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1000,
+  "max": 1000,
+  "prob": 10000
+ },
+ {
+  "groupId": 20011,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 100,
+  "max": 100,
+  "prob": 10000
+ },
+ {
+  "groupId": 20011,
+  "seq": 2,
+  "kind": 1,
+  "refId": 1,
+  "min": 3000,
+  "max": 3000,
+  "prob": 10000
+ },
+ {
+  "groupId": 20012,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 20012,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 20012,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 20012,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 20013,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 20021,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 20021,
+  "seq": 2,
+  "kind": 1,
+  "refId": 1,
+  "min": 4500,
+  "max": 4500,
+  "prob": 10000
+ },
+ {
+  "groupId": 20022,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 20022,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 20022,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 20022,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 20023,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 225,
+  "max": 225,
+  "prob": 10000
+ },
+ {
+  "groupId": 20031,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 200,
+  "max": 200,
+  "prob": 10000
+ },
+ {
+  "groupId": 20031,
+  "seq": 2,
+  "kind": 1,
+  "refId": 1,
+  "min": 6000,
+  "max": 6000,
+  "prob": 10000
+ },
+ {
+  "groupId": 20032,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 20032,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 20032,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 20032,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 20033,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 300,
+  "max": 300,
+  "prob": 10000
+ },
+ {
+  "groupId": 30100,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 30101,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 31101,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 30102,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 300,
+  "max": 300,
+  "prob": 10000
+ },
+ {
+  "groupId": 31102,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 300,
+  "max": 300,
+  "prob": 10000
+ },
+ {
+  "groupId": 30103,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 630,
+  "max": 630,
+  "prob": 10000
+ },
+ {
+  "groupId": 31103,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 600,
+  "max": 600,
+  "prob": 10000
+ },
+ {
+  "groupId": 30104,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 1800,
+  "max": 1800,
+  "prob": 10000
+ },
+ {
+  "groupId": 31104,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 1650,
+  "max": 1650,
+  "prob": 10000
+ },
+ {
+  "groupId": 30105,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 3700,
+  "max": 3700,
+  "prob": 10000
+ },
+ {
+  "groupId": 31105,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 3250,
+  "max": 3250,
+  "prob": 10000
+ },
+ {
+  "groupId": 30106,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 7000,
+  "max": 7000,
+  "prob": 10000
+ },
+ {
+  "groupId": 31106,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 5950,
+  "max": 5950,
+  "prob": 10000
+ },
+ {
+  "groupId": 30201,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3000,
+  "max": 3000,
+  "prob": 10000
+ },
+ {
+  "groupId": 30202,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 30202,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 30202,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 30202,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 30211,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 20000,
+  "max": 20000,
+  "prob": 10000
+ },
+ {
+  "groupId": 30212,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 30212,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 30212,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 30212,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 30301,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 500,
+  "max": 500,
+  "prob": 10000
+ },
+ {
+  "groupId": 30301,
+  "seq": 2,
+  "kind": 1,
+  "refId": 1,
+  "min": 10000,
+  "max": 10000,
+  "prob": 10000
+ },
+ {
+  "groupId": 30301,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 30301,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 30301,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 30301,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 20,
+  "max": 20,
+  "prob": 10000
+ },
+ {
+  "groupId": 30302,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 300,
+  "max": 300,
+  "prob": 10000
+ },
+ {
+  "groupId": 30303,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 300,
+  "max": 300,
+  "prob": 10000
+ },
+ {
+  "groupId": 30304,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 300,
+  "max": 300,
+  "prob": 10000
+ },
+ {
+  "groupId": 30304,
+  "seq": 2,
+  "kind": 1,
+  "refId": 1,
+  "min": 30000,
+  "max": 30000,
+  "prob": 10000
+ },
+ {
+  "groupId": 30304,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 30304,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 30304,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 30304,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 40,
+  "max": 40,
+  "prob": 10000
+ },
+ {
+  "groupId": 30305,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 1200,
+  "max": 1200,
+  "prob": 10000
+ },
+ {
+  "groupId": 30305,
+  "seq": 2,
+  "kind": 1,
+  "refId": 1,
+  "min": 30000,
+  "max": 30000,
+  "prob": 10000
+ },
+ {
+  "groupId": 30305,
+  "seq": 3,
+  "kind": 1,
+  "refId": 101,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 30305,
+  "seq": 4,
+  "kind": 1,
+  "refId": 102,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 30305,
+  "seq": 5,
+  "kind": 1,
+  "refId": 103,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 30305,
+  "seq": 6,
+  "kind": 1,
+  "refId": 104,
+  "min": 50,
+  "max": 50,
+  "prob": 10000
+ },
+ {
+  "groupId": 32001,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 100,
+  "max": 100,
+  "prob": 10000
+ },
+ {
+  "groupId": 33001,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1100,
+  "max": 1100,
+  "prob": 10000
+ },
+ {
+  "groupId": 34001,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3200,
+  "max": 3200,
+  "prob": 10000
+ },
+ {
+  "groupId": 34001,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34001,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34001,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34001,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33002,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1200,
+  "max": 1200,
+  "prob": 10000
+ },
+ {
+  "groupId": 34002,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34002,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34002,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34002,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34002,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33003,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33003,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33003,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33003,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34003,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3600,
+  "max": 3600,
+  "prob": 10000
+ },
+ {
+  "groupId": 34003,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34003,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34003,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34003,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33004,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1400,
+  "max": 1400,
+  "prob": 10000
+ },
+ {
+  "groupId": 34004,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34004,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34004,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34004,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34004,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33005,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 34005,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 33006,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33006,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33006,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33006,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34006,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34006,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34006,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34006,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34006,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33007,
+  "seq": 1,
+  "kind": 1,
+  "refId": 304,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34007,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 4400,
+  "max": 4400,
+  "prob": 10000
+ },
+ {
+  "groupId": 34007,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34007,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34007,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34007,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33008,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 1800,
+  "max": 1800,
+  "prob": 10000
+ },
+ {
+  "groupId": 34008,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34008,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34008,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34008,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34008,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33009,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33009,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33009,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33009,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34009,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 4800,
+  "max": 4800,
+  "prob": 10000
+ },
+ {
+  "groupId": 34009,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34009,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34009,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34009,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33010,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 34010,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 33011,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2100,
+  "max": 2100,
+  "prob": 10000
+ },
+ {
+  "groupId": 34011,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 5200,
+  "max": 5200,
+  "prob": 10000
+ },
+ {
+  "groupId": 34011,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34011,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34011,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34011,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33012,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33012,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33012,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33012,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34012,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34012,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34012,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34012,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34012,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33013,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2300,
+  "max": 2300,
+  "prob": 10000
+ },
+ {
+  "groupId": 34013,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 5600,
+  "max": 5600,
+  "prob": 10000
+ },
+ {
+  "groupId": 34013,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34013,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34013,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34013,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33014,
+  "seq": 1,
+  "kind": 1,
+  "refId": 304,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34014,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34014,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34014,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34014,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34014,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33015,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 34015,
+  "seq": 1,
+  "kind": 2,
+  "refId": "micro",
+  "min": 1,
+  "max": 1,
+  "prob": 10000
+ },
+ {
+  "groupId": 34015,
+  "seq": 2,
+  "kind": 1,
+  "refId": 2,
+  "min": 100,
+  "max": 100,
+  "prob": 10000
+ },
+ {
+  "groupId": 33016,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2600,
+  "max": 2600,
+  "prob": 10000
+ },
+ {
+  "groupId": 34016,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34016,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34016,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34016,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34016,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33017,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2700,
+  "max": 2700,
+  "prob": 10000
+ },
+ {
+  "groupId": 34017,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 6400,
+  "max": 6400,
+  "prob": 10000
+ },
+ {
+  "groupId": 34017,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34017,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34017,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34017,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33018,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33018,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33018,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33018,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34018,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34018,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34018,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34018,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34018,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33019,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 2900,
+  "max": 2900,
+  "prob": 10000
+ },
+ {
+  "groupId": 34019,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 6800,
+  "max": 6800,
+  "prob": 10000
+ },
+ {
+  "groupId": 34019,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34019,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34019,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34019,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33020,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 34020,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 33021,
+  "seq": 1,
+  "kind": 1,
+  "refId": 304,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34021,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 7200,
+  "max": 7200,
+  "prob": 10000
+ },
+ {
+  "groupId": 34021,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34021,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34021,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34021,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33022,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3200,
+  "max": 3200,
+  "prob": 10000
+ },
+ {
+  "groupId": 34022,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34022,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34022,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34022,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34022,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33023,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3300,
+  "max": 3300,
+  "prob": 10000
+ },
+ {
+  "groupId": 34023,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 7600,
+  "max": 7600,
+  "prob": 10000
+ },
+ {
+  "groupId": 34023,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34023,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34023,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34023,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33024,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33024,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33024,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33024,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34024,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34024,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34024,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34024,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34024,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33025,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 34025,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 150,
+  "max": 150,
+  "prob": 10000
+ },
+ {
+  "groupId": 33026,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3600,
+  "max": 3600,
+  "prob": 10000
+ },
+ {
+  "groupId": 34026,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34026,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34026,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34026,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34026,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33027,
+  "seq": 1,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33027,
+  "seq": 2,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33027,
+  "seq": 3,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33027,
+  "seq": 4,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34027,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 8400,
+  "max": 8400,
+  "prob": 10000
+ },
+ {
+  "groupId": 34027,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34027,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34027,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34027,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33028,
+  "seq": 1,
+  "kind": 1,
+  "refId": 304,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34028,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 60,
+  "max": 60,
+  "prob": 10000
+ },
+ {
+  "groupId": 34028,
+  "seq": 2,
+  "kind": 1,
+  "refId": 101,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34028,
+  "seq": 3,
+  "kind": 1,
+  "refId": 102,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34028,
+  "seq": 4,
+  "kind": 1,
+  "refId": 103,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 34028,
+  "seq": 5,
+  "kind": 1,
+  "refId": 104,
+  "min": 5,
+  "max": 5,
+  "prob": 10000
+ },
+ {
+  "groupId": 33029,
+  "seq": 1,
+  "kind": 1,
+  "refId": 1,
+  "min": 3900,
+  "max": 3900,
+  "prob": 10000
+ },
+ {
+  "groupId": 34029,
+  "seq": 1,
+  "kind": 1,
+  "refId": 306,
+  "min": 10,
+  "max": 10,
+  "prob": 10000
+ },
+ {
+  "groupId": 33030,
+  "seq": 1,
+  "kind": 1,
+  "refId": 2,
+  "min": 30,
+  "max": 30,
+  "prob": 10000
+ },
+ {
+  "groupId": 34030,
+  "seq": 1,
+  "kind": 2,
+  "refId": "washer",
+  "min": 1,
+  "max": 1,
+  "prob": 10000
+ }
+]

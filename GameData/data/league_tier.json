@@ -1,0 +1,32 @@
+[
+ {
+  "tier": 1,
+  "nameKey": "league.tier.1",
+  "hpMul": 2.45,
+  "atkMul": 1.72,
+  "firstCrystal": 300,
+  "winCoin": 250,
+  "winPart": 1,
+  "finishStone": 3
+ },
+ {
+  "tier": 2,
+  "nameKey": "league.tier.2",
+  "hpMul": 3.2,
+  "atkMul": 2.1,
+  "firstCrystal": 500,
+  "winCoin": 400,
+  "winPart": 1,
+  "finishStone": 5
+ },
+ {
+  "tier": 3,
+  "nameKey": "league.tier.3",
+  "hpMul": 4.8,
+  "atkMul": 2.9,
+  "firstCrystal": 800,
+  "winCoin": 600,
+  "winPart": 2,
+  "finishStone": 8
+ }
+]

@@ -1,0 +1,134 @@
+[
+ {
+  "id": "vac",
+  "chibi": "unit_vac",
+  "full": "vac_full",
+  "turn": "vac_turn",
+  "keys": "vac_keys",
+  "face1": "vac_face1",
+  "face2": "vac_face2",
+  "face3": "vac_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "robot",
+  "chibi": "unit_robot",
+  "full": "robot_full",
+  "turn": "robot_turn",
+  "keys": "robot_keys",
+  "face1": "robot_face1",
+  "face2": "robot_face2",
+  "face3": "robot_face3",
+  "roomSpeed": 0.26
+ },
+ {
+  "id": "fridge",
+  "chibi": "unit_fridge",
+  "full": "fridge_full",
+  "turn": "fridge_turn",
+  "keys": "fridge_keys",
+  "face1": "fridge_face1",
+  "face2": "fridge_face2",
+  "face3": "fridge_face3",
+  "roomSpeed": 0.12
+ },
+ {
+  "id": "ac",
+  "chibi": "unit_ac",
+  "full": "ac_full",
+  "turn": "ac_turn",
+  "keys": "ac_keys",
+  "face1": "ac_face1",
+  "face2": "ac_face2",
+  "face3": "ac_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "micro",
+  "chibi": "unit_micro",
+  "full": "micro_full",
+  "turn": "micro_turn",
+  "keys": "micro_keys",
+  "face1": "micro_face1",
+  "face2": "micro_face2",
+  "face3": "micro_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "washer",
+  "chibi": "unit_washer",
+  "full": "washer_full",
+  "turn": "washer_turn",
+  "keys": "washer_keys",
+  "face1": "washer_face1",
+  "face2": "washer_face2",
+  "face3": "washer_face3",
+  "roomSpeed": 0.12
+ },
+ {
+  "id": "pc",
+  "chibi": "unit_pc",
+  "full": "pc_full",
+  "turn": "pc_turn",
+  "keys": "pc_keys",
+  "face1": "pc_face1",
+  "face2": "pc_face2",
+  "face3": "pc_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "fan",
+  "chibi": "unit_fan",
+  "full": "fan_full",
+  "turn": "fan_turn",
+  "keys": "fan_keys",
+  "face1": "fan_face1",
+  "face2": "fan_face2",
+  "face3": "fan_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "gen",
+  "chibi": "unit_gen",
+  "full": "gen_full",
+  "turn": "gen_turn",
+  "keys": "gen_keys",
+  "face1": "gen_face1",
+  "face2": "gen_face2",
+  "face3": "gen_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "iron",
+  "chibi": "unit_iron",
+  "full": "iron_full",
+  "turn": "iron_turn",
+  "keys": "iron_keys",
+  "face1": "iron_face1",
+  "face2": "iron_face2",
+  "face3": "iron_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "stove",
+  "chibi": "unit_stove",
+  "full": "stove_full",
+  "turn": "stove_turn",
+  "keys": "stove_keys",
+  "face1": "stove_face1",
+  "face2": "stove_face2",
+  "face3": "stove_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "boiler",
+  "chibi": "unit_boiler",
+  "full": "boiler_full",
+  "turn": "boiler_turn",
+  "keys": "boiler_keys",
+  "face1": "boiler_face1",
+  "face2": "boiler_face2",
+  "face3": "boiler_face3",
+  "roomSpeed": 0.18
+ }
+]

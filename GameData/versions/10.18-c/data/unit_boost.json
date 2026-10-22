@@ -1,0 +1,218 @@
+[
+ {
+  "unitId": "vac",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "vac",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 1,
+  "rangeAdd": 0,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "robot",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "robot",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 1,
+  "rangeAdd": 0,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "fridge",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "fridge",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 1,
+  "rangeAdd": 0,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "ac",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "ac",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "micro",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "micro",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "washer",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "washer",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "pc",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.25,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "pc",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.5,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.8
+ },
+ {
+  "unitId": "fan",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "fan",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.8
+ },
+ {
+  "unitId": "gen",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "gen",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 0.8
+ },
+ {
+  "unitId": "iron",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "iron",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 1,
+  "rangeAdd": 0,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "stove",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "stove",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "boiler",
+  "tier": 2,
+  "costMul": 1.0,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1.0
+ },
+ {
+  "unitId": "boiler",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ }
+]

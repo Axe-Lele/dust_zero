@@ -1,0 +1,47 @@
+[
+ {
+  "poolId": 1,
+  "unitId": "fridge",
+  "weight": 150
+ },
+ {
+  "poolId": 1,
+  "unitId": "washer",
+  "weight": 150
+ },
+ {
+  "poolId": 1,
+  "unitId": "ac",
+  "weight": 567
+ },
+ {
+  "poolId": 1,
+  "unitId": "micro",
+  "weight": 567
+ },
+ {
+  "poolId": 1,
+  "unitId": "pc",
+  "weight": 566
+ },
+ {
+  "poolId": 1,
+  "unitId": "vac",
+  "weight": 2000
+ },
+ {
+  "poolId": 1,
+  "unitId": "robot",
+  "weight": 2000
+ },
+ {
+  "poolId": 1,
+  "unitId": "fan",
+  "weight": 2000
+ },
+ {
+  "poolId": 1,
+  "unitId": "gen",
+  "weight": 2000
+ }
+]

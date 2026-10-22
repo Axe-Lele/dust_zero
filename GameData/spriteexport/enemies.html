@@ -1,0 +1,180 @@
+<!doctype html><meta charset="utf-8"><title>working</title>
+<body style="background:#222"><div id=grid></div><script>
+// 이 파일은 make_enemy_exporter.py 가 10.16-n index.html 에서 잘라내 생성한다. 직접 고치지 않는다.
+let TS = 1;
+const epos = e => ({x: e.x, y: e.y});
+const segDir = () => ({x:0, y:1});
+const NEW_LOOK=new Set(['mite','hair','scale','rust','emperor','moth']);
+function rr(c,x,y,w,h,r,fill,stroke,lw){
+  c.beginPath(); c.moveTo(x+r,y); c.arcTo(x+w,y,x+w,y+h,r); c.arcTo(x+w,y+h,x,y+h,r); c.arcTo(x,y+h,x,y,r); c.arcTo(x,y,x+w,y,r); c.closePath();
+  if (fill){ c.fillStyle=fill; c.fill(); } if (stroke){ c.strokeStyle=stroke; c.lineWidth=lw||1; c.stroke(); }
+}
+function circ(c,x,y,r,fill){ c.beginPath(); c.arc(x,y,Math.max(0,r),0,Math.PI*2); c.fillStyle=fill; c.fill(); }
+function ell(c,x,y,rx,ry,fill){ c.beginPath(); c.ellipse(x,y,Math.max(0,rx),Math.max(0,ry),0,0,Math.PI*2); c.fillStyle=fill; c.fill(); }
+function eyes(c,x,y,k,gap,look,angry){
+  const s=k*.055, g=k*(gap||.12);
+  for (const sx of [-1,1]){ ell(c,x+sx*g/2,y,s,s*1.15,'#fff'); circ(c,x+sx*g/2+(look||0)*s*.35,y+s*.15,s*.55,'#1D2226'); }
+  if (angry){ c.strokeStyle='#1D2226'; c.lineWidth=k*.025; c.beginPath(); c.moveTo(x-g/2-s,y-s*1.6); c.lineTo(x-g/2+s,y-s*1.05); c.moveTo(x+g/2+s,y-s*1.6); c.lineTo(x+g/2-s,y-s*1.05); c.stroke(); }
+}
+function drawLook(c,look,x,y,r,k,t,seed,boss,ek,bob){
+  if (look==='moth'){ // 날개 큰 나방(비행)
+    const fy=y-k*.2+Math.sin(t*4+seed)*k*.05, flap=.55+.45*Math.abs(Math.sin(t*14+seed));
+    ell(c,x,y+k*.12,r*.8,r*.25,'rgba(0,0,0,.15)');
+    for (const s of [-1,1]){ c.save(); c.translate(x+s*r*.2,fy); c.scale(s,1); c.rotate(-.25);
+      c.beginPath(); c.ellipse(r*.75,-r*.15,r*.85,r*.62*flap,-.35,0,Math.PI*2); c.fillStyle=boss?'#9A7E58':'#C9B48A'; c.fill(); c.strokeStyle='#6E5A3E'; c.lineWidth=Math.max(1,k*.015); c.stroke();
+      c.beginPath(); c.ellipse(r*.6,r*.45,r*.5,r*.36*flap,.4,0,Math.PI*2); c.fillStyle=boss?'#8A6E4A':'#B8A27A'; c.fill(); c.stroke();
+      circ(c,r*.85,-r*.2,r*.17,'#6E5A3E'); circ(c,r*.85,-r*.2,r*.08,'#F2E6C8'); c.restore(); }
+    ell(c,x,fy+r*.1,r*.32,r*.62,'#5E4B36'); for (let i=0;i<3;i++){ c.fillStyle='rgba(255,240,210,.35)'; c.fillRect(x-r*.28,fy+r*(-.1+i*.22),r*.56,r*.05); }
+    c.strokeStyle='#5E4B36'; c.lineWidth=Math.max(1,k*.018); for (const s of [-1,1]){ c.beginPath(); c.moveTo(x+s*r*.08,fy-r*.5); c.quadraticCurveTo(x+s*r*.35,fy-r*1.05,x+s*r*.5,fy-r*.95); c.stroke(); }
+    eyes(c,x,fy-r*.25,ek*.8,.1,0,true); return fy;
+  }
+  if (look==='mite'){ // 다리 8개 진드기
+    c.strokeStyle='#5A4630'; c.lineWidth=Math.max(1,k*.02); c.lineCap='round';
+    for (const s of [-1,1]) for (let i=0;i<4;i++){ const a=(-.6+i*.4), w=Math.sin(t*16+seed+i)*.12; c.beginPath(); c.moveTo(x+s*r*.5,y+bob+r*(-.2+i*.22)); c.lineTo(x+s*r*(1.05+w),y+bob+r*(-.45+i*.35)); c.stroke(); }
+    ell(c,x,y+bob,r*.85,r*.75,boss?'#A8834A':'#C9A36B'); ell(c,x,y-r*.45+bob,r*.42,r*.3,boss?'#8A6A3A':'#A8834A');
+    ell(c,x-r*.25,y-r*.15+bob,r*.25,r*.12,'rgba(255,240,210,.5)'); eyes(c,x,y-r*.45+bob,ek*.85,.12,0,true); return y;
+  }
+  if (look==='hair'){ // 엉킨 머리카락 뭉치
+    circ(c,x,y+bob,r*.82,boss?'#3A2D29':'#4A3B36');
+    c.strokeStyle=boss?'#2A1F1C':'#2E2420'; c.lineWidth=Math.max(1,k*.018); c.lineCap='round';
+    for (let i=0;i<(boss?16:10);i++){ const a=i*2.4+seed, r1=r*(.3+.5*((i*37%10)/10)); c.beginPath(); c.moveTo(x+Math.cos(a)*r1,y+bob+Math.sin(a)*r1); c.bezierCurveTo(x+Math.cos(a+1)*r*1.25,y+bob+Math.sin(a+1)*r*1.25,x+Math.cos(a+2.2)*r*1.1,y+bob+Math.sin(a+2.2)*r*1.1,x+Math.cos(a+2.8)*r*.6,y+bob+Math.sin(a+2.8)*r*.6); c.stroke(); }
+    c.strokeStyle='rgba(200,170,150,.55)'; c.beginPath(); c.arc(x-r*.2,y-r*.25+bob,r*.45,3.6,5.2); c.stroke();
+    eyes(c,x,y+bob,ek,.13,0,true); return y;
+  }
+  if (look==='scale'){ // 각진 물때 덩어리(방어)
+    c.beginPath(); for (let i=0;i<6;i++){ const a=i/6*Math.PI*2+Math.PI/6, rr2=r*(1+.08*Math.sin(i*3+seed)); c.lineTo(x+Math.cos(a)*rr2,y+bob+Math.sin(a)*rr2*.9); } c.closePath();
+    c.fillStyle=boss?'#7F9AA3':'#9FB8BF'; c.fill(); c.strokeStyle='#5C747C'; c.lineWidth=Math.max(1.2,k*.025); c.stroke();
+    for (const [ox,oy,rs] of [[-.4,-.3,.2],[.35,-.35,.16],[.2,.35,.22],[-.35,.35,.14]]) circ(c,x+ox*r,y+oy*r+bob,r*rs,'rgba(240,248,250,.75)');
+    c.strokeStyle='rgba(92,116,124,.6)'; c.beginPath(); c.moveTo(x-r*.7,y+bob); c.lineTo(x+r*.7,y+bob); c.stroke();
+    eyes(c,x,y-r*.05+bob,ek,.13,0,true); return y;
+  }
+  if (look==='rust'){ // 들쭉날쭉한 녹 덩어리
+    c.beginPath(); const n=11; for (let i=0;i<n;i++){ const a=i/n*Math.PI*2+seed*.2, rr2=r*(i%2?.78:1.05); c.lineTo(x+Math.cos(a)*rr2,y+bob+Math.sin(a)*rr2); } c.closePath();
+    c.fillStyle=boss?'#94431F':'#B5562E'; c.fill(); c.strokeStyle='#6E2E14'; c.lineWidth=Math.max(1.2,k*.022); c.stroke();
+    for (const [ox,oy] of [[-.35,-.3],[.3,.2],[-.1,.45],[.4,-.35]]) ell(c,x+ox*r,y+oy*r+bob,r*.14,r*.09,'#D9844F');
+    circ(c,x+r*.5,y-r*.05+bob,r*.12,'#5E6267'); circ(c,x+r*.5,y-r*.05+bob,r*.05,'#9AA0A6');
+    eyes(c,x,y-r*.05+bob,ek,.13,0,true); return y;
+  }
+  if (look==='emperor'){ // 먼지 황제: 보라빛 먼지 덩어리 + 망토
+    c.beginPath(); c.moveTo(x-r*1.05,y+r*.2+bob); c.quadraticCurveTo(x,y+r*1.35,x+r*1.05,y+r*.2+bob); c.lineTo(x+r*.7,y-r*.4+bob); c.lineTo(x-r*.7,y-r*.4+bob); c.closePath(); c.fillStyle='#8A2E4A'; c.fill();
+    c.strokeStyle='#4E3A5C'; c.lineWidth=k*.03; c.lineCap='round';
+    for (let i=0;i<26;i++){ const a=i/26*Math.PI*2+seed, j=1.1+.15*Math.sin(i*2.3+t*3); c.beginPath(); c.moveTo(x+Math.cos(a)*r*.7,y+bob+Math.sin(a)*r*.7); c.lineTo(x+Math.cos(a)*r*j,y+bob+Math.sin(a)*r*j); c.stroke(); }
+    circ(c,x,y+bob,r*.85,'#6B4A7A'); circ(c,x-r*.25,y-r*.25+bob,r*.32,'#8A6A9A');
+    ell(c,x,y+r*.35+bob,r*.5,r*.12,'rgba(255,215,120,.6)');
+    eyes(c,x,y+bob-r*.05,ek,.13,0,true); return y;
+  }
+  return y;
+}
+function drawMarks(c,e,x,y,r,k,t){
+  const ar=e.def.armor||0, br=e.brkT>0&&e.brk>0;
+  if (ar>0||br){ const sx=x-r*.95, sy=y-r*.85, s=Math.max(5,k*.1);
+    c.beginPath(); c.moveTo(sx,sy-s); c.lineTo(sx+s*.85,sy-s*.6); c.lineTo(sx+s*.7,sy+s*.5); c.lineTo(sx,sy+s); c.lineTo(sx-s*.7,sy+s*.5); c.lineTo(sx-s*.85,sy-s*.6); c.closePath();
+    c.fillStyle=br?'#F08A3E':'#C9D3DA'; c.fill(); c.strokeStyle='#1D2226'; c.lineWidth=1.2; c.stroke();
+    if (br){ c.beginPath(); c.moveTo(sx-s*.2,sy-s*.7); c.lineTo(sx+s*.15,sy-s*.1); c.lineTo(sx-s*.1,sy+s*.3); c.lineTo(sx+s*.15,sy+s*.7); c.stroke(); } }
+  if (e.burnT>0){ const fx2=x+r*.8, fy2=y-r*.6, h=k*.12*(1+.15*Math.sin(t*14+e.seed)); c.fillStyle='rgba(255,130,40,.9)'; c.beginPath(); c.moveTo(fx2-h*.4,fy2); c.quadraticCurveTo(fx2,fy2-h*1.7,fx2+h*.4,fy2); c.quadraticCurveTo(fx2,fy2+h*.4,fx2-h*.4,fy2); c.fill(); }
+  if (e.stunT>0) for (let i=0;i<3;i++){ const a=t*5+i*2.09; c.fillStyle='#F2C14E'; c.font=`700 ${Math.max(9,Math.round(k*.18))}px sans-serif`; c.textAlign='center'; c.textBaseline='middle'; c.fillText('★',x+Math.cos(a)*r*.9,y-r*1.15+Math.sin(a)*r*.25); }
+}
+function drawEnemy(c,e,t){
+  const p=epos(e), k=TS, perp=e.def.fly?segDir(e.d,e.pi):e.dir;
+  const x=(p.x+perp.y*e.off)*k, y=(p.y+perp.x*e.off)*k, r=e.def.r*k;
+  const bob=(e.frozenT>0||e.stunT>0)?0:Math.sin(t*8+e.seed)*k*.02;
+  if (NEW_LOOK.has(e.def.look)){
+    const boss=e.def.boss, ek=boss?k*1.6:k;
+    if (!e.def.fly){ ell(c,x,y+r*.85,r*.95,r*.28,'rgba(0,0,0,.18)'); if (e.def.breaker){ c.strokeStyle='rgba(224,82,74,.75)'; c.lineWidth=2; c.beginPath(); c.ellipse(x,y+r*.85,r*1.05,r*.34,0,0,Math.PI*2); c.stroke(); } }
+    const yy=drawLook(c,e.def.look,x,y,r,k,t,e.seed,boss,ek,bob);
+    if (boss){ c.fillStyle='#E8B23A'; c.beginPath(); const cy=yy-r*.95+bob; c.moveTo(x-r*.4,cy); c.lineTo(x-r*.3,cy-r*.35); c.lineTo(x-r*.1,cy-r*.12); c.lineTo(x,cy-r*.42); c.lineTo(x+r*.1,cy-r*.12); c.lineTo(x+r*.3,cy-r*.35); c.lineTo(x+r*.4,cy); c.closePath(); c.fill(); }
+    if (e.slowT>0) circ(c,x,yy,r*1.15,'rgba(120,190,245,.28)');
+    if (e.frozenT>0) rr(c,x-r*1.15,yy-r*1.15,r*2.3,r*2.3,r*.3,'rgba(190,230,250,.6)','rgba(255,255,255,.85)',1.5);
+    if (e.hitT>0){ c.fillStyle=`rgba(255,255,255,${Math.min(.75,e.hitT*6)})`; c.beginPath(); c.arc(x,yy,r*1.05,0,Math.PI*2); c.fill(); }
+    drawMarks(c,e,x,yy,r,k,t); hpBar(c,e,x,yy-r*1.35,r); return;
+  }
+  if (e.def.fly){
+    const fy=y-k*.2+Math.sin(t*5+e.seed)*k*.05;
+    ell(c,x,y+k*.12,r*.7,r*.25,'rgba(0,0,0,.15)');
+    const flap=Math.abs(Math.sin(t*30+e.seed));
+    ell(c,x-r*.6,fy-r*.5,r*.7,r*.35*(.4+flap*.6),'rgba(210,228,245,.85)');
+    ell(c,x+r*.6,fy-r*.5,r*.7,r*.35*(.4+flap*.6),'rgba(210,228,245,.85)');
+    ell(c,x,fy,r*.8,r*.95,'#3A3330');
+    circ(c,x-r*.32,fy-r*.3,r*.26,'#D64545'); circ(c,x+r*.32,fy-r*.3,r*.26,'#D64545');
+    if (e.slowT>0) circ(c,x,fy,r*1.15,'rgba(120,190,245,.28)');
+    if (e.frozenT>0) rr(c,x-r*1.1,fy-r*1.1,r*2.2,r*2.2,r*.3,'rgba(190,230,250,.55)','rgba(255,255,255,.8)',1);
+    drawMarks(c,e,x,fy,r,k,t); hpBar(c,e,x,fy-r*1.4,r); return;
+  }
+  ell(c,x,y+r*.85,r*.95,r*.28,'rgba(0,0,0,.18)');
+  if (e.def.breaker){ c.strokeStyle='rgba(224,82,74,.75)'; c.lineWidth=2; c.beginPath(); c.ellipse(x,y+r*.85,r*1.05,r*.34,0,0,Math.PI*2); c.stroke(); }
+  const boss=e.def.boss, ek=boss?k*1.6:k;
+  if (e.def.look==='mold'){
+    const g=boss?'#557F38':'#6E9B4C';
+    circ(c,x-r*.4,y+bob,r*.7,g); circ(c,x+r*.4,y+r*.1+bob,r*.65,g); circ(c,x,y-r*.35+bob,r*.7,g);
+    circ(c,x-r*.5,y-r*.2+bob,r*.14,'#3F6B2E'); circ(c,x+r*.45,y+r*.35+bob,r*.12,'#3F6B2E'); circ(c,x+r*.1,y-r*.7+bob,r*.1,'#3F6B2E');
+    eyes(c,x,y-r*.1+bob,ek,.13,0,true);
+  } else if (e.def.look==='grease'){
+    ell(c,x+r*.45,y+r*.65,r*.16,r*.28,'#9A6824'); ell(c,x-r*.55,y+r*.55,r*.12,r*.22,'#9A6824');
+    ell(c,x,y+bob,r*1.05,r*.85,boss?'#8E5E1C':'#A8742A');
+    ell(c,x-r*.35,y-r*.35+bob,r*.32,r*.16,'rgba(255,232,170,.65)');
+    eyes(c,x,y+bob,ek,.13,0,true);
+  } else {
+    const col=boss?'#5E6267':'#8D9094', n=boss?22:14;
+    c.strokeStyle=col; c.lineWidth=k*.025; c.lineCap='round';
+    for (let i=0;i<n;i++){ const a=i/n*Math.PI*2+e.seed, j=1.12+.12*Math.sin(i*2.3+e.seed);
+      c.beginPath(); c.moveTo(x+Math.cos(a)*r*.75,y+bob+Math.sin(a)*r*.75); c.lineTo(x+Math.cos(a)*r*j,y+bob+Math.sin(a)*r*j); c.stroke(); }
+    circ(c,x,y+bob,r*.9,col); circ(c,x-r*.25,y-r*.25+bob,r*.35,boss?'#72777C':'#A2A5A8');
+    eyes(c,x,y+bob-r*.05,ek,.13,0,boss);
+  }
+  if (boss){ c.fillStyle='#E8B23A'; c.beginPath(); const cy=y-r*.95+bob; c.moveTo(x-r*.4,cy); c.lineTo(x-r*.3,cy-r*.35); c.lineTo(x-r*.1,cy-r*.12); c.lineTo(x,cy-r*.42); c.lineTo(x+r*.1,cy-r*.12); c.lineTo(x+r*.3,cy-r*.35); c.lineTo(x+r*.4,cy); c.closePath(); c.fill(); }
+  if (e.slowT>0) circ(c,x,y,r*1.15,'rgba(120,190,245,.28)');
+  if (e.frozenT>0) rr(c,x-r*1.15,y-r*1.15,r*2.3,r*2.3,r*.3,'rgba(190,230,250,.6)','rgba(255,255,255,.85)',1.5);
+  if (e.hitT>0){ c.fillStyle=`rgba(255,255,255,${Math.min(.75,e.hitT*6)})`; c.beginPath(); c.arc(x,y,r*1.05,0,Math.PI*2); c.fill(); }
+  drawMarks(c,e,x,y,r,k,t); hpBar(c,e,x,y-r*1.35,r);
+}
+function hpBar(c,e,x,y,r){
+  if (e.hp>=e.max) return; const w=Math.max(r*2,TS*.36);
+  c.fillStyle='rgba(29,34,38,.55)'; c.fillRect(x-w/2,y,w,3);
+  c.fillStyle='#E0524A'; c.fillRect(x-w/2,y,w*Math.max(0,e.hp/e.max),3);
+}
+
+// ---- 내보내기 ----
+// 캔버스는 SPAN 타일만큼을 담는다. 유니티는 스프라이트를 정확히 SPAN 타일로 그린다.
+const SPAN = 2.6;
+const DEFS = [{"id": "dust", "look": "dust", "r": 0.22, "fly": 0, "boss": 0, "breaker": 0}, {"id": "grease", "look": "grease", "r": 0.28, "fly": 0, "boss": 0, "breaker": 0}, {"id": "mold", "look": "mold", "r": 0.3, "fly": 0, "boss": 0, "breaker": 0}, {"id": "fly", "look": "fly", "r": 0.17, "fly": 1, "boss": 0, "breaker": 0}, {"id": "spore", "look": "spore", "r": 0.26, "fly": 0, "boss": 0, "breaker": 0}, {"id": "boss_dust", "look": "dust", "r": 0.42, "fly": 0, "boss": 1, "breaker": 0}, {"id": "boss_grease", "look": "grease", "r": 0.42, "fly": 0, "boss": 1, "breaker": 0}, {"id": "boss_mold", "look": "mold", "r": 0.44, "fly": 0, "boss": 1, "breaker": 0}, {"id": "mite", "look": "mite", "r": 0.16, "fly": 0, "boss": 0, "breaker": 0}, {"id": "hair", "look": "hair", "r": 0.27, "fly": 0, "boss": 0, "breaker": 0}, {"id": "scale", "look": "scale", "r": 0.3, "fly": 0, "boss": 0, "breaker": 0}, {"id": "moth", "look": "moth", "r": 0.24, "fly": 1, "boss": 0, "breaker": 0}, {"id": "rust", "look": "rust", "r": 0.29, "fly": 0, "boss": 0, "breaker": 0}, {"id": "boss_mite", "look": "mite", "r": 0.42, "fly": 0, "boss": 1, "breaker": 0}, {"id": "boss_hair", "look": "hair", "r": 0.44, "fly": 0, "boss": 1, "breaker": 0}, {"id": "boss_scale", "look": "scale", "r": 0.46, "fly": 0, "boss": 1, "breaker": 0}, {"id": "boss_moth", "look": "moth", "r": 0.42, "fly": 1, "boss": 1, "breaker": 0}, {"id": "boss_rust", "look": "rust", "r": 0.44, "fly": 0, "boss": 1, "breaker": 0}, {"id": "boss_emperor", "look": "emperor", "r": 0.5, "fly": 0, "boss": 1, "breaker": 0}];
+const EXPORTS = {};
+function render(def, px){
+  const c = document.createElement('canvas'); c.width = c.height = px;
+  const x = c.getContext('2d');
+  TS = px / SPAN;
+  x.translate(px/2, px/2);
+  // 멈춰 있는 대표 자세: 흔들림/피격/빙결 없이, 체력은 가득(= hp 바 안 그림).
+  drawEnemy(x, { def, x:0, y:0, d:0, pi:0, dir:{x:0,y:1}, off:0, seed:1.7,
+                 hp:1, max:1, hitT:0, slowT:0, frozenT:0, stunT:0, marks:null }, 0);
+  return c;
+}
+function bbox(c){
+  const d = c.getContext('2d').getImageData(0,0,c.width,c.height).data;
+  let x0=1e9,y0=1e9,x1=-1,y1=-1;
+  for (let p=0;p<d.length;p+=4) if (d[p+3]>8){
+    const i=(p/4)|0, px=i%c.width, py=(i/c.width)|0;
+    if(px<x0)x0=px; if(px>x1)x1=px; if(py<y0)y0=py; if(py>y1)y1=py; }
+  return [x0,y0,x1,y1];
+}
+const REPORT = [];
+for (const def of DEFS){
+  const c = render(def, 256);
+  const b = bbox(c);
+  // 잘림 검사: 캔버스 가장자리에 불투명 픽셀이 닿으면 그림이 넘친 것이다.
+  const clipped = b[0] <= 0 || b[1] <= 0 || b[2] >= 255 || b[3] >= 255;
+  REPORT.push({ id: def.id, box: b, clipped });
+  EXPORTS['enemy_' + def.id] = c.toDataURL('image/png');
+  const f = document.createElement('figure');
+  f.style.cssText = 'display:inline-block;margin:4px;color:#ddd;font:11px sans-serif;text-align:center';
+  const img = new Image(); img.src = EXPORTS['enemy_' + def.id]; img.width = img.height = 96;
+  img.style.outline = clipped ? '2px solid red' : '1px solid #555';
+  f.appendChild(img);
+  const cap = document.createElement('figcaption'); cap.textContent = def.id + (clipped ? ' CLIPPED' : '');
+  f.appendChild(cap); document.getElementById('grid').appendChild(f);
+}
+window.DUSTZERO_SPRITES = EXPORTS;
+window.DUSTZERO_REPORT = REPORT;
+window.DUSTZERO_SPAN = SPAN;
+const bad = REPORT.filter(r => r.clipped).length;
+document.title = bad ? ('clipped:' + bad) : ('ready:' + REPORT.length);
+</script></body>

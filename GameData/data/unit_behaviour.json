@@ -1,0 +1,78 @@
+[
+ {
+  "id": "vac",
+  "defense": "vac",
+  "survLeader": "vac",
+  "survComp": "vac",
+  "support": 0,
+  "skp": "pullRadius,pullDps,pullSpeed,holdDist"
+ },
+ {
+  "id": "robot",
+  "defense": "melee",
+  "survLeader": "robot",
+  "survComp": "robot",
+  "support": 0,
+  "skp": "triggerHeat,skillAtkBonus"
+ },
+ {
+  "id": "fridge",
+  "defense": "fridge",
+  "survComp": "fridge",
+  "support": 0,
+  "skp": "freezeRadius,freezeDps,selfCool"
+ },
+ {
+  "id": "ac",
+  "defense": "ac",
+  "survLeader": "ac",
+  "survComp": "ac",
+  "support": 0,
+  "skp": "tick,skillDmg,skillSlow,skillSlowSec,atkSlow,atkSlowSec"
+ },
+ {
+  "id": "micro",
+  "defense": "micro",
+  "survComp": "micro",
+  "support": 0,
+  "skp": "rangeBonus,blastRadius,blastDmg,noTargetRefund"
+ },
+ {
+  "id": "washer",
+  "defense": "washer",
+  "survComp": "washer",
+  "support": 0,
+  "skp": "tick,skillDmg,knockback,bossKnockback,splashRadius"
+ },
+ {
+  "id": "pc",
+  "defense": "pc",
+  "support": 1,
+  "skp": "buffRange,buffAtk,skillRange,skillAtk,skillIntervalMul"
+ },
+ {
+  "id": "fan",
+  "defense": "fan",
+  "survComp": "fan",
+  "support": 1,
+  "skp": "coolRange,skillRange,skillCoolMul,skillBurst,triggerHeat"
+ },
+ {
+  "id": "gen",
+  "defense": "gen",
+  "support": 1,
+  "skp": "regenPerSec,skillRegenMul,burst"
+ },
+ {
+  "id": "iron",
+  "support": 0
+ },
+ {
+  "id": "stove",
+  "support": 0
+ },
+ {
+  "id": "boiler",
+  "support": 0
+ }
+]

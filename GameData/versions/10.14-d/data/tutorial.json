@@ -1,0 +1,206 @@
+[
+ {
+  "id": 101,
+  "group": 1,
+  "seq": 1,
+  "trigger": 1,
+  "until": 2,
+  "untilParam": "melee",
+  "pause": 1,
+  "focus": "card:melee",
+  "textKey": "tut.101"
+ },
+ {
+  "id": 102,
+  "group": 1,
+  "seq": 2,
+  "trigger": 2,
+  "until": 3,
+  "untilParam": "melee",
+  "pause": 1,
+  "textKey": "tut.102"
+ },
+ {
+  "id": 103,
+  "group": 1,
+  "seq": 3,
+  "trigger": 4,
+  "param": "dust",
+  "until": 4,
+  "untilParam": 6,
+  "pause": 0,
+  "textKey": "tut.103"
+ },
+ {
+  "id": 104,
+  "group": 1,
+  "seq": 4,
+  "trigger": 3,
+  "param": 1,
+  "until": 3,
+  "untilParam": "ranged",
+  "pause": 1,
+  "focus": "card:ranged",
+  "textKey": "tut.104"
+ },
+ {
+  "id": 105,
+  "group": 1,
+  "seq": 5,
+  "trigger": 4,
+  "param": "fly",
+  "until": 4,
+  "untilParam": 6,
+  "pause": 0,
+  "textKey": "tut.105"
+ },
+ {
+  "id": 106,
+  "group": 1,
+  "seq": 6,
+  "trigger": 7,
+  "until": 4,
+  "untilParam": 6,
+  "pause": 0,
+  "textKey": "tut.106"
+ },
+ {
+  "id": 107,
+  "group": 1,
+  "seq": 7,
+  "trigger": 4,
+  "param": "mold",
+  "until": 1,
+  "pause": 1,
+  "textKey": "tut.107"
+ },
+ {
+  "id": 108,
+  "group": 1,
+  "seq": 8,
+  "trigger": 9,
+  "until": 4,
+  "untilParam": 6,
+  "pause": 0,
+  "focus": "hud:life",
+  "textKey": "tut.108"
+ },
+ {
+  "id": 201,
+  "group": 2,
+  "seq": 1,
+  "trigger": 1,
+  "until": 3,
+  "untilParam": "gen",
+  "pause": 1,
+  "focus": "card:gen",
+  "textKey": "tut.201"
+ },
+ {
+  "id": 202,
+  "group": 2,
+  "seq": 2,
+  "trigger": 3,
+  "param": 4,
+  "until": 1,
+  "pause": 1,
+  "focus": "hud:power",
+  "textKey": "tut.202"
+ },
+ {
+  "id": 203,
+  "group": 2,
+  "seq": 3,
+  "trigger": 7,
+  "param": "gen",
+  "until": 4,
+  "untilParam": 5,
+  "pause": 0,
+  "textKey": "tut.203"
+ },
+ {
+  "id": 301,
+  "group": 3,
+  "seq": 1,
+  "trigger": 6,
+  "param": 0.5,
+  "until": 1,
+  "pause": 1,
+  "focus": "unit:heat",
+  "textKey": "tut.301"
+ },
+ {
+  "id": 302,
+  "group": 3,
+  "seq": 2,
+  "trigger": 2,
+  "until": 3,
+  "untilParam": "fan",
+  "pause": 1,
+  "focus": "card:fan",
+  "textKey": "tut.302"
+ },
+ {
+  "id": 401,
+  "group": 4,
+  "seq": 1,
+  "trigger": 3,
+  "param": 12,
+  "until": 1,
+  "pause": 1,
+  "textKey": "tut.401"
+ },
+ {
+  "id": 402,
+  "group": 4,
+  "seq": 2,
+  "trigger": 3,
+  "param": 30,
+  "until": 4,
+  "untilParam": 7,
+  "pause": 0,
+  "textKey": "tut.402"
+ },
+ {
+  "id": 403,
+  "group": 4,
+  "seq": 3,
+  "trigger": 3,
+  "param": 45,
+  "until": 4,
+  "untilParam": 5,
+  "pause": 0,
+  "focus": "btn:speed",
+  "textKey": "tut.403"
+ },
+ {
+  "id": 1001,
+  "group": 10,
+  "seq": 1,
+  "cond": "boss",
+  "trigger": 8,
+  "until": 1,
+  "pause": 1,
+  "textKey": "tut.1001"
+ },
+ {
+  "id": 1101,
+  "group": 11,
+  "seq": 1,
+  "cond": "map:kitchen",
+  "trigger": 1,
+  "until": 1,
+  "pause": 1,
+  "textKey": "tut.1101"
+ },
+ {
+  "id": 1201,
+  "group": 12,
+  "seq": 1,
+  "cond": "map:bath",
+  "trigger": 1,
+  "until": 1,
+  "pause": 1,
+  "textKey": "tut.1201"
+ }
+]

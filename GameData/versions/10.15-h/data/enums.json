@@ -1,0 +1,67 @@
+{
+ "Rarity": {
+  "R": 1,
+  "SR": 2,
+  "SSR": 3
+ },
+ "Family": {
+  "Living": 1,
+  "Kitchen": 2,
+  "Digital": 3,
+  "Season": 4
+ },
+ "Tile": {
+  "Ground": 1,
+  "Furniture": 2
+ },
+ "RewardKind": {
+  "Item": 1,
+  "Unit": 2
+ },
+ "CondKind": {
+  "None": 0,
+  "StageClear": 1
+ },
+ "TargetType": {
+  "Ground": 1,
+  "Air": 2,
+  "All": 3
+ },
+ "EnemyAI": {
+  "Detour": 1,
+  "Breaker": 2
+ },
+ "TutTrigger": {
+  "Start": 1,
+  "Next": 2,
+  "Time": 3,
+  "Spawn": 4,
+  "Power": 5,
+  "Heat": 6,
+  "Skill": 7,
+  "Boss": 8,
+  "Leak": 9
+ },
+ "TutUntil": {
+  "Tap": 1,
+  "Select": 2,
+  "Deploy": 3,
+  "Timer": 4
+ },
+ "ShopTab": {
+  "Crystal": 1,
+  "Daily": 2,
+  "Package": 3
+ },
+ "PayKind": {
+  "Iap": 1,
+  "Crystal": 2,
+  "Ad": 3
+ },
+ "LimitType": {
+  "None": 0,
+  "Daily": 1,
+  "Weekly": 2,
+  "Account": 3
+ }
+}

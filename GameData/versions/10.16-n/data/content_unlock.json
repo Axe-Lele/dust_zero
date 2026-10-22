@@ -1,0 +1,12 @@
+[
+ {
+  "id": "idle",
+  "cond": 1,
+  "lockKey": "unlock.idle"
+ },
+ {
+  "id": "survivor",
+  "cond": 1,
+  "lockKey": "unlock.survivor"
+ }
+]

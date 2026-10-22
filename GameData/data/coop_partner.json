@@ -1,0 +1,24 @@
+[
+ {
+  "id": "rush",
+  "unit": "vac",
+  "nameKey": "coop.rush.name",
+  "styleKey": "coop.rush.style",
+  "descKey": "coop.rush.desc",
+  "style": "rush",
+  "deck": "vac,robot,iron,micro,ac,gen",
+  "early": 3,
+  "late": 1
+ },
+ {
+  "id": "greedy",
+  "unit": "fridge",
+  "nameKey": "coop.greedy.name",
+  "styleKey": "coop.greedy.style",
+  "descKey": "coop.greedy.desc",
+  "style": "greedy",
+  "deck": "gen,fridge,boiler,washer,fan,ac",
+  "early": 1,
+  "late": 3
+ }
+]

@@ -1,0 +1,58 @@
+[
+ {
+  "round": 1,
+  "nameKey": "league.round.1",
+  "squad": "dust*3",
+  "rMul": 1,
+  "boss": 0
+ },
+ {
+  "round": 2,
+  "nameKey": "league.round.2",
+  "squad": "dust*3,mite*2",
+  "rMul": 1,
+  "boss": 0
+ },
+ {
+  "round": 3,
+  "nameKey": "league.round.3",
+  "squad": "mold*1,dust*3,fly*1",
+  "rMul": 1.05,
+  "boss": 0
+ },
+ {
+  "round": 4,
+  "nameKey": "league.round.4",
+  "squad": "boss_dust*1,dust*2",
+  "rMul": 1.05,
+  "boss": 1
+ },
+ {
+  "round": 5,
+  "nameKey": "league.round.5",
+  "squad": "grease*2,spore*2,dust*2",
+  "rMul": 1.15,
+  "boss": 0
+ },
+ {
+  "round": 6,
+  "nameKey": "league.round.6",
+  "squad": "mold*2,fly*3,mite*3",
+  "rMul": 1.2,
+  "boss": 0
+ },
+ {
+  "round": 7,
+  "nameKey": "league.round.7",
+  "squad": "scale*2,spore*2,moth*2,hair*2",
+  "rMul": 1.3,
+  "boss": 0
+ },
+ {
+  "round": 8,
+  "nameKey": "league.round.8",
+  "squad": "boss_mold*1,mold*1,spore*2,fly*2,hair*1",
+  "rMul": 1.35,
+  "boss": 1
+ }
+]

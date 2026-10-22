@@ -1,0 +1,29 @@
+[
+ {
+  "id": 1,
+  "lvMin": 1,
+  "lvMax": 9,
+  "coinBase": 100,
+  "coinStep": 100,
+  "partBase": 2,
+  "partStep": 1
+ },
+ {
+  "id": 2,
+  "lvMin": 10,
+  "lvMax": 19,
+  "coinBase": 1200,
+  "coinStep": 150,
+  "partBase": 12,
+  "partStep": 2
+ },
+ {
+  "id": 3,
+  "lvMin": 20,
+  "lvMax": 29,
+  "coinBase": 3000,
+  "coinStep": 250,
+  "partBase": 35,
+  "partStep": 3
+ }
+]

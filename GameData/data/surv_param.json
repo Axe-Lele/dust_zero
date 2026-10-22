@@ -1,0 +1,824 @@
+[
+ {
+  "id": "vac",
+  "slot": "leader",
+  "key": "radius",
+  "value": 1.5,
+  "note": "흡입 소용돌이 반경(칸)"
+ },
+ {
+  "id": "vac",
+  "slot": "leader",
+  "key": "radiusPerLv",
+  "value": 0.18,
+  "note": "레벨당 반경 증가"
+ },
+ {
+  "id": "vac",
+  "slot": "leader",
+  "key": "dps",
+  "value": 34,
+  "note": "초당 피해"
+ },
+ {
+  "id": "vac",
+  "slot": "leader",
+  "key": "dmgPerLv",
+  "value": 0.3,
+  "note": "레벨당 피해 증가 비율"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "count",
+  "value": 3,
+  "note": "회전 브러시 개수"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "countPerLv",
+  "value": 0.5,
+  "note": "레벨당 개수 증가(내림)"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "radius",
+  "value": 1.6,
+  "note": "회전 반경(칸). 브러시는 이 반경의 55~100% 사이를 오가며 안쪽도 쓴다"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "dmg",
+  "value": 50,
+  "note": "브러시 1회 피해(10.16-f: 40 → 50, 리더 3종 중 가장 약했음)"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "dmgPerLv",
+  "value": 0.25,
+  "note": "레벨당 피해 증가 비율"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "spin",
+  "value": 4,
+  "note": "회전 속도(rad/초)"
+ },
+ {
+  "id": "robot",
+  "slot": "leader",
+  "key": "hitGap",
+  "value": 0.4,
+  "note": "같은 적을 다시 때리기까지(초)"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "dmg",
+  "value": 31,
+  "note": "냉기 탄 피해"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "dmgPerLv",
+  "value": 0.25,
+  "note": "레벨당 피해 증가 비율"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "cd",
+  "value": 0.6,
+  "note": "발사 간격(초)"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "count",
+  "value": 1,
+  "note": "한 번에 쏘는 수"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "countPerLv",
+  "value": 0.5,
+  "note": "레벨당 개수 증가(내림)"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "speed",
+  "value": 8,
+  "note": "탄속(칸/초)"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "range",
+  "value": 6,
+  "note": "사거리(칸)"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "slow",
+  "value": 0.35,
+  "note": "둔화율"
+ },
+ {
+  "id": "ac",
+  "slot": "leader",
+  "key": "slowSec",
+  "value": 1.5,
+  "note": "둔화 시간"
+ },
+ {
+  "id": "vac",
+  "slot": "comp",
+  "key": "cd",
+  "value": 7,
+  "note": "흡입 폭풍 간격(초)"
+ },
+ {
+  "id": "vac",
+  "slot": "comp",
+  "key": "radius",
+  "value": 2.2,
+  "note": "반경"
+ },
+ {
+  "id": "vac",
+  "slot": "comp",
+  "key": "dur",
+  "value": 2,
+  "note": "지속(초)"
+ },
+ {
+  "id": "vac",
+  "slot": "comp",
+  "key": "dps",
+  "value": 30,
+  "note": "초당 피해"
+ },
+ {
+  "id": "vac",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "robot",
+  "slot": "comp",
+  "key": "cd",
+  "value": 2.6,
+  "note": "돌격 간격(초)"
+ },
+ {
+  "id": "robot",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 55,
+  "note": "돌격 피해(경로 위 모든 적)"
+ },
+ {
+  "id": "robot",
+  "slot": "comp",
+  "key": "range",
+  "value": 4,
+  "note": "사거리"
+ },
+ {
+  "id": "robot",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "fridge",
+  "slot": "comp",
+  "key": "cd",
+  "value": 8,
+  "note": "급속 냉동 간격(초)"
+ },
+ {
+  "id": "fridge",
+  "slot": "comp",
+  "key": "radius",
+  "value": 2.2,
+  "note": "반경"
+ },
+ {
+  "id": "fridge",
+  "slot": "comp",
+  "key": "freeze",
+  "value": 1.5,
+  "note": "빙결(초)"
+ },
+ {
+  "id": "fridge",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 40,
+  "note": "피해"
+ },
+ {
+  "id": "fridge",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "ac",
+  "slot": "comp",
+  "key": "cd",
+  "value": 1.1,
+  "note": "냉기 탄 간격(초)"
+ },
+ {
+  "id": "ac",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 22,
+  "note": "피해"
+ },
+ {
+  "id": "ac",
+  "slot": "comp",
+  "key": "slow",
+  "value": 0.3,
+  "note": "둔화율"
+ },
+ {
+  "id": "ac",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "micro",
+  "slot": "comp",
+  "key": "cd",
+  "value": 3.6,
+  "note": "띵! 간격(초)"
+ },
+ {
+  "id": "micro",
+  "slot": "comp",
+  "key": "radius",
+  "value": 1.4,
+  "note": "폭발 반경"
+ },
+ {
+  "id": "micro",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 110,
+  "note": "폭발 피해"
+ },
+ {
+  "id": "micro",
+  "slot": "comp",
+  "key": "range",
+  "value": 6,
+  "note": "사거리"
+ },
+ {
+  "id": "micro",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "washer",
+  "slot": "comp",
+  "key": "cd",
+  "value": 2.2,
+  "note": "거품 탄 간격(초)"
+ },
+ {
+  "id": "washer",
+  "slot": "comp",
+  "key": "count",
+  "value": 3,
+  "note": "부채꼴 발사 수"
+ },
+ {
+  "id": "washer",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 24,
+  "note": "피해"
+ },
+ {
+  "id": "washer",
+  "slot": "comp",
+  "key": "splash",
+  "value": 0.9,
+  "note": "터지는 반경"
+ },
+ {
+  "id": "washer",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "pc",
+  "slot": "comp",
+  "key": "cdMul",
+  "value": 0.12,
+  "note": "모든 공격 간격 감소(레벨당)"
+ },
+ {
+  "id": "pc",
+  "slot": "comp",
+  "key": "dmgMul",
+  "value": 0.08,
+  "note": "모든 피해 증가(레벨당)"
+ },
+ {
+  "id": "fan",
+  "slot": "comp",
+  "key": "cd",
+  "value": 4,
+  "note": "바람 고리 간격(초)"
+ },
+ {
+  "id": "fan",
+  "slot": "comp",
+  "key": "radius",
+  "value": 2.2,
+  "note": "반경"
+ },
+ {
+  "id": "fan",
+  "slot": "comp",
+  "key": "knock",
+  "value": 1.3,
+  "note": "밀쳐내는 거리(칸)"
+ },
+ {
+  "id": "fan",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 14,
+  "note": "피해"
+ },
+ {
+  "id": "fan",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "gen",
+  "slot": "comp",
+  "key": "pickup",
+  "value": 0.4,
+  "note": "먼지 조각 흡입 범위 증가(레벨당)"
+ },
+ {
+  "id": "gen",
+  "slot": "comp",
+  "key": "xp",
+  "value": 0.15,
+  "note": "경험치 증가(레벨당)"
+ },
+ {
+  "id": "iron",
+  "slot": "comp",
+  "key": "cd",
+  "value": 3.2,
+  "note": "스팀 프레스 간격(초)"
+ },
+ {
+  "id": "iron",
+  "slot": "comp",
+  "key": "range",
+  "value": 2.6,
+  "note": "내리찍을 적을 찾는 거리"
+ },
+ {
+  "id": "iron",
+  "slot": "comp",
+  "key": "radius",
+  "value": 1.3,
+  "note": "내리찍는 범위"
+ },
+ {
+  "id": "iron",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 85,
+  "note": "피해"
+ },
+ {
+  "id": "iron",
+  "slot": "comp",
+  "key": "stun",
+  "value": 0.7,
+  "note": "기절(초, 보스 1/3)"
+ },
+ {
+  "id": "iron",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "stove",
+  "slot": "comp",
+  "key": "cd",
+  "value": 4.5,
+  "note": "화염 지대 간격(초)"
+ },
+ {
+  "id": "stove",
+  "slot": "comp",
+  "key": "range",
+  "value": 5,
+  "note": "사거리"
+ },
+ {
+  "id": "stove",
+  "slot": "comp",
+  "key": "radius",
+  "value": 1.3,
+  "note": "화염 지대 반경"
+ },
+ {
+  "id": "stove",
+  "slot": "comp",
+  "key": "dps",
+  "value": 34,
+  "note": "초당 피해"
+ },
+ {
+  "id": "stove",
+  "slot": "comp",
+  "key": "dur",
+  "value": 3,
+  "note": "지속(초)"
+ },
+ {
+  "id": "stove",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "boiler",
+  "slot": "comp",
+  "key": "cd",
+  "value": 3,
+  "note": "증기 고리 간격(초)"
+ },
+ {
+  "id": "boiler",
+  "slot": "comp",
+  "key": "radius",
+  "value": 2.3,
+  "note": "반경(리더 중심)"
+ },
+ {
+  "id": "boiler",
+  "slot": "comp",
+  "key": "dmg",
+  "value": 26,
+  "note": "피해"
+ },
+ {
+  "id": "boiler",
+  "slot": "comp",
+  "key": "burn",
+  "value": 12,
+  "note": "화상 초당 피해(3초)"
+ },
+ {
+  "id": "boiler",
+  "slot": "comp",
+  "key": "perLv",
+  "value": 0.4,
+  "note": "레벨당 강화"
+ },
+ {
+  "id": "tornado",
+  "slot": "combo",
+  "key": "radiusMul",
+  "value": 1.5,
+  "note": "흡입 소용돌이 반경 배율"
+ },
+ {
+  "id": "tornado",
+  "slot": "combo",
+  "key": "dpsMul",
+  "value": 2,
+  "note": "피해 배율"
+ },
+ {
+  "id": "tornado",
+  "slot": "combo",
+  "key": "slow",
+  "value": 0.4,
+  "note": "안쪽 적 둔화"
+ },
+ {
+  "id": "blizzard",
+  "slot": "combo",
+  "key": "freeze",
+  "value": 1,
+  "note": "냉기 탄 명중 시 빙결(초)"
+ },
+ {
+  "id": "blizzard",
+  "slot": "combo",
+  "key": "pierce",
+  "value": 2,
+  "note": "관통 수"
+ },
+ {
+  "id": "turbo",
+  "slot": "combo",
+  "key": "countAdd",
+  "value": 2,
+  "note": "브러시 추가 개수"
+ },
+ {
+  "id": "turbo",
+  "slot": "combo",
+  "key": "spinMul",
+  "value": 1.6,
+  "note": "회전 속도 배율"
+ },
+ {
+  "id": "turbo",
+  "slot": "combo",
+  "key": "dmgMul",
+  "value": 1.5,
+  "note": "피해 배율"
+ },
+ {
+  "id": "dust",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 6,
+  "note": "닿아 있을 때 초당 내구도 피해"
+ },
+ {
+  "id": "dust",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 1,
+  "note": "먼지 조각 경험치"
+ },
+ {
+  "id": "dust",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 1.25,
+  "note": "이동 속도"
+ },
+ {
+  "id": "fly",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 4
+ },
+ {
+  "id": "fly",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 1
+ },
+ {
+  "id": "fly",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 1.9
+ },
+ {
+  "id": "grease",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 12
+ },
+ {
+  "id": "grease",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 3
+ },
+ {
+  "id": "grease",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 0.9
+ },
+ {
+  "id": "mold",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 14
+ },
+ {
+  "id": "mold",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 4
+ },
+ {
+  "id": "mold",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 0.75
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 8
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 3
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 1
+ },
+ {
+  "id": "mite",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 3,
+  "note": "진드기: 약하지만 빠른 떼(10.16-f)"
+ },
+ {
+  "id": "mite",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 1
+ },
+ {
+  "id": "mite",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 2.15
+ },
+ {
+  "id": "moth",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 6,
+  "note": "나방: 단단한 비행(10.16-f)"
+ },
+ {
+  "id": "moth",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 3
+ },
+ {
+  "id": "moth",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 1.25
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "range",
+  "value": 4.6,
+  "note": "원거리: 이 거리까지 다가와 멈추고 포자를 쏜다(칸)"
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "shotCd",
+  "value": 2.6,
+  "note": "발사 간격(초)"
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "shotDmg",
+  "value": 9,
+  "note": "포자 1발 피해(무한 강화의 피해 배율 적용)"
+ },
+ {
+  "id": "spore",
+  "slot": "enemy",
+  "key": "shotSpeed",
+  "value": 3.6,
+  "note": "포자 속도(칸/초). 리더(3칸/초)와 비슷해 옆으로 비켜서 피한다"
+ },
+ {
+  "id": "boss_dust",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 30
+ },
+ {
+  "id": "boss_dust",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 40
+ },
+ {
+  "id": "boss_dust",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 0.9
+ },
+ {
+  "id": "boss_grease",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 34
+ },
+ {
+  "id": "boss_grease",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 45
+ },
+ {
+  "id": "boss_grease",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 0.85
+ },
+ {
+  "id": "boss_mold",
+  "slot": "enemy",
+  "key": "contactDps",
+  "value": 38
+ },
+ {
+  "id": "boss_mold",
+  "slot": "enemy",
+  "key": "xp",
+  "value": 50
+ },
+ {
+  "id": "boss_mold",
+  "slot": "enemy",
+  "key": "speed",
+  "value": 0.8
+ },
+ {
+  "id": "move",
+  "slot": "passive",
+  "key": "value",
+  "value": 0.1,
+  "note": "이동 속도 증가(단계당)"
+ },
+ {
+  "id": "move",
+  "slot": "passive",
+  "key": "max",
+  "value": 3,
+  "note": "최대 단계"
+ },
+ {
+  "id": "hp",
+  "slot": "passive",
+  "key": "value",
+  "value": 25,
+  "note": "최대 내구도 증가(단계당, 증가분만큼 회복)"
+ },
+ {
+  "id": "hp",
+  "slot": "passive",
+  "key": "max",
+  "value": 3,
+  "note": "최대 단계"
+ },
+ {
+  "id": "bonus",
+  "slot": "passive",
+  "key": "value",
+  "value": 25,
+  "note": "뽑을 강화가 다 떨어진 뒤 레벨 업 보상: 코인(회복 없음. 무한 회복으로 영원히 버티는 걸 막는다)"
+ }
+]

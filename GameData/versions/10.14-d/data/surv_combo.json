@@ -1,0 +1,23 @@
+[
+ {
+  "id": "tornado",
+  "leader": "vac",
+  "comp": "fan",
+  "nameKey": "surv.combo.tornado.name",
+  "descKey": "surv.combo.tornado.desc"
+ },
+ {
+  "id": "blizzard",
+  "leader": "ac",
+  "comp": "fridge",
+  "nameKey": "surv.combo.blizzard.name",
+  "descKey": "surv.combo.blizzard.desc"
+ },
+ {
+  "id": "turbo",
+  "leader": "robot",
+  "comp": "gen",
+  "nameKey": "surv.combo.turbo.name",
+  "descKey": "surv.combo.turbo.desc"
+ }
+]

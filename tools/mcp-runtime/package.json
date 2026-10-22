@@ -1,0 +1,9 @@
+{
+  "name": "clean-girls-mcp-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pinned browser automation runtime for the original web game comparison",
+  "dependencies": {
+    "@playwright/mcp": "0.0.83"
+  }
+}

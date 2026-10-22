@@ -1,0 +1,110 @@
+[
+ {
+  "unitId": "vac",
+  "art": "art/vac",
+  "keyColor": "#E0436B",
+  "bgColor": "#FCE6EC",
+  "taglineKey": "unit.vac.tagline",
+  "profileKey": "unit.vac.profile",
+  "motifKey": "unit.vac.motif"
+ },
+ {
+  "unitId": "robot",
+  "art": "art/robot",
+  "keyColor": "#6B7785",
+  "bgColor": "#EEF1F4",
+  "taglineKey": "unit.robot.tagline",
+  "profileKey": "unit.robot.profile",
+  "motifKey": "unit.robot.motif"
+ },
+ {
+  "unitId": "fridge",
+  "art": "art/fridge",
+  "keyColor": "#4A86D8",
+  "bgColor": "#E5F1FC",
+  "taglineKey": "unit.fridge.tagline",
+  "profileKey": "unit.fridge.profile",
+  "motifKey": "unit.fridge.motif"
+ },
+ {
+  "unitId": "ac",
+  "art": "art/ac",
+  "keyColor": "#2FA9C9",
+  "bgColor": "#E2F4F8",
+  "taglineKey": "unit.ac.tagline",
+  "profileKey": "unit.ac.profile",
+  "motifKey": "unit.ac.motif"
+ },
+ {
+  "unitId": "micro",
+  "art": "art/micro",
+  "keyColor": "#F08A3E",
+  "bgColor": "#FFF0E3",
+  "taglineKey": "unit.micro.tagline",
+  "profileKey": "unit.micro.profile",
+  "motifKey": "unit.micro.motif"
+ },
+ {
+  "unitId": "washer",
+  "art": "art/washer",
+  "keyColor": "#4AA8E0",
+  "bgColor": "#E4F2FB",
+  "taglineKey": "unit.washer.tagline",
+  "profileKey": "unit.washer.profile",
+  "motifKey": "unit.washer.motif"
+ },
+ {
+  "unitId": "pc",
+  "art": "art/pc",
+  "keyColor": "#2FBF9A",
+  "bgColor": "#E3F7F1",
+  "taglineKey": "unit.pc.tagline",
+  "profileKey": "unit.pc.profile",
+  "motifKey": "unit.pc.motif"
+ },
+ {
+  "unitId": "fan",
+  "art": "art/fan",
+  "keyColor": "#3B6FD8",
+  "bgColor": "#E5EEFC",
+  "taglineKey": "unit.fan.tagline",
+  "profileKey": "unit.fan.profile",
+  "motifKey": "unit.fan.motif"
+ },
+ {
+  "unitId": "gen",
+  "art": "art/gen",
+  "keyColor": "#E9A92E",
+  "bgColor": "#FFF5DE",
+  "taglineKey": "unit.gen.tagline",
+  "profileKey": "unit.gen.profile",
+  "motifKey": "unit.gen.motif"
+ },
+ {
+  "unitId": "iron",
+  "art": "art/iron",
+  "keyColor": "#7A55C8",
+  "bgColor": "#EEE8FA",
+  "taglineKey": "unit.iron.tagline",
+  "profileKey": "unit.iron.profile",
+  "motifKey": "unit.iron.motif"
+ },
+ {
+  "unitId": "stove",
+  "art": "art/stove",
+  "keyColor": "#E0582E",
+  "bgColor": "#FDEAE2",
+  "taglineKey": "unit.stove.tagline",
+  "profileKey": "unit.stove.profile",
+  "motifKey": "unit.stove.motif"
+ },
+ {
+  "unitId": "boiler",
+  "art": "art/boiler",
+  "keyColor": "#C46A3A",
+  "bgColor": "#FBEDE4",
+  "taglineKey": "unit.boiler.tagline",
+  "profileKey": "unit.boiler.profile",
+  "motifKey": "unit.boiler.motif"
+ }
+]

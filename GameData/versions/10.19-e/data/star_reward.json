@@ -1,0 +1,272 @@
+[
+ {
+  "id": 11,
+  "chapter": 1,
+  "needStars": 5,
+  "rewardGroup": 20011
+ },
+ {
+  "id": 12,
+  "chapter": 1,
+  "needStars": 10,
+  "rewardGroup": 20012
+ },
+ {
+  "id": 13,
+  "chapter": 1,
+  "needStars": 15,
+  "rewardGroup": 20013
+ },
+ {
+  "id": 21,
+  "chapter": 2,
+  "needStars": 5,
+  "rewardGroup": 20021
+ },
+ {
+  "id": 22,
+  "chapter": 2,
+  "needStars": 10,
+  "rewardGroup": 20022
+ },
+ {
+  "id": 23,
+  "chapter": 2,
+  "needStars": 15,
+  "rewardGroup": 20023
+ },
+ {
+  "id": 31,
+  "chapter": 3,
+  "needStars": 5,
+  "rewardGroup": 20031
+ },
+ {
+  "id": 32,
+  "chapter": 3,
+  "needStars": 10,
+  "rewardGroup": 20032
+ },
+ {
+  "id": 33,
+  "chapter": 3,
+  "needStars": 15,
+  "rewardGroup": 20033
+ },
+ {
+  "id": 41,
+  "chapter": 4,
+  "needStars": 5,
+  "rewardGroup": 20041
+ },
+ {
+  "id": 42,
+  "chapter": 4,
+  "needStars": 10,
+  "rewardGroup": 20042
+ },
+ {
+  "id": 43,
+  "chapter": 4,
+  "needStars": 15,
+  "rewardGroup": 20043
+ },
+ {
+  "id": 51,
+  "chapter": 5,
+  "needStars": 5,
+  "rewardGroup": 20051
+ },
+ {
+  "id": 52,
+  "chapter": 5,
+  "needStars": 10,
+  "rewardGroup": 20052
+ },
+ {
+  "id": 53,
+  "chapter": 5,
+  "needStars": 15,
+  "rewardGroup": 20053
+ },
+ {
+  "id": 61,
+  "chapter": 6,
+  "needStars": 5,
+  "rewardGroup": 20061
+ },
+ {
+  "id": 62,
+  "chapter": 6,
+  "needStars": 10,
+  "rewardGroup": 20062
+ },
+ {
+  "id": 63,
+  "chapter": 6,
+  "needStars": 15,
+  "rewardGroup": 20063
+ },
+ {
+  "id": 71,
+  "chapter": 7,
+  "needStars": 5,
+  "rewardGroup": 20071
+ },
+ {
+  "id": 72,
+  "chapter": 7,
+  "needStars": 10,
+  "rewardGroup": 20072
+ },
+ {
+  "id": 73,
+  "chapter": 7,
+  "needStars": 15,
+  "rewardGroup": 20073
+ },
+ {
+  "id": 81,
+  "chapter": 8,
+  "needStars": 5,
+  "rewardGroup": 20081
+ },
+ {
+  "id": 82,
+  "chapter": 8,
+  "needStars": 10,
+  "rewardGroup": 20082
+ },
+ {
+  "id": 83,
+  "chapter": 8,
+  "needStars": 15,
+  "rewardGroup": 20083
+ },
+ {
+  "id": 91,
+  "chapter": 9,
+  "needStars": 5,
+  "rewardGroup": 20091
+ },
+ {
+  "id": 92,
+  "chapter": 9,
+  "needStars": 10,
+  "rewardGroup": 20092
+ },
+ {
+  "id": 93,
+  "chapter": 9,
+  "needStars": 15,
+  "rewardGroup": 20093
+ },
+ {
+  "id": 101,
+  "chapter": 10,
+  "needStars": 5,
+  "rewardGroup": 20101
+ },
+ {
+  "id": 102,
+  "chapter": 10,
+  "needStars": 10,
+  "rewardGroup": 20102
+ },
+ {
+  "id": 103,
+  "chapter": 10,
+  "needStars": 15,
+  "rewardGroup": 20103
+ },
+ {
+  "id": 111,
+  "chapter": 11,
+  "needStars": 5,
+  "rewardGroup": 20111
+ },
+ {
+  "id": 112,
+  "chapter": 11,
+  "needStars": 10,
+  "rewardGroup": 20112
+ },
+ {
+  "id": 113,
+  "chapter": 11,
+  "needStars": 15,
+  "rewardGroup": 20113
+ },
+ {
+  "id": 121,
+  "chapter": 12,
+  "needStars": 5,
+  "rewardGroup": 20121
+ },
+ {
+  "id": 122,
+  "chapter": 12,
+  "needStars": 10,
+  "rewardGroup": 20122
+ },
+ {
+  "id": 123,
+  "chapter": 12,
+  "needStars": 15,
+  "rewardGroup": 20123
+ },
+ {
+  "id": 131,
+  "chapter": 13,
+  "needStars": 5,
+  "rewardGroup": 20131
+ },
+ {
+  "id": 132,
+  "chapter": 13,
+  "needStars": 10,
+  "rewardGroup": 20132
+ },
+ {
+  "id": 133,
+  "chapter": 13,
+  "needStars": 15,
+  "rewardGroup": 20133
+ },
+ {
+  "id": 141,
+  "chapter": 14,
+  "needStars": 5,
+  "rewardGroup": 20141
+ },
+ {
+  "id": 142,
+  "chapter": 14,
+  "needStars": 10,
+  "rewardGroup": 20142
+ },
+ {
+  "id": 143,
+  "chapter": 14,
+  "needStars": 15,
+  "rewardGroup": 20143
+ },
+ {
+  "id": 151,
+  "chapter": 15,
+  "needStars": 5,
+  "rewardGroup": 20151
+ },
+ {
+  "id": 152,
+  "chapter": 15,
+  "needStars": 10,
+  "rewardGroup": 20152
+ },
+ {
+  "id": 153,
+  "chapter": 15,
+  "needStars": 15,
+  "rewardGroup": 20153
+ }
+]

@@ -1,0 +1,17 @@
+# 10.18-c 가전 대청소 리그 밸런스 (node tools/sim/league.mjs 40, 단계마다 40판)
+# 완주 = 청결도가 남은 채 8라운드를 마침. 계정·편성은 league.mjs 위 주석. '성장끔' = 같은 계정에서 레벨·돌파 보너스를 뺀 결과
+단계1 새내기         완주  95%  평균 6.4승  남은 청결도 11.7  예) vac2 robot2 gen2 ac2 micro2 micro2
+단계1 중간          완주 100%  평균 7.5승  남은 청결도 17.6  예) robot2 vac2 vac2 micro2 micro2 gen2
+단계1 중간   성장끔 완주  98%  평균 6.2승  남은 청결도 11.6  예) robot2 vac2 vac2 micro2 micro2 gen2
+단계1 고수          완주 100%  평균 7.9승  남은 청결도 19.6  예) iron2 vac3 iron2 boiler2 washer1
+단계1 고수   성장끔 완주 100%  평균 7.5승  남은 청결도 17.8  예) iron2 vac3 iron2 boiler2 washer1
+단계2 새내기         완주  33%  평균 4.6승  남은 청결도 1.4  예) vac2 robot2 gen2 ac2 micro2 micro2
+단계2 중간          완주  78%  평균 5.5승  남은 청결도 5.6  예) robot2 vac2 vac2 micro2 micro2 ac2
+단계2 중간   성장끔 완주  28%  평균 4.6승  남은 청결도 1.4  예) vac2 robot2 vac2 gen2 ac2
+단계2 고수          완주 100%  평균 7.3승  남은 청결도 16.9  예) iron2 vac3 iron2 boiler2 washer1
+단계2 고수   성장끔 완주  98%  평균 6.2승  남은 청결도 9.9  예) iron2 vac3 iron2 boiler2 washer1
+단계3 새내기         완주   0%  평균 1.3승  남은 청결도 0.0  예) robot2 ac1 gen2 fan2 micro1
+단계3 중간          완주   0%  평균 3.0승  남은 청결도 0.0  예) vac2 robot2 vac2 ac1 ac1 micro1
+단계3 중간   성장끔 완주   0%  평균 1.6승  남은 청결도 0.0  예) robot2 vac2 vac2 gen2
+단계3 고수          완주  70%  평균 5.0승  남은 청결도 3.6  예) iron2 vac3 washer1 ac2 washer1
+단계3 고수   성장끔 완주   0%  평균 3.6승  남은 청결도 0.0  예) fridge1 iron2 vac3 fridge1 washer1

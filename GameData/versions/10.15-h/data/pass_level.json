@@ -1,0 +1,182 @@
+[
+ {
+  "level": 1,
+  "xp": 0,
+  "freeGroup": 33001,
+  "paidGroup": 34001
+ },
+ {
+  "level": 2,
+  "xp": 100,
+  "freeGroup": 33002,
+  "paidGroup": 34002
+ },
+ {
+  "level": 3,
+  "xp": 200,
+  "freeGroup": 33003,
+  "paidGroup": 34003
+ },
+ {
+  "level": 4,
+  "xp": 300,
+  "freeGroup": 33004,
+  "paidGroup": 34004
+ },
+ {
+  "level": 5,
+  "xp": 400,
+  "freeGroup": 33005,
+  "paidGroup": 34005
+ },
+ {
+  "level": 6,
+  "xp": 500,
+  "freeGroup": 33006,
+  "paidGroup": 34006
+ },
+ {
+  "level": 7,
+  "xp": 600,
+  "freeGroup": 33007,
+  "paidGroup": 34007
+ },
+ {
+  "level": 8,
+  "xp": 700,
+  "freeGroup": 33008,
+  "paidGroup": 34008
+ },
+ {
+  "level": 9,
+  "xp": 800,
+  "freeGroup": 33009,
+  "paidGroup": 34009
+ },
+ {
+  "level": 10,
+  "xp": 900,
+  "freeGroup": 33010,
+  "paidGroup": 34010
+ },
+ {
+  "level": 11,
+  "xp": 1000,
+  "freeGroup": 33011,
+  "paidGroup": 34011
+ },
+ {
+  "level": 12,
+  "xp": 1100,
+  "freeGroup": 33012,
+  "paidGroup": 34012
+ },
+ {
+  "level": 13,
+  "xp": 1200,
+  "freeGroup": 33013,
+  "paidGroup": 34013
+ },
+ {
+  "level": 14,
+  "xp": 1300,
+  "freeGroup": 33014,
+  "paidGroup": 34014
+ },
+ {
+  "level": 15,
+  "xp": 1400,
+  "freeGroup": 33015,
+  "paidGroup": 34015
+ },
+ {
+  "level": 16,
+  "xp": 1500,
+  "freeGroup": 33016,
+  "paidGroup": 34016
+ },
+ {
+  "level": 17,
+  "xp": 1600,
+  "freeGroup": 33017,
+  "paidGroup": 34017
+ },
+ {
+  "level": 18,
+  "xp": 1700,
+  "freeGroup": 33018,
+  "paidGroup": 34018
+ },
+ {
+  "level": 19,
+  "xp": 1800,
+  "freeGroup": 33019,
+  "paidGroup": 34019
+ },
+ {
+  "level": 20,
+  "xp": 1900,
+  "freeGroup": 33020,
+  "paidGroup": 34020
+ },
+ {
+  "level": 21,
+  "xp": 2000,
+  "freeGroup": 33021,
+  "paidGroup": 34021
+ },
+ {
+  "level": 22,
+  "xp": 2100,
+  "freeGroup": 33022,
+  "paidGroup": 34022
+ },
+ {
+  "level": 23,
+  "xp": 2200,
+  "freeGroup": 33023,
+  "paidGroup": 34023
+ },
+ {
+  "level": 24,
+  "xp": 2300,
+  "freeGroup": 33024,
+  "paidGroup": 34024
+ },
+ {
+  "level": 25,
+  "xp": 2400,
+  "freeGroup": 33025,
+  "paidGroup": 34025
+ },
+ {
+  "level": 26,
+  "xp": 2500,
+  "freeGroup": 33026,
+  "paidGroup": 34026
+ },
+ {
+  "level": 27,
+  "xp": 2600,
+  "freeGroup": 33027,
+  "paidGroup": 34027
+ },
+ {
+  "level": 28,
+  "xp": 2700,
+  "freeGroup": 33028,
+  "paidGroup": 34028
+ },
+ {
+  "level": 29,
+  "xp": 2800,
+  "freeGroup": 33029,
+  "paidGroup": 34029
+ },
+ {
+  "level": 30,
+  "xp": 2900,
+  "freeGroup": 33030,
+  "paidGroup": 34030
+ }
+]

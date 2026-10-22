@@ -1,0 +1,57 @@
+[
+ {
+  "id": 1,
+  "nameKey": "area.1.name",
+  "shortKey": "area.1.short",
+  "subKey": "area.1.sub",
+  "descKey": "area.1.desc",
+  "chFrom": 1,
+  "chTo": 3,
+  "color": "#E8842A",
+  "bg": "#FFF1E3"
+ },
+ {
+  "id": 2,
+  "nameKey": "area.2.name",
+  "shortKey": "area.2.short",
+  "subKey": "area.2.sub",
+  "descKey": "area.2.desc",
+  "chFrom": 4,
+  "chTo": 6,
+  "color": "#8B6BD9",
+  "bg": "#F0EBFB"
+ },
+ {
+  "id": 3,
+  "nameKey": "area.3.name",
+  "shortKey": "area.3.short",
+  "subKey": "area.3.sub",
+  "descKey": "area.3.desc",
+  "chFrom": 7,
+  "chTo": 9,
+  "color": "#3D8BD9",
+  "bg": "#E4EFFA"
+ },
+ {
+  "id": 4,
+  "nameKey": "area.4.name",
+  "shortKey": "area.4.short",
+  "subKey": "area.4.sub",
+  "descKey": "area.4.desc",
+  "chFrom": 10,
+  "chTo": 12,
+  "color": "#3FAE7A",
+  "bg": "#E3F5EC"
+ },
+ {
+  "id": 5,
+  "nameKey": "area.5.name",
+  "shortKey": "area.5.short",
+  "subKey": "area.5.sub",
+  "descKey": "area.5.desc",
+  "chFrom": 13,
+  "chTo": 15,
+  "color": "#B04A6E",
+  "bg": "#F8E6EE"
+ }
+]
