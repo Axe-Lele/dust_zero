@@ -81,6 +81,26 @@ namespace DustZero.Core.Meta
         public int runs;
     }
 
+
+    /// <summary>
+    /// 먼지 타워 기록. 층마다 첫 클리어와 보너스 목표를 따로 센다 — 둘 다 한 번씩만 준다.
+    /// 지난 편성은 칸과 가전을 같은 자리끼리 짝지은 두 줄로 남긴다(Dictionary 보다
+    /// JSON 으로 오갈 때 순서가 안 흔들린다).
+    /// </summary>
+    public sealed class TowerRecord
+    {
+        /// <summary>깬 가장 높은 층.</summary>
+        public int best;
+        public Dictionary<string, bool> cleared = new();
+        public Dictionary<string, bool> bonus = new();
+        /// <summary>층마다 누구로 깼는지(최대 셋).</summary>
+        public Dictionary<string, List<string>> who = new();
+        /// <summary>지난 편성의 칸 번호.</summary>
+        public List<int> form = new();
+        /// <summary>같은 자리의 가전 id.</summary>
+        public List<string> formTypes = new();
+    }
+
     /// <summary>
     /// Season pass progress. Reset wholesale when the season rolls over, exactly as the
     /// original does: a new season is a new object, not a cleared one.
@@ -235,6 +255,7 @@ namespace DustZero.Core.Meta
         public SurvivorRecord surv = new();
         public CoopRecord coop = new();
         public LeagueRecord league = new();
+        public TowerRecord tower = new();
 
         public PassState pass = new();
         public ShopState shop = new();
@@ -321,6 +342,16 @@ namespace DustZero.Core.Meta
                 best = new Dictionary<string, int>(league.best ?? new Dictionary<string, int>()),
                 cleared = new Dictionary<string, bool>(league.cleared ?? new Dictionary<string, bool>()),
             };
+            c.tower = new TowerRecord
+            {
+                best = tower.best,
+                cleared = new Dictionary<string, bool>(tower.cleared ?? new Dictionary<string, bool>()),
+                bonus = new Dictionary<string, bool>(tower.bonus ?? new Dictionary<string, bool>()),
+                form = new List<int>(tower.form ?? new List<int>()),
+                formTypes = new List<string>(tower.formTypes ?? new List<string>()),
+            };
+            foreach (var kv in tower.who ?? new Dictionary<string, List<string>>())
+                c.tower.who[kv.Key] = new List<string>(kv.Value ?? new List<string>());
             c.att = new AttendanceState { n = att.n, last = att.last };
             c.pool = new PoolState
             {

@@ -1,4 +1,4 @@
-// 가전 대청소 리그의 말과 전투 단위.
+﻿// 가전 대청소 리그의 말과 전투 단위.
 //
 // 원본 index.html 의 `LG.bench` / `LG.board` 원소와 `B.units` 원소를 그대로 옮긴 것이다.
 // 전투 단위는 한 판 동안 수백 번 고쳐 쓰이므로 class 다(struct 로 두면 값 복사가 섞인다).
@@ -80,6 +80,18 @@ namespace DustZero.Core.League
 
         /// <summary>판 위 어느 칸에서 왔는지(아군만).</summary>
         public int Cell = -1;
+
+        // ---- 먼지 타워 전용
+        /// <summary>움직이지도 때리지도 않는다 — 지키기 층의 공기청정기.</summary>
+        public bool Immobile;
+        /// <summary>싸우지 않고 도망만 다닌다 — 황금 먼지.</summary>
+        public bool Flees;
+        /// <summary>도망치다 사라졌다(잡힌 것이 아니다).</summary>
+        public bool Fled;
+        /// <summary>우리 가전을 베껴 만든 적 — 거울 층.</summary>
+        public bool Mirror;
+        /// <summary>움직임이 제 각각으로 보이게 하는 씨앗.</summary>
+        public float Seed;
     }
 
     /// <summary>시너지 한 줄의 현재 상태 — 화면이 그대로 그린다.</summary>

@@ -18,7 +18,7 @@ using DustZero.Data;
 
 namespace DustZero.Core.League
 {
-    public sealed class LeagueSim
+    public sealed partial class LeagueSim
     {
         /// <summary>판은 7칸 가로, 우리 자리는 아래 3줄이다.</summary>
         public const int Cols = 7, OurRows = 3, Rows = 6;
@@ -86,6 +86,10 @@ namespace DustZero.Core.League
         public Dictionary<string, float> DamageLog { get; } = new();
 
         readonly List<Zone> _zones = new();
+        /// <summary>이 전투의 제한 시간(초). 리그는 config, 타워는 층 규칙이 정한다.</summary>
+        float _limit;
+        /// <summary>이 시각까지는 때려도 마나가 차지 않는다 — 타워 '정전' 규칙.</summary>
+        float _manaLock;
         Dictionary<string, float> _eff = new();
         float _chill;
         int _battleUid;
@@ -94,11 +98,19 @@ namespace DustZero.Core.League
         {
             public float X, Y, R, Dps, T, Tick;
             public LeagueUnit Src;
+            /// <summary>누구를 태우는 바닥인지. 기본은 먼지(1).</summary>
+            public int Side = 1;
+            /// <summary>0 보다 크면 밟은 쪽이 느려진다.</summary>
+            public float Slow;
         }
 
         // ------------------------------------------------------------------ 시작
 
         public LeagueSim(GameDatabase db, PlayerProfile profile, int tier, IRandom rng)
+            : this(db, profile, tier, rng, null) { }
+
+        LeagueSim(GameDatabase db, PlayerProfile profile, int tier, IRandom rng,
+                  TowerFloorRow towerFloor)
         {
             _db = db ?? throw new ArgumentNullException(nameof(db));
             _profile = profile ?? throw new ArgumentNullException(nameof(profile));
@@ -113,6 +125,13 @@ namespace DustZero.Core.League
             Level = _cfg.leagueStartLv;
             Bench = new LeaguePiece[Math.Max(1, _cfg.leagueBench)];
             Shop = new string[Math.Max(1, _cfg.leagueShopSize)];
+
+            if (towerFloor != null)
+            {
+                // 타워는 상점이 없다 — 보유 가전을 골라 놓고 한 판이다.
+                TowerInit(towerFloor);
+                return;
+            }
 
             BuildPool();
             foreach (var t in _pool) _bag[t] = CopiesFor(t);
@@ -467,6 +486,9 @@ namespace DustZero.Core.League
                 float StarMul, float Growth, float ExclMul) UnitStats(LeaguePiece p)
         {
             var b = _db.LeagueUnits[p.Type];
+            // 타워는 수치를 제 규칙으로 만든다 — 계정 성장이 상한 없이 들어가고 층 규칙이 붙는다.
+            if (IsTower) return TowerUnitStats(p, b);
+
             float sm = p.Star - 1 < (_cfg.leagueStarMul?.Length ?? 0)
                 ? _cfg.leagueStarMul[p.Star - 1] : 1f;
 
@@ -504,11 +526,23 @@ namespace DustZero.Core.League
             BattleTimeout = false;
             _battleUid = 0;
 
+            _limit = _cfg.leagueRoundTime;
+            _manaLock = 0f;
+
             SpawnAllies(eff);
-            var round = _db.LeagueRounds.FirstOrDefault(r => r.round == Round)
-                        ?? _db.LeagueRounds.LastOrDefault();
-            foreach (var q in SquadPositions(round))
-                SpawnEnemy(q.Id, q.X + (_rng.Value - 0.5f) * 0.25f, q.Y, round);
+            if (IsTower)
+            {
+                foreach (var q in SquadPositions(TowerSquad()))
+                    SpawnEnemy(q.Id, q.X + (_rng.Value - 0.5f) * 0.25f, q.Y, null);
+                TowerSetupBattle();
+            }
+            else
+            {
+                var round = _db.LeagueRounds.FirstOrDefault(r => r.round == Round)
+                            ?? _db.LeagueRounds.LastOrDefault();
+                foreach (var q in SquadPositions(round))
+                    SpawnEnemy(q.Id, q.X + (_rng.Value - 0.5f) * 0.25f, q.Y, round);
+            }
 
             Phase = LeaguePhase.Battle;
             return true;
@@ -552,9 +586,12 @@ namespace DustZero.Core.League
 
         /// <summary>적 자리: 근접은 앞줄(2), 공중은 가운데(1), 원거리와 보스는 뒷줄(0).</summary>
         IEnumerable<(string Id, float X, float Y)> SquadPositions(LeagueRoundRow round)
+            => SquadPositions(round?.squad);
+
+        IEnumerable<(string Id, float X, float Y)> SquadPositions(string squad)
         {
             var rows = new List<string>[] { new(), new(), new() };
-            foreach (var (id, n) in ParseSquad(round?.squad))
+            foreach (var (id, n) in ParseSquad(squad))
             {
                 if (!_db.LeagueEnemies.TryGetValue(id, out var e)) continue;
                 int row = id.StartsWith("boss_", StringComparison.Ordinal) ? 0
@@ -668,7 +705,8 @@ namespace DustZero.Core.League
             tgt.Hp -= d;
             tgt.HitT = 0.12f;
 
-            if (tgt.Side == 0) tgt.Mana = Math.Min(tgt.MaxMana, tgt.Mana + _cfg.leagueManaPerHit);
+            if (tgt.Side == 0 && BattleTime >= _manaLock)
+                tgt.Mana = Math.Min(tgt.MaxMana, tgt.Mana + _cfg.leagueManaPerHit);
             if (src != null && src.Side == 0)
             {
                 var key = src.Type + src.Star;
@@ -679,6 +717,7 @@ namespace DustZero.Core.League
             {
                 tgt.Alive = false;
                 tgt.Hp = 0f;
+                if (IsTower) TowerOnDeath(tgt);
                 if (!string.IsNullOrEmpty(tgt.Split) && tgt.SplitN > 0)
                 {
                     var round = _db.LeagueRounds.FirstOrDefault(r => r.round == Round);
@@ -815,6 +854,7 @@ namespace DustZero.Core.League
         {
             if (Phase != LeaguePhase.Battle || BattleOver) return;
             BattleTime += dt;
+            if (IsTower) TowerTick(dt);
 
             foreach (var z in _zones)
             {
@@ -822,8 +862,16 @@ namespace DustZero.Core.League
                 z.Tick -= dt;
                 if (z.Tick > 0f) continue;
                 z.Tick = 0.25f;
-                foreach (var o in Near(z.X, z.Y, z.R, 1).ToList())
-                    if (!o.Fly) Hit(z.Src, o, z.Dps * 0.25f);
+                foreach (var o in Near(z.X, z.Y, z.R, z.Side).ToList())
+                {
+                    if (o.Fly) continue;
+                    Hit(z.Src, o, z.Dps * 0.25f);
+                    if (z.Slow > 0f)
+                    {
+                        o.SlowT = Math.Max(o.SlowT, 0.4f);
+                        o.SlowAmt = z.Slow;
+                    }
+                }
             }
             _zones.RemoveAll(z => z.T <= 0f);
 
@@ -844,6 +892,8 @@ namespace DustZero.Core.League
                 u.BreakT = Math.Max(0f, u.BreakT - dt);
 
                 if (u.StunT > 0f || u.FrozenT > 0f) continue;
+                if (u.Immobile) continue;                       // 타워: 공기청정기는 가만히
+                if (u.Flees) { TowerFlee(u, dt); continue; }     // 타워: 황금 먼지는 도망만
 
                 if (u.Target == null || !CanHit(u, u.Target)) u.Target = PickTarget(u);
                 var tg = u.Target;
@@ -851,11 +901,14 @@ namespace DustZero.Core.League
 
                 float d = Dist(u, tg);
                 float reach = u.Range + tg.Radius * 0.6f + 0.25f;
-                u.AtkTimer -= dt * (1f + (u.HasteT > 0f ? u.HasteAmt : 0f));
+                bool wet = IsTower && !u.Fly && TowerWet(u);
+                u.AtkTimer -= dt * (1f + (u.HasteT > 0f ? u.HasteAmt : 0f))
+                                 * (wet ? 1f - Tower.WaterAtk : 1f);
 
                 if (d > reach)
                 {
-                    float sp = u.Speed * (u.SlowT > 0f ? 1f - u.SlowAmt : 1f) * dt;
+                    float sp = u.Speed * (u.SlowT > 0f ? 1f - u.SlowAmt : 1f)
+                             * (wet ? 1f - Tower.WaterMove : 1f) * dt;
                     float move = Math.Min(sp, d - reach + 0.01f);
                     u.X += (tg.X - u.X) / d * move;
                     u.Y += (tg.Y - u.Y) / d * move;
@@ -868,7 +921,8 @@ namespace DustZero.Core.League
                     u.Kick = 0.25f;
                     if (u.Side == 0)
                     {
-                        u.Mana = Math.Min(u.MaxMana, u.Mana + _cfg.leagueManaPerAtk);
+                        if (BattleTime >= _manaLock)
+                            u.Mana = Math.Min(u.MaxMana, u.Mana + _cfg.leagueManaPerAtk);
                         if (u.Mana >= u.MaxMana) Cast(u);
                     }
                 }
@@ -906,12 +960,18 @@ namespace DustZero.Core.League
 
         void Settle()
         {
-            bool ours = Units.Any(u => u.Side == 0 && u.Alive);
-            var foes = Units.Where(u => u.Side == 1 && u.Alive).ToList();
+            bool ours = Units.Any(u => u.Side == 0 && u.Alive && !u.Immobile);
+            var foes = Units.Where(u => u.Side == 1 && u.Alive && !u.Flees).ToList();
 
-            if (foes.Count == 0) { BattleOver = true; BattleWin = true; }
+            if (IsTower && TowerSettle(ours)) { }
+            else if (foes.Count == 0)
+            {
+                // 타워의 황금 먼지는 잡거나 도망갈 때까지 기다린다.
+                bool goldStill = IsTower && Tower.Gold != null && Tower.Gold.Alive;
+                if (!goldStill) { BattleOver = true; BattleWin = true; }
+            }
             else if (!ours) { BattleOver = true; BattleWin = false; }
-            else if (BattleTime >= _cfg.leagueRoundTime)
+            else if (BattleTime >= _limit)
             {
                 BattleOver = true;
                 BattleWin = false;
@@ -927,7 +987,7 @@ namespace DustZero.Core.League
         /// <summary>화면 없이 전투를 끝까지 돌린다. 테스트와 봇이 쓴다.</summary>
         public void RunBattleToEnd()
         {
-            int guard = (int)(30f * _cfg.leagueRoundTime) + 60;
+            int guard = (int)(30f * Math.Max(_limit, _cfg.leagueRoundTime)) + 60;
             while (!BattleOver && guard-- > 0) Step(1f / 30f);
         }
 
