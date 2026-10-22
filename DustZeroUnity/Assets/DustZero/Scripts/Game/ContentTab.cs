@@ -71,16 +71,17 @@ namespace DustZero.Game
         /// <summary>가전 대청소 리그로 출동.</summary>
         public event Action LeagueChosen;
 
+        /// <summary>먼지 타워로 출동. 층 목록을 먼저 띄운다.</summary>
+        public event Action TowerChosen;
+
         public void Bind(GameServices services)
         {
             _svc = services;
             if (goButton != null) goButton.SetAction(() => SurvivorChosen?.Invoke());
             if (coopCard != null && coopCard.Go != null)
                 coopCard.Go.SetAction(() => CoopChosen?.Invoke());
-            // 먼지 타워·리그는 아직 모드 자체가 이식되지 않았다. 카드는 원본대로 보여 주되
-            // 누르면 그렇다고 말한다 — 열린 척하고 빈 화면으로 보내지 않는다.
             if (towerCard != null && towerCard.Go != null)
-                towerCard.Go.SetAction(() => Claimed?.Invoke(NotPortedYet));
+                towerCard.Go.SetAction(() => TowerChosen?.Invoke());
             if (leagueCard != null && leagueCard.Go != null)
                 leagueCard.Go.SetAction(() => LeagueChosen?.Invoke());
             BuildLeaders();
@@ -302,15 +303,8 @@ namespace DustZero.Game
         }
 
         /// <summary>
-        /// 먼지 타워는 표와 카드만 이식돼 있고 전투가 아직 없다. 카드를 눌렀을 때 이 말을
-        /// 띄운다 — 원본 문구가 아니라 이식 상태를 알리는 우리 쪽 안내다.
-        /// (리그는 2026-10-22 에 들어갔으므로 더는 이 안내를 쓰지 않는다.)
-        /// </summary>
-        const string NotPortedYet = "이 모드는 아직 이식 중이에요. 카드의 정보만 먼저 보여 줘요.";
-
-        /// <summary>
         /// 먼지 타워 카드(원본 `renderTowerCard`). 층 수·다음 큰 보상·보너스 남은 층은
-        /// tower_floor 표에서 세고, 진행도는 아직 저장 기록이 없어 0 이다.
+        /// tower_floor 표와 저장 기록에서 센다.
         /// </summary>
         void RefreshTower(PlayerProfile p)
         {
@@ -319,19 +313,27 @@ namespace DustZero.Game
             int floors = db.TowerFloors.Count;
             bool unlocked = p.TowerUnlocked;
 
+            int best = p.TowerState.best;
+            int cleared = 0, bonusLeft = 0;
+            foreach (var f in db.TowerFloors)
+            {
+                if (!p.TowerCleared(f.floor)) continue;
+                cleared++;
+                if (!p.TowerBonusDone(f.floor)) bonusLeft++;
+            }
+
             // 원본 `nb`: 아직 깨지 않은 층 중 5의 배수인 첫 층.
             int next = 0;
             foreach (var f in db.TowerFloors)
-                if (f.floor % 5 == 0) { next = f.floor; break; }
+                if (f.floor > best && f.floor % 5 == 0) { next = f.floor; break; }
 
-            var first = db.TowerFloor(1);
+            int top = p.TowerTopFloor();
+            var first = db.TowerFloor(top);
             string sub = string.Empty;
             if (unlocked && first != null)
             {
-                string rule = !string.IsNullOrEmpty(first.rule)
-                              && db.TowerRules.TryGetValue(first.rule, out var r)
-                    ? db.Text(r.nameKey) : "규칙 없음";
-                sub = $"다음: 1층 {db.Text(first.nameKey)} · {rule}";
+                sub = $"다음: {top}층 {db.Text(first.nameKey)} · "
+                    + $"{DustZero.Core.League.TowerText.RuleName(db, first)}";
             }
 
             towerCard.Set(
@@ -344,9 +346,9 @@ namespace DustZero.Game
                 },
                 new[]
                 {
-                    ("청소한 층", $"0/{floors}"),
+                    ("청소한 층", $"{cleared}/{floors}"),
                     ("다음 큰 보상", next > 0 ? $"{next}층" : "—"),
-                    ("보너스 남음", "0층"),
+                    ("보너스 남음", $"{bonusLeft}층"),
                 },
                 sub, unlocked ? "입장" : p.TowerLockMessage, unlocked);
         }

@@ -443,6 +443,10 @@ namespace DustZero.Editor
             public LeagueTierCard LeagueTier;
             /// <summary>리그 판 위에 겹치는 투명 단추.</summary>
             public UiButton LeagueCell;
+            /// <summary>먼지 타워 출전 목록의 한 칸.</summary>
+            public TowerOwnCell TowerOwn;
+            /// <summary>먼지 타워 층 목록의 한 줄.</summary>
+            public TowerFloorCard TowerFloor;
         }
 
         static Prefabs BuildPrefabs(Shapes art, Fonts fonts, SpriteLibrary library)
@@ -470,6 +474,8 @@ namespace DustZero.Editor
             p.LeagueShop = BuildLeagueShopPrefab(fonts);
             p.LeagueCell = BuildLeagueCellPrefab(fonts);
             p.LeagueTier = BuildLeagueTierPrefab(fonts);
+            p.TowerOwn = BuildTowerOwnPrefab(fonts);
+            p.TowerFloor = BuildTowerFloorPrefab(fonts);
             AssertAllSaved(p);
             return p;
         }
@@ -559,6 +565,8 @@ namespace DustZero.Editor
                 LeagueShop = Load<LeagueShopCard>("LeagueShopCard"),
                 LeagueCell = Load<UiButton>("LeagueCell"),
                 LeagueTier = Load<LeagueTierCard>("LeagueTierCard"),
+                TowerOwn = Load<TowerOwnCell>("TowerOwnCell"),
+                TowerFloor = Load<TowerFloorCard>("TowerFloorCard"),
             };
             AssertAllLoaded(reloaded);
             return reloaded;
@@ -5859,6 +5867,287 @@ namespace DustZero.Editor
         }
 
         /// <summary>
+        /// 먼지 타워 출전 목록의 한 칸(원본 `.tw-oc`). 실측 62.16x54 · 모서리 10 ·
+        /// 테두리 1.5 · 아이콘 34 · `Lv` 10.5 LED(아래 2) · ★ 왼쪽 위 8.5.
+        /// </summary>
+        static TowerOwnCell BuildTowerOwnPrefab(Fonts fonts)
+        {
+            int radius = Mathf.RoundToInt(UiTheme.Px(10f));
+            var go = UI("TowerOwnCell", null, out var rt);
+            rt.sizeDelta = new Vector2(UiTheme.Px(62.16f), UiTheme.Py(54f));
+
+            var face = go.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("tw_oc", radius);
+            face.type = Image.Type.Sliced;
+            face.color = Color.white;
+
+            var button = go.AddComponent<UiButton>();
+
+            var lineRt = UiKit.Node("Outline", rt);
+            Stretch(lineRt);
+            var outline = lineRt.gameObject.AddComponent<Image>();
+            outline.sprite = GeneratedArt.RoundedOutlineNineSlice("tw_oc_line", radius,
+                Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            outline.type = Image.Type.Sliced;
+            outline.color = UiTheme.PanelLine;
+            outline.raycastTarget = false;
+
+            var picRt = UiKit.Node("Portrait", rt);
+            picRt.anchorMin = picRt.anchorMax = new Vector2(0.5f, 1f);
+            picRt.pivot = new Vector2(0.5f, 1f);
+            picRt.anchoredPosition = new Vector2(0f, -UiTheme.Py(3f));
+            picRt.sizeDelta = new Vector2(UiTheme.Sq(34f), UiTheme.Sq(34f));
+            var portrait = picRt.gameObject.AddComponent<Image>();
+            portrait.preserveAspect = true;
+            portrait.raycastTarget = false;
+
+            var level = UiKit.Label("Level", rt, fonts.Number, UiTheme.Py(10.5f), UiTheme.Ink,
+                                    TextAlignmentOptions.Center, out var lvRt, "Lv1");
+            level.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(lvRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(0f, UiTheme.Py(2f)),
+                   new Vector2(0f, UiTheme.Py(2f) + UiTheme.Line(UiTheme.Py(10.5f))));
+
+            var star = UiKit.Label("Star", rt, fonts.Body, UiTheme.Py(8.5f),
+                                   UiTheme.TowerBonusLine, TextAlignmentOptions.TopLeft,
+                                   out var stRt, "");
+            star.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(stRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(3f), -UiTheme.Py(2f) - UiTheme.Line(UiTheme.Py(8.5f))),
+                   new Vector2(0f, -UiTheme.Py(2f)));
+
+            // '출전' 띠 — 원본은 칸 위에서 16 떨어진 자리에 파란 알약으로 붙인다.
+            var inRt = UiKit.Node("InBadge", rt);
+            Anchor(inRt, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                   new Vector2(-UiTheme.Px(18f),
+                               -UiTheme.Py(16f) - UiTheme.Row(UiTheme.Py(10f), UiTheme.Py(14f))),
+                   new Vector2(UiTheme.Px(18f), -UiTheme.Py(16f)));
+            var inFace = inRt.gameObject.AddComponent<Image>();
+            inFace.sprite = GeneratedArt.RoundedNineSlice("tw_oc_in", Mathf.RoundToInt(UiTheme.Px(6f)));
+            inFace.type = Image.Type.Sliced;
+            inFace.color = UiTheme.Navy;
+            inFace.raycastTarget = false;
+            var inLabel = UiKit.Label("Text", inRt, fonts.Body, UiTheme.Py(10f), Color.white,
+                                      TextAlignmentOptions.Center, out var inLblRt, "출전");
+            inLabel.textWrappingMode = TextWrappingModes.NoWrap;
+            Stretch(inLblRt);
+            inRt.gameObject.SetActive(false);
+
+            // '추천' 띠 — 오른쪽 위.
+            var hotRt = UiKit.Node("HotBadge", rt);
+            Anchor(hotRt, new Vector2(1f, 1f), new Vector2(1f, 1f),
+                   new Vector2(-UiTheme.Px(26f),
+                               -UiTheme.Py(2f) - UiTheme.Row(UiTheme.Py(8.5f), UiTheme.Py(12f))),
+                   new Vector2(-UiTheme.Px(2f), -UiTheme.Py(2f)));
+            var hotFace = hotRt.gameObject.AddComponent<Image>();
+            hotFace.sprite = GeneratedArt.RoundedNineSlice("tw_oc_hot", Mathf.RoundToInt(UiTheme.Px(5f)));
+            hotFace.type = Image.Type.Sliced;
+            hotFace.color = UiTheme.Danger;
+            hotFace.raycastTarget = false;
+            var hotLabel = UiKit.Label("Text", hotRt, fonts.Body, UiTheme.Py(8.5f), Color.white,
+                                       TextAlignmentOptions.Center, out var hotLblRt, "추천");
+            hotLabel.textWrappingMode = TextWrappingModes.NoWrap;
+            Stretch(hotLblRt);
+            hotRt.gameObject.SetActive(false);
+
+            var cell = go.AddComponent<TowerOwnCell>();
+            Wire(cell, ("face", face), ("outline", outline), ("portrait", portrait),
+                 ("levelLabel", level), ("starLabel", star),
+                 ("inBadge", inRt.gameObject), ("hotBadge", hotRt.gameObject),
+                 ("button", button));
+            return SavePrefab<TowerOwnCell>(go, "TowerOwnCell");
+        }
+
+        /// <summary>
+        /// 층 목록의 한 줄(원본 `.tw-fl`). 실측 346.9x47 · 30/132/1fr 격자에 간격 7 ·
+        /// 번호 16 LED · 창 그림 129.4x39.2 · 이름 12.5 · 보상 11.
+        /// </summary>
+        static TowerFloorCard BuildTowerFloorPrefab(Fonts fonts)
+        {
+            int radius = Mathf.RoundToInt(UiTheme.Px(10f));
+            var go = UI("TowerFloorCard", null, out var rt);
+            rt.sizeDelta = new Vector2(UiTheme.Px(346.9f), UiTheme.Py(47f));
+            var le = go.AddComponent<LayoutElement>();
+            le.minHeight = le.preferredHeight = UiTheme.Py(47f);
+
+            var face = go.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("tw_fl", radius);
+            face.type = Image.Type.Sliced;
+            face.color = UiTheme.TowerFloorOpen;
+
+            var button = go.AddComponent<UiButton>();
+
+            var ringRt = UiKit.Node("Ring", rt);
+            Stretch(ringRt);
+            var ring = ringRt.gameObject.AddComponent<Image>();
+            ring.sprite = GeneratedArt.RoundedOutlineNineSlice("tw_fl_ring", radius,
+                Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(2.5f))));
+            ring.type = Image.Type.Sliced;
+            ring.color = UiTheme.Led;
+            ring.raycastTarget = false;
+            ringRt.gameObject.SetActive(false);
+
+            float half = UiTheme.Row(UiTheme.Py(16f), UiTheme.Py(20f)) * 0.5f;
+            var number = UiKit.Label("Number", rt, fonts.Number, UiTheme.Py(16f),
+                                     UiTheme.TowerFloorNumber, TextAlignmentOptions.Center,
+                                     out var noRt, "1");
+            number.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(noRt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
+                   new Vector2(UiTheme.Px(2f), -half), new Vector2(UiTheme.Px(31.4f), half));
+
+            var window = BuildTowerWindow(rt);
+
+            // 이름줄과 보상줄 — 격자의 1fr 칸.
+            float infoLeft = UiTheme.Px(174.5f);
+            var nameRow = UiKit.Node("NameRow", rt);
+            Anchor(nameRow, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(infoLeft,
+                               -UiTheme.Py(5f) - UiTheme.Row(UiTheme.Py(12.5f), UiTheme.Py(18.6f))),
+                   new Vector2(-UiTheme.Px(7f), -UiTheme.Py(5f)));
+            var nameLayout = UiKit.Row(nameRow, UiTheme.Px(4f), TextAnchor.MiddleLeft);
+            nameLayout.childControlWidth = true;
+            nameLayout.childForceExpandWidth = false;
+
+            var tagRt = UiKit.Node("Tag", nameRow);
+            var tagFace = tagRt.gameObject.AddComponent<Image>();
+            tagFace.sprite = GeneratedArt.RoundedNineSlice("tw_tag", Mathf.RoundToInt(UiTheme.Px(6f)));
+            tagFace.type = Image.Type.Sliced;
+            tagFace.color = UiTheme.TowerTag(string.Empty, false);
+            tagFace.raycastTarget = false;
+            var tagLe = tagRt.gameObject.AddComponent<LayoutElement>();
+            tagLe.minHeight = tagLe.preferredHeight = UiTheme.Row(UiTheme.Py(10f), UiTheme.Py(14f));
+            tagLe.preferredWidth = UiTheme.Px(40f);
+            var tag = UiKit.Label("Text", tagRt, fonts.Body, UiTheme.Py(10f), Color.white,
+                                  TextAlignmentOptions.Center, out var tagLblRt, "");
+            tag.textWrappingMode = TextWrappingModes.NoWrap;
+            Stretch(tagLblRt);
+
+            var name = UiKit.Label("Name", nameRow, fonts.Body, UiTheme.Py(12.5f),
+                                   UiTheme.DarkInk, TextAlignmentOptions.Left, out var nameRt, "");
+            name.textWrappingMode = TextWrappingModes.NoWrap;
+            name.overflowMode = TextOverflowModes.Ellipsis;
+            var nameLe = nameRt.gameObject.AddComponent<LayoutElement>();
+            nameLe.flexibleWidth = 1f;
+            nameLe.minHeight = UiTheme.Row(UiTheme.Py(12.5f), UiTheme.Py(18.6f));
+
+            var reward = UiKit.Label("Reward", rt, fonts.Body, UiTheme.Py(11f),
+                                     UiTheme.TowerFloorReward, TextAlignmentOptions.Left,
+                                     out var rwRt, "");
+            reward.textWrappingMode = TextWrappingModes.NoWrap;
+            reward.overflowMode = TextOverflowModes.Ellipsis;
+            Anchor(rwRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(infoLeft,
+                               -UiTheme.Py(26.7f) - UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(16.7f))),
+                   new Vector2(-UiTheme.Px(7f), -UiTheme.Py(26.7f)));
+
+            // '도전' 띠 — 오른쪽 7, 38.7x25.5.
+            var goRt = UiKit.Node("GoBadge", rt);
+            Anchor(goRt, new Vector2(1f, 0.5f), new Vector2(1f, 0.5f),
+                   new Vector2(-UiTheme.Px(45.7f), -UiTheme.Py(12.75f)),
+                   new Vector2(-UiTheme.Px(7f), UiTheme.Py(12.75f)));
+            var goFace = goRt.gameObject.AddComponent<Image>();
+            goFace.sprite = GeneratedArt.RoundedNineSlice("tw_fl_go", Mathf.RoundToInt(UiTheme.Px(9f)));
+            goFace.type = Image.Type.Sliced;
+            goFace.color = UiTheme.Led;
+            goFace.raycastTarget = false;
+            var goLabel = UiKit.Label("Text", goRt, fonts.Title, UiTheme.Py(14f), UiTheme.Ink,
+                                      TextAlignmentOptions.Center, out var goLblRt, "도전");
+            goLabel.textWrappingMode = TextWrappingModes.NoWrap;
+            Stretch(goLblRt);
+            goRt.gameObject.SetActive(false);
+
+            var row = go.AddComponent<TowerFloorCard>();
+            Wire(row, ("face", face), ("ring", ring), ("numberLabel", number),
+                 ("window", window), ("tagLabel", tag), ("tagFace", tagFace),
+                 ("nameLabel", name), ("rewardLabel", reward), ("nameRow", nameRow),
+                 ("goBadge", goRt.gameObject), ("button", button));
+            return SavePrefab<TowerFloorCard>(go, "TowerFloorCard");
+        }
+
+        /// <summary>
+        /// 층 줄의 작은 창(원본 `twWindow` 가 캔버스로 그리던 132x40). 바탕 · 바닥 띠 ·
+        /// 먼지 셋 · 덧칠 · 창틀과 가운데 창살을 uGUI 로 쌓는다.
+        /// </summary>
+        static TowerWindowView BuildTowerWindow(RectTransform parent)
+        {
+            var rt = UiKit.Node("Window", parent);
+            Anchor(rt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
+                   new Vector2(UiTheme.Px(38.3f), -UiTheme.Py(19.6f)),
+                   new Vector2(UiTheme.Px(167.7f), UiTheme.Py(19.6f)));
+
+            var face = rt.gameObject.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("tw_win", Mathf.RoundToInt(UiTheme.Px(6f)));
+            face.type = Image.Type.Sliced;
+            face.color = UiTheme.TowerWindowRoom;
+            face.raycastTarget = false;
+
+            Image Strip(string id, Vector2 min, Vector2 max, Color color)
+            {
+                var n = UiKit.Node(id, rt);
+                Anchor(n, min, max, Vector2.zero, Vector2.zero);
+                var img = n.gameObject.AddComponent<Image>();
+                img.color = color;
+                img.raycastTarget = false;
+                return img;
+            }
+
+            var floorStrip = Strip("Floor", new Vector2(0f, 0f), new Vector2(1f, 0.28f),
+                                   new Color(90f / 255f, 70f / 255f, 50f / 255f, 0.25f));
+
+            var foes = new Image[3];
+            for (int i = 0; i < foes.Length; i++)
+            {
+                var n = UiKit.Node("Foe" + i, rt);
+                // 원본은 .16 · .41 · .66 자리에 세운다.
+                float cx = 0.16f + i * 0.25f;
+                Anchor(n, new Vector2(cx - 0.1f, 0.18f), new Vector2(cx + 0.1f, 0.86f),
+                       Vector2.zero, Vector2.zero);
+                var img = n.gameObject.AddComponent<Image>();
+                img.preserveAspect = true;
+                img.raycastTarget = false;
+                n.gameObject.SetActive(false);
+                foes[i] = img;
+            }
+
+            var leftWall = Strip("WallL", new Vector2(0f, 0f), new Vector2(0.26f, 1f),
+                                 new Color(60f / 255f, 50f / 255f, 40f / 255f, 0.4f));
+            var rightWall = Strip("WallR", new Vector2(0.74f, 0f), new Vector2(1f, 1f),
+                                  new Color(60f / 255f, 50f / 255f, 40f / 255f, 0.4f));
+            leftWall.gameObject.SetActive(false);
+            rightWall.gameObject.SetActive(false);
+
+            var tint = Strip("Tint", Vector2.zero, Vector2.one, Color.clear);
+            tint.gameObject.SetActive(false);
+
+            var mullionRt = UiKit.Node("Mullion", rt);
+            Anchor(mullionRt, new Vector2(0.5f, 0f), new Vector2(0.5f, 1f),
+                   new Vector2(-UiTheme.Px(1f), 0f), new Vector2(UiTheme.Px(1f), 0f));
+            var mullion = mullionRt.gameObject.AddComponent<Image>();
+            mullion.color = UiTheme.TowerWindowFrame;
+            mullion.raycastTarget = false;
+
+            var frameRt = UiKit.Node("Frame", rt);
+            Stretch(frameRt);
+            var frame = frameRt.gameObject.AddComponent<Image>();
+            frame.sprite = GeneratedArt.RoundedOutlineNineSlice("tw_win_line",
+                Mathf.RoundToInt(UiTheme.Px(6f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(3f))));
+            frame.type = Image.Type.Sliced;
+            frame.color = UiTheme.TowerWindowFrame;
+            frame.raycastTarget = false;
+
+            var veil = Strip("Veil", Vector2.zero, Vector2.one,
+                             new Color(40f / 255f, 46f / 255f, 52f / 255f, 0.35f));
+            veil.gameObject.SetActive(false);
+
+            var view = rt.gameObject.AddComponent<TowerWindowView>();
+            Wire(view, ("face", face), ("floorStrip", floorStrip), ("tint", tint),
+                 ("leftWall", leftWall), ("rightWall", rightWall), ("veil", veil),
+                 ("mullion", mullion));
+            WireArray(view, "foes", foes);
+            return view;
+        }
+
+        /// <summary>
         /// 리그 화면. 원본 `#league` 을 430x932 에서 재서 그대로 쌓는다.
         /// </summary>
         static LeagueScreen BuildLeagueUI(Transform parent, Fonts fonts, Prefabs prefabs,
@@ -5948,6 +6237,7 @@ namespace DustZero.Editor
             }
 
             var life = Readout("Life", "청결도", 0f, 0.3f, UiTheme.LedLife, TextAlignmentOptions.Left);
+
             var gold = Readout("Gold", "코인", 0.3f, 0.6f, UiTheme.Led, TextAlignmentOptions.Left);
 
             var lvRoot = UiKit.Node("Level", readouts);
@@ -6042,12 +6332,350 @@ namespace DustZero.Editor
             Stretch(goRt);
             var goLabel = goRt.GetComponentInChildren<TextMeshProUGUI>();
 
-            // ---- 힌트 838 / 19.2
-            var hint = UiKit.Label("Hint", Row("Hint", 838f, 19.2f), fonts.Body, UiTheme.Py(12f),
+            // ---- 힌트 838 / 19.2. 타워는 두 줄이라 자리를 다시 잡는다.
+            var hintRow = Row("Hint", 838f, 19.2f);
+            var hint = UiKit.Label("Hint", hintRow, fonts.Body, UiTheme.Py(12f),
                                    UiTheme.Ink2, TextAlignmentOptions.Center, out var hintRt, "");
             hint.textWrappingMode = TextWrappingModes.NoWrap;
             hint.overflowMode = TextOverflowModes.Ellipsis;
             Stretch(hintRt);
+
+            // ================================================================ 먼지 타워
+            // 원본은 `#league` 에 `tw` 클래스를 붙여 같은 화면을 쓴다. 여기서도 같은
+            // 화면에 타워 쪽 줄을 더 쌓고, 들어갈 때 리그 줄과 바꿔 단다.
+            // 자리는 전부 430x932 실측 — TOWER-MEASUREMENTS.md 1절.
+
+            // ---- 층 · 남은 시간 · 출전 (원본 `.tw-ro`, HUD 안 62/44)
+            var twRo = UiKit.Node("TowerReadouts", hudRt);
+            Anchor(twRo, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(inset, -UiTheme.Py(94f)), new Vector2(-inset, -UiTheme.Py(50f)));
+
+            TextMeshProUGUI TowerRo(string id, string caption, float x0, float x1,
+                                    TextAlignmentOptions align, out TextMeshProUGUI capOut)
+            {
+                var r = UiKit.Node(id, twRo);
+                Anchor(r, new Vector2(x0, 0f), new Vector2(x1, 1f), Vector2.zero, Vector2.zero);
+
+                capOut = UiKit.Label("Label", r, fonts.Body, UiTheme.Py(10f), UiTheme.DarkInk2,
+                                     align, out var capRt, caption);
+                capOut.textWrappingMode = TextWrappingModes.NoWrap;
+                capOut.characterSpacing = 8f;
+                Anchor(capRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                       new Vector2(0f, -UiTheme.Row(UiTheme.Py(10f), UiTheme.Py(15f))), Vector2.zero);
+
+                var value = UiKit.Label("Value", r, fonts.Number, UiTheme.Py(26f), UiTheme.Led,
+                                        align, out var vRt, "");
+                value.textWrappingMode = TextWrappingModes.NoWrap;
+                // 26px LED 한 줄은 칸이 줄 높이보다 낮으면 **아예 안 그려진다**.
+                // 글자가 앉는 띠(실측 18~44)의 한가운데에 줄 높이만큼의 칸을 둔다.
+                float band = UiTheme.Row(UiTheme.Py(26f), UiTheme.Py(26f)) * 0.5f;
+                Anchor(vRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                       new Vector2(0f, -UiTheme.Py(31f) - band),
+                       new Vector2(0f, -UiTheme.Py(31f) + band));
+                return value;
+            }
+
+            // 세 칸: 374 를 셋으로 나누고 사이를 12 둔다(실측 x 28 / 156.7 / 285.3, 폭 116.7).
+            var twFloorValue = TowerRo("Floor", "층", 0f, 0.312f,
+                                       TextAlignmentOptions.Left, out _);
+            var twGoalValue = TowerRo("Goal", "남은 시간", 0.3439f, 0.6559f,
+                                      TextAlignmentOptions.Left, out var twGoalCaption);
+            var twUseValue = TowerRo("Use", "출전", 0.688f, 1f,
+                                     TextAlignmentOptions.Right, out _);
+            twRo.gameObject.SetActive(false);
+
+            // ---- 층 규칙 줄 182 / 54.4 (원본 `.tw-rule`)
+            var ruleRow = Row("TowerRule", 182f, 54.4f);
+            var ruleFace = ruleRow.gameObject.AddComponent<Image>();
+            ruleFace.sprite = GeneratedArt.RoundedNineSlice("tw_rule", Mathf.RoundToInt(UiTheme.Px(12f)));
+            ruleFace.type = Image.Type.Sliced;
+            ruleFace.color = Color.white;
+            ruleFace.raycastTarget = false;
+
+            var ruleLineRt = UiKit.Node("Line", ruleRow);
+            Stretch(ruleLineRt);
+            var ruleLine = ruleLineRt.gameObject.AddComponent<Image>();
+            ruleLine.sprite = GeneratedArt.RoundedOutlineNineSlice("tw_rule_line",
+                Mathf.RoundToInt(UiTheme.Px(12f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            ruleLine.type = Image.Type.Sliced;
+            ruleLine.color = UiTheme.PanelLine;
+            ruleLine.raycastTarget = false;
+
+            // 첫 줄: 규칙 이름 + 설명(원본은 auto 1fr 격자에 간격 8).
+            var ruleTop = UiKit.Node("Top", ruleRow);
+            Anchor(ruleTop, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(10f), -UiTheme.Py(8f) - UiTheme.Row(UiTheme.Py(15f), UiTheme.Py(21f))),
+                   new Vector2(-UiTheme.Px(10f), -UiTheme.Py(8f)));
+            var ruleTopRow = UiKit.Row(ruleTop, UiTheme.Px(8f), TextAnchor.LowerLeft);
+            ruleTopRow.childControlWidth = true;
+            ruleTopRow.childForceExpandWidth = false;
+
+            var ruleName = UiKit.Label("Name", ruleTop, fonts.Title, UiTheme.Py(15f), UiTheme.Ink,
+                                       TextAlignmentOptions.Left, out var ruleNameRt, "");
+            ruleName.textWrappingMode = TextWrappingModes.NoWrap;
+            var ruleNameLe = ruleNameRt.gameObject.AddComponent<LayoutElement>();
+            ruleNameLe.minHeight = UiTheme.Row(UiTheme.Py(15f), UiTheme.Py(21f));
+
+            var ruleDesc = UiKit.Label("Desc", ruleTop, fonts.Body, UiTheme.Py(12f), UiTheme.Ink,
+                                       TextAlignmentOptions.Left, out var ruleDescRt, "");
+            ruleDesc.textWrappingMode = TextWrappingModes.NoWrap;
+            ruleDesc.overflowMode = TextOverflowModes.Ellipsis;
+            var ruleDescLe = ruleDescRt.gameObject.AddComponent<LayoutElement>();
+            ruleDescLe.flexibleWidth = 1f;
+            ruleDescLe.minHeight = UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(16.8f));
+
+            var ruleBonus = UiKit.Label("Bonus", ruleRow, fonts.Body, UiTheme.Py(11f),
+                                        UiTheme.TowerBonusInk, TextAlignmentOptions.Left,
+                                        out var ruleBonusRt, "");
+            ruleBonus.textWrappingMode = TextWrappingModes.NoWrap;
+            ruleBonus.overflowMode = TextOverflowModes.Ellipsis;
+            Anchor(ruleBonusRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(10f), -UiTheme.Py(31f) - UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(15.4f))),
+                   new Vector2(-UiTheme.Px(10f), -UiTheme.Py(31f)));
+            ruleRow.gameObject.SetActive(false);
+
+            // ---- 자동 편성 단추 — 안내 줄 오른쪽 끝(실측 67.7x26).
+            var autoBtn = UiKit.Button("TowerAuto", infoRow, fonts.Body, "자동 편성",
+                                       UiButtonKind.Secondary, out var autoRt,
+                                       UiTheme.Py(26f), UiTheme.Py(12f));
+            Anchor(autoRt, new Vector2(1f, 0.5f), new Vector2(1f, 0.5f),
+                   new Vector2(-UiTheme.Px(67.7f), -UiTheme.Py(13f)),
+                   new Vector2(0f, UiTheme.Py(13f)));
+            autoBtn.gameObject.SetActive(false);
+
+            // ---- 출전 목록 640.4 / 54 (원본 `.tw-own`) — 줄 수는 보유 수가 정한다.
+            var ownRow = Row("TowerOwn", 640.4f, 54f);
+            var ownGrid = ownRow.gameObject.AddComponent<GridLayoutGroup>();
+            ownGrid.cellSize = new Vector2(UiTheme.Px(62.16f), UiTheme.Py(54f));
+            ownGrid.spacing = new Vector2(UiTheme.Px(5f), UiTheme.Py(5f));
+            ownGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+            ownGrid.constraintCount = 6;
+            ownRow.gameObject.SetActive(false);
+
+            // ---- 층 목록 시트(원본 `twEnter`). 실측 상자 20/87.9 390x776.2.
+            var floorSheet = UiKit.Panel("TowerFloors", rt, out var fsRt,
+                                         new Color(UiTheme.Ink.r, UiTheme.Ink.g, UiTheme.Ink.b, 0.55f), 1f);
+            Stretch(fsRt);
+            var floorBox = UiKit.Panel("Box", fsRt, out var fbRt, UiTheme.Panel);
+            floorBox.sprite = GeneratedArt.RoundedNineSlice("ui_modal16", Mathf.RoundToInt(UiTheme.Px(16f)));
+            floorBox.type = Image.Type.Sliced;
+            Anchor(fbRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(20f), -UiTheme.Py(864.1f)),
+                   new Vector2(-UiTheme.Px(20f), -UiTheme.Py(87.9f)));
+
+            var floorHead = UiKit.Label("Title", fbRt, fonts.Title, UiTheme.Py(24f), UiTheme.Ink,
+                                        TextAlignmentOptions.Left, out var fhRt, "먼지 타워");
+            floorHead.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(fhRt, new Vector2(0f, 1f), new Vector2(0.6f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(16f) - UiTheme.Row(UiTheme.Py(24f), UiTheme.Py(29.4f))),
+                   new Vector2(0f, -UiTheme.Py(16f)));
+
+            var floorCount = UiKit.Label("Count", fbRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
+                                         TextAlignmentOptions.Right, out var fcRt, "");
+            floorCount.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(fcRt, new Vector2(0.4f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(16f) - UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(29.4f))),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(16f)));
+
+            var floorNote = UiKit.Label("Note", fbRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
+                                        TextAlignmentOptions.TopLeft, out var fnRt, "");
+            floorNote.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(fnRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(128.7f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(56.9f)));
+
+            // 탑: 지붕 + 층 줄 목록. 상자 좌표 기준이라 실측에서 상자 위(87.9)를 뺀다.
+            var building = UiKit.Panel("Building", fbRt, out var bldRt, UiTheme.TowerBuilding);
+            building.sprite = GeneratedArt.RoundedNineSlice("tw_bld", Mathf.RoundToInt(UiTheme.Px(14f)));
+            building.type = Image.Type.Sliced;
+            Anchor(bldRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(712f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(140.5f)));
+
+            var roof = UiKit.Label("Roof", bldRt, fonts.Body, UiTheme.Py(11f), UiTheme.TowerRoofInk,
+                                   TextAlignmentOptions.Center, out var roofRt, "");
+            roof.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(roofRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(28.4f)), Vector2.zero);
+
+            var floorViewport = UiKit.Node("Viewport", bldRt);
+            Anchor(floorViewport, new Vector2(0f, 0f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(6f), UiTheme.Py(4f)),
+                   new Vector2(-UiTheme.Px(6f), -UiTheme.Py(28.4f)));
+            floorViewport.gameObject.AddComponent<RectMask2D>();
+            var floorScroll = floorViewport.gameObject.AddComponent<ScrollRect>();
+            UiKit.ScrollCatcher(floorViewport);
+            floorScroll.horizontal = false;
+            floorScroll.movementType = ScrollRect.MovementType.Clamped;
+            floorScroll.scrollSensitivity = 40f;
+
+            var floorList = UiKit.Node("List", floorViewport);
+            Anchor(floorList, new Vector2(0f, 1f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            floorList.pivot = new Vector2(0.5f, 1f);
+            var floorCol = floorList.gameObject.AddComponent<VerticalLayoutGroup>();
+            floorCol.spacing = UiTheme.Py(4f);
+            floorCol.childControlWidth = true;
+            floorCol.childControlHeight = false;
+            floorCol.childForceExpandWidth = true;
+            floorCol.childForceExpandHeight = false;
+            var floorFit = floorList.gameObject.AddComponent<ContentSizeFitter>();
+            floorFit.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+            floorScroll.viewport = floorViewport;
+            floorScroll.content = floorList;
+
+            var floorBtns = UiKit.Node("Buttons", fbRt);
+            Anchor(floorBtns, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(UiTheme.Px(16f), UiTheme.Py(16f)),
+                   new Vector2(-UiTheme.Px(16f), UiTheme.Py(64f)));
+            var floorClose = UiKit.Button("Close", floorBtns, fonts.Body, "닫기",
+                                          UiButtonKind.Secondary, out var fclRt, UiTheme.Py(48f));
+            Anchor(fclRt, new Vector2(0f, 0f), new Vector2(0.48f, 1f), Vector2.zero, Vector2.zero);
+            var floorGo = UiKit.Button("Go", floorBtns, fonts.Body, "도전", UiButtonKind.Primary,
+                                       out var fgoRt, UiTheme.Py(48f));
+            Anchor(fgoRt, new Vector2(0.52f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            var floorGoLabel = fgoRt.GetComponentInChildren<TextMeshProUGUI>();
+            floorSheet.gameObject.SetActive(false);
+
+            // ---- 층 상세 시트(원본 `twFloorInfo`). 실측 상자 16/248.5 398x434.9.
+            var infoSheet = UiKit.Panel("TowerFloorInfo", rt, out var isRt,
+                                        new Color(UiTheme.Ink.r, UiTheme.Ink.g, UiTheme.Ink.b, 0.55f), 1f);
+            Stretch(isRt);
+            var infoBox = UiKit.Panel("Box", isRt, out var ibRt, UiTheme.Panel);
+            infoBox.sprite = GeneratedArt.RoundedNineSlice("ui_modal16", Mathf.RoundToInt(UiTheme.Px(16f)));
+            infoBox.type = Image.Type.Sliced;
+            Anchor(ibRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(pad, -UiTheme.Py(683.4f)), new Vector2(-pad, -UiTheme.Py(248.5f)));
+
+            var infoTitle = UiKit.Label("Title", ibRt, fonts.Title, UiTheme.Py(22f), UiTheme.Ink,
+                                        TextAlignmentOptions.Left, out var itRt, "");
+            infoTitle.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(itRt, new Vector2(0f, 1f), new Vector2(0.75f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(16f) - UiTheme.Row(UiTheme.Py(22f), UiTheme.Py(36f))),
+                   new Vector2(0f, -UiTheme.Py(16f)));
+
+            var infoState = UiKit.Label("State", ibRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
+                                        TextAlignmentOptions.Right, out var isLblRt, "");
+            infoState.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(isLblRt, new Vector2(0.55f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(16f) - UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(36f))),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(16f)));
+
+            // 규칙 카드 64 / 62.8 (상자 기준)
+            var infoRule = UiKit.Panel("Rule", ibRt, out var ruleCardRt, Color.white);
+            infoRule.sprite = GeneratedArt.RoundedNineSlice("tw_rc", Mathf.RoundToInt(UiTheme.Px(12f)));
+            infoRule.type = Image.Type.Sliced;
+            Anchor(ruleCardRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(126.8f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(64f)));
+            var infoRuleLineRt = UiKit.Node("Line", ruleCardRt);
+            Stretch(infoRuleLineRt);
+            var infoRuleLine = infoRuleLineRt.gameObject.AddComponent<Image>();
+            infoRuleLine.sprite = GeneratedArt.RoundedOutlineNineSlice("tw_rc_line",
+                Mathf.RoundToInt(UiTheme.Px(12f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            infoRuleLine.type = Image.Type.Sliced;
+            infoRuleLine.color = UiTheme.PanelLine;
+            infoRuleLine.raycastTarget = false;
+
+            var infoRuleName = UiKit.Label("Name", ruleCardRt, fonts.Title, UiTheme.Py(17f), UiTheme.Ink,
+                                           TextAlignmentOptions.Left, out var irnRt, "");
+            infoRuleName.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(irnRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(11f), -UiTheme.Py(10f) - UiTheme.Row(UiTheme.Py(17f), UiTheme.Py(21f))),
+                   new Vector2(-UiTheme.Px(11f), -UiTheme.Py(10f)));
+
+            var infoRuleDesc = UiKit.Label("Desc", ruleCardRt, fonts.Body, UiTheme.Py(12.5f), UiTheme.Ink,
+                                           TextAlignmentOptions.TopLeft, out var irdRt, "");
+            infoRuleDesc.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(irdRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(11f), -UiTheme.Py(56f)),
+                   new Vector2(-UiTheme.Px(11f), -UiTheme.Py(34f)));
+
+            // 목표 · 보너스 두 칸 138.8 / 66
+            Image GoalBox(string id, float x0, float x1, Color fill, out RectTransform boxRt,
+                          out Image lineOut)
+            {
+                var img = UiKit.Panel(id, ibRt, out boxRt, fill);
+                img.sprite = GeneratedArt.RoundedNineSlice("tw_goal", Mathf.RoundToInt(UiTheme.Px(12f)));
+                img.type = Image.Type.Sliced;
+                Anchor(boxRt, new Vector2(x0, 1f), new Vector2(x1, 1f),
+                       new Vector2(x0 == 0f ? UiTheme.Px(16f) : UiTheme.Px(3f), -UiTheme.Py(204.8f)),
+                       new Vector2(x1 == 1f ? -UiTheme.Px(16f) : -UiTheme.Px(3f), -UiTheme.Py(138.8f)));
+                var ln = UiKit.Node("Line", boxRt);
+                Stretch(ln);
+                lineOut = ln.gameObject.AddComponent<Image>();
+                lineOut.sprite = GeneratedArt.RoundedOutlineNineSlice("tw_goal_line",
+                    Mathf.RoundToInt(UiTheme.Px(12f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+                lineOut.type = Image.Type.Sliced;
+                lineOut.color = UiTheme.PanelLine;
+                lineOut.raycastTarget = false;
+                return img;
+            }
+
+            GoalBox("Goal", 0f, 0.5f, Color.white, out var goalRt, out _);
+            var goalCap = UiKit.Label("Caption", goalRt, fonts.Body, UiTheme.Py(11f), UiTheme.Ink2,
+                                      TextAlignmentOptions.TopLeft, out var gcRt, "목표");
+            goalCap.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(gcRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(9f), -UiTheme.Py(7f) - UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(15f))),
+                   new Vector2(-UiTheme.Px(9f), -UiTheme.Py(7f)));
+            var infoGoal = UiKit.Label("Value", goalRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink,
+                                       TextAlignmentOptions.TopLeft, out var igRt, "");
+            infoGoal.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(igRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(9f), -UiTheme.Py(24f) - UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(17f))),
+                   new Vector2(-UiTheme.Px(9f), -UiTheme.Py(24f)));
+            var infoGoalSub = UiKit.Label("Sub", goalRt, fonts.Body, UiTheme.Py(10.5f), UiTheme.Ink2,
+                                          TextAlignmentOptions.TopLeft, out var igsRt, "");
+            infoGoalSub.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(igsRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(9f), -UiTheme.Py(43f) - UiTheme.Row(UiTheme.Py(10.5f), UiTheme.Py(15f))),
+                   new Vector2(-UiTheme.Px(9f), -UiTheme.Py(43f)));
+
+            var infoBonusFace = GoalBox("Bonus", 0.5f, 1f, UiTheme.TowerBonusBg,
+                                        out var bonusRt, out var infoBonusLine);
+            infoBonusLine.color = UiTheme.TowerBonusLine;
+            var infoBonus = UiKit.Label("Value", bonusRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink,
+                                        TextAlignmentOptions.TopLeft, out var ibLblRt, "");
+            infoBonus.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(ibLblRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(9f), -UiTheme.Py(43f)),
+                   new Vector2(-UiTheme.Px(9f), -UiTheme.Py(7f)));
+            var infoBonusSub = UiKit.Label("Sub", bonusRt, fonts.Body, UiTheme.Py(10.5f),
+                                           UiTheme.Ink2, TextAlignmentOptions.TopLeft,
+                                           out var ibsRt, "");
+            infoBonusSub.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(ibsRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(9f), -UiTheme.Py(43f) - UiTheme.Row(UiTheme.Py(10.5f), UiTheme.Py(15f))),
+                   new Vector2(-UiTheme.Px(9f), -UiTheme.Py(43f)));
+
+            // 먼지 칸 줄(원본 `.tw-foes`): 72x81 칸이 왼쪽부터 늘어선다.
+            var infoFoes = UiKit.Node("Foes", ibRt);
+            Anchor(infoFoes, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(297.8f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(216.8f)));
+            var foesLayout = UiKit.Row(infoFoes, UiTheme.Px(6f), TextAnchor.MiddleLeft);
+            foesLayout.childControlWidth = false;
+            foesLayout.childControlHeight = false;
+            foesLayout.childForceExpandWidth = false;
+
+            var infoReward = UiKit.Label("Reward", ibRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink,
+                                         TextAlignmentOptions.TopLeft, out var irwRt, "");
+            infoReward.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(irwRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(348f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(309.8f)));
+
+            var infoBtns = UiKit.Node("Buttons", ibRt);
+            Anchor(infoBtns, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(UiTheme.Px(16f), UiTheme.Py(15.4f)),
+                   new Vector2(-UiTheme.Px(16f), UiTheme.Py(63.4f)));
+            var infoBack = UiKit.Button("Back", infoBtns, fonts.Body, "층 목록",
+                                        UiButtonKind.Secondary, out var ibkRt, UiTheme.Py(48f));
+            Anchor(ibkRt, new Vector2(0f, 0f), new Vector2(0.48f, 1f), Vector2.zero, Vector2.zero);
+            var infoStart = UiKit.Button("Start", infoBtns, fonts.Body, "편성하기",
+                                         UiButtonKind.Primary, out var istRt, UiTheme.Py(48f));
+            Anchor(istRt, new Vector2(0.52f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            infoSheet.gameObject.SetActive(false);
 
             // ---- 알림: 판 가운데 떠오르는 글
             var bannerRt = UiKit.Node("Banner", rt);
@@ -6203,7 +6831,37 @@ namespace DustZero.Editor
                  ("resultRoot", result.gameObject), ("resultTitle", resTitle),
                  ("resultStats", resStats), ("resultRewards", resRewards), ("resultNote", resNote),
                  ("resultHomeButton", resHome), ("resultAgainButton", resAgain),
-                 ("sprites", library));
+                 ("sprites", library),
+                 // ---- 먼지 타워
+                 ("kickerLabel", kicker),
+                 ("leagueReadoutRoot", readouts.gameObject),
+                 ("towerReadoutRoot", twRo.gameObject),
+                 ("towerFloorValue", twFloorValue), ("towerGoalCaption", twGoalCaption),
+                 ("towerGoalValue", twGoalValue), ("towerUseValue", twUseValue),
+                 ("ruleRoot", ruleRow.gameObject), ("ruleFace", ruleFace), ("ruleLine", ruleLine),
+                 ("ruleNameLabel", ruleName), ("ruleDescLabel", ruleDesc),
+                 ("ruleBonusLabel", ruleBonus),
+                 ("ownRoot", ownRow), ("ownPrefab", prefabs.TowerOwn), ("autoButton", autoBtn),
+                 ("floorSheetRoot", floorSheet.gameObject), ("floorListRoot", floorList),
+                 ("floorPrefab", prefabs.TowerFloor), ("floorScroll", floorScroll),
+                 ("floorHeadLabel", floorHead), ("floorCountLabel", floorCount),
+                 ("floorNoteLabel", floorNote), ("floorRoofLabel", roof),
+                 ("floorCloseButton", floorClose), ("floorGoButton", floorGo),
+                 ("floorGoLabel", floorGoLabel),
+                 ("infoSheetRoot", infoSheet.gameObject), ("infoTitleLabel", infoTitle),
+                 ("infoStateLabel", infoState), ("infoRuleFace", infoRule),
+                 ("infoRuleLine", infoRuleLine), ("infoRuleNameLabel", infoRuleName),
+                 ("infoRuleDescLabel", infoRuleDesc), ("infoGoalLabel", infoGoal),
+                 ("infoGoalSubLabel", infoGoalSub), ("infoBonusFace", infoBonusFace),
+                 ("infoBonusLine", infoBonusLine), ("infoBonusLabel", infoBonus),
+                 ("infoBonusSubLabel", infoBonusSub), ("infoFoesRoot", infoFoes),
+                 ("infoRewardLabel", infoReward), ("infoBackButton", infoBack),
+                 ("infoStartButton", infoStart),
+                 ("hudRoot", hudRt),
+                 ("foeCardSprite", GeneratedArt.RoundedNineSlice("tw_foe",
+                     Mathf.RoundToInt(UiTheme.Px(10f)))),
+                 ("barRoot", barRow), ("infoRoot", infoRow), ("goRoot", goRow),
+                 ("hintRoot", hintRow));
             go.SetActive(false);
             return screen;
         }

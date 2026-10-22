@@ -11,7 +11,7 @@ SafeArea/Column/Survivor/Hud/Plate/Top/Ctrls/Exit/Content/Label	358.2	18.5	35.8	
 SafeArea/Column/Survivor/Hud/Plate/Readouts/Hp/Label	28.0	62.0	46.8	15.0	#8D99A2FF	10.0	내구도	28.0,62.0,29.2,15.0
 SafeArea/Column/Survivor/Hud/Plate/Readouts/Hp/Value	28.0	71.0	46.8	44.0	#FF6B5EFF	26.0	100	28.0,73.5,46.8,39.0
 SafeArea/Column/Survivor/Hud/Plate/Readouts/Hp/Meter	28.0	109.0	46.8	4.0	#5A3A1EFF			
-SafeArea/Column/Survivor/Hud/Plate/Readouts/Hp/Meter/Mask/Fill	28.0	109.0	46.4	4.0	#FF6B5EFF			
+SafeArea/Column/Survivor/Hud/Plate/Readouts/Hp/Meter/Mask/Fill	28.0	109.0	46.8	4.0	#FF6B5EFF			
 SafeArea/Column/Survivor/Hud/Plate/Readouts/Time/Label	86.8	62.0	269.2	15.0	#8D99A2FF	10.0	Lv.1 · 버틴 시간 · 다음 1:00	86.8,62.0,128.0,15.0
 SafeArea/Column/Survivor/Hud/Plate/Readouts/Time/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	86.8	62.0	269.2	15.0	#FFFFFFFF			
 SafeArea/Column/Survivor/Hud/Plate/Readouts/Time/Value	86.8	71.0	269.2	44.0	#FF9A3CFF	26.0	0:06	86.8,73.5,55.1,39.0

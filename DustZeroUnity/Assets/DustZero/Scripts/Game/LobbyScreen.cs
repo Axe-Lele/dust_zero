@@ -102,6 +102,9 @@ namespace DustZero.Game
         /// <summary>가전 대청소 리그로 출동. 콘텐츠 탭의 리그 카드가 올린다.</summary>
         public event System.Action LeagueChosen;
 
+        /// <summary>먼지 타워로 출동.</summary>
+        public event System.Action TowerChosen;
+
         public LobbyTab CurrentTab => _tab;
 
         void Awake()
@@ -126,6 +129,7 @@ namespace DustZero.Game
                 content.SurvivorChosen += () => SurvivorChosen?.Invoke();
                 content.CoopChosen += OpenCoopPick;
                 content.LeagueChosen += () => LeagueChosen?.Invoke();
+                content.TowerChosen += () => TowerChosen?.Invoke();
                 content.Claimed += msg => { Toast(msg); Refresh(); };
             }
             if (bgmDownButton != null) bgmDownButton.SetAction(() => StepBgm(-10));

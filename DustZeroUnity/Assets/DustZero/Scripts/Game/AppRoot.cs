@@ -62,7 +62,9 @@ namespace DustZero.Game
             battle.DeckRequested += () => ShowLobby(LobbyTab.Deck);
             if (survivor != null) survivor.Exited += OnSurvivorExited;
             if (league != null) league.Exited += OnLeagueExited;
+            if (league != null) league.TowerExited += OnLeagueExited;
             if (lobby != null) lobby.LeagueChosen += OnLeagueChosen;
+            if (lobby != null) lobby.TowerChosen += OnTowerChosen;
             if (guideOverlay != null) guideOverlay.SkipRequested += () => _services.Guide?.Skip();
             if (audioDirector != null)
             {
@@ -150,6 +152,25 @@ namespace DustZero.Game
         }
 
         void OnLeagueExited() => ShowLobby();
+
+        /// <summary>
+        /// 먼지 타워. 원본처럼 층 목록을 먼저 띄우고, 거기서 고른 층의 상세를 지나
+        /// 편성으로 들어간다. 전투는 리그 화면을 그대로 쓴다.
+        /// </summary>
+        void OnTowerChosen()
+        {
+            if (league == null) { lobby.Toast("타워 화면이 아직 없어요."); return; }
+            if (!_services.Profile.TowerUnlocked)
+            {
+                lobby.Toast(_services.Profile.TowerLockMessage);
+                return;
+            }
+            lobby.gameObject.SetActive(false);
+            league.gameObject.SetActive(true);
+            FocusCamera(null);
+            league.OpenFloorPick(_services);
+            audioDirector?.Play(BgmTrack.Battle);
+        }
 
         /// <summary>
         /// \ud611\ub3d9 \uccad\uc18c. \uc6d0\ubcf8\uacfc \uac19\uc774 \uc804\ud22c \ud654\uba74\uc744 \uadf8\ub300\ub85c \uc4f0\uace0 \ub450 \uc904\ub9cc \ubc14\uafc0\uc5b4 \ub2e4\ub294\ub2e4.

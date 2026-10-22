@@ -294,6 +294,85 @@ namespace DustZero.Tests
             Assert.IsFalse(lg.Tower.GoldCaught, "도망갔는데 잡은 것으로 셌습니다.");
         }
 
+        // ------------------------------------------------------------------ 화면이 쓰는 문구
+
+        [Test]
+        public void ARuleDescriptionTakesItsNumbersFromTheRuleRow()
+        {
+            // {p1}/{p2}/{p1_pct} 가 남아 있으면 표의 수치가 들어가지 않은 것이다.
+            foreach (var floor in _db.TowerFloors)
+            {
+                string desc = TowerText.RuleDesc(_db, floor);
+                Assert.IsNotEmpty(desc, $"{floor.floor}층 규칙 설명이 비었습니다.");
+                StringAssert.DoesNotContain("{p1", desc, $"{floor.floor}층에 수치가 안 들어갔습니다.");
+                StringAssert.DoesNotContain("{p2", desc, $"{floor.floor}층에 수치가 안 들어갔습니다.");
+                StringAssert.DoesNotContain("{guest}", desc, $"{floor.floor}층 손님 이름이 비었습니다.");
+            }
+        }
+
+        [Test]
+        public void ABonusGoalSpellsOutItsOwnNumber()
+        {
+            foreach (var floor in _db.TowerFloors)
+            {
+                if (string.IsNullOrEmpty(floor.bonus)) continue;
+                string text = TowerText.BonusText(_db, floor);
+                Assert.IsNotEmpty(text, $"{floor.floor}층 보너스 문구가 비었습니다.");
+                StringAssert.DoesNotContain("{n}", text, $"{floor.floor}층 보너스 수가 안 들어갔습니다.");
+            }
+        }
+
+        [Test]
+        public void TheSoloFloorTakesItsSlotCountFromItsRuleNotTheFloor()
+        {
+            var row = _db.TowerFloors.FirstOrDefault(f => f.rule == "solo");
+            Assume.That(row, Is.Not.Null);
+            Assert.AreEqual((int)_db.TowerRules["solo"].p1, TowerText.Slots(_db, row),
+                            "단독 층의 출전 수가 규칙을 따르지 않습니다.");
+        }
+
+        [Test]
+        public void TheGuardFloorCountsDownItsOwnHoldingTime()
+        {
+            var row = _db.TowerFloors.FirstOrDefault(f => f.rule == "guard");
+            Assume.That(row, Is.Not.Null);
+            Assert.AreEqual(_db.TowerRules["guard"].p1, TowerText.TimeLimit(_db, row), 0.001f,
+                            "지키기 층의 제한 시간이 규칙과 다릅니다.");
+
+            var plain = _db.TowerFloors.First(f => string.IsNullOrEmpty(f.rule));
+            Assert.AreEqual(_cfg.towerTime, TowerText.TimeLimit(_db, plain), 0.001f,
+                            "보통 층의 제한 시간이 config.towerTime 과 다릅니다.");
+        }
+
+        [Test]
+        public void TheRecommendedMarkFollowsTheFloorsRule()
+        {
+            var heat = _db.TowerFloors.FirstOrDefault(f => f.rule == "heat");
+            Assume.That(heat, Is.Not.Null);
+            Assert.IsTrue(TowerText.Recommended(_db, heat, "ac", null),
+                          "열기 층에서 냉방 가전이 추천되지 않습니다.");
+            Assert.IsFalse(TowerText.Recommended(_db, heat, "gen", null),
+                           "열기 층에서 발전기가 추천됩니다.");
+
+            var dark = _db.TowerFloors.FirstOrDefault(f => f.rule == "blackout");
+            Assume.That(dark, Is.Not.Null);
+            Assert.IsTrue(TowerText.Recommended(_db, dark, "gen", null),
+                          "정전 층에서 발전기가 추천되지 않습니다.");
+
+            var guest = _db.TowerFloors.FirstOrDefault(f => f.rule == "guest");
+            Assume.That(guest, Is.Not.Null);
+            Assert.IsTrue(TowerText.Recommended(_db, guest, guest.extra, guest.extra),
+                          "손님 층에서 빌린 가전이 추천되지 않습니다.");
+        }
+
+        [Test]
+        public void EveryFloorNamesWhatItPaysOnTheFirstClear()
+        {
+            foreach (var floor in _db.TowerFloors)
+                Assert.IsNotEmpty(TowerText.RewardLine(_db, floor),
+                                  $"{floor.floor}층 첫 클리어 보상 줄이 비었습니다.");
+        }
+
         // ------------------------------------------------------------------ 보너스와 보상
 
         [Test]

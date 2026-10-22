@@ -14,7 +14,7 @@ using UnityEngine.UI;
 
 namespace DustZero.Game
 {
-    public sealed class LeagueScreen : MonoBehaviour
+    public sealed partial class LeagueScreen : MonoBehaviour
     {
         [Header("판")]
         [SerializeField] LeagueView view;
@@ -104,6 +104,8 @@ namespace DustZero.Game
         float _speed = 2f;
         /// <summary>전투가 끝나고 결과를 넘기기까지 남은 시간 — 원본의 0.9초.</summary>
         float _endDelay;
+        /// <summary>이 판의 정산을 이미 했다. 한 판을 두 번 정산하지 않으려고 둔다.</summary>
+        bool _rounded;
         float _bannerT;
         float _syncT;
 
@@ -118,9 +120,23 @@ namespace DustZero.Game
             if (goButton != null) goButton.SetAction(Go);
             if (speedButton != null) speedButton.SetAction(CycleSpeed);
             if (exitButton != null) exitButton.SetAction(Quit);
-            if (resultHomeButton != null) resultHomeButton.SetAction(() => { Hide(); Exited?.Invoke(); });
+            if (resultHomeButton != null)
+                resultHomeButton.SetAction(() =>
+                {
+                    if (IsTower) { TowerQuit(); return; }
+                    Hide();
+                    Exited?.Invoke();
+                });
             if (resultAgainButton != null)
-                resultAgainButton.SetAction(() => { if (resultRoot != null) resultRoot.SetActive(false); OpenTierPick(_svc); });
+                resultAgainButton.SetAction(() =>
+                {
+                    if (resultRoot != null) resultRoot.SetActive(false);
+                    // 타워는 이기면 다음 층으로, 지면 같은 층을 무료로 다시 돈다
+                    // (원본 `twOvNext` / `twRetry`).
+                    if (IsTower) { TowerAgain(); return; }
+                    OpenTierPick(_svc);
+                });
+            AwakeTower();
             if (tierCloseButton != null)
                 tierCloseButton.SetAction(() => { Hide(); Exited?.Invoke(); });
             if (tierGoButton != null)
@@ -130,6 +146,8 @@ namespace DustZero.Game
         void Hide()
         {
             if (resultRoot != null) resultRoot.SetActive(false);
+            if (floorSheetRoot != null) floorSheetRoot.SetActive(false);
+            if (infoSheetRoot != null) infoSheetRoot.SetActive(false);
             if (boardCamera != null) boardCamera.enabled = false;
             view?.ClearAll();
             gameObject.SetActive(false);
@@ -183,7 +201,7 @@ namespace DustZero.Game
                     : $"첫 완주 크리스탈 {row.firstCrystal}";
 
                 _tierCards[i].Show(_svc.Db.Text(row.nameKey),
-                    locked ? "잠김" : cleared ? "완주 ✓" : "도전",
+                    locked ? "잠김" : cleared ? "완주함" : "도전",
                     $"먼지 체력 ×{row.hpMul} · 공격 ×{row.atkMul} · 최고 {profile.LeagueBest(row.tier)}승",
                     $"승리마다 코인 {row.winCoin:N0} · 부품 {row.winPart} · {reward}"
                     + (locked ? "\n앞 단계를 완주하면 열려요" : string.Empty),
@@ -213,12 +231,15 @@ namespace DustZero.Game
 
             _sim = new LeagueSim(_svc.Db, _svc.Profile, tier,
                                  new LeagueRandom(System.Environment.TickCount));
+            // 타워를 보고 왔다면 줄들을 리그 자리로 되돌린다.
+            ShowTowerChrome(false);
             // 원본은 ★ 가 오를 때마다 판 가운데에 알림을 띄운다.
             _sim.Merged += (unitId, star) =>
                 Banner($"{_svc.Db.Units[unitId].Name} {new string('\u2605', star)}!", string.Empty, 0.9f);
             _selected = null;
             _endDelay = 0f;
             _bannerT = 0f;
+            _rounded = false;
 
             if (resultRoot != null) resultRoot.SetActive(false);
             if (bannerRoot != null) bannerRoot.SetActive(false);
@@ -245,7 +266,10 @@ namespace DustZero.Game
         void FrameBoard()
         {
             if (boardCamera == null) return;
-            boardCamera.rect = UiTheme.PageViewport(16f, 175f, 398f, 336f);
+            // 타워는 규칙 줄이 하나 더 있어 판이 그만큼 내려간다(실측 246.4).
+            boardCamera.rect = IsTower
+                ? UiTheme.PageViewport(16f, BoardTop, 398f, BoardH)
+                : UiTheme.PageViewport(16f, 175f, 398f, 336f);
             // 칸 7개가 가로를 꽉 채우고 세로 6칸이 그대로 들어가야 한다.
             boardCamera.orthographicSize = LeagueSim.Rows / 2f;
             boardCamera.transform.position =
@@ -363,9 +387,10 @@ namespace DustZero.Game
         void Go()
         {
             if (_sim == null) return;
+            if (IsTower) { TowerGo(); return; }
             if (_sim.Phase == LeaguePhase.Prep)
             {
-                if (_sim.StartBattle()) { _selected = null; Sync(); }
+                if (_sim.StartBattle()) { _selected = null; _rounded = false; Sync(); }
                 return;
             }
             // 전투 중이면 결과까지 바로 돌린다.
@@ -374,7 +399,8 @@ namespace DustZero.Game
 
         void Quit()
         {
-            if (_sim == null) return;
+            if (_sim == null) { HideTower(); TowerExited?.Invoke(); return; }
+            if (IsTower) { TowerQuit(); return; }
             if (_sim.Phase == LeaguePhase.Over) { Hide(); Exited?.Invoke(); return; }
             ShowResult(quit: true);
         }
@@ -404,10 +430,16 @@ namespace DustZero.Game
                 }
                 if (_sim.BattleOver) ShowRoundBanner();
             }
-            else if (_endDelay > 0f)
+            else if (!_rounded)
             {
-                _endDelay -= Time.unscaledDeltaTime;
-                if (_endDelay <= 0f) FinishRound();
+                // '결과 바로 보기' 는 Update 밖에서 판을 끝낸다. 그때는 여기서 알림을
+                // 띄워야 한다 — 그러지 않으면 끝난 판을 띄운 채로 멈춰 선다.
+                if (_endDelay <= 0f) ShowRoundBanner();
+                else
+                {
+                    _endDelay -= Time.unscaledDeltaTime;
+                    if (_endDelay <= 0f) { _rounded = true; FinishRound(); }
+                }
             }
 
             view.Sync(_sim);
@@ -418,6 +450,12 @@ namespace DustZero.Game
         {
             _endDelay = 0.9f;
             bool win = _sim.BattleWin == true;
+            if (IsTower)
+            {
+                Banner(win ? $"{_sim.Tower.Floor}층 청소 완료!" : "실패했어요",
+                       win ? string.Empty : _sim.TowerWhy());
+                return;
+            }
             int left = _sim.Last?.Left ?? 0;
             Banner(win ? "승리!" : "패배",
                    win ? string.Empty
@@ -434,6 +472,9 @@ namespace DustZero.Game
 
         void FinishRound()
         {
+            // 타워는 라운드가 없다 — 한 판이 곧 그 층이다.
+            if (IsTower) { TowerFinish(); return; }
+
             var last = _sim.EndRound();
             if (_sim.Phase == LeaguePhase.Over) { ShowResult(quit: false); return; }
 
@@ -494,6 +535,7 @@ namespace DustZero.Game
         public void Sync()
         {
             if (_sim == null) return;
+            if (IsTower) { TowerSync(); return; }
             var cfg = _svc.Db.Config;
             bool prep = _sim.Phase == LeaguePhase.Prep;
 

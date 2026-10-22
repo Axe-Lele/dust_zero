@@ -1247,6 +1247,113 @@ namespace DustZero.Tests
             AssertNoBlankLabels(league.transform, "리그 라운드 뒤");
         }
 
+        /// <summary>
+        /// 먼지 타워: 층 목록 → 층 상세 → 편성 → 전투까지 실제로 눌러서 지나간다.
+        /// 층 목록 줄 수는 tower_floor 가 정하고, 출전 목록은 보유 가전이 정한다 —
+        /// 사진만으로는 알 수 없는 것들이라 세어서 확인한다.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator TowerPicksAFloorFormsUpAndFights()
+        {
+            yield return LoadScene();
+            yield return null;
+            var svc = GameServices.Instance;
+            Assert.IsNotNull(svc, "GameServices 가 생성되지 않았습니다.");
+
+            // 타워는 2-5 를 깨야 열린다(content_unlock.tower → condition 1011).
+            SeedAuditState(svc);
+            svc.Profile.Data.best = 15;
+            svc.Persist();
+            Assert.IsTrue(svc.Profile.TowerUnlocked, "타워가 잠겨 있어 들어갈 수 없습니다.");
+
+            var lobbyScreen = Object.FindFirstObjectByType<LobbyScreen>(FindObjectsInactive.Include);
+            if (lobbyScreen != null) lobbyScreen.gameObject.SetActive(false);
+
+            var league = Object.FindFirstObjectByType<LeagueScreen>(FindObjectsInactive.Include);
+            Assert.IsNotNull(league, "LeagueScreen 이 씬에 없습니다.");
+            league.gameObject.SetActive(true);
+
+            // ---- 층 목록
+            league.OpenFloorPick(svc);
+            yield return null;
+            Canvas.ForceUpdateCanvases();
+
+            var rows = league.GetComponentsInChildren<TowerFloorCard>(true);
+            Assert.AreEqual(svc.Db.TowerFloors.Count, rows.Length,
+                            "층 줄 수가 tower_floor 와 다릅니다.");
+            AssertNoBlankLabels(league.transform, "타워 층 목록");
+            yield return ShotAt("37-tower-floors", 1080, 1920);
+
+            // ---- 층 상세
+            int top = svc.Profile.TowerTopFloor();
+            league.ShowFloorInfo(top);
+            yield return null;
+            Canvas.ForceUpdateCanvases();
+            AssertNoBlankLabels(league.transform, "타워 층 상세");
+            yield return ShotAt("38-tower-floor-info", 1080, 1920);
+
+            // ---- 편성
+            league.BeginTower(svc, top);
+            yield return null;
+            Canvas.ForceUpdateCanvases();
+
+            var sim = (LeagueSim)typeof(LeagueScreen)
+                .GetField("_sim", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(league);
+            Assert.IsNotNull(sim, "타워 판이 열리지 않았습니다.");
+            Assert.IsTrue(sim.IsTower, "타워가 아니라 리그로 열렸습니다.");
+            Assert.AreEqual(LeaguePhase.Prep, sim.Phase);
+
+            var own = league.GetComponentsInChildren<TowerOwnCell>(true);
+            Assert.AreEqual(sim.TowerRoster().Count, own.Length,
+                            "출전 목록 칸 수가 보유 가전과 다릅니다.");
+            Assert.Greater(sim.OnBoard, 0, "지난 편성도 자동 편성도 판을 채우지 못했습니다.");
+            Assert.LessOrEqual(sim.OnBoard, sim.Level, "출전 수가 층이 허락한 수를 넘었습니다.");
+
+            // 리그 전용 줄은 이 화면에 없어야 한다.
+            Assert.IsFalse(FindChild(league.transform, "Shop").gameObject.activeSelf,
+                           "타워에 상점이 남아 있습니다.");
+            Assert.IsFalse(FindChild(league.transform, "Bench").gameObject.activeSelf,
+                           "타워에 대기석이 남아 있습니다.");
+
+            // 들어갈 때 뜨는 알림(1.3초)이 판을 가린다 — 지나간 뒤에 찍는다.
+            float waited = 0f;
+            while (waited < 1.5f) { waited += Time.unscaledDeltaTime; yield return null; }
+            Canvas.ForceUpdateCanvases();
+
+            AssertNoBlankLabels(league.transform, "타워 편성");
+            yield return ShotAt("39-tower-prep", 1080, 1920);
+
+            // ---- 전투
+            Assert.IsTrue(sim.StartBattle(), "전투가 시작되지 않았습니다.");
+            for (int i = 0; i < 60; i++) sim.Step(1f / 30f);
+            league.Sync();
+            Canvas.ForceUpdateCanvases();
+            yield return null;
+            AssertNoBlankLabels(league.transform, "타워 전투");
+            yield return ShotAt("40-tower-battle", 1080, 1920);
+
+            sim.RunBattleToEnd();
+            Assert.IsTrue(sim.BattleOver, "전투가 끝나지 않았습니다.");
+
+            // ---- 결과: 알림 0.9초가 지나면 창이 뜬다(원본 twShowOver).
+            float settle = 0f;
+            while (settle < 2.5f) { settle += Time.unscaledDeltaTime; yield return null; }
+            Canvas.ForceUpdateCanvases();
+
+            var result = FindChild(league.transform, "Result");
+            Assert.IsTrue(result.gameObject.activeSelf, "결과 창이 뜨지 않았습니다.");
+            AssertNoBlankLabels(league.transform, "타워 결과");
+            yield return ShotAt("41-tower-result", 1080, 1920);
+
+            // 이겼다면 첫 클리어가 저장에 남아야 한다 — 보상은 한 번만 준다.
+            if (sim.BattleWin == true)
+            {
+                Assert.IsTrue(svc.Profile.TowerCleared(top), "첫 클리어가 기록되지 않았습니다.");
+                Assert.GreaterOrEqual(svc.Profile.TowerState.best, top,
+                                      "가장 높이 깬 층이 올라가지 않았습니다.");
+            }
+        }
+
         [UnityTest]
         public IEnumerator SurvivorRunsAndDrawsItsHudTeamAndLevelUp()
         {

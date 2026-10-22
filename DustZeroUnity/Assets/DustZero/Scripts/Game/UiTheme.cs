@@ -1,4 +1,4 @@
-// The redesign's design tokens, in one place.
+﻿// The redesign's design tokens, in one place.
 //
 // Transcribed from design/redesign-2026-10-16/구현 가이드.dc.html. Every colour, size and
 // spacing value the UI uses comes from here, so a token change is one edit rather than a
@@ -207,6 +207,61 @@ namespace DustZero.Game
         public static readonly Color RarityBgSSR = Hex("#FFE6CF");      // --ssr-bg
 
         /// <summary>Card ground by rarity index, 0 = N through 3 = SSR.</summary>
+        // ------------------------------------------------------------------ 먼지 타워
+        // 전부 10.19-e 의 `.tw-*` 규칙에서 읽은 값이다.
+        // 자세한 자리는 production/qa/audit/original/TOWER-MEASUREMENTS.md.
+
+        /// <summary>층 줄 바탕 — 기본 · 완료 · 현재 · 보스.</summary>
+        public static readonly Color TowerFloorOpen = Hex("#6E7B84");
+        public static readonly Color TowerFloorDone = Hex("#DCE7EE");
+        public static readonly Color TowerFloorCurrent = Hex("#FFF3E6");
+        public static readonly Color TowerFloorBoss = Hex("#4A2A2A");
+        public static readonly Color TowerBossRing = Hex("#A8483E");
+        public static readonly Color TowerBossNumber = Hex("#FF9A8E");
+        public static readonly Color TowerFloorNumber = Hex("#C9D2D8");
+        public static readonly Color TowerFloorReward = Hex("#D5DCE1");
+
+        /// <summary>탑 바탕과 지붕(`.tw-bld` · `.tw-roof`).</summary>
+        public static readonly Color TowerBuilding = Hex("#5B6770");
+        public static readonly Color TowerBuildingRing = Hex("#4A555D");
+        public static readonly Color TowerRoofInk = Hex("#AEB9C1");
+
+        /// <summary>창 그림(`twWindow`): 보통 방 · 깬 방 · 보스 방과 창틀.</summary>
+        public static readonly Color TowerWindowRoom = Hex("#B9A58A");
+        public static readonly Color TowerWindowDone = Hex("#EAF4FA");
+        public static readonly Color TowerWindowBoss = Hex("#5A3A36");
+        public static readonly Color TowerWindowFrame = Hex("#3E4850");
+        public static readonly Color TowerWindowFrameDone = Hex("#9FB4C2");
+
+        /// <summary>보너스 칸(`.tw-ovb` · `.tw-goals .bonus`) — 아직 못 받음 · 받음.</summary>
+        public static readonly Color TowerBonusBg = Hex("#FFFBEF");
+        public static readonly Color TowerBonusLine = Hex("#E8A82E");
+        public static readonly Color TowerBonusInk = Hex("#8A5A10");
+        public static readonly Color TowerBonusOkBg = Hex("#E2F4EA");
+        public static readonly Color TowerBonusOkLine = Hex("#8FD3AE");
+        public static readonly Color TowerBonusOkInk = Hex("#2E6A4A");
+
+        /// <summary>
+        /// 층 규칙 종류별 색 — a 판 · b 목표 · c 편성. 바탕 · 테두리 · 글자 차례다.
+        /// 규칙이 없는 기본 층이면 흰 바탕에 평소 선 색이다.
+        /// </summary>
+        public static (Color Fill, Color Line, Color Ink) TowerRuleKind(string kind) => kind switch
+        {
+            "a" => (Hex("#FFF4E8"), Hex("#F4B27A"), Hex("#8A3A10")),
+            "b" => (Hex("#FFEDEB"), Hex("#EBA39C"), Hex("#A3342C")),
+            "c" => (Hex("#EAF3FC"), Hex("#9CC3EA"), Hex("#1F4E80")),
+            _ => (Color.white, PanelLine, Ink),
+        };
+
+        /// <summary>층 목록 꼬리표의 색(`.tw-fl .tag`). 보스는 따로 붉다.</summary>
+        public static Color TowerTag(string kind, bool boss) => boss ? Hex("#A8483E") : kind switch
+        {
+            "a" => Hex("#E8842A"),
+            "b" => Hex("#E0524A"),
+            "c" => Hex("#3D8BD9"),
+            _ => Hex("#8A949C"),
+        };
+
         /// <summary>Gear grade colours, measured from the build's GRADE_COL.</summary>
         public static readonly Color Grade1 = Hex("#8A949C");
         public static readonly Color Grade2 = Hex("#3FAE7A");
