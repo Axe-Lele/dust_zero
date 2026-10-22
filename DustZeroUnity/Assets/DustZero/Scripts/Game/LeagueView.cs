@@ -12,7 +12,7 @@ using UnityEngine.Pool;
 
 namespace DustZero.Game
 {
-    public sealed class LeagueView : MonoBehaviour
+    public sealed partial class LeagueView : MonoBehaviour
     {
         [SerializeField] Transform entityRoot;
         [SerializeField] EntityView entityPrefab;
@@ -29,6 +29,9 @@ namespace DustZero.Game
         [SerializeField] Sprite cellFill;
 
         const float AllyScale = 0.82f, EnemyScale = 0.72f;
+
+        /// <summary>그림이 걸리는 자리. 타워 가지(LeagueView.Tower.cs)도 이것을 쓴다.</summary>
+        Transform EntityRoot => entityRoot;
 
         ObjectPool<EntityView> _pool;
         readonly Dictionary<LeagueUnit, EntityView> _units = new();
@@ -81,6 +84,7 @@ namespace DustZero.Game
             _marks.Clear();
             foreach (var g in _ghosts) if (g != null) _pool.Release(g);
             _ghosts.Clear();
+            ClearTower();
         }
 
         /// <summary>
@@ -127,6 +131,7 @@ namespace DustZero.Game
             }
             TrimRings(ring);
             ShowPreview(sim);
+            SyncTower(sim, prep: true);
             ShowSelection(selectedCell);
         }
 
@@ -225,6 +230,7 @@ namespace DustZero.Game
                         : sprites?.Enemy(u.Type, null, u.Boss);
                     if (u.Side == 0) ShowStars(v, u.Star);
                     else if (v.TierBadge != null) v.TierBadge.text = string.Empty;
+                    DressTowerUnit(sim, u, v);
                     _units[u] = v;
                 }
 
@@ -232,7 +238,7 @@ namespace DustZero.Game
                 v.Body.flipX = u.Face < 0;
                 // 먼지보다 가전을 위에, 아래쪽 줄일수록 앞에 그린다.
                 v.Body.sortingOrder = 400 + (int)(u.Y * 10f) + (u.Side == 0 ? 100 : 0);
-                v.Tint(u.HitT > 0f ? new Color(1f, 0.55f, 0.5f) : Color.white);
+                v.Tint(TowerTint(sim, u, u.HitT > 0f ? new Color(1f, 0.55f, 0.5f) : Color.white));
                 v.StepFlash(Time.unscaledDeltaTime);
 
                 if (v.HpFill != null)
@@ -253,6 +259,8 @@ namespace DustZero.Game
                 if (u.Side == 0 && u.Star >= 2) PlaceRing(ref ring, u.X, u.Y, u.Star);
             }
             TrimRings(ring);
+            SyncTower(sim, prep: false);
+            SyncTowerSparks(sim);
         }
 
         /// <summary>★2 는 파랑, ★3 은 금빛 고리를 바닥에 깐다 — 원본 `LG_STAR_COL`.</summary>

@@ -5618,7 +5618,13 @@ namespace DustZero.Editor
             var view = worldGo.AddComponent<LeagueView>();
             Wire(view, ("entityRoot", entityRoot), ("entityPrefab", prefabs.Entity),
                  ("sprites", library), ("floor", floor), ("selection", sel),
-                 ("starRing", art.Circle), ("cellFill", art.Square));
+                 ("starRing", art.Circle), ("cellFill", art.Square),
+                 // 먼지 타워 층 규칙 연출 — 물바닥·아지랑이·막힌 칸·반짝임·공기청정기.
+                 ("waterPoolSprite", GeneratedArt.WaterPool()),
+                 ("heatWaveSprite", GeneratedArt.HeatWave()),
+                 ("blockedCellSprite", GeneratedArt.BlockedCell()),
+                 ("sparkleSprite", GeneratedArt.Sparkle()),
+                 ("purifierSprite", GeneratedArt.Purifier()));
 
             SetLayerDeep(worldGo, LeagueLayer);
             return (cam, view);
@@ -6406,20 +6412,22 @@ namespace DustZero.Editor
             Anchor(ruleTop, new Vector2(0f, 1f), new Vector2(1f, 1f),
                    new Vector2(UiTheme.Px(10f), -UiTheme.Py(8f) - UiTheme.Row(UiTheme.Py(15f), UiTheme.Py(21f))),
                    new Vector2(-UiTheme.Px(10f), -UiTheme.Py(8f)));
-            var ruleTopRow = UiKit.Row(ruleTop, UiTheme.Px(8f), TextAnchor.LowerLeft);
+            // 원본은 `align-items:baseline` — 이름과 설명이 첫 줄에서 만난다.
+            var ruleTopRow = UiKit.Row(ruleTop, UiTheme.Px(8f), TextAnchor.UpperLeft);
             ruleTopRow.childControlWidth = true;
             ruleTopRow.childForceExpandWidth = false;
 
             var ruleName = UiKit.Label("Name", ruleTop, fonts.Title, UiTheme.Py(15f), UiTheme.Ink,
-                                       TextAlignmentOptions.Left, out var ruleNameRt, "");
+                                       TextAlignmentOptions.TopLeft, out var ruleNameRt, "");
             ruleName.textWrappingMode = TextWrappingModes.NoWrap;
             var ruleNameLe = ruleNameRt.gameObject.AddComponent<LayoutElement>();
             ruleNameLe.minHeight = UiTheme.Row(UiTheme.Py(15f), UiTheme.Py(21f));
 
             var ruleDesc = UiKit.Label("Desc", ruleTop, fonts.Body, UiTheme.Py(12f), UiTheme.Ink,
-                                       TextAlignmentOptions.Left, out var ruleDescRt, "");
-            ruleDesc.textWrappingMode = TextWrappingModes.NoWrap;
-            ruleDesc.overflowMode = TextOverflowModes.Ellipsis;
+                                       TextAlignmentOptions.TopLeft, out var ruleDescRt, "");
+            // 설명은 길면 두 줄이 된다 — 그러면 줄 전체가 54.4 에서 70 으로 커진다(실측).
+            ruleDesc.textWrappingMode = TextWrappingModes.Normal;
+            ruleDesc.overflowMode = TextOverflowModes.Truncate;
             var ruleDescLe = ruleDescRt.gameObject.AddComponent<LayoutElement>();
             ruleDescLe.flexibleWidth = 1f;
             ruleDescLe.minHeight = UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(16.8f));
@@ -6840,7 +6848,8 @@ namespace DustZero.Editor
                  ("towerGoalValue", twGoalValue), ("towerUseValue", twUseValue),
                  ("ruleRoot", ruleRow.gameObject), ("ruleFace", ruleFace), ("ruleLine", ruleLine),
                  ("ruleNameLabel", ruleName), ("ruleDescLabel", ruleDesc),
-                 ("ruleBonusLabel", ruleBonus),
+                 ("ruleBonusLabel", ruleBonus), ("ruleTopRow", ruleTop),
+                 ("ruleNameLayout", ruleNameLe),
                  ("ownRoot", ownRow), ("ownPrefab", prefabs.TowerOwn), ("autoButton", autoBtn),
                  ("floorSheetRoot", floorSheet.gameObject), ("floorListRoot", floorList),
                  ("floorPrefab", prefabs.TowerFloor), ("floorScroll", floorScroll),

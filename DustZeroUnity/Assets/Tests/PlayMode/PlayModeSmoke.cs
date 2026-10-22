@@ -1354,6 +1354,135 @@ namespace DustZero.Tests
             }
         }
 
+        /// <summary>
+        /// 층 규칙이 판 위에 실제로 그려지는지 — 물바닥·아지랑이·막힌 칸·공기청정기·
+        /// 황금 먼지·거울. 사진이 증거이고, 그려야 할 것이 몇 개인지는 여기서 센다.
+        /// 층 번호는 적지 않는다 — 규칙으로 찾는다(표가 바뀌어도 따라간다).
+        /// </summary>
+        [UnityTest]
+        public IEnumerator TowerRulesDressTheBoard()
+        {
+            yield return LoadScene();
+            yield return null;
+            var svc = GameServices.Instance;
+            SeedAuditState(svc);
+            svc.Profile.Data.best = 15;
+            svc.Persist();
+
+            var lobbyScreen = Object.FindFirstObjectByType<LobbyScreen>(FindObjectsInactive.Include);
+            if (lobbyScreen != null) lobbyScreen.gameObject.SetActive(false);
+            var league = Object.FindFirstObjectByType<LeagueScreen>(FindObjectsInactive.Include);
+            league.gameObject.SetActive(true);
+
+            // 판은 UI 가 아니라 월드에 있다(LeagueWorld).
+            var view = Object.FindFirstObjectByType<LeagueView>(FindObjectsInactive.Include);
+            Assert.IsNotNull(view, "LeagueView 가 없습니다.");
+            var field = typeof(LeagueScreen).GetField("_sim",
+                BindingFlags.Instance | BindingFlags.NonPublic);
+
+            int shot = 42;
+            foreach (var rule in new[] { "water", "heat", "narrow", "guard", "golden", "mirror" })
+            {
+                var row = svc.Db.TowerFloors.FirstOrDefault(f => f.rule == rule);
+                Assume.That(row, Is.Not.Null, $"'{rule}' 규칙을 쓰는 층이 표에 없습니다.");
+
+                league.BeginTower(svc, row.floor);
+                yield return null;
+                var sim = (LeagueSim)field.GetValue(league);
+                Assert.IsTrue(sim.IsTower);
+
+                // 알림이 판을 가리지 않게 지나간 뒤에 찍는다.
+                float waited = 0f;
+                while (waited < 1.5f) { waited += Time.unscaledDeltaTime; yield return null; }
+                Canvas.ForceUpdateCanvases();
+
+                int decor = CountActive(view, "TowerDecor");
+                switch (rule)
+                {
+                    case "water":
+                        Assert.AreEqual(LeagueSim.WaterPools.Count, decor,
+                                        "물바닥 웅덩이 수가 다릅니다.");
+                        break;
+                    case "heat":
+                        Assert.AreEqual(LeagueSim.Cols, decor, "아지랑이 줄 수가 다릅니다.");
+                        break;
+                    case "narrow":
+                    {
+                        int blocked = 0;
+                        for (int i = 0; i < LeagueSim.BoardCells; i++)
+                            if (!sim.TowerCellOk(i)) blocked++;
+                        Assert.Greater(blocked, 0, "좁은 복도인데 막힌 칸이 없습니다.");
+                        Assert.AreEqual(blocked, decor, "막힌 칸 수가 다릅니다.");
+                        break;
+                    }
+                    case "guard":
+                        Assert.IsTrue(HasSprite(view, "tw_purifier"),
+                                      "공기청정기가 판에 서 있지 않습니다.");
+                        break;
+                    case "golden":
+                        Assert.AreEqual(3, CountActive(view, "GoldSpark"),
+                                        "황금 먼지 반짝임이 셋이 아닙니다.");
+                        break;
+                    case "mirror":
+                        // 거울은 우리가 놓은 가전을 베껴 세운다 — 수는 전투에서 센다.
+                        Assert.Greater(sim.OnBoard, 0, "놓인 가전이 없어 거울이 비칠 것이 없습니다.");
+                        break;
+                }
+
+                AssertNoBlankLabels(league.transform, $"타워 {rule} 층");
+                yield return ShotAt($"{shot++}-tower-rule-{rule}", 1080, 1920);
+            }
+
+            // 거울과 황금 먼지는 전투에 들어가야 제 모습이 된다.
+            foreach (var rule in new[] { "golden", "mirror" })
+            {
+                var row = svc.Db.TowerFloors.First(f => f.rule == rule);
+                league.BeginTower(svc, row.floor);
+                yield return null;
+                var sim = (LeagueSim)field.GetValue(league);
+                // 알림(1.3초)이 판을 가린다 — 지나간 뒤에 싸운다.
+                float settle = 0f;
+                while (settle < 1.5f) { settle += Time.unscaledDeltaTime; yield return null; }
+                Assert.IsTrue(sim.StartBattle(), "전투가 시작되지 않았습니다.");
+                for (int i = 0; i < 45; i++) sim.Step(1f / 30f);
+                view.Sync(sim);
+                league.Sync();
+                Canvas.ForceUpdateCanvases();
+                yield return null;
+
+                if (rule == "golden")
+                    Assert.IsNotNull(sim.Tower.Gold, "황금 먼지가 없습니다.");
+                else
+                    Assert.Greater(sim.Units.Count(u => u.Mirror), 0, "거울 가전이 없습니다.");
+
+                yield return ShotAt($"{shot++}-tower-rule-{rule}-battle", 1080, 1920);
+            }
+        }
+
+        /// <summary>판 위에 켜져 있는 연출 오브젝트 수.</summary>
+        static int CountActive(LeagueView view, string prefix, bool withSprite = false)
+        {
+            int n = 0;
+            foreach (var sr in view.GetComponentsInChildren<SpriteRenderer>(true))
+            {
+                if (!sr.gameObject.activeInHierarchy) continue;
+                if (!sr.gameObject.name.StartsWith(prefix)) continue;
+                if (withSprite && sr.sprite == null) continue;
+                n++;
+            }
+            return n;
+        }
+
+        /// <summary>그 이름의 그림이 판 위에 켜져 있는가.</summary>
+        static bool HasSprite(LeagueView view, string spriteName)
+        {
+            foreach (var sr in view.GetComponentsInChildren<SpriteRenderer>(true))
+                if (sr.gameObject.activeInHierarchy && sr.sprite != null
+                    && sr.sprite.name.StartsWith(spriteName))
+                    return true;
+            return false;
+        }
+
         [UnityTest]
         public IEnumerator SurvivorRunsAndDrawsItsHudTeamAndLevelUp()
         {

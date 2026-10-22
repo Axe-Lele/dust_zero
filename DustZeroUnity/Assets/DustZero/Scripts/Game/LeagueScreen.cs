@@ -268,7 +268,7 @@ namespace DustZero.Game
             if (boardCamera == null) return;
             // 타워는 규칙 줄이 하나 더 있어 판이 그만큼 내려간다(실측 246.4).
             boardCamera.rect = IsTower
-                ? UiTheme.PageViewport(16f, BoardTop, 398f, BoardH)
+                ? UiTheme.PageViewport(16f, BoardTop + TowerRuleDrop, 398f, BoardH)
                 : UiTheme.PageViewport(16f, 175f, 398f, 336f);
             // 칸 7개가 가로를 꽉 채우고 세로 6칸이 그대로 들어가야 한다.
             boardCamera.orthographicSize = LeagueSim.Rows / 2f;

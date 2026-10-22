@@ -35,6 +35,8 @@ namespace DustZero.Game
         [SerializeField] TextMeshProUGUI ruleNameLabel;
         [SerializeField] TextMeshProUGUI ruleDescLabel;
         [SerializeField] TextMeshProUGUI ruleBonusLabel;
+        [SerializeField] RectTransform ruleTopRow;
+        [SerializeField] LayoutElement ruleNameLayout;
 
         [Header("타워 · 출전 목록")]
         [SerializeField] RectTransform ownRoot;
@@ -478,11 +480,62 @@ namespace DustZero.Game
         {
             int rows = Mathf.Max(1, Mathf.CeilToInt(_ownCells.Count / 6f));
             float ownH = rows * OwnCellH + (rows - 1) * OwnGap;
+            float drop = TowerRuleDrop;
 
-            Place(infoRoot, InfoTop, InfoH);
-            Place(ownRoot, OwnTop, ownH);
-            Place(goRoot, OwnTop + ownH + 18f, GoH);
-            Place(hintRoot, OwnTop + ownH + 18f + GoH + 10f, HintH);
+            Place(ruleRoot != null ? (RectTransform)ruleRoot.transform : null,
+                  RuleTop, RuleH + drop);
+            // 글자가 들어가는 두 줄은 줄 높이를 지켜야 한다 — 모자라면 TMP 가 안 그린다.
+            PlacePx(ruleTopRow, 8f, RuleTopHeight);
+            PlacePx(ruleBonusLabel != null ? (RectTransform)ruleBonusLabel.transform : null,
+                    31f + drop, UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(15.4f)));
+
+            Place(infoRoot, InfoTop + drop, InfoH);
+            Place(ownRoot, OwnTop + drop, ownH);
+            Place(goRoot, OwnTop + drop + ownH + 18f, GoH);
+            Place(hintRoot, OwnTop + drop + ownH + 18f + GoH + 10f, HintH);
+            FrameBoard();
+        }
+
+        /// <summary>
+        /// 규칙 설명이 몇 줄인지. 원본은 흐름 배치라 저절로 늘지만 우리는 자리를 직접
+        /// 잡으므로 글자 폭을 재서 센다(최대 두 줄 — 실측 54.4 / 70 두 가지뿐이다).
+        /// </summary>
+        void MeasureRuleLines()
+        {
+            _ruleLines = 1;
+            if (ruleDescLabel == null || ruleNameLabel == null) return;
+
+            // 이름은 줄지 않는다(원본 `auto 1fr` 격자) — 글자 폭을 그대로 잡아 둔다.
+            float nameW = ruleNameLabel.GetPreferredValues(ruleNameLabel.text).x;
+            if (ruleNameLayout != null)
+                ruleNameLayout.minWidth = ruleNameLayout.preferredWidth = nameW;
+
+            // 남는 폭(페이지 단위): 398 − 양쪽 패딩 10 − 이름 − 사이 8.
+            float left = 398f - 20f - 8f - nameW / Mathf.Max(0.0001f, UiTheme.Px(1f));
+            float need = ruleDescLabel.GetPreferredValues(ruleDescLabel.text).x
+                         / Mathf.Max(0.0001f, UiTheme.Px(1f));
+            if (need > left) _ruleLines = 2;
+        }
+
+        int _ruleLines = 1;
+
+        /// <summary>
+        /// 규칙 줄 첫 칸(이름 + 설명)의 높이. 설명이 두 줄이면 우리 글꼴의 줄 높이 두 개가
+        /// 들어가야 한다 — 원본의 16.8 두 줄보다 조금 높다(글꼴 금속이 달라서다).
+        /// </summary>
+        float RuleTopHeight =>
+            UiTheme.Row(UiTheme.Py(15f), _ruleLines * UiTheme.Line(UiTheme.Py(12f)));
+
+        /// <summary>설명이 두 줄인 층에서 판과 그 아래가 내려가는 만큼(페이지 단위).</summary>
+        float TowerRuleDrop =>
+            Mathf.Max(0f, RuleTopHeight / Mathf.Max(0.0001f, UiTheme.Py(1f)) - 21f);
+
+        /// <summary>자리는 페이지 좌표로, 높이는 이미 잰 캔버스 값으로 놓는다.</summary>
+        static void PlacePx(RectTransform rt, float top, float heightPx)
+        {
+            if (rt == null) return;
+            rt.offsetMin = new Vector2(rt.offsetMin.x, -UiTheme.Py(top) - heightPx);
+            rt.offsetMax = new Vector2(rt.offsetMax.x, -UiTheme.Py(top));
         }
 
         /// <summary>한 줄을 원본 페이지 좌표(430x932)로 올려놓는다.</summary>
@@ -494,6 +547,7 @@ namespace DustZero.Game
         }
 
         // 430x932 실측값. TOWER-MEASUREMENTS.md 1절.
+        const float RuleTop = 182f, RuleH = 54.4f;
         const float BoardTop = 246.4f, BoardH = 336f;
         const float InfoTop = 600.4f, InfoH = 26f;
         const float OwnTop = 640.4f, OwnCellH = 54f, OwnGap = 5f, OwnCellW = 62.16f;
@@ -640,8 +694,8 @@ namespace DustZero.Game
                 towerGoalCaption.text = tower.RuleId == "guard" ? "버티기" : "남은 시간";
             if (towerGoalValue != null)
             {
-                float limit = tower.RuleId == "guard" ? tower.GoalTime
-                                                      : TowerText.TimeLimit(db, row);
+                // 지키기 층의 버티는 시간은 규칙이 들고 있다 — 판이 열리기 전에도 보여 준다.
+                float limit = TowerText.TimeLimit(db, row);
                 int left = Mathf.Max(0, Mathf.CeilToInt(limit - (prep ? 0f : _sim.BattleTime)));
                 towerGoalValue.text = $"{left / 60}:{left % 60:00}";
             }
@@ -657,6 +711,8 @@ namespace DustZero.Game
                 ruleNameLabel.color = ink;
             }
             if (ruleDescLabel != null) ruleDescLabel.text = TowerText.RuleDesc(db, row);
+            MeasureRuleLines();
+            LayoutTower();
             if (ruleBonusLabel != null)
                 ruleBonusLabel.text = $"보너스 · {TowerText.BonusText(db, row)}"
                                     + (_svc.Profile.TowerBonusDone(tower.Floor) ? " (받음)" : string.Empty);

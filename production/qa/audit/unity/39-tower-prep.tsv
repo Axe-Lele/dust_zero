@@ -50,51 +50,51 @@ SafeArea/Column/League/Cells/LeagueCell(Clone)	186.6	455.0	56.9	56.0	#FFFFFF00
 SafeArea/Column/League/Cells/LeagueCell(Clone)	243.4	455.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	300.3	455.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	357.1	455.0	56.9	56.0	#FFFFFF00			
-SafeArea/Column/League/Info/Left	16.0	600.4	258.7	26.0	#5D6871FF	12.0	목표 · 먼지 전멸	16.0,604.4,76.6,18.0
-SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	16.0	600.4	258.7	26.0	#FFFFFFFF			
-SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	600.4	258.7	26.0	#FFFFFFFF			
-SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	600.4	258.7	26.0	#FFFFFFFF			
-SafeArea/Column/League/Info/Right	274.7	600.4	139.3	26.0	#5D6871FF	12.0		
-SafeArea/Column/League/Info/TowerAuto	346.3	600.4	67.7	26.0	#F7F9FAFF			
-SafeArea/Column/League/Info/TowerAuto/Line	346.3	600.4	67.7	26.0	#C7D0D6FF			
-SafeArea/Column/League/Info/TowerAuto/Content/Label	354.3	604.2	51.7	18.4	#1D2226FF	12.0	자동 편성	357.3,604.4,45.6,18.0
-SafeArea/Column/League/Go/Button	16.0	712.4	398.0	46.0	#FF9A3CFF			
-SafeArea/Column/League/Go/Button/Content/Label	24.0	720.4	382.0	30.0	#1D2226FF	19.0	출동 · 1층	181.0,724.8,68.0,21.2
-SafeArea/Column/League/Go/Button/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	24.0	720.4	382.0	30.0	#FFFFFFFF			
-SafeArea/Column/League/Hint/Hint	16.0	768.4	398.0	38.4	#5D6871FF	12.0	아래 가전을 누르면 판에 놓이고, 다시 누르면 빠져요. 판의 가전을 눌러	16.7,769.6,396.5,36.0
-SafeArea/Column/League/Hint/Hint/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	768.4	398.0	38.4	#FFFFFFFF			
-SafeArea/Column/League/Hint/Hint/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	768.4	398.0	38.4	#FFFFFFFF			
-SafeArea/Column/League/TowerRule	16.0	182.0	398.0	54.4	#FFFFFFFF			
-SafeArea/Column/League/TowerRule/Line	16.0	182.0	398.0	54.4	#C7D0D6FF			
-SafeArea/Column/League/TowerRule/Top/Name	26.0	190.0	23.0	22.8	#1D2226FF	15.0	기본	26.0,193.9,23.0,15.0
+SafeArea/Column/League/Info/Left	16.0	602.2	258.7	26.0	#5D6871FF	12.0	목표 · 먼지 전멸	16.0,606.2,76.6,18.0
+SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	16.0	602.2	258.7	26.0	#FFFFFFFF			
+SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	602.2	258.7	26.0	#FFFFFFFF			
+SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	602.2	258.7	26.0	#FFFFFFFF			
+SafeArea/Column/League/Info/Right	274.7	602.2	139.3	26.0	#5D6871FF	12.0		
+SafeArea/Column/League/Info/TowerAuto	346.3	602.2	67.7	26.0	#F7F9FAFF			
+SafeArea/Column/League/Info/TowerAuto/Line	346.3	602.2	67.7	26.0	#C7D0D6FF			
+SafeArea/Column/League/Info/TowerAuto/Content/Label	354.3	606.0	51.7	18.4	#1D2226FF	12.0	자동 편성	357.3,606.2,45.6,18.0
+SafeArea/Column/League/Go/Button	16.0	714.2	398.0	46.0	#FF9A3CFF			
+SafeArea/Column/League/Go/Button/Content/Label	24.0	722.2	382.0	30.0	#1D2226FF	19.0	출동 · 1층	181.0,726.6,68.0,21.2
+SafeArea/Column/League/Go/Button/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	24.0	722.2	382.0	30.0	#FFFFFFFF			
+SafeArea/Column/League/Hint/Hint	16.0	770.2	398.0	38.4	#5D6871FF	12.0	아래 가전을 누르면 판에 놓이고, 다시 누르면 빠져요. 판의 가전을 눌러	16.7,771.4,396.5,36.0
+SafeArea/Column/League/Hint/Hint/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	770.2	398.0	38.4	#FFFFFFFF			
+SafeArea/Column/League/Hint/Hint/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	770.2	398.0	38.4	#FFFFFFFF			
+SafeArea/Column/League/TowerRule	16.0	182.0	398.0	56.2	#FFFFFFFF			
+SafeArea/Column/League/TowerRule/Line	16.0	182.0	398.0	56.2	#C7D0D6FF			
+SafeArea/Column/League/TowerRule/Top/Name	26.0	190.0	23.0	22.8	#1D2226FF	15.0	기본	26.0,190.0,23.0,15.0
 SafeArea/Column/League/TowerRule/Top/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	26.0	190.0	23.0	22.8	#FFFFFFFF			
-SafeArea/Column/League/TowerRule/Top/Desc	57.0	194.4	347.0	18.4	#1D2226FF	12.0	규칙 없는 기본 층이에요. 먼지를 모두 치우면 클리어.	57.0,194.6,251.1,18.0
-SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	57.0	194.4	347.0	18.4	#FFFFFFFF			
-SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	57.0	194.4	347.0	18.4	#FFFFFFFF			
-SafeArea/Column/League/TowerRule/Bonus	26.0	213.0	378.0	16.5	#8A5A10FF	11.0	보너스 · 쓰러진 가전 없이 깨기	26.0,213.0,134.3,16.5
-SafeArea/Column/League/TowerRule/Bonus/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	26.0	213.0	378.0	16.5	#FFFFFFFF			
-SafeArea/Column/League/TowerRule/Bonus/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	26.0	213.0	378.0	16.5	#FFFFFFFF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	16.0	640.4	62.2	54.0	#FFFFFFFF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	16.0	640.4	62.2	54.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	30.1	643.4	34.0	34.0	#FFFFFF8C			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	16.0	676.4	62.2	16.0	#1D2226FF	10.5	Lv1	38.7,676.5,16.7,15.8
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	29.1	656.4	36.0	15.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	29.1	656.4	36.0	15.0	#FFFFFFFF	10.0	출전	38.2,656.4,17.8,15.0
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	83.2	640.4	62.2	54.0	#DCE9F7FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	83.2	640.4	62.2	54.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	97.2	643.4	34.0	34.0	#FFFFFF8C			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	83.2	676.4	62.2	16.0	#1D2226FF	10.5	Lv1	105.9,676.5,16.7,15.8
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	96.2	656.4	36.0	15.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	96.2	656.4	36.0	15.0	#FFFFFFFF	10.0	출전	105.3,656.4,17.8,15.0
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	150.3	640.4	62.2	54.0	#FFFFFFFF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	150.3	640.4	62.2	54.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	164.4	643.4	34.0	34.0	#FFFFFF8C			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	150.3	676.4	62.2	16.0	#1D2226FF	10.5	Lv1	173.0,676.5,16.7,15.8
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	163.4	656.4	36.0	15.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	163.4	656.4	36.0	15.0	#FFFFFFFF	10.0	출전	172.5,656.4,17.8,15.0
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	217.5	640.4	62.2	54.0	#FFFFFFFF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	217.5	640.4	62.2	54.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	231.6	643.4	34.0	34.0	#FFFFFF8C			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	217.5	676.4	62.2	16.0	#1D2226FF	10.5	Lv1	240.2,676.5,16.7,15.8
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	230.6	656.4	36.0	15.0	#3D8BD9FF			
-SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	230.6	656.4	36.0	15.0	#FFFFFFFF	10.0	출전	239.6,656.4,17.8,15.0
+SafeArea/Column/League/TowerRule/Top/Desc	57.0	190.0	347.0	18.4	#1D2226FF	12.0	규칙 없는 기본 층이에요. 먼지를 모두 치우면 클리어.	57.0,190.0,251.1,18.0
+SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	57.0	190.0	347.0	18.4	#FFFFFFFF			
+SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	57.0	190.0	347.0	18.4	#FFFFFFFF			
+SafeArea/Column/League/TowerRule/Bonus	26.0	214.8	378.0	16.5	#8A5A10FF	11.0	보너스 · 쓰러진 가전 없이 깨기	26.0,214.8,134.3,16.5
+SafeArea/Column/League/TowerRule/Bonus/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	26.0	214.8	378.0	16.5	#FFFFFFFF			
+SafeArea/Column/League/TowerRule/Bonus/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	26.0	214.8	378.0	16.5	#FFFFFFFF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	16.0	642.2	62.2	54.0	#FFFFFFFF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	16.0	642.2	62.2	54.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	30.1	645.2	34.0	34.0	#FFFFFF8C			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	16.0	678.2	62.2	16.0	#1D2226FF	10.5	Lv1	38.7,678.3,16.7,15.8
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	29.1	658.2	36.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	29.1	658.2	36.0	15.0	#FFFFFFFF	10.0	출전	38.2,658.2,17.8,15.0
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	83.2	642.2	62.2	54.0	#DCE9F7FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	83.2	642.2	62.2	54.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	97.2	645.2	34.0	34.0	#FFFFFF8C			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	83.2	678.2	62.2	16.0	#1D2226FF	10.5	Lv1	105.9,678.3,16.7,15.8
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	96.2	658.2	36.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	96.2	658.2	36.0	15.0	#FFFFFFFF	10.0	출전	105.3,658.2,17.8,15.0
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	150.3	642.2	62.2	54.0	#FFFFFFFF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	150.3	642.2	62.2	54.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	164.4	645.2	34.0	34.0	#FFFFFF8C			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	150.3	678.2	62.2	16.0	#1D2226FF	10.5	Lv1	173.0,678.3,16.7,15.8
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	163.4	658.2	36.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	163.4	658.2	36.0	15.0	#FFFFFFFF	10.0	출전	172.5,658.2,17.8,15.0
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)	217.5	642.2	62.2	54.0	#FFFFFFFF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Outline	217.5	642.2	62.2	54.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Portrait	231.6	645.2	34.0	34.0	#FFFFFF8C			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/Level	217.5	678.2	62.2	16.0	#1D2226FF	10.5	Lv1	240.2,678.3,16.7,15.8
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge	230.6	658.2	36.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerOwn/TowerOwnCell(Clone)/InBadge/Text	230.6	658.2	36.0	15.0	#FFFFFFFF	10.0	출전	239.6,658.2,17.8,15.0

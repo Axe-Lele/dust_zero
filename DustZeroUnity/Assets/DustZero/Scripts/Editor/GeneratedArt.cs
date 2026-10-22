@@ -658,6 +658,158 @@ namespace DustZero.Editor
                 }
             });
 
+        // ------------------------------------------------------------------ 먼지 타워
+
+        /// <summary>
+        /// 물바닥 웅덩이(원본 `twRenderFloor` 의 water). 납작한 타원 한 장에 왼쪽 위
+        /// 반짝임까지 한 번에 굽는다. 색은 쓰는 쪽에서 입힌다.
+        /// </summary>
+        public static Sprite WaterPool(string name = "tw_pool", int size = 128)
+            => Make(name, size, (x, y, s) =>
+            {
+                float px = x + 0.5f, py = y + 0.5f, m = s * 0.5f;
+                // 세로를 0.55 로 눌러 바닥에 깔린 타원으로 만든다 — 원본과 같은 비율.
+                float dx = (px - m) / (s * 0.5f), dy = (py - m) / (s * 0.5f * 0.55f);
+                float d = Mathf.Sqrt(dx * dx + dy * dy);
+                float body = Mathf.Clamp01((1f - d) * 6f);
+                float hx = (px - m * 0.72f) / (s * 0.16f), hy = (py - m * 1.12f) / (s * 0.06f);
+                float shine = Mathf.Clamp01((1f - Mathf.Sqrt(hx * hx + hy * hy)) * 4f) * 0.5f;
+                return Mathf.Clamp01(body * 0.85f + shine);
+            });
+
+        /// <summary>
+        /// 열기 층의 아지랑이 한 줄(원본은 사인으로 흔들리는 선을 긋는다). 한 장을
+        /// 여러 번 세워 쓰므로 굽는 것은 흔들리는 선 하나다.
+        /// </summary>
+        public static Sprite HeatWave(string name = "tw_heat", int size = 64)
+            => Make(name, size, (x, y, s) =>
+            {
+                float px = x + 0.5f, py = y + 0.5f;
+                // 위로 갈수록 옅어지는, 좌우로 흔들리는 선.
+                float wave = s * 0.5f + Mathf.Sin(py / s * Mathf.PI * 2.6f) * s * 0.12f;
+                float line = Mathf.Clamp01(s * 0.035f - Mathf.Abs(px - wave) + 0.5f);
+                return line * Mathf.Clamp01(py / s);
+            });
+
+        /// <summary>
+        /// 놓을 수 없는 칸(좁은 복도의 양 옆, 지키기 층의 청정기 자리). 원본처럼
+        /// 어두운 네모에 빗금을 친다.
+        /// </summary>
+        public static Sprite BlockedCell(string name = "tw_block", int size = 64)
+            => Make(name, size, (x, y, s) =>
+            {
+                float px = x + 0.5f, py = y + 0.5f;
+                float inset = s * 0.03f;
+                if (px < inset || py < inset || px > s - inset || py > s - inset) return 0f;
+                // 10px 간격 빗금 — 바탕은 옅게 깔고 선만 진하게.
+                float v = Mathf.Repeat(px + py, s * 0.16f);
+                float stripe = v < s * 0.035f ? 1f : 0f;
+                return Mathf.Clamp01(0.55f + stripe * 0.45f);
+            });
+
+        /// <summary>황금 먼지 둘레에서 반짝이는 네 갈래 별.</summary>
+        public static Sprite Sparkle(string name = "tw_spark", int size = 32)
+            => Make(name, size, (x, y, s) =>
+            {
+                float px = (x + 0.5f) / s * 2f - 1f, py = (y + 0.5f) / s * 2f - 1f;
+                // |x|^.5 + |y|^.5 <= 1 이 네 갈래 별이다.
+                float d = Mathf.Sqrt(Mathf.Abs(px)) + Mathf.Sqrt(Mathf.Abs(py));
+                return Mathf.Clamp01((1f - d) * 3f);
+            });
+
+        /// <summary>
+        /// 지키기 층의 공기청정기(원본 `twDrawPurifier`). 흰 몸통 · 위쪽 띠 · 통풍구 네 줄 ·
+        /// 파란 바람 고리를 한 장에 굽는다. 색이 여럿이라 알파 한 장으로는 안 된다.
+        /// </summary>
+        public static Sprite Purifier(string name = "tw_purifier", int size = 128)
+            => MakeRgba(name, size, (x, y, s) =>
+            {
+                float px = x + 0.5f, py = y + 0.5f;
+                // 텍스처는 아래가 0 이고 그림은 위가 0 이라 뒤집어 읽는다.
+                float uy = s - py;
+                float w = s * 0.46f, h = s * 0.8f;
+                float left = (s - w) * 0.5f, right = left + w;
+                float top = s * 0.08f, bottom = top + h;
+
+                var ink = new Color(0.114f, 0.133f, 0.149f);          // #1D2226
+                var shell = new Color(0.969f, 0.976f, 0.980f);        // #F7F9FA
+                var band = new Color(0.863f, 0.902f, 0.925f);         // #DCE6EC
+                var vent = new Color(0.604f, 0.655f, 0.690f);         // #9AA7B0
+                var ring = new Color(0.310f, 0.714f, 0.941f);         // #4FB6F0
+                var core = new Color(0.749f, 0.910f, 1f);             // #BFE8FF
+
+                bool inBody = px >= left && px <= right && uy >= top && uy <= bottom;
+                float edge = s * 0.016f;
+                bool onEdge = inBody && (px < left + edge || px > right - edge
+                                         || uy < top + edge || uy > bottom - edge);
+                if (!inBody)
+                {
+                    // 몸통 위로 올라가는 바람 고리 세 줄.
+                    float cx = s * 0.5f, cy = top;
+                    float d = Dist(px, uy, cx, cy);
+                    for (int i = 0; i < 3; i++)
+                    {
+                        float r = s * (0.18f + i * 0.14f);
+                        if (uy < cy && Mathf.Abs(d - r) < s * 0.012f)
+                            return new Color(ring.r, ring.g, ring.b, 0.55f - i * 0.12f);
+                    }
+                    return Color.clear;
+                }
+                if (onEdge) return ink;
+
+                // 가운데 바람 구멍.
+                float hole = Dist(px, uy, s * 0.5f, top + h * 0.56f);
+                if (hole < s * 0.035f) return core;
+                if (Mathf.Abs(hole - s * 0.09f) < s * 0.013f) return ring;
+
+                // 위쪽 띠.
+                if (uy < top + h * 0.22f) return band;
+
+                // 통풍구 네 줄.
+                for (int i = 0; i < 4; i++)
+                {
+                    float yy = top + h * 0.3f + i * s * 0.055f;
+                    if (Mathf.Abs(uy - yy) < s * 0.008f
+                        && px > left + s * 0.05f && px < right - s * 0.05f)
+                        return vent;
+                }
+                return shell;
+            });
+
+        /// <summary>색이 여럿인 그림 한 장. <see cref="Make"/> 는 알파만 굽는다.</summary>
+        static Sprite MakeRgba(string name, int size, System.Func<int, int, int, Color> paint)
+        {
+            EnsureFolder();
+            var path = $"{Folder}/{name}.png";
+
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            var px = new Color[size * size];
+            for (int y = 0; y < size; y++)
+                for (int x = 0; x < size; x++)
+                {
+                    var c = paint(x, y, size);
+                    if (c.a <= 0f) { px[y * size + x] = Color.clear; continue; }
+                    px[y * size + x] = c;
+                }
+            tex.SetPixels(px);
+            tex.Apply();
+
+            File.WriteAllBytes(path, tex.EncodeToPNG());
+            Object.DestroyImmediate(tex);
+            AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceSynchronousImport);
+
+            var importer = (TextureImporter)AssetImporter.GetAtPath(path);
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Single;
+            importer.spritePixelsPerUnit = size;
+            importer.alphaIsTransparency = true;
+            importer.mipmapEnabled = false;
+            importer.filterMode = FilterMode.Bilinear;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.SaveAndReimport();
+            return AssetDatabase.LoadAssetAtPath<Sprite>(path);
+        }
+
         static float Dist(float x, float y, float cx, float cy)
             => Mathf.Sqrt((x - cx) * (x - cx) + (y - cy) * (y - cy));
 

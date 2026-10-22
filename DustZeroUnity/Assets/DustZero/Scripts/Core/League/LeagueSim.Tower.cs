@@ -64,6 +64,9 @@ namespace DustZero.Core.League
         static readonly (float X, float Y, float R)[] Pools =
             { (1.5f, 2.75f, 0.85f), (5.5f, 2.75f, 0.85f), (3.5f, 3.95f, 0.8f) };
 
+        /// <summary>화면이 웅덩이를 같은 자리에 그릴 수 있도록 내보낸다.</summary>
+        public static IReadOnlyList<(float X, float Y, float R)> WaterPools => Pools;
+
         /// <summary>자동 배치 순서 — 앞줄·가운데·뒷줄, 각 줄은 가운데부터.</summary>
         static readonly int[] Front = { 3, 2, 4, 1, 5, 0, 6 };
         static readonly int[] Mid = { 10, 9, 11, 8, 12, 7, 13 };
