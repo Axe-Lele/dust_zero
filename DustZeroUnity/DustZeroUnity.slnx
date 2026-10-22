@@ -2,9 +2,9 @@
   <Project Path="MCPForUnity.Runtime.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
   <Project Path="DustZero.Tests.EditMode.csproj" />
+  <Project Path="DustZero.Core.csproj" />
   <Project Path="MCPForUnity.Editor.csproj" />
   <Project Path="DustZero.Game.csproj" />
-  <Project Path="DustZero.Core.csproj" />
   <Project Path="DustZero.Tests.PlayMode.csproj" />
   <Project Path="DustZero.Data.csproj" />
   <Project Path="DustZero.Editor.csproj" />

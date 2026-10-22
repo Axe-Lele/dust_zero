@@ -1,4 +1,4 @@
-// The persisted player profile.
+﻿// The persisted player profile.
 //
 // Deliberately a flat, explicit DTO: it is the file format, so every field here is a
 // compatibility commitment. Version is bumped by SaveMigrator whenever the shape changes.
@@ -57,6 +57,28 @@ namespace DustZero.Core.Meta
 
         /// <summary>The partner picked last, so the sheet opens on them.</summary>
         public string last = "rush";
+    }
+
+
+    /// <summary>
+    /// 가전 대청소 리그 기록. 티어마다 최고 승수와 완주 여부를 남기고, 오늘 쓴 보상 판
+    /// 수를 센다. 하루가 바뀌면 판 수만 0 으로 돌아간다.
+    /// </summary>
+    public sealed class LeagueRecord
+    {
+        /// <summary>도전할 수 있는 가장 높은 티어. 완주하면 하나 열린다.</summary>
+        public int tierMax = 1;
+        /// <summary>티어별 최고 승수.</summary>
+        public Dictionary<string, int> best = new();
+        /// <summary>완주한 티어.</summary>
+        public Dictionary<string, bool> cleared = new();
+        /// <summary>마지막으로 고른 티어 — 다음에 그 자리에서 열린다.</summary>
+        public int lastTier = 1;
+
+        /// <summary>Local calendar day this record belongs to, "yyyy-M-d".</summary>
+        public string day;
+        /// <summary>보상 판을 오늘 몇 번 썼는지.</summary>
+        public int runs;
     }
 
     /// <summary>
@@ -212,6 +234,7 @@ namespace DustZero.Core.Meta
 
         public SurvivorRecord surv = new();
         public CoopRecord coop = new();
+        public LeagueRecord league = new();
 
         public PassState pass = new();
         public ShopState shop = new();
@@ -290,6 +313,13 @@ namespace DustZero.Core.Meta
                 ac = new Dictionary<string, int>(shop.ac),
                 first = new Dictionary<string, bool>(shop.first),
                 cd = new Dictionary<string, long>(shop.cd),
+            };
+            c.league = new LeagueRecord
+            {
+                tierMax = league.tierMax, lastTier = league.lastTier,
+                day = league.day, runs = league.runs,
+                best = new Dictionary<string, int>(league.best ?? new Dictionary<string, int>()),
+                cleared = new Dictionary<string, bool>(league.cleared ?? new Dictionary<string, bool>()),
             };
             c.att = new AttendanceState { n = att.n, last = att.last };
             c.pool = new PoolState

@@ -1,4 +1,4 @@
-// Plain DTOs mirroring data/*.json one-for-one.
+﻿// Plain DTOs mirroring data/*.json one-for-one.
 //
 // Field names must stay identical to the JSON keys produced by tools/build.py, so that
 // editing tables/*.xlsx is the only place balance numbers ever live. Nothing in this file
@@ -159,6 +159,50 @@ namespace DustZero.Data
         public int poolLeagueClear;
         /// <summary>1 = yesterday's unfilled points roll over as one extra box.</summary>
         public int poolCarry;
+
+        // ---- 가전 대청소 리그 (오토배틀러, 10.18-c)
+        /// <summary>청결도. 0 이 되면 그 판은 끝난다.</summary>
+        public int leagueLife;
+        public int leagueRounds;
+        public int leagueStartGold;
+        /// <summary>라운드마다 들어오는 기본 수입.</summary>
+        public int leagueRoundGold;
+        public int leagueWinGold;
+        /// <summary>이자: 남은 코인 이 값마다 1.</summary>
+        public int leagueInterestPer;
+        public int leagueInterestMax;
+        public int leagueRerollCost;
+        public int leagueXpCost;
+        public int leagueXpBuy;
+        public int leagueXpPerRound;
+        public int leagueStartLv;
+        /// <summary>레벨마다 필요한 경험치. 길이−1 이 최고 레벨이다.</summary>
+        public int[] leagueLvXp;
+        /// <summary>레벨별 등급 확률(R, SR, SSR), 백분율.</summary>
+        public int[][] leagueOdds;
+        /// <summary>등급별 상점 값(R, SR, SSR).</summary>
+        public int[] leagueCost;
+        /// <summary>★ 배수(★1, ★2, ★3).</summary>
+        public float[] leagueStarMul;
+        /// <summary>계정 성장이 리그에 반영되는 상한.</summary>
+        public float leagueGrowthMax;
+        public float leagueGrowthPow;
+        /// <summary>전용장비가 스킬 배수에 더해 주는 몫.</summary>
+        public float leagueExclSkill;
+        public float leagueManaPerAtk;
+        public float leagueManaPerHit;
+        /// <summary>한 라운드 제한 시간(초). 넘기면 진 것으로 센다.</summary>
+        public float leagueRoundTime;
+        /// <summary>졌을 때 기본으로 깎이는 청결도. 살아남은 적 수가 더해진다.</summary>
+        public int leagueLoseBase;
+        public int leagueBench;
+        public int leagueShopSize;
+        /// <summary>상점에 세울 가전 수. 편성이 모자라면 체험 가전으로 채운다.</summary>
+        public int leagueTrialMin;
+        /// <summary>등급별 상점 재고(R, SR, SSR).</summary>
+        public int[] leaguePoolCopies;
+        public int leagueDailyRewards;
+        public int passXpLeaguePerWin;
 
         // ---- 먼지 타워 (10.18-g)
         /// <summary>Seconds one floor's fight may run before it is called.</summary>

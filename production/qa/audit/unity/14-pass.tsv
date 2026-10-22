@@ -134,7 +134,7 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Label/T
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Lock	39.5	1278.5	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League	15.5	1338.5	398.9	314.5	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Icon	29.5	1355.5	44.0	44.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker	83.5	1352.5	316.9	18.0	#FF9A3CFF	11.0	오토배틀러 · 8라운드	83.5,1352.5,93.9,16.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker	83.5	1352.5	316.9	18.0	#FF9A3CFF	11.0	오토배틀러 · 0라운드	83.5,1352.5,93.9,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	83.5	1352.5	316.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	83.5	1352.5	316.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Title	83.5	1371.5	316.9	31.0	#E8EDF0FF	26.0	가전 대청소 리그	83.5,1371.5,155.4,26.0
@@ -145,7 +145,7 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMes
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0	29.5	1443.4	370.9	19.0	#8D99A2FF	12.5	· 합체 같은 가전 3장 → ★2, ★2 3장 → ★3(모습이 바뀜)	29.5,1443.4,288.7,18.7
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1	29.5	1466.4	370.9	19.0	#8D99A2FF	12.5	· 시너지 같은 계열·역할이 모이면 효과 · 키운 가전은 최대 +30%	29.5,1466.4,321.1,18.8
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1	29.5	1466.4	370.9	19.0	#8D99A2FF	12.5	· 시너지 같은 계열·역할이 모이면 효과 · 키운 가전은 최대 +0%	29.5,1466.4,313.6,18.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1466.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1466.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0	29.5	1495.4	118.0	59.0	#2A3136FF			
@@ -161,7 +161,7 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2	281.5	14
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Key	291.5	1503.4	98.0	17.0	#8D99A2FF	11.0	골드	291.5,1503.4,19.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	291.5	1503.4	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value	291.5	1522.4	98.0	29.0	#FF9A3CFF	18.0	잠김	291.5,1522.4,32.1,27.0
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub	29.5	1564.4	370.9	18.6	#8D99A2FF	12.0	코인·부품 보상 판 0/3 남음 · 이긴 라운드마다 청소 일지 +7	29.5,1564.7,283.6,18.0
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub	29.5	1564.4	370.9	18.6	#8D99A2FF	12.0	코인·부품 보상 판 0/0 남음 · 이긴 라운드마다 청소 일지 +7	29.5,1564.7,283.6,18.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1564.4	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1564.4	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Go/Go	29.5	1593.0	370.9	46.0	#2A3136FF			

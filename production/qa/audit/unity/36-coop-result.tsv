@@ -11,8 +11,8 @@ SafeArea/Column/Battle/Hud/Top/Ctrls/Exit	350.2	12.7	51.8	48.5	#1D2226FF
 SafeArea/Column/Battle/Hud/Top/Ctrls/Exit/Content/Label	358.2	18.5	35.8	37.0	#E8EDF0FF	12.0	나가기	359.2,28.0,34.6,18.0
 SafeArea/Column/Battle/Hud/Readouts/Life/Label	28.0	69.0	65.8	15.0	#8D99A2FF	10.0	고리 먼지 / 40	28.0,69.0,66.6,15.0
 SafeArea/Column/Battle/Hud/Readouts/Life/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	28.0	69.0	65.8	15.0	#FFFFFFFF			
-SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	71.0	65.8	44.0	#FF6B5EFF	26.0	6	28.0,73.5,15.6,39.0
-SafeArea/Column/Battle/Hud/Readouts/Power/Label	105.8	69.0	233.3	15.0	#8D99A2FF	10.0	전력 · 초당 +205W	105.8,69.0,89.3,15.0
+SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	71.0	65.8	44.0	#FF6B5EFF	26.0	8	28.0,73.5,15.6,39.0
+SafeArea/Column/Battle/Hud/Readouts/Power/Label	105.8	69.0	233.3	15.0	#8D99A2FF	10.0	전력 · 초당 +100W	105.8,69.0,89.3,15.0
 SafeArea/Column/Battle/Hud/Readouts/Power/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	105.8	69.0	233.3	15.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Readouts/Power/Value	105.8	71.0	233.3	44.0	#FF9A3CFF	26.0	9,800W	105.8,73.5,94.9,39.0
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter	105.8	109.0	233.3	4.0	#5A3A1EFF			
@@ -26,7 +26,7 @@ SafeArea/Column/Battle/CoopBars/PartnerBar/Name	70.0	726.3	100.0	22.8	#1F4E80FF	
 SafeArea/Column/Battle/CoopBars/PartnerBar/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	70.0	726.3	100.0	22.8	#FFFFFFFF			
 SafeArea/Column/Battle/CoopBars/PartnerBar/Style	174.0	726.3	86.0	22.8	#3D6A99FF	11.0	소환 몰빵형	174.0,732.6,56.3,16.5
 SafeArea/Column/Battle/CoopBars/PartnerBar/Style/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	174.0	726.3	86.0	22.8	#FFFFFFFF			
-SafeArea/Column/Battle/CoopBars/PartnerBar/Stats	259.0	726.3	150.0	22.8	#1F4E80FF	12.0	400W · 가전 7	334.7,731.1,74.3,18.0
+SafeArea/Column/Battle/CoopBars/PartnerBar/Stats	259.0	726.3	150.0	22.8	#1F4E80FF	12.0	0W · 가전 8	349.1,731.1,59.9,18.0
 SafeArea/Column/Battle/CoopBars/PartnerBar/Say	70.0	749.1	339.0	18.4	#1D2226FF	12.0	수고했어요! 다음엔 더 오래 버텨요!	70.0,749.3,168.0,18.0
 SafeArea/Column/Battle/CoopBars/PartnerBar/Say/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	70.0	749.1	339.0	18.4	#FFFFFFFF			
 SafeArea/Column/Battle/CoopBars/ControlBar/Summon	12.0	778.5	308.0	52.0	#FF9A3CFF			
@@ -72,7 +72,7 @@ SafeArea/Column/Battle/Overlay	0.0	0.0	430.0	932.0	#0D0F12B8
 SafeArea/Column/Battle/Overlay/Card	50.0	370.7	330.0	190.6	#F7F9FAFF			
 SafeArea/Column/Battle/Overlay/Card/Title	68.0	388.7	294.0	30.1	#1D2226FF	20.0	최고 기록 갱신!	159.9,393.7,110.2,20.0
 SafeArea/Column/Battle/Overlay/Card/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	388.7	294.0	30.1	#FFFFFFFF			
-SafeArea/Column/Battle/Overlay/Card/Body	68.0	428.8	294.0	58.5	#5D6871FF	13.0	버틴 웨이브 4 · 처치 39 · 최고 기록 4 보상: 청소 일지 +1	71.8,428.8,286.4,58.5
+SafeArea/Column/Battle/Overlay/Card/Body	68.0	428.8	294.0	58.5	#5D6871FF	13.0	버틴 웨이브 4 · 처치 37 · 최고 기록 4 보상: 청소 일지 +1	71.8,428.8,286.4,58.5
 SafeArea/Column/Battle/Overlay/Card/Body/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	428.8	294.0	58.5	#FFFFFFFF			
 SafeArea/Column/Battle/Overlay/Card/Primary	68.0	499.3	294.0	46.0	#FF9A3CFF			
 SafeArea/Column/Battle/Overlay/Card/Primary/Label	68.0	499.3	294.0	46.0	#FFFFFFFF	15.0	다시 하기	186.5,511.0,57.1,22.5
