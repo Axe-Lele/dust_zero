@@ -1284,6 +1284,32 @@ namespace DustZero.Tests
             AssertNoBlankLabels(league.transform, "타워 층 목록");
             yield return ShotAt("37-tower-floors", 1080, 1920);
 
+            // ---- 깬 층의 창에는 먼지 대신 그때 데리고 간 가전과 체크가 선다.
+            var cleared = new List<string>();
+            foreach (var id in svc.Db.UnitOrder)
+            {
+                if (!svc.Db.LeagueUnits.ContainsKey(id) || svc.Profile.Data.Own(id) == null) continue;
+                cleared.Add(id);
+                if (cleared.Count >= 3) break;
+            }
+            Assume.That(cleared.Count, Is.GreaterThan(0), "보유 가전이 없어 창을 채울 수 없습니다.");
+            for (int floor = 1; floor <= 3; floor++)
+            {
+                var floorRow = svc.Db.TowerFloor(floor);
+                if (floorRow == null) continue;
+                svc.Profile.ClaimTowerFloor(floorRow, cleared, new List<string>());
+            }
+            svc.Persist();
+
+            league.OpenFloorPick(svc);
+            yield return null;
+            Canvas.ForceUpdateCanvases();
+            Assert.AreEqual(cleared.Count,
+                            svc.Profile.TowerWho(1).Count,
+                            "깬 층에 데리고 간 가전이 기록되지 않았습니다.");
+            AssertNoBlankLabels(league.transform, "타워 층 목록(깬 층)");
+            yield return ShotAt("37b-tower-floors-cleared", 1080, 1920);
+
             // ---- 층 상세
             int top = svc.Profile.TowerTopFloor();
             league.ShowFloorInfo(top);

@@ -717,6 +717,18 @@ namespace DustZero.Editor
                 return Mathf.Clamp01((1f - d) * 3f);
             });
 
+        /// <summary>깬 층의 창에 긋는 체크 표시(원본은 흰 선 두 개로 긋는다).</summary>
+        public static Sprite CheckMark(string name = "tw_check", int size = 64)
+            => Make(name, size, (x, y, s) =>
+            {
+                float px = x + 0.5f, py = s - (y + 0.5f);
+                float half = s * 0.07f;
+                // 짧은 획과 긴 획이 만나는 체크.
+                float a = Segment(px, py, s * 0.18f, s * 0.58f, s * 0.42f, s * 0.84f, half);
+                float b = Segment(px, py, s * 0.42f, s * 0.84f, s * 0.84f, s * 0.2f, half);
+                return Mathf.Max(a, b);
+            });
+
         /// <summary>
         /// 지키기 층의 공기청정기(원본 `twDrawPurifier`). 흰 몸통 · 위쪽 띠 · 통풍구 네 줄 ·
         /// 파란 바람 고리를 한 장에 굽는다. 색이 여럿이라 알파 한 장으로는 안 된다.

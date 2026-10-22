@@ -475,7 +475,7 @@ namespace DustZero.Editor
             p.LeagueCell = BuildLeagueCellPrefab(fonts);
             p.LeagueTier = BuildLeagueTierPrefab(fonts);
             p.TowerOwn = BuildTowerOwnPrefab(fonts);
-            p.TowerFloor = BuildTowerFloorPrefab(fonts);
+            p.TowerFloor = BuildTowerFloorPrefab(fonts, art);
             AssertAllSaved(p);
             return p;
         }
@@ -5968,7 +5968,7 @@ namespace DustZero.Editor
         /// 층 목록의 한 줄(원본 `.tw-fl`). 실측 346.9x47 · 30/132/1fr 격자에 간격 7 ·
         /// 번호 16 LED · 창 그림 129.4x39.2 · 이름 12.5 · 보상 11.
         /// </summary>
-        static TowerFloorCard BuildTowerFloorPrefab(Fonts fonts)
+        static TowerFloorCard BuildTowerFloorPrefab(Fonts fonts, Shapes art)
         {
             int radius = Mathf.RoundToInt(UiTheme.Px(10f));
             var go = UI("TowerFloorCard", null, out var rt);
@@ -6001,7 +6001,7 @@ namespace DustZero.Editor
             Anchor(noRt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
                    new Vector2(UiTheme.Px(2f), -half), new Vector2(UiTheme.Px(31.4f), half));
 
-            var window = BuildTowerWindow(rt);
+            var window = BuildTowerWindow(rt, art);
 
             // 이름줄과 보상줄 — 격자의 1fr 칸.
             float infoLeft = UiTheme.Px(174.5f);
@@ -6074,7 +6074,7 @@ namespace DustZero.Editor
         /// 층 줄의 작은 창(원본 `twWindow` 가 캔버스로 그리던 132x40). 바탕 · 바닥 띠 ·
         /// 먼지 셋 · 덧칠 · 창틀과 가운데 창살을 uGUI 로 쌓는다.
         /// </summary>
-        static TowerWindowView BuildTowerWindow(RectTransform parent)
+        static TowerWindowView BuildTowerWindow(RectTransform parent, Shapes art)
         {
             var rt = UiKit.Node("Window", parent);
             Anchor(rt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
@@ -6100,6 +6100,45 @@ namespace DustZero.Editor
             var floorStrip = Strip("Floor", new Vector2(0f, 0f), new Vector2(1f, 0.28f),
                                    new Color(90f / 255f, 70f / 255f, 50f / 255f, 0.25f));
 
+            // 먼지 티끌 여섯 — 원본이 바탕에 뿌려 두는 옅은 동그라미다.
+            var specks = new Image[6];
+            for (int i = 0; i < specks.Length; i++)
+            {
+                var n = UiKit.Node("Speck" + i, rt);
+                // 원본의 ((i*37)%W, (i*13)%H) 자리와 6+i%3*3 반지름을 비율로 옮긴 것.
+                float cx = (i * 37f % 132f) / 132f, cy = 1f - (i * 13f % 40f) / 40f;
+                float rx = (6f + i % 3 * 3f) / 132f, ry = (6f + i % 3 * 3f) / 40f;
+                Anchor(n, new Vector2(cx - rx, cy - ry), new Vector2(cx + rx, cy + ry),
+                       Vector2.zero, Vector2.zero);
+                var img = n.gameObject.AddComponent<Image>();
+                img.sprite = art.Circle;
+                img.color = new Color(110f / 255f, 92f / 255f, 70f / 255f, 0.16f);
+                img.raycastTarget = false;
+                specks[i] = img;
+            }
+
+            // 물바닥 웅덩이 둘 — 원본이 적어 둔 자리와 크기 그대로.
+            var pools = new Image[2];
+            (float X, float Y, float W, float H)[] poolAt =
+            {
+                (0.3f, 0.84f, 20f / 132f, 4f / 40f),
+                (0.72f, 0.86f, 14f / 132f, 3.5f / 40f),
+            };
+            for (int i = 0; i < pools.Length; i++)
+            {
+                var n = UiKit.Node("Pool" + i, rt);
+                var at = poolAt[i];
+                float cy = 1f - at.Y;
+                Anchor(n, new Vector2(at.X - at.W, cy - at.H), new Vector2(at.X + at.W, cy + at.H),
+                       Vector2.zero, Vector2.zero);
+                var img = n.gameObject.AddComponent<Image>();
+                img.sprite = GeneratedArt.WaterPool();
+                img.color = new Color(90f / 255f, 170f / 255f, 220f / 255f, 0.75f);
+                img.raycastTarget = false;
+                n.gameObject.SetActive(false);
+                pools[i] = img;
+            }
+
             var foes = new Image[3];
             for (int i = 0; i < foes.Length; i++)
             {
@@ -6114,6 +6153,28 @@ namespace DustZero.Editor
                 n.gameObject.SetActive(false);
                 foes[i] = img;
             }
+
+            // 깬 층에 세우는 가전 셋과, 오른쪽 자리의 손님(청정기·손님 가전·황금·거울).
+            var who = new Image[3];
+            for (int i = 0; i < who.Length; i++)
+            {
+                var n = UiKit.Node("Who" + i, rt);
+                Anchor(n, new Vector2(0.38f, 0.14f), new Vector2(0.62f, 0.9f),
+                       Vector2.zero, Vector2.zero);
+                var img = n.gameObject.AddComponent<Image>();
+                img.preserveAspect = true;
+                img.raycastTarget = false;
+                n.gameObject.SetActive(false);
+                who[i] = img;
+            }
+
+            var extraRt = UiKit.Node("Extra", rt);
+            Anchor(extraRt, new Vector2(0.74f, 0.16f), new Vector2(0.94f, 0.9f),
+                   Vector2.zero, Vector2.zero);
+            var extra = extraRt.gameObject.AddComponent<Image>();
+            extra.preserveAspect = true;
+            extra.raycastTarget = false;
+            extraRt.gameObject.SetActive(false);
 
             var leftWall = Strip("WallL", new Vector2(0f, 0f), new Vector2(0.26f, 1f),
                                  new Color(60f / 255f, 50f / 255f, 40f / 255f, 0.4f));
@@ -6145,11 +6206,24 @@ namespace DustZero.Editor
                              new Color(40f / 255f, 46f / 255f, 52f / 255f, 0.35f));
             veil.gameObject.SetActive(false);
 
+            // 깬 층의 체크 — 창틀 위에 흰 선으로 긋는다.
+            var checkRt = UiKit.Node("Check", rt);
+            Anchor(checkRt, new Vector2(0.06f, 0.12f), new Vector2(0.24f, 0.88f),
+                   Vector2.zero, Vector2.zero);
+            var check = checkRt.gameObject.AddComponent<Image>();
+            check.sprite = GeneratedArt.CheckMark();
+            check.color = new Color(1f, 1f, 1f, 0.85f);
+            check.raycastTarget = false;
+            checkRt.gameObject.SetActive(false);
+
             var view = rt.gameObject.AddComponent<TowerWindowView>();
             Wire(view, ("face", face), ("floorStrip", floorStrip), ("tint", tint),
                  ("leftWall", leftWall), ("rightWall", rightWall), ("veil", veil),
-                 ("mullion", mullion));
+                 ("mullion", mullion), ("check", check), ("extra", extra));
             WireArray(view, "foes", foes);
+            WireArray(view, "who", who);
+            WireArray(view, "pools", pools);
+            WireArray(view, "specks", specks);
             return view;
         }
 
@@ -6869,6 +6943,7 @@ namespace DustZero.Editor
                  ("hudRoot", hudRt),
                  ("foeCardSprite", GeneratedArt.RoundedNineSlice("tw_foe",
                      Mathf.RoundToInt(UiTheme.Px(10f)))),
+                 ("purifierSprite", GeneratedArt.Purifier()),
                  ("barRoot", barRow), ("infoRoot", infoRow), ("goRoot", goRow),
                  ("hintRoot", hintRow));
             go.SetActive(false);

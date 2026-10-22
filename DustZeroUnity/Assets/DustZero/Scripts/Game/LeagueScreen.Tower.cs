@@ -90,6 +90,9 @@ namespace DustZero.Game
         /// <summary>먼지 칸의 둥근 바탕(원본 `.tw-foes>div`, 모서리 10).</summary>
         [SerializeField] Sprite foeCardSprite;
 
+        /// <summary>층 목록 창에 세우는 공기청정기 — 판에 쓰는 것과 같은 그림이다.</summary>
+        [SerializeField] Sprite purifierSprite;
+
         /// <summary>층 상세에서 고른 층. 0이면 아직 안 골랐다.</summary>
         int _pickFloor;
 
@@ -211,8 +214,11 @@ namespace DustZero.Game
                          string.IsNullOrEmpty(f.rule) ? null : TowerText.RuleName(db, f),
                          UiTheme.TowerTag(kind, boss), db.Text(f.nameKey), reward);
                 if (row.Window != null)
+                {
+                    var (guest, guestTint) = WindowGuest(f);
                     row.Window.Show(done, state == TowerFloorState.Locked, boss, f.rule,
-                                    FoeSprites(f));
+                                    FoeSprites(f), WhoSprites(number), guest, guestTint);
+                }
                 row.Tapped += () => OnFloorTapped(number);
                 _floorRows.Add(row);
             }
@@ -223,14 +229,58 @@ namespace DustZero.Game
         {
             var list = new List<Sprite>();
             if (sprites == null) return list;
+
+            // 보스 층은 원본도 보스만 크게 그린다.
+            bool bossFloor = floor.rule == "boss";
             foreach (var (id, _) in LeagueSim.ParseSquad(floor.squad))
             {
+                bool isBoss = id.StartsWith("boss_");
+                if (bossFloor && !isBoss) continue;
                 if (!_svc.Db.Enemies.TryGetValue(id, out var def)) continue;
-                var art = sprites.Enemy(id, def.Look, id.StartsWith("boss_"));
+                var art = sprites.Enemy(id, def.Look, isBoss);
                 if (art != null && !list.Contains(art)) list.Add(art);
+                if (list.Count >= (bossFloor ? 1 : 3)) break;
+            }
+            return list;
+        }
+
+        /// <summary>깬 층에 세울 가전 — 그때 데리고 간 셋이다(원본 `sv.who`).</summary>
+        List<Sprite> WhoSprites(int floor)
+        {
+            var list = new List<Sprite>();
+            if (sprites == null) return list;
+            foreach (var id in _svc.Profile.TowerWho(floor))
+            {
+                var art = sprites.Unit(id);
+                if (art != null) list.Add(art);
                 if (list.Count >= 3) break;
             }
             return list;
+        }
+
+        /// <summary>
+        /// 창 오른쪽에 서는 손님. 지키기는 공기청정기, 손님 층은 빌려 주는 가전,
+        /// 황금 층은 금빛 먼지, 거울 층은 회색 가전이다(원본 `twWindow`).
+        /// </summary>
+        (Sprite Art, Color Tint) WindowGuest(TowerFloorRow floor)
+        {
+            if (sprites == null) return (null, Color.white);
+            switch (floor.rule)
+            {
+                case "guard":
+                    return (purifierSprite, Color.white);
+                case "guest":
+                    return (sprites.Unit(floor.extra), Color.white);
+                case "golden":
+                    return (_svc.Db.Enemies.TryGetValue("dust", out var dust)
+                                ? sprites.Enemy("dust", dust.Look, false) : null,
+                            new Color(1f, 0.82f, 0.32f));
+                case "mirror":
+                    // 원본도 청소기 한 대를 회색으로 세워 '가짜 가전' 임을 보여 준다.
+                    return (sprites.Unit("vac"), new Color(0.62f, 0.58f, 0.66f));
+                default:
+                    return (null, Color.white);
+            }
         }
 
         void OnFloorTapped(int floor)

@@ -1,0 +1,731 @@
+path	x	y	w	h	color	fs	text	ink
+SafeArea/Column/League/TowerFloors	0.0	0.0	430.0	932.0	#1D22268C			
+SafeArea/Column/League/TowerFloors/Box	20.0	87.9	390.0	776.2	#F7F9FAFF			
+SafeArea/Column/League/TowerFloors/Box/Title	36.0	103.9	218.0	36.4	#1D2226FF	24.0	먼지 타워	36.0,110.1,80.9,24.0
+SafeArea/Column/League/TowerFloors/Box/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	36.0	103.9	218.0	36.4	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Count	176.0	103.9	218.0	29.4	#5D6871FF	12.0	3/30층 청소	332.9,109.6,61.1,18.0
+SafeArea/Column/League/TowerFloors/Box/Note	36.0	144.8	358.0	71.8	#5D6871FF	12.0	층마다 첫 클리어 보상과 보너스 목표 보상을 한 번씩 받아요. 재도전은 	36.0,144.8,355.5,54.0
+SafeArea/Column/League/TowerFloors/Box/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	36.0	144.8	358.0	71.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	36.0	144.8	358.0	71.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building	36.0	228.4	358.0	571.5	#5B6770FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Roof	36.0	228.4	358.0	28.4	#AEB9C1FF	11.0	31층부터는 준비 중이에요	156.7,234.4,116.5,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Roof/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	36.0	228.4	358.0	28.4	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport	42.0	256.8	346.0	539.1	#00000000			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-628.0	346.0	47.0	#4A2A2AC7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Ring	42.0	-628.0	346.0	47.0	#A8483EFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-616.6	29.4	24.3	#FF9A8EFF	16.0	30	49.1,-616.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-624.1	129.4	39.2	#5A3A36FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-595.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-630.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-620.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-610.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-591.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-621.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-611.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	123.0	-622.1	44.0	33.3	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	-624.1	129.4	39.2	#E0524A38			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-624.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-624.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-624.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-621.1	27.8	15.0	#A8483EFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-621.1	27.8	15.0	#FFFFFFFF	10.0	보스	221.5,-621.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-621.1	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	-623.0	132.7	18.9	#E8EDF0FF	12.5	기름 대왕의 펜트하우스	248.3,-622.9,117.4,18.8
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	248.3	-623.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	-623.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-601.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 300 · 코인 9,000 · 부품 5 · 냉장고 조각 10	216.5,-601.2,161.9,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-601.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-577.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-565.6	29.4	24.3	#C9D2D8FF	16.0	29	49.1,-565.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-573.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-544.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-579.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-569.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-559.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-540.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-570.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-560.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-567.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-567.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-567.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-569.2	25.9	29.0	#9E94A8FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-573.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-573.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-573.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-570.1	48.0	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-570.1	48.0	15.0	#FFFFFFFF	10.0	거울 먼지	221.5,-570.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	-570.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-570.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	-572.0	112.5	18.9	#E8EDF0FF	12.5	거울 미로	268.5,-571.9,47.5,18.8
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	268.5	-572.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	-572.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-550.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,900 · 부품 3	216.5,-550.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-550.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-526.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-514.6	29.4	24.3	#C9D2D8FF	16.0	28	49.1,-514.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-522.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-493.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-528.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-518.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-508.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-489.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-519.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-509.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-516.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-516.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-516.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-518.2	25.9	29.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-522.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-522.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-522.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-519.1	48.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-519.1	48.0	15.0	#FFFFFFFF	10.0	손님 가전	221.5,-519.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	-519.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	-521.0	112.5	18.9	#E8EDF0FF	12.5	세탁기 빌려주는 집	268.5,-520.9,95.1,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	268.5	-521.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	-521.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-499.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,800 · 부품 3	216.5,-499.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-499.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-475.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-463.6	29.4	24.3	#C9D2D8FF	16.0	27	49.1,-463.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-471.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-442.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-477.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-467.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-457.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-438.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-468.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-458.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool0	99.5	-442.1	39.2	7.8	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool1	159.7	-440.8	27.4	6.9	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-465.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-465.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-465.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-471.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-471.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-471.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-468.1	27.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-468.1	27.8	15.0	#FFFFFFFF	10.0	누수	221.5,-468.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	-470.0	132.7	18.9	#E8EDF0FF	12.5	물바다 세탁실	248.3,-469.9,69.8,18.8
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	-470.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	248.3	-470.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-448.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,700 · 부품 3	216.5,-448.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-448.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-424.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-412.6	29.4	24.3	#C9D2D8FF	16.0	26	49.1,-412.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-420.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-391.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-426.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-416.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-406.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-387.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-417.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-407.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-414.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-414.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-414.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-420.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-420.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-420.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-417.1	59.3	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-417.1	59.3	15.0	#FFFFFFFF	10.0	혼자 사는 집	221.5,-417.0,49.3,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	-417.1	59.3	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	-417.1	59.3	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	279.8	-419.0	101.2	18.9	#E8EDF0FF	12.5	자취방	279.8,-418.9,33.4,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	279.8	-419.0	101.2	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-397.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,600 · 부품 3	216.5,-397.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-397.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-373.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-361.6	29.4	24.3	#C9D2D8FF	16.0	25	49.1,-361.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-369.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-340.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-375.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-365.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-355.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-336.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-366.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-356.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-363.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-363.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-363.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-365.2	25.9	29.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-369.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-369.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-369.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-366.1	36.8	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-366.1	36.8	15.0	#FFFFFFFF	10.0	지키기	221.5,-366.0,26.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-366.1	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	257.3	-368.0	123.7	18.9	#E8EDF0FF	12.5	할머니 댁	257.3,-367.9,47.5,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	257.3	-368.0	123.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-346.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 100 · 코인 5,750 · 부품 4 · 강화석 5	216.5,-346.2,161.9,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-346.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-322.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-310.6	29.4	24.3	#C9D2D8FF	16.0	24	49.1,-310.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-318.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-289.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-324.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-314.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-304.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-285.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-315.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-305.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-312.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-312.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-312.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-318.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-318.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-318.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-315.1	27.8	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-315.1	27.8	15.0	#FFFFFFFF	10.0	번식	221.5,-315.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	-315.1	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	-315.1	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	-317.0	132.7	18.9	#E8EDF0FF	12.5	버섯 핀 지하실	248.3,-316.9,72.8,18.8
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	248.3	-317.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	-317.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-295.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,400 · 부품 3	216.5,-295.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-295.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-271.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-259.6	29.4	24.3	#C9D2D8FF	16.0	23	49.1,-259.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-267.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-238.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-273.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-263.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-253.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-234.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-264.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-254.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-261.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-261.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-261.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	-267.1	129.4	39.2	#FF8C3C40			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-267.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-267.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-267.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-264.1	36.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-264.1	36.8	15.0	#FFFFFFFF	10.0	열대야	221.5,-264.0,26.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	-264.1	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-264.1	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	257.3	-266.0	123.7	18.9	#E8EDF0FF	12.5	열대야가 온 집	257.3,-265.9,72.8,18.8
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	257.3	-266.0	123.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	257.3	-266.0	123.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-244.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,300 · 부품 3	216.5,-244.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-244.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-220.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-208.6	29.4	24.3	#C9D2D8FF	16.0	22	49.1,-208.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-216.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-187.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-222.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-212.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-202.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-183.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-213.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-203.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-210.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-210.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-210.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-212.2	25.9	29.0	#9E94A8FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-216.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-216.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-216.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-213.1	48.0	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-213.1	48.0	15.0	#FFFFFFFF	10.0	거울 먼지	221.5,-213.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	-213.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-213.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	-215.0	112.5	18.9	#E8EDF0FF	12.5	거울 벽 헬스장	268.5,-214.9,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	268.5	-215.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	268.5	-215.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	-215.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-193.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,200 · 부품 3	216.5,-193.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-193.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-169.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-157.6	29.4	24.3	#C9D2D8FF	16.0	21	49.1,-157.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-165.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-136.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-171.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-161.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-151.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-132.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-162.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-152.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-159.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-159.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-159.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/WallL	80.3	-165.1	33.6	39.2	#3C322866			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/WallR	176.1	-165.1	33.6	39.2	#3C322866			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-165.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-165.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-165.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-162.1	48.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-162.1	48.0	15.0	#FFFFFFFF	10.0	좁은 복도	221.5,-162.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-162.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	-162.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	-164.0	112.5	18.9	#E8EDF0FF	12.5	긴 복도 끝 방	268.5,-163.9,64.6,18.8
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	-164.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-142.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 3,100 · 부품 3	216.5,-142.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-142.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-118.0	346.0	47.0	#4A2A2AC7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Ring	42.0	-118.0	346.0	47.0	#A8483EFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-106.6	29.4	24.3	#FF9A8EFF	16.0	20	49.1,-106.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-114.1	129.4	39.2	#5A3A36FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-85.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-120.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-110.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-100.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-81.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-111.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-101.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	123.0	-112.1	44.0	33.3	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	-114.1	129.4	39.2	#E0524A38			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-114.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-114.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-114.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-111.1	27.8	15.0	#A8483EFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-111.1	27.8	15.0	#FFFFFFFF	10.0	보스	221.5,-111.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-111.1	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	-113.0	132.7	18.9	#E8EDF0FF	12.5	곰팡이 여왕의 방	248.3,-112.9,83.9,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	-113.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-91.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 300 · 코인 7,000 · 부품 5 · 세탁기 조각 10	216.5,-91.2,161.9,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	-91.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-91.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-67.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-55.6	29.4	24.3	#C9D2D8FF	16.0	19	49.1,-55.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-63.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-34.9	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-69.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-59.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-49.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-30.8	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-60.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-50.4	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-57.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-57.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-57.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-59.2	25.9	29.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-63.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-63.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-63.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-60.1	48.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-60.1	48.0	15.0	#FFFFFFFF	10.0	손님 가전	221.5,-60.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	-60.1	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	-62.0	112.5	18.9	#E8EDF0FF	12.5	냉장고 빌려주는 집	268.5,-61.9,95.1,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	268.5	-62.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	-62.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	-40.3	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,900 · 부품 3	216.5,-40.2,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-40.3	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-16.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-4.6	29.4	24.3	#C9D2D8FF	16.0	18	49.1,-4.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-12.1	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	16.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-18.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-8.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	1.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	20.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-9.2	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	0.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-6.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-6.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-6.6	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-8.2	25.9	29.0	#FFD152FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-12.1	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-12.1	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-12.1	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	-9.1	86.1	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	-9.1	86.1	15.0	#FFFFFFFF	10.0	도망치는 황금 먼지	221.5,-9.0,76.1,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	-9.1	86.1	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	-9.1	86.1	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	306.6	-11.0	74.4	18.9	#E8EDF0FF	12.5	금고 있는 서재	306.6,-10.9,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	306.6	-11.0	74.4	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	10.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,800 · 부품 3	216.5,10.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	10.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	35.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	46.4	29.4	24.3	#C9D2D8FF	16.0	17	49.1,46.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	38.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	67.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	33.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	42.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	52.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	71.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	41.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	51.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	44.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	44.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	44.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	38.9	129.4	39.2	#FF8C3C40			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	38.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	38.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	38.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	41.9	36.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	41.9	36.8	15.0	#FFFFFFFF	10.0	열대야	221.5,42.0,26.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	41.9	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	41.9	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	257.3	40.0	123.7	18.9	#E8EDF0FF	12.5	한여름 베란다	257.3,40.1,69.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	257.3	40.0	123.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	61.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,700 · 부품 3	216.5,61.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	61.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	86.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	97.4	29.4	24.3	#C9D2D8FF	16.0	16	49.1,97.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	89.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	118.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	84.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	93.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	103.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	122.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	92.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	102.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	95.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	95.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	95.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	89.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	89.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	89.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	92.9	27.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	92.9	27.8	15.0	#FFFFFFFF	10.0	정전	221.5,93.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	91.0	132.7	18.9	#E8EDF0FF	12.5	두꺼비집 내려간 집	248.3,91.1,95.1,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	248.3	91.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	248.3	91.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	91.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	112.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,600 · 부품 3	216.5,112.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	112.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	137.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	148.4	29.4	24.3	#C9D2D8FF	16.0	15	49.1,148.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	140.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	169.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	135.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	144.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	154.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	173.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	143.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	153.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	146.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	146.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	144.8	25.9	29.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	140.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	140.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	140.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	143.9	36.8	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	143.9	36.8	15.0	#FFFFFFFF	10.0	지키기	221.5,144.0,26.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	143.9	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	257.3	142.0	123.7	18.9	#E8EDF0FF	12.5	아기방	257.3,142.1,33.4,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	163.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 100 · 코인 4,250 · 부품 4 · 강화석 5	216.5,163.8,161.9,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	163.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	188.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	199.4	29.4	24.3	#C9D2D8FF	16.0	14	49.1,199.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	191.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	220.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	186.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	195.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	205.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	224.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	194.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	204.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	197.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	197.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	197.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	191.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	191.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	191.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	194.9	59.3	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	194.9	59.3	15.0	#FFFFFFFF	10.0	혼자 사는 집	221.5,195.0,49.3,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	194.9	59.3	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	194.9	59.3	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	279.8	193.0	101.2	18.9	#E8EDF0FF	12.5	혼자 사는 원룸	279.8,193.1,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	279.8	193.0	101.2	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	279.8	193.0	101.2	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	279.8	193.0	101.2	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	214.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,400 · 부품 3	216.5,214.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	214.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	239.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	250.4	29.4	24.3	#C9D2D8FF	16.0	13	49.1,250.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	242.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	271.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	237.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	246.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	256.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	275.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	245.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	255.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	248.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	248.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	246.8	25.9	29.0	#9E94A8FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	242.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	242.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	242.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	245.9	48.0	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	245.9	48.0	15.0	#FFFFFFFF	10.0	거울 먼지	221.5,246.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	245.9	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	245.9	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	244.0	112.5	18.9	#E8EDF0FF	12.5	거울 많은 드레스룸	268.5,244.1,95.1,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	268.5	244.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	268.5	244.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	244.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	265.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,300 · 부품 3	216.5,265.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	265.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	290.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	301.4	29.4	24.3	#C9D2D8FF	16.0	12	49.1,301.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	293.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	322.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	288.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	297.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	307.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	326.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	296.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	306.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	299.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	299.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	299.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	293.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	293.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	293.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	296.9	27.8	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	296.9	27.8	15.0	#FFFFFFFF	10.0	번식	221.5,297.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	296.9	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	296.9	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	295.0	132.7	18.9	#E8EDF0FF	12.5	곰팡이 핀 창고	248.3,295.1,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	248.3	295.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	295.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	316.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,200 · 부품 3	216.5,316.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	316.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	341.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	352.4	29.4	24.3	#C9D2D8FF	16.0	11	49.1,352.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	344.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	373.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	339.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	348.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	358.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	377.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	347.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	357.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool0	99.5	373.9	39.2	7.8	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool1	159.7	375.2	27.4	6.9	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	350.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	350.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	344.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	344.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	344.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	347.9	27.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	347.9	27.8	15.0	#FFFFFFFF	10.0	누수	221.5,348.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	346.0	132.7	18.9	#E8EDF0FF	12.5	물 새는 욕실	248.3,346.1,61.6,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	346.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	248.3	346.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	367.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 2,100 · 부품 3	216.5,367.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	367.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	392.0	346.0	47.0	#4A2A2AC7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Ring	42.0	392.0	346.0	47.0	#A8483EFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	403.4	29.4	24.3	#FF9A8EFF	16.0	10	49.1,403.5,19.2,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	395.9	129.4	39.2	#5A3A36FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	424.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	390.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	399.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	409.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	428.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	398.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	408.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	123.0	397.9	44.0	33.3	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	395.9	129.4	39.2	#E0524A38			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	395.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	395.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	395.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	398.9	27.8	15.0	#A8483EFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	398.9	27.8	15.0	#FFFFFFFF	10.0	보스	221.5,399.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	398.9	27.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	397.0	132.7	18.9	#E8EDF0FF	12.5	먼지 대왕의 방	248.3,397.1,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	397.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	418.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 300 · 코인 5,000 · 부품 5 · 보일러 조각 10	216.5,418.8,161.9,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	418.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	443.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	454.4	29.4	24.3	#C9D2D8FF	16.0	9	53.9,454.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	446.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	475.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	441.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	450.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	460.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	479.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	449.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	459.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	452.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	452.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	450.8	25.9	29.0	#FFD152FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	446.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	446.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	446.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	449.9	86.1	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	449.9	86.1	15.0	#FFFFFFFF	10.0	도망치는 황금 먼지	221.5,450.0,76.1,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	449.9	86.1	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	449.9	86.1	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	306.6	448.0	74.4	18.9	#E8EDF0FF	12.5	반짝이는 다락	306.6,448.1,69.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	306.6	448.0	74.4	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	306.6	448.0	74.4	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	469.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 1,900 · 부품 3	216.5,469.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	469.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	494.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	505.4	29.4	24.3	#C9D2D8FF	16.0	8	53.9,505.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	497.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	526.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	492.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	501.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	511.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	530.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	500.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	510.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	503.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	503.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/WallL	80.3	497.9	33.6	39.2	#3C322866			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/WallR	176.1	497.9	33.6	39.2	#3C322866			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	497.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	497.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	497.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	500.9	48.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	500.9	48.0	15.0	#FFFFFFFF	10.0	좁은 복도	221.5,501.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	500.9	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	500.9	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	499.0	112.5	18.9	#E8EDF0FF	12.5	좁은 복도	268.5,499.1,47.5,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	268.5	499.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	268.5	499.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	520.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 1,800 · 부품 3	216.5,520.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	520.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	545.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	556.4	29.4	24.3	#C9D2D8FF	16.0	7	53.9,556.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	548.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	577.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	543.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	552.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	562.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	581.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	551.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	561.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	554.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	554.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	548.9	129.4	39.2	#FF8C3C40			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	548.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	548.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	548.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	551.9	36.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	551.9	36.8	15.0	#FFFFFFFF	10.0	열대야	221.5,552.0,26.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	551.9	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	551.9	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	257.3	550.0	123.7	18.9	#E8EDF0FF	12.5	에어컨 고장 난 방	257.3,550.1,86.9,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	257.3	550.0	123.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	257.3	550.0	123.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	571.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 1,700 · 부품 3	216.5,571.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	571.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	596.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	607.4	29.4	24.3	#C9D2D8FF	16.0	6	53.9,607.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	599.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	628.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	594.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	603.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	613.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	632.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	602.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	612.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	605.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	605.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	605.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	603.8	25.9	29.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	599.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	599.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	599.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	602.9	48.0	15.0	#3D8BD9FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	602.9	48.0	15.0	#FFFFFFFF	10.0	손님 가전	221.5,603.0,38.0,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	602.9	48.0	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	268.5	601.0	112.5	18.9	#E8EDF0FF	12.5	손님 오는 날	268.5,601.1,61.6,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	268.5	601.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	268.5	601.0	112.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	622.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 30 · 코인 1,600 · 부품 3	216.5,622.8,153.0,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	622.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	647.0	346.0	47.0	#6E7B84C7			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	658.4	29.4	24.3	#C9D2D8FF	16.0	5	53.9,658.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	650.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	679.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	645.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	654.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	664.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	683.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	653.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	663.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	656.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	656.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	654.8	25.9	29.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	650.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	650.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	650.9	129.4	39.2	#282E3459			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	653.9	36.8	15.0	#E0524AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	653.9	36.8	15.0	#FFFFFFFF	10.0	지키기	221.5,654.0,26.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	653.9	36.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	257.3	652.0	123.7	18.9	#E8EDF0FF	12.5	청정기 있는 방	257.3,652.1,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	673.7	164.5	16.7	#D5DCE1FF	11.0	크리스탈 100 · 코인 2,750 · 부품 4 · 강화석 5	216.5,673.8,161.9,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	673.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	698.0	346.0	47.0	#FFF3E6FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Ring	42.0	698.0	346.0	47.0	#FF9A3CFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	709.4	29.4	24.3	#FF9A3CFF	16.0	4	53.9,709.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	701.9	129.4	39.2	#B9A58AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	730.1	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	696.0	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	705.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	715.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	734.2	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	704.8	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	714.6	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	707.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	707.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	707.4	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	701.9	2.0	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	701.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	216.5	703.0	119.5	18.9	#1D2226FF	12.5	초파리 부엌	216.5,703.1,58.7,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	216.5	703.0	119.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	724.7	119.5	16.7	#5D6871FF	11.0	크리스탈 30 · 코인 1,400 · 부품 3	216.5,724.8,117.7,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	724.7	119.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/GoBadge	342.3	708.7	38.7	25.5	#FF9A3CFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/GoBadge/Text	342.3	708.7	38.7	25.5	#1D2226FF	14.0	도전	350.9,714.5,21.5,14.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/GoBadge/Text/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	342.3	708.7	38.7	25.5	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	749.0	346.0	47.0	#DCE7EEFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	760.4	29.4	24.3	#3FAE7AFF	16.0	3	53.9,760.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	752.9	129.4	39.2	#EAF4FAFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	781.1	129.4	11.0	#FFFFFF99			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who0	93.2	756.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who1	129.5	756.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who2	165.7	756.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	752.9	2.0	39.2	#9FB4C2FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	752.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Check	88.1	757.6	23.3	29.8	#FFFFFFD9			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag	216.5	755.9	27.8	15.0	#E8842AFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Tag/Text	216.5	755.9	27.8	15.0	#FFFFFFFF	10.0	정전	221.5,756.0,17.8,15.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	248.3	754.0	132.7	18.9	#1D2226FF	12.5	불 꺼진 거실	248.3,754.1,61.6,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	248.3	754.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	248.3	754.0	132.7	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	775.7	164.5	16.7	#5D6871FF	11.0	청소 완료 · 보너스 크리스탈 30	216.5,775.8,137.7,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	775.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	800.0	346.0	47.0	#DCE7EEFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	811.4	29.4	24.3	#3FAE7AFF	16.0	2	53.9,811.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	803.9	129.4	39.2	#EAF4FAFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	832.1	129.4	11.0	#FFFFFF99			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who0	93.2	807.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who1	129.5	807.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who2	165.7	807.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	803.9	2.0	39.2	#9FB4C2FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	803.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Check	88.1	808.6	23.3	29.8	#FFFFFFD9			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	216.5	805.0	164.5	18.9	#1D2226FF	12.5	진드기 사는 매트	216.5,805.1,83.9,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	216.5	805.0	164.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	826.7	164.5	16.7	#5D6871FF	11.0	청소 완료 · 보너스 크리스탈 30	216.5,826.8,137.7,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	826.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	851.0	346.0	47.0	#DCE7EEFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	862.4	29.4	24.3	#3FAE7AFF	16.0	1	53.9,862.5,9.6,24.0
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	854.9	129.4	39.2	#EAF4FAFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	883.1	129.4	11.0	#FFFFFF99			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who0	93.2	858.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who1	129.5	858.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Who2	165.7	858.8	31.1	29.8	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	854.9	2.0	39.2	#9FB4C2FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	854.9	129.4	39.2	#3E4850FF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Check	88.1	859.6	23.3	29.8	#FFFFFFD9			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name	216.5	856.0	164.5	18.9	#1D2226FF	12.5	먼지 쌓인 현관	216.5,856.1,72.8,18.7
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/NameRow/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	856.0	164.5	18.9	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward	216.5	877.7	164.5	16.7	#5D6871FF	11.0	청소 완료 · 보너스 크리스탈 30	216.5,877.8,137.7,16.5
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	216.5	877.7	164.5	16.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Buttons/Close	36.0	800.1	171.8	48.0	#F7F9FAFF			
+SafeArea/Column/League/TowerFloors/Box/Buttons/Close/Line	36.0	800.1	171.8	48.0	#C7D0D6FF			
+SafeArea/Column/League/TowerFloors/Box/Buttons/Close/Content/Label	44.0	808.1	155.8	32.0	#1D2226FF	18.4	닫기	105.5,810.3,32.9,27.7
+SafeArea/Column/League/TowerFloors/Box/Buttons/Close/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	44.0	808.1	155.8	32.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Buttons/Go	222.2	800.1	171.8	48.0	#FF9A3CFF			
+SafeArea/Column/League/TowerFloors/Box/Buttons/Go/Content/Label	230.2	808.1	155.8	32.0	#1D2226FF	18.4	4층 도전	275.7,810.3,64.8,27.7

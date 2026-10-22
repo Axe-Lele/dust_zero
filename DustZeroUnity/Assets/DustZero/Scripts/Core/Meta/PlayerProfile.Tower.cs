@@ -1,4 +1,4 @@
-// 먼지 타워의 저장 기록과 층 보상.
+﻿// 먼지 타워의 저장 기록과 층 보상.
 //
 // 원본 `twSave` / `twReward` 를 옮긴 것이다. 층마다 **한 번씩만** 준다 — 첫 클리어와
 // 보너스 목표를 따로 센다. 재도전은 공짜이고 보상이 없다.
@@ -32,6 +32,11 @@ namespace DustZero.Core.Meta
 
         public bool TowerBonusDone(int floor)
             => TowerState.bonus.TryGetValue(floor.ToString(), out var v) && v;
+
+        /// <summary>그 층을 깼을 때 데리고 간 가전(최대 셋). 층 목록의 창 그림이 쓴다.</summary>
+        public IReadOnlyList<string> TowerWho(int floor)
+            => TowerState.who.TryGetValue(floor.ToString(), out var list) && list != null
+                ? list : System.Array.Empty<string>();
 
         /// <summary>
         /// 지난 편성. (칸, 가전) 짝으로 저장해 두고 다음 층에서 되살린다.

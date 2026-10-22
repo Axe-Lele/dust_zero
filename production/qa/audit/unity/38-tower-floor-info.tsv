@@ -1,7 +1,8 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/League/TowerFloorInfo	0.0	0.0	430.0	932.0	#1D22268C			
 SafeArea/Column/League/TowerFloorInfo/Box	16.0	248.5	398.0	434.9	#F7F9FAFF			
-SafeArea/Column/League/TowerFloorInfo/Box/Title	32.0	264.5	282.5	36.0	#1D2226FF	22.0	1층 · 먼지 쌓인 현관	32.0,270.2,159.5,24.6
+SafeArea/Column/League/TowerFloorInfo/Box/Title	32.0	264.5	282.5	36.0	#1D2226FF	22.0	4층 · 초파리 부엌	32.0,270.2,140.9,24.6
+SafeArea/Column/League/TowerFloorInfo/Box/Title/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	32.0	264.5	282.5	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	32.0	264.5	282.5	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/State	234.9	264.5	163.1	36.0	#5D6871FF	12.0	첫 도전	363.1,273.5,34.9,18.0
 SafeArea/Column/League/TowerFloorInfo/Box/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	234.9	264.5	163.1	36.0	#FFFFFFFF			
@@ -24,7 +25,7 @@ SafeArea/Column/League/TowerFloorInfo/Box/Goal/Sub	41.0	430.3	162.0	16.0	#5D6871
 SafeArea/Column/League/TowerFloorInfo/Box/Goal/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	41.0	430.3	162.0	16.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus	218.0	387.3	180.0	66.0	#FFFBEFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Line	218.0	387.3	180.0	66.0	#E8A82EFF			
-SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Value	227.0	394.3	162.0	36.0	#1D2226FF	12.0	보너스 쓰러진 가전 없이 깨기	227.0,394.3,104.8,36.0
+SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Value	227.0	394.3	162.0	36.0	#1D2226FF	12.0	보너스 20초 안에 깨기	227.0,394.3,73.6,36.0
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	227.0	394.3	162.0	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	227.0	394.3	162.0	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Sub	227.0	430.3	162.0	16.0	#5D6871FF	10.5	크리스탈 30 · 한 번	227.0,430.3,82.1,15.8
@@ -34,8 +35,16 @@ SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_dust	32.0	465.3	72.0	81.0	#FF
 SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_dust/Art	46.0	467.3	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_dust/Name	32.0	513.3	72.0	16.0	#5D6871FF	10.5	먼지뭉치	49.3,513.4,37.5,15.8
 SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_dust/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	513.3	72.0	16.0	#FFFFFFFF			
-SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_dust/Count	32.0	529.3	72.0	18.4	#1D2226FF	12.0	×3	60.8,529.5,14.4,18.0
-SafeArea/Column/League/TowerFloorInfo/Box/Reward	32.0	558.3	366.0	38.2	#1D2226FF	12.0	첫 클리어 · 크리스탈 30 · 코인 1,100 · 부품 3	32.0,558.3,222.1,18.0
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_dust/Count	32.0	529.3	72.0	18.4	#1D2226FF	12.0	×2	60.8,529.5,14.4,18.0
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_fly	110.0	465.3	72.0	81.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_fly/Art	124.0	467.3	44.0	44.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_fly/Name	110.0	513.3	72.0	16.0	#5D6871FF	10.5	초파리	132.0,513.4,28.1,15.8
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_fly/Count	110.0	529.3	72.0	18.4	#1D2226FF	12.0	×2	138.8,529.5,14.4,18.0
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_mite	188.0	465.3	72.0	81.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_mite/Art	202.0	467.3	44.0	44.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_mite/Name	188.0	513.3	72.0	16.0	#5D6871FF	10.5	진드기	210.0,513.4,28.1,15.8
+SafeArea/Column/League/TowerFloorInfo/Box/Foes/Foe_mite/Count	188.0	529.3	72.0	18.4	#1D2226FF	12.0	×2	216.8,529.5,14.4,18.0
+SafeArea/Column/League/TowerFloorInfo/Box/Reward	32.0	558.3	366.0	38.2	#1D2226FF	12.0	첫 클리어 · 크리스탈 30 · 코인 1,400 · 부품 3	32.0,558.3,222.1,18.0
 SafeArea/Column/League/TowerFloorInfo/Box/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	558.3	366.0	38.2	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back	32.0	620.0	175.7	48.0	#F7F9FAFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back/Line	32.0	620.0	175.7	48.0	#C7D0D6FF			

@@ -16,9 +16,13 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-718.7	29.4	24.3	#FF9A8EFF	16.0	30	49.1,-718.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-726.2	129.4	39.2	#5A3A36FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-698.0	129.4	11.0	#5A463240			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-720.7	25.9	26.7	#FFFFFFFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-720.7	25.9	26.7	#FFFFFFFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-720.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-732.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-722.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-712.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-693.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-723.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-713.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	123.0	-724.2	44.0	33.3	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	-726.2	129.4	39.2	#E0524A38			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-726.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-726.2	129.4	39.2	#3E4850FF			
@@ -35,9 +39,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-667.7	29.4	24.3	#C9D2D8FF	16.0	29	49.1,-667.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-675.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-647.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-681.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-671.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-661.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-642.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-672.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-662.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-669.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-669.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-669.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-671.3	25.9	29.0	#9E94A8FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-675.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-675.2	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-675.2	129.4	39.2	#282E3459			
@@ -54,9 +65,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-616.7	29.4	24.3	#C9D2D8FF	16.0	28	49.1,-616.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-624.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-596.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-630.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-620.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-610.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-591.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-621.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-611.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-618.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-618.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-618.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-620.3	25.9	29.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-624.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-624.2	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-624.2	129.4	39.2	#282E3459			
@@ -71,7 +89,15 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	-577.1	346.0	47.0	#6E7B84C7			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-565.7	29.4	24.3	#C9D2D8FF	16.0	27	49.1,-565.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-573.2	129.4	39.2	#B9A58AFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-545.0	129.4	11.0	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-545.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-579.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-569.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-559.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-540.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-570.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-560.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool0	99.5	-544.2	39.2	7.8	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool1	159.7	-542.9	27.4	6.9	#5AAADCBF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-567.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-567.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-567.7	25.9	26.7	#FFFFFFFF			
@@ -89,6 +115,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-514.7	29.4	24.3	#C9D2D8FF	16.0	26	49.1,-514.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-522.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-494.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-528.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-518.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-508.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-489.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-519.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-509.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-516.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-516.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-516.7	25.9	26.7	#FFFFFFFF			
@@ -107,9 +139,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-463.7	29.4	24.3	#C9D2D8FF	16.0	25	49.1,-463.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-471.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-443.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-477.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-467.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-457.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-438.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-468.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-458.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-465.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-465.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-465.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-467.3	25.9	29.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-471.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-471.2	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-471.2	129.4	39.2	#282E3459			
@@ -124,6 +163,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-412.7	29.4	24.3	#C9D2D8FF	16.0	24	49.1,-412.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-420.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-392.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-426.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-416.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-406.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-387.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-417.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-407.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-414.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-414.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-414.7	25.9	26.7	#FFFFFFFF			
@@ -143,6 +188,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-361.7	29.4	24.3	#C9D2D8FF	16.0	23	49.1,-361.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-369.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-341.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-375.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-365.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-355.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-336.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-366.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-356.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-363.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-363.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-363.7	25.9	26.7	#FFFFFFFF			
@@ -163,9 +214,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-310.7	29.4	24.3	#C9D2D8FF	16.0	22	49.1,-310.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-318.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-290.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-324.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-314.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-304.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-285.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-315.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-305.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-312.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-312.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-312.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-314.3	25.9	29.0	#9E94A8FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-318.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-318.2	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-318.2	129.4	39.2	#282E3459			
@@ -183,6 +241,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-259.7	29.4	24.3	#C9D2D8FF	16.0	21	49.1,-259.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-267.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-239.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-273.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-263.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-253.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-234.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-264.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-254.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-261.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-261.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-261.7	25.9	26.7	#FFFFFFFF			
@@ -204,9 +268,13 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-208.7	29.4	24.3	#FF9A8EFF	16.0	20	49.1,-208.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-216.2	129.4	39.2	#5A3A36FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-188.0	129.4	11.0	#5A463240			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-210.7	25.9	26.7	#FFFFFFFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-210.7	25.9	26.7	#FFFFFFFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-210.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-222.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-212.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-202.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-183.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-213.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-203.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	123.0	-214.2	44.0	33.3	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	-216.2	129.4	39.2	#E0524A38			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-216.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-216.2	129.4	39.2	#3E4850FF			
@@ -223,9 +291,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-157.7	29.4	24.3	#C9D2D8FF	16.0	19	49.1,-157.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-165.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-137.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-171.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-161.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-151.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-132.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-162.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-152.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-159.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-159.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-159.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-161.3	25.9	29.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-165.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-165.2	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-165.2	129.4	39.2	#282E3459			
@@ -241,9 +316,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-106.7	29.4	24.3	#C9D2D8FF	16.0	18	49.1,-106.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-114.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-86.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-120.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-110.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-100.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-81.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-111.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-101.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-108.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-108.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-108.7	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	-110.3	25.9	29.0	#FFD152FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	-114.2	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	-114.2	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	-114.2	129.4	39.2	#282E3459			
@@ -259,6 +341,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-55.7	29.4	24.3	#C9D2D8FF	16.0	17	49.1,-55.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-63.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	-35.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-69.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-59.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	-49.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	-30.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-60.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	-50.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-57.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-57.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-57.7	25.9	26.7	#FFFFFFFF			
@@ -278,6 +366,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	-4.7	29.4	24.3	#C9D2D8FF	16.0	16	49.1,-4.6,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	-12.2	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	16.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	-18.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	-8.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	1.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	20.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	-9.3	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	0.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	-6.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	-6.7	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	-6.7	25.9	26.7	#FFFFFFFF			
@@ -296,8 +390,15 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	46.3	29.4	24.3	#C9D2D8FF	16.0	15	49.1,46.4,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	38.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	67.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	32.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	42.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	52.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	71.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	41.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	51.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	44.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	44.3	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	42.7	25.9	29.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	38.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	38.8	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	38.8	129.4	39.2	#282E3459			
@@ -311,6 +412,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	97.3	29.4	24.3	#C9D2D8FF	16.0	14	49.1,97.4,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	89.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	118.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	83.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	93.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	103.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	122.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	92.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	102.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	95.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	95.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	95.3	25.9	26.7	#FFFFFFFF			
@@ -331,8 +438,15 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	148.3	29.4	24.3	#C9D2D8FF	16.0	13	49.1,148.4,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	140.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	169.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	134.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	144.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	154.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	173.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	143.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	153.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	146.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	146.3	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	144.7	25.9	29.0	#9E94A8FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	140.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	140.8	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	140.8	129.4	39.2	#282E3459			
@@ -350,6 +464,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	199.3	29.4	24.3	#C9D2D8FF	16.0	12	49.1,199.4,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	191.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	220.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	185.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	195.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	205.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	224.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	194.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	204.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	197.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	197.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	197.3	25.9	26.7	#FFFFFFFF			
@@ -368,7 +488,15 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)	42.0	238.9	346.0	47.0	#6E7B84C7			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	250.3	29.4	24.3	#C9D2D8FF	16.0	11	49.1,250.4,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	242.8	129.4	39.2	#B9A58AFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	271.0	129.4	11.0	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	271.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	236.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	246.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	256.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	275.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	245.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	255.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool0	99.5	271.8	39.2	7.8	#5AAADCBF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Pool1	159.7	273.1	27.4	6.9	#5AAADCBF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	248.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	248.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	242.8	2.0	39.2	#3E4850FF			
@@ -386,8 +514,13 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	301.3	29.4	24.3	#FF9A8EFF	16.0	10	49.1,301.4,19.2,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	293.8	129.4	39.2	#5A3A36FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	322.0	129.4	11.0	#5A463240			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	299.3	25.9	26.7	#FFFFFFFF			
-SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	299.3	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	287.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	297.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	307.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	326.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	296.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	306.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	123.0	295.8	44.0	33.3	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	293.8	129.4	39.2	#E0524A38			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	293.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	293.8	129.4	39.2	#3E4850FF			
@@ -403,8 +536,15 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	352.3	29.4	24.3	#C9D2D8FF	16.0	9	53.9,352.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	344.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	373.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	338.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	348.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	358.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	377.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	347.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	357.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	350.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	350.3	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	348.7	25.9	29.0	#FFD152FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	344.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	344.8	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	344.8	129.4	39.2	#282E3459			
@@ -421,6 +561,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	403.3	29.4	24.3	#C9D2D8FF	16.0	8	53.9,403.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	395.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	424.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	389.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	399.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	409.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	428.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	398.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	408.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	401.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	401.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/WallL	80.3	395.8	33.6	39.2	#3C322866			
@@ -441,6 +587,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	454.3	29.4	24.3	#C9D2D8FF	16.0	7	53.9,454.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	446.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	475.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	440.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	450.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	460.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	479.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	449.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	459.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	452.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	452.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Tint	80.3	446.8	129.4	39.2	#FF8C3C40			
@@ -460,9 +612,16 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	505.3	29.4	24.3	#C9D2D8FF	16.0	6	53.9,505.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	497.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	526.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	491.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	501.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	511.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	530.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	500.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	510.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	503.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	503.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	503.3	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	501.7	25.9	29.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	497.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	497.8	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	497.8	129.4	39.2	#282E3459			
@@ -478,8 +637,15 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	556.3	29.4	24.3	#C9D2D8FF	16.0	5	53.9,556.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	548.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	577.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	542.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	552.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	562.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	581.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	551.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	561.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	554.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	554.3	25.9	26.7	#FFFFFFFF			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Extra	176.1	552.7	25.9	29.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	548.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	548.8	129.4	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Veil	80.3	548.8	129.4	39.2	#282E3459			
@@ -493,6 +659,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	607.3	29.4	24.3	#C9D2D8FF	16.0	4	53.9,607.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	599.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	628.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	593.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	603.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	613.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	632.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	602.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	612.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	605.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	605.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe2	152.8	605.3	25.9	26.7	#FFFFFFFF			
@@ -507,6 +679,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	658.3	29.4	24.3	#C9D2D8FF	16.0	3	53.9,658.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	650.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	679.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	644.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	654.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	664.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	683.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	653.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	663.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	656.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	656.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	650.8	2.0	39.2	#3E4850FF			
@@ -523,6 +701,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	709.3	29.4	24.3	#C9D2D8FF	16.0	2	53.9,709.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	701.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	730.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	695.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	705.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	715.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	734.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	704.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	714.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	707.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe1	120.4	707.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	701.8	2.0	39.2	#3E4850FF			
@@ -537,6 +721,12 @@ SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clo
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Number	44.0	760.3	29.4	24.3	#FF9A3CFF	16.0	1	53.9,760.4,9.6,24.0
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window	80.3	752.8	129.4	39.2	#B9A58AFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Floor	80.3	781.0	129.4	11.0	#5A463240			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck0	74.4	746.9	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck1	107.7	756.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck2	141.1	766.5	23.5	23.5	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck3	183.2	785.1	11.8	11.8	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck4	87.2	755.7	17.6	17.6	#6E5C4629			
+SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Speck5	120.5	765.5	23.5	23.5	#6E5C4629			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Foe0	88.1	758.3	25.9	26.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Mullion	144.0	752.8	2.0	39.2	#3E4850FF			
 SafeArea/Column/League/TowerFloors/Box/Building/Viewport/List/TowerFloorCard(Clone)/Window/Frame	80.3	752.8	129.4	39.2	#3E4850FF			
