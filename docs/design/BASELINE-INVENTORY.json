@@ -1,0 +1,275 @@
+{
+  "captured_at_utc": "20261015T150139Z",
+  "source_guide_sha256": "2d9531f454809f0ef92815dc39eeb5ab594e477169e00ccd23449430524b4759",
+  "source_copy": "docs/design/sources/production-guide-2026-10-14.txt",
+  "baseline_html_sha256": "642efbf326d33c4f726140894f50da17117f94ea7add155c32beff7d6473bac3",
+  "web_build": "10.14-d",
+  "tables": {
+    "condition": {
+      "type": "list",
+      "entries": 15,
+      "sha256": "f6e30c7868c9d64fd761a699c87b28385a6246d43fb6261341d58ffa28aa28b9"
+    },
+    "config": {
+      "type": "dict",
+      "entries": 38,
+      "sha256": "f6cbd2a7f3f26bb657e9cc91f5b367d5a0d8b2486c9ff0b8d339873ea6a8b2f4"
+    },
+    "content_unlock": {
+      "type": "list",
+      "entries": 2,
+      "sha256": "32f16087c1398ba88be6ce698b74280ceb9b4b9a84701823344ecd5badaa6a0d"
+    },
+    "enemy": {
+      "type": "list",
+      "entries": 7,
+      "sha256": "1b7fa3a52e46c29c56084909495f7f1e25f9a64bdb4672561478a9d6dafe0b1d"
+    },
+    "enums": {
+      "type": "dict",
+      "entries": 9,
+      "sha256": "f7c25621487e3f98bf812a536b2cfa2240facb047269305010790647add41a1f"
+    },
+    "gacha": {
+      "type": "list",
+      "entries": 2,
+      "sha256": "9bf803d339c222275166477eb0ee7c8b32644323be1bb6e0aca1744a06c93715"
+    },
+    "gacha_pool": {
+      "type": "list",
+      "entries": 9,
+      "sha256": "7a1106ee87c130cf4dff22afd0f91e39f2bb5e715924c6e81d72fe42a393d8b6"
+    },
+    "item": {
+      "type": "list",
+      "entries": 6,
+      "sha256": "fabab98212b4ac10286a2f69be947aca266a272cbf5508a76fc3933810645b50"
+    },
+    "map": {
+      "type": "list",
+      "entries": 3,
+      "sha256": "7fa4baca17c4cb468359369f33867aadce9f94d6081e2c768752370ccf91e6c1"
+    },
+    "reward_group": {
+      "type": "list",
+      "entries": 75,
+      "sha256": "d132cee5849ae48501ea2e4c49e5f312cbc0432e4f28bf7cf374b192142ffc3f"
+    },
+    "skill_param": {
+      "type": "list",
+      "entries": 37,
+      "sha256": "8738fd2257acbb3d47d77aa3e99864f60554a1117584a992cfe548ac9e586c9c"
+    },
+    "stage": {
+      "type": "list",
+      "entries": 15,
+      "sha256": "8f67ba55cd6223052117fa5d8422cd9d1245455865f5aa4475d93f7783661e3a"
+    },
+    "star_reward": {
+      "type": "list",
+      "entries": 9,
+      "sha256": "0ab3d78ebd7fb92b39956c4349aa2cf6851833ec57613b53e9da7796b7251ddd"
+    },
+    "string_ko": {
+      "type": "dict",
+      "entries": 183,
+      "sha256": "1c86904b41b7d3891dff78be3355ef79799a610dbd59217b0abb55b739093a50"
+    },
+    "surv_combo": {
+      "type": "list",
+      "entries": 3,
+      "sha256": "07dac07a28c47b83b9264eea0f08feea6e4faba791a13dbb98052fb21926e301"
+    },
+    "surv_param": {
+      "type": "list",
+      "entries": 85,
+      "sha256": "859b6acdb766a62ccf62c01d19e1828284336d9469831a1d69f323f45efb8a62"
+    },
+    "surv_set": {
+      "type": "list",
+      "entries": 4,
+      "sha256": "5b5fb57e77d9e6698df3ada0daf9a91e43e2d4f0c598d7abe4239f13030a7319"
+    },
+    "surv_wave": {
+      "type": "list",
+      "entries": 8,
+      "sha256": "154d598ac738a3aec2123d2c73cac29b239da5fc914dfd4a4095c0500845d673"
+    },
+    "tutorial": {
+      "type": "list",
+      "entries": 19,
+      "sha256": "d76a3054214ee9b079ab1c894876cddb762f3613d8146836ad4786b14de20a09"
+    },
+    "unit": {
+      "type": "list",
+      "entries": 9,
+      "sha256": "bb92e21040824b98cfe121d6ed536a86aee97cad947fb5af17396d2dc6788277"
+    },
+    "unit_levelup": {
+      "type": "list",
+      "entries": 3,
+      "sha256": "4106f1b18ae77d1adfcb6bf8916677764b67a2bc3a37c5ce3c94f546395e6747"
+    },
+    "wave": {
+      "type": "list",
+      "entries": 285,
+      "sha256": "1c026a2543259217038c4b83406ea7267678a8ebac37fab4467a11ba53a699d1"
+    }
+  },
+  "table_file_count": 22,
+  "workbooks": [
+    "01_Config.xlsx",
+    "02_Unit.xlsx",
+    "03_Enemy.xlsx",
+    "04_Stage.xlsx",
+    "05_Reward.xlsx",
+    "06_Gacha.xlsx",
+    "07_Survivor.xlsx"
+  ],
+  "missing_guide_tables": [
+    "unit_star",
+    "unit_boost",
+    "attendance",
+    "guide",
+    "shop_product",
+    "pass_level"
+  ],
+  "config": {
+    "deckMax": 6,
+    "lvMax": 30,
+    "starMax": 5,
+    "lvBonus": 0.05,
+    "starBonus": 0.12,
+    "idleCapHours": 12,
+    "maxUnits": 8,
+    "startPower": 10,
+    "regenPerSec": 1,
+    "redeployCooldown": 12,
+    "overheatSec": 5,
+    "lifeMax": 10,
+    "startRewardGroup": 9000,
+    "attendanceRewardGroup": 9001,
+    "dupeOverflowRewardGroup": 9002,
+    "repRarityAutoSwap": 1,
+    "survDuration": 300,
+    "survLeaderHp": 100,
+    "survMoveSpeed": 3,
+    "survPickup": 1.6,
+    "survXpBase": 5,
+    "survXpStep": 5,
+    "survMaxComp": 4,
+    "survCompMaxLv": 3,
+    "survWeaponMaxLv": 5,
+    "survArena": 22,
+    "survDailyRewards": 3,
+    "survPartPer30s": 1,
+    "survCoinPerKill": 1,
+    "survClearCrystal": 50,
+    "starLifeMin": [
+      1,
+      6,
+      10
+    ],
+    "queueHeatRatio": 0.5,
+    "powerMax": 99,
+    "retreatRefund": 0.5,
+    "naturalCoolPerSec": 25,
+    "fireTileHeatPerSec": 40,
+    "wetTileCoolPerSec": 60,
+    "wetTileEnemySpeedMul": 1.35
+  },
+  "starting_rewards": [
+    {
+      "groupId": 9000,
+      "seq": 1,
+      "kind": 1,
+      "refId": 1,
+      "min": 2000,
+      "max": 2000,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 2,
+      "kind": 1,
+      "refId": 2,
+      "min": 1500,
+      "max": 1500,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 3,
+      "kind": 1,
+      "refId": 101,
+      "min": 20,
+      "max": 20,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 4,
+      "kind": 1,
+      "refId": 102,
+      "min": 20,
+      "max": 20,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 5,
+      "kind": 1,
+      "refId": 103,
+      "min": 20,
+      "max": 20,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 6,
+      "kind": 1,
+      "refId": 104,
+      "min": 20,
+      "max": 20,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 7,
+      "kind": 2,
+      "refId": "vac",
+      "min": 1,
+      "max": 1,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 8,
+      "kind": 2,
+      "refId": "ac",
+      "min": 1,
+      "max": 1,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 9,
+      "kind": 2,
+      "refId": "fan",
+      "min": 1,
+      "max": 1,
+      "prob": 10000
+    },
+    {
+      "groupId": 9000,
+      "seq": 10,
+      "kind": 2,
+      "refId": "gen",
+      "min": 1,
+      "max": 1,
+      "prob": 10000
+    }
+  ],
+  "audio_directory_present": false,
+  "status": "READ_ONLY_BASELINE_INVENTORY_NOT_GAME_VERIFICATION"
+}

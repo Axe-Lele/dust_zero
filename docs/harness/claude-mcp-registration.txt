@@ -1,0 +1,5 @@
+Checking MCP server health…
+
+unityMCP: C:/Users/Master/Documents/Project/clean-girls/build/unity-mcp-tools/Scripts/mcp-for-unity.exe --transport stdio - ⏸ Pending approval (run `claude` to approve)
+context7: https://mcp.context7.com/mcp (HTTP) - ⏸ Pending approval (run `claude` to approve)
+playwright: C:/Program Files/nodejs/node.exe C:/Users/Master/Documents/Project/clean-girls/tools/mcp-runtime/node_modules/@playwright/mcp/cli.js --browser msedge --headless --isolated --caps vision --viewport-size 390x844 --output-dir C:/Users/Master/Documents/Project/clean-girls/production/qa/evidence/browser - ⏸ Pending approval (run `claude` to approve)

@@ -1,0 +1,75 @@
+{
+  "server": {
+    "name": "Playwright",
+    "title": null,
+    "version": "1.64.0-alpha-1790635538000",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tools": [
+    "browser_close",
+    "browser_resize",
+    "browser_console_messages",
+    "browser_handle_dialog",
+    "browser_emulate_media",
+    "browser_evaluate",
+    "browser_file_upload",
+    "browser_drop",
+    "browser_find",
+    "browser_fill_form",
+    "browser_press_key",
+    "browser_type",
+    "browser_mouse_move_xy",
+    "browser_mouse_click_xy",
+    "browser_mouse_drag_xy",
+    "browser_mouse_down",
+    "browser_mouse_up",
+    "browser_mouse_wheel",
+    "browser_navigate",
+    "browser_navigate_back",
+    "browser_network_requests",
+    "browser_network_request",
+    "browser_run_code_unsafe",
+    "browser_take_screenshot",
+    "browser_snapshot",
+    "browser_click",
+    "browser_drag",
+    "browser_hover",
+    "browser_select_option",
+    "browser_tabs",
+    "browser_wait_for"
+  ],
+  "results": {
+    "browser_navigate": {
+      "isError": false,
+      "text": [
+        "### Ran Playwright code\n```js\nawait page.goto('http://127.0.0.1:52904/original_index.html');\n```\n### Page\n- Page URL: http://127.0.0.1:52904/original_index.html\n- Page Title: 오퍼레이션: 더스트 제로\n- Console: 1 errors, 0 warnings\n### Snapshot\n- [Snapshot](production\\qa\\evidence\\browser\\page-2026-10-15T10-01-33-007Z.yml)\n### Events\n- New console entries: production\\qa\\evidence\\browser\\console-2026-10-15T10-01-29-458Z.log#L1"
+      ]
+    },
+    "browser_evaluate": {
+      "isError": false,
+      "text": [
+        "### Result\n{\n  \"title\": \"오퍼레이션: 더스트 제로\",\n  \"canvasCount\": 30,\n  \"body\": \"OPERATION\\n더스트 제로\\n코인\\n2,000\\n크리스탈\\n1,500\\n\\n먼지 한 톨도 못 지나가!\\n\\nR · 근접 · 저지 2\\n청소기\\nLv.1\\n대표 변경\\n다음 스테이지 도전\\n1-1 거실\\n▶\\n대청소 모드\\n1-1을 클리어하면 대청소 모드가 열려요.\\n잠김\\n자동 청소\\n1-1을 클리어하면 자동 청소가 시작돼요.\\n최고 스테이지\\n—\\n가전 도감\\n4/9\\n편성\\n4/6\\n출석 보상\\n매일 크리스탈 300을 받을 수 있어요.\\n받기\\n튜토리얼 다시 보기\\n게임 초기화\\n\\n테스트 빌드 10.14-d\\n\\n홈\\n스테이지\\n가전\\n편성\\n소환\"\n}\n### Ran Playwright code\n```js\nawait page.evaluate('() => ({title: document.title, canvasCount: document.querySelectorAll(\"canvas\").length, body: document.body.innerText.slice(0, 1800)})');\n```"
+      ]
+    },
+    "browser_take_screenshot": {
+      "isError": false,
+      "text": [
+        "### Result\n- [Screenshot of viewport](production\\qa\\evidence\\browser\\setup-original.png)\n### Ran Playwright code\n```js\n// Screenshot viewport and save it as production\\qa\\evidence\\browser\\setup-original.png\nawait page.screenshot({\n  path: 'production\\\\qa\\\\evidence\\\\browser\\\\setup-original.png',\n  scale: 'css',\n  type: 'png'\n});\n```"
+      ]
+    },
+    "browser_console_messages": {
+      "isError": false,
+      "text": [
+        "### Result\nTotal messages: 1 (Errors: 1, Warnings: 0)\n\n[ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:52904/favicon.ico:0"
+      ]
+    },
+    "browser_close": {
+      "isError": false,
+      "text": [
+        "### Result\nNo open tabs. Navigate to a URL to create one.\n### Ran Playwright code\n```js\nawait page.close()\n```"
+      ]
+    }
+  },
+  "status": "ORIGINAL_WEB_NAVIGATION_AND_SCREENSHOT_VERIFIED"
+}

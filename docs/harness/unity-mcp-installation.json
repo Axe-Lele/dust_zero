@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/CoplayDev/unity-mcp",
+  "version": "10.3.0",
+  "tag": "v10.3.0",
+  "revision": "aa5fc638d623f56178d50329d9ad8c541a57fe66",
+  "installation": "Embedded Unity package; pinned local Python server",
+  "transport": "stdio",
+  "project": "DustZeroUnity",
+  "verification": "Unity project, scene and console read verified; Claude project server registered, first-use approval pending",
+  "evidence": "unity-mcp-validation.json"
+}

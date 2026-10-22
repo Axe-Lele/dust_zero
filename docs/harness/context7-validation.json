@@ -1,0 +1,46 @@
+{
+  "server": {
+    "name": "Context7",
+    "title": null,
+    "version": "4.4.1",
+    "websiteUrl": "https://context7.com",
+    "icons": [
+      {
+        "src": "https://context7.com/context7-icon-green.png",
+        "mimeType": "image/png",
+        "sizes": null
+      }
+    ],
+    "description": "Context7 provides up-to-date documentation and code examples for libraries and frameworks."
+  },
+  "tools": [
+    "resolve-library-id",
+    "query-docs"
+  ],
+  "lookup": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "Available Libraries:\n\n- Title: Unity\n- Context7-compatible library ID: /websites/unity3d_manual\n- Description: Unity is a cross-platform game engine and development platform for creating 2D, 3D, and immersive interactive experiences.\n- Code Snippets: 31353\n- Source Reputation: High\n- Benchmark Score: 56.06\n----------\n- Title: Unity Documentation\n- Context7-compatible library ID: /websites/unity\n- Description: The official documentation for Unity, a powerful real-time 3D development platform used for creating games, apps, and experiences. It covers the Unity Engine, Asset Store, and Unity Gaming Services.\n- Code Snippets: 43254\n- Source Reputation: High\n- Benchmark Score: 15.82\n----------\n- Title: Unity Documentation\n- Context7-compatible library ID: /llmstxt/unity_llms_txt\n- Description: Comprehensive documentation and guides for Unity's ecosystem of game development products and services including AI, cloud services, multiplayer, analytics, and monetization tools.\n- Code Snippets: 35697\n- Source Reputation: High\n- Benchmark Score: 55.25\n----------\n- Title: Unity Graphics\n- Context7-compatible library ID: /unity-technologies/graphics\n- Description: The Scriptable Render Pipeline (SRP) is a Unity feature that provides artists and developers with tools to create high-fidelity graphics, offering the Universal Render Pipeline (URP) and High Definition Render Pipeline (HDRP).\n- Code Snippets: 8562\n- Source Reputation: High\n- Benchmark Score: 66.93\n----------\n- Title: Unity\n- Context7-compatible library ID: /websites/unity3d_2018_1_manual\n- Description: Unity is a real-time 3D development platform used to create, operate, and monetize interactive, real-time 3D content, including video games, simulations, and visualizations.\n- Code Snippets: 11372\n- Source Reputation: High\n- Benchmark Score: 40.64",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  },
+  "documentation": {
+    "meta": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "### Car Control Script for Unity Input System\n\nSource: https://docs.unity3d.com/Manual/WheelColliderTutorial.html\n\nThis C# script handles car physics, including motor torque, braking, and steering, by reading input from Unity's Input System package. It adjusts torque and steering based on current speed for better handling. Ensure the WheelControl.cs script is also present.\n\n```csharp\nusing UnityEngine;\n\npublic class CarControl : MonoBehaviour\n{\n    [Header(\"Car Properties\")]\n    public float motorTorque = 2000f;\n    public float brakeTorque = 2000f;\n    public float maxSpeed = 20f;\n    public float steeringRange = 30f;\n    public float steeringRangeAtMaxSpeed = 10f;\n    public float centreOfGravityOffset = -1f;\n\n    private WheelControl[] wheels;\n    private Rigidbody rigidBody;\n\n    private CarInputActions carControls; // Reference to the new input system\n\n    void Awake()\n    {\n        carControls = new CarInputActions(); // Initialize Input Actions\n    }\n    void OnEnable()\n    {\n        carControls.Enable();\n    }\n\n    void OnDisable()\n    {\n        carControls.Disable();\n    }\n    \n    // Start is called before the first frame update\n    void Start()\n    {\n        rigidBody = GetComponent<Rigidbody>();\n\n        // Adjust center of mass to improve stability and prevent rolling\n        Vector3 centerOfMass = rigidBody.centerOfMass;\n        centerOfMass.y += centreOfGravityOffset;\n        rigidBody.centerOfMass = centerOfMass;\n\n        // Get all wheel components attached to the car\n        wheels = GetComponentsInChildren<WheelControl>();\n    }\n            \n    // FixedUpdate is called at a fixed time interval\n    void FixedUpdate()\n    {\n        // Read the Vector2 input from the new Input System\n        Vector2 inputVector = carControls.Car.Movement.ReadValue<Vector2>();\n\n        // Get player input for acceleration and steering\n        float vInput = inputVector.y; // Forward/backward input\n        float hInput = inputVector.x; // Steering input\n        \n        // Calculate current speed along the car's forward axis\n        float forwardSpeed = Vector3.Dot(transform.forward, rigidBody.linearVelocity);\n        float speedFactor = Mathf.InverseLerp(0, maxSpeed, Mathf.Abs(forwardSpeed)); // Normalized speed factor\n\n        // Reduce motor torque and steering at high speeds for better handling\n        float currentMotorTorque = Mathf.Lerp(motorTorque, 0, speedFactor);\n        float currentSteerRange = Mathf.Lerp(steeringRange, steeringRangeAtMaxSpeed, speedFactor);\n\n        // Determine if the player is accelerating or trying to reverse\n        bool isAccelerating = Mathf.Sign(vInput) == Mathf.Sign(forwardSpeed);\n\n        foreach (var wheel in wheels)\n        {\n            // Apply steering to wheels that support steering\n            if (wheel.steerable)\n            {\n                wheel.WheelCollider.steerAngle = hInput * currentSteerRange;\n            }\n\n            if (isAccelerating)\n            {\n                // Apply torque to motorized wheels\n                if (wheel.motorized)\n                {\n                    wheel.WheelCollider.motorTorque = vInput * currentMotorTorque;\n                }\n                // Release brakes when accelerating\n                wheel.WheelCollider.brakeTorque = 0f;\n            }\n            else\n            {\n                // Apply brakes when reversing direction\n                wheel.WheelCollider.motorTorque = 0f;\n                wheel.WheelCollider.brakeTorque = Mathf.Abs(vInput) * brakeTorque;\n            }\n        }\n    }\n}\n```\n\n### UI Toolkit with uGUI (legacy Input Manager or Input System package)\n\nSource: https://docs.unity3d.com/Manual/UIE-Runtime-Event-System.html\n\nWhen mixing UI Toolkit with uGUI and requiring an EventSystem, the choice of input module should align with the Active Input Handling setting in Player settings. For the Legacy Input Manager, a Standalone Input Module and EventSystem are needed. For the Input System package, an Input System UI Input Module and EventSystem are required.\n\n--------------------------------\n\n### EventSystem setup and input modules\n\nSource: https://docs.unity3d.com/Manual/UIE-Runtime-Event-System.html\n\nThe EventSystem component, which belongs to uGUI, is responsible for handling uGUI events derived from either the legacy Input Manager or the Input System package via an interchangeable Input Module. The Standalone Input Module dispatches events to UI Toolkit elements. If the Input System package is used with 'Input System Package (New)' or 'Both' Active Input Handling, an Input System UI Input Module is added instead, ensuring proper event dispatch for both UI Toolkit and uGUI.\n\n--------------------------------\n\n### UI Toolkit with the Input System package\n\nSource: https://docs.unity3d.com/Manual/UIE-Runtime-Event-System.html\n\nFor projects using the Input System package, if both UI Toolkit and uGUI are utilized, an Input System UI Input Module and an EventSystem component are necessary. The Active Input Handling setting should be configured to Input System Package (New) or Both.\n\n--------------------------------\n\n### Use UI Toolkit and uGUI with different input systems\n\nSource: https://docs.unity3d.com/Manual/UIE-Runtime-Event-System.html\n\nYou can use UI Toolkit’s UI Documents and uGUI components simultaneously. To achieve this, an EventSystem component must be present in the scene. This can be added by selecting UI > EventSystem in the Hierarchy view or by creating any uGUI component. When using UI Toolkit with an EventSystem, selecting the correct input module for the active input system is crucial.",
+        "annotations": null,
+        "meta": null
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  }
+}

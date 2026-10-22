@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "shell_files_checked": 25,
+  "checks": [
+    {
+      "check": "configuration",
+      "exit": 0,
+      "ok": true,
+      "seconds": 11.17,
+      "stdout": "=== CCGS Resolved Config ===\nrigor: minimal (project.yaml)\nreview_mode: solo (rigor:minimal)\nautomation: autonomous (project.yaml)\nworkflow: minimal (rigor:minimal)\ndocs.density: terse (rigor:minimal)\nstory_granularity: coarse (rigor:minimal)\nqa.level: standard (project.yaml)\nteam.size: individual (rigor:minimal)\nproject.stage: Technical Setup (project.yaml)\nautomation_always_ask: scope_changes, file_deletions, version_bumps, external_calls (configured)\nengine: Unity 6000.4.5f1 (project.yaml)\ntesting.strict: logic=true integration=true visual=true ui=true config=true (unset = each skill applies its own default)\nperformance.enforce: warn (default)\nplatform.cert_tier: (unset -- ask which platforms are in scope)\nsystem_overrides: none\nnotes: none\nValues above are fully resolved (local -> yaml -> legacy -> default). Use as-is.\nAn inline --review flag, if passed, overrides review_mode.\n=== end CCGS config ===\n\nCode root: DustZeroUnity/Assets\tengine.name\nSession state: on\tproject.yaml",
+      "stderr": ""
+    },
+    {
+      "check": "session-start",
+      "exit": 0,
+      "ok": true,
+      "seconds": 5.44,
+      "stdout": "=== Claude Code Game Studios — Session Context ===\nBranch: HEAD\n\nRecent commits:\n\nReview mode: solo\n\n=== ACTIVE SESSION STATE DETECTED ===\nA previous session left state at: production/session-state/active.md\nRead this file to recover context and continue where you left off.\n\nCheckpoint:\n**Updated:** 2026-10-15\n**Current task:** CCGS installed; resume the existing Unity port.\n**Next step:** Read CLAUDE.md and the brief, inspect existing files, establish actual compile state, implement first stage.\n**Blocked on:** No harness blocker known; game implementation has not been validated here.\n**Files in progress:** Existing data layer under DustZeroUnity/Assets/DustZero/Scripts/Data/.\n**Open questions:** Original brief named 6.3 LTS; existing project is 6000.4.5f1. Preserve it until a version decision is requested.\n  ... (19 total lines — read the full file for detail)\n=== END SESSION STATE PREVIEW ===\n===================================\n",
+      "stderr": ""
+    },
+    {
+      "check": "detect-gaps",
+      "exit": 0,
+      "ok": true,
+      "seconds": 4.03,
+      "stdout": "=== Checking for Documentation Gaps ===\n\n💡 To get a comprehensive project analysis, run: /project-stage-detect\n===================================\n",
+      "stderr": ""
+    },
+    {
+      "check": "commit-hook-readonly",
+      "exit": 0,
+      "ok": true,
+      "seconds": 0.81,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "push-hook-readonly",
+      "exit": 0,
+      "ok": true,
+      "seconds": 0.62,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "invalid-data-detected",
+      "exit": 2,
+      "ok": true,
+      "seconds": 1.05,
+      "stdout": "",
+      "stderr": "=== Asset Validation: ERRORS ===\n  FORMAT: GameData/data/ccgs-verify-t16abx_y.json is not valid JSON — fix syntax errors before continuing\n================================\nThe file was written but is broken. Fix it now, before continuing.\n"
+    },
+    {
+      "check": "valid-data-accepted",
+      "exit": 0,
+      "ok": true,
+      "seconds": 0.88,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "unity-entrypoint-help",
+      "exit": 0,
+      "ok": true,
+      "seconds": 0.12,
+      "stdout": "Usage: bash tools/ccgs-unity.sh compile|test|build|run\nCompile/tests need the Unity project closed in other editor processes. Do not kill an existing editor.\n",
+      "stderr": ""
+    },
+    {
+      "check": "unimplemented-build-reported",
+      "exit": 3,
+      "ok": true,
+      "seconds": 0.16,
+      "stdout": "",
+      "stderr": "NOT IMPLEMENTED: add a real player build method and enabled gameplay scenes before configuring commands.build.\n"
+    },
+    {
+      "check": "unimplemented-run-reported",
+      "exit": 3,
+      "ok": true,
+      "seconds": 0.16,
+      "stdout": "",
+      "stderr": "NOT IMPLEMENTED: configure commands.run to launch the real built game. Opening the editor is not a gameplay verification.\n"
+    },
+    {
+      "check": "missing-tests-not-success",
+      "exit": 1,
+      "ok": true,
+      "seconds": 0.38,
+      "stdout": "",
+      "stderr": "build\\does-not-exist-test-results.xml: UNVERIFIED ([Errno 2] No such file or directory: 'build\\\\does-not-exist-test-results.xml')\n"
+    }
+  ],
+  "scope": "Harness only; no Unity compile, player build, game tests or playtest performed."
+}

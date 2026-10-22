@@ -1,0 +1,117 @@
+{
+  "server": {
+    "name": "mcp-for-unity-server",
+    "title": null,
+    "version": "3.4.8",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tool_count": 48,
+  "resources": [
+    "mcpforunity://editor/state",
+    "mcpforunity://editor/active-tool",
+    "mcpforunity://scene/cameras",
+    "mcpforunity://scene/gameobject-api",
+    "mcpforunity://project/layers",
+    "mcpforunity://menu-items",
+    "mcpforunity://prefab-api",
+    "mcpforunity://editor/prefab-stage",
+    "mcpforunity://project/info",
+    "mcpforunity://pipeline/renderer-features",
+    "mcpforunity://rendering/stats",
+    "mcpforunity://editor/selection",
+    "mcpforunity://project/tags",
+    "mcpforunity://tests",
+    "mcpforunity://tool-groups",
+    "mcpforunity://instances",
+    "mcpforunity://scene/volumes",
+    "mcpforunity://editor/windows"
+  ],
+  "read_results": {
+    "mcpforunity://editor/state": {
+      "meta": null,
+      "contents": [
+        {
+          "uri": "mcpforunity://editor/state",
+          "mimeType": "text/plain",
+          "meta": null,
+          "text": "{\"success\":true,\"message\":\"Retrieved editor state.\",\"error\":null,\"data\":{\"schema_version\":\"unity-mcp/editor_state@2\",\"observed_at_unix_ms\":1792055975636,\"sequence\":3,\"unity\":{\"instance_id\":\"DustZeroUnity@fa521d1d\",\"unity_version\":\"6000.4.5f1\",\"project_id\":null,\"platform\":\"WindowsEditor\",\"is_batch_mode\":true},\"editor\":{\"is_focused\":true,\"play_mode\":{\"is_playing\":false,\"is_paused\":false,\"is_changing\":false},\"active_scene\":{\"path\":null,\"guid\":null,\"name\":\"\"}},\"activity\":{\"phase\":\"idle\",\"since_unix_ms\":1792055975636,\"reasons\":[\"tick\"]},\"compilation\":{\"is_compiling\":false,\"is_domain_reload_pending\":false,\"last_compile_started_unix_ms\":null,\"last_compile_finished_unix_ms\":null,\"last_domain_reload_before_unix_ms\":null,\"last_domain_reload_after_unix_ms\":1792055970401},\"assets\":{\"is_updating\":false,\"external_changes_dirty\":false,\"external_changes_last_seen_unix_ms\":null,\"external_changes_dirty_since_unix_ms\":null,\"external_changes_last_cleared_unix_ms\":null,\"refresh\":{\"is_refresh_in_progress\":false,\"last_refresh_requested_unix_ms\":null,\"last_refresh_finished_unix_ms\":null}},\"tests\":{\"is_running\":false,\"mode\":null,\"current_job_id\":null,\"started_unix_ms\":null,\"started_by\":\"unknown\",\"last_run\":null},\"transport\":{\"unity_bridge_connected\":null,\"last_message_unix_ms\":null},\"settings\":{\"batch_execute_max_commands\":25},\"advice\":{\"ready_for_tools\":false,\"blocking_reasons\":[\"stale_status\"],\"recommended_retry_after_ms\":500,\"recommended_next_action\":\"retry_later\"},\"staleness\":{\"age_ms\":190471,\"is_stale\":true}},\"hint\":null}"
+        }
+      ]
+    },
+    "mcpforunity://project/info": {
+      "meta": null,
+      "contents": [
+        {
+          "uri": "mcpforunity://project/info",
+          "mimeType": "text/plain",
+          "meta": null,
+          "text": "{\"success\":true,\"message\":\"Retrieved project info.\",\"error\":null,\"data\":{\"projectRoot\":\"C:/Users/Master/Documents/Project/clean-girls/DustZeroUnity\",\"projectName\":\"DustZeroUnity\",\"unityVersion\":\"6000.4.5f1\",\"platform\":\"StandaloneWindows64\",\"assetsPath\":\"C:/Users/Master/Documents/Project/clean-girls/DustZeroUnity/Assets\"},\"hint\":null}"
+        }
+      ]
+    },
+    "mcpforunity://instances": {
+      "meta": null,
+      "contents": [
+        {
+          "uri": "mcpforunity://instances",
+          "mimeType": "text/plain",
+          "meta": null,
+          "text": "{\"success\": true, \"transport\": \"stdio\", \"instance_count\": 1, \"instances\": [{\"id\": \"DustZeroUnity@fa521d1d\", \"name\": \"DustZeroUnity\", \"path\": \"C:/Users/Master/Documents/Project/clean-girls/DustZeroUnity/Assets\", \"hash\": \"fa521d1d\", \"port\": 6400, \"status\": \"running\", \"last_heartbeat\": \"2026-10-15T09:22:44.612882+00:00\", \"unity_version\": \"6000.4.5f1\", \"project_scoped_tools\": false}]}"
+        }
+      ]
+    }
+  },
+  "tool_results": {
+    "manage_scene": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"success\":true,\"message\":\"Retrieved active scene information.\",\"data\":{\"name\":\"\",\"path\":\"\",\"buildIndex\":-1,\"isDirty\":false,\"isLoaded\":true,\"rootCount\":0}}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structuredContent": {
+        "success": true,
+        "message": "Retrieved active scene information.",
+        "data": {
+          "name": "",
+          "path": "",
+          "buildIndex": -1,
+          "isDirty": false,
+          "isLoaded": true,
+          "rootCount": 0
+        }
+      },
+      "isError": false
+    },
+    "read_console": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"success\":true,\"message\":\"Retrieved 1 log entries.\",\"data\":[{\"type\":\"Assert\",\"message\":\"DisplayDialog: URP Material upgrade The Materials in your Project were created using an older version of the Universal Render Pipeline (URP). Unity must upgrade them to be compatible with your current version of URP. \",\"file\":\"./Library/PackageCache/com.unity.render-pipelines.universal@4d008a28541a/Editor/AssetPostProcessors/MaterialPostprocessor.cs\",\"line\":70,\"stackTrace\":null}]}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structuredContent": {
+        "success": true,
+        "message": "Retrieved 1 log entries.",
+        "data": [
+          {
+            "type": "Assert",
+            "message": "DisplayDialog: URP Material upgrade The Materials in your Project were created using an older version of the Universal Render Pipeline (URP). Unity must upgrade them to be compatible with your current version of URP. ",
+            "file": "./Library/PackageCache/com.unity.render-pipelines.universal@4d008a28541a/Editor/AssetPostProcessors/MaterialPostprocessor.cs",
+            "line": 70,
+            "stackTrace": null
+          }
+        ]
+      },
+      "isError": false
+    }
+  },
+  "status": "UNITY_READ_ONLY_CONNECTION_VERIFIED"
+}
