@@ -1276,8 +1276,8 @@ namespace DustZero.Editor
             name.fontSizeMin = UiTheme.Py(12.5f) * 0.7f;
             name.fontSizeMax = UiTheme.Py(12.5f);
             Anchor(nameRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(1f), -UiTheme.Py(58f)),
-                   new Vector2(-UiTheme.Px(1f), -UiTheme.Py(39f)));
+                   new Vector2(UiTheme.Px(1f), -UiTheme.Py(54.4f)),
+                   new Vector2(-UiTheme.Px(1f), -UiTheme.Py(35.4f)));
 
             var slot = go.AddComponent<DeckSlot>();
             Wire(slot, ("fill", fill), ("outline", outline), ("solidOutline", solid),
@@ -4701,7 +4701,7 @@ namespace DustZero.Editor
             var headCount = UiKit.Label("Count", head, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
                                         TextAlignmentOptions.BottomLeft, out var hcRt, "");
             Anchor(hcRt, Vector2.zero, Vector2.one,
-                   new Vector2(UiTheme.Px(146f), 0f), new Vector2(0f, -UiTheme.Py(3f)));
+                   new Vector2(UiTheme.Px(133f), 0f), new Vector2(0f, -UiTheme.Py(3f)));
 
             // ---- dark progress plate
             var progress = Block("Progress", 68f);
@@ -4751,7 +4751,7 @@ namespace DustZero.Editor
                         TextAlignmentOptions.Left, out var ssRt,
                         "전투 중 남는 전력으로 쓰는 기술");
             Anchor(ssRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(92f), -UiTheme.Py(30.4f)),
+                   new Vector2(UiTheme.Px(77.8f), -UiTheme.Py(30.4f)),
                    new Vector2(-UiTheme.Px(14f), -UiTheme.Py(12f)));
 
             var skillRows = UiKit.Node("Rows", skills);
@@ -5184,7 +5184,7 @@ namespace DustZero.Editor
             UiKit.Label("Sub", head, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
                         TextAlignmentOptions.Left, out var hsRt, "스테이지와 따로 즐기는 모드");
             CenterBand(hsRt, 18f, UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(18f)),
-                       UiTheme.Px(73f), 0f, fromRight: true);
+                       UiTheme.Px(63.3f), 0f, fromRight: true);
 
             // ---- the dark 대청소 card. 원본 `#modeSurv` 은 다른 모드 카드와 같은 틀이고
             // 높이는 336.7 이다 — 위 14 / 47.6, 소개 71.6 / 20.9, 규칙 102.5 / 42,
@@ -7243,10 +7243,11 @@ namespace DustZero.Editor
             {
                 var b = UiKit.Button(id, seg, fonts.Body, "", UiButtonKind.Glass,
                                      out var rt, UiTheme.Py(41f), UiTheme.Py(14f));
-                float x0 = left ? UiTheme.Px(3f) : UiTheme.Px(181f);
+                // 원본 `#gachaSeg > button` 은 19 와 217 에서 **194** 씩이다(사이 4).
+                float x0 = left ? UiTheme.Px(3f) : UiTheme.Px(201f);
                 Anchor(rt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
                        new Vector2(x0, -UiTheme.Py(20.5f)),
-                       new Vector2(x0 + UiTheme.Px(174f), UiTheme.Py(20.5f)));
+                       new Vector2(x0 + UiTheme.Px(194f), UiTheme.Py(20.5f)));
                 plate = rt.GetComponent<Image>();
                 if (plate != null)
                 {
@@ -7754,19 +7755,22 @@ namespace DustZero.Editor
                    new Vector2(inset, -UiTheme.Py(10f) - UiTheme.Py(30f)),
                    new Vector2(-inset, -UiTheme.Py(10f)));
 
-            var stageNo = UiKit.Label("StageNo", topRow, fonts.Number, UiTheme.Py(13f),
+            var stageNo = UiKit.Label("StageNo", topRow, fonts.Number, UiTheme.Py(11.5f),
                                       UiTheme.DarkInk2, TextAlignmentOptions.Left,
                                       out var snrt, "1-1");
             stageNo.textWrappingMode = TextWrappingModes.NoWrap;
+            // 우리 글꼴은 숫자가 더 넓다 — 칸에 맞춰 자르지 말고 넘치게 둔다.
+            stageNo.overflowMode = TextOverflowModes.Overflow;
+            // 원본 `#stChip` 안에서 번호는 28~53, 이름은 55.1 에서 시작한다.
             Anchor(snrt, new Vector2(0f, 0f), new Vector2(0f, 1f),
-                   Vector2.zero, new Vector2(UiTheme.Px(34f), 0f));
+                   Vector2.zero, new Vector2(UiTheme.Px(25f), 0f));
 
             var stageName = UiKit.Label("StageName", topRow, fonts.Title, UiTheme.Py(19f),
                                         UiTheme.DarkInk, TextAlignmentOptions.Left,
                                         out var sgrt, "거실");
             stageName.textWrappingMode = TextWrappingModes.NoWrap;
             Anchor(sgrt, new Vector2(0f, 0f), new Vector2(0.5f, 1f),
-                   new Vector2(UiTheme.Px(40f), 0f), Vector2.zero);
+                   new Vector2(UiTheme.Px(27.1f), 0f), Vector2.zero);
 
             var ctrls = UiKit.Node("Ctrls", topRow);
             Anchor(ctrls, new Vector2(0.4f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
@@ -8321,12 +8325,12 @@ namespace DustZero.Editor
                                           TextAlignmentOptions.Left, out var ltRt, "대청소 모드");
             leaderTitle.textWrappingMode = TextWrappingModes.NoWrap;
             Anchor(ltRt, new Vector2(0f, 0f), new Vector2(0f, 1f),
-                   Vector2.zero, new Vector2(UiTheme.Px(130f), 0f));
+                   Vector2.zero, new Vector2(UiTheme.Px(99.4f), 0f));
             var headSub = UiKit.Label("Sub", headRow, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
                                       TextAlignmentOptions.Left, out var hsRt, "쓰러질 때까지 버티기");
             headSub.textWrappingMode = TextWrappingModes.NoWrap;
             Anchor(hsRt, new Vector2(0f, 0f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(136f), 0f), Vector2.zero);
+                   new Vector2(UiTheme.Px(107.4f), 0f), Vector2.zero);
 
             SheetText("Note", 12f, UiTheme.Ink2,
                       "리더를 고르세요. 화면을 끌거나 WASD·방향키로 움직이고, 공격은 자동이에요.");
@@ -8392,8 +8396,9 @@ namespace DustZero.Editor
                                       TextAlignmentOptions.Left, out var clRt, "동료 후보");
             compLbl.textWrappingMode = TextWrappingModes.NoWrap;
             compLbl.characterSpacing = 6f;
-            Anchor(clRt, new Vector2(0f, 0f), new Vector2(0f, 1f),
-                   new Vector2(UiTheme.Px(12f), 0f), new Vector2(UiTheme.Px(68f), 0f));
+            // 원본은 이 글자를 칸 가운데가 아니라 **위에서 17.2** 에 놓는다.
+            CenterBand(clRt, 17.2f, UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(17f)),
+                       UiTheme.Px(12f), UiTheme.Px(68f), fromRight: false);
 
             var compRoot = UiKit.Node("Minis", stripRow);
             Anchor(compRoot, new Vector2(0f, 0f), new Vector2(1f, 1f),
@@ -8454,19 +8459,22 @@ namespace DustZero.Editor
                    new Vector2(inset, -UiTheme.Py(10f) - UiTheme.Py(30f)),
                    new Vector2(-inset, -UiTheme.Py(10f)));
 
-            var modeTag = UiKit.Label("Mode", topRow, fonts.Number, UiTheme.Py(13f),
+            var modeTag = UiKit.Label("Mode", topRow, fonts.Number, UiTheme.Py(11f),
                                       UiTheme.DarkInk2, TextAlignmentOptions.Left,
                                       out var mtRt, "MODE");
             modeTag.textWrappingMode = TextWrappingModes.NoWrap;
+            // 원본 `small` 은 28.1 폭이고 이름이 바로 62.1 에서 시작한다. 우리 글꼴은
+            // 'MODE' 가 더 넓으므로 말줄임 대신 넘치게 둔다.
+            modeTag.overflowMode = TextOverflowModes.Overflow;
             Anchor(mtRt, new Vector2(0f, 0f), new Vector2(0f, 1f),
-                   Vector2.zero, new Vector2(UiTheme.Px(46f), 0f));
+                   Vector2.zero, new Vector2(UiTheme.Px(34f), 0f));
 
             var modeName = UiKit.Label("Name", topRow, fonts.Title, UiTheme.Py(19f),
                                        UiTheme.DarkInk, TextAlignmentOptions.Left,
                                        out var mnRt, "대청소");
             modeName.textWrappingMode = TextWrappingModes.NoWrap;
             Anchor(mnRt, new Vector2(0f, 0f), new Vector2(0.5f, 1f),
-                   new Vector2(UiTheme.Px(52f), 0f), Vector2.zero);
+                   new Vector2(UiTheme.Px(34.1f), 0f), Vector2.zero);
 
             var ctrls = UiKit.Node("Ctrls", topRow);
             Anchor(ctrls, new Vector2(0.4f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
@@ -8522,8 +8530,10 @@ namespace DustZero.Editor
                                     align, out var lrt, caption);
                 label.textWrappingMode = TextWrappingModes.NoWrap;
                 label.characterSpacing = 8f;
+                // 원본에서 오른쪽 칸(`.ro.right`)의 라벨만 7 아래에 놓인다.
+                float capTop = align == TextAlignmentOptions.Right ? UiTheme.Py(7f) : 0f;
                 Anchor(lrt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                       new Vector2(0f, -UiTheme.Py(15f)), Vector2.zero);
+                       new Vector2(0f, -capTop - UiTheme.Py(15f)), new Vector2(0f, -capTop));
 
                 // Same trap as the battle HUD: a 26pt line needs ~80px of box or TMP drops it,
                 // so the box is 44px centred on the build's y=31.

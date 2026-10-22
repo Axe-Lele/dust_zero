@@ -1,8 +1,8 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Battle/Hud	16.0	12.0	398.0	113.0	#1D2226FF			
-SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	34.0	30.0	#8D99A2FF	13.0	1-1	28.0,27.3,20.8,19.5
-SafeArea/Column/Battle/Hud/Top/StageName	68.0	22.0	147.0	30.0	#E8EDF0FF	19.0	거실	68.0,27.5,29.2,19.0
-SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	22.0	147.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	25.0	30.0	#8D99A2FF	11.5	1-1	28.0,28.4,18.4,17.3
+SafeArea/Column/Battle/Hud/Top/StageName	55.1	22.0	159.9	30.0	#E8EDF0FF	19.0	거실	55.1,27.5,29.2,19.0
+SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	55.1	22.0	159.9	30.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Top/Ctrls/Speed	241.6	12.7	33.2	48.5	#1D2226FF			
 SafeArea/Column/Battle/Hud/Top/Ctrls/Speed/Content/Label	249.6	18.5	17.2	37.0	#E8EDF0FF	12.0	1×	250.6,28.0,16.1,18.0
 SafeArea/Column/Battle/Hud/Top/Ctrls/Pause	280.9	12.7	63.3	48.5	#1D2226FF			
@@ -14,7 +14,7 @@ SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	71.0	31.2	44.0	#FF6B5EFF	26.
 SafeArea/Column/Battle/Hud/Readouts/Power/Label	71.2	69.0	284.8	15.0	#8D99A2FF	10.0	전력 · 초당 +135W	71.2,69.0,89.3,15.0
 SafeArea/Column/Battle/Hud/Readouts/Power/Value	71.2	71.0	284.8	44.0	#FF9A3CFF	26.0	200W	71.2,73.5,71.5,39.0
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter	71.2	109.0	284.8	4.0	#5A3A1EFF			
-SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	71.2	109.0	212.2	4.0	#FF9A3CFF			
+SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	71.2	109.0	218.6	4.0	#FF9A3CFF			
 SafeArea/Column/Battle/Hud/Readouts/Remain/Label	368.0	69.0	34.0	15.0	#8D99A2FF	10.0	남은 적	370.5,69.0,32.3,15.0
 SafeArea/Column/Battle/Hud/Readouts/Remain/Value	368.0	71.0	34.0	44.0	#FF9A3CFF	26.0	22	370.8,73.5,31.2,39.0
 SafeArea/Column/Battle/DeckBar/Slots/Count	16.0	713.0	199.0	32.0	#5D6871FF	12.0	배치 1/8	16.0,720.0,43.2,18.0

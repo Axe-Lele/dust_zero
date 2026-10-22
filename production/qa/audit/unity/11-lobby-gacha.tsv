@@ -2,10 +2,10 @@ path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport	0.0	76.0	430.0	778.0	#00000000			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode	15.5	89.6	398.9	47.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/UnitMode	18.5	92.6	174.0	41.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/UnitMode/Content/Label	26.5	100.6	158.0	25.0	#F7F9FAFF	14.0	가전 소환	78.9,102.6,53.3,21.0
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/GearMode	196.5	92.6	174.0	41.0	#00000000			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/GearMode/Content/Label	204.5	100.6	158.0	25.0	#5D6871FF	14.0	장비 소환	256.9,102.6,53.3,21.0
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/UnitMode	18.5	92.6	194.0	41.0	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/UnitMode/Content/Label	26.5	100.6	178.0	25.0	#F7F9FAFF	14.0	가전 소환	88.9,102.6,53.3,21.0
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/GearMode	216.5	92.6	194.0	41.0	#00000000			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/GearMode/Content/Label	224.5	100.6	178.0	25.0	#5D6871FF	14.0	장비 소환	286.9,102.6,53.3,21.0
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner	15.5	148.6	398.9	309.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Title/Title	31.5	164.6	366.9	38.0	#E8EDF0FF	21.0	겨울맞이 신상 입고	31.5,173.1,141.6,21.0
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Title/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	31.5	164.6	366.9	38.0	#FFFFFFFF			

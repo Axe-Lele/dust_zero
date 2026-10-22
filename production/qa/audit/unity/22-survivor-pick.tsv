@@ -1,11 +1,11 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Survivor/LeaderSelect	0.0	0.0	430.0	932.0	#1D22268C			
 SafeArea/Column/Survivor/LeaderSelect/Box	16.0	208.9	398.0	514.2	#F7F9FAFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/Head/Title	32.0	224.9	130.0	30.0	#1D2226FF	24.0	대청소 모드	32.0,227.9,99.4,24.0
-SafeArea/Column/Survivor/LeaderSelect/Box/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	32.0	224.9	130.0	30.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub	168.0	224.9	230.0	30.0	#5D6871FF	12.0	쓰러질 때까지 버티기	168.0,230.9,102.0,18.0
-SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	168.0	224.9	230.0	30.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	168.0	224.9	230.0	30.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Head/Title	32.0	224.9	99.4	30.0	#1D2226FF	24.0	대청소 모드	32.0,227.9,99.4,24.0
+SafeArea/Column/Survivor/LeaderSelect/Box/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	32.0	224.9	99.4	30.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub	139.4	224.9	258.6	30.0	#5D6871FF	12.0	쓰러질 때까지 버티기	139.4,230.9,102.0,18.0
+SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	139.4	224.9	258.6	30.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	139.4	224.9	258.6	30.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text	32.0	266.9	366.0	36.0	#5D6871FF	12.0	리더를 고르세요. 화면을 끌거나 WASD·방향키로 움직이고, 공격은 자동	32.0,266.9,363.3,36.0
 SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	32.0	266.9	366.0	36.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	266.9	366.0	36.0	#FFFFFFFF			
@@ -36,8 +36,8 @@ SafeArea/Column/Survivor/LeaderSelect/Box/Skill/Desc/TMP SubMeshUI [IBM Plex San
 SafeArea/Column/Survivor/LeaderSelect/Box/Skill/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	42.2	487.3	345.6	36.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Comps	32.0	543.1	366.0	56.0	#F7F9FAFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Line	32.0	543.1	366.0	56.0	#C7D0D6FF			
-SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Label	44.0	543.1	56.0	56.0	#5D6871FF	11.0	동료 후보	44.0,562.8,45.1,16.5
-SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.0	543.1	56.0	56.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Label	44.0	551.8	56.0	17.0	#5D6871FF	11.0	동료 후보	44.0,552.0,45.1,16.5
+SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.0	551.8	56.0	17.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Minis/vac	100.0	554.1	34.0	34.0	#E3E8ECFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Minis/vac/Icon	103.0	557.1	28.0	28.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Minis/fan	138.0	554.1	34.0	34.0	#E3E8ECFF			

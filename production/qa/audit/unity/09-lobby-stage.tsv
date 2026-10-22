@@ -3,8 +3,8 @@ SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF
 SafeArea/Column/Lobby/Panels/Stage/Viewport	0.0	76.0	430.0	778.0	#00000000			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Title	13.6	89.6	140.0	30.0	#1D2226FF	24.0	우리 집 지키기	13.6,95.6,125.0,24.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	13.6	89.6	140.0	30.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count	159.6	92.6	256.8	27.0	#5D6871FF	12.0	2/75 클리어	159.6,101.6,61.1,18.0
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	159.6	92.6	256.8	27.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count	146.6	92.6	269.8	27.0	#5D6871FF	12.0	2/75 클리어	146.6,101.6,61.1,18.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	146.6	92.6	269.8	27.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Plate	13.6	131.6	402.8	68.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Caption	27.6	143.6	86.0	15.0	#8D99A2FF	10.0	최고 스테이지	27.6,143.6,55.9,15.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Best	27.6	161.6	86.0	39.3	#FF9A3CFF	26.0	1-2	27.6,161.7,41.7,39.0
@@ -13,7 +13,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Next/TMP SubMeshUI [
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Card	13.6	211.6	402.8	171.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Title	27.6	222.6	76.0	22.8	#1D2226FF	15.0	전력 스킬	27.6,226.5,50.6,15.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.6	222.6	76.0	22.8	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Sub	105.6	223.6	296.8	18.4	#5D6871FF	12.0	전투 중 남는 전력으로 쓰는 기술	105.6,223.8,153.3,18.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Sub	91.4	223.6	311.0	18.4	#5D6871FF	12.0	전투 중 남는 전력으로 쓰는 기술	91.4,223.8,153.3,18.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Icon	27.6	258.6	36.0	36.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	73.6	254.6	104.0	19.0	#1D2226FF	13.0	과전류 방출	73.6,257.6,53.8,13.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	73.6	254.6	104.0	19.0	#FFFFFFFF			

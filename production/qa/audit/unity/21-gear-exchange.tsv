@@ -3,7 +3,7 @@ SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF
 SafeArea/Column/Lobby/Panels/Content/Viewport	0.0	76.0	430.0	778.0	#00000000			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Head/Title	15.5	86.4	70.0	36.4	#1D2226FF	24.0	콘텐츠	15.5,92.6,55.3,24.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	15.5	86.4	70.0	36.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Head/Sub	88.5	98.4	325.9	18.4	#5D6871FF	12.0	스테이지와 따로 즐기는 모드	88.5,98.6,136.9,18.0
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Head/Sub	78.8	98.4	335.6	18.4	#5D6871FF	12.0	스테이지와 따로 즐기는 모드	78.8,98.6,136.9,18.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool	15.5	131.6	398.9	209.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Kicker	29.5	144.6	370.9	17.0	#FF9A3CFF	11.0	선택형 일일 숙제	29.5,144.6,73.9,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Title	29.5	162.6	370.9	22.0	#1D2226FF	20.0	오늘의 청소 일지	29.5,162.6,119.5,20.0

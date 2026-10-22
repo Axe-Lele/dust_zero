@@ -1,4 +1,4 @@
-// Drives one 대청소 (survival) run: leader pick, the open arena, level-up cards and the result.
+﻿// Drives one 대청소 (survival) run: leader pick, the open arena, level-up cards and the result.
 //
 // Mirrors BattleScreen's shape (fixed-step sim clock, pause as a flag rather than Time.timeScale,
 // PresentationBus drained through the same FxDirector) but trades the tile board and deck tray
@@ -553,15 +553,35 @@ namespace DustZero.Game
                     Portrait.sprite = sprites != null ? sprites.Unit(unitId) : null;
                     Portrait.enabled = Portrait.sprite != null;
                 }
-                if (Label != null) { Label.text = caption; Label.color = UiTheme.Ink; }
+                if (Label != null)
+                {
+                    Label.text = caption;
+                    Label.color = UiTheme.Ink;
+                    Place(Label, 43.5f);
+                }
             }
 
             public void Clear()
             {
                 if (Plate != null) Plate.enabled = false;
                 if (Portrait != null) Portrait.enabled = false;
-                if (Label != null) { Label.text = "빈 자리"; Label.color = UiTheme.Ink2; }
+                if (Label != null)
+                {
+                    Label.text = "빈 자리";
+                    Label.color = UiTheme.Ink2;
+                    Place(Label, 28f);
+                }
             }
+        }
+
+        /// <summary>글자를 칸 위에서 잰 중심에 놓는다 — 칸이 글자 줄보다 낮으면 안 그려진다.</summary>
+        static void Place(TextMeshProUGUI label, float centerPage)
+        {
+            // 글자는 칸 **아래**에 붙어 있으므로 위에서 잰 중심을 아래 기준으로 뒤집는다.
+            var rt = (RectTransform)label.transform;
+            float c = UiTheme.Py(57f - centerPage), half = UiTheme.Py(11f);
+            rt.offsetMin = new Vector2(rt.offsetMin.x, c - half);
+            rt.offsetMax = new Vector2(rt.offsetMax.x, c + half);
         }
 
         TeamSlot BuildTeamSlot(bool leader)
@@ -606,9 +626,10 @@ namespace DustZero.Game
             labelRt.SetParent(rt, false);
             labelRt.anchorMin = new Vector2(0f, 0f);
             labelRt.anchorMax = new Vector2(1f, 0f);
-            labelRt.offsetMin = new Vector2(UiTheme.Px(2f), UiTheme.Py(4f));
-            // 10pt needs ~22px of box; the build's 15px row would make TMP drop the line.
-            labelRt.offsetMax = new Vector2(-UiTheme.Px(2f), UiTheme.Py(4f) + UiTheme.Py(22f));
+            // 10pt 한 줄은 22px 칸이 있어야 TMP 가 그린다(원본의 15px 줄로는 사라진다).
+            // 자리는 원본 글자 중심 — 슬롯 위에서 28, 곧 아래에서 29 다.
+            labelRt.offsetMin = new Vector2(UiTheme.Px(2f), UiTheme.Py(18f));
+            labelRt.offsetMax = new Vector2(-UiTheme.Px(2f), UiTheme.Py(40f));
             var label = labelGo.AddComponent<TextMeshProUGUI>();
             label.font = bodyFont;
             label.fontSize = UiTheme.Py(10f);

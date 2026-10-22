@@ -1,8 +1,8 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Battle/Hud	16.0	12.0	398.0	113.0	#1D2226FF			
-SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	34.0	30.0	#8D99A2FF	13.0	1-1	28.0,27.3,20.8,19.5
-SafeArea/Column/Battle/Hud/Top/StageName	68.0	22.0	147.0	30.0	#E8EDF0FF	19.0	거실	68.0,27.5,29.2,19.0
-SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	22.0	147.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	25.0	30.0	#8D99A2FF	11.5	1-1	28.0,28.4,18.4,17.3
+SafeArea/Column/Battle/Hud/Top/StageName	55.1	22.0	159.9	30.0	#E8EDF0FF	19.0	거실	55.1,27.5,29.2,19.0
+SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	55.1	22.0	159.9	30.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Top/Ctrls/Speed	241.6	12.7	33.2	48.5	#1D2226FF			
 SafeArea/Column/Battle/Hud/Top/Ctrls/Speed/Content/Label	249.6	18.5	17.2	37.0	#E8EDF0FF	12.0	1×	250.6,28.0,16.1,18.0
 SafeArea/Column/Battle/Hud/Top/Ctrls/Pause	280.9	12.7	63.3	48.5	#1D2226FF			
