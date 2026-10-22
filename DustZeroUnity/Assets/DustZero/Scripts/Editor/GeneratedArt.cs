@@ -186,9 +186,10 @@ namespace DustZero.Editor
         }
 
         /// <summary>
-        /// 리그 판 바닥. 7x6 칸에 칸선을 긋고 **아래 세 줄(우리 자리)만 밝게** 칠한다 —
-        /// 원본 `lgRender` 가 매 프레임 그리는 것과 같은 그림이라 한 장으로 구워 둔다.
-        /// 한 칸이 월드 1 단위가 되도록 늘려 쓴다.
+        /// 리그 판 바닥. 원본 `lgRender` 첫 줄을 그대로 구운 것이다 —
+        /// 칸마다 1.5 들여 칠한 **체크무늬**이고, 위 세 줄(먼지 쪽)은 따뜻한 베이지,
+        /// 아래 세 줄(우리 쪽)은 차가운 파랑이다. 가운데에는 점선 한 줄이 지나간다.
+        /// 한 칸이 월드 1 단위가 되도록 ppu 를 칸 크기로 맞춰 둔다.
         /// </summary>
         public static Sprite LeagueFloor(int cols, int rows, int ourRows, int pixelsPerCell = 48)
         {
@@ -197,19 +198,38 @@ namespace DustZero.Editor
             int w = cols * pixelsPerCell, h = rows * pixelsPerCell;
             var px = new Color32[w * h];
 
-            var foe = new Color32(0xDE, 0xE3, 0xE7, 255);   // 먼지 쪽: 차가운 회색
-            var ours = new Color32(0xEC, 0xEF, 0xF1, 255);  // 우리 쪽: 한 단계 밝게
-            var line = new Color32(0xC7, 0xD0, 0xD6, 255);
+            var oursA = Hex32("#DCE9F2");
+            var oursB = Hex32("#D3E3EE");
+            var foeA = Hex32("#EEDFD6");
+            var foeB = Hex32("#E8D5CA");
+            var gap = new Color32(0, 0, 0, 0);
 
+            float inset = 1.5f * pixelsPerCell / 56f;   // 원본은 56px 칸에서 1.5 를 들인다
             for (int y = 0; y < h; y++)
                 for (int x = 0; x < w; x++)
                 {
-                    // 그림은 아래가 0 이고 칸은 위에서 세므로 뒤집어 읽는다.
-                    int row = (h - 1 - y) / pixelsPerCell;
+                    int top = h - 1 - y;                 // 그림은 아래가 0, 칸은 위에서 센다
+                    int row = top / pixelsPerCell, col = x / pixelsPerCell;
+                    float inX = x % pixelsPerCell, inY = top % pixelsPerCell;
+                    bool edge = inX < inset || inX > pixelsPerCell - 1 - inset
+                             || inY < inset || inY > pixelsPerCell - 1 - inset;
+                    if (edge) { px[y * w + x] = gap; continue; }
+
                     bool mine = row >= rows - ourRows;
-                    bool onLine = x % pixelsPerCell == 0 || (h - 1 - y) % pixelsPerCell == 0;
-                    px[y * w + x] = onLine ? line : mine ? ours : foe;
+                    bool odd = (row + col) % 2 != 0;
+                    px[y * w + x] = mine ? (odd ? oursA : oursB) : (odd ? foeA : foeB);
                 }
+
+            // 가운데 점선 — 원본은 [6,6] 간격에 두께 2 다.
+            int mid = h / 2;
+            float dash = 6f * pixelsPerCell / 56f, thick = Mathf.Max(1f, 2f * pixelsPerCell / 56f);
+            var line = new Color32(29, 34, 38, 77);     // rgba(29,34,38,.3)
+            for (int y = mid - (int)(thick / 2f); y <= mid + (int)(thick / 2f); y++)
+            {
+                if (y < 0 || y >= h) continue;
+                for (int x = 0; x < w; x++)
+                    if ((int)(x / dash) % 2 == 0) px[y * w + x] = line;
+            }
 
             var tex = new Texture2D(w, h, TextureFormat.RGBA32, false);
             tex.SetPixels32(px);
@@ -222,8 +242,16 @@ namespace DustZero.Editor
             importer.textureType = TextureImporterType.Sprite;
             importer.spritePixelsPerUnit = pixelsPerCell;   // 한 칸 = 월드 1
             importer.filterMode = FilterMode.Bilinear;
+            importer.alphaIsTransparency = true;
             importer.SaveAndReimport();
             return AssetDatabase.LoadAssetAtPath<Sprite>($"{Folder}/{name}.png");
+        }
+
+        /// <summary>`#RRGGBB` 를 색으로. 원본 CSS 값을 그대로 적기 위한 것이다.</summary>
+        static Color32 Hex32(string hex)
+        {
+            ColorUtility.TryParseHtmlString(hex, out var c);
+            return c;
         }
 
         /// <summary>

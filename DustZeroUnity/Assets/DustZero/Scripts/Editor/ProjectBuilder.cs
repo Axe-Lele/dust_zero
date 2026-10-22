@@ -440,6 +440,7 @@ namespace DustZero.Editor
             public SpawnWarnView SpawnWarn;
             public LeagueBenchCell LeagueBench;
             public LeagueShopCard LeagueShop;
+            public LeagueTierCard LeagueTier;
             /// <summary>리그 판 위에 겹치는 투명 단추.</summary>
             public UiButton LeagueCell;
         }
@@ -468,6 +469,7 @@ namespace DustZero.Editor
             p.LeagueBench = BuildLeagueBenchPrefab(fonts);
             p.LeagueShop = BuildLeagueShopPrefab(fonts);
             p.LeagueCell = BuildLeagueCellPrefab(fonts);
+            p.LeagueTier = BuildLeagueTierPrefab(fonts);
             AssertAllSaved(p);
             return p;
         }
@@ -556,6 +558,7 @@ namespace DustZero.Editor
                 LeagueBench = Load<LeagueBenchCell>("LeagueBenchCell"),
                 LeagueShop = Load<LeagueShopCard>("LeagueShopCard"),
                 LeagueCell = Load<UiButton>("LeagueCell"),
+                LeagueTier = Load<LeagueTierCard>("LeagueTierCard"),
             };
             AssertAllLoaded(reloaded);
             return reloaded;
@@ -5607,7 +5610,7 @@ namespace DustZero.Editor
             var view = worldGo.AddComponent<LeagueView>();
             Wire(view, ("entityRoot", entityRoot), ("entityPrefab", prefabs.Entity),
                  ("sprites", library), ("floor", floor), ("selection", sel),
-                 ("starRing", art.Circle));
+                 ("starRing", art.Circle), ("cellFill", art.Square));
 
             SetLayerDeep(worldGo, LeagueLayer);
             return (cam, view);
@@ -5680,6 +5683,71 @@ namespace DustZero.Editor
                  ("solidOutline", GeneratedArt.RoundedOutlineNineSlice("lg_bs_line",
                      Mathf.RoundToInt(UiTheme.Px(10f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))))));
             return SavePrefab<LeagueBenchCell>(go, "LeagueBenchCell");
+        }
+
+        /// <summary>단계 한 장. 시트 안에서 세로로 쌓이므로 높이만 정하고 폭은 늘린다.</summary>
+        static LeagueTierCard BuildLeagueTierPrefab(Fonts fonts)
+        {
+            int radius = Mathf.RoundToInt(UiTheme.Px(12f));
+            var go = UI("LeagueTierCard", null, out var rt);
+            rt.sizeDelta = new Vector2(UiTheme.Px(366f), UiTheme.Py(98f));
+            var le = go.AddComponent<LayoutElement>();
+            le.minHeight = le.preferredHeight = UiTheme.Py(98f);
+
+            var face = go.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("lg_tier", radius);
+            face.type = Image.Type.Sliced;
+            face.color = UiTheme.Panel;
+
+            var button = go.AddComponent<Button>();
+            button.targetGraphic = face;
+            button.transition = Selectable.Transition.None;
+
+            var lineRt = UiKit.Node("Outline", rt);
+            Stretch(lineRt);
+            var outline = lineRt.gameObject.AddComponent<Image>();
+            outline.sprite = GeneratedArt.RoundedOutlineNineSlice("lg_tier_line", radius,
+                Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            outline.type = Image.Type.Sliced;
+            outline.color = UiTheme.PanelLine;
+            outline.raycastTarget = false;
+
+            var name = UiKit.Label("Name", rt, fonts.Title, UiTheme.Py(17f), UiTheme.Ink,
+                                   TextAlignmentOptions.Left, out var nameRt, "");
+            name.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(nameRt, new Vector2(0f, 1f), new Vector2(0.6f, 1f),
+                   new Vector2(UiTheme.Px(12f), -UiTheme.Py(10f) - UiTheme.Line(UiTheme.Py(17f))),
+                   new Vector2(0f, -UiTheme.Py(10f)));
+
+            var state = UiKit.Label("State", rt, fonts.Body, UiTheme.Py(12f), UiTheme.Led,
+                                    TextAlignmentOptions.Right, out var stRt, "");
+            state.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(stRt, new Vector2(0.6f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(12f) - UiTheme.Line(UiTheme.Py(12f))),
+                   new Vector2(-UiTheme.Px(12f), -UiTheme.Py(12f)));
+
+            var stat = UiKit.Label("Stat", rt, fonts.Body, UiTheme.Py(11.5f), UiTheme.Ink2,
+                                   TextAlignmentOptions.TopLeft, out var statRt, "");
+            stat.textWrappingMode = TextWrappingModes.NoWrap;
+            stat.overflowMode = TextOverflowModes.Ellipsis;
+            Anchor(statRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(12f), -UiTheme.Py(36f) - UiTheme.Line(UiTheme.Py(11.5f))),
+                   new Vector2(-UiTheme.Px(12f), -UiTheme.Py(36f)));
+
+            var reward = UiKit.Label("Reward", rt, fonts.Body, UiTheme.Py(11.5f), UiTheme.Ink2,
+                                     TextAlignmentOptions.TopLeft, out var rewRt, "");
+            reward.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(rewRt, new Vector2(0f, 0f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(12f), UiTheme.Py(8f)),
+                   new Vector2(-UiTheme.Px(12f), -UiTheme.Py(54f)));
+
+            var group = go.AddComponent<CanvasGroup>();
+
+            var card = go.AddComponent<LeagueTierCard>();
+            Wire(card, ("face", face), ("outline", outline), ("nameLabel", name),
+                 ("stateLabel", state), ("statLabel", stat), ("rewardLabel", reward),
+                 ("group", group), ("button", button));
+            return SavePrefab<LeagueTierCard>(go, "LeagueTierCard");
         }
 
         static LeagueShopCard BuildLeagueShopPrefab(Fonts fonts)
@@ -6050,8 +6118,71 @@ namespace DustZero.Editor
             Anchor(raRt, new Vector2(0.52f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
             result.gameObject.SetActive(false);
 
+            // ---- 단계 고르기 시트. 원본 `lgEnter` 는 로비 위 모달이고, 우리는 리그 화면
+            // 안에 두어 '다시 하기' 에서도 같은 자리로 돌아오게 했다.
+            var tierSheet = UiKit.Panel("TierPick", rt, out var tierRt,
+                                        new Color(UiTheme.Ink.r, UiTheme.Ink.g, UiTheme.Ink.b, 0.55f), 1f);
+            Stretch(tierRt);
+            var tierBox = UiKit.Panel("Box", tierRt, out var tbRt, UiTheme.Panel);
+            tierBox.sprite = GeneratedArt.RoundedNineSlice("ui_modal16",
+                Mathf.RoundToInt(UiTheme.Px(16f)));
+            tierBox.type = Image.Type.Sliced;
+            Anchor(tbRt, new Vector2(0f, 0.5f), new Vector2(1f, 0.5f),
+                   new Vector2(pad, -UiTheme.Py(290f)), new Vector2(-pad, UiTheme.Py(290f)));
+
+            var tierHead = UiKit.Label("Title", tbRt, fonts.Title, UiTheme.Py(24f), UiTheme.Ink,
+                                       TextAlignmentOptions.Left, out var thRt, "가전 대청소 리그");
+            tierHead.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(thRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(16f) - UiTheme.Line(UiTheme.Py(24f))),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(16f)));
+
+            var tierLead = UiKit.Label("Lead", tbRt, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
+                                       TextAlignmentOptions.TopLeft, out var tlRt,
+                                       "상점에서 가전을 사서 아래 칸에 놓으면, 전투는 자동이에요. " +
+                                       "같은 가전 3장이면 ★ 승급. 청결도가 0이 되면 탈락, 8라운드를 버티면 완주예요.");
+            tierLead.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(tlRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(106f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(52f)));
+
+            var tierList = UiKit.Node("List", tbRt);
+            Anchor(tierList, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(394f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(112f)));
+            var tierCol = tierList.gameObject.AddComponent<VerticalLayoutGroup>();
+            tierCol.spacing = UiTheme.Py(8f);
+            tierCol.childControlWidth = true;
+            tierCol.childControlHeight = false;
+            tierCol.childForceExpandWidth = true;
+            tierCol.childForceExpandHeight = false;
+
+            var tierNote = UiKit.Label("Note", tbRt, fonts.Body, UiTheme.Py(11.5f), UiTheme.Ink2,
+                                       TextAlignmentOptions.TopLeft, out var tnRt, "");
+            tierNote.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(tnRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(16f), -UiTheme.Py(458f)),
+                   new Vector2(-UiTheme.Px(16f), -UiTheme.Py(402f)));
+
+            var tierBtns = UiKit.Node("Buttons", tbRt);
+            Anchor(tierBtns, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(UiTheme.Px(16f), UiTheme.Py(16f)),
+                   new Vector2(-UiTheme.Px(16f), UiTheme.Py(64f)));
+            var tierClose = UiKit.Button("Close", tierBtns, fonts.Body, "닫기", UiButtonKind.Secondary,
+                                         out var tcRt, UiTheme.Py(48f));
+            Anchor(tcRt, new Vector2(0f, 0f), new Vector2(0.48f, 1f), Vector2.zero, Vector2.zero);
+            var tierGo = UiKit.Button("Go", tierBtns, fonts.Body, "시작", UiButtonKind.Primary,
+                                      out var tgRt, UiTheme.Py(48f));
+            Anchor(tgRt, new Vector2(0.52f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            var tierGoLabel = tgRt.GetComponentInChildren<TextMeshProUGUI>();
+            tierSheet.gameObject.SetActive(false);
+
             var screen = go.AddComponent<LeagueScreen>();
             Wire(screen,
+                 ("tierRoot", tierSheet.gameObject), ("tierListRoot", tierList),
+                 ("tierPrefab", prefabs.LeagueTier), ("tierNoteLabel", tierNote),
+                 ("tierCloseButton", tierClose), ("tierGoButton", tierGo),
+                 ("tierGoLabel", tierGoLabel),
                  ("view", view), ("boardCamera", cam), ("cellRoot", cellRoot),
                  ("cellPrefab", prefabs.LeagueCell),
                  ("chipLabel", chip), ("lifeLabel", life), ("goldLabel", gold),

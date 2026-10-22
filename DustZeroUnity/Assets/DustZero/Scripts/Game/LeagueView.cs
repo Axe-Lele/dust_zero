@@ -1,4 +1,4 @@
-// 리그 판 그리기 — 7x6 칸 위의 가전과 먼지.
+﻿// 리그 판 그리기 — 7x6 칸 위의 가전과 먼지.
 //
 // 원본 `lgRender` 를 옮긴 것이다. 캔버스에 매 프레임 다시 그리는 대신, 단위마다
 // EntityView 를 하나씩 빌려 자리를 옮긴다(디펜스·대청소와 같은 방식).
@@ -25,12 +25,16 @@ namespace DustZero.Game
 
         /// <summary>아군 ★2 이상에 깔리는 바닥 고리.</summary>
         [SerializeField] Sprite starRing;
+        /// <summary>놓을 수 있는 칸을 덮는 옅은 네모.</summary>
+        [SerializeField] Sprite cellFill;
 
         const float AllyScale = 0.82f, EnemyScale = 0.72f;
 
         ObjectPool<EntityView> _pool;
         readonly Dictionary<LeagueUnit, EntityView> _units = new();
         readonly List<SpriteRenderer> _rings = new();
+        readonly List<SpriteRenderer> _marks = new();
+        readonly List<EntityView> _ghosts = new();
 
         void Awake()
         {
@@ -73,15 +77,33 @@ namespace DustZero.Game
             _units.Clear();
             foreach (var r in _rings) if (r != null) Destroy(r.gameObject);
             _rings.Clear();
+            foreach (var m in _marks) if (m != null) Destroy(m.gameObject);
+            _marks.Clear();
+            foreach (var g in _ghosts) if (g != null) _pool.Release(g);
+            _ghosts.Clear();
         }
 
-        /// <summary>준비 단계: 판에 놓인 말만 제자리에 세운다.</summary>
-        public void ShowBoard(LeagueSim sim)
+        /// <summary>
+        /// 준비 단계: 판에 놓인 말과, 이번 라운드에 올 먼지의 **흐린 미리보기**를 세운다.
+        /// 고른 말이 있으면 놓을 수 있는 칸을 옅게 덮는다(원본 `lgRender` 의 prep 가지).
+        /// </summary>
+        public void ShowBoard(LeagueSim sim, int selectedCell = -1, bool showPlaceable = false)
         {
             var seen = new HashSet<LeagueUnit>();
             ClearUnits(seen);
 
-            int ring = 0;
+            int ring = 0, mark = 0;
+
+            if (showPlaceable)
+                for (int i = 0; i < sim.Board.Length; i++)
+                {
+                    bool can = sim.Board[i] != null || sim.OnBoard < sim.Level;
+                    if (!can) continue;
+                    PlaceMark(ref mark, i % LeagueSim.Cols + 0.5f,
+                              LeagueSim.OurRows + i / LeagueSim.Cols + 0.5f);
+                }
+            TrimMarks(mark);
+
             for (int i = 0; i < sim.Board.Length; i++)
             {
                 var p = sim.Board[i];
@@ -98,11 +120,74 @@ namespace DustZero.Game
                 float cx = i % LeagueSim.Cols + 0.5f;
                 float cy = LeagueSim.OurRows + i / LeagueSim.Cols + 0.55f;
                 v.transform.localPosition = ToWorld(cx, cy);
+                ShowStars(v, p.Star);
                 _prep.Add(v);
 
                 if (p.Star >= 2) PlaceRing(ref ring, cx, cy, p.Star);
             }
             TrimRings(ring);
+            ShowPreview(sim);
+            ShowSelection(selectedCell);
+        }
+
+        /// <summary>다음 라운드 먼지를 38% 로 흐리게 세워 둔다.</summary>
+        void ShowPreview(LeagueSim sim)
+        {
+            int n = 0;
+            foreach (var (id, x, y) in sim.NextSquad())
+            {
+                while (_ghosts.Count <= n)
+                {
+                    var g = _pool.Get();
+                    g.transform.localScale = Vector3.one * EnemyScale;
+                    if (g.BarRoot != null) g.BarRoot.gameObject.SetActive(false);
+                    _ghosts.Add(g);
+                }
+                var view = _ghosts[n++];
+                view.gameObject.SetActive(true);
+                view.Body.sprite = sprites != null ? sprites.Enemy(id, null, false) : null;
+                view.Body.sortingOrder = 350;
+                view.Tint(new Color(1f, 1f, 1f, 0.38f));
+                view.transform.localPosition = ToWorld(x, y);
+                if (view.TierBadge != null) view.TierBadge.text = string.Empty;
+            }
+            for (int i = n; i < _ghosts.Count; i++)
+                if (_ghosts[i] != null) _ghosts[i].gameObject.SetActive(false);
+        }
+
+        /// <summary>말 아래의 ★. EntityView 의 뱃지 글자를 빌려 쓴다.</summary>
+        static void ShowStars(EntityView v, int star)
+        {
+            if (v.TierBadge == null) return;
+            v.TierBadge.text = new string('\u2605', star);
+            v.TierBadge.color = star >= 3 ? new Color(0.949f, 0.694f, 0.180f)
+                              : star == 2 ? new Color(0.549f, 0.769f, 0.961f)
+                                          : new Color(0.902f, 0.914f, 0.925f);
+        }
+
+        void PlaceMark(ref int index, float x, float y)
+        {
+            while (_marks.Count <= index)
+            {
+                var go = new GameObject("Placeable");
+                go.transform.SetParent(entityRoot, false);
+                go.layer = entityRoot.gameObject.layer;
+                var sr = go.AddComponent<SpriteRenderer>();
+                sr.sprite = cellFill;
+                sr.sortingOrder = 250;
+                sr.color = new Color(0.239f, 0.545f, 0.851f, 0.14f);
+                _marks.Add(sr);
+            }
+            var m = _marks[index++];
+            m.gameObject.SetActive(true);
+            m.transform.localPosition = ToWorld(x, y);
+            m.transform.localScale = new Vector3(0.9f, 0.9f, 1f);
+        }
+
+        void TrimMarks(int used)
+        {
+            for (int i = used; i < _marks.Count; i++)
+                if (_marks[i] != null) _marks[i].gameObject.SetActive(false);
         }
 
         readonly List<EntityView> _prep = new();
@@ -122,6 +207,9 @@ namespace DustZero.Game
             var alive = new HashSet<LeagueUnit>();
             foreach (var u in sim.Units) if (u.Alive) alive.Add(u);
             ClearUnits(alive);
+            TrimMarks(0);
+            foreach (var g in _ghosts) if (g != null) g.gameObject.SetActive(false);
+            ShowSelection(-1);
 
             int ring = 0;
             foreach (var u in sim.Units)
@@ -135,6 +223,8 @@ namespace DustZero.Game
                     v.Body.sprite = u.Side == 0
                         ? sprites?.Unit(u.Type)
                         : sprites?.Enemy(u.Type, null, u.Boss);
+                    if (u.Side == 0) ShowStars(v, u.Star);
+                    else if (v.TierBadge != null) v.TierBadge.text = string.Empty;
                     _units[u] = v;
                 }
 

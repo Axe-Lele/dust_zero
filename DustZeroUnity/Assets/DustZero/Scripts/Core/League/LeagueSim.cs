@@ -77,6 +77,9 @@ namespace DustZero.Core.League
         public bool BattleOver { get; private set; }
         public bool? BattleWin { get; private set; }
         public bool BattleTimeout { get; private set; }
+        /// <summary>★ 가 올랐다. 화면이 알림을 띄운다(가전 id, 새 ★).</summary>
+        public event Action<string, int> Merged;
+
         /// <summary>마지막 라운드 결과. 아직 한 라운드도 안 끝났으면 null.</summary>
         public LeagueRoundResult Last { get; private set; }
         /// <summary>가전 종류·★ 별로 넣은 피해 — 결과 화면이 쓴다.</summary>
@@ -288,6 +291,7 @@ namespace DustZero.Core.League
                     Type = unitId, Star = star + 1, Uid = ++_uid, Fresh = true,
                 });
                 did = true;
+                Merged?.Invoke(unitId, star + 1);
             }
             if (did) Merge(unitId);
             return did;
@@ -585,6 +589,22 @@ namespace DustZero.Core.League
                 yield return (bits[0].Trim(), Math.Max(1, n));
             }
         }
+
+        /// <summary>
+        /// 이번 라운드에 나올 먼지의 자리. 준비 단계에서 흐리게 미리 보여 주는 데 쓴다 —
+        /// 원본도 같은 배치 계산을 그대로 다시 부른다.
+        /// </summary>
+        public IEnumerable<(string Id, float X, float Y)> NextSquad()
+        {
+            var round = _db.LeagueRounds.FirstOrDefault(r => r.round == Round)
+                        ?? _db.LeagueRounds.LastOrDefault();
+            return SquadPositions(round);
+        }
+
+        /// <summary>이번 라운드 줄. 화면이 이름과 보스 여부를 쓴다.</summary>
+        public LeagueRoundRow CurrentRound
+            => _db.LeagueRounds.FirstOrDefault(r => r.round == Round)
+               ?? _db.LeagueRounds.LastOrDefault();
 
         void SpawnEnemy(string id, float x, float y, LeagueRoundRow round)
         {

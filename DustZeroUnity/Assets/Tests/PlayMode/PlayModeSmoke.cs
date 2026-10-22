@@ -1171,6 +1171,17 @@ namespace DustZero.Tests
             var league = Object.FindFirstObjectByType<LeagueScreen>(FindObjectsInactive.Include);
             Assert.IsNotNull(league, "LeagueScreen 이 씬에 없습니다.");
             league.gameObject.SetActive(true);
+
+            // 먼저 단계를 고르는 시트가 뜬다 — 원본 lgEnter 와 같은 자리다.
+            league.OpenTierPick(svc);
+            yield return null;
+            Canvas.ForceUpdateCanvases();
+            var tierCards = league.GetComponentsInChildren<LeagueTierCard>(true);
+            Assert.AreEqual(svc.Db.LeagueTiers.Count, tierCards.Length,
+                            "단계 카드 수가 league_tier 와 다릅니다.");
+            AssertNoBlankLabels(league.transform, "리그 단계 고르기");
+            yield return ShotAt("25b-league-tier", 1080, 1920);
+
             league.Begin(svc, 1);
             yield return null;
             Canvas.ForceUpdateCanvases();

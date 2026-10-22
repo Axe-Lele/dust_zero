@@ -5,6 +5,7 @@
 // HUD 12/106 · 시너지 136/29 · 판 175/336 · 안내 529/18 · 대기석 561/48 · 버튼 627/36 ·
 // 상점 679/85 · 출발 782/46 · 힌트 838/19.2.
 using System.Collections.Generic;
+using System.Linq;
 using DustZero.Core;
 using DustZero.Core.League;
 using TMPro;
@@ -75,6 +76,15 @@ namespace DustZero.Game
         [SerializeField] UiButton resultHomeButton;
         [SerializeField] UiButton resultAgainButton;
 
+        [Header("티어 고르기")]
+        [SerializeField] GameObject tierRoot;
+        [SerializeField] RectTransform tierListRoot;
+        [SerializeField] LeagueTierCard tierPrefab;
+        [SerializeField] TextMeshProUGUI tierNoteLabel;
+        [SerializeField] UiButton tierCloseButton;
+        [SerializeField] UiButton tierGoButton;
+        [SerializeField] TextMeshProUGUI tierGoLabel;
+
         [SerializeField] SpriteLibrary sprites;
 
         GameServices _svc;
@@ -85,6 +95,8 @@ namespace DustZero.Game
         readonly List<LeagueShopCard> _shop = new();
         readonly List<UiButton> _cells = new();
         readonly List<GameObject> _synergyChips = new();
+        readonly List<LeagueTierCard> _tierCards = new();
+        int _pickTier = 1;
 
         /// <summary>고른 말. 없으면 Where 가 Bench 이고 Index 가 −1 이다.</summary>
         LeagueSpot? _selected;
@@ -107,7 +119,12 @@ namespace DustZero.Game
             if (speedButton != null) speedButton.SetAction(CycleSpeed);
             if (exitButton != null) exitButton.SetAction(Quit);
             if (resultHomeButton != null) resultHomeButton.SetAction(() => { Hide(); Exited?.Invoke(); });
-            if (resultAgainButton != null) resultAgainButton.SetAction(() => Begin(_svc, _tier));
+            if (resultAgainButton != null)
+                resultAgainButton.SetAction(() => { if (resultRoot != null) resultRoot.SetActive(false); OpenTierPick(_svc); });
+            if (tierCloseButton != null)
+                tierCloseButton.SetAction(() => { Hide(); Exited?.Invoke(); });
+            if (tierGoButton != null)
+                tierGoButton.SetAction(() => Begin(_svc, _pickTier));
         }
 
         void Hide()
@@ -118,6 +135,72 @@ namespace DustZero.Game
             gameObject.SetActive(false);
         }
 
+        // ------------------------------------------------------------------ 티어 고르기
+
+        /// <summary>
+        /// 원본 `lgEnter` — 판에 들어가기 전에 단계를 고른다. 잠긴 단계는 누를 수 없고,
+        /// 고른 단계의 이름이 출발 단추에 들어간다.
+        /// </summary>
+        public void OpenTierPick(GameServices services)
+        {
+            _svc = services;
+            gameObject.SetActive(true);
+
+            if (resultRoot != null) resultRoot.SetActive(false);
+            if (bannerRoot != null) bannerRoot.SetActive(false);
+            if (boardCamera != null) boardCamera.enabled = false;
+            if (tierRoot != null) tierRoot.SetActive(true);
+
+            var profile = _svc.Profile;
+            _pickTier = Mathf.Clamp(profile.League.lastTier, 1, profile.LeagueTierMax);
+
+            foreach (var c in _tierCards) if (c != null) Destroy(c.gameObject);
+            _tierCards.Clear();
+
+            foreach (var row in _svc.Db.LeagueTiers)
+            {
+                int tier = row.tier;
+                var card = Instantiate(tierPrefab, tierListRoot);
+                card.Tapped += () => { _pickTier = tier; SyncTierPick(); };
+                _tierCards.Add(card);
+            }
+            SyncTierPick();
+        }
+
+        void SyncTierPick()
+        {
+            var profile = _svc.Profile;
+            var cfg = _svc.Db.Config;
+            var tiers = _svc.Db.LeagueTiers;
+
+            for (int i = 0; i < _tierCards.Count && i < tiers.Count; i++)
+            {
+                var row = tiers[i];
+                bool locked = row.tier > profile.LeagueTierMax;
+                bool cleared = profile.LeagueCleared(row.tier);
+                string reward = cleared
+                    ? $"완주 시 강화석 {row.finishStone}"
+                    : $"첫 완주 크리스탈 {row.firstCrystal}";
+
+                _tierCards[i].Show(_svc.Db.Text(row.nameKey),
+                    locked ? "잠김" : cleared ? "완주 ✓" : "도전",
+                    $"먼지 체력 ×{row.hpMul} · 공격 ×{row.atkMul} · 최고 {profile.LeagueBest(row.tier)}승",
+                    $"승리마다 코인 {row.winCoin:N0} · 부품 {row.winPart} · {reward}"
+                    + (locked ? "\n앞 단계를 완주하면 열려요" : string.Empty),
+                    locked, row.tier == _pickTier);
+            }
+
+            if (tierNoteLabel != null)
+                tierNoteLabel.text =
+                    $"오늘 보상 판 {profile.LeagueRunsLeft()}/{cfg.leagueDailyRewards} 남음 · "
+                    + $"편성 탭에서 바꾸면 상점 가전도 바뀌어요 · "
+                    + $"키운 가전은 최대 +{Mathf.Round(cfg.leagueGrowthMax * 100f)}%";
+
+            var picked = tiers.FirstOrDefault(t => t.tier == _pickTier);
+            if (tierGoLabel != null)
+                tierGoLabel.text = picked != null ? $"{_svc.Db.Text(picked.nameKey)} 시작" : "시작";
+        }
+
         // ------------------------------------------------------------------ 시작
 
         public void Begin(GameServices services, int tier)
@@ -125,9 +208,14 @@ namespace DustZero.Game
             _svc = services;
             _tier = tier;
             gameObject.SetActive(true);
+            if (tierRoot != null) tierRoot.SetActive(false);
+            _svc.Profile.League.lastTier = tier;
 
             _sim = new LeagueSim(_svc.Db, _svc.Profile, tier,
                                  new LeagueRandom(System.Environment.TickCount));
+            // 원본은 ★ 가 오를 때마다 판 가운데에 알림을 띄운다.
+            _sim.Merged += (unitId, star) =>
+                Banner($"{_svc.Db.Units[unitId].Name} {new string('\u2605', star)}!", string.Empty, 0.9f);
             _selected = null;
             _endDelay = 0f;
             _bannerT = 0f;
@@ -143,6 +231,9 @@ namespace DustZero.Game
             if (boardCamera != null) boardCamera.enabled = true;
             FrameBoard();
             Sync();
+
+            var first = _sim.CurrentRound;
+            Banner("1라운드", first != null ? _svc.Db.Text(first.nameKey) : string.Empty, 1.4f);
         }
 
         void OnDisable()
@@ -492,8 +583,10 @@ namespace DustZero.Game
                     : "전투는 자동이에요. 배속을 바꾸거나 결과를 바로 볼 수 있어요.";
             }
 
-            if (prep) view.ShowBoard(_sim);
-            view.ShowSelection(_selected is { Where: LeagueWhere.Board } s2 ? s2.Index : -1);
+            if (prep)
+                view.ShowBoard(_sim,
+                               _selected is { Where: LeagueWhere.Board } s2 ? s2.Index : -1,
+                               _selected != null);
         }
 
         int CountAliveFoes()

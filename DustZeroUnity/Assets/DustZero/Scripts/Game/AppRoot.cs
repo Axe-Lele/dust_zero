@@ -145,7 +145,7 @@ namespace DustZero.Game
             lobby.gameObject.SetActive(false);
             league.gameObject.SetActive(true);
             FocusCamera(null);
-            league.Begin(_services, _services.Profile.LeagueTierMax);
+            league.OpenTierPick(_services);
             audioDirector?.Play(BgmTrack.Battle);
         }
 
