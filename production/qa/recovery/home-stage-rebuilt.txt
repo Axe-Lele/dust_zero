@@ -1,0 +1,232 @@
+===== HOME =====
+Home | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | +HomeTab
+  Room | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | +RoomView
+    Wall | aMin(0,0.735) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#DCE4E9FF sprite=- type=Simple
+    Stripes | aMin(0,0.735) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+      S0 | aMin(0.012,0.02) aMax(0.017,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S1 | aMin(0.095,0.02) aMax(0.1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S2 | aMin(0.179,0.02) aMax(0.184,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S3 | aMin(0.262,0.02) aMax(0.267,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S4 | aMin(0.345,0.02) aMax(0.35,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S5 | aMin(0.429,0.02) aMax(0.434,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S6 | aMin(0.512,0.02) aMax(0.517,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S7 | aMin(0.595,0.02) aMax(0.6,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S8 | aMin(0.679,0.02) aMax(0.684,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S9 | aMin(0.762,0.02) aMax(0.767,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S10 | aMin(0.846,0.02) aMax(0.851,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+      S11 | aMin(0.929,0.02) aMax(0.934,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+    Skirting | aMin(0,0.735) aMax(1,0.748) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#CFD9DFFF sprite=- type=Simple
+    Floor | aMin(0,0) aMax(1,0.735) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#DCC39AFF sprite=- type=Simple
+    Planks | aMin(0,0) aMax(1,0.735) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+      H1 | aMin(0,0.038) aMax(1,0.04) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V1_0 | aMin(0.128,0.038) aMax(0.129,0.077) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V1_1 | aMin(0.384,0.038) aMax(0.385,0.077) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V1_2 | aMin(0.64,0.038) aMax(0.641,0.077) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V1_3 | aMin(0.896,0.038) aMax(0.897,0.077) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H2 | aMin(0,0.077) aMax(1,0.078) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V2_0 | aMin(0,0.077) aMax(0.001,0.115) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V2_1 | aMin(0.256,0.077) aMax(0.257,0.115) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V2_2 | aMin(0.512,0.077) aMax(0.513,0.115) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V2_3 | aMin(0.768,0.077) aMax(0.769,0.115) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H3 | aMin(0,0.115) aMax(1,0.117) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V3_0 | aMin(0.128,0.115) aMax(0.129,0.154) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V3_1 | aMin(0.384,0.115) aMax(0.385,0.154) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V3_2 | aMin(0.64,0.115) aMax(0.641,0.154) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V3_3 | aMin(0.896,0.115) aMax(0.897,0.154) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H4 | aMin(0,0.154) aMax(1,0.155) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V4_0 | aMin(0,0.154) aMax(0.001,0.192) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V4_1 | aMin(0.256,0.154) aMax(0.257,0.192) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V4_2 | aMin(0.512,0.154) aMax(0.513,0.192) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V4_3 | aMin(0.768,0.154) aMax(0.769,0.192) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H5 | aMin(0,0.192) aMax(1,0.194) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V5_0 | aMin(0.128,0.192) aMax(0.129,0.231) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V5_1 | aMin(0.384,0.192) aMax(0.385,0.231) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V5_2 | aMin(0.64,0.192) aMax(0.641,0.231) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V5_3 | aMin(0.896,0.192) aMax(0.897,0.231) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H6 | aMin(0,0.231) aMax(1,0.232) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V6_0 | aMin(0,0.231) aMax(0.001,0.269) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V6_1 | aMin(0.256,0.231) aMax(0.257,0.269) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V6_2 | aMin(0.512,0.231) aMax(0.513,0.269) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V6_3 | aMin(0.768,0.231) aMax(0.769,0.269) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H7 | aMin(0,0.269) aMax(1,0.271) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V7_0 | aMin(0.128,0.269) aMax(0.129,0.308) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V7_1 | aMin(0.384,0.269) aMax(0.385,0.308) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V7_2 | aMin(0.64,0.269) aMax(0.641,0.308) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V7_3 | aMin(0.896,0.269) aMax(0.897,0.308) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H8 | aMin(0,0.308) aMax(1,0.309) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V8_0 | aMin(0,0.308) aMax(0.001,0.346) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V8_1 | aMin(0.256,0.308) aMax(0.257,0.346) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V8_2 | aMin(0.512,0.308) aMax(0.513,0.346) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V8_3 | aMin(0.768,0.308) aMax(0.769,0.346) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H9 | aMin(0,0.346) aMax(1,0.348) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V9_0 | aMin(0.128,0.346) aMax(0.129,0.385) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V9_1 | aMin(0.384,0.346) aMax(0.385,0.385) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V9_2 | aMin(0.64,0.346) aMax(0.641,0.385) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V9_3 | aMin(0.896,0.346) aMax(0.897,0.385) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H10 | aMin(0,0.385) aMax(1,0.386) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V10_0 | aMin(0,0.385) aMax(0.001,0.423) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V10_1 | aMin(0.256,0.385) aMax(0.257,0.423) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V10_2 | aMin(0.512,0.385) aMax(0.513,0.423) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V10_3 | aMin(0.768,0.385) aMax(0.769,0.423) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H11 | aMin(0,0.423) aMax(1,0.425) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V11_0 | aMin(0.128,0.423) aMax(0.129,0.462) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V11_1 | aMin(0.384,0.423) aMax(0.385,0.462) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V11_2 | aMin(0.64,0.423) aMax(0.641,0.462) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V11_3 | aMin(0.896,0.423) aMax(0.897,0.462) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H12 | aMin(0,0.462) aMax(1,0.463) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V12_0 | aMin(0,0.462) aMax(0.001,0.5) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V12_1 | aMin(0.256,0.462) aMax(0.257,0.5) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V12_2 | aMin(0.512,0.462) aMax(0.513,0.5) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V12_3 | aMin(0.768,0.462) aMax(0.769,0.5) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H13 | aMin(0,0.5) aMax(1,0.502) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V13_0 | aMin(0.128,0.5) aMax(0.129,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V13_1 | aMin(0.384,0.5) aMax(0.385,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V13_2 | aMin(0.64,0.5) aMax(0.641,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V13_3 | aMin(0.896,0.5) aMax(0.897,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H14 | aMin(0,0.538) aMax(1,0.54) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V14_0 | aMin(0,0.538) aMax(0.001,0.577) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V14_1 | aMin(0.256,0.538) aMax(0.257,0.577) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V14_2 | aMin(0.512,0.538) aMax(0.513,0.577) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V14_3 | aMin(0.768,0.538) aMax(0.769,0.577) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H15 | aMin(0,0.577) aMax(1,0.578) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V15_0 | aMin(0.128,0.577) aMax(0.129,0.615) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V15_1 | aMin(0.384,0.577) aMax(0.385,0.615) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V15_2 | aMin(0.64,0.577) aMax(0.641,0.615) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V15_3 | aMin(0.896,0.577) aMax(0.897,0.615) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H16 | aMin(0,0.615) aMax(1,0.617) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V16_0 | aMin(0,0.615) aMax(0.001,0.654) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V16_1 | aMin(0.256,0.615) aMax(0.257,0.654) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V16_2 | aMin(0.512,0.615) aMax(0.513,0.654) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V16_3 | aMin(0.768,0.615) aMax(0.769,0.654) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H17 | aMin(0,0.654) aMax(1,0.655) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V17_0 | aMin(0.128,0.654) aMax(0.129,0.692) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V17_1 | aMin(0.384,0.654) aMax(0.385,0.692) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V17_2 | aMin(0.64,0.654) aMax(0.641,0.692) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V17_3 | aMin(0.896,0.654) aMax(0.897,0.692) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H18 | aMin(0,0.692) aMax(1,0.694) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V18_0 | aMin(0,0.692) aMax(0.001,0.731) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V18_1 | aMin(0.256,0.692) aMax(0.257,0.731) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V18_2 | aMin(0.512,0.692) aMax(0.513,0.731) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V18_3 | aMin(0.768,0.692) aMax(0.769,0.731) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H19 | aMin(0,0.731) aMax(1,0.732) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V19_0 | aMin(0.128,0.731) aMax(0.129,0.769) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V19_1 | aMin(0.384,0.731) aMax(0.385,0.769) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V19_2 | aMin(0.64,0.731) aMax(0.641,0.769) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V19_3 | aMin(0.896,0.731) aMax(0.897,0.769) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H20 | aMin(0,0.769) aMax(1,0.771) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V20_0 | aMin(0,0.769) aMax(0.001,0.808) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V20_1 | aMin(0.256,0.769) aMax(0.257,0.808) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V20_2 | aMin(0.512,0.769) aMax(0.513,0.808) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V20_3 | aMin(0.768,0.769) aMax(0.769,0.808) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H21 | aMin(0,0.808) aMax(1,0.809) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V21_0 | aMin(0.128,0.808) aMax(0.129,0.846) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V21_1 | aMin(0.384,0.808) aMax(0.385,0.846) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V21_2 | aMin(0.64,0.808) aMax(0.641,0.846) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V21_3 | aMin(0.896,0.808) aMax(0.897,0.846) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H22 | aMin(0,0.846) aMax(1,0.848) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V22_0 | aMin(0,0.846) aMax(0.001,0.885) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V22_1 | aMin(0.256,0.846) aMax(0.257,0.885) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V22_2 | aMin(0.512,0.846) aMax(0.513,0.885) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V22_3 | aMin(0.768,0.846) aMax(0.769,0.885) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H23 | aMin(0,0.885) aMax(1,0.886) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V23_0 | aMin(0.128,0.885) aMax(0.129,0.923) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V23_1 | aMin(0.384,0.885) aMax(0.385,0.923) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V23_2 | aMin(0.64,0.885) aMax(0.641,0.923) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V23_3 | aMin(0.896,0.885) aMax(0.897,0.923) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H24 | aMin(0,0.923) aMax(1,0.925) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V24_0 | aMin(0,0.923) aMax(0.001,0.962) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V24_1 | aMin(0.256,0.923) aMax(0.257,0.962) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V24_2 | aMin(0.512,0.923) aMax(0.513,0.962) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V24_3 | aMin(0.768,0.923) aMax(0.769,0.962) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      H25 | aMin(0,0.962) aMax(1,0.963) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V25_0 | aMin(0.128,0.962) aMax(0.129,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V25_1 | aMin(0.384,0.962) aMax(0.385,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V25_2 | aMin(0.64,0.962) aMax(0.641,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+      V25_3 | aMin(0.896,0.962) aMax(0.897,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+    WindowFrame | aMin(0.303,0.771) aMax(0.605,0.888) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#F4F7F9FF sprite=panel_r40 type=Sliced
+    WindowGlass | aMin(0.315,0.776) aMax(0.593,0.883) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#BFE0F2FF sprite=panel_r40 type=Sliced
+    Sun | aMin(0.509,0.837) aMax(0.521,0.865) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFF4D6FF sprite=shape_disc type=Simple
+    MullionV | aMin(0.45,0.776) aMax(0.458,0.883) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#F4F7F9FF sprite=- type=Simple
+    MullionH | aMin(0.315,0.828) aMax(0.593,0.832) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#F4F7F9FF sprite=- type=Simple
+    PictureFrame | aMin(0.707,0.815) aMax(0.87,0.873) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#F4F7F9FF sprite=panel_r40 type=Sliced
+    Picture | aMin(0.721,0.828) aMax(0.856,0.86) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#9ED0B8FF sprite=panel_r40 type=Sliced
+    Rug | aMin(0.167,0.383) aMax(0.833,0.595) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#5B7C9938 sprite=shape_disc type=Simple
+    SofaBack | aMin(0.555,0.736) aMax(0.944,0.772) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#4A6884FF sprite=panel_r40 type=Sliced
+    SofaSeat | aMin(0.555,0.714) aMax(0.944,0.746) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#5B7C99FF sprite=panel_r40 type=Sliced
+    SofaArmL | aMin(0.541,0.71) aMax(0.578,0.751) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#3E5A74FF sprite=panel_r40 type=Sliced
+    SofaArmR | aMin(0.921,0.71) aMax(0.958,0.751) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#3E5A74FF sprite=panel_r40 type=Sliced
+    Pot | aMin(0.03,0.712) aMax(0.09,0.738) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#B98A57FF sprite=panel_r40 type=Sliced
+    Leaf0 | aMin(0.015,0.741) aMax(0.041,0.771) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+    Leaf1 | aMin(0.03,0.75) aMax(0.056,0.78) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+    Leaf2 | aMin(0.044,0.753) aMax(0.07,0.783) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+    Leaf3 | aMin(0.059,0.75) aMax(0.085,0.78) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+    Leaf4 | aMin(0.073,0.741) aMax(0.099,0.771) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+    Floor | aMin(0.12,0.242) aMax(0.88,0.728) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+    Agents | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+    Bubble | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-235.5,-39.1) oMax(235.5,39.1) piv(0.5,0.5) size(470.9,78.3) | IMG color=#F7F9FAFF sprite=ui_flat_panel_36 type=Sliced
+      Text | aMin(0,0) aMax(1,1) oMin(16.6,16.6) oMax(-16.6,-16.6) piv(0.5,0.5) size(-33.2,-33.2) | TXT "" size=30.1 color=#1D2226 align=Center font=DustZero-Body SDF
+  RoomNote | aMin(0.5,0) aMax(0.5,0) oMin(-325.3,323.4) oMax(325.3,374.9) piv(0.5,0.5) size(650.5,51.5) | IMG color=#1D222699 sprite=panel_r40 type=Sliced
+    Text | aMin(0,0) aMax(1,1) oMin(22.1,0) oMax(-22.1,0) piv(0.5,0.5) size(-44.2,0) | TXT "" size=29 color=#E8EDF0 align=Center font=DustZero-Body SDF
+  Survivor | aMin(0,0) aMax(1,0) oMin(40.2,189.5) oMax(-40.2,307) piv(0.5,0.5) size(-80.4,117.4) | IMG color=#1D2226FF sprite=ui_flat_button_25 type=Sliced | +UiButton
+    Content | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+      Label | aMin(0,0) aMax(1,1) oMin(22.2,22.2) oMax(-22.2,-22.2) piv(0.5,0.5) size(-44.3,-44.3) | TXT "" size=30.1 color=#E8EDF0 align=Center font=DustZero-Body SDF
+      Sub | aMin(0,0) aMax(1,0) oMin(22.2,11.1) oMax(-22.2,56.1) piv(0.5,0.5) size(-44.3,45) | TXT "" size=30 color=#E8EDF0 align=Center font=DustZero-Body SDF
+      Lock | aMin(0,0.5) aMax(0,0.5) oMin(27.7,-30.5) oMax(88.6,30.5) piv(0.5,0.5) size(60.9,60.9) | IMG color=#5D6871FF sprite=ic_lock type=Simple keepAspect
+    Dot | aMin(1,1) aMax(1,1) oMin(-29.9,-29.9) oMax(19.9,19.9) piv(0.5,0.5) size(49.8,49.8) | IMG color=#FFFFFFFF sprite=badge_dot type=Simple
+    Icon | aMin(0,0.5) aMax(0,0.5) oMin(44.2,-37.5) oMax(119.1,37.5) piv(0.5,0.5) size(74.8,75) | IMG color=#FFFFFFFF sprite=survival type=Simple keepAspect
+    Kicker | aMin(0,1) aMax(1,1) oMin(152.2,-64.3) oMax(-94.2,-22.2) piv(0.5,0.5) size(-246.4,42) | TXT "대청소 모드" size=27.6 color=#8D99A2 align=Left font=DustZero-Body SDF
+    Title | aMin(0,1) aMax(1,1) oMin(152.2,-131.2) oMax(-94.2,-64.3) piv(0.5,0.5) size(-246.4,67) | TXT "리더를 골라 출동" size=44.3 color=#E8EDF0 align=Left font=DustZero-Title SDF
+    Arrow | aMin(1,0.5) aMax(1,0.5) oMin(-94.2,-42) oMax(-33.2,42) piv(0.5,0.5) size(61,84.1) | TXT "▶" size=55.4 color=#E8EDF0 align=Right font=DustZero-Body SDF
+  NextStage | aMin(0,0) aMax(1,0) oMin(40.2,20.6) oMax(-40.2,173) piv(0.5,0.5) size(-80.4,152.4) | IMG color=#FF9A3CFF sprite=ui_flat_button_25 type=Sliced | +UiButton
+    Content | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+      Label | aMin(0,0) aMax(1,1) oMin(22.2,22.2) oMax(-22.2,-22.2) piv(0.5,0.5) size(-44.3,-44.3) | TXT "" size=30.1 color=#1D2226 align=Center font=DustZero-Body SDF
+      Sub | aMin(0,0) aMax(1,0) oMin(22.2,11.1) oMax(-22.2,56.1) piv(0.5,0.5) size(-44.3,45) | TXT "" size=30 color=#1D2226 align=Center font=DustZero-Body SDF
+      Lock | aMin(0,0.5) aMax(0,0.5) oMin(27.7,-30.5) oMax(88.6,30.5) piv(0.5,0.5) size(60.9,60.9) | IMG color=#5D6871FF sprite=ic_lock type=Simple keepAspect
+    Dot | aMin(1,1) aMax(1,1) oMin(-29.9,-29.9) oMax(19.9,19.9) piv(0.5,0.5) size(49.8,49.8) | IMG color=#FFFFFFFF sprite=badge_dot type=Simple
+    Kicker | aMin(0,1) aMax(1,1) oMin(44.2,-75.2) oMax(-94.2,-33.2) piv(0.5,0.5) size(-138.4,42) | TXT "다음 스테이지 도전" size=27.6 color=#1D2226 align=Left font=DustZero-Body SDF
+    Stage | aMin(0,1) aMax(1,1) oMin(44.2,-159.2) oMax(-94.2,-75.2) piv(0.5,0.5) size(-138.4,84.1) | TXT "1-1" size=55.4 color=#1D2226 align=Left font=DustZero-Title SDF
+    Arrow | aMin(1,0.5) aMax(1,0.5) oMin(-94.2,-42) oMax(-33.2,42) piv(0.5,0.5) size(61,84.1) | TXT "▶" size=55.4 color=#1D2226 align=Right font=DustZero-Body SDF
+  TestHour | aMin(0.5,1) aMax(0.5,1) oMin(-72.1,-293.6) oMax(72.1,-216.1) piv(0.5,0.5) size(144.2,77.5) | IMG color=#F7F9FAFF sprite=ui_flat_button_25 type=Sliced | +UiButton
+    Line | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#C7D0D6FF sprite=ui_flat_button_line_25_1 type=Sliced
+    Content | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+      Label | aMin(0,0) aMax(1,1) oMin(22.2,15.7) oMax(-22.2,-15.7) piv(0.5,0.5) size(-44.3,-31.5) | TXT "+1h" size=30.1 color=#1D2226 align=Center font=DustZero-Body SDF
+      Sub | aMin(0,0) aMax(1,0) oMin(22.2,11.1) oMax(-22.2,56.1) piv(0.5,0.5) size(-44.3,45) | TXT "" size=30 color=#1D2226 align=Center font=DustZero-Body SDF
+      Lock | aMin(0,0.5) aMax(0,0.5) oMin(27.7,-30.5) oMax(88.6,30.5) piv(0.5,0.5) size(60.9,60.9) | IMG color=#5D6871FF sprite=ic_lock type=Simple keepAspect
+    Dot | aMin(1,1) aMax(1,1) oMin(-29.9,-29.9) oMax(19.9,19.9) piv(0.5,0.5) size(49.8,49.8) | IMG color=#FFFFFFFF sprite=badge_dot type=Simple
+===== STAGE =====
+Stage | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | +StageTab
+  Viewport | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | +RectMask2D | +ScrollRect
+    Column | aMin(0,1) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,1) size(0,0) | +VerticalLayoutGroup | +ContentSizeFitter
+      Head | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +LayoutElement
+        Title | aMin(0,0) aMax(0,1) oMin(0,0) oMax(351.6,0) piv(0.5,0.5) size(351.6,0) | TXT "우리 집 지키기" size=49.4 color=#1D2226 align=BottomLeft font=DustZero-Title SDF
+        Count | aMin(0,0) aMax(1,1) oMin(366.7,0) oMax(0,-6.2) piv(0.5,0.5) size(-366.7,-6.2) | TXT "" size=24.7 color=#5D6871 align=BottomLeft font=DustZero-Body SDF
+      Progress | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +LayoutElement
+        Plate | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#1D2226FF sprite=ui_flat_panel_36 type=Sliced
+        Caption | aMin(0,1) aMax(0,1) oMin(35.2,-55.6) oMax(251.2,-24.7) piv(0.5,0.5) size(216,30.9) | TXT "최고 스테이지" size=20.6 color=#8D99A2 align=Left font=DustZero-Body SDF
+        Best | aMin(0,1) aMax(0,1) oMin(35.2,-142.8) oMax(251.2,-61.8) piv(0.5,0.5) size(216,81) | TXT "—" size=53.6 color=#FF9A3C align=Left font=DustZero-Number SDF
+        Next | aMin(0,0) aMax(1,1) oMin(261.2,20.6) oMax(-35.2,-20.6) piv(0.5,0.5) size(-296.4,-41.2) | TXT "" size=25.8 color=#E8EDF0 align=Left font=DustZero-Body SDF
+      PowerSkills | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +LayoutElement
+        Card | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#F7F9FAFF sprite=ui_flat_panel_36 type=Sliced
+        Title | aMin(0,1) aMax(0,1) oMin(35.2,-69.6) oMax(226,-22.7) piv(0.5,0.5) size(190.9,47) | TXT "전력 스킬" size=30.9 color=#1D2226 align=Left font=DustZero-Title SDF
+        Sub | aMin(0,1) aMax(1,1) oMin(231.1,-62.6) oMax(-35.2,-24.7) piv(0.5,0.5) size(-266.2,37.9) | TXT "전투 중 남는 전력으로 쓰는 기술" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+        Rows | aMin(0,0) aMax(1,1) oMin(35.2,20.6) oMax(-35.2,-88.6) piv(0.5,0.5) size(-70.3,-109.2) | +VerticalLayoutGroup
+      Sortie | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +LayoutElement
+        Card | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#F7F9FAFF sprite=ui_flat_panel_36 type=Sliced
+        Label | aMin(0,0.5) aMax(0,0.5) oMin(35.2,-17.1) oMax(170.8,17.1) piv(0.5,0.5) size(135.6,34.2) | TXT "출전 편성" size=22.7 color=#5D6871 align=Left font=DustZero-Body SDF
+        Minis | aMin(0,0.5) aMax(1,0.5) oMin(170.8,-35) oMax(-145.7,35) piv(0.5,0.5) size(-316.5,70) | +HorizontalLayoutGroup
+        Change | aMin(1,0.5) aMax(1,0.5) oMin(-130.6,-26.8) oMax(-20.1,26.8) piv(0.5,0.5) size(110.5,53.6) | IMG color=#00000000 sprite=ui_flat_button_25 type=Sliced | +UiButton
+          Content | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0)
+            Label | aMin(0,0) aMax(1,1) oMin(22.2,7.8) oMax(-22.2,-7.8) piv(0.5,0.5) size(-44.3,-15.6) | TXT "변경" size=24.7 color=#E0524A align=Center font=DustZero-Body SDF
+            Sub | aMin(0,0) aMax(1,0) oMin(22.2,11.1) oMax(-22.2,56.1) piv(0.5,0.5) size(-44.3,45) | TXT "" size=30 color=#E0524A align=Center font=DustZero-Body SDF
+            Lock | aMin(0,0.5) aMax(0,0.5) oMin(27.7,-30.5) oMax(88.6,30.5) piv(0.5,0.5) size(60.9,60.9) | IMG color=#5D6871FF sprite=ic_lock type=Simple keepAspect
+          Dot | aMin(1,1) aMax(1,1) oMin(-29.9,-29.9) oMax(19.9,19.9) piv(0.5,0.5) size(49.8,49.8) | IMG color=#FFFFFFFF sprite=badge_dot type=Simple
+      AreaTabs | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +LayoutElement | +HorizontalLayoutGroup
+      AreaCard | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +LayoutElement
+        Card | aMin(0,0) aMax(1,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFF1E3FF sprite=ui_flat_panel_36 type=Sliced
+        Art | aMin(0,0) aMax(0,1) oMin(27.6,22.7) oMax(424.5,-22.7) piv(0.5,0.5) size(396.8,-45.3) | IMG color=#F7F9FAFF sprite=ui_flat_panel_36 type=Sliced
+        Kicker | aMin(0,1) aMax(1,1) oMin(454.6,-118.2) oMax(-27.6,-80.3) piv(0.5,0.5) size(-482.2,37.9) | TXT "" size=24.7 color=#E8842A align=Left font=DustZero-Body SDF
+        Title | aMin(0,1) aMax(1,1) oMin(454.6,-187.5) oMax(-27.6,-119.5) piv(0.5,0.5) size(-482.2,68) | TXT "" size=45.3 color=#1D2226 align=Left font=DustZero-Title SDF
+        Sub | aMin(0,1) aMax(1,1) oMin(454.6,-213) oMax(-27.6,-175.1) piv(0.5,0.5) size(-482.2,37.9) | TXT "" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+        Desc | aMin(0,1) aMax(1,1) oMin(454.6,-317.3) oMax(-27.6,-226.6) piv(0.5,0.5) size(-482.2,90.6) | TXT "" size=25.8 color=#1D2226 align=TopLeft font=DustZero-Body SDF
+        Stat | aMin(0,1) aMax(1,1) oMin(454.6,-357.2) oMax(-27.6,-319.3) piv(0.5,0.5) size(-482.2,37.9) | TXT "" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+      Chapters | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-50,-50) oMax(50,50) piv(0.5,0.5) size(100,100) | +VerticalLayoutGroup | +ContentSizeFitter

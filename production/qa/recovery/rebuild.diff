@@ -1,0 +1,118 @@
+16c16
+<       S10 | aMin(0.845,0.02) aMax(0.85,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+---
+>       S10 | aMin(0.846,0.02) aMax(0.851,1) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#FFFFFF59 sprite=- type=Simple
+51c51
+<       H7 | aMin(0,0.269) aMax(1,0.27) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H7 | aMin(0,0.269) aMax(1,0.271) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+61c61
+<       H9 | aMin(0,0.346) aMax(1,0.347) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H9 | aMin(0,0.346) aMax(1,0.348) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+71c71
+<       H11 | aMin(0,0.423) aMax(1,0.424) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H11 | aMin(0,0.423) aMax(1,0.425) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+81,85c81,85
+<       H13 | aMin(0,0.5) aMax(1,0.501) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+<       V13_0 | aMin(0.128,0.5) aMax(0.129,0.538) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+<       V13_1 | aMin(0.384,0.5) aMax(0.385,0.538) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+<       V13_2 | aMin(0.64,0.5) aMax(0.641,0.538) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+<       V13_3 | aMin(0.896,0.5) aMax(0.897,0.538) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H13 | aMin(0,0.5) aMax(1,0.502) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+>       V13_0 | aMin(0.128,0.5) aMax(0.129,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+>       V13_1 | aMin(0.384,0.5) aMax(0.385,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+>       V13_2 | aMin(0.64,0.5) aMax(0.641,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+>       V13_3 | aMin(0.896,0.5) aMax(0.897,0.539) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+116c116
+<       H20 | aMin(0,0.769) aMax(1,0.77) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H20 | aMin(0,0.769) aMax(1,0.771) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+126c126
+<       H22 | aMin(0,0.846) aMax(1,0.847) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H22 | aMin(0,0.846) aMax(1,0.848) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+136c136
+<       H24 | aMin(0,0.923) aMax(1,0.924) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+---
+>       H24 | aMin(0,0.923) aMax(1,0.925) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#78542924 sprite=- type=Simple
+160,163c160,163
+<     Leaf1 | aMin(0.029,0.75) aMax(0.055,0.78) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+<     Leaf2 | aMin(0.047,0.753) aMax(0.073,0.783) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+<     Leaf3 | aMin(0.065,0.75) aMax(0.091,0.78) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+<     Leaf4 | aMin(0.079,0.741) aMax(0.105,0.771) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+---
+>     Leaf1 | aMin(0.03,0.75) aMax(0.056,0.78) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+>     Leaf2 | aMin(0.044,0.753) aMax(0.07,0.783) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+>     Leaf3 | aMin(0.059,0.75) aMax(0.085,0.78) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+>     Leaf4 | aMin(0.073,0.741) aMax(0.099,0.771) oMin(0,0) oMax(0,0) piv(0.5,0.5) size(0,0) | IMG color=#6E9B4CFF sprite=shape_disc type=Simple
+166,167c166,167
+<     Bubble | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-235.4,-39.1) oMax(235.4,39.1) piv(0.5,0.5) size(470.8,78.2) | IMG color=#F7F9FAFF sprite=ui_flat_panel_36 type=Sliced
+<       Text | aMin(0,0) aMax(1,1) oMin(16.6,16.6) oMax(-16.6,-16.6) piv(0.5,0.5) size(-33.2,-33.2) | TXT "" size=30 color=#1D2226 align=Center font=DustZero-Body SDF
+---
+>     Bubble | aMin(0.5,0.5) aMax(0.5,0.5) oMin(-235.5,-39.1) oMax(235.5,39.1) piv(0.5,0.5) size(470.9,78.3) | IMG color=#F7F9FAFF sprite=ui_flat_panel_36 type=Sliced
+>       Text | aMin(0,0) aMax(1,1) oMin(16.6,16.6) oMax(-16.6,-16.6) piv(0.5,0.5) size(-33.2,-33.2) | TXT "" size=30.1 color=#1D2226 align=Center font=DustZero-Body SDF
+169c169
+<     Text | aMin(0,0) aMax(1,1) oMin(22.2,0) oMax(-22.2,0) piv(0.5,0.5) size(-44.3,0) | TXT "" size=29.1 color=#E8EDF0 align=Center font=DustZero-Body SDF
+---
+>     Text | aMin(0,0) aMax(1,1) oMin(22.1,0) oMax(-22.1,0) piv(0.5,0.5) size(-44.2,0) | TXT "" size=29 color=#E8EDF0 align=Center font=DustZero-Body SDF
+172c172
+<       Label | aMin(0,0) aMax(1,1) oMin(22.2,22.2) oMax(-22.2,-22.2) piv(0.5,0.5) size(-44.3,-44.3) | TXT "" size=30 color=#E8EDF0 align=Center font=DustZero-Body SDF
+---
+>       Label | aMin(0,0) aMax(1,1) oMin(22.2,22.2) oMax(-22.2,-22.2) piv(0.5,0.5) size(-44.3,-44.3) | TXT "" size=30.1 color=#E8EDF0 align=Center font=DustZero-Body SDF
+176,179c176,179
+<     Icon | aMin(0,0.5) aMax(0,0.5) oMin(44.3,-37.4) oMax(119.1,37.4) piv(0.5,0.5) size(74.8,74.8) | IMG color=#FFFFFFFF sprite=survival type=Simple keepAspect
+<     Kicker | aMin(0,1) aMax(1,1) oMin(152.3,-64.2) oMax(-94.2,-22.2) piv(0.5,0.5) size(-246.5,42) | TXT "대청소 모드" size=27.7 color=#8D99A2 align=Left font=DustZero-Body SDF
+<     Title | aMin(0,1) aMax(1,1) oMin(152.3,-131.2) oMax(-94.2,-64.2) piv(0.5,0.5) size(-246.5,67) | TXT "리더를 골라 출동" size=44.3 color=#E8EDF0 align=Left font=DustZero-Title SDF
+<     Arrow | aMin(1,0.5) aMax(1,0.5) oMin(-94.2,-42) oMax(-33.2,42) piv(0.5,0.5) size(60.9,84) | TXT "▶" size=55.4 color=#E8EDF0 align=Right font=DustZero-Body SDF
+---
+>     Icon | aMin(0,0.5) aMax(0,0.5) oMin(44.2,-37.5) oMax(119.1,37.5) piv(0.5,0.5) size(74.8,75) | IMG color=#FFFFFFFF sprite=survival type=Simple keepAspect
+>     Kicker | aMin(0,1) aMax(1,1) oMin(152.2,-64.3) oMax(-94.2,-22.2) piv(0.5,0.5) size(-246.4,42) | TXT "대청소 모드" size=27.6 color=#8D99A2 align=Left font=DustZero-Body SDF
+>     Title | aMin(0,1) aMax(1,1) oMin(152.2,-131.2) oMax(-94.2,-64.3) piv(0.5,0.5) size(-246.4,67) | TXT "리더를 골라 출동" size=44.3 color=#E8EDF0 align=Left font=DustZero-Title SDF
+>     Arrow | aMin(1,0.5) aMax(1,0.5) oMin(-94.2,-42) oMax(-33.2,42) piv(0.5,0.5) size(61,84.1) | TXT "▶" size=55.4 color=#E8EDF0 align=Right font=DustZero-Body SDF
+182c182
+<       Label | aMin(0,0) aMax(1,1) oMin(22.2,22.2) oMax(-22.2,-22.2) piv(0.5,0.5) size(-44.3,-44.3) | TXT "" size=30 color=#1D2226 align=Center font=DustZero-Body SDF
+---
+>       Label | aMin(0,0) aMax(1,1) oMin(22.2,22.2) oMax(-22.2,-22.2) piv(0.5,0.5) size(-44.3,-44.3) | TXT "" size=30.1 color=#1D2226 align=Center font=DustZero-Body SDF
+186,189c186,189
+<     Kicker | aMin(0,1) aMax(1,1) oMin(44.3,-75.2) oMax(-94.2,-33.2) piv(0.5,0.5) size(-138.5,42) | TXT "다음 스테이지 도전" size=27.7 color=#1D2226 align=Left font=DustZero-Body SDF
+<     Stage | aMin(0,1) aMax(1,1) oMin(44.3,-159.2) oMax(-94.2,-75.2) piv(0.5,0.5) size(-138.5,84) | TXT "1-1" size=55.4 color=#1D2226 align=Left font=DustZero-Title SDF
+<     Arrow | aMin(1,0.5) aMax(1,0.5) oMin(-94.2,-42) oMax(-33.2,42) piv(0.5,0.5) size(60.9,84) | TXT "▶" size=55.4 color=#1D2226 align=Right font=DustZero-Body SDF
+<   TestHour | aMin(0.5,1) aMax(0.5,1) oMin(-72,-293.5) oMax(72,-216) piv(0.5,0.5) size(144,77.5) | IMG color=#F7F9FAFF sprite=ui_flat_button_25 type=Sliced | +UiButton
+---
+>     Kicker | aMin(0,1) aMax(1,1) oMin(44.2,-75.2) oMax(-94.2,-33.2) piv(0.5,0.5) size(-138.4,42) | TXT "다음 스테이지 도전" size=27.6 color=#1D2226 align=Left font=DustZero-Body SDF
+>     Stage | aMin(0,1) aMax(1,1) oMin(44.2,-159.2) oMax(-94.2,-75.2) piv(0.5,0.5) size(-138.4,84.1) | TXT "1-1" size=55.4 color=#1D2226 align=Left font=DustZero-Title SDF
+>     Arrow | aMin(1,0.5) aMax(1,0.5) oMin(-94.2,-42) oMax(-33.2,42) piv(0.5,0.5) size(61,84.1) | TXT "▶" size=55.4 color=#1D2226 align=Right font=DustZero-Body SDF
+>   TestHour | aMin(0.5,1) aMax(0.5,1) oMin(-72.1,-293.6) oMax(72.1,-216.1) piv(0.5,0.5) size(144.2,77.5) | IMG color=#F7F9FAFF sprite=ui_flat_button_25 type=Sliced | +UiButton
+192c192
+<       Label | aMin(0,0) aMax(1,1) oMin(22.2,16.3) oMax(-22.2,-16.3) piv(0.5,0.5) size(-44.3,-32.5) | TXT "+1h" size=30 color=#1D2226 align=Center font=DustZero-Body SDF
+---
+>       Label | aMin(0,0) aMax(1,1) oMin(22.2,15.7) oMax(-22.2,-15.7) piv(0.5,0.5) size(-44.3,-31.5) | TXT "+1h" size=30.1 color=#1D2226 align=Center font=DustZero-Body SDF
+205c205
+<         Caption | aMin(0,1) aMax(0,1) oMin(35.2,-55.7) oMax(251.2,-24.7) piv(0.5,0.5) size(216,31) | TXT "최고 스테이지" size=20.6 color=#8D99A2 align=Left font=DustZero-Body SDF
+---
+>         Caption | aMin(0,1) aMax(0,1) oMin(35.2,-55.6) oMax(251.2,-24.7) piv(0.5,0.5) size(216,30.9) | TXT "최고 스테이지" size=20.6 color=#8D99A2 align=Left font=DustZero-Body SDF
+210,211c210,211
+<         Title | aMin(0,1) aMax(0,1) oMin(35.2,-69.7) oMax(226,-22.7) piv(0.5,0.5) size(190.9,47) | TXT "전력 스킬" size=30.9 color=#1D2226 align=Left font=DustZero-Title SDF
+<         Sub | aMin(0,1) aMax(1,1) oMin(231.1,-62.7) oMax(-35.2,-24.7) piv(0.5,0.5) size(-266.2,38) | TXT "전투 중 남는 전력으로 쓰는 기술" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+---
+>         Title | aMin(0,1) aMax(0,1) oMin(35.2,-69.6) oMax(226,-22.7) piv(0.5,0.5) size(190.9,47) | TXT "전력 스킬" size=30.9 color=#1D2226 align=Left font=DustZero-Title SDF
+>         Sub | aMin(0,1) aMax(1,1) oMin(231.1,-62.6) oMax(-35.2,-24.7) piv(0.5,0.5) size(-266.2,37.9) | TXT "전투 중 남는 전력으로 쓰는 기술" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+215c215
+<         Label | aMin(0,0.5) aMax(0,0.5) oMin(35.2,-17) oMax(170.8,17) piv(0.5,0.5) size(135.6,34) | TXT "출전 편성" size=22.7 color=#5D6871 align=Left font=DustZero-Body SDF
+---
+>         Label | aMin(0,0.5) aMax(0,0.5) oMin(35.2,-17.1) oMax(170.8,17.1) piv(0.5,0.5) size(135.6,34.2) | TXT "출전 편성" size=22.7 color=#5D6871 align=Left font=DustZero-Body SDF
+227c227
+<         Kicker | aMin(0,1) aMax(1,1) oMin(454.6,-118.3) oMax(-27.6,-80.3) piv(0.5,0.5) size(-482.2,38) | TXT "" size=24.7 color=#E8842A align=Left font=DustZero-Body SDF
+---
+>         Kicker | aMin(0,1) aMax(1,1) oMin(454.6,-118.2) oMax(-27.6,-80.3) piv(0.5,0.5) size(-482.2,37.9) | TXT "" size=24.7 color=#E8842A align=Left font=DustZero-Body SDF
+229c229
+<         Sub | aMin(0,1) aMax(1,1) oMin(454.6,-213.1) oMax(-27.6,-175.1) piv(0.5,0.5) size(-482.2,38) | TXT "" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+---
+>         Sub | aMin(0,1) aMax(1,1) oMin(454.6,-213) oMax(-27.6,-175.1) piv(0.5,0.5) size(-482.2,37.9) | TXT "" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+231c231
+<         Stat | aMin(0,1) aMax(1,1) oMin(454.6,-357.3) oMax(-27.6,-319.3) piv(0.5,0.5) size(-482.2,38) | TXT "" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF
+---
+>         Stat | aMin(0,1) aMax(1,1) oMin(454.6,-357.2) oMax(-27.6,-319.3) piv(0.5,0.5) size(-482.2,37.9) | TXT "" size=24.7 color=#5D6871 align=Left font=DustZero-Body SDF

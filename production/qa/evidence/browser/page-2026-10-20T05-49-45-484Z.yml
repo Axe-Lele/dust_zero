@@ -1,0 +1,67 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]: 코인
+        - generic [ref=f1e10]: 2,000
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]: 크리스탈
+        - generic [ref=f1e15]:
+          - generic [ref=f1e17]: 1,500
+          - button "크리스탈 충전" [ref=f1e18] [cursor=pointer]: +
+  - generic [ref=f1e637]:
+    - generic [ref=f1e638]:
+      - button "가전 소환" [pressed] [ref=f1e639] [cursor=pointer]
+      - button "장비 소환" [ref=f1e640] [cursor=pointer]
+    - generic [ref=f1e641]:
+      - generic [ref=f1e642]:
+        - generic [ref=f1e643]:
+          - heading "겨울맞이 신상 입고" [level=2] [ref=f1e644]
+          - paragraph [ref=f1e645]: SSR 보일러가 새로 입고됐어요. 다리미·가스레인지도 함께! 10회 소환은 SR 이상 1개가 확정입니다.
+        - generic [ref=f1e646]:
+          - generic [ref=f1e647]: SSR 냉장고
+          - generic [ref=f1e650]: SSR 세탁기
+          - generic [ref=f1e653]: SSR 보일러
+        - generic [ref=f1e656]:
+          - generic [ref=f1e657]: SSR 3%
+          - generic [ref=f1e658]: SR 17%
+          - generic [ref=f1e659]: R 80%
+        - generic [ref=f1e660]:
+          - button [ref=f1e661] [cursor=pointer]:
+            - text: 1회 소환
+            - generic [ref=f1e662]: "150"
+          - button [ref=f1e664] [cursor=pointer]:
+            - text: 10회 소환
+            - generic [ref=f1e665]: 1,500
+      - heading "소환 목록" [level=2] [ref=f1e668]
+      - generic [ref=f1e669]:
+        - generic [ref=f1e670]:
+          - generic [ref=f1e671]: SSR
+          - generic [ref=f1e672]: 냉장고 1.00% · 미보유
+          - generic [ref=f1e673]: 세탁기 1.00% · 미보유
+          - generic [ref=f1e674]: 보일러 1.00% · 미보유
+        - generic [ref=f1e675]:
+          - generic [ref=f1e676]: SR
+          - generic [ref=f1e677]: 에어컨 3.40%
+          - generic [ref=f1e678]: 전자레인지 3.40% · 미보유
+          - generic [ref=f1e679]: 컴퓨터 3.40% · 미보유
+          - generic [ref=f1e680]: 다리미 3.40% · 미보유
+          - generic [ref=f1e681]: 가스레인지 3.40% · 미보유
+        - generic [ref=f1e682]:
+          - generic [ref=f1e683]: R
+          - generic [ref=f1e684]: 청소기 20.00%
+          - generic [ref=f1e685]: 로봇청소기 20.00% · 미보유
+          - generic [ref=f1e686]: 선풍기 20.00%
+          - generic [ref=f1e687]: 발전기 20.00%
+  - navigation "메뉴" [ref=f1e56]:
+    - tablist [ref=f1e57]:
+      - tab "홈" [ref=f1e58] [cursor=pointer]
+      - tab "스테이지" [ref=f1e60] [cursor=pointer]
+      - tab "콘텐츠" [ref=f1e62] [cursor=pointer]
+      - tab "가전" [ref=f1e64] [cursor=pointer]
+      - tab "편성" [ref=f1e66] [cursor=pointer]
+      - tab "소환" [active] [selected] [ref=f1e68] [cursor=pointer]
+      - tab "상점" [ref=f1e70] [cursor=pointer]

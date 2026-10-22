@@ -1,0 +1,1006 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "2" [ref=e6] [cursor=pointer]:
+        - /url: "#t2"
+      - generic [ref=e7]:
+        - link "1a" [ref=e8] [cursor=pointer]:
+          - /url: "#1a"
+        - text: 확정 — 나머지 화면 확장 (스테이지 · 가전 상세 · 편성 · 소환 · 상점 · 시즌 패스 · 결과)
+    - generic [ref=e9]:
+      - generic [ref=e10]: 디자인 시안 · Unity 미구현/미검증 · 정적 화면
+      - generic [ref=e11]: 스테이지 이름·스킬·확률·가격·보상 수량은 모두 예시값(추측)
+      - generic [ref=e12]: "공통 규칙: 1a의 5탭 · 상단 재화 칩 · 하위 탭 · 아래쪽 단색 두께 버튼 · 1d 상태 표현 그대로"
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - link "2a" [ref=e16] [cursor=pointer]:
+            - /url: "#2a"
+          - generic [ref=e17]: 스테이지 탭
+          - generic [ref=e18]: · 현재 화면 A 대체
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - generic [ref=e22]: 스테이지
+            - generic [ref=e23]: 1.24M
+            - generic [ref=e26]: 2,480
+          - generic [ref=e29]:
+            - generic [ref=e30]: 스테이지
+            - generic [ref=e31]: 콘텐츠
+          - generic [ref=e33]:
+            - generic [ref=e34]: 1 거실
+            - generic [ref=e35]: 2 주방
+            - generic [ref=e36]:
+              - generic [ref=e37]: lock
+              - text: 3 욕실
+            - generic [ref=e38]:
+              - generic [ref=e39]: lock
+              - text: 4 침실
+          - generic [ref=e40]:
+            - generic [ref=e41]: 챕터 썸네일
+            - generic [ref=e42]:
+              - generic [ref=e43]: 챕터 1 · 거실
+              - generic [ref=e44]: 별 5 / 15 · 다음 상자 ★10
+              - generic [ref=e48]:
+                - generic [ref=e49]: redeem
+                - text: ★5 상자 받기
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]: 1-1
+              - generic [ref=e54]:
+                - generic [ref=e55]: 거실 입구
+                - generic [ref=e56]: 웨이브 5 · 코인 80
+              - generic [ref=e57]: ★★★
+            - generic [ref=e59]:
+              - generic [ref=e60]: 1-2
+              - generic [ref=e62]:
+                - generic [ref=e63]: 소파 아래
+                - generic [ref=e64]: 웨이브 8 · 코인 100
+              - generic [ref=e65]:
+                - generic [ref=e66]: ★★
+                - generic [ref=e67]: ★
+            - generic [ref=e68]:
+              - generic [ref=e69]: 1-3
+              - generic [ref=e71]:
+                - generic [ref=e72]: 거실 창가
+                - generic [ref=e73]: 웨이브 10 · 추천 Lv.5
+              - generic [ref=e74]: 출동
+            - generic [ref=e75]:
+              - generic [ref=e76]: 1-4
+              - generic [ref=e78]:
+                - generic [ref=e79]: TV 뒤편
+                - generic [ref=e80]: 1-3 클리어 시 개방
+              - generic [ref=e81]: lock
+            - generic [ref=e82]:
+              - generic [ref=e83]: 1-5
+              - generic [ref=e85]:
+                - generic [ref=e86]: 먼지 대왕 (보스)
+                - generic [ref=e87]: 1-4 클리어 시 개방
+              - generic [ref=e88]: lock
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e92]: home
+              - generic [ref=e93]: 홈
+            - generic [ref=e94]:
+              - generic [ref=e96]: flag
+              - generic [ref=e97]: 스테이지
+            - generic [ref=e98]:
+              - generic [ref=e100]: kitchen
+              - generic [ref=e101]: 가전
+            - generic [ref=e102]:
+              - generic [ref=e104]: auto_awesome
+              - generic [ref=e105]: 소환
+            - generic [ref=e106]:
+              - generic [ref=e108]: storefront
+              - generic [ref=e109]: 상점
+          - generic [ref=e110]: 9:41
+        - generic [ref=e114]: 잠긴 스테이지는 옅은 주황 대신 회색 + 자물쇠 + 개방 조건으로 표시합니다. 현재 스테이지 줄만 커지고 출동 버튼이 붙습니다. 목록은 세로 스크롤이며 열면 현재 스테이지로 자동 이동합니다. 콘텐츠 하위 탭에는 대청소가 들어갑니다.
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - link "2b" [ref=e117] [cursor=pointer]:
+            - /url: "#2b"
+          - generic [ref=e118]: 가전 상세
+          - generic [ref=e119]: · 가전 탭 → 카드 누름
+        - generic [ref=e121]:
+          - generic [ref=e124]:
+            - generic [ref=e125]: arrow_back
+            - generic [ref=e127]: "36"
+            - generic [ref=e130]: 1.24M
+          - generic [ref=e133]: SD 전신 · 512×512 · 투명 PNG
+          - generic [ref=e134]: chevron_left
+          - generic [ref=e136]: chevron_right
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: SR
+              - generic [ref=e141]: 로봇청소기 루미
+              - generic [ref=e142]: (가칭)
+            - generic [ref=e143]:
+              - generic [ref=e144]: 근접 흡입
+              - generic [ref=e145]: 지상
+              - generic [ref=e146]: ★★★★★
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e149]: 능력치
+              - generic [ref=e150]: 스킬
+              - generic [ref=e151]: 이야기
+            - generic [ref=e152]:
+              - generic [ref=e153]: Lv.12
+              - generic [ref=e154]: / 30
+              - generic [ref=e157]: 1,160 / 2,000
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: 청소력
+                - generic [ref=e161]: 1,240 +86
+              - generic [ref=e162]:
+                - generic [ref=e163]: 사거리
+                - generic [ref=e164]: 1.5칸
+              - generic [ref=e165]:
+                - generic [ref=e166]: 소비 전력
+                - generic [ref=e167]: 200W
+              - generic [ref=e168]:
+                - generic [ref=e169]: 재배치 대기
+                - generic [ref=e170]: 8초
+            - generic [ref=e171]:
+              - generic [ref=e172]: cyclone
+              - generic [ref=e173]:
+                - generic [ref=e174]: 회오리 흡입 · 패시브 (추측)
+                - generic [ref=e175]: 5초마다 주변 1칸의 먼지를 끌어당겨 0.5초 묶어 둡니다.
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]: check_circle
+              - text: 편성 중
+            - generic [ref=e179]:
+              - generic [ref=e180]: 강화
+              - generic [ref=e181]:
+                - generic [ref=e182]: "12"
+                - generic [ref=e184]: 4,800
+          - generic [ref=e186]: 9:41
+        - generic [ref=e190]: 위쪽 절반은 캐릭터 무대로 쓰고, 좌우 화살표나 스와이프로 다음 가전을 봅니다. 강화 비용은 버튼 안에 표시하고, 재화가 모자라면 해당 칩만 빨간색으로 바뀝니다. 탭 아래에서 가로 탭바 대신 ‘편성 중’ 토글로 2c와 바로 연결됩니다.
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - link "2c" [ref=e193] [cursor=pointer]:
+            - /url: "#2c"
+          - generic [ref=e194]: 편성
+          - generic [ref=e195]: · 가전 탭 › 편성
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]: 가전
+            - generic [ref=e200]: "36"
+            - generic [ref=e203]: 1.24M
+          - generic [ref=e206]:
+            - generic [ref=e207]: 보유 가전
+            - generic [ref=e208]: 편성
+          - generic [ref=e209]:
+            - generic [ref=e210]:
+              - generic [ref=e211]: 프리셋 1
+              - generic [ref=e212]: "2"
+              - generic [ref=e213]: "3"
+              - generic [ref=e214]:
+                - generic [ref=e215]: bolt
+                - text: 합계 1,050W
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - generic [ref=e219]: 로봇청소기
+                - generic [ref=e220]: 200W
+              - generic [ref=e221]:
+                - generic [ref=e223]: 공기청정기
+                - generic [ref=e224]: 300W
+              - generic [ref=e225]:
+                - generic [ref=e227]: 선풍기
+                - generic [ref=e228]: 150W
+              - generic [ref=e229]:
+                - generic [ref=e231]: 전자레인지
+                - generic [ref=e232]: 400W
+              - generic [ref=e233]:
+                - generic [ref=e234]: lock
+                - generic [ref=e236]: 편성 Lv.10
+                - generic [ref=e237]: 잠금
+          - generic [ref=e238]:
+            - generic [ref=e239]: 전체
+            - generic [ref=e240]: 근접
+            - generic [ref=e241]: 범위
+            - generic [ref=e242]: 지원
+            - generic [ref=e243]:
+              - text: 등급순
+              - generic [ref=e244]: expand_more
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e247]: SSR
+              - generic [ref=e248]: check_circle
+              - generic [ref=e250]: 전자레인지
+              - generic [ref=e251]: Lv.9
+            - generic [ref=e252]:
+              - generic [ref=e253]: SR
+              - generic [ref=e254]: check_circle
+              - generic [ref=e256]: 로봇청소기
+              - generic [ref=e257]: Lv.12
+            - generic [ref=e258]:
+              - generic [ref=e259]: SR
+              - generic [ref=e260]: check_circle
+              - generic [ref=e262]: 공기청정기
+              - generic [ref=e263]: Lv.10
+            - generic [ref=e264]:
+              - generic [ref=e265]: SR
+              - generic [ref=e267]: 제습기
+              - generic [ref=e268]: Lv.4
+            - generic [ref=e269]:
+              - generic [ref=e270]: R
+              - generic [ref=e271]: check_circle
+              - generic [ref=e273]: 선풍기
+              - generic [ref=e274]: Lv.11
+            - generic [ref=e275]:
+              - generic [ref=e276]: R
+              - generic [ref=e278]: 전기포트
+              - generic [ref=e279]: Lv.6
+            - generic [ref=e280]:
+              - generic [ref=e281]: R
+              - generic [ref=e283]: 스팀다리미
+              - generic [ref=e284]: Lv.3
+            - generic [ref=e285]:
+              - generic [ref=e286]: "N"
+              - generic [ref=e288]: 헤어드라이어
+              - generic [ref=e289]: Lv.8
+            - generic [ref=e290]:
+              - generic [ref=e291]: "N"
+              - generic [ref=e293]: 토스터
+              - generic [ref=e294]: Lv.5
+            - generic [ref=e295]:
+              - generic [ref=e296]: SSR
+              - generic [ref=e298]: "???"
+              - generic [ref=e299]: 미보유
+            - generic [ref=e300]:
+              - generic [ref=e301]: SR
+              - generic [ref=e303]: "???"
+              - generic [ref=e304]: 미보유
+            - generic [ref=e305]:
+              - generic [ref=e306]: R
+              - generic [ref=e308]: "???"
+              - generic [ref=e309]: 미보유
+          - generic [ref=e310]:
+            - generic [ref=e311]:
+              - generic [ref=e312]: auto_fix_high
+              - text: 자동 편성
+            - generic [ref=e313]: 1-3 출동
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - generic [ref=e317]: home
+              - generic [ref=e318]: 홈
+            - generic [ref=e319]:
+              - generic [ref=e321]: flag
+              - generic [ref=e322]: 스테이지
+            - generic [ref=e323]:
+              - generic [ref=e325]: kitchen
+              - generic [ref=e326]: 가전
+            - generic [ref=e327]:
+              - generic [ref=e329]: auto_awesome
+              - generic [ref=e330]: 소환
+            - generic [ref=e331]:
+              - generic [ref=e333]: storefront
+              - generic [ref=e334]: 상점
+          - generic [ref=e335]: 9:41
+        - generic [ref=e339]: 위쪽 슬롯 5칸은 전투 카드 줄과 같은 순서와 모양이라, 편성한 그대로 전투에 나옵니다. 목록에서 누르면 편성에 넣고, 슬롯을 누르면 뺍니다. 길게 누르면 상세(2b)로 갑니다. 미보유 가전은 실루엣으로 맨 뒤에 둡니다. 합계 전력은 시작 전력과 비교하는 정보입니다(추측).
+      - generic [ref=e340]:
+        - generic [ref=e341]:
+          - link "2d" [ref=e342] [cursor=pointer]:
+            - /url: "#2d"
+          - generic [ref=e343]: 소환
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - generic [ref=e347]: 소환
+            - generic [ref=e348]: "3"
+            - generic [ref=e351]:
+              - generic [ref=e353]: 2,480
+              - generic [ref=e354]: +
+          - generic [ref=e355]:
+            - generic [ref=e356]: 가을 픽업
+            - generic [ref=e357]: 상시 소환
+            - generic [ref=e358]: 우정 (추측)
+          - generic [ref=e359]:
+            - generic [ref=e360]: 픽업 캐릭터 일러스트 · 투명 PNG
+            - generic [ref=e361]:
+              - generic [ref=e362]: SSR
+              - generic [ref=e363]: D-12
+            - generic [ref=e364]:
+              - generic [ref=e365]: 전자레인지 레이
+              - generic [ref=e366]: 고화력 · 과열 주의 — 픽업 확률 2배 (가칭)
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - generic [ref=e369]: info
+                  - text: 확률 정보
+                - generic [ref=e370]:
+                  - generic [ref=e371]: visibility
+                  - text: 캐릭터 보기
+          - generic [ref=e372]:
+            - generic [ref=e373]: SSR 확정까지
+            - generic [ref=e374]: 34회
+            - generic [ref=e377]: 66/100
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - generic [ref=e380]: 오늘 무료
+              - generic [ref=e381]: 1회 소환
+              - generic [ref=e382]: 무료
+            - generic [ref=e384]:
+              - generic [ref=e385]: 10회 소환
+              - generic [ref=e386]: 1,600
+          - generic [ref=e388]:
+            - generic [ref=e389]:
+              - generic [ref=e391]: home
+              - generic [ref=e392]: 홈
+            - generic [ref=e393]:
+              - generic [ref=e395]: flag
+              - generic [ref=e396]: 스테이지
+            - generic [ref=e397]:
+              - generic [ref=e399]: kitchen
+              - generic [ref=e400]: 가전
+            - generic [ref=e401]:
+              - generic [ref=e403]: auto_awesome
+              - generic [ref=e404]: 소환
+            - generic [ref=e405]:
+              - generic [ref=e407]: storefront
+              - generic [ref=e408]: 상점
+          - generic [ref=e409]: 9:41
+        - generic [ref=e413]: 10회 소환이 주요 행동(주황)이고, 무료 1회는 빨간 배지로 받을 수 있음을 알립니다. 확률 정보는 법적 고지가 필요하므로 배너 안에 항상 보이게 둡니다. 천장(확정까지 남은 횟수)과 소환권 보유 수량은 숫자로 표시합니다. 연출 화면은 다음 단계에서 다룹니다.
+      - generic [ref=e414]:
+        - generic [ref=e415]:
+          - link "2e" [ref=e416] [cursor=pointer]:
+            - /url: "#2e"
+          - generic [ref=e417]: 상점
+        - generic [ref=e419]:
+          - generic [ref=e420]:
+            - generic [ref=e421]: 상점
+            - generic [ref=e422]: 1.24M
+            - generic [ref=e425]: 2,480
+          - generic [ref=e428]:
+            - generic [ref=e429]: 추천
+            - generic [ref=e430]: 일일
+            - generic [ref=e432]: 크리스탈
+            - generic [ref=e433]: 코인
+            - generic [ref=e434]: 패키지
+          - generic [ref=e435]:
+            - generic [ref=e436]: 패키지 이미지
+            - generic [ref=e437]:
+              - generic [ref=e438]: 1회 한정 · 2일 남음
+              - generic [ref=e439]: 새내기 집사 패키지
+              - generic [ref=e440]: 크리스탈 1,000 · 소환권 5 · SR 선택권 1
+              - generic [ref=e441]: ₩5,500
+          - generic [ref=e442]:
+            - generic [ref=e443]: redeem
+            - generic [ref=e444]:
+              - generic [ref=e445]: 매일 무료 보급
+              - generic [ref=e446]: 코인 2,000 · 오전 5시 초기화
+            - generic [ref=e447]: 받기
+          - generic [ref=e448]:
+            - generic [ref=e449]:
+              - generic [ref=e451]: 코인 꾸러미
+              - generic [ref=e452]: ×10,000
+              - generic [ref=e453]: "50"
+            - generic [ref=e456]:
+              - generic [ref=e458]: 부품 상자
+              - generic [ref=e459]: ×20
+              - generic [ref=e460]: 5,000
+            - generic [ref=e463]:
+              - generic [ref=e464]: 2/5
+              - generic [ref=e466]: 소환권
+              - generic [ref=e467]: ×1
+              - generic [ref=e468]: "300"
+            - generic [ref=e471]:
+              - generic [ref=e472]: 1/3
+              - generic [ref=e474]: 자동 청소 2시간
+              - generic [ref=e475]: 즉시 수령
+              - generic [ref=e476]: "100"
+            - generic [ref=e479]:
+              - generic [ref=e481]: 크리스탈
+              - generic [ref=e482]: ×300
+              - generic [ref=e483]: ₩3,300
+            - generic [ref=e486]:
+              - generic [ref=e487]: 0/1
+              - generic [ref=e489]: 강화 촉매
+              - generic [ref=e490]: ×5
+              - generic [ref=e491]: 매진
+          - generic [ref=e494]:
+            - generic [ref=e495]:
+              - generic [ref=e497]: home
+              - generic [ref=e498]: 홈
+            - generic [ref=e499]:
+              - generic [ref=e501]: flag
+              - generic [ref=e502]: 스테이지
+            - generic [ref=e503]:
+              - generic [ref=e505]: kitchen
+              - generic [ref=e506]: 가전
+            - generic [ref=e507]:
+              - generic [ref=e509]: auto_awesome
+              - generic [ref=e510]: 소환
+            - generic [ref=e511]:
+              - generic [ref=e513]: storefront
+              - generic [ref=e514]: 상점
+          - generic [ref=e515]: 9:41
+        - generic [ref=e519]: 가격 버튼은 결제 수단에 따라 색을 나눕니다. 현금은 주황, 크리스탈·코인은 크림 바탕에 재화 아이콘, 매진은 회색 + 흐림입니다. 무료 보급은 초록 테두리로 ‘받을 수 있음’ 상태를 통일했습니다. 분류 탭은 가로 스크롤입니다(오른쪽이 잘려 보이는 것은 의도).
+      - generic [ref=e520]:
+        - generic [ref=e521]:
+          - link "2f" [ref=e522] [cursor=pointer]:
+            - /url: "#2f"
+          - generic [ref=e523]: 시즌 패스
+          - generic [ref=e524]: · 홈 오른쪽 메뉴에서 진입
+        - generic [ref=e526]:
+          - generic [ref=e527]:
+            - generic [ref=e528]: arrow_back
+            - generic [ref=e530]: 시즌 패스
+            - generic [ref=e531]: D-12
+          - generic [ref=e532]:
+            - generic [ref=e533]:
+              - generic [ref=e534]: Lv
+              - text: "7"
+            - generic [ref=e535]:
+              - generic [ref=e536]: 가을 대청소 시즌
+              - generic [ref=e539]: 다음 레벨까지 160 / 500
+          - generic [ref=e540]:
+            - generic [ref=e541]:
+              - generic [ref=e542]: 프리미엄 패스
+              - generic [ref=e543]: 보상 2배 · 전용 스킨 (추측)
+            - generic [ref=e544]: ₩11,000
+          - generic [ref=e545]:
+            - generic [ref=e546]: 보상
+            - generic [ref=e547]:
+              - text: 미션
+              - generic [ref=e548]: "3"
+          - generic [ref=e549]:
+            - generic [ref=e550]: 무료
+            - generic [ref=e552]: 프리미엄
+          - generic [ref=e555]:
+            - generic [ref=e556]:
+              - generic [ref=e557]:
+                - generic [ref=e559]:
+                  - generic [ref=e560]: 코인 3,000
+                  - generic [ref=e561]: 받음
+                - generic [ref=e562]: check_circle
+              - generic [ref=e563]: "5"
+              - generic [ref=e565]:
+                - generic [ref=e567]:
+                  - generic [ref=e568]: 크리스탈 100
+                  - generic [ref=e569]: 잠금
+                - generic [ref=e570]: lock
+            - generic [ref=e571]:
+              - generic [ref=e574]:
+                - generic [ref=e575]: 부품 10
+                - generic [ref=e576]: 받을 수 있음
+              - generic [ref=e577]: "6"
+              - generic [ref=e579]:
+                - generic [ref=e581]:
+                  - generic [ref=e582]: 소환권 1
+                  - generic [ref=e583]: 잠금
+                - generic [ref=e584]: lock
+            - generic [ref=e585]:
+              - generic [ref=e588]:
+                - generic [ref=e589]: 크리스탈 50
+                - generic [ref=e590]: 받을 수 있음
+              - generic [ref=e591]: "7"
+              - generic [ref=e593]:
+                - generic [ref=e595]:
+                  - generic [ref=e596]: SR 선택권
+                  - generic [ref=e597]: 잠금
+                - generic [ref=e598]: lock
+            - generic [ref=e599]:
+              - generic [ref=e602]:
+                - generic [ref=e603]: 코인 5,000
+                - generic [ref=e604]: Lv.8 달성 시
+              - generic [ref=e605]: "8"
+              - generic [ref=e607]:
+                - generic [ref=e609]:
+                  - generic [ref=e610]: 전용 스킨
+                  - generic [ref=e611]: 잠금
+                - generic [ref=e612]: lock
+            - generic [ref=e613]:
+              - generic [ref=e616]:
+                - generic [ref=e617]: 소환권 1
+                - generic [ref=e618]: Lv.9 달성 시
+              - generic [ref=e619]: "9"
+              - generic [ref=e621]:
+                - generic [ref=e623]:
+                  - generic [ref=e624]: 크리스탈 200
+                  - generic [ref=e625]: 잠금
+                - generic [ref=e626]: lock
+          - generic [ref=e627]:
+            - text: 모두 받기
+            - generic [ref=e628]: "2"
+          - generic [ref=e629]: 9:41
+        - generic [ref=e633]: 가운데 레벨 기둥이 진행도를 보여 줍니다(보라 = 도달한 레벨). 받은 보상은 흐리게 + 체크, 받을 수 있는 보상은 초록 테두리, 미구매 프리미엄은 보라 바탕 + 자물쇠입니다. ‘모두 받기’로 여러 번 누를 필요가 없습니다. 목록은 세로 스크롤이며 열면 현재 레벨로 이동합니다.
+      - generic [ref=e634]:
+        - generic [ref=e635]:
+          - link "2g" [ref=e636] [cursor=pointer]:
+            - /url: "#2g"
+          - generic [ref=e637]: 결과 (승리)
+        - generic [ref=e639]:
+          - generic [ref=e641]:
+            - generic [ref=e642]: ★
+            - generic [ref=e643]: ★
+            - generic [ref=e644]: ★
+          - generic [ref=e645]:
+            - generic [ref=e646]: 청소 완료!
+            - generic [ref=e647]: 1-3 거실 창가
+          - generic [ref=e648]:
+            - generic [ref=e649]:
+              - generic [ref=e650]:
+                - generic [ref=e651]: check_circle
+                - text: 스테이지 클리어
+              - generic [ref=e652]:
+                - generic [ref=e653]: check_circle
+                - text: 청결도 70% 이상
+                - generic [ref=e654]: 92%
+              - generic [ref=e655]:
+                - generic [ref=e656]: cancel
+                - text: 과열 0회 (추측)
+                - generic [ref=e657]: 2회
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - generic [ref=e660]: 처치
+                - generic [ref=e661]: "30"
+              - generic [ref=e662]:
+                - generic [ref=e663]: 시간
+                - generic [ref=e664]: 6:12
+              - generic [ref=e665]:
+                - generic [ref=e666]: 최고 배치
+                - generic [ref=e667]: 7기
+            - generic [ref=e668]:
+              - generic [ref=e669]: 보상
+              - generic [ref=e670]:
+                - generic [ref=e671]: "120"
+                - generic [ref=e674]: EXP 80
+                - generic [ref=e677]: "3"
+                - generic [ref=e680]:
+                  - generic [ref=e681]: 첫 클리어
+                  - generic [ref=e683]: "50"
+            - generic [ref=e686]:
+              - generic [ref=e687]: MVP · 전자레인지
+              - generic [ref=e688]: 처치 14 · 전체 피해의 41%
+          - generic [ref=e689]:
+            - generic [ref=e690]:
+              - generic [ref=e691]: home
+              - text: 홈
+            - generic [ref=e692]:
+              - generic [ref=e693]: replay
+              - text: 다시
+            - generic [ref=e694]:
+              - generic [ref=e695]: 다음 스테이지
+              - generic [ref=e696]: 1-4
+          - generic [ref=e697]: 9:41
+        - generic [ref=e701]: "별을 왜 얻었는지·놓쳤는지를 조건별로 보여 주어 다시 도전할 이유를 줍니다. 첫 클리어 보상은 금색 테두리로 강조합니다. 패배 화면도 같은 레이아웃으로 하되, 별 대신 원인 요약(예: “창문 쪽 방어 부족”)과 강화·편성 바로가기를 둡니다(다음 단계)."
+    - paragraph [ref=e702]:
+      - text: "다음에 해 볼 것: “소환 연출·패배 화면 추가” · “"
+      - link "2c" [ref=e703] [cursor=pointer]:
+        - /url: "#2c"
+      - text: 편성 슬롯을 6칸으로” · “실제 캐릭터 이미지 넣어서 다시”
+  - generic [ref=e704]:
+    - generic [ref=e705]:
+      - link "1" [ref=e706] [cursor=pointer]:
+        - /url: "#t1"
+      - generic [ref=e707]: "오퍼레이션: 더스트 제로 — 진단 · 홈 2안 · 추천안 상세(홈 + 전투 HUD)"
+    - generic [ref=e708]:
+      - generic [ref=e709]: 디자인 시안 · Unity 미구현/미검증
+      - generic [ref=e710]: 사선 무늬 = 임시 자산(캐릭터·배경 교체 필요)
+      - generic [ref=e711]: 「추측」 = 첨부 화면에서 확인할 수 없는 동작·규칙
+      - generic [ref=e712]:
+        - text: 목업 390×844pt · Unity 기준 1080×1920 (Canvas Scaler 매칭 0.5) · 상세 규격은
+        - link "구현 가이드" [ref=e713] [cursor=pointer]:
+          - /url: 구현 가이드.dc.html
+    - generic [ref=e714]:
+      - generic [ref=e715]:
+        - generic [ref=e716]: 현재 화면 (첨부)
+        - generic [ref=e721]:
+          - generic [ref=e722]: A · 첫 화면(스테이지 목록)
+          - generic [ref=e723]: B · 전투 시작 팝업
+          - generic [ref=e724]: C · 전투 진행
+        - generic [ref=e725]: 캡처 해상도가 낮아 일부 문구·수치는 추정해서 읽었습니다.
+      - generic [ref=e726]:
+        - generic [ref=e727]: 관찰한 문제 — 중요도 순
+        - generic [ref=e728]:
+          - generic [ref=e729]: "1"
+          - generic [ref=e730]: 게임의 얼굴이 보이지 않음. 첫 화면(A)이 스테이지 표라 가전 캐릭터와 방이 거의 안 보입니다. 수집형 게임의 매력인 캐릭터가 왼쪽 위 작은 아이콘 하나뿐입니다.
+          - generic [ref=e731]: "2"
+          - generic [ref=e732]: 정보 위계와 가독성. 잠긴 스테이지 약 70%가 옅은 주황 위 옅은 글자(대비 약 1.3:1)입니다. 본문은 약 10px이고, 재화·자동 청소·출석이 한 줄 텍스트로 섞여 있습니다.
+          - generic [ref=e733]: "3"
+          - generic [ref=e734]: 팝업이 전장을 가림. 시작 팝업(B)이 경로와 입구를 덮어서, 정작 봐야 할 지형을 시작 전에 확인할 수 없습니다.
+          - generic [ref=e735]: "4"
+          - generic [ref=e736]: 엄지로 누르기 어려운 조작. 배속·일시정지·나가기(추정)가 오른쪽 위에 약 30×16pt 크기로 붙어 있어 손이 닿기 어렵고, 빨간 ‘나가기’를 잘못 누를 위험이 큽니다. 하단 캐릭터 카드도 작고 설명 글자가 겹칩니다.
+          - generic [ref=e737]: "5"
+          - generic [ref=e738]: 전투 상태가 드러나지 않음. 전력은 숫자와 막대 하나뿐이고, 카드에 비용·재배치 대기·사용 불가 상태가 보이지 않습니다. 웨이브와 남은 적 숫자(19)도 이름표가 작아 의미를 알기 어렵습니다. 선택·과열 표시는 정적 캡처라 확인할 수 없습니다(추측).
+    - generic [ref=e739]: 홈 — 서로 다른 방향 2안
+    - generic [ref=e740]:
+      - generic [ref=e741]:
+        - generic [ref=e742]:
+          - link "1a" [ref=e743] [cursor=pointer]:
+            - /url: "#1a"
+          - generic [ref=e744]: 방이 주인공 · 5탭 묶음
+          - generic [ref=e745]: 추천
+          - generic [ref=e746]: · 인터랙티브
+        - generic [ref=e748]:
+          - generic [ref=e751]: 창문 · BG 임시
+          - generic [ref=e754]: BG_Room_Living (1080×1920, 임시)
+          - generic [ref=e759] [cursor=pointer]:
+            - generic [ref=e760]: SD
+            - generic [ref=e761]: 로봇청소기
+          - generic [ref=e762] [cursor=pointer]:
+            - generic [ref=e763]: SD
+            - generic [ref=e764]: 공기청정기
+          - generic [ref=e765] [cursor=pointer]:
+            - generic [ref=e766]: SD
+            - generic [ref=e767]: 선풍기
+          - generic [ref=e768] [cursor=pointer]:
+            - generic [ref=e769]: SD
+            - generic [ref=e770]: 전자레인지
+          - generic [ref=e771]:
+            - generic [ref=e772]:
+              - generic [ref=e773]: IMG
+              - generic [ref=e774]: Lv.12
+            - generic [ref=e778]: 1.24M
+            - generic [ref=e781]:
+              - generic [ref=e783]: 2,480
+              - generic [ref=e784]: +
+          - generic [ref=e785]:
+            - generic [ref=e786] [cursor=pointer]:
+              - generic [ref=e787]: event_available
+              - generic [ref=e788]: 출석
+              - generic [ref=e789]: "!"
+            - generic [ref=e790] [cursor=pointer]:
+              - generic [ref=e791]: workspace_premium
+              - generic [ref=e792]: 패스
+              - generic [ref=e793]: Lv.7
+            - generic [ref=e794] [cursor=pointer]: settings
+          - generic [ref=e796]:
+            - generic [ref=e797]: cleaning_services
+            - generic [ref=e799]:
+              - generic [ref=e800]: 자동 청소 · 2시간 14분
+              - generic [ref=e801]: +3,420 코인
+            - generic [ref=e804] [cursor=pointer]: 수령
+          - generic [ref=e806]:
+            - generic [ref=e807] [cursor=pointer]:
+              - generic [ref=e808]: all_inclusive
+              - generic [ref=e809]: 대청소
+              - generic [ref=e810]: 최고 W27
+            - generic [ref=e811] [cursor=pointer]:
+              - generic [ref=e812]:
+                - generic [ref=e813]: 다음 스테이지
+                - generic [ref=e814]: ★★☆ 1-2 클리어
+              - generic [ref=e815]: 1-3 거실
+          - generic [ref=e816]:
+            - generic [ref=e817] [cursor=pointer]:
+              - generic [ref=e819]: home
+              - generic [ref=e820]: 홈
+            - generic [ref=e821] [cursor=pointer]:
+              - generic [ref=e823]: flag
+              - generic [ref=e824]: 스테이지
+            - generic [ref=e825] [cursor=pointer]:
+              - generic [ref=e827]: kitchen
+              - generic [ref=e828]: 가전
+              - generic [ref=e829]: 강화
+            - generic [ref=e830] [cursor=pointer]:
+              - generic [ref=e832]: auto_awesome
+              - generic [ref=e833]: 소환
+              - generic [ref=e834]: 무료
+            - generic [ref=e835] [cursor=pointer]:
+              - generic [ref=e837]: storefront
+              - generic [ref=e838]: 상점
+          - generic: 9:41
+        - generic [ref=e840]: "핵심 생각: 화면의 60%를 방에 내주고, 중요한 행동일수록 엄지가 닿는 아래쪽에 배치했습니다. 하단 7개 메뉴는 5개 탭으로 묶었습니다. 스테이지 탭 안에 [스테이지 | 콘텐츠], 가전 탭 안에 [보유 가전 | 편성]을 하위 탭으로 두어 모든 기능을 2번 이내 터치로 열 수 있습니다. 대청소 바로가기는 홈에도 남겨 두었습니다.눌러 보기: 캐릭터 · 자동 청소 ‘수령’ · 출석 · 하단 탭 · 다음 스테이지"
+      - generic [ref=e841]:
+        - generic [ref=e842]:
+          - link "1b" [ref=e843] [cursor=pointer]:
+            - /url: "#1b"
+          - generic [ref=e844]: 작전 보드형 · 7탭 유지
+          - generic [ref=e845]: · 정적
+        - generic [ref=e847]:
+          - generic [ref=e848]:
+            - generic [ref=e849]: Lv.12
+            - generic [ref=e852]: 1.24M
+            - generic [ref=e854]: "36"
+            - generic [ref=e856]: 2,480
+            - generic [ref=e858]: settings
+          - generic [ref=e866]:
+            - generic [ref=e867]: cleaning_services
+            - generic [ref=e868]: 자동 청소 +3,420 코인
+            - generic [ref=e872]: 수령
+          - generic [ref=e873]:
+            - generic [ref=e874]:
+              - generic [ref=e875]: 챕터 1 · 거실
+              - generic [ref=e876]: ★ 3/15
+            - generic [ref=e877]:
+              - generic [ref=e878]: 1-1
+              - generic [ref=e879]: 1-2
+              - generic [ref=e880]: 1-3
+              - generic [ref=e881]: lock
+              - generic [ref=e882]: lock
+            - generic [ref=e883]: 1-3 거실 출동
+          - generic [ref=e884]:
+            - generic [ref=e885]:
+              - generic [ref=e886]: all_inclusive
+              - generic [ref=e887]: 대청소
+              - generic [ref=e888]: 최고 W27
+            - generic [ref=e889]:
+              - generic [ref=e890]: event_available
+              - generic [ref=e891]: 출석
+              - generic [ref=e892]: 수령 가능
+            - generic [ref=e893]:
+              - generic [ref=e894]: workspace_premium
+              - generic [ref=e895]: 시즌 패스
+              - generic [ref=e896]: Lv.7 · 12일
+          - generic [ref=e897]:
+            - generic [ref=e898]:
+              - generic [ref=e899]: home
+              - generic [ref=e900]: 홈
+            - generic [ref=e901]:
+              - generic [ref=e902]: flag
+              - generic [ref=e903]: 스테이지
+            - generic [ref=e904]:
+              - generic [ref=e905]: grid_view
+              - generic [ref=e906]: 콘텐츠
+            - generic [ref=e907]:
+              - generic [ref=e908]: kitchen
+              - generic [ref=e909]: 가전
+            - generic [ref=e910]:
+              - generic [ref=e911]: groups
+              - generic [ref=e912]: 편성
+            - generic [ref=e913]:
+              - generic [ref=e914]: auto_awesome
+              - generic [ref=e915]: 소환
+            - generic [ref=e916]:
+              - generic [ref=e917]: storefront
+              - generic [ref=e918]: 상점
+          - generic [ref=e919]: 9:41
+        - generic [ref=e923]: "핵심 생각: 현재 구조(7탭, 스테이지 중심)를 지키면서 정리한 안입니다. 방은 위쪽 카드로 줄이고, 챕터 진행과 출동 버튼, 콘텐츠 3칸을 한눈에 보여 줍니다.장점 개발 변경이 적고 모든 기능이 한 화면에 보입니다. 단점 방과 캐릭터가 작아 수집의 재미가 줄고, 7탭은 한 칸이 55pt라 글자가 빽빽합니다."
+      - generic [ref=e924]:
+        - generic [ref=e925]:
+          - generic [ref=e926]:
+            - text: "추천:"
+            - link "1a" [ref=e927] [cursor=pointer]:
+              - /url: "#1a"
+          - generic [ref=e928]: 브리프의 중심인 “따뜻한 방과 SD 캐릭터”를 가장 크게 보여 주고, 방치 성장 게임에서 매일 반복하는 행동(수령 → 출동)을 엄지 영역에 모았습니다.
+          - generic [ref=e929]:
+            - text: 5탭 묶음은 하위 탭만 추가하면 되므로 기능은 그대로 남습니다. 7탭 유지가 꼭 필요하면
+            - link "1b" [ref=e930] [cursor=pointer]:
+              - /url: "#1b"
+            - text: 의 하단 바를
+            - link "1a" [ref=e931] [cursor=pointer]:
+              - /url: "#1a"
+            - text: 에 그대로 붙일 수 있습니다(방 영역 높이는 동일).
+        - generic [ref=e932]:
+          - generic [ref=e933]: 현재 → 시안 비교
+          - generic [ref=e934]: "· 첫 화면: 스테이지 표 → 방 + 캐릭터, 스테이지는 출동 버튼과 탭으로 이동"
+          - generic [ref=e935]: "· 재화: 한 줄 텍스트 → 상단 아이콘 칩(큰 수는 1.24M처럼 축약)"
+          - generic [ref=e936]: "· 잠긴 스테이지: 옅은 색 → 회색 + 자물쇠 아이콘"
+          - generic [ref=e937]: · 시작 팝업 → 위쪽 브리핑 + 아래 시작 버튼, 전장이 가려지지 않음
+          - generic [ref=e938]: · 오른쪽 위 작은 버튼 → 일시정지는 왼쪽 위, 배속은 오른쪽 위(44pt), 나가기는 일시정지 메뉴 안으로
+          - generic [ref=e939]: · 전력 막대 → 카드 바로 위로 이동, 카드마다 비용과 상태 표시
+          - generic [ref=e940]: · 가전 조작 → 전장 위 팝업 대신 하단 동작 패널
+    - generic [ref=e941]: 추천 방향 상세 — 전투 HUD
+    - generic [ref=e942]:
+      - generic [ref=e943]:
+        - generic [ref=e944]:
+          - link "1c" [ref=e945] [cursor=pointer]:
+            - /url: "#1c"
+          - generic [ref=e946]: 전투 HUD · 브리핑 → 전투
+          - generic [ref=e947]: · 인터랙티브 시뮬레이션
+        - generic [ref=e949]:
+          - generic [ref=e950]:
+            - generic [ref=e951]:
+              - generic [ref=e952]: 1-3 거실
+              - generic [ref=e953]: 웨이브 10 · 먼지 30
+            - generic [ref=e954]: 현관·창문 두 곳에서 먼지가 들어와요. 소파까지 오지 못하게 막으세요.
+          - generic [ref=e955]:
+            - generic [ref=e956] [cursor=pointer]
+            - generic [ref=e957] [cursor=pointer]
+            - generic [ref=e958] [cursor=pointer]
+            - generic [ref=e959] [cursor=pointer]: 현관
+            - generic [ref=e961] [cursor=pointer]
+            - generic [ref=e962] [cursor=pointer]
+            - generic [ref=e963] [cursor=pointer]
+            - generic [ref=e964] [cursor=pointer]
+            - generic [ref=e965] [cursor=pointer]
+            - generic [ref=e966] [cursor=pointer]
+            - generic [ref=e967] [cursor=pointer]
+            - generic [ref=e968] [cursor=pointer]
+            - generic [ref=e969] [cursor=pointer]
+            - generic [ref=e970] [cursor=pointer]
+            - generic [ref=e971] [cursor=pointer]: 창문
+            - generic [ref=e973] [cursor=pointer]
+            - generic [ref=e974] [cursor=pointer]
+            - generic [ref=e975] [cursor=pointer]
+            - generic [ref=e976] [cursor=pointer]
+            - generic [ref=e977] [cursor=pointer]
+            - generic [ref=e978] [cursor=pointer]
+            - generic [ref=e979] [cursor=pointer]
+            - generic [ref=e980] [cursor=pointer]
+            - generic [ref=e981] [cursor=pointer]
+            - generic [ref=e982] [cursor=pointer]
+            - generic [ref=e983] [cursor=pointer]
+            - generic [ref=e984] [cursor=pointer]
+            - generic [ref=e985] [cursor=pointer]
+            - generic [ref=e986] [cursor=pointer]
+            - generic [ref=e987] [cursor=pointer]
+            - generic [ref=e988] [cursor=pointer]
+            - generic [ref=e989] [cursor=pointer]
+            - generic [ref=e990] [cursor=pointer]
+            - generic [ref=e991] [cursor=pointer]
+            - generic [ref=e992] [cursor=pointer]
+            - generic [ref=e993] [cursor=pointer]
+            - generic [ref=e994] [cursor=pointer]
+            - generic [ref=e995] [cursor=pointer]
+            - generic [ref=e996] [cursor=pointer]
+            - generic [ref=e997] [cursor=pointer]
+            - generic [ref=e998] [cursor=pointer]
+            - generic [ref=e999] [cursor=pointer]
+            - generic [ref=e1000] [cursor=pointer]
+            - generic [ref=e1001] [cursor=pointer]
+            - generic [ref=e1002] [cursor=pointer]
+            - generic [ref=e1003] [cursor=pointer]
+            - generic [ref=e1004] [cursor=pointer]
+            - generic [ref=e1005] [cursor=pointer]
+            - generic [ref=e1006] [cursor=pointer]
+            - generic [ref=e1007] [cursor=pointer]
+            - generic [ref=e1008] [cursor=pointer]
+            - generic [ref=e1009] [cursor=pointer]
+            - generic [ref=e1010] [cursor=pointer]
+            - generic [ref=e1011] [cursor=pointer]
+            - generic [ref=e1012] [cursor=pointer]
+            - generic [ref=e1013] [cursor=pointer]
+            - generic [ref=e1014] [cursor=pointer]
+            - generic [ref=e1015] [cursor=pointer]
+            - generic [ref=e1016] [cursor=pointer]
+            - generic [ref=e1017] [cursor=pointer]
+            - generic [ref=e1018] [cursor=pointer]
+            - generic [ref=e1019] [cursor=pointer]
+            - generic [ref=e1020] [cursor=pointer]
+            - generic [ref=e1021] [cursor=pointer]
+            - generic [ref=e1022] [cursor=pointer]
+            - generic [ref=e1023] [cursor=pointer]
+            - generic [ref=e1024] [cursor=pointer]
+            - generic [ref=e1025] [cursor=pointer]: 소파
+            - generic [ref=e1027] [cursor=pointer]
+            - generic [ref=e1028] [cursor=pointer]
+            - generic [ref=e1029] [cursor=pointer]:
+              - generic [ref=e1030]: 청소기
+              - generic [ref=e1032]: Lv2
+            - generic [ref=e1033] [cursor=pointer]:
+              - generic [ref=e1034]: 레인지
+              - generic [ref=e1036]: Lv1
+            - generic [ref=e1039] [cursor=pointer]:
+              - generic [ref=e1040]: 선풍기
+              - generic [ref=e1042]: Lv1
+              - generic [ref=e1043]: power
+          - generic [ref=e1044]:
+            - generic [ref=e1045]:
+              - generic [ref=e1046]:
+                - generic [ref=e1047]: ★
+                - text: 클리어
+              - generic [ref=e1048]:
+                - generic [ref=e1049]: ★
+                - text: 청결도 70%↑
+              - generic [ref=e1050]:
+                - generic [ref=e1051]: ★
+                - text: 과열 0회 (추측)
+            - generic [ref=e1052]: 먼지뭉치 ×24털뭉치 ×6 (가칭)
+            - generic [ref=e1055]:
+              - generic [ref=e1056] [cursor=pointer]:
+                - generic [ref=e1057]: groups
+                - text: 편성 변경
+              - generic [ref=e1058] [cursor=pointer]: 작전 시작
+          - generic: 9:41
+      - generic [ref=e1060]:
+        - generic [ref=e1061]: 핵심 상호작용
+        - generic [ref=e1062]:
+          - generic [ref=e1063]: "1"
+          - generic [ref=e1064]: 브리핑이 전장을 가리지 않음. 설명은 위쪽 HUD 자리, 시작 버튼은 아래 카드 자리에 둡니다. 경로는 주황 테두리로 미리 보여 줍니다.
+          - generic [ref=e1065]: "2"
+          - generic [ref=e1066]: 탭 → 탭 배치. 카드를 누르면 놓을 수 있는 칸만 초록 +로 남고 나머지는 흐려집니다. 드래그가 아니라서 손가락이 목표 칸을 가리지 않습니다. 드래그는 보조 방식으로 두되, 미리보기를 손가락 위 1칸에 띄우는 것을 권장합니다(추측).
+          - generic [ref=e1067]: "3"
+          - generic [ref=e1068]: 카드 하나로 상태 파악. 일반 · 선택(위로 올라옴 + 주황 테두리) · 전력 부족(흑백 + 빨간 비용) · 재배치 대기(초 단위 숫자 + 노란 진행 막대) · 잠금. 사용할 수 없는 카드를 누르면 이유를 알려 줍니다.
+          - generic [ref=e1069]: "4"
+          - generic [ref=e1070]: 배치한 가전은 하단 패널에서 조작. 전장 위 팝업 대신 카드 줄이 강화·멀티탭·철수 패널로 바뀝니다. 전장에는 사거리 원만 표시됩니다.
+          - generic [ref=e1071]: "5"
+          - generic [ref=e1072]: 과열. 머리 위 온도 막대(주황 → 빨강) → 빨간 불꽃 배지 + 흑백 처리 → 냉각 후 복귀. 전자레인지에만 적용(규칙 추측).
+          - generic [ref=e1073]: "6"
+          - generic [ref=e1074]: 일시정지는 왼쪽 위, 나가기는 메뉴 안으로. 나가기는 일시정지 메뉴 맨 아래 글자 버튼으로 옮겨 실수를 막습니다.
+        - generic [ref=e1075]: "추측 표시: 멀티탭 = 배치한 가전에 연결해 전력 회복을 높이는 소모 아이템으로 가정했습니다(남은 개수 2). 털뭉치·별 조건·전력 상한 1,200W·회복량도 가정값입니다. 실제 규칙을 알려 주시면 맞추겠습니다."
+        - generic [ref=e1076]: "눌러 보기: 작전 시작 → 카드 → 칸 · 배치한 가전 → 강화/멀티탭/철수 · 배속 · 일시정지"
+    - generic [ref=e1077]: 공통 상태 표현
+    - generic [ref=e1079]:
+      - generic [ref=e1080]:
+        - link "1d" [ref=e1081] [cursor=pointer]:
+          - /url: "#1d"
+        - generic [ref=e1082]: 상태 보드
+        - generic [ref=e1083]: · 버튼 / 카드 / 칸 / 등급 / 숫자 · 긴 글자
+      - generic [ref=e1084]:
+        - generic [ref=e1085]:
+          - generic [ref=e1086]: 버튼 6가지 상태 (기본 버튼, 높이 56)
+          - generic [ref=e1087]:
+            - generic [ref=e1088]:
+              - generic [ref=e1089]: 출동
+              - generic [ref=e1090]: 일반
+            - generic [ref=e1091]:
+              - generic [ref=e1092]: 출동
+              - generic [ref=e1093]: 눌림 (−3px, 그림자 축소)
+            - generic [ref=e1094]:
+              - generic [ref=e1095]: 선택됨
+              - generic [ref=e1096]: 선택
+            - generic [ref=e1097]:
+              - generic [ref=e1098]: 출동
+              - generic [ref=e1099]: 비활성 (조건 미충족)
+            - generic [ref=e1100]:
+              - generic [ref=e1101]:
+                - generic [ref=e1102]: lock
+                - text: Lv.10 개방
+              - generic [ref=e1103]: 잠금 (해금 조건 표시)
+            - generic [ref=e1104]:
+              - generic [ref=e1105]: 수령
+              - generic [ref=e1107]: 수령 가능 (초록 + 빨간 점)
+        - generic [ref=e1108]:
+          - generic [ref=e1109]:
+            - generic [ref=e1110]: 배치 카드
+            - generic [ref=e1111]:
+              - generic [ref=e1112]:
+                - generic [ref=e1113]:
+                  - generic [ref=e1115]: 로봇청소기
+                  - generic [ref=e1116]: 200W
+                - generic [ref=e1117]: 일반
+              - generic [ref=e1118]:
+                - generic [ref=e1119]:
+                  - generic [ref=e1121]: 로봇청소기
+                  - generic [ref=e1122]: 칸 선택
+                - generic [ref=e1123]: 선택
+              - generic [ref=e1124]:
+                - generic [ref=e1125]:
+                  - generic [ref=e1127]: 전자레인지
+                  - generic [ref=e1128]: 400W
+                - generic [ref=e1129]: 전력 부족
+              - generic [ref=e1130]:
+                - generic [ref=e1132]:
+                  - generic [ref=e1133]: "6"
+                  - generic [ref=e1134]: 재배치 대기
+                - generic [ref=e1136]: 재배치 대기
+              - generic [ref=e1137]:
+                - generic [ref=e1138]:
+                  - generic [ref=e1139]: lock
+                  - generic [ref=e1140]: 편성Lv.10
+                - generic [ref=e1141]: 슬롯 잠금
+          - generic [ref=e1142]:
+            - generic [ref=e1143]: 전장 칸 · 가전
+            - generic [ref=e1144]:
+              - generic [ref=e1145]:
+                - generic [ref=e1146]: add
+                - generic [ref=e1147]: 배치 가능
+              - generic [ref=e1148]:
+                - generic [ref=e1149]: block
+                - generic [ref=e1150]: 배치 불가 (누른 순간)
+              - generic [ref=e1151]: 선택 중 흐림
+              - generic [ref=e1154]: 선택된 가전
+              - generic [ref=e1158]:
+                - generic [ref=e1159]: local_fire_department
+                - generic [ref=e1162]: 과열
+              - generic [ref=e1163]:
+                - generic [ref=e1164]: power
+                - generic [ref=e1167]: 멀티탭 연결
+        - generic [ref=e1168]:
+          - generic [ref=e1169]:
+            - generic [ref=e1170]: 등급 · 미보유 (가전 카드 예시)
+            - generic [ref=e1171]:
+              - generic [ref=e1172]: "N"
+              - generic [ref=e1175]: R
+              - generic [ref=e1178]: SR
+              - generic [ref=e1181]: SSR
+              - generic [ref=e1184]:
+                - generic [ref=e1186]: 미보유
+                - generic [ref=e1187]: SR
+            - generic [ref=e1188]: 등급은 색 + 글자로 함께 구분(색맹 대응) · 미보유는 실루엣 + 점선
+          - generic [ref=e1189]:
+            - generic [ref=e1190]: 큰 숫자 · 긴 한글
+            - generic [ref=e1191]:
+              - generic [ref=e1192]: 9,999
+              - generic [ref=e1193]: 1만 미만은 쉼표로 전체 표기
+              - generic [ref=e1194]: 12.3K
+              - generic [ref=e1195]: "1만 이상: K / M / B, 유효숫자 3자리"
+              - generic [ref=e1196]: 1.24M
+              - generic [ref=e1197]: 길게 누르면 1,240,512 전체 표시
+            - generic [ref=e1198]: 초고속 듀얼 사이클론 청소기
+            - generic [ref=e1201]: "카드: 1줄 말줄임 · 상세 화면: 최대 2줄 후 TMP 자동 축소(최소 −2pt)"
+    - paragraph [ref=e1202]:
+      - text: "다음 단계(피드백 후): 가전 상세 · 편성 · 소환 · 상점 · 패스 · 결과 화면. 예시 요청: “"
+      - link "1a" [ref=e1203] [cursor=pointer]:
+        - /url: "#1a"
+      - text: 로 확정, 7탭 유지” · “전투 카드 6장 버전도” · “멀티탭 실제 규칙은 ○○야”

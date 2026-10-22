@@ -1,0 +1,115 @@
+path	x	y	w	h	color	fs	text	ink
+SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport	0.0	76.0	430.0	778.0	#00000000			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Head/Title	15.5	89.6	42.0	38.0	#1D2226FF	24.0	편성	15.5,103.6,36.9,24.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	15.5	89.6	42.0	38.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Head/Count	60.5	92.6	75.0	35.0	#5D6871FF	12.0	4/6	60.5,109.6,19.0,18.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	92.6	75.0	35.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot0	15.5	143.6	40.0	62.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot0/Outline	15.5	143.6	40.0	62.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot0/Portrait	18.5	148.6	34.0	34.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot0/Name	16.5	182.6	38.0	19.0	#1D2226FF	12.5	청소기	21.1,185.8,28.8,12.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot0/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	16.5	182.6	38.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot1	87.1	143.6	40.0	62.0	#DCE9F7FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot1/Outline	87.1	143.6	40.0	62.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot1/Portrait	90.1	148.6	34.0	34.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot1/Name	88.1	182.6	38.0	19.0	#1D2226FF	12.5	에어컨	92.7,185.8,28.8,12.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot1/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	88.1	182.6	38.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot2	158.7	143.6	40.0	62.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot2/Outline	158.7	143.6	40.0	62.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot2/Portrait	161.7	148.6	34.0	34.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot2/Name	159.7	182.6	38.0	19.0	#1D2226FF	12.5	선풍기	164.3,185.8,28.8,12.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot2/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	159.7	182.6	38.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot3	230.3	143.6	40.0	62.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot3/Outline	230.3	143.6	40.0	62.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot3/Portrait	233.3	148.6	34.0	34.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot3/Name	231.3	182.6	38.0	19.0	#1D2226FF	12.5	발전기	235.9,185.8,28.8,12.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot3/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	231.3	182.6	38.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot4	301.9	149.2	38.0	50.7	#00000000			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot4/Outline	301.9	149.2	38.0	50.7	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot4/Portrait	303.9	154.2	34.0	34.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot4/Name	302.9	188.2	36.0	19.0	#5D6871FF	12.5	빈 슬롯	304.7,191.5,32.5,12.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot4/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	302.9	188.2	36.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot5	371.5	149.2	38.0	50.7	#00000000			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot5/Outline	371.5	149.2	38.0	50.7	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot5/Portrait	373.5	154.2	34.0	34.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot5/Name	372.5	188.2	36.0	19.0	#5D6871FF	12.5	빈 슬롯	374.3,191.5,32.5,12.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Slots/Slot5/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	372.5	188.2	36.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Note/Text	15.5	221.6	398.9	38.0	#5D6871FF	12.0	슬롯을 누르면 빠지고, 아래 가전을 누르면 들어가요. 바닥에 서는 근접 	15.5,221.6,390.9,36.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	15.5	221.6	398.9	38.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	15.5	221.6	398.9	38.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)	15.5	271.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic	16.5	272.6	92.0	92.0	#E3E8ECFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic/Portrait	22.5	278.6	80.0	80.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Outline	15.5	271.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Rarity	21.5	274.6	40.0	18.0	#7D8B96FF	11.0	R	21.5,274.6,7.3,16.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name	17.5	365.6	90.0	19.0	#1D2226FF	14.0	청소기	46.4,368.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	17.5	365.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Sub	17.5	383.6	90.0	19.0	#5D6871FF	10.5	Lv.1	52.8,385.2,19.4,15.8
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag	77.3	275.6	28.3	16.9	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag/Text	82.1	276.6	18.5	15.0	#F7F9FAFF	10.0	편성	82.1,276.6,19.2,15.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)	117.0	271.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic	118.0	272.6	92.0	92.0	#DCE9F7FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic/Portrait	124.0	278.6	80.0	80.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Outline	117.0	271.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Rarity	123.0	274.6	40.0	18.0	#3D8BD9FF	11.0	SR	123.0,274.6,14.0,16.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name	119.0	365.6	90.0	19.0	#1D2226FF	14.0	에어컨	147.9,368.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	119.0	365.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Sub	119.0	383.6	90.0	19.0	#5D6871FF	10.5	Lv.1	154.3,385.2,19.4,15.8
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag	178.8	275.6	28.3	16.9	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag/Text	183.6	276.6	18.5	15.0	#F7F9FAFF	10.0	편성	183.6,276.6,19.2,15.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)	218.5	271.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic	219.5	272.6	92.0	92.0	#E3E8ECFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic/Portrait	225.5	278.6	80.0	80.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Outline	218.5	271.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Rarity	224.5	274.6	40.0	18.0	#7D8B96FF	11.0	R	224.5,274.6,7.3,16.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name	220.5	365.6	90.0	19.0	#1D2226FF	14.0	선풍기	249.4,368.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	220.5	365.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Sub	220.5	383.6	90.0	19.0	#5D6871FF	10.5	Lv.1	255.8,385.2,19.4,15.8
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag	280.3	275.6	28.3	16.9	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag/Text	285.1	276.6	18.5	15.0	#F7F9FAFF	10.0	편성	285.1,276.6,19.2,15.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)	320.0	271.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic	321.0	272.6	92.0	92.0	#E3E8ECFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Pic/Portrait	327.0	278.6	80.0	80.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Outline	320.0	271.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Rarity	326.0	274.6	40.0	18.0	#7D8B96FF	11.0	R	326.0,274.6,7.3,16.5
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name	322.0	365.6	90.0	19.0	#1D2226FF	14.0	발전기	350.9,368.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	322.0	365.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/Sub	322.0	383.6	90.0	19.0	#5D6871FF	10.5	Lv.1	357.3,385.2,19.4,15.8
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag	381.8	275.6	28.3	16.9	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Deck/Viewport/Column/Pool/UnitCard(Clone)/DeckTag/Text	386.6	276.6	18.5	15.0	#F7F9FAFF	10.0	편성	386.6,276.6,19.2,15.0
+SafeArea/Column/Lobby/TopBar/Plate	16.0	12.0	398.0	64.0	#1D2226FF			
+SafeArea/Column/Lobby/TopBar/Kicker	30.0	25.0	150.0	15.0	#FF9A3CFF	10.0	O P E R A T I O N	30.0,25.0,74.5,15.0
+SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트 제로	30.0,39.0,99.4,24.0
+SafeArea/Column/Lobby/TopBar/Brand/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	30.0	32.8	170.0	36.4	#FFFFFFFF			
+SafeArea/Column/Lobby/TopBar/Coin/Caption	198.0	24.0	78.0	15.0	#8D99A2FF	10.0	코인	198.0,24.0,17.8,15.0
+SafeArea/Column/Lobby/TopBar/Coin/Icon	198.0	44.0	20.0	20.0	#FFFFFFFF			
+SafeArea/Column/Lobby/TopBar/Coin/Value	222.0	33.9	54.0	30.1	#FF9A3CFF	20.0	2,000	222.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/Crystal/Caption	292.0	24.0	108.0	15.0	#8D99A2FF	10.0	크리스탈	292.0,24.0,35.7,15.0
+SafeArea/Column/Lobby/TopBar/Crystal/Icon	292.0	44.0	20.0	20.0	#FFFFFFFF			
+SafeArea/Column/Lobby/TopBar/Crystal/Value	316.0	33.9	84.0	30.1	#7FC4F5FF	20.0	1,500	316.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/TopUp	378.0	33.0	22.0	22.0	#7FC4F5FF			
+SafeArea/Column/Lobby/TopBar/TopUp/Plus	378.0	33.0	22.0	22.0	#1D2226FF	11.4	+	385.6,35.4,6.9,17.2
+SafeArea/Column/Lobby/BottomNav	0.0	854.0	430.0	78.0	#1D2226FF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0	16.0	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0/Content/Icon	30.6	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0/Content/Label	16.0	899.5	55.1	17.5	#8D99A2FF	11.5	홈	38.4,899.6,10.3,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab1	73.1	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab1/Content/Icon	87.7	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab1/Content/Label	73.1	899.5	55.1	17.5	#8D99A2FF	11.5	스테이지	80.2,899.6,41.0,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab2	130.3	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab2/Content/Icon	144.9	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab2/Content/Label	130.3	899.5	55.1	17.5	#8D99A2FF	11.5	콘텐츠	142.5,899.6,30.8,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab3	187.4	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab3/Content/Icon	202.0	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab3/Content/Label	187.4	899.5	55.1	17.5	#8D99A2FF	11.5	가전	204.7,899.6,20.5,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4	244.6	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4/Content/Indicator	248.6	865.0	47.1	56.0	#2A3136FF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4/Content/Icon	259.1	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4/Content/Label	244.6	899.5	55.1	17.5	#E8EDF0FF	11.5	편성	261.9,899.6,20.5,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab5	301.7	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab5/Content/Icon	316.3	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab5/Content/Label	301.7	899.5	55.1	17.5	#8D99A2FF	11.5	소환	319.0,899.6,20.5,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab6	358.9	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab6/Content/Icon	373.4	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab6/Content/Label	358.9	899.5	55.1	17.5	#8D99A2FF	11.5	상점	376.2,899.6,20.5,17.2

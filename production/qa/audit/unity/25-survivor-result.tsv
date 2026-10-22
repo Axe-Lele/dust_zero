@@ -1,0 +1,24 @@
+path	x	y	w	h	color	fs	text	ink
+SafeArea/Column/Survivor/SurvivorResult/Shade	0.0	0.0	430.0	932.0	#1D22268C			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card	50.0	302.3	330.0	327.5	#F7F9FAFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/TitleRow/Title	68.0	320.2	294.1	42.0	#1D2226FF	26.0	중간에 나왔어요	68.0,328.2,147.6,26.0
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/TitleRow/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	320.2	294.1	42.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Value	68.0	372.2	87.4	30.0	#1D2226FF	20.0	0:06	68.0,372.2,42.4,30.0
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Caption	68.0	402.2	87.4	22.0	#5D6871FF	13.0	버틴 시간	68.0,403.5,49.4,19.5
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	402.2	87.4	22.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Value	171.3	372.2	87.4	30.0	#1D2226FF	20.0	1	171.3,372.2,12.0,30.0
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Caption	171.3	402.2	87.4	22.0	#5D6871FF	13.0	처치	171.3,403.5,23.2,19.5
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	171.3	402.2	87.4	22.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/레벨/Value	274.7	372.2	87.4	30.0	#1D2226FF	20.0	1	274.7,372.2,12.0,30.0
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/레벨/Caption	274.7	402.2	87.4	22.0	#5D6871FF	13.0	레벨	274.7,403.5,23.2,19.5
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/RewardRow/Reward	68.0	434.2	294.1	56.0	#5D6871FF	13.0	30초 미만이라 보상 없이 끝났어요. 오늘 판 수는 그대로예요.	68.0,434.2,287.2,40.6
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/RewardRow/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	68.0	434.2	294.1	56.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/RewardRow/Reward/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	434.2	294.1	56.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/NoteRow/Note	68.0	500.2	294.1	56.0	#5D6871FF	12.0	오늘 청소 일지 0/100점 · 부품·코인 남은 판 3/3 · 오늘 최고	68.0,500.2,287.9,36.0
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/NoteRow/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	500.2	294.1	56.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/NoteRow/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	68.0	500.2	294.1	56.0	#FFFFFFFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Buttons/Home	68.0	566.2	143.0	48.0	#F7F9FAFF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Buttons/Home/Line	68.0	566.2	143.0	48.0	#C7D0D6FF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Buttons/Home/Content/Label	76.0	574.2	127.0	32.0	#1D2226FF	15.0	로비로	119.4,579.0,40.1,22.5
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Buttons/Retry	219.0	566.2	143.0	48.0	#1D2226FF			
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Buttons/Retry/Content/Label	227.0	574.2	127.0	32.0	#E8EDF0FF	15.0	다시 하기	261.9,579.0,57.1,22.5

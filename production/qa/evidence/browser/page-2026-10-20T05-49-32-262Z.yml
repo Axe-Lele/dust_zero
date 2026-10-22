@@ -1,0 +1,89 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]: 코인
+        - generic [ref=f1e10]: 2,000
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]: 크리스탈
+        - generic [ref=f1e15]:
+          - generic [ref=f1e17]: 1,500
+          - button "크리스탈 충전" [ref=f1e18] [cursor=pointer]: +
+  - generic [ref=f1e493]:
+    - generic [ref=f1e494]:
+      - heading "가전 도감" [level=2] [ref=f1e495]
+      - generic [ref=f1e496]: 보유 4/12
+      - button "일러스트" [ref=f1e497] [cursor=pointer]
+      - button "장비 가방" [ref=f1e498] [cursor=pointer]
+    - generic [ref=f1e499]:
+      - generic [ref=f1e500]: 필터20
+      - generic [ref=f1e502]: 열선20
+      - generic [ref=f1e504]: 칩20
+      - generic [ref=f1e506]: 모터20
+      - generic [ref=f1e508]: 강화석0
+    - generic [ref=f1e510]:
+      - button "SR 에어컨 Lv.1 편성" [ref=f1e511] [cursor=pointer]:
+        - generic [ref=f1e514]: SR
+        - generic [ref=f1e515]: 에어컨
+        - generic [ref=f1e516]: Lv.1
+        - generic [ref=f1e517]: 편성
+      - button "R 청소기 Lv.1 편성" [ref=f1e518] [cursor=pointer]:
+        - generic [ref=f1e521]: R
+        - generic [ref=f1e522]: 청소기
+        - generic [ref=f1e523]: Lv.1
+        - generic [ref=f1e524]: 편성
+      - button "R 선풍기 Lv.1 편성" [ref=f1e525] [cursor=pointer]:
+        - generic [ref=f1e528]: R
+        - generic [ref=f1e529]: 선풍기
+        - generic [ref=f1e530]: Lv.1
+        - generic [ref=f1e531]: 편성
+      - button "R 발전기 Lv.1 편성" [ref=f1e532] [cursor=pointer]:
+        - generic [ref=f1e535]: R
+        - generic [ref=f1e536]: 발전기
+        - generic [ref=f1e537]: Lv.1
+        - generic [ref=f1e538]: 편성
+      - button "SSR 냉장고 미보유" [ref=f1e539] [cursor=pointer]:
+        - generic [ref=f1e542]: SSR
+        - generic [ref=f1e543]: 냉장고
+        - generic [ref=f1e544]: 미보유
+      - button "SSR 세탁기 미보유" [ref=f1e545] [cursor=pointer]:
+        - generic [ref=f1e548]: SSR
+        - generic [ref=f1e549]: 세탁기
+        - generic [ref=f1e550]: 미보유
+      - button "SSR 보일러 미보유" [ref=f1e551] [cursor=pointer]:
+        - generic [ref=f1e554]: SSR
+        - generic [ref=f1e555]: 보일러
+        - generic [ref=f1e556]: 미보유
+      - button "SR 전자레인지 미보유" [ref=f1e557] [cursor=pointer]:
+        - generic [ref=f1e560]: SR
+        - generic [ref=f1e561]: 전자레인지
+        - generic [ref=f1e562]: 미보유
+      - button "SR 컴퓨터 미보유" [ref=f1e563] [cursor=pointer]:
+        - generic [ref=f1e566]: SR
+        - generic [ref=f1e567]: 컴퓨터
+        - generic [ref=f1e568]: 미보유
+      - button "SR 다리미 미보유" [ref=f1e569] [cursor=pointer]:
+        - generic [ref=f1e572]: SR
+        - generic [ref=f1e573]: 다리미
+        - generic [ref=f1e574]: 미보유
+      - button "SR 가스레인지 미보유" [ref=f1e575] [cursor=pointer]:
+        - generic [ref=f1e578]: SR
+        - generic [ref=f1e579]: 가스레인지
+        - generic [ref=f1e580]: 미보유
+      - button "R 로봇청소기 미보유" [ref=f1e581] [cursor=pointer]:
+        - generic [ref=f1e584]: R
+        - generic [ref=f1e585]: 로봇청소기
+        - generic [ref=f1e586]: 미보유
+    - paragraph [ref=f1e587]: 가전을 누르면 레벨 업 · 돌파 · 장비를 관리할 수 있어요. 같은 가전을 다시 뽑으면 그 가전 조각이 쌓여요.
+  - navigation "메뉴" [ref=f1e56]:
+    - tablist [ref=f1e57]:
+      - tab "홈" [ref=f1e58] [cursor=pointer]
+      - tab "스테이지" [ref=f1e60] [cursor=pointer]
+      - tab "콘텐츠" [ref=f1e62] [cursor=pointer]
+      - tab "가전" [active] [selected] [ref=f1e64] [cursor=pointer]
+      - tab "편성" [ref=f1e66] [cursor=pointer]
+      - tab "소환" [ref=f1e68] [cursor=pointer]
+      - tab "상점" [ref=f1e70] [cursor=pointer]

@@ -1,0 +1,25 @@
+- generic [ref=f1e114]:
+  - banner [ref=f1e115]:
+    - generic [ref=f1e116]:
+      - generic [ref=f1e117]: MODE대청소
+      - generic [ref=f1e118]:
+        - button "일시정지" [ref=f1e119] [cursor=pointer]
+        - button "나가기" [ref=f1e120] [cursor=pointer]
+    - generic [ref=f1e121]:
+      - generic [ref=f1e122]:
+        - generic [ref=f1e123]: 내구도
+        - generic [ref=f1e124]: "100"
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128]: Lv.1 · 버틴 시간 · 다음 1:00
+        - generic [ref=f1e129]: 0:01
+      - generic [ref=f1e131]:
+        - generic [ref=f1e132]: 처치
+        - generic [ref=f1e133]: "0"
+  - generic "대청소 방" [ref=f1e135]
+  - generic [ref=f1e136]:
+    - generic [ref=f1e137]: 리더 1
+    - generic [ref=f1e140]: 빈 자리
+    - generic [ref=f1e142]: 빈 자리
+    - generic [ref=f1e144]: 빈 자리
+    - generic [ref=f1e146]: 빈 자리
+  - paragraph [ref=f1e148]: 화면을 끌어서 움직여요(키보드는 WASD·방향키). 공격은 자동이에요.

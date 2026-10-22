@@ -1,0 +1,77 @@
+path	x	y	w	h	color	fs	text	ink
+SafeArea/Column/Battle/Hud	16.0	12.0	398.0	113.0	#1D2226FF			
+SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	34.0	30.0	#8D99A2FF	13.0	협동	28.0,27.3,23.2,19.5
+SafeArea/Column/Battle/Hud/Top/StageName	68.0	22.0	147.0	30.0	#E8EDF0FF	19.0	급한 청소기	68.0,27.5,78.7,19.0
+SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	22.0	147.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Hud/Top/Ctrls/Speed	241.6	12.7	33.2	48.5	#1D2226FF			
+SafeArea/Column/Battle/Hud/Top/Ctrls/Speed/Content/Label	249.6	18.5	17.2	37.0	#E8EDF0FF	12.0	1×	250.6,28.0,16.1,18.0
+SafeArea/Column/Battle/Hud/Top/Ctrls/Pause	280.9	12.7	63.3	48.5	#1D2226FF			
+SafeArea/Column/Battle/Hud/Top/Ctrls/Pause/Content/Label	288.9	18.5	47.3	37.0	#E8EDF0FF	12.0	일시정지	289.9,28.0,46.2,18.0
+SafeArea/Column/Battle/Hud/Top/Ctrls/Exit	350.2	12.7	51.8	48.5	#1D2226FF			
+SafeArea/Column/Battle/Hud/Top/Ctrls/Exit/Content/Label	358.2	18.5	35.8	37.0	#E8EDF0FF	12.0	나가기	359.2,28.0,34.6,18.0
+SafeArea/Column/Battle/Hud/Readouts/Life/Label	28.0	69.0	65.8	15.0	#8D99A2FF	10.0	고리 먼지 / 40	28.0,69.0,66.6,15.0
+SafeArea/Column/Battle/Hud/Readouts/Life/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	28.0	69.0	65.8	15.0	#FFFFFFFF			
+SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	71.0	65.8	44.0	#FF6B5EFF	26.0	0	28.0,73.5,15.6,39.0
+SafeArea/Column/Battle/Hud/Readouts/Power/Label	105.8	69.0	233.3	15.0	#8D99A2FF	10.0	전력 · 초당 +100W	105.8,69.0,89.3,15.0
+SafeArea/Column/Battle/Hud/Readouts/Power/Value	105.8	71.0	233.3	44.0	#FF9A3CFF	26.0	300W	105.8,73.5,71.5,39.0
+SafeArea/Column/Battle/Hud/Readouts/Power/Meter	105.8	109.0	233.3	4.0	#5A3A1EFF			
+SafeArea/Column/Battle/Hud/Readouts/Remain/Label	351.0	69.0	51.0	15.0	#8D99A2FF	10.0	버틴 웨이브	351.0,69.0,51.8,15.0
+SafeArea/Column/Battle/Hud/Readouts/Remain/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	351.0	69.0	51.0	15.0	#FFFFFFFF			
+SafeArea/Column/Battle/Hud/Readouts/Remain/Value	351.0	71.0	51.0	44.0	#FF9A3CFF	26.0	0	386.4,73.5,15.6,39.0
+SafeArea/Column/Battle/CoopBars/PartnerBar	12.0	721.3	406.0	51.3	#EAF3FCFF			
+SafeArea/Column/Battle/CoopBars/PartnerBar/Face	21.0	726.9	40.0	40.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/PartnerBar/Face/Icon	25.0	730.9	32.0	32.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/PartnerBar/Name	70.0	726.3	100.0	22.8	#1F4E80FF	15.0	급한 청소기	70.0,734.1,62.1,15.0
+SafeArea/Column/Battle/CoopBars/PartnerBar/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	70.0	726.3	100.0	22.8	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/PartnerBar/Style	174.0	726.3	86.0	22.8	#3D6A99FF	11.0	소환 몰빵형	174.0,732.6,56.3,16.5
+SafeArea/Column/Battle/CoopBars/PartnerBar/Style/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	174.0	726.3	86.0	22.8	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/PartnerBar/Stats	259.0	726.3	150.0	22.8	#1F4E80FF	12.0	300W · 가전 0	334.7,731.1,74.3,18.0
+SafeArea/Column/Battle/CoopBars/PartnerBar/Say	70.0	749.1	339.0	18.4	#5D6871FF	12.0	준비 중 · 위쪽은 파트너 자리예요	70.0,749.3,157.2,18.0
+SafeArea/Column/Battle/CoopBars/PartnerBar/Say/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	70.0	749.1	339.0	18.4	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Summon	12.0	778.5	308.0	52.0	#FF9A3CFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Summon/Content/Label	20.0	786.5	292.0	36.0	#1D2226FF	21.0	가전 소환	130.6,794.0,70.8,21.0
+SafeArea/Column/Battle/CoopBars/ControlBar/Summon/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	20.0	786.5	292.0	36.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Summon/Cost	236.0	792.4	74.0	24.3	#1D2226FF	16.0	100W	266.0,792.5,44.0,24.0
+SafeArea/Column/Battle/CoopBars/ControlBar/Reroll	326.0	778.5	92.0	52.0	#F7F9FAFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Reroll/Line	326.0	778.5	92.0	52.0	#C7D0D6FF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Reroll/Content/Label	334.0	786.5	76.0	36.0	#1D2226FF	17.0	바꾸기	352.4,796.0,39.2,17.0
+SafeArea/Column/Battle/CoopBars/ControlBar/Reroll/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	334.0	786.5	76.0	36.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Reroll/Cost	330.0	809.5	84.0	16.0	#5D6871FF	10.5	가전 고르기	347.3,809.6,49.3,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Merge	12.0	836.5	406.0	17.5	#5D6871FF	11.5	고리 위 0/4 · 빈칸을 누르면 소환 자리 · 같은 ★ 두 대를 누르면	54.3,836.6,321.4,17.3
+SafeArea/Column/Battle/CoopBars/ControlBar/Merge/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	12.0	836.5	406.0	17.5	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)	12.0	860.0	97.8	62.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Line	12.0	860.0	97.8	62.0	#C7D0D6FF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Inner	13.5	861.5	94.7	59.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Icon	45.9	863.0	30.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level	12.0	886.0	97.8	16.0	#1D2226FF	10.5	강화 0	46.0,886.1,30.4,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	12.0	886.0	97.8	16.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Cost	12.0	902.0	97.8	16.0	#5D6871FF	10.5	200W	46.4,902.1,28.9,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)	114.8	860.0	97.7	62.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Line	114.8	860.0	97.7	62.0	#C7D0D6FF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Inner	116.3	861.5	94.7	59.0	#DCEBFAFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Icon	148.6	863.0	30.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level	114.8	886.0	97.7	16.0	#1D2226FF	10.5	강화 0	148.8,886.1,30.4,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	114.8	886.0	97.7	16.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Cost	114.8	902.0	97.7	16.0	#5D6871FF	10.5	200W	149.2,902.1,28.9,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)	217.5	860.0	97.8	62.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Line	217.5	860.0	97.8	62.0	#C7D0D6FF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Inner	219.0	861.5	94.7	59.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Icon	251.4	863.0	30.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level	217.5	886.0	97.8	16.0	#1D2226FF	10.5	강화 0	251.5,886.1,30.4,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	217.5	886.0	97.8	16.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Cost	217.5	902.0	97.8	16.0	#5D6871FF	10.5	200W	251.9,902.1,28.9,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)	320.3	860.0	97.8	62.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Line	320.3	860.0	97.8	62.0	#C7D0D6FF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Inner	321.8	861.5	94.7	59.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Icon	354.1	863.0	30.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level	320.3	886.0	97.8	16.0	#1D2226FF	10.5	강화 0	354.3,886.1,30.4,15.8
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Level/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	320.3	886.0	97.8	16.0	#FFFFFFFF			
+SafeArea/Column/Battle/CoopBars/ControlBar/Upgrades/CoopUpgradeCell(Clone)/Cost	320.3	902.0	97.8	16.0	#5D6871FF	10.5	200W	354.7,902.1,28.9,15.8
+SafeArea/Column/Battle/Overlay	0.0	0.0	430.0	932.0	#0D0F12B8			
+SafeArea/Column/Battle/Overlay/Card	50.0	361.0	330.0	210.1	#F7F9FAFF			
+SafeArea/Column/Battle/Overlay/Card/Title	68.0	379.0	294.0	30.1	#1D2226FF	20.0	협동 청소	181.3,384.0,67.4,20.0
+SafeArea/Column/Battle/Overlay/Card/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	379.0	294.0	30.1	#FFFFFFFF			
+SafeArea/Column/Battle/Overlay/Card/Body	68.0	419.0	294.0	78.0	#5D6871FF	13.0	급한 청소기와 함께 거실 러그를 빙글빙글 도는 먼지를 치워요. 고리 위 	69.4,419.0,291.2,78.0
+SafeArea/Column/Battle/Overlay/Card/Body/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	419.0	294.0	78.0	#FFFFFFFF			
+SafeArea/Column/Battle/Overlay/Card/Primary	219.0	509.0	143.0	46.0	#FF9A3CFF			
+SafeArea/Column/Battle/Overlay/Card/Primary/Label	219.0	509.0	143.0	46.0	#FFFFFFFF	15.0	시작	277.1,520.8,26.8,22.5

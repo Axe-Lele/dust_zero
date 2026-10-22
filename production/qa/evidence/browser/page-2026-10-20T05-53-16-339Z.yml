@@ -1,0 +1,153 @@
+- generic [ref=f3e3]:
+  - banner [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - generic [ref=f3e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]:
+        - generic [ref=f3e9]: 코인
+        - generic [ref=f3e10]: 2,000
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]: 크리스탈
+        - generic [ref=f3e15]:
+          - generic [ref=f3e17]: 1,500
+          - button "크리스탈 충전" [ref=f3e18] [cursor=pointer]: +
+  - generic [ref=f3e19]:
+    - generic [ref=f3e20]:
+      - heading "콘텐츠" [level=2] [ref=f3e21]
+      - generic [ref=f3e22]: 스테이지와 따로 즐기는 모드
+    - article [ref=f3e23]:
+      - generic [ref=f3e24]:
+        - generic [ref=f3e25]:
+          - generic [ref=f3e26]: 선택형 일일 숙제
+          - text: 오늘의 청소 일지
+        - generic [ref=f3e27]: 0/100점
+      - generic [ref=f3e32]:
+        - button "30점 40 —" [disabled] [ref=f3e33]:
+          - generic [ref=f3e34]: 30점
+          - generic [ref=f3e35]: "40"
+          - emphasis [ref=f3e37]: —
+        - button "60점 50 —" [disabled] [ref=f3e38]:
+          - generic [ref=f3e39]: 60점
+          - generic [ref=f3e40]: "50"
+          - emphasis [ref=f3e42]: —
+        - button "100점 60 —" [disabled] [ref=f3e43]:
+          - generic [ref=f3e44]: 100점
+          - generic [ref=f3e45]: "60"
+          - emphasis [ref=f3e47]: —
+      - paragraph [ref=f3e48]: 어디서든 모아요 · 대청소 버틴 1분 +10 · 협동 막은 웨이브 +3 · 리그 이긴 라운드 +7(완주 +12)
+    - article [ref=f3e49]:
+      - generic [ref=f3e50]:
+        - generic [ref=f3e52]:
+          - generic [ref=f3e53]: 무한 버티기
+          - generic [ref=f3e54]: 대청소 모드
+        - generic [ref=f3e55]:
+          - generic "청소기" [ref=f3e56]
+          - generic "로봇청소기" [ref=f3e58]
+          - generic "에어컨" [ref=f3e60]
+      - paragraph [ref=f3e62]: 리더 하나를 움직여 쓰러질 때까지 버텨요. 공격은 자동이에요.
+      - list [ref=f3e63]:
+        - listitem [ref=f3e64]:
+          - generic [ref=f3e65]: 성장
+          - text: 레벨업마다 편성 가전이 동료로 합류 · 짝이 맞으면 협동기
+        - listitem [ref=f3e66]:
+          - generic [ref=f3e67]: 위험
+          - text: 2분마다 보스 · 2분 30초부터 적이 계속 강해짐
+      - generic [ref=f3e68]:
+        - generic [ref=f3e69]:
+          - generic [ref=f3e70]: 청소 일지
+          - generic [ref=f3e71]: 0/100
+        - generic [ref=f3e72]:
+          - generic [ref=f3e73]: 오늘 최고
+          - generic [ref=f3e74]: 0:00
+        - generic [ref=f3e75]:
+          - generic [ref=f3e76]: 역대 최고
+          - generic [ref=f3e77]: 0:00
+      - paragraph [ref=f3e78]: 버틴 1분마다 청소 일지 +10점 · 여러 판에 나눠 모아도 돼요
+      - paragraph [ref=f3e79]: 부품·코인·조각 보상 판 3/3 남음 · 30초 미만은 판 수를 쓰지 않아요
+      - button "입장" [ref=f3e80] [cursor=pointer]
+    - article [ref=f3e81]:
+      - generic [ref=f3e86]:
+        - generic [ref=f3e87]: 봇 파트너 · 랜덤 소환
+        - generic [ref=f3e88]: 협동 청소
+      - paragraph [ref=f3e89]: 칸을 골라 가전을 무작위로 소환하고, 같은 ★ 두 대를 합쳐 키워요. 위는 파트너, 아래는 나. 고리 위 먼지가 40마리가 되면 끝.
+      - list [ref=f3e90]:
+        - listitem [ref=f3e91]:
+          - generic [ref=f3e92]: 파트너
+          - text: 급한 청소기(소환 몰빵형) · 느긋한 냉장고(합치기·강화형)
+        - listitem [ref=f3e93]:
+          - generic [ref=f3e94]: 보상
+          - text: 버틴 웨이브마다 청소 일지 +3 · 코인
+      - generic [ref=f3e95]:
+        - generic [ref=f3e96]:
+          - generic [ref=f3e97]: 소환 몰빵형 최고
+          - generic [ref=f3e98]: 0웨이브
+        - generic [ref=f3e99]:
+          - generic [ref=f3e100]: 합치기·강화형 최고
+          - generic [ref=f3e101]: 0웨이브
+        - generic [ref=f3e102]:
+          - generic [ref=f3e103]: 청소 일지
+          - generic [ref=f3e104]: 0/100
+      - button "1-5를 클리어하면 협동 청소가 열려요." [disabled] [ref=f3e105] [cursor=pointer]
+    - article [ref=f3e106]:
+      - generic [ref=f3e110]:
+        - generic [ref=f3e111]: 1회성 보상 던전 · 30층
+        - generic [ref=f3e112]: 먼지 타워
+      - paragraph [ref=f3e113]: 맨션을 한 층씩 청소해요. 층마다 규칙이 달라서 편성을 바꿔 가며 올라가요.
+      - list [ref=f3e114]:
+        - listitem [ref=f3e115]:
+          - generic [ref=f3e116]: 보상
+          - text: 층마다 첫 클리어 한 번 + 보너스 목표 한 번 · 재도전 무료
+        - listitem [ref=f3e117]:
+          - generic [ref=f3e118]: 성장
+          - text: 키운 가전 레벨·돌파·장비가 그대로 반영돼요
+      - generic [ref=f3e119]:
+        - generic [ref=f3e120]:
+          - generic [ref=f3e121]: 청소한 층
+          - generic [ref=f3e122]: 0/30
+        - generic [ref=f3e123]:
+          - generic [ref=f3e124]: 다음 큰 보상
+          - generic [ref=f3e125]: 5층
+        - generic [ref=f3e126]:
+          - generic [ref=f3e127]: 보너스 남음
+          - generic [ref=f3e128]: 0층
+      - paragraph
+      - button "2-5를 클리어하면 먼지 타워가 열려요." [disabled] [ref=f3e129] [cursor=pointer]
+    - article [ref=f3e130]:
+      - generic [ref=f3e134]:
+        - generic [ref=f3e135]: 오토배틀러 · 8라운드
+        - generic [ref=f3e136]: 가전 대청소 리그
+      - paragraph [ref=f3e137]: 상점에서 가전을 사서 판에 놓으면 전투는 자동이에요. 한 판 4~5분.
+      - list [ref=f3e138]:
+        - listitem [ref=f3e139]:
+          - generic [ref=f3e140]: 합체
+          - text: 같은 가전 3장 → ★2, ★2 3장 → ★3(모습이 바뀜)
+        - listitem [ref=f3e141]:
+          - generic [ref=f3e142]: 시너지
+          - text: 같은 계열·역할이 모이면 효과 · 키운 가전은 최대 +30%
+      - generic [ref=f3e143]:
+        - generic [ref=f3e144]:
+          - generic [ref=f3e145]: 브론즈
+          - generic [ref=f3e146]: 0승
+        - generic [ref=f3e147]:
+          - generic [ref=f3e148]: 실버
+          - generic [ref=f3e149]: 잠김
+        - generic [ref=f3e150]:
+          - generic [ref=f3e151]: 골드
+          - generic [ref=f3e152]: 잠김
+      - paragraph [ref=f3e153]: 코인·부품 보상 판 0/3 남음 · 이긴 라운드마다 청소 일지 +7
+      - button "3-5를 클리어하면 가전 대청소 리그가 열려요." [disabled] [ref=f3e154] [cursor=pointer]
+    - article [ref=f3e155]:
+      - generic [ref=f3e157]:
+        - generic [ref=f3e158]: 다음 콘텐츠
+        - generic [ref=f3e159]: 준비 중
+      - paragraph [ref=f3e160]: 새 모드가 열리면 여기에 추가돼요.
+  - navigation "메뉴" [ref=f3e161]:
+    - tablist [ref=f3e162]:
+      - tab "홈" [ref=f3e163] [cursor=pointer]
+      - tab "스테이지" [ref=f3e165] [cursor=pointer]
+      - tab "콘텐츠" [active] [selected] [ref=f3e167] [cursor=pointer]
+      - tab "가전" [ref=f3e169] [cursor=pointer]
+      - tab "편성" [ref=f3e171] [cursor=pointer]
+      - tab "소환" [ref=f3e173] [cursor=pointer]
+      - tab "상점" [ref=f3e175] [cursor=pointer]

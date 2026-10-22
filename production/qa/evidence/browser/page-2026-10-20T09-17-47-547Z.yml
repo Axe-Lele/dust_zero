@@ -1,0 +1,67 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 코인
+        - generic [ref=e10]: 2,000
+      - generic [ref=e13]:
+        - generic [ref=e14]: 크리스탈
+        - generic [ref=e15]:
+          - generic [ref=e17]: 1,500
+          - button "크리스탈 충전" [ref=e18] [cursor=pointer]: +
+  - generic [ref=e174]:
+    - generic [ref=e175]:
+      - button "가전 소환" [pressed] [ref=e176] [cursor=pointer]
+      - button "장비 소환" [ref=e177] [cursor=pointer]
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - heading "겨울맞이 신상 입고" [level=2] [ref=e181]
+          - paragraph [ref=e182]: SSR 보일러가 새로 입고됐어요. 다리미·가스레인지도 함께! 10회 소환은 SR 이상 1개가 확정입니다.
+        - generic [ref=e183]:
+          - generic [ref=e184]: SSR 냉장고
+          - generic [ref=e187]: SSR 세탁기
+          - generic [ref=e190]: SSR 보일러
+        - generic [ref=e193]:
+          - generic [ref=e194]: SSR 3%
+          - generic [ref=e195]: SR 17%
+          - generic [ref=e196]: R 80%
+        - generic [ref=e197]:
+          - button [ref=e198] [cursor=pointer]:
+            - text: 1회 소환
+            - generic [ref=e199]: "150"
+          - button [ref=e201] [cursor=pointer]:
+            - text: 10회 소환
+            - generic [ref=e202]: 1,500
+      - heading "소환 목록" [level=2] [ref=e205]
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - generic [ref=e208]: SSR
+          - generic [ref=e209]: 냉장고 1.00% · 미보유
+          - generic [ref=e210]: 세탁기 1.00% · 미보유
+          - generic [ref=e211]: 보일러 1.00% · 미보유
+        - generic [ref=e212]:
+          - generic [ref=e213]: SR
+          - generic [ref=e214]: 에어컨 3.40%
+          - generic [ref=e215]: 전자레인지 3.40% · 미보유
+          - generic [ref=e216]: 컴퓨터 3.40% · 미보유
+          - generic [ref=e217]: 다리미 3.40% · 미보유
+          - generic [ref=e218]: 가스레인지 3.40% · 미보유
+        - generic [ref=e219]:
+          - generic [ref=e220]: R
+          - generic [ref=e221]: 청소기 20.00%
+          - generic [ref=e222]: 로봇청소기 20.00% · 미보유
+          - generic [ref=e223]: 선풍기 20.00%
+          - generic [ref=e224]: 발전기 20.00%
+  - navigation "메뉴" [ref=e56]:
+    - tablist [ref=e57]:
+      - tab "홈" [ref=e58] [cursor=pointer]
+      - tab "스테이지" [ref=e60] [cursor=pointer]
+      - tab "콘텐츠" [ref=e62] [cursor=pointer]
+      - tab "가전" [ref=e64] [cursor=pointer]
+      - tab "편성" [ref=e66] [cursor=pointer]
+      - tab "소환" [active] [selected] [ref=e68] [cursor=pointer]
+      - tab "상점" [ref=e70] [cursor=pointer]

@@ -1,0 +1,36 @@
+- generic [ref=f1e72]:
+  - banner [ref=f1e73]:
+    - generic [ref=f1e74]:
+      - generic [ref=f1e75]: 1-1거실
+      - generic [ref=f1e76]:
+        - button "1×" [ref=f1e77] [cursor=pointer]
+        - button "일시정지" [ref=f1e78] [cursor=pointer]
+        - button "나가기" [ref=f1e79] [cursor=pointer]
+    - generic [ref=f1e80]:
+      - generic [ref=f1e81]:
+        - generic [ref=f1e82]: 청결도
+        - generic [ref=f1e83]: "10"
+      - generic [ref=f1e84]:
+        - generic [ref=f1e85]: 전력 · 초당 +100W
+        - generic [ref=f1e86]: 600W
+      - generic [ref=f1e89]:
+        - generic [ref=f1e90]: 남은 적
+        - generic [ref=f1e91]: "22"
+  - generic "전장" [ref=f1e93]
+  - generic [ref=f1e94]:
+    - generic [ref=f1e95]: 배치 0/8
+    - button "멀티탭 +1칸 · 2,000W" [disabled] [ref=f1e96]
+  - generic [ref=f1e98]:
+    - button "청소기 800W" [ref=f1e99] [cursor=pointer]:
+      - generic [ref=f1e101]: 청소기
+      - generic [ref=f1e102]: 800W
+    - button "에어컨 1,200W" [ref=f1e104] [cursor=pointer]:
+      - generic [ref=f1e106]: 에어컨
+      - generic [ref=f1e107]: 1,200W
+    - button "선풍기 900W" [ref=f1e109] [cursor=pointer]:
+      - generic [ref=f1e111]: 선풍기
+      - generic [ref=f1e112]: 900W
+    - button "발전기 600W" [ref=f1e114] [cursor=pointer]:
+      - generic [ref=f1e116]: 발전기
+      - generic [ref=f1e117]: 600W
+  - paragraph [ref=f1e119]: 카드를 고른 뒤 빛나는 칸을 눌러 배치하세요. 스킬은 자동 발동됩니다.

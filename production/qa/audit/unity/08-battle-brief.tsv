@@ -1,0 +1,26 @@
+path	x	y	w	h	color	fs	text	ink
+SafeArea/Column/Battle/Brief/Panel	0.0	0.0	430.0	230.0	#F7F9FAFF			
+SafeArea/Column/Battle/Brief/Panel/Title	16.0	12.0	220.5	50.5	#1D2226FF	33.5	1-1 거실	16.0,20.5,100.1,33.5
+SafeArea/Column/Battle/Brief/Panel/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	16.0	12.0	220.5	50.5	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/Panel/Sub	236.5	12.0	177.5	50.5	#5D6871FF	14.6	웨이브 8 · 먼지 22	304.4,26.3,109.6,21.8
+SafeArea/Column/Battle/Brief/Panel/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	236.5	12.0	177.5	50.5	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/Panel/Desc	16.0	68.5	398.0	43.7	#5D6871FF	14.6	창문, 베란다, 현관 세 곳으로 먼지가 들어와요. 웨이브마다 열리는 입구	16.0,68.5,393.5,43.7
+SafeArea/Column/Battle/Brief/Panel/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	68.5	398.0	43.7	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/Panel/Stars/Star0	16.0	120.2	128.7	34.0	#E6EAEDFF			
+SafeArea/Column/Battle/Brief/Panel/Stars/Star0/Value	26.0	122.2	108.7	30.0	#1D2226FF	14.6	★ 청결도 1 이상	31.1,126.2,98.5,21.8
+SafeArea/Column/Battle/Brief/Panel/Stars/Star0/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	26.0	122.2	108.7	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/Panel/Stars/Star1	150.7	120.2	128.7	34.0	#E6EAEDFF			
+SafeArea/Column/Battle/Brief/Panel/Stars/Star1/Value	160.7	122.2	108.7	30.0	#1D2226FF	14.6	★ 청결도 6 이상	165.7,126.2,98.5,21.8
+SafeArea/Column/Battle/Brief/Panel/Stars/Star1/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	160.7	122.2	108.7	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/Panel/Stars/Star2	285.3	120.2	128.7	34.0	#E6EAEDFF			
+SafeArea/Column/Battle/Brief/Panel/Stars/Star2/Value	295.3	122.2	108.7	30.0	#1D2226FF	14.6	★ 청결도 10 (무실점)	300.7,126.2,97.9,21.8
+SafeArea/Column/Battle/Brief/Panel/Stars/Star2/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	295.3	122.2	108.7	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/Panel/Enemies	16.0	162.2	398.0	21.8	#5D6871FF	14.6	먼지뭉치 ×17   초파리(비행) ×4   곰팡이(직진) ×1	16.0,162.2,293.4,21.8
+SafeArea/Column/Battle/Brief/Panel/Enemies/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	162.2	398.0	21.8	#FFFFFFFF			
+SafeArea/Column/Battle/Brief/BriefActions	0.0	854.0	430.0	78.0	#F7F9FAFF			
+SafeArea/Column/Battle/Brief/BriefActions/ChangeDeck	16.0	870.0	120.0	46.0	#F7F9FAFF			
+SafeArea/Column/Battle/Brief/BriefActions/ChangeDeck/Line	16.0	870.0	120.0	46.0	#C7D0D6FF			
+SafeArea/Column/Battle/Brief/BriefActions/ChangeDeck/Content/Label	24.0	878.0	104.0	30.0	#1D2226FF	16.0	편성 변경	45.5,881.0,60.9,24.0
+SafeArea/Column/Battle/Brief/BriefActions/Start	144.0	870.0	270.0	46.0	#FF9A3CFF			
+SafeArea/Column/Battle/Brief/BriefActions/Start/Content/Label	152.0	876.5	254.0	33.0	#1D2226FF	22.0	작전 시작	241.9,882.0,74.2,22.0
+SafeArea/Column/Battle/Brief/BriefActions/Start/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	152.0	876.5	254.0	33.0	#FFFFFFFF			

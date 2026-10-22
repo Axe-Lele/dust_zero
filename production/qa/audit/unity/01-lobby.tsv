@@ -1,0 +1,158 @@
+path	x	y	w	h	color	fs	text	ink
+SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Wall	0.0	76.0	430.0	206.2	#DCE4E9FF			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S0	5.2	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S1	41.0	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S2	76.8	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S3	112.7	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S4	148.5	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S5	184.4	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S6	220.2	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S7	256.0	76.0	2.1	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S8	291.9	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S9	327.7	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S10	363.6	76.0	2.2	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Stripes/S11	399.4	76.0	2.1	202.0	#FFFFFF59			
+SafeArea/Column/Lobby/Panels/Home/Room/Skirting	0.0	272.1	430.0	10.1	#CFD9DFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Floor	0.0	282.2	430.0	571.8	#DCC39AFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H1	0.0	831.1	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H2	0.0	809.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H3	0.0	787.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H4	0.0	765.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H5	0.0	743.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H6	0.0	721.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H7	0.0	699.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H8	0.0	677.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H9	0.0	655.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H10	0.0	633.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H11	0.0	611.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H12	0.0	589.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H13	0.0	567.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H14	0.0	545.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H15	0.0	523.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H16	0.0	501.2	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H17	0.0	479.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H18	0.0	457.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H19	0.0	435.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H20	0.0	413.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H21	0.0	391.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H22	0.0	369.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H23	0.0	347.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H24	0.0	325.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/Planks/H25	0.0	303.3	430.0	0.9	#78542924			
+SafeArea/Column/Lobby/Panels/Home/Room/WindowFrame	130.3	163.1	129.9	91.0	#F4F7F9FF			
+SafeArea/Column/Lobby/Panels/Home/Room/WindowGlass	135.5	167.0	119.5	83.2	#BFE0F2FF			
+SafeArea/Column/Lobby/Panels/Home/Room/Sun	218.9	181.0	5.2	21.8	#FFF4D6FF			
+SafeArea/Column/Lobby/Panels/Home/Room/MullionV	193.5	167.0	3.4	83.2	#F4F7F9FF			
+SafeArea/Column/Lobby/Panels/Home/Room/MullionH	135.5	206.7	119.5	3.1	#F4F7F9FF			
+SafeArea/Column/Lobby/Panels/Home/Room/PictureFrame	304.0	174.8	70.1	45.1	#F4F7F9FF			
+SafeArea/Column/Lobby/Panels/Home/Room/Picture	310.0	184.9	58.1	24.9	#9ED0B8FF			
+SafeArea/Column/Lobby/Panels/Home/Room/Rug	71.8	391.1	286.4	164.9	#5B7C9938			
+SafeArea/Column/Lobby/Panels/Home/Room/SofaBack	238.7	253.4	167.3	28.0	#4A6884FF			
+SafeArea/Column/Lobby/Panels/Home/Room/SofaSeat	238.7	273.6	167.3	24.9	#5B7C99FF			
+SafeArea/Column/Lobby/Panels/Home/Room/SofaArmL	232.6	269.7	15.9	31.9	#3E5A74FF			
+SafeArea/Column/Lobby/Panels/Home/Room/SofaArmR	396.0	269.7	15.9	31.9	#3E5A74FF			
+SafeArea/Column/Lobby/Panels/Home/Room/Pot	12.9	279.8	25.8	20.2	#B98A57FF			
+SafeArea/Column/Lobby/Panels/Home/Room/Leaf0	6.5	254.2	11.2	23.3	#6E9B4CFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Leaf1	12.7	247.2	11.2	23.3	#6E9B4CFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Leaf2	18.9	244.8	11.2	23.3	#6E9B4CFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Leaf3	25.2	247.2	11.2	23.3	#6E9B4CFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Leaf4	31.4	254.2	11.2	23.3	#6E9B4CFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	278.0	369.0	15.3	15.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	286.0	359.1	13.7	13.7	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	236.0	342.0	13.9	13.9	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	186.1	488.6	11.3	11.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	308.5	522.4	9.6	9.6	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	247.0	322.0	8.8	8.8	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	132.8	559.4	14.6	14.6	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	155.7	360.7	10.0	10.0	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	157.4	519.5	10.3	10.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	190.9	471.9	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	247.7	502.5	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	96.6	513.8	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	114.4	298.5	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/RoomNote	85.5	672.0	259.0	25.0	#1D222699			
+SafeArea/Column/Lobby/Panels/Home/RoomNote/Text	94.3	672.0	241.4	25.0	#E8EDF0FF	11.5	가전 4/12이 방을 청소하고 있어요 · 눌러서 말 걸기	97.4,675.9,235.2,17.2
+SafeArea/Column/Lobby/Panels/Home/Survivor	16.0	705.0	398.0	57.0	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Home/Survivor/Content/Label	24.0	713.0	382.0	41.0	#E8EDF0FF	14.6		
+SafeArea/Column/Lobby/Panels/Home/Survivor/Icon	33.6	715.3	29.8	36.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Survivor/Kicker	76.6	715.8	299.9	20.4	#8D99A2FF	13.4	대청소 모드	76.6,716.0,62.9,20.1
+SafeArea/Column/Lobby/Panels/Home/Survivor/Title	76.6	736.2	299.9	32.5	#E8EDF0FF	21.5	리더를 골라 출동	76.6,741.7,128.5,21.5
+SafeArea/Column/Lobby/Panels/Home/Survivor/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	76.6	736.2	299.9	32.5	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Survivor/Arrow	368.8	713.1	32.0	40.8	#E8EDF0FF	26.9	▶	373.9,713.3,26.9,40.4
+SafeArea/Column/Lobby/Panels/Home/NextStage	16.0	770.0	398.0	74.0	#FF9A3CFF			
+SafeArea/Column/Lobby/Panels/Home/NextStage/Content/Label	24.0	778.0	382.0	58.0	#1D2226FF	14.6		
+SafeArea/Column/Lobby/Panels/Home/NextStage/Kicker	33.6	786.1	342.9	20.4	#1D2226FF	13.4	다음 스테이지 도전	33.6,786.3,101.9,20.1
+SafeArea/Column/Lobby/Panels/Home/NextStage/Stage	33.6	806.5	342.9	40.8	#1D2226FF	26.9	1-3 거실	33.6,813.5,84.8,26.9
+SafeArea/Column/Lobby/Panels/Home/NextStage/Stage/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	33.6	806.5	342.9	40.8	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/NextStage/Arrow	368.8	786.6	32.0	40.8	#1D2226FF	26.9	▶	373.9,786.8,26.9,40.3
+SafeArea/Column/Lobby/Panels/Home/TestHour	186.3	180.9	57.4	37.6	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Home/TestHour/Line	186.3	180.9	57.4	37.6	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Home/TestHour/Content/Label	194.3	188.5	41.4	22.3	#1D2226FF	14.6	+1h	202.1,188.8,25.8,21.9
+SafeArea/Column/Lobby/TopBar/Plate	16.0	12.0	398.0	64.0	#1D2226FF			
+SafeArea/Column/Lobby/TopBar/Kicker	30.0	25.0	150.0	15.0	#FF9A3CFF	10.0	O P E R A T I O N	30.0,25.0,74.5,15.0
+SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트 제로	30.0,39.0,99.4,24.0
+SafeArea/Column/Lobby/TopBar/Brand/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	30.0	32.8	170.0	36.4	#FFFFFFFF			
+SafeArea/Column/Lobby/TopBar/Coin/Caption	198.0	24.0	78.0	15.0	#8D99A2FF	10.0	코인	198.0,24.0,17.8,15.0
+SafeArea/Column/Lobby/TopBar/Coin/Icon	198.0	44.0	20.0	20.0	#FFFFFFFF			
+SafeArea/Column/Lobby/TopBar/Coin/Value	222.0	33.9	54.0	30.1	#FF9A3CFF	20.0	2,000	222.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/Crystal/Caption	292.0	24.0	108.0	15.0	#8D99A2FF	10.0	크리스탈	292.0,24.0,35.7,15.0
+SafeArea/Column/Lobby/TopBar/Crystal/Icon	292.0	44.0	20.0	20.0	#FFFFFFFF			
+SafeArea/Column/Lobby/TopBar/Crystal/Value	316.0	33.9	84.0	30.1	#7FC4F5FF	20.0	1,500	316.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/TopUp	378.0	33.0	22.0	22.0	#7FC4F5FF			
+SafeArea/Column/Lobby/TopBar/TopUp/Plus	378.0	33.0	22.0	22.0	#1D2226FF	11.4	+	385.6,35.4,6.9,17.2
+SafeArea/Column/Lobby/HomeRail/Attendance	16.0	86.0	86.0	54.0	#1D2226D6			
+SafeArea/Column/Lobby/HomeRail/Attendance/Content/Label	24.0	94.0	70.0	38.0	#E8EDF0FF	16.0		
+SafeArea/Column/Lobby/HomeRail/Attendance/TitleRow/Icon	28.1	99.6	15.0	15.0	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/Attendance/TitleRow/Title	47.1	95.0	42.8	24.3	#E8EDF0FF	16.0	출석부	47.1,95.1,42.8,24.0
+SafeArea/Column/Lobby/HomeRail/Attendance/Sub	18.0	119.3	82.0	16.5	#FF9A3CFF	11.0	1일째 받기	34.8,119.3,48.4,16.5
+SafeArea/Column/Lobby/HomeRail/Attendance/Dot	89.4	77.0	21.6	21.6	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/AutoClean	16.0	148.0	86.0	61.0	#1D2226D6			
+SafeArea/Column/Lobby/HomeRail/AutoClean/Content/Label	24.0	156.0	70.0	45.0	#8D99A2FF	16.0		
+SafeArea/Column/Lobby/HomeRail/AutoClean/Content/Lock	26.0	167.5	22.0	22.0	#5D6871FF			
+SafeArea/Column/Lobby/HomeRail/AutoClean/TitleRow/Icon	20.0	161.6	15.0	15.0	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/AutoClean/TitleRow/Title	39.0	157.0	59.0	24.3	#E8EDF0FF	15.5	자동 청소	39.0,157.5,59.0,23.3
+SafeArea/Column/Lobby/HomeRail/AutoClean/Sub	18.0	181.3	82.0	16.5	#FF9A3CFF	11.0	잠김	49.2,181.3,19.6,16.5
+SafeArea/Column/Lobby/HomeRail/AutoClean/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	18.0	181.3	82.0	16.5	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/AutoClean/Bar	24.0	195.0	70.0	4.0	#2A3136FF			
+SafeArea/Column/Lobby/HomeRail/Reset	261.0	86.0	83.0	34.0	#1D2226D6			
+SafeArea/Column/Lobby/HomeRail/Reset/Content/Label	269.0	93.8	67.0	18.4	#E8EDF0FF	12.0		
+SafeArea/Column/Lobby/HomeRail/Reset/TitleRow/Title	274.3	95.0	56.3	18.4	#E8EDF0FF	12.0	게임 초기화	274.3,95.2,56.3,18.0
+SafeArea/Column/Lobby/HomeRail/Reset/Sub	263.0	113.4	79.0	16.5	#FF9A3CFF	11.0		
+SafeArea/Column/Lobby/HomeRail/Settings	349.0	86.0	65.0	34.0	#1D2226D6			
+SafeArea/Column/Lobby/HomeRail/Settings/Content/Label	357.0	93.8	49.0	18.4	#E8EDF0FF	12.0		
+SafeArea/Column/Lobby/HomeRail/Settings/TitleRow/Icon	361.3	96.7	15.0	15.0	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/Settings/TitleRow/Title	380.3	95.0	21.4	18.4	#E8EDF0FF	12.0	설정	380.3,95.2,21.4,18.0
+SafeArea/Column/Lobby/HomeRail/Settings/Sub	351.0	113.4	61.0	16.5	#FF9A3CFF	11.0		
+SafeArea/Column/Lobby/HomeRail/Pass	328.0	128.0	86.0	82.0	#1D2226D6			
+SafeArea/Column/Lobby/HomeRail/Pass/Ring	328.0	128.0	86.0	82.0	#FF9A3CFF			
+SafeArea/Column/Lobby/HomeRail/Pass/Content/Label	336.0	136.0	70.0	66.0	#E8EDF0FF	11.0		
+SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Icon	340.6	137.8	15.0	15.0	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Title	359.6	137.0	41.8	16.5	#E8EDF0FF	11.0	시즌 패스	359.6,137.0,41.8,16.5
+SafeArea/Column/Lobby/HomeRail/Pass/Sub	332.0	187.5	78.0	16.5	#FF9A3CFF	11.0	받기 1	356.6,187.5,28.8,16.5
+SafeArea/Column/Lobby/HomeRail/Pass/Bar	336.0	179.5	70.0	4.0	#2A3136FF			
+SafeArea/Column/Lobby/HomeRail/Pass/Bar/Mask/Fill	336.0	179.5	70.0	4.0	#FF9A3CFF			
+SafeArea/Column/Lobby/HomeRail/Pass/Level	332.0	153.2	78.0	24.3	#E8EDF0FF	16.0	Lv.1	356.2,153.4,29.6,24.0
+SafeArea/Column/Lobby/BottomNav	0.0	854.0	430.0	78.0	#1D2226FF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0	16.0	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0/Content/Indicator	20.0	865.0	47.1	56.0	#2A3136FF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0/Content/Icon	30.6	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab0/Content/Label	16.0	899.5	55.1	17.5	#E8EDF0FF	11.5	홈	38.4,899.6,10.3,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab1	73.1	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab1/Content/Icon	87.7	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab1/Content/Label	73.1	899.5	55.1	17.5	#8D99A2FF	11.5	스테이지	80.2,899.6,41.0,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab2	130.3	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab2/Content/Icon	144.9	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab2/Content/Label	130.3	899.5	55.1	17.5	#8D99A2FF	11.5	콘텐츠	142.5,899.6,30.8,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab3	187.4	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab3/Content/Icon	202.0	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab3/Content/Label	187.4	899.5	55.1	17.5	#8D99A2FF	11.5	가전	204.7,899.6,20.5,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4	244.6	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4/Content/Icon	259.1	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab4/Content/Label	244.6	899.5	55.1	17.5	#8D99A2FF	11.5	편성	261.9,899.6,20.5,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab5	301.7	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab5/Content/Icon	316.3	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab5/Content/Label	301.7	899.5	55.1	17.5	#8D99A2FF	11.5	소환	319.0,899.6,20.5,17.2
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab6	358.9	861.0	55.1	64.0	#00000000			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab6/Content/Icon	373.4	866.0	26.0	26.0	#FFFFFFFF			
+SafeArea/Column/Lobby/BottomNav/Tabs/Tab6/Content/Label	358.9	899.5	55.1	17.5	#8D99A2FF	11.5	상점	376.2,899.6,20.5,17.2

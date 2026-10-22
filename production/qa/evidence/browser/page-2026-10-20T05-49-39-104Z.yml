@@ -1,0 +1,60 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]: 코인
+        - generic [ref=f1e10]: 2,000
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]: 크리스탈
+        - generic [ref=f1e15]:
+          - generic [ref=f1e17]: 1,500
+          - button "크리스탈 충전" [ref=f1e18] [cursor=pointer]: +
+  - generic [ref=f1e588]:
+    - generic [ref=f1e589]:
+      - heading "편성" [level=2] [ref=f1e590]
+      - generic [ref=f1e591]: 4/6
+    - generic [ref=f1e592]:
+      - button "청소기 빼기" [ref=f1e593] [cursor=pointer]:
+        - generic [ref=f1e595]: 청소기
+      - button "에어컨 빼기" [ref=f1e596] [cursor=pointer]:
+        - generic [ref=f1e598]: 에어컨
+      - button "선풍기 빼기" [ref=f1e599] [cursor=pointer]:
+        - generic [ref=f1e601]: 선풍기
+      - button "발전기 빼기" [ref=f1e602] [cursor=pointer]:
+        - generic [ref=f1e604]: 발전기
+      - button "빈 슬롯" [ref=f1e605] [cursor=pointer]
+      - button "빈 슬롯" [ref=f1e606] [cursor=pointer]
+    - paragraph [ref=f1e607]: 슬롯을 누르면 빠지고, 아래 가전을 누르면 들어갑니다. 바닥에 서는 근접 가전과 가구 위에 서는 원거리·지원 가전을 섞어 편성하세요.
+    - generic [ref=f1e608]:
+      - button "R 청소기 Lv.1 편성" [ref=f1e609] [cursor=pointer]:
+        - generic [ref=f1e612]: R
+        - generic [ref=f1e613]: 청소기
+        - generic [ref=f1e614]: Lv.1
+        - generic [ref=f1e615]: 편성
+      - button "SR 에어컨 Lv.1 편성" [ref=f1e616] [cursor=pointer]:
+        - generic [ref=f1e619]: SR
+        - generic [ref=f1e620]: 에어컨
+        - generic [ref=f1e621]: Lv.1
+        - generic [ref=f1e622]: 편성
+      - button "R 선풍기 Lv.1 편성" [ref=f1e623] [cursor=pointer]:
+        - generic [ref=f1e626]: R
+        - generic [ref=f1e627]: 선풍기
+        - generic [ref=f1e628]: Lv.1
+        - generic [ref=f1e629]: 편성
+      - button "R 발전기 Lv.1 편성" [ref=f1e630] [cursor=pointer]:
+        - generic [ref=f1e633]: R
+        - generic [ref=f1e634]: 발전기
+        - generic [ref=f1e635]: Lv.1
+        - generic [ref=f1e636]: 편성
+  - navigation "메뉴" [ref=f1e56]:
+    - tablist [ref=f1e57]:
+      - tab "홈" [ref=f1e58] [cursor=pointer]
+      - tab "스테이지" [ref=f1e60] [cursor=pointer]
+      - tab "콘텐츠" [ref=f1e62] [cursor=pointer]
+      - tab "가전" [ref=f1e64] [cursor=pointer]
+      - tab "편성" [active] [selected] [ref=f1e66] [cursor=pointer]
+      - tab "소환" [ref=f1e68] [cursor=pointer]
+      - tab "상점" [ref=f1e70] [cursor=pointer]

@@ -1,0 +1,88 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - generic [ref=f1e9]: 코인
+        - generic [ref=f1e10]: 2,000
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]: 크리스탈
+        - generic [ref=f1e15]:
+          - generic [ref=f1e17]: 1,500
+          - button "크리스탈 충전" [ref=f1e18] [cursor=pointer]: +
+  - generic [ref=f1e425]:
+    - generic [ref=f1e426]:
+      - heading "콘텐츠" [level=2] [ref=f1e427]
+      - generic [ref=f1e428]: 스테이지와 따로 즐기는 모드
+    - article [ref=f1e429]:
+      - generic [ref=f1e751]:
+        - generic [ref=f1e753]:
+          - generic [ref=f1e754]: 무한 버티기
+          - generic [ref=f1e755]: 대청소 모드
+        - generic [ref=f1e756]:
+          - generic "청소기" [ref=f1e757]
+          - generic "로봇청소기" [ref=f1e759]
+          - generic "에어컨" [ref=f1e761]
+      - paragraph [ref=f1e763]: 리더 하나를 움직여 쓰러질 때까지 버텨요. 공격은 자동이에요.
+      - list [ref=f1e764]:
+        - listitem [ref=f1e765]:
+          - generic [ref=f1e766]: 성장
+          - text: 레벨업마다 편성 가전이 동료로 합류 · 짝이 맞으면 협동기
+        - listitem [ref=f1e767]:
+          - generic [ref=f1e768]: 위험
+          - text: 2분마다 보스 · 2분 30초부터 적이 계속 강해짐
+      - generic [ref=f1e769]:
+        - generic [ref=f1e770]:
+          - generic [ref=f1e771]: 오늘 크리스탈
+          - generic [ref=f1e772]: 0/150
+        - generic [ref=f1e773]:
+          - generic [ref=f1e774]: 오늘 최고
+          - generic [ref=f1e775]: 0:00
+        - generic [ref=f1e776]:
+          - generic [ref=f1e777]: 역대 최고
+          - generic [ref=f1e778]: 0:00
+      - generic [ref=f1e779]:
+        - generic [ref=f1e780]: 버틴 시간 보상 · 하루 한 번씩
+        - generic [ref=f1e781]:
+          - generic [ref=f1e782]:
+            - generic [ref=f1e783]: 1:00
+            - text: "5"
+          - generic [ref=f1e785]:
+            - generic [ref=f1e786]: 2:00
+            - text: "10"
+          - generic [ref=f1e788]:
+            - generic [ref=f1e789]: 3:00
+            - text: "15"
+          - generic [ref=f1e791]:
+            - generic [ref=f1e792]: 4:00
+            - text: "15"
+          - generic [ref=f1e794]:
+            - generic [ref=f1e795]: 5:00
+            - text: "20"
+          - generic [ref=f1e797]:
+            - generic [ref=f1e798]: 7:00
+            - text: "20"
+          - generic [ref=f1e800]:
+            - generic [ref=f1e801]: 10:00
+            - text: "25"
+          - generic [ref=f1e803]:
+            - generic [ref=f1e804]: 15:00
+            - text: "40"
+      - paragraph [ref=f1e806]: 부품·코인·조각 보상 판 3/3 남음 · 30초 미만은 판 수를 쓰지 않아요
+      - button "입장" [ref=f1e807] [cursor=pointer]
+    - article [ref=f1e487]:
+      - generic [ref=f1e489]:
+        - generic [ref=f1e490]: 다음 콘텐츠
+        - generic [ref=f1e491]: 준비 중
+      - paragraph [ref=f1e492]: 새 모드가 열리면 여기에 추가돼요.
+  - navigation "메뉴" [ref=f1e56]:
+    - tablist [ref=f1e57]:
+      - tab "홈" [ref=f1e58] [cursor=pointer]
+      - tab "스테이지" [ref=f1e60] [cursor=pointer]
+      - tab "콘텐츠" [active] [selected] [ref=f1e62] [cursor=pointer]
+      - tab "가전" [ref=f1e64] [cursor=pointer]
+      - tab "편성" [ref=f1e66] [cursor=pointer]
+      - tab "소환" [ref=f1e68] [cursor=pointer]
+      - tab "상점" [ref=f1e70] [cursor=pointer]

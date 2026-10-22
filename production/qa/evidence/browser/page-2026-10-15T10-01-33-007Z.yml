@@ -1,0 +1,60 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: 코인
+        - generic [ref=e10]: 2,000
+      - generic [ref=e11]:
+        - generic [ref=e12]: 크리스탈
+        - generic [ref=e13]: 1,500
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic "대표 가전" [ref=e16] [cursor=pointer]
+      - paragraph [ref=e17]: 먼지 한 톨도 못 지나가!
+      - generic [ref=e18]:
+        - generic [ref=e19]: R · 근접 · 저지 2
+        - generic [ref=e20]: 청소기
+        - generic [ref=e21]: Lv.1
+      - button "대표 변경" [ref=e22] [cursor=pointer]
+    - button "다음 스테이지 도전 1-1 거실 ▶" [ref=e23] [cursor=pointer]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: 다음 스테이지 도전
+        - generic [ref=e26]: 1-1 거실
+      - generic [ref=e27]: ▶
+    - button "대청소 모드 1-1을 클리어하면 대청소 모드가 열려요. 잠김" [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: 대청소 모드
+        - generic [ref=e31]: 1-1을 클리어하면 대청소 모드가 열려요.
+      - generic [ref=e32]: 잠김
+    - generic [ref=e37]:
+      - generic [ref=e38]: 자동 청소
+      - generic [ref=e39]: 1-1을 클리어하면 자동 청소가 시작돼요.
+    - generic [ref=e40]:
+      - button "최고 스테이지 —" [ref=e41] [cursor=pointer]:
+        - generic [ref=e42]: 최고 스테이지
+        - generic [ref=e43]: —
+      - button "가전 도감 4/9" [ref=e44] [cursor=pointer]:
+        - generic [ref=e45]: 가전 도감
+        - generic [ref=e46]: 4/9
+      - button "편성 4/6" [ref=e47] [cursor=pointer]:
+        - generic [ref=e48]: 편성
+        - generic [ref=e49]: 4/6
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: 출석 보상
+        - generic [ref=e53]: 매일 크리스탈 300을 받을 수 있어요.
+      - button "받기" [ref=e54] [cursor=pointer]
+    - generic [ref=e55]:
+      - button "튜토리얼 다시 보기" [ref=e56] [cursor=pointer]
+      - button "게임 초기화" [ref=e57] [cursor=pointer]
+    - paragraph [ref=e58]: 테스트 빌드 10.14-d
+  - navigation "메뉴" [ref=e59]:
+    - tablist [ref=e60]:
+      - tab "홈" [selected] [ref=e61] [cursor=pointer]
+      - tab "스테이지" [ref=e63] [cursor=pointer]
+      - tab "가전" [ref=e65] [cursor=pointer]
+      - tab "편성" [ref=e67] [cursor=pointer]
+      - tab "소환" [ref=e69] [cursor=pointer]
