@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cac23712024d6043b8132d569286e89, type: 3}
+  m_Name: SpriteLibrary
+  m_EditorClassIdentifier: DustZero.Game::DustZero.Game.SpriteLibrary
+  units:
+  - id: vac
+    sprite: {fileID: 21300000, guid: 6fb22dafaaf4fda4586e248eb174a22d, type: 3}
+  - id: robot
+    sprite: {fileID: 21300000, guid: 7604601db42eaab49b8c55e3f8561cac, type: 3}
+  - id: fridge
+    sprite: {fileID: 21300000, guid: d6377b18b7b8e324db543ac1266d7d6d, type: 3}
+  - id: ac
+    sprite: {fileID: 21300000, guid: b70ff2afe7a7f564bbe99966f9f7daf7, type: 3}
+  - id: micro
+    sprite: {fileID: 21300000, guid: 7465faee2aff15640ba086931b068cbe, type: 3}
+  - id: washer
+    sprite: {fileID: 21300000, guid: 946bebdd740d57b4f9ff7d32b0e6f74d, type: 3}
+  - id: pc
+    sprite: {fileID: 21300000, guid: a05fcefc7cb44d5478e37c9128168eea, type: 3}
+  - id: fan
+    sprite: {fileID: 21300000, guid: 32d72173ac4f9da4bb77e0d230e9fb18, type: 3}
+  - id: gen
+    sprite: {fileID: 21300000, guid: a342d7d74008ae640b767c201c4999c4, type: 3}
+  - id: iron
+    sprite: {fileID: 21300000, guid: 96830d150931d9f4ba88f86ce7a425a1, type: 3}
+  - id: stove
+    sprite: {fileID: 21300000, guid: 8b922bd39f8e3ef409aee410d9ff5f86, type: 3}
+  - id: boiler
+    sprite: {fileID: 21300000, guid: 3c5d5951b47c9234db6a38733ad64dc5, type: 3}
+  enemies:
+  - id: dust
+    sprite: {fileID: 21300000, guid: 535beffd69e5fb042aeb6b7a76089996, type: 3}
+  - id: grease
+    sprite: {fileID: 21300000, guid: e1258a0f4662a3b4f99d499098701627, type: 3}
+  - id: mold
+    sprite: {fileID: 21300000, guid: 5b3449889750db3428069bf6b507a1f9, type: 3}
+  - id: fly
+    sprite: {fileID: 21300000, guid: 65c752f2aba3ac24bbe60982d3d6b1e2, type: 3}
+  - id: spore
+    sprite: {fileID: 21300000, guid: 20c47f021687d3a4993ffa3aacc0e18e, type: 3}
+  - id: boss_dust
+    sprite: {fileID: 21300000, guid: 95cdc6de794637443a2bad73c1fc29c2, type: 3}
+  - id: boss_grease
+    sprite: {fileID: 21300000, guid: 5088f8153d80fb14e97c6c462423dbea, type: 3}
+  - id: boss_mold
+    sprite: {fileID: 21300000, guid: 6d717b257f2a65c4da27fe239bf08407, type: 3}
+  - id: mite
+    sprite: {fileID: 21300000, guid: b0fa8216cc8a2184089102e913320cb9, type: 3}
+  - id: hair
+    sprite: {fileID: 21300000, guid: 1e6e80099c643fd4180380666932c9e3, type: 3}
+  - id: scale
+    sprite: {fileID: 21300000, guid: 5d1b9e1c9a490fb4d8c517bc688cf06f, type: 3}
+  - id: moth
+    sprite: {fileID: 21300000, guid: 76207c5ffc7a6b74a8f19980f84d33dd, type: 3}
+  - id: rust
+    sprite: {fileID: 21300000, guid: 6285b64189054e94794cbaa02a7b43e1, type: 3}
+  - id: boss_mite
+    sprite: {fileID: 21300000, guid: 84872432830f6e948a641f3a74720907, type: 3}
+  - id: boss_hair
+    sprite: {fileID: 21300000, guid: f63dafba3800a7943a4f80cb2f29de63, type: 3}
+  - id: boss_scale
+    sprite: {fileID: 21300000, guid: 2593e161bcac7f6439874e22c346828b, type: 3}
+  - id: boss_moth
+    sprite: {fileID: 21300000, guid: f7f002ca87be6fa4da4fa5240d02fc88, type: 3}
+  - id: boss_rust
+    sprite: {fileID: 21300000, guid: 88167a9198fc0eb48b65dad81dd22117, type: 3}
+  - id: boss_emperor
+    sprite: {fileID: 21300000, guid: 118412bc86e70e34994e03f3a779f437, type: 3}
+  enemyLooks:
+  - id: dust
+    sprite: {fileID: 21300000, guid: 535beffd69e5fb042aeb6b7a76089996, type: 3}
+  - id: grease
+    sprite: {fileID: 21300000, guid: e1258a0f4662a3b4f99d499098701627, type: 3}
+  - id: mold
+    sprite: {fileID: 21300000, guid: 5b3449889750db3428069bf6b507a1f9, type: 3}
+  - id: fly
+    sprite: {fileID: 21300000, guid: 65c752f2aba3ac24bbe60982d3d6b1e2, type: 3}
+  - id: spore
+    sprite: {fileID: 21300000, guid: 20c47f021687d3a4993ffa3aacc0e18e, type: 3}
+  - id: mite
+    sprite: {fileID: 21300000, guid: b0fa8216cc8a2184089102e913320cb9, type: 3}
+  - id: hair
+    sprite: {fileID: 21300000, guid: 1e6e80099c643fd4180380666932c9e3, type: 3}
+  - id: scale
+    sprite: {fileID: 21300000, guid: 5d1b9e1c9a490fb4d8c517bc688cf06f, type: 3}
+  - id: moth
+    sprite: {fileID: 21300000, guid: 76207c5ffc7a6b74a8f19980f84d33dd, type: 3}
+  - id: rust
+    sprite: {fileID: 21300000, guid: 6285b64189054e94794cbaa02a7b43e1, type: 3}
+  bossLooks:
+  - id: dust
+    sprite: {fileID: 21300000, guid: 95cdc6de794637443a2bad73c1fc29c2, type: 3}
+  - id: grease
+    sprite: {fileID: 21300000, guid: 5088f8153d80fb14e97c6c462423dbea, type: 3}
+  - id: mold
+    sprite: {fileID: 21300000, guid: 6d717b257f2a65c4da27fe239bf08407, type: 3}
+  - id: mite
+    sprite: {fileID: 21300000, guid: 84872432830f6e948a641f3a74720907, type: 3}
+  - id: hair
+    sprite: {fileID: 21300000, guid: f63dafba3800a7943a4f80cb2f29de63, type: 3}
+  - id: scale
+    sprite: {fileID: 21300000, guid: 2593e161bcac7f6439874e22c346828b, type: 3}
+  - id: moth
+    sprite: {fileID: 21300000, guid: f7f002ca87be6fa4da4fa5240d02fc88, type: 3}
+  - id: rust
+    sprite: {fileID: 21300000, guid: 88167a9198fc0eb48b65dad81dd22117, type: 3}
+  - id: emperor
+    sprite: {fileID: 21300000, guid: 118412bc86e70e34994e03f3a779f437, type: 3}
+  illusts:
+  - id: vac
+    full: {fileID: 21300000, guid: dd8166ba3d87c7841942016bbf2615f9, type: 3}
+    turn: {fileID: 21300000, guid: cae035825f2e41249a82296148ea7dc5, type: 3}
+    keys: {fileID: 21300000, guid: 287bd420655710a4b88196704df623e2, type: 3}
+    face1: {fileID: 21300000, guid: 514ff25b35d607342a205a1b32179b40, type: 3}
+    face2: {fileID: 21300000, guid: d7ee1af0225ce9e4bbae25e85d87a30c, type: 3}
+    face3: {fileID: 21300000, guid: feada3872028df44d85c9d2c22d4fe14, type: 3}
+  - id: robot
+    full: {fileID: 21300000, guid: 3dddeb9d91f889e4d84e4e91cae9c9f1, type: 3}
+    turn: {fileID: 21300000, guid: f60ac875ddd339644af26f697deb4e9f, type: 3}
+    keys: {fileID: 21300000, guid: 5593eb2d59234d64bbb55dfad0b48dda, type: 3}
+    face1: {fileID: 21300000, guid: 15e43940f22010f4db93d616b35b078f, type: 3}
+    face2: {fileID: 21300000, guid: 82d33de24377cdd45b7d7f6909c4e00e, type: 3}
+    face3: {fileID: 21300000, guid: 9ae9c156594d14842bd52de3580ec8b3, type: 3}
+  - id: fridge
+    full: {fileID: 21300000, guid: b01b6c833c53b9c4c8589ef489c21eff, type: 3}
+    turn: {fileID: 21300000, guid: 0919544f613a6304b8d202df858be083, type: 3}
+    keys: {fileID: 21300000, guid: 9dc0543702f09844db83c7966e70ae6d, type: 3}
+    face1: {fileID: 21300000, guid: 9cb61d78b1e13884688ea15634856c7c, type: 3}
+    face2: {fileID: 21300000, guid: 0b1558557769da94a8cdcc84a063a7cb, type: 3}
+    face3: {fileID: 21300000, guid: ec6550c22fcc5c34ca1b998c3460c819, type: 3}
+  - id: ac
+    full: {fileID: 21300000, guid: 685dcc0378dbaed4c9fcac0bd5185d3e, type: 3}
+    turn: {fileID: 21300000, guid: f360f109a17f5bd4390dabf04f5cb1b6, type: 3}
+    keys: {fileID: 21300000, guid: 6b769fb5b24e10946942f34f6efbd578, type: 3}
+    face1: {fileID: 21300000, guid: 5032e309b21da0b49b35d4261ad7379f, type: 3}
+    face2: {fileID: 21300000, guid: bab660b15f788f548b689fa36ee32914, type: 3}
+    face3: {fileID: 21300000, guid: fc27b9a70ce722845a44314f0f48facf, type: 3}
+  - id: micro
+    full: {fileID: 21300000, guid: fb00057658f9ae846adbef02037f2b1e, type: 3}
+    turn: {fileID: 21300000, guid: 248042320627a66499bdc6f38916df7a, type: 3}
+    keys: {fileID: 21300000, guid: c362fb697b538ca43b99112b222efeb3, type: 3}
+    face1: {fileID: 21300000, guid: dd20c342d2b94044fbce29c945941c1a, type: 3}
+    face2: {fileID: 21300000, guid: 5bb163844a48fba44bd299b2b0c13009, type: 3}
+    face3: {fileID: 21300000, guid: c7cd355e633f49848a18d095dc75a6a1, type: 3}
+  - id: washer
+    full: {fileID: 21300000, guid: e2e73aab54b9959489f0faf036ebfb5c, type: 3}
+    turn: {fileID: 21300000, guid: 02c790961cb3cde4a9c7c4f2ab7723d1, type: 3}
+    keys: {fileID: 21300000, guid: 706cb1f4e0a5f4f4896675d23a0babdc, type: 3}
+    face1: {fileID: 21300000, guid: ceb1d02e45d40db4089ac9371bea57ff, type: 3}
+    face2: {fileID: 21300000, guid: 14272355d32c87d468b3918666239ef0, type: 3}
+    face3: {fileID: 21300000, guid: cb9357fa09dd7d341842f915f7ed3a68, type: 3}
+  - id: pc
+    full: {fileID: 21300000, guid: d61beb8e23f4def4ea947926cbfda23a, type: 3}
+    turn: {fileID: 21300000, guid: 8924e7d4dfaa00d43ac48c79015e2536, type: 3}
+    keys: {fileID: 21300000, guid: b11a1df96c9cee1428d4786aadd86883, type: 3}
+    face1: {fileID: 21300000, guid: 8ac96357b1cf9094f84873d892854e46, type: 3}
+    face2: {fileID: 21300000, guid: 9a14df8f6136d9b4197336b88e27a0bc, type: 3}
+    face3: {fileID: 21300000, guid: 94e2725dae31c9f4498b58541565eac6, type: 3}
+  - id: fan
+    full: {fileID: 21300000, guid: 08b0cda1e0abaeb428cde3b9bb2d83c5, type: 3}
+    turn: {fileID: 21300000, guid: df76e286494932d40a2991141d72e2b6, type: 3}
+    keys: {fileID: 21300000, guid: 910da7fbc02f11a4ba78738501247744, type: 3}
+    face1: {fileID: 21300000, guid: eb2741b3bdde2a64da34be87ffad26db, type: 3}
+    face2: {fileID: 21300000, guid: 8c3b988b918f58c42ba94c26053aefb4, type: 3}
+    face3: {fileID: 21300000, guid: d12a199d8a148d74b9149e610065c843, type: 3}
+  - id: gen
+    full: {fileID: 21300000, guid: 9d54be6f70dc3c34b9660ce97db3a672, type: 3}
+    turn: {fileID: 21300000, guid: edcd72bbfdfdc0043abc7f2cab3546aa, type: 3}
+    keys: {fileID: 21300000, guid: 5c11a00428b936f41a6f3b686cd2e4bc, type: 3}
+    face1: {fileID: 21300000, guid: 953fa8ba9ec09b0408ff86f69e72a95d, type: 3}
+    face2: {fileID: 21300000, guid: f06e0b97c058061418f1f378818b124d, type: 3}
+    face3: {fileID: 21300000, guid: bc8cd16fcb90f3d469e2137c83e24747, type: 3}
+  - id: iron
+    full: {fileID: 21300000, guid: 8f97496d6fb38624995119755894fca8, type: 3}
+    turn: {fileID: 21300000, guid: 0d12927e380f95543bf3774d92ed1f2e, type: 3}
+    keys: {fileID: 21300000, guid: 2b67bdb742e377f42b8801b91aa54e34, type: 3}
+    face1: {fileID: 21300000, guid: 8e914664a124f2d43985164e753a0980, type: 3}
+    face2: {fileID: 21300000, guid: 3c809c1a8a76bc84ba3ac3f9ee39578e, type: 3}
+    face3: {fileID: 21300000, guid: 2497587012fcf7e46be874b3a5ff32e0, type: 3}
+  - id: stove
+    full: {fileID: 21300000, guid: b619f02c83902f64e8faef2e970943ee, type: 3}
+    turn: {fileID: 21300000, guid: 5d644100ef4469f4b89f5384659e0a3d, type: 3}
+    keys: {fileID: 21300000, guid: e3810b95135c3084ea383e26e68b6d7f, type: 3}
+    face1: {fileID: 21300000, guid: dd9ed93b35d161e40b7c92423aadb94c, type: 3}
+    face2: {fileID: 21300000, guid: e0ca446c15f51be4bb1d45d26b515283, type: 3}
+    face3: {fileID: 21300000, guid: dd21fc88ac896eb489abe9348ebe4b17, type: 3}
+  - id: boiler
+    full: {fileID: 21300000, guid: 1656f9b74d25d7b4ba24729bc5027764, type: 3}
+    turn: {fileID: 21300000, guid: 1d384cbac2620f44aa4cd8c60cfe6a75, type: 3}
+    keys: {fileID: 21300000, guid: 4530742ad2fd37d4e87c2ebfb64de0d9, type: 3}
+    face1: {fileID: 21300000, guid: c0a44e180cfb74e45ad4eba8d8ed6a92, type: 3}
+    face2: {fileID: 21300000, guid: e66793522f28d2d4796e24d52e93466d, type: 3}
+    face3: {fileID: 21300000, guid: 1abad5c881e62f44db36e1ec7bd6947f, type: 3}
+  rarityFrames:
+  - {fileID: 21300000, guid: 9c5022736a986294091e768fd4532b70, type: 3}
+  - {fileID: 21300000, guid: b79f674c53dbfae458293e831ee9258c, type: 3}
+  - {fileID: 21300000, guid: 76d3f61ebd5e8494e971c577992e5b86, type: 3}
+  notOwnedFrame: {fileID: 21300000, guid: 0b6c353322e24bc438f0fd1951eb43f4, type: 3}
+  gradeBadges:
+  - {fileID: 21300000, guid: 07f447ddd0a69d44992243eacdbf49ac, type: 3}
+  - {fileID: 21300000, guid: 4fb7c63528611df419ae65aaa6dcf17a, type: 3}
+  - {fileID: 21300000, guid: 10ba99c4d70cbf848aad517599783147, type: 3}
+  icons:
+  - id: ad
+    sprite: {fileID: 21300000, guid: 1ee31804d80dd4e489fd6af7f08843c6, type: 3}
+  - id: attend
+    sprite: {fileID: 21300000, guid: 409a9d1c9ca8bd54fa805c0ddd94ec09, type: 3}
+  - id: coin
+    sprite: {fileID: 21300000, guid: 23e85c9dd371dac4abf1f678dfa6bc82, type: 3}
+  - id: crystal
+    sprite: {fileID: 21300000, guid: 125b7ded06ca585418d134a2bf2110ea, type: 3}
+  - id: essence
+    sprite: {fileID: 21300000, guid: 4a9649e05359cd24b9e277daed3af298, type: 3}
+  - id: gearbox
+    sprite: {fileID: 21300000, guid: c081c43fa4b547a4e8ae42b2e59b3383, type: 3}
+  - id: idle
+    sprite: {fileID: 21300000, guid: 267917ab123f47941adf06cadf8c6201, type: 3}
+  - id: idleboost
+    sprite: {fileID: 21300000, guid: a6cc1dea3bc170c4a8196ac119e80f8d, type: 3}
+  - id: month
+    sprite: {fileID: 21300000, guid: ef1715af674b3a3448404ac84dcb00aa, type: 3}
+  - id: multitap
+    sprite: {fileID: 21300000, guid: 4fd77ec7923cc90449302f23ff309114, type: 3}
+  - id: noads
+    sprite: {fileID: 21300000, guid: 609060c24ab1af84488593bedd704f49, type: 3}
+  - id: part_chip
+    sprite: {fileID: 21300000, guid: 411ba6eeef1b59142a3803297f97c5eb, type: 3}
+  - id: part_coil
+    sprite: {fileID: 21300000, guid: fe0895b147b961c4398f2305d66befe1, type: 3}
+  - id: part_filter
+    sprite: {fileID: 21300000, guid: d159a62dc3eba78498ce5386de63c42d, type: 3}
+  - id: part_motor
+    sprite: {fileID: 21300000, guid: 0743a0da3373ab84c916b2e19bfc7989, type: 3}
+  - id: parts
+    sprite: {fileID: 21300000, guid: 6ca81bcfe8fb2a34bb2d46f455060609, type: 3}
+  - id: pass
+    sprite: {fileID: 21300000, guid: 05f3c1a4c16cba44a9728a42e901d5e4, type: 3}
+  - id: power
+    sprite: {fileID: 21300000, guid: c928335d3e579f14bb5b03f284b994ff, type: 3}
+  - id: ps_boost
+    sprite: {fileID: 21300000, guid: 9ae19490cd2d42e4ea73eac330bb3d2c, type: 3}
+  - id: ps_storm
+    sprite: {fileID: 21300000, guid: 8365e227582fc2c409b3b452a9af2996, type: 3}
+  - id: settings
+    sprite: {fileID: 21300000, guid: 82e04fa4343eab7498880633b79358fc, type: 3}
+  - id: shard_ac
+    sprite: {fileID: 21300000, guid: 1df0646bacf469f4d991ad9e5129af29, type: 3}
+  - id: shard_boiler
+    sprite: {fileID: 21300000, guid: ec43835058e1e1b4282698d1ed447f11, type: 3}
+  - id: shard_fan
+    sprite: {fileID: 21300000, guid: 493b2e30b301fdb4cb7295d9f8333dc6, type: 3}
+  - id: shard_fridge
+    sprite: {fileID: 21300000, guid: e9bee56b49a6a87448eee023e4003896, type: 3}
+  - id: shard_gen
+    sprite: {fileID: 21300000, guid: 5e9a8ba06d1894f4d9d43945cd2e2b30, type: 3}
+  - id: shard_iron
+    sprite: {fileID: 21300000, guid: 92c1af84c044d1648bffeeca56492971, type: 3}
+  - id: shard_micro
+    sprite: {fileID: 21300000, guid: 7559b091b554c9348b25ecbd097d1004, type: 3}
+  - id: shard_pc
+    sprite: {fileID: 21300000, guid: 1ae38ec95ecaa7c449a255fea8b23873, type: 3}
+  - id: shard_robot
+    sprite: {fileID: 21300000, guid: a7379a0ad58d8604c897d3aa6754a244, type: 3}
+  - id: shard_stove
+    sprite: {fileID: 21300000, guid: bc2a74bbc1844b543be23b948e3bc04c, type: 3}
+  - id: shard_vac
+    sprite: {fileID: 21300000, guid: 4bd0bc954c3c591469153c5575859939, type: 3}
+  - id: shard_washer
+    sprite: {fileID: 21300000, guid: 85ec6cb0365641a45bcb735e6c01d66f, type: 3}
+  - id: star
+    sprite: {fileID: 21300000, guid: 9e7633854991b054896c84ece1eeb6ee, type: 3}
+  - id: stone
+    sprite: {fileID: 21300000, guid: 2c32d36bb8f89bb4bb9acebc5bf10a53, type: 3}
+  - id: survival
+    sprite: {fileID: 21300000, guid: cd2aa1b1fbdd5424493a760aba431e4d, type: 3}
+  - id: tab_content
+    sprite: {fileID: 21300000, guid: 9fa7ffae96b296444b23ea1cfd740bcd, type: 3}
+  - id: tab_deck
+    sprite: {fileID: 21300000, guid: 9e9bcb6af1698e24c8b0c07139d8a24d, type: 3}
+  - id: tab_gacha
+    sprite: {fileID: 21300000, guid: 6709e6389ca6c2040984f4dba048023a, type: 3}
+  - id: tab_home
+    sprite: {fileID: 21300000, guid: 71d28044e28194f45822c0ccf4a35786, type: 3}
+  - id: tab_roster
+    sprite: {fileID: 21300000, guid: a5a8f7e4a80e9ef45a9211ac9598185c, type: 3}
+  - id: tab_shop
+    sprite: {fileID: 21300000, guid: fc2260b02923cb04487fce386aa63074, type: 3}
+  - id: tab_stage
+    sprite: {fileID: 21300000, guid: 73b95e90bd57a764e85b92bd7423eb35, type: 3}

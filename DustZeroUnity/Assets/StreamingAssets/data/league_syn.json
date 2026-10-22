@@ -1,0 +1,110 @@
+[
+ {
+  "id": "living2",
+  "group": "fam1",
+  "need": 2,
+  "key": "dr",
+  "value": 0.15,
+  "nameKey": "league.syn.fam1",
+  "descKey": "league.syn.living2.desc"
+ },
+ {
+  "id": "living4",
+  "group": "fam1",
+  "need": 4,
+  "key": "dr",
+  "value": 0.3,
+  "nameKey": "league.syn.fam1",
+  "descKey": "league.syn.living4.desc"
+ },
+ {
+  "id": "kitchen2",
+  "group": "fam2",
+  "need": 2,
+  "key": "skillDmg",
+  "value": 0.3,
+  "nameKey": "league.syn.fam2",
+  "descKey": "league.syn.kitchen2.desc"
+ },
+ {
+  "id": "kitchen3",
+  "group": "fam2",
+  "need": 3,
+  "key": "skillDmg",
+  "value": 0.6,
+  "nameKey": "league.syn.fam2",
+  "descKey": "league.syn.kitchen3.desc"
+ },
+ {
+  "id": "digital2",
+  "group": "fam3",
+  "need": 2,
+  "key": "startMana",
+  "value": 30,
+  "nameKey": "league.syn.fam3",
+  "descKey": "league.syn.digital2.desc"
+ },
+ {
+  "id": "season2",
+  "group": "fam4",
+  "need": 2,
+  "key": "chill",
+  "value": 0.15,
+  "nameKey": "league.syn.fam4",
+  "descKey": "league.syn.season2.desc"
+ },
+ {
+  "id": "season3",
+  "group": "fam4",
+  "need": 3,
+  "key": "chill",
+  "value": 0.3,
+  "nameKey": "league.syn.fam4",
+  "descKey": "league.syn.season3.desc"
+ },
+ {
+  "id": "melee2",
+  "group": "P",
+  "need": 2,
+  "key": "hp",
+  "value": 0.25,
+  "nameKey": "league.syn.P",
+  "descKey": "league.syn.melee2.desc"
+ },
+ {
+  "id": "melee4",
+  "group": "P",
+  "need": 4,
+  "key": "hp",
+  "value": 0.5,
+  "nameKey": "league.syn.P",
+  "descKey": "league.syn.melee4.desc"
+ },
+ {
+  "id": "ranged2",
+  "group": "H",
+  "need": 2,
+  "key": "haste",
+  "value": 0.15,
+  "nameKey": "league.syn.H",
+  "descKey": "league.syn.ranged2.desc"
+ },
+ {
+  "id": "ranged4",
+  "group": "H",
+  "need": 4,
+  "key": "haste",
+  "value": 0.3,
+  "nameKey": "league.syn.H",
+  "descKey": "league.syn.ranged4.desc"
+ },
+ {
+  "id": "ranged6",
+  "group": "H",
+  "need": 6,
+  "key": "haste",
+  "value": 0.5,
+  "nameKey": "league.syn.H",
+  "descKey": "league.syn.ranged6.desc"
+ }
+]

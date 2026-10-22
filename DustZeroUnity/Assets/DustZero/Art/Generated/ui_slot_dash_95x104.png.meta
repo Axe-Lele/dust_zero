@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 11d59cb9fa7b3f04a858096784ad6e9f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2124013570262505632
+    second: ui_slot_dash_95x104_0
+  - first:
+      213: -8696998421713949472
+    second: ui_slot_dash_95x104_1
+  - first:
+      213: 3337518087850502961
+    second: ui_slot_dash_95x104_2
+  - first:
+      213: 4569765841127377699
+    second: ui_slot_dash_95x104_3
+  - first:
+      213: -9082047029269432940
+    second: ui_slot_dash_95x104_4
+  - first:
+      213: 7890408906400442883
+    second: ui_slot_dash_95x104_5
+  - first:
+      213: -6637173550308966005
+    second: ui_slot_dash_95x104_6
+  - first:
+      213: -5773742878491106929
+    second: ui_slot_dash_95x104_7
+  - first:
+      213: 9186619605448909501
+    second: ui_slot_dash_95x104_8
+  - first:
+      213: -2141677523598874605
+    second: ui_slot_dash_95x104_9
+  - first:
+      213: -8804314551075137140
+    second: ui_slot_dash_95x104_10
+  - first:
+      213: 5374499329952570025
+    second: ui_slot_dash_95x104_11
+  - first:
+      213: -3321746080531094916
+    second: ui_slot_dash_95x104_12
+  - first:
+      213: -8506301938867171397
+    second: ui_slot_dash_95x104_13
+  - first:
+      213: -2822817298276517463
+    second: ui_slot_dash_95x104_14
+  - first:
+      213: -8473109938322297651
+    second: ui_slot_dash_95x104_15
+  - first:
+      213: -2649130649837124658
+    second: ui_slot_dash_95x104_16
+  - first:
+      213: 625987147091033017
+    second: ui_slot_dash_95x104_17
+  - first:
+      213: 773173529693465201
+    second: ui_slot_dash_95x104_18
+  - first:
+      213: -8629520887550386142
+    second: ui_slot_dash_95x104_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 96
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a81b91b6130a7d10800000000000000
+      internalID: 2124013570262505632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 99
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec6b9d930e0e4780800000000000000
+      internalID: -8696998421713949472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 99
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b25c9940f315e20800000000000000
+      internalID: 3337518087850502961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 99
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b8c1322d11b6f30800000000000000
+      internalID: 4569765841127377699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 94
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495f00b785616f180800000000000000
+      internalID: -9082047029269432940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30aa39e581d508d60800000000000000
+      internalID: 7890408906400442883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 79
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81473d32d504e3a0800000000000000
+      internalID: -6637173550308966005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81a81f417b8fdfa0800000000000000
+      internalID: -5773742878491106929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 61
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2eb6dbbdd6d7f70800000000000000
+      internalID: 9186619605448909501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318637ea3ab3742e0800000000000000
+      internalID: -2141677523598874605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 43
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c891d54209ac0d580800000000000000
+      internalID: -8804314551075137140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aad56f4aae069a40800000000000000
+      internalID: 5374499329952570025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_12
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 26
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72e5e30a89c6e1d0800000000000000
+      internalID: -3321746080531094916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf0b95747b83f980800000000000000
+      internalID: -8506301938867171397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 9
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a976668f9653d8d0800000000000000
+      internalID: -2822817298276517463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcca77f4767796a80800000000000000
+      internalID: -8473109938322297651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 19
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3cbdca5b56c3bd0800000000000000
+      internalID: -2649130649837124658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb32506ef3ffa800800000000000000
+      internalID: 625987147091033017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a2d139a3ddaba00800000000000000
+      internalID: 773173529693465201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_slot_dash_95x104_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220eeb35978cd3880800000000000000
+      internalID: -8629520887550386142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ui_slot_dash_95x104_0: 2124013570262505632
+      ui_slot_dash_95x104_1: -8696998421713949472
+      ui_slot_dash_95x104_10: -8804314551075137140
+      ui_slot_dash_95x104_11: 5374499329952570025
+      ui_slot_dash_95x104_12: -3321746080531094916
+      ui_slot_dash_95x104_13: -8506301938867171397
+      ui_slot_dash_95x104_14: -2822817298276517463
+      ui_slot_dash_95x104_15: -8473109938322297651
+      ui_slot_dash_95x104_16: -2649130649837124658
+      ui_slot_dash_95x104_17: 625987147091033017
+      ui_slot_dash_95x104_18: 773173529693465201
+      ui_slot_dash_95x104_19: -8629520887550386142
+      ui_slot_dash_95x104_2: 3337518087850502961
+      ui_slot_dash_95x104_3: 4569765841127377699
+      ui_slot_dash_95x104_4: -9082047029269432940
+      ui_slot_dash_95x104_5: 7890408906400442883
+      ui_slot_dash_95x104_6: -6637173550308966005
+      ui_slot_dash_95x104_7: -5773742878491106929
+      ui_slot_dash_95x104_8: 9186619605448909501
+      ui_slot_dash_95x104_9: -2141677523598874605
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

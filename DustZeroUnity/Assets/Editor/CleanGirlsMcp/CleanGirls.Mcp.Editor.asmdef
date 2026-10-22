@@ -1,0 +1,11 @@
+{
+  "name": "CleanGirls.Mcp.Editor",
+  "rootNamespace": "CleanGirls.Editor",
+  "references": [
+    "MCPForUnity.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

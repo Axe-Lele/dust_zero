@@ -1,0 +1,26 @@
+{
+    "name": "DustZero.Tests.PlayMode",
+    "rootNamespace": "DustZero.Tests",
+    "references": [
+        "DustZero.Data",
+        "DustZero.Core",
+        "DustZero.Game",
+        "UnityEngine.TestRunner",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

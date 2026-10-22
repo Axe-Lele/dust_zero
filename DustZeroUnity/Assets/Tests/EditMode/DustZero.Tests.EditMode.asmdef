@@ -1,0 +1,29 @@
+{
+    "name": "DustZero.Tests.EditMode",
+    "rootNamespace": "DustZero.Tests",
+    "references": [
+        "DustZero.Data",
+        "DustZero.Core",
+        "DustZero.Game",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Unity.Nuget.Newtonsoft-Json",
+        "Unity.TextMeshPro",
+        "DustZero.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
