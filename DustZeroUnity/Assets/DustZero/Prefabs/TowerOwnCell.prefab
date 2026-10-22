@@ -30,7 +30,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2353910656393256588}
+  - {fileID: 3447666906277509201}
   m_Father: {fileID: 787637593371365944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
@@ -567,7 +567,7 @@ MonoBehaviour:
   inBadge: {fileID: 910972887474856010}
   hotBadge: {fileID: 363007811631206710}
   button: {fileID: 7673893430731723399}
---- !u!1 &6993033251392019492
+--- !u!1 &5990282777322367759
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -575,9 +575,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2353910656393256588}
-  - component: {fileID: 4299485058320169932}
-  - component: {fileID: 8373183659291955672}
+  - component: {fileID: 3447666906277509201}
+  - component: {fileID: 4135717193104947216}
+  - component: {fileID: 7051340990051041759}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -585,13 +585,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2353910656393256588
+--- !u!224 &3447666906277509201
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6993033251392019492}
+  m_GameObject: {fileID: 5990282777322367759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -604,21 +604,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &4299485058320169932
+--- !u!222 &4135717193104947216
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6993033251392019492}
+  m_GameObject: {fileID: 5990282777322367759}
   m_CullTransparentMesh: 1
---- !u!114 &8373183659291955672
+--- !u!114 &7051340990051041759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6993033251392019492}
+  m_GameObject: {fileID: 5990282777322367759}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}

@@ -15,7 +15,7 @@ SafeArea/Column/Battle/Hud/Readouts/Power/Label	71.2	69.0	284.8	15.0	#8D99A2FF	1
 SafeArea/Column/Battle/Hud/Readouts/Power/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	71.2	69.0	284.8	15.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Readouts/Power/Value	71.2	71.0	284.8	44.0	#FF9A3CFF	26.0	0W	71.2,73.5,40.3,39.0
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter	71.2	109.0	284.8	4.0	#5A3A1EFF			
-SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	71.2	109.0	77.4	4.0	#FF9A3CFF			
+SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	71.2	109.0	65.0	4.0	#FF9A3CFF			
 SafeArea/Column/Battle/Hud/Readouts/Remain/Label	368.0	69.0	34.0	15.0	#8D99A2FF	10.0	남은 적	370.5,69.0,32.3,15.0
 SafeArea/Column/Battle/Hud/Readouts/Remain/Value	368.0	71.0	34.0	44.0	#FF9A3CFF	26.0	22	370.8,73.5,31.2,39.0
 SafeArea/Column/Battle/DeckBar/Slots/Count	16.0	713.0	199.0	32.0	#5D6871FF	12.0	배치 1/8	16.0,720.0,43.2,18.0

@@ -8375,6 +8375,11 @@ namespace DustZero.Editor
             var skillDesc = UiKit.Label("Desc", selRow, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
                                         TextAlignmentOptions.TopLeft, out var sdRt, "");
             skillDesc.textWrappingMode = TextWrappingModes.Normal;
+            // 원본 `.sv-sel` 은 이 리더(청소기)에서 57 — 설명이 **한 줄**이다. 우리 글꼴이
+            // 15% 가량 넓어 같은 글이 두 줄로 접히고, 그만큼(17.9) 시트가 높아진다.
+            // 시트는 세로 가운데에 놓이므로 안의 글이 전부 4.8~7.8 위로 밀린다.
+            // 줄이지 않는다: 에어컨 리더의 설명은 63자라 원본에서도 두 줄이고,
+            // 글자를 깎아 5px 를 맞추는 것은 바꿔 치기다. 대조표에 남겨 둔다.
             skillDesc.overflowMode = TextOverflowModes.Overflow;
             var sdFit = sdRt.gameObject.AddComponent<ContentSizeFitter>();
             sdFit.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
@@ -8422,6 +8427,9 @@ namespace DustZero.Editor
             // ---- `.sv-rw`: 오늘 남은 보상. 원본은 세 칸이 두 줄로 접힌다.
             var rewardLabel = SheetText("Rewards", 12f, UiTheme.Ink2, "");
             rewardLabel.richText = true;
+            // 원본은 18 짜리 줄 둘에 사이 6 이다(42). 우리는 접힌 한 덩이라 36 이다 —
+            // 위 스킬 줄이 17.9 높은 것과 반대 방향이라, 이것만 고치면 시트가 더 높아져
+            // 안의 글이 더 밀린다. 둘을 같이 풀어야 해서 함께 남겨 둔다.
 
             // ---- `.ov-btns`: 닫기 / 출동, 둘 다 179 폭.
             var btnRow = SheetRow("Buttons", 48f);
