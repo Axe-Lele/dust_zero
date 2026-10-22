@@ -10,7 +10,7 @@ SafeArea/Column/League/Hud/Top/Ctrls/Exit/Content/Label	350.0	18.5	44.0	37.0	#E8
 SafeArea/Column/League/Hud/Readouts/Life/Label	28.0	64.0	112.2	15.0	#8D99A2FF	10.0	청결도	28.0,64.0,29.2,15.0
 SafeArea/Column/League/Hud/Readouts/Life/Value	28.0	81.0	112.2	36.0	#FF9A3CFF	24.0	20	28.0,81.0,28.8,36.0
 SafeArea/Column/League/Hud/Readouts/Gold/Label	140.2	64.0	112.2	15.0	#8D99A2FF	10.0	코인	140.2,64.0,19.4,15.0
-SafeArea/Column/League/Hud/Readouts/Gold/Value	140.2	81.0	112.2	36.0	#FF9A3CFF	24.0	1	140.2,81.0,14.4,36.0
+SafeArea/Column/League/Hud/Readouts/Gold/Value	140.2	81.0	112.2	36.0	#FF9A3CFF	24.0	0	140.2,81.0,14.4,36.0
 SafeArea/Column/League/Hud/Readouts/Level/Label	252.4	64.0	149.6	15.0	#8D99A2FF	10.0	레벨 3 · 배치 1/3	331.8,64.0,70.2,15.0
 SafeArea/Column/League/Hud/Readouts/Level/Xp	252.4	81.0	149.6	28.0	#FF9A3CFF	18.0	0/4	372.5,81.5,29.5,27.0
 SafeArea/Column/League/Hud/Readouts/Level/Meter	252.4	104.0	149.6	4.0	#5A3A1EFF			
@@ -61,9 +61,6 @@ SafeArea/Column/League/Bench/LeagueBenchCell(Clone)	66.4	561.0	45.4	48.0	#FFFFFF
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Outline	66.4	561.0	45.4	48.0	#C7D0D6FF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Portrait	69.1	565.0	40.0	40.0	#FFFFFFFF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Star	69.4	562.0	42.4	13.6	#FF9A3CFF	9.0	★	69.4,562.0,9.0,13.5
-SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Trial	66.4	594.9	43.4	13.1	#5D6871FF	8.5	체험	94.6,595.2,15.2,12.8
-SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Trial/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	66.4	594.9	43.4	13.1	#FFFFFFFF			
-SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Trial/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	66.4	594.9	43.4	13.1	#FFFFFFFF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)	116.8	561.0	45.4	48.0	#FFFFFFFF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Outline	116.8	561.0	45.4	48.0	#C7D0D6FF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Portrait	119.5	565.0	40.0	40.0	#FFFFFFFF			
@@ -78,6 +75,7 @@ SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Trial/TMP SubMeshUI [IBM Ple
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)	217.6	561.0	45.4	48.0	#FFFFFFFF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Outline	217.6	561.0	45.4	48.0	#C7D0D6FF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Portrait	220.3	565.0	40.0	40.0	#FFFFFFFF			
+SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Star	220.6	562.0	42.4	13.6	#FF9A3CFF	9.0	★	220.6,562.0,9.0,13.5
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)	268.0	561.0	45.4	48.0	#FFFFFFFF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Outline	268.0	561.0	45.4	48.0	#C7D0D6FF			
 SafeArea/Column/League/Bench/LeagueBenchCell(Clone)/Portrait	270.7	565.0	40.0	40.0	#FFFFFFFF			
@@ -112,6 +110,7 @@ SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Portrait	114.2	684.0	40.0	40.0
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name	98.8	726.0	70.8	20.0	#1D2226FF	13.0		
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	98.8	726.0	70.8	20.0	#FFFFFFFF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family	98.8	745.0	70.8	15.0	#5D6871FF	9.5	팔렸어요	117.3,745.4,33.9,14.2
+SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	98.8	745.0	70.8	15.0	#FFFFFFFF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	98.8	745.0	70.8	15.0	#FFFFFFFF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)	177.6	679.0	74.8	85.0	#F7F9FAFF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Outline	177.6	679.0	74.8	85.0	#C7D0D6FF			
@@ -128,21 +127,14 @@ SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name	260.4	726.0	70.8	20.0	#1D
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	260.4	726.0	70.8	20.0	#FFFFFFFF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family	260.4	745.0	70.8	15.0	#5D6871FF	9.5	팔렸어요	278.9,745.4,33.9,14.2
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	260.4	745.0	70.8	15.0	#FFFFFFFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	260.4	745.0	70.8	15.0	#FFFFFFFF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)	339.2	679.0	74.8	85.0	#F7F9FAFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Wash	339.2	679.0	74.8	53.0	#DCE9F7FF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Outline	339.2	679.0	74.8	85.0	#C7D0D6FF			
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Portrait	356.6	684.0	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name	341.2	726.0	70.8	20.0	#1D2226FF	13.0	전자레인지	351.6,729.5,49.9,13.0
+SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name	341.2	726.0	70.8	20.0	#1D2226FF	13.0		
 SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	341.2	726.0	70.8	20.0	#FFFFFFFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family	341.2	745.0	70.8	15.0	#5D6871FF	9.5	주방·원거리	353.9,745.4,45.5,14.2
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	341.2	745.0	70.8	15.0	#FFFFFFFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Cost	384.0	682.0	27.0	16.0	#FFFFFFFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Cost/Text	384.0	680.8	27.0	18.4	#1D2226FF	12.0	2	393.9,681.0,7.2,18.0
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Trial	342.2	682.0	28.0	13.0	#5D6871FF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Trial/Text	342.2	681.9	28.0	13.1	#FFFFFFFF	8.5	체험	348.6,682.1,15.2,12.7
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Trial/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	342.2	681.9	28.0	13.1	#FFFFFFFF			
-SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Trial/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	342.2	681.9	28.0	13.1	#FFFFFFFF			
+SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family	341.2	745.0	70.8	15.0	#5D6871FF	9.5	팔렸어요	359.7,745.4,33.9,14.2
+SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	341.2	745.0	70.8	15.0	#FFFFFFFF			
+SafeArea/Column/League/Shop/LeagueShopCard(Clone)/Family/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	341.2	745.0	70.8	15.0	#FFFFFFFF			
 SafeArea/Column/League/Go/Button	16.0	782.0	398.0	46.0	#FF9A3CFF			
 SafeArea/Column/League/Go/Button/Content/Label	24.0	790.0	382.0	30.0	#1D2226FF	19.0	결과 바로 보기	165.5,795.5,99.0,19.0
 SafeArea/Column/League/Go/Button/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	24.0	790.0	382.0	30.0	#FFFFFFFF			

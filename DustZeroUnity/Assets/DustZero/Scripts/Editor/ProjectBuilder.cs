@@ -3672,6 +3672,29 @@ namespace DustZero.Editor
             so.ApplyModifiedPropertiesWithoutUndo();
         }
 
+        /// <summary>
+        /// 글자 칸을 **원본 글자의 중심**에 맞춰 띄운다.
+        ///
+        /// 왜 필요한가: 원본의 글자 상자는 CSS line-height(1.4 안팎)이고 우리 칸은 TMP 가
+        /// 요구하는 줄 높이(1.5)다. 그래서 같은 글자라도 칸이 더 높다. 그 높은 칸을
+        /// **줄 자체의 높이로 쓰면** 아래 것들이 통째로 밀린다 — 콘텐츠 탭이 5.6 밀려 있었다.
+        /// 줄(블록)은 원본 높이로 두고, 글자 칸만 중심을 맞춰 넘치게 둔다.
+        /// </summary>
+        /// <param name="rt">글자의 RectTransform.</param>
+        /// <param name="centerPage">부모 위에서 잰 원본 글자 중심(페이지 좌표).</param>
+        /// <param name="heightPx">글자 칸 높이(이미 캔버스 단위로 잰 값).</param>
+        /// <param name="left">왼쪽 여백(캔버스).</param>
+        /// <param name="right">오른쪽 여백 또는 폭(캔버스).</param>
+        /// <param name="fromRight">true 면 오른쪽 끝까지 늘리고 <paramref name="right"/> 를 여백으로 쓴다.</param>
+        static void CenterBand(RectTransform rt, float centerPage, float heightPx,
+                               float left, float right, bool fromRight)
+        {
+            float c = UiTheme.Py(centerPage), half = heightPx * 0.5f;
+            Anchor(rt, new Vector2(0f, 1f), new Vector2(fromRight ? 1f : 0f, 1f),
+                   new Vector2(left, -c - half),
+                   new Vector2(fromRight ? -right : right, -c + half));
+        }
+
         static void Wire(Object target, params (string field, Object value)[] pairs)
         {
             var so = new SerializedObject(target);
@@ -5144,15 +5167,18 @@ namespace DustZero.Editor
             }
 
             // ---- heading
-            var head = Block(column, "Head", 36f);
+            // 원본 `.sec-head` 는 **30** 이다(h2 박스 90~120, 그 아래 카드가 132).
+            // 블록을 글자 줄 높이(36)로 잡으면 탭 전체가 5.6 내려간다 — 블록은 원본 높이로
+            // 두고, 글자 칸만 원본 글자 중심에 맞춰 띄운다(넘쳐도 가리는 마스크가 없다).
+            var head = Block(column, "Head", 30f);
             UiKit.Label("Title", head, fonts.Title, UiTheme.Py(24f), UiTheme.Ink,
                         TextAlignmentOptions.Left, out var htRt, "콘텐츠");
-            Anchor(htRt, Vector2.zero, new Vector2(0f, 1f), Vector2.zero,
-                   new Vector2(UiTheme.Px(70f), 0f));
+            CenterBand(htRt, 15f, UiTheme.Row(UiTheme.Py(24f), UiTheme.Py(30f)),
+                       0f, UiTheme.Px(70f), fromRight: false);
             UiKit.Label("Sub", head, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
                         TextAlignmentOptions.Left, out var hsRt, "스테이지와 따로 즐기는 모드");
-            Anchor(hsRt, Vector2.zero, new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(73f), 0f), new Vector2(0f, -UiTheme.Py(4f)));
+            CenterBand(hsRt, 18f, UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(18f)),
+                       UiTheme.Px(73f), 0f, fromRight: true);
 
             // ---- the dark 대청소 card. 원본 `#modeSurv` 은 다른 모드 카드와 같은 틀이고
             // 높이는 336.7 이다 — 위 14 / 47.6, 소개 71.6 / 20.9, 규칙 102.5 / 42,
@@ -5227,7 +5253,7 @@ namespace DustZero.Editor
             // three stat cells
             var stats = CardRow("Stats", 154.5f, 55f);
             var statGrid = stats.gameObject.AddComponent<GridLayoutGroup>();
-            statGrid.cellSize = new Vector2(UiTheme.Px(104.7f), UiTheme.Py(55f));
+            statGrid.cellSize = new Vector2(UiTheme.Px(118f), UiTheme.Py(55f));
             statGrid.spacing = new Vector2(UiTheme.Px(8f), 0f);
             statGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             statGrid.constraintCount = 3;
@@ -5367,8 +5393,9 @@ namespace DustZero.Editor
             // ---- 협동 청소. 원본 `#modeCoop` 도 같은 모드 카드이고 높이는 300.4 다
             // (보충 줄 없음, 소개 두 줄). 예전에는 132 짜리 손수 만든 카드라 규칙·통계가
             // 통째로 빠져 있었고, 아래 카드들이 그만큼 위로 올라와 있었다.
+            // 협동 카드만 그림이 넓어 글자가 100 에서 시작한다(다른 카드는 84).
             var coopCard = BuildModeCard("Coop", library != null ? library.Unit("fridge") : null,
-                                         300.4f, 47.6f, 41.8f, 55f, hasSub: false);
+                                         300.4f, 47.6f, 41.8f, 55f, hasSub: false, textLeft: 70f);
 
             // ---- 먼지 타워 · 가전 대청소 리그. 원본 `.mode-card` 를 430x932 에서 재서
             // 그대로 짰다: 안쪽 여백 14, 위 50 / 소개 41.8 / 규칙 42 / 통계 59 / 보충 18.6 / CTA 46.
@@ -5376,7 +5403,7 @@ namespace DustZero.Editor
             // 줄 높이만 카드마다 다르다 — 원본에서 잰 값을 그대로 넘긴다.
             ModeCard BuildModeCard(string id, Sprite cardIcon, float cardH = 321.4f,
                                    float topH = 50f, float leadH = 41.8f, float statsH = 59f,
-                                   bool hasSub = true)
+                                   bool hasSub = true, float textLeft = 54f)
             {
                 var mc = Block(column, id, cardH);
                 var mcHeight = mc.GetComponent<LayoutElement>();
@@ -5413,14 +5440,14 @@ namespace DustZero.Editor
                                            out var mkRt, "");
                 mcKicker.textWrappingMode = TextWrappingModes.NoWrap;
                 Anchor(mkRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                       new Vector2(UiTheme.Px(54f), -UiTheme.Py(18f)), Vector2.zero);
+                       new Vector2(UiTheme.Px(textLeft), -UiTheme.Py(18f)), Vector2.zero);
 
                 var mcTitle = UiKit.Label("Title", mcTop, fonts.Title, UiTheme.Py(26f),
                                           UiTheme.DarkInk, TextAlignmentOptions.TopLeft,
                                           out var mtRt, "");
                 mcTitle.textWrappingMode = TextWrappingModes.NoWrap;
                 Anchor(mtRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                       new Vector2(UiTheme.Px(54f), -UiTheme.Py(50f)),
+                       new Vector2(UiTheme.Px(textLeft), -UiTheme.Py(50f)),
                        new Vector2(0f, -UiTheme.Py(19f)));
 
                 var mcLeadRow = Row("Lead", rowY, leadH);
@@ -5519,7 +5546,9 @@ namespace DustZero.Editor
                 return card;
             }
 
-            var towerCard = BuildModeCard("Tower", library != null ? library.Unit("boiler") : null);
+            // 통계 줄 높이는 카드마다 다르다 — 원본에서 타워는 55, 리그는 59 다.
+            var towerCard = BuildModeCard("Tower", library != null ? library.Unit("boiler") : null,
+                                          312.8f, 50f, 41.8f, 55f);
             var leagueCard = BuildModeCard("League", library != null ? library.Unit("vac") : null,
                                            leadH: 20.9f);
 
@@ -6994,14 +7023,14 @@ namespace DustZero.Editor
             // ---- heading: title, owned count, and the two dark shortcuts.
             var head = Block("Head", 33f);
             UiKit.Label("Title", head, fonts.Title, UiTheme.Py(24f), UiTheme.Ink,
-                        TextAlignmentOptions.BottomLeft, out var htRt, "가전 도감");
-            Anchor(htRt, Vector2.zero, new Vector2(0f, 1f),
-                   Vector2.zero, new Vector2(UiTheme.Px(86f), 0f));
+                        TextAlignmentOptions.Left, out var htRt, "가전 도감");
+            // 글자 칸을 줄 높이로 늘리면 줄 자체가 높아져 아래가 밀린다 — 중심만 맞춘다.
+            CenterBand(htRt, 15f, UiTheme.Row(UiTheme.Py(24f), UiTheme.Py(30f)),
+                       0f, UiTheme.Px(86f), fromRight: false);
             var countLabel = UiKit.Label("Count", head, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
-                                         TextAlignmentOptions.BottomLeft, out var hcRt, "");
-            Anchor(hcRt, Vector2.zero, new Vector2(0f, 1f),
-                   new Vector2(UiTheme.Px(89f), 0f),
-                   new Vector2(UiTheme.Px(180f), -UiTheme.Py(3f)));
+                                         TextAlignmentOptions.Left, out var hcRt, "");
+            CenterBand(hcRt, 18f, UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(18f)),
+                       UiTheme.Px(89f), UiTheme.Px(180f), fromRight: false);
 
             var galleryButton = UiKit.Button("Gallery", head, fonts.Body, "일러스트",
                                              UiButtonKind.DarkSolid, out var gbRt,
@@ -7109,14 +7138,15 @@ namespace DustZero.Editor
             // rather than the column using one spacing for all three.
             var head = Block("Head", 38f);
             UiKit.Label("Title", head, fonts.Title, UiTheme.Py(24f), UiTheme.Ink,
-                        TextAlignmentOptions.BottomLeft, out var dhRt, "편성");
-            Anchor(dhRt, Vector2.zero, new Vector2(0f, 1f),
-                   Vector2.zero, new Vector2(UiTheme.Px(42f), 0f));
+                        TextAlignmentOptions.Left, out var dhRt, "편성");
+            // 이 줄은 38 이고 원본 글자는 93(중심 105) 이다 — 줄 위에서 15 가 아니라
+            // 블록이 90 에서 시작하므로 같은 15 다. 줄 높이로 늘리지 않는다.
+            CenterBand(dhRt, 15f, UiTheme.Row(UiTheme.Py(24f), UiTheme.Py(30f)),
+                       0f, UiTheme.Px(42f), fromRight: false);
             var deckCount = UiKit.Label("Count", head, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
-                                        TextAlignmentOptions.BottomLeft, out var dcRt, "");
-            Anchor(dcRt, Vector2.zero, new Vector2(0f, 1f),
-                   new Vector2(UiTheme.Px(45f), 0f),
-                   new Vector2(UiTheme.Px(120f), -UiTheme.Py(3f)));
+                                        TextAlignmentOptions.Left, out var dcRt, "");
+            CenterBand(dcRt, 18f, UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(18f)),
+                       UiTheme.Px(45f), UiTheme.Px(120f), fromRight: false);
 
             var slots = Block("Slots", 70f);
             // Six 40-wide slots spread across 398 leaves 31.6 between them (space-between).

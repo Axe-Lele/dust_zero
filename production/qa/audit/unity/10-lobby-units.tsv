@@ -1,10 +1,10 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport	0.0	76.0	430.0	778.0	#00000000			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Title	15.5	89.6	86.0	33.0	#1D2226FF	24.0	가전 도감	15.5,98.6,80.9,24.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	15.5	89.6	86.0	33.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count	104.5	92.6	91.0	30.0	#5D6871FF	12.0	보유 4/12	104.5,104.6,50.4,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	104.5	92.6	91.0	30.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Title	15.5	86.4	86.0	36.4	#1D2226FF	24.0	가전 도감	15.5,92.6,80.9,24.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	15.5	86.4	86.0	36.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count	104.5	98.4	91.0	18.4	#5D6871FF	12.0	보유 4/12	104.5,98.6,50.4,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	104.5	98.4	91.0	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Gallery	264.5	92.6	67.0	30.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Gallery/Content/Label	272.5	98.4	51.0	18.4	#E8EDF0FF	12.0	일러스트	276.6,98.6,42.8,18.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/GearBag	344.5	92.6	70.0	30.0	#1D2226FF			

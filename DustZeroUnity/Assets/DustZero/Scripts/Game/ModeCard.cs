@@ -105,7 +105,10 @@ namespace DustZero.Game
                 _cardBaseH = cardHeight != null ? cardHeight.preferredHeight : 0f;
                 _baseRead = true;
             }
-            float shrink = empty ? subRow.rect.height + UiTheme.Py(10f) : 0f;
+            // 원본은 보충 줄이 비어도 `<p class="mc-sub">` 가 남아 **여백은 그대로**다.
+            // 높이만 0이 되므로 줄 자체(18.6)만 줄이고 위아래 10 씩은 남겨야 한다 —
+            // 10 까지 같이 줄이면 카드가 6 짧아져 아래 카드가 통째로 올라온다.
+            float shrink = empty ? subRow.rect.height : 0f;
             subRow.gameObject.SetActive(!empty);
             goRow.anchoredPosition = new Vector2(goRow.anchoredPosition.x, _goBaseY + shrink);
             if (cardHeight != null)
