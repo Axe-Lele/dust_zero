@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "unityMCP": {
+      "type": "stdio",
+      "command": "C:/Users/Master/Documents/Project/clean-girls/build/unity-mcp-tools/Scripts/mcp-for-unity.exe",
+      "args": [
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "UNITY_MCP_DISABLE_TELEMETRY": "1",
+        "UNITY_MCP_DEFAULT_INSTANCE": "DustZeroUnity",
+        "UNITY_MCP_STATUS_DIR": "C:/Users/Master/Documents/Project/clean-girls/build/unity-mcp-status"
+      }
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "C:/Users/Master/Documents/Project/clean-girls/tools/mcp-runtime/node_modules/@playwright/mcp/cli.js",
+        "--browser",
+        "msedge",
+        "--headless",
+        "--isolated",
+        "--caps",
+        "vision",
+        "--viewport-size",
+        "390x844",
+        "--output-dir",
+        "C:/Users/Master/Documents/Project/clean-girls/production/qa/evidence/browser"
+      ]
+    }
+  }
+}

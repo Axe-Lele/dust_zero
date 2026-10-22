@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&amp;display=block"><style>body{margin:0;background:#EDE6DB;font-family:Pretendard,'Apple SD Gothic Neo',sans-serif;color:#2B2420;-webkit-font-smoothing:antialiased}a{color:#C85A0C}a:hover{color:#8F3F06}.dv-turn{padding:44px 48px 36px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#2B2420;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:700 15px/1.2 Pretendard,sans-serif;color:#2B2420}.dv-opts{display:flex;flex-wrap:wrap;gap:44px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:14px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#2B2420;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:500 13px/1.3 Pretendard,sans-serif;color:#5E5046}.dv-opt:target .dv-oid{background:#E8701A;color:#fff}.dv-next{margin:28px 0 0;font:13px/1.5 Pretendard,sans-serif;color:#6B5D51}</style></helmet>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname"><a class="dv-oid" href="#1a">1a</a> 확정 — 나머지 화면 확장 (스테이지 · 가전 상세 · 편성 · 소환 · 상점 · 시즌 패스 · 결과)</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 28px">
+<span style="padding:6px 12px;border-radius:999px;background:#2B2420;color:#fff;font:700 12px Pretendard">디자인 시안 · Unity 미구현/미검증 · 정적 화면</span>
+<span style="padding:6px 12px;border-radius:999px;background:#FFF1E2;color:#8F3F06;font:600 12px Pretendard">스테이지 이름·스킬·확률·가격·보상 수량은 모두 예시값(추측)</span>
+<span style="font:500 12px Pretendard;color:#6B5D51">공통 규칙: 1a의 5탭 · 상단 재화 칩 · 하위 탭 · 아래쪽 단색 두께 버튼 · 1d 상태 표현 그대로</span>
+</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a><b style="color:#2B2420">스테이지 탭</b><span>· 현재 화면 A 대체</span></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:16px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:6px"><span style="font:400 26px Jua;flex:1">스테이지</span>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#F5C028"></span><span style="font:800 14px Pretendard">1.24M</span></div>
+<div style="height:36px;padding:0 10px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:13px;height:13px;transform:rotate(45deg);border-radius:3px;background:#8E5BD6"></span><span style="font:800 14px Pretendard">2,480</span></div></div>
+<div style="position:absolute;left:12px;right:12px;top:103px;display:flex;padding:4px;border-radius:14px;background:#EFE5D7;gap:4px"><div style="flex:1;height:40px;border-radius:11px;background:#FFFDF8;display:flex;align-items:center;justify-content:center;font:800 14px Pretendard">스테이지</div><div style="flex:1;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;gap:4px;font:700 14px Pretendard;color:#6B5D51">콘텐츠<span style="width:7px;height:7px;border-radius:50%;background:#E0533D"></span></div></div>
+<div style="position:absolute;left:12px;right:0;top:163px;display:flex;gap:8px">
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#2B2420;color:#fff;display:flex;align-items:center;font:800 14px Pretendard">1 거실</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 14px Pretendard">2 주방</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#E4DCD1;color:#6B5D51;display:flex;align-items:center;gap:4px;font:700 14px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:16px">lock</span>3 욕실</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#E4DCD1;color:#6B5D51;display:flex;align-items:center;gap:4px;font:700 14px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:16px">lock</span>4 침실</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:215px;height:124px;border-radius:20px;background:#fff;border:1px solid #E8DCCB;display:flex;gap:12px;padding:10px;box-sizing:border-box">
+<div style="width:104px;border-radius:14px;background:repeating-linear-gradient(135deg,#EAD6BA 0 8px,#E2CCAE 8px 16px);display:flex;align-items:flex-end;padding:6px;box-sizing:border-box;font:500 9px ui-monospace,Menlo,monospace;color:#7A5B37">챕터 썸네일</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px">
+<span style="font:400 20px Jua">챕터 1 · 거실</span>
+<span style="font:700 12px Pretendard;color:#5E5046">별 <b style="color:#2B2420">5</b> / 15 · 다음 상자 ★10</span>
+<span style="height:6px;border-radius:3px;background:#EADFCF;overflow:hidden"><span style="display:block;width:50%;height:100%;background:#E6A817"></span></span>
+<div style="display:flex;gap:6px"><span style="height:32px;padding:0 10px;border-radius:10px;background:#3FA66B;color:#fff;display:flex;align-items:center;gap:4px;font:800 12px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:16px">redeem</span>★5 상자 받기</span></div>
+</div></div>
+<div style="position:absolute;left:12px;right:12px;top:351px;bottom:106px;display:flex;flex-direction:column;gap:8px;overflow:hidden">
+<sc-for list="{{ stageRows }}" as="s" hint-placeholder-count="5">
+<div style="flex:none;height:{{s.h}}px;border-radius:16px;background:{{s.bg}};border:{{s.border}};box-sizing:border-box;display:flex;align-items:center;gap:12px;padding:0 10px 0 12px">
+<div style="width:44px;height:44px;border-radius:12px;background:{{s.numBg}};color:{{s.numFg}};display:flex;align-items:center;justify-content:center;font:800 14px Pretendard">{{ s.no }}</div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><span style="font:800 15px Pretendard;color:{{s.fg}};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ s.name }}</span><span style="font:600 12px Pretendard;color:{{s.fg2}}">{{ s.sub }}</span></div>
+<sc-if value="{{ s.clear }}" hint-placeholder-val="{{ false }}"><span style="font:800 17px Pretendard;letter-spacing:1px"><span style="color:#E6A817">{{ s.on }}</span><span style="color:#D9CDBD">{{ s.off }}</span></span></sc-if>
+<sc-if value="{{ s.cur }}" hint-placeholder-val="{{ false }}"><div style="height:56px;padding:0 20px;border-radius:16px;background:#E8701A;box-shadow:inset 0 -4px 0 #B9560F;color:#fff;display:flex;align-items:center;font:400 22px Jua">출동</div></sc-if>
+<sc-if value="{{ s.locked }}" hint-placeholder-val="{{ false }}"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:22px;color:#8A7B6C">lock</span></sc-if>
+</div>
+</sc-for>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:98px;background:#FFFDF8;border-radius:24px 24px 0 0;box-shadow:0 -2px 0 rgba(80,50,20,.08);display:flex;padding:0 6px 34px;box-sizing:border-box"><sc-for list="{{ navStage }}" as="t" hint-placeholder-count="5"><div style="flex:1;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative"><span style="position:absolute;top:0;width:28px;height:4px;border-radius:0 0 3px 3px;background:{{t.bar}}"></span><span style="font-family:'Material Symbols Rounded';font-size:27px;line-height:1;color:{{t.ic}}">{{ t.icon }}</span><span style="font:{{t.w}} 12px Pretendard;color:{{t.fg}}">{{ t.label }}</span></div></sc-for></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">잠긴 스테이지는 옅은 주황 대신 <b style="color:#2B2420">회색 + 자물쇠 + 개방 조건</b>으로 표시합니다. 현재 스테이지 줄만 커지고 출동 버튼이 붙습니다. 목록은 세로 스크롤이며 열면 현재 스테이지로 자동 이동합니다. 콘텐츠 하위 탭에는 대청소가 들어갑니다.</div>
+</div>
+
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a><b style="color:#2B2420">가전 상세</b><span>· 가전 탭 → 카드 누름</span></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:0;right:0;top:0;height:300px;background:#F2E2CB"></div>
+<div style="position:absolute;left:0;right:0;top:300px;height:150px;background:repeating-linear-gradient(90deg,#DDB78A 0 62px,#D2AB7C 62px 64px)"></div>
+<div style="position:absolute;left:12px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:6px">
+<div style="width:44px;height:44px;border-radius:14px;background:rgba(255,253,248,.94);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:24px">arrow_back</span></div>
+<span style="flex:1"></span>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:rgba(255,253,248,.94);display:flex;align-items:center;gap:6px"><span style="width:18px;height:18px;border-radius:4px;background:#8A9BB0"></span><span style="font:800 14px Pretendard">36</span></div>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:rgba(255,253,248,.94);display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#F5C028"></span><span style="font:800 14px Pretendard">1.24M</span></div>
+</div>
+<div style="position:absolute;left:85px;top:110px;width:220px;height:250px;border-radius:30px;background:repeating-linear-gradient(135deg,rgba(47,74,122,.22) 0 10px,rgba(47,74,122,.12) 10px 20px);display:flex;align-items:flex-end;justify-content:center;padding:10px;box-sizing:border-box;font:500 10px ui-monospace,Menlo,monospace;color:#2F4A7A">SD 전신 · 512×512 · 투명 PNG</div>
+<div style="position:absolute;left:12px;top:212px;width:44px;height:44px;border-radius:22px;background:rgba(255,253,248,.9);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:24px">chevron_left</span></div>
+<div style="position:absolute;right:12px;top:212px;width:44px;height:44px;border-radius:22px;background:rgba(255,253,248,.9);display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:24px">chevron_right</span></div>
+<div style="position:absolute;left:16px;right:16px;top:370px;display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;align-items:center;gap:8px"><span style="padding:2px 8px;border-radius:6px;background:#8E5BD6;color:#fff;font:900 12px Pretendard">SR</span><span style="font:400 26px Jua;line-height:1.1">로봇청소기 루미</span><span style="font:600 11px Pretendard;color:#5E5046">(가칭)</span></div>
+<div style="display:flex;gap:6px;align-items:center"><span style="padding:3px 8px;border-radius:8px;background:rgba(255,253,248,.9);font:700 12px Pretendard">근접 흡입</span><span style="padding:3px 8px;border-radius:8px;background:rgba(255,253,248,.9);font:700 12px Pretendard">지상</span><span style="font:800 15px Pretendard;margin-left:auto;letter-spacing:1px"><span style="color:#E6A817">★★★</span><span style="color:#C8B79F">★★</span></span></div>
+</div>
+<div style="position:absolute;left:0;right:0;top:452px;bottom:0;background:#FFFDF8;border-radius:26px 26px 0 0;padding:14px 12px 0;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;padding:4px;border-radius:14px;background:#EFE5D7;gap:4px"><div style="flex:1;height:36px;border-radius:11px;background:#FFFDF8;display:flex;align-items:center;justify-content:center;font:800 13px Pretendard">능력치</div><div style="flex:1;height:36px;display:flex;align-items:center;justify-content:center;font:700 13px Pretendard;color:#6B5D51">스킬</div><div style="flex:1;height:36px;display:flex;align-items:center;justify-content:center;font:700 13px Pretendard;color:#6B5D51">이야기</div></div>
+<div style="display:flex;align-items:center;gap:10px"><span style="font:800 16px Pretendard">Lv.12</span><span style="font:600 12px Pretendard;color:#6B5D51">/ 30</span><span style="flex:1;height:8px;border-radius:4px;background:#EADFCF;overflow:hidden"><span style="display:block;width:58%;height:100%;background:#3FA66B"></span></span><span style="font:700 12px Pretendard;color:#5E5046">1,160 / 2,000</span></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+<div style="height:56px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;justify-content:center;padding:0 12px"><span style="font:600 11px Pretendard;color:#5E5046">청소력</span><span style="font:800 16px Pretendard">1,240 <span style="font:700 11px Pretendard;color:#2E8A55">+86</span></span></div>
+<div style="height:56px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;justify-content:center;padding:0 12px"><span style="font:600 11px Pretendard;color:#5E5046">사거리</span><span style="font:800 16px Pretendard">1.5칸</span></div>
+<div style="height:56px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;justify-content:center;padding:0 12px"><span style="font:600 11px Pretendard;color:#5E5046">소비 전력</span><span style="font:800 16px Pretendard">200W</span></div>
+<div style="height:56px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;justify-content:center;padding:0 12px"><span style="font:600 11px Pretendard;color:#5E5046">재배치 대기</span><span style="font:800 16px Pretendard">8초</span></div>
+</div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:14px;border:1px solid #E8DCCB"><span style="width:44px;height:44px;border-radius:12px;background:#2F4A7A;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:24px;color:#fff">cyclone</span><div style="flex:1;display:flex;flex-direction:column;gap:2px"><span style="font:800 13px Pretendard">회오리 흡입 <span style="font:600 11px Pretendard;color:#6B5D51">· 패시브 (추측)</span></span><span style="font:500 12px/1.45 Pretendard;color:#5E5046">5초마다 주변 1칸의 먼지를 끌어당겨 0.5초 묶어 둡니다.</span></div></div>
+</div>
+<div style="position:absolute;left:12px;right:12px;bottom:46px;height:64px;display:flex;gap:10px">
+<div style="width:118px;border-radius:18px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;align-items:center;justify-content:center;gap:4px;font:800 14px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#2E8A55">check_circle</span>편성 중</div>
+<div style="flex:1;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 18px"><span style="font:400 24px Jua;color:#fff">강화</span><span style="display:flex;gap:4px"><span style="height:28px;padding:0 8px;border-radius:9px;background:#FFF5EA;display:flex;align-items:center;gap:4px;font:800 12px Pretendard"><span style="width:12px;height:12px;border-radius:3px;background:#8A9BB0"></span>12</span><span style="height:28px;padding:0 8px;border-radius:9px;background:#FFF5EA;display:flex;align-items:center;gap:4px;font:800 12px Pretendard"><span style="width:12px;height:12px;border-radius:50%;background:#F5C028"></span>4,800</span></span></div>
+</div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">위쪽 절반은 캐릭터 무대로 쓰고, 좌우 화살표나 스와이프로 다음 가전을 봅니다. 강화 비용은 버튼 안에 표시하고, 재화가 모자라면 해당 칩만 빨간색으로 바뀝니다. 탭 아래에서 가로 탭바 대신 ‘편성 중’ 토글로 2c와 바로 연결됩니다.</div>
+</div>
+
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a><b style="color:#2B2420">편성</b><span>· 가전 탭 › 편성</span></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:16px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:6px"><span style="font:400 26px Jua;flex:1">가전</span>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:18px;height:18px;border-radius:4px;background:#8A9BB0"></span><span style="font:800 14px Pretendard">36</span></div>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#F5C028"></span><span style="font:800 14px Pretendard">1.24M</span></div></div>
+<div style="position:absolute;left:12px;right:12px;top:103px;display:flex;padding:4px;border-radius:14px;background:#EFE5D7;gap:4px"><div style="flex:1;height:40px;display:flex;align-items:center;justify-content:center;font:700 14px Pretendard;color:#6B5D51">보유 가전</div><div style="flex:1;height:40px;border-radius:11px;background:#FFFDF8;display:flex;align-items:center;justify-content:center;font:800 14px Pretendard">편성</div></div>
+<div style="position:absolute;left:12px;right:12px;top:163px;height:180px;border-radius:20px;background:#fff;border:1px solid #E8DCCB;padding:12px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;align-items:center;gap:6px"><span style="height:32px;padding:0 12px;border-radius:10px;background:#2B2420;color:#fff;display:flex;align-items:center;font:800 12px Pretendard">프리셋 1</span><span style="height:32px;padding:0 12px;border-radius:10px;background:#F1E8DB;display:flex;align-items:center;font:700 12px Pretendard">2</span><span style="height:32px;padding:0 12px;border-radius:10px;background:#F1E8DB;display:flex;align-items:center;font:700 12px Pretendard">3</span><span style="margin-left:auto;display:flex;align-items:center;gap:2px;font:800 14px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#E6A817">bolt</span>합계 1,050W</span></div>
+<div style="display:flex;gap:6px">
+<sc-for list="{{ teamSlots }}" as="k" hint-placeholder-count="5">
+<div style="flex:1;min-width:0;height:96px;border-radius:14px;background:{{k.bg}};border:{{k.border}};box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative">
+<span style="width:40px;height:40px;border-radius:50%;background:{{k.color}};display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:20px;color:#6B5D51">{{ k.glyph }}</span>
+<span style="font:700 11px Pretendard;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding:0 3px;box-sizing:border-box;color:{{k.fg}}">{{ k.name }}</span>
+<span style="font:800 11px Pretendard;color:{{k.fg2}}">{{ k.sub }}</span>
+</div>
+</sc-for>
+</div>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:355px;display:flex;gap:6px;align-items:center">
+<span style="height:36px;padding:0 14px;border-radius:18px;background:#2B2420;color:#fff;display:flex;align-items:center;font:800 13px Pretendard">전체</span>
+<span style="height:36px;padding:0 14px;border-radius:18px;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 13px Pretendard">근접</span>
+<span style="height:36px;padding:0 14px;border-radius:18px;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 13px Pretendard">범위</span>
+<span style="height:36px;padding:0 14px;border-radius:18px;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 13px Pretendard">지원</span>
+<span style="margin-left:auto;height:36px;display:flex;align-items:center;gap:2px;font:700 13px Pretendard;color:#5E5046">등급순<span style="font-family:'Material Symbols Rounded';font-size:18px">expand_more</span></span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:403px;bottom:174px;display:grid;grid-auto-rows:80px;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-content:start;overflow:hidden">
+<sc-for list="{{ roster }}" as="r" hint-placeholder-count="12">
+<div style="height:80px;border-radius:14px;background:{{r.bg}};border:{{r.border}};box-sizing:border-box;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px">
+<span style="position:absolute;left:5px;top:5px;padding:0 5px;border-radius:5px;background:{{r.gc}};color:{{r.gfg}};font:900 10px/16px Pretendard">{{ r.grade }}</span>
+<sc-if value="{{ r.team }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:4px;top:4px;font-family:'Material Symbols Rounded';font-size:20px;line-height:1;color:#3FA66B">check_circle</span></sc-if>
+<span style="width:34px;height:34px;border-radius:50%;background:{{r.color}};opacity:{{r.op}}"></span>
+<span style="font:700 11px Pretendard;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding:0 4px;box-sizing:border-box">{{ r.name }}</span>
+<span style="font:700 10px Pretendard;color:#5E5046">{{ r.lv }}</span>
+</div>
+</sc-for>
+</div>
+<div style="position:absolute;left:12px;right:12px;bottom:110px;height:56px;display:flex;gap:10px">
+<div style="flex:1;border-radius:18px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;align-items:center;justify-content:center;gap:4px;font:800 15px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:20px">auto_fix_high</span>자동 편성</div>
+<div style="flex:1;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;align-items:center;justify-content:center;font:800 16px Pretendard;color:#fff">1-3 출동</div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:98px;background:#FFFDF8;border-radius:24px 24px 0 0;box-shadow:0 -2px 0 rgba(80,50,20,.08);display:flex;padding:0 6px 34px;box-sizing:border-box"><sc-for list="{{ navUnit }}" as="t" hint-placeholder-count="5"><div style="flex:1;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative"><span style="position:absolute;top:0;width:28px;height:4px;border-radius:0 0 3px 3px;background:{{t.bar}}"></span><span style="font-family:'Material Symbols Rounded';font-size:27px;line-height:1;color:{{t.ic}}">{{ t.icon }}</span><span style="font:{{t.w}} 12px Pretendard;color:{{t.fg}}">{{ t.label }}</span></div></sc-for></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">위쪽 슬롯 5칸은 전투 카드 줄과 같은 순서와 모양이라, 편성한 그대로 전투에 나옵니다. 목록에서 누르면 편성에 넣고, 슬롯을 누르면 뺍니다. 길게 누르면 상세(2b)로 갑니다. 미보유 가전은 실루엣으로 맨 뒤에 둡니다. 합계 전력은 시작 전력과 비교하는 정보입니다(추측).</div>
+</div>
+
+<div class="dv-opt" id="2d">
+<div class="dv-olabel"><a class="dv-oid" href="#2d">2d</a><b style="color:#2B2420">소환</b></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:16px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:6px"><span style="font:400 26px Jua;flex:1">소환</span>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:20px;height:14px;border-radius:3px;background:#E8701A"></span><span style="font:800 14px Pretendard">3</span></div>
+<div style="height:36px;padding:0 4px 0 10px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:13px;height:13px;transform:rotate(45deg);border-radius:3px;background:#8E5BD6"></span><span style="font:800 14px Pretendard">2,480</span><span style="width:28px;height:28px;border-radius:50%;background:#E8701A;color:#fff;display:flex;align-items:center;justify-content:center;font:800 18px Pretendard">+</span></div></div>
+<div style="position:absolute;left:12px;right:12px;top:103px;display:flex;gap:8px">
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#2B2420;color:#fff;display:flex;align-items:center;font:800 14px Pretendard">가을 픽업</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 14px Pretendard">상시 소환</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 14px Pretendard">우정 (추측)</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:155px;height:408px;border-radius:26px;background:#2F4A7A;overflow:hidden">
+<div style="position:absolute;left:50%;top:22px;width:250px;height:270px;margin-left:-125px;border-radius:30px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.12) 0 10px,rgba(255,255,255,.05) 10px 20px);display:flex;align-items:flex-end;justify-content:center;padding:10px;box-sizing:border-box;font:500 10px ui-monospace,Menlo,monospace;color:#C9D6EC">픽업 캐릭터 일러스트 · 투명 PNG</div>
+<div style="position:absolute;left:16px;top:16px;display:flex;gap:6px"><span style="padding:3px 8px;border-radius:7px;background:#E6A817;color:#2B2420;font:900 12px Pretendard">SSR</span><span style="padding:3px 8px;border-radius:7px;background:rgba(255,255,255,.16);color:#fff;font:700 12px Pretendard">D-12</span></div>
+<div style="position:absolute;left:16px;right:16px;bottom:16px;display:flex;flex-direction:column;gap:6px">
+<span style="font:400 28px Jua;color:#fff;line-height:1.1">전자레인지 레이</span>
+<span style="font:600 13px Pretendard;color:#DCE4F2">고화력 · 과열 주의 — 픽업 확률 2배 (가칭)</span>
+<div style="display:flex;gap:8px;margin-top:4px"><span style="height:36px;padding:0 12px;border-radius:12px;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;gap:4px;font:700 12px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:16px">info</span>확률 정보</span><span style="height:36px;padding:0 12px;border-radius:12px;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;gap:4px;font:700 12px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:16px">visibility</span>캐릭터 보기</span></div>
+</div>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:575px;height:52px;border-radius:16px;background:#fff;border:1px solid #E8DCCB;display:flex;align-items:center;gap:10px;padding:0 14px">
+<span style="font:700 12px Pretendard;color:#5E5046;white-space:nowrap">SSR 확정까지</span><span style="font:800 16px Pretendard">34회</span>
+<span style="flex:1;height:8px;border-radius:4px;background:#EADFCF;overflow:hidden"><span style="display:block;width:66%;height:100%;background:#E6A817"></span></span><span style="font:700 12px Pretendard;color:#5E5046">66/100</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;bottom:110px;height:96px;display:flex;gap:10px">
+<div style="flex:1;border-radius:20px;background:#2F4A7A;box-shadow:inset 0 -5px 0 #213659;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;position:relative">
+<span style="position:absolute;top:-8px;right:10px;padding:2px 8px;border-radius:8px;background:#E0533D;border:2px solid #FBF6EE;color:#fff;font:800 11px Pretendard">오늘 무료</span>
+<span style="font:400 22px Jua;color:#fff">1회 소환</span><span style="height:26px;padding:0 10px;border-radius:9px;background:rgba(255,255,255,.16);display:flex;align-items:center;gap:5px;font:800 13px Pretendard;color:#fff"><span style="width:11px;height:11px;transform:rotate(45deg);border-radius:2px;background:#C9A6F2"></span>무료</span></div>
+<div style="flex:1.2;border-radius:20px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+<span style="font:400 22px Jua;color:#fff">10회 소환</span><span style="height:26px;padding:0 10px;border-radius:9px;background:#FFF5EA;display:flex;align-items:center;gap:5px;font:800 13px Pretendard"><span style="width:11px;height:11px;transform:rotate(45deg);border-radius:2px;background:#8E5BD6"></span>1,600</span></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:98px;background:#FFFDF8;border-radius:24px 24px 0 0;box-shadow:0 -2px 0 rgba(80,50,20,.08);display:flex;padding:0 6px 34px;box-sizing:border-box"><sc-for list="{{ navGacha }}" as="t" hint-placeholder-count="5"><div style="flex:1;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative"><span style="position:absolute;top:0;width:28px;height:4px;border-radius:0 0 3px 3px;background:{{t.bar}}"></span><span style="font-family:'Material Symbols Rounded';font-size:27px;line-height:1;color:{{t.ic}}">{{ t.icon }}</span><span style="font:{{t.w}} 12px Pretendard;color:{{t.fg}}">{{ t.label }}</span></div></sc-for></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">10회 소환이 주요 행동(주황)이고, 무료 1회는 빨간 배지로 받을 수 있음을 알립니다. 확률 정보는 법적 고지가 필요하므로 배너 안에 항상 보이게 둡니다. 천장(확정까지 남은 횟수)과 소환권 보유 수량은 숫자로 표시합니다. 연출 화면은 다음 단계에서 다룹니다.</div>
+</div>
+
+<div class="dv-opt" id="2e">
+<div class="dv-olabel"><a class="dv-oid" href="#2e">2e</a><b style="color:#2B2420">상점</b></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:16px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:6px"><span style="font:400 26px Jua;flex:1">상점</span>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#F5C028"></span><span style="font:800 14px Pretendard">1.24M</span></div>
+<div style="height:36px;padding:0 10px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:6px"><span style="width:13px;height:13px;transform:rotate(45deg);border-radius:3px;background:#8E5BD6"></span><span style="font:800 14px Pretendard">2,480</span></div></div>
+<div style="position:absolute;left:12px;right:0;top:103px;display:flex;gap:8px">
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#2B2420;color:#fff;display:flex;align-items:center;font:800 14px Pretendard;flex:none">추천</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;gap:4px;font:700 14px Pretendard;flex:none">일일<span style="width:7px;height:7px;border-radius:50%;background:#E0533D"></span></span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 14px Pretendard;flex:none">크리스탈</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 14px Pretendard;flex:none">코인</span>
+<span style="height:40px;padding:0 16px;border-radius:20px;flex:none;white-space:nowrap;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;display:flex;align-items:center;font:700 14px Pretendard;flex:none">패키지</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:155px;height:150px;border-radius:22px;background:#FFF1E2;display:flex;gap:12px;padding:12px;box-sizing:border-box">
+<div style="width:110px;border-radius:16px;background:repeating-linear-gradient(135deg,#F6D2AE 0 8px,#F0C69C 8px 16px);display:flex;align-items:flex-end;padding:6px;box-sizing:border-box;font:500 9px ui-monospace,Menlo,monospace;color:#8F3F06">패키지 이미지</div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px">
+<span style="align-self:flex-start;padding:2px 7px;border-radius:7px;background:#E0533D;color:#fff;font:800 11px Pretendard">1회 한정 · 2일 남음</span>
+<span style="font:400 20px Jua">새내기 집사 패키지</span>
+<span style="font:600 12px/1.45 Pretendard;color:#5E5046">크리스탈 1,000 · 소환권 5 · SR 선택권 1</span>
+<div style="margin-top:auto;height:40px;border-radius:13px;background:#E8701A;box-shadow:inset 0 -4px 0 #B9560F;color:#fff;display:flex;align-items:center;justify-content:center;font:800 15px Pretendard">₩5,500</div>
+</div></div>
+<div style="position:absolute;left:12px;right:12px;top:317px;height:64px;border-radius:18px;background:#fff;border:2px solid #3FA66B;box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:0 8px 0 10px">
+<span style="width:44px;height:44px;border-radius:12px;background:#E4F5EA;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:26px;color:#2E8A55">redeem</span>
+<div style="flex:1;display:flex;flex-direction:column;gap:1px"><span style="font:800 14px Pretendard">매일 무료 보급</span><span style="font:600 12px Pretendard;color:#5E5046">코인 2,000 · 오전 5시 초기화</span></div>
+<span style="height:44px;padding:0 18px;border-radius:14px;background:#3FA66B;box-shadow:inset 0 -3px 0 #2D7D4F;color:#fff;display:flex;align-items:center;font:800 14px Pretendard">받기</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:393px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+<sc-for list="{{ shopItems }}" as="i" hint-placeholder-count="6">
+<div style="height:160px;border-radius:16px;background:#fff;border:1px solid #E8DCCB;box-sizing:border-box;padding:8px;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative;opacity:{{i.op}}">
+<sc-if value="{{ i.hasLimit }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:6px;top:6px;padding:0 5px;border-radius:5px;background:#F1E8DB;font:800 10px/16px Pretendard;color:#5E5046">{{ i.limit }}</span></sc-if>
+<span style="width:56px;height:56px;border-radius:50%;background:{{i.color}};margin-top:8px"></span>
+<span style="font:800 12px Pretendard;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%">{{ i.name }}</span>
+<span style="font:600 11px Pretendard;color:#5E5046">{{ i.amt }}</span>
+<div style="margin-top:auto;align-self:stretch;height:36px;border-radius:11px;background:{{i.pbg}};color:{{i.pfg}};display:flex;align-items:center;justify-content:center;gap:4px;font:800 13px Pretendard"><span style="width:11px;height:11px;border-radius:{{i.dr}};transform:{{i.dt}};background:{{i.dc}}"></span>{{ i.price }}</div>
+</div>
+</sc-for>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:98px;background:#FFFDF8;border-radius:24px 24px 0 0;box-shadow:0 -2px 0 rgba(80,50,20,.08);display:flex;padding:0 6px 34px;box-sizing:border-box"><sc-for list="{{ navShop }}" as="t" hint-placeholder-count="5"><div style="flex:1;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative"><span style="position:absolute;top:0;width:28px;height:4px;border-radius:0 0 3px 3px;background:{{t.bar}}"></span><span style="font-family:'Material Symbols Rounded';font-size:27px;line-height:1;color:{{t.ic}}">{{ t.icon }}</span><span style="font:{{t.w}} 12px Pretendard;color:{{t.fg}}">{{ t.label }}</span></div></sc-for></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">가격 버튼은 결제 수단에 따라 색을 나눕니다. 현금은 주황, 크리스탈·코인은 크림 바탕에 재화 아이콘, 매진은 회색 + 흐림입니다. 무료 보급은 초록 테두리로 ‘받을 수 있음’ 상태를 통일했습니다. 분류 탭은 가로 스크롤입니다(오른쪽이 잘려 보이는 것은 의도).</div>
+</div>
+
+<div class="dv-opt" id="2f">
+<div class="dv-olabel"><a class="dv-oid" href="#2f">2f</a><b style="color:#2B2420">시즌 패스</b><span>· 홈 오른쪽 메뉴에서 진입</span></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:12px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:8px">
+<div style="width:44px;height:44px;border-radius:14px;background:#fff;border:1px solid #EADFCF;box-sizing:border-box;display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:24px">arrow_back</span></div>
+<span style="font:400 24px Jua;flex:1">시즌 패스</span><span style="padding:4px 10px;border-radius:10px;background:#F1E8DB;font:800 12px Pretendard">D-12</span></div>
+<div style="position:absolute;left:12px;right:12px;top:103px;height:84px;border-radius:20px;background:#fff;border:1px solid #E8DCCB;display:flex;align-items:center;gap:12px;padding:0 14px;box-sizing:border-box">
+<span style="width:56px;height:56px;border-radius:50%;background:#8E5BD6;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font:900 20px/1 Pretendard"><span style="font:700 10px Pretendard">Lv</span>7</span>
+<div style="flex:1;display:flex;flex-direction:column;gap:5px"><span style="font:800 14px Pretendard">가을 대청소 시즌</span><span style="height:8px;border-radius:4px;background:#EADFCF;overflow:hidden"><span style="display:block;width:68%;height:100%;background:#8E5BD6"></span></span><span style="font:600 11px Pretendard;color:#5E5046">다음 레벨까지 160 / 500</span></div>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:197px;height:60px;border-radius:18px;background:#8E5BD6;display:flex;align-items:center;gap:10px;padding:0 8px 0 16px">
+<div style="flex:1;display:flex;flex-direction:column;gap:1px"><span style="font:800 15px Pretendard;color:#fff">프리미엄 패스</span><span style="font:600 12px Pretendard;color:#EADCFB">보상 2배 · 전용 스킨 (추측)</span></div>
+<span style="height:44px;padding:0 16px;border-radius:14px;background:#FFFDF8;display:flex;align-items:center;font:800 14px Pretendard">₩11,000</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:267px;display:flex;padding:4px;border-radius:14px;background:#EFE5D7;gap:4px"><div style="flex:1;height:36px;border-radius:11px;background:#FFFDF8;display:flex;align-items:center;justify-content:center;font:800 13px Pretendard">보상</div><div style="flex:1;height:36px;display:flex;align-items:center;justify-content:center;gap:4px;font:700 13px Pretendard;color:#6B5D51">미션<span style="padding:0 5px;border-radius:7px;background:#E0533D;color:#fff;font:800 10px/14px Pretendard">3</span></div></div>
+<div style="position:absolute;left:12px;right:12px;top:319px;display:flex;font:800 12px Pretendard;color:#5E5046"><span style="flex:1;text-align:center">무료</span><span style="width:48px"></span><span style="flex:1;text-align:center;color:#6E3FB0">프리미엄</span></div>
+<div style="position:absolute;left:50%;top:344px;width:4px;margin-left:-2px;height:372px;background:#E3D7C7"></div>
+<div style="position:absolute;left:50%;top:344px;width:4px;margin-left:-2px;height:184px;background:#8E5BD6"></div>
+<div style="position:absolute;left:12px;right:12px;top:344px;display:flex;flex-direction:column;gap:6px">
+<sc-for list="{{ passRows }}" as="p" hint-placeholder-count="5">
+<div style="height:68px;display:flex;align-items:center;gap:6px">
+<div style="flex:1;height:64px;border-radius:14px;background:{{p.fbg}};border:{{p.fbd}};box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:0 10px;position:relative;opacity:{{p.fop}}">
+<span style="width:36px;height:36px;border-radius:50%;background:{{p.fic}}"></span><div style="display:flex;flex-direction:column"><span style="font:800 12px Pretendard">{{ p.fname }}</span><span style="font:700 11px Pretendard;color:{{p.fsfg}}">{{ p.fstate }}</span></div>
+<sc-if value="{{ p.fdone }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:8px;font-family:'Material Symbols Rounded';font-size:22px;color:#3FA66B">check_circle</span></sc-if>
+</div>
+<span style="width:36px;height:36px;border-radius:50%;background:{{p.nbg}};color:{{p.nfg}};border:3px solid #FBF6EE;display:flex;align-items:center;justify-content:center;font:900 13px Pretendard;z-index:1">{{ p.lv }}</span>
+<div style="flex:1;height:64px;border-radius:14px;background:#F3ECF9;box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:0 10px;position:relative">
+<span style="width:36px;height:36px;border-radius:50%;background:{{p.pic}};opacity:.55"></span><div style="display:flex;flex-direction:column"><span style="font:800 12px Pretendard;color:#4A3A5E">{{ p.pname }}</span><span style="font:700 11px Pretendard;color:#6E3FB0">잠금</span></div>
+<span style="position:absolute;right:8px;font-family:'Material Symbols Rounded';font-size:20px;color:#8E5BD6">lock</span>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="position:absolute;left:12px;right:12px;bottom:46px;height:60px;border-radius:18px;background:#3FA66B;box-shadow:inset 0 -5px 0 #2D7D4F;display:flex;align-items:center;justify-content:center;gap:6px;font:800 17px Pretendard;color:#fff">모두 받기<span style="padding:0 7px;border-radius:9px;background:#FFFDF8;color:#2D7D4F;font:900 12px/20px Pretendard">2</span></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">가운데 레벨 기둥이 진행도를 보여 줍니다(보라 = 도달한 레벨). 받은 보상은 흐리게 + 체크, 받을 수 있는 보상은 초록 테두리, 미구매 프리미엄은 보라 바탕 + 자물쇠입니다. ‘모두 받기’로 여러 번 누를 필요가 없습니다. 목록은 세로 스크롤이며 열면 현재 레벨로 이동합니다.</div>
+</div>
+
+<div class="dv-opt" id="2g">
+<div class="dv-olabel"><a class="dv-oid" href="#2g">2g</a><b style="color:#2B2420">결과 (승리)</b></div>
+<div style="padding:10px"><div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:0;right:0;top:0;height:300px;background:repeating-linear-gradient(90deg,#DDB78A 0 62px,#D2AB7C 62px 64px)"></div>
+<div style="position:absolute;left:0;right:0;top:66px;display:flex;justify-content:center;gap:4px;font:900 64px/1 Pretendard"><span style="color:#F5C028;transform:translateY(10px) rotate(-10deg)">★</span><span style="color:#F5C028">★</span><span style="color:#B79B78;transform:translateY(10px) rotate(10deg)">★</span></div>
+<div style="position:absolute;left:0;right:0;top:150px;display:flex;flex-direction:column;align-items:center;gap:4px"><span style="font:400 40px Jua;color:#2B2420">청소 완료!</span><span style="padding:4px 12px;border-radius:12px;background:rgba(255,253,248,.9);font:800 14px Pretendard">1-3 거실 창가</span></div>
+<div style="position:absolute;left:12px;right:12px;top:252px;bottom:122px;border-radius:24px;background:#FFFDF8;box-shadow:0 2px 0 rgba(80,50,20,.1);padding:16px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;align-items:center;gap:8px;font:700 13px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#3FA66B">check_circle</span>스테이지 클리어</div>
+<div style="display:flex;align-items:center;gap:8px;font:700 13px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#3FA66B">check_circle</span>청결도 70% 이상<span style="margin-left:auto;color:#2E8A55">92%</span></div>
+<div style="display:flex;align-items:center;gap:8px;font:700 13px Pretendard;color:#5E5046"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#C8B79F">cancel</span>과열 0회 (추측)<span style="margin-left:auto;color:#B23A27">2회</span></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+<div style="height:58px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font:600 11px Pretendard;color:#5E5046">처치</span><span style="font:800 17px Pretendard">30</span></div>
+<div style="height:58px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font:600 11px Pretendard;color:#5E5046">시간</span><span style="font:800 17px Pretendard">6:12</span></div>
+<div style="height:58px;border-radius:14px;background:#F5EDE2;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font:600 11px Pretendard;color:#5E5046">최고 배치</span><span style="font:800 17px Pretendard">7기</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:800 13px Pretendard">보상</span>
+<div style="display:flex;gap:8px">
+<div style="flex:1;height:76px;border-radius:14px;border:1px solid #E8DCCB;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><span style="width:30px;height:30px;border-radius:50%;background:#F5C028"></span><span style="font:800 12px Pretendard">120</span></div>
+<div style="flex:1;height:76px;border-radius:14px;border:1px solid #E8DCCB;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><span style="width:30px;height:30px;border-radius:50%;background:#3FA66B"></span><span style="font:800 12px Pretendard">EXP 80</span></div>
+<div style="flex:1;height:76px;border-radius:14px;border:1px solid #E8DCCB;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><span style="width:28px;height:28px;border-radius:7px;background:#8A9BB0"></span><span style="font:800 12px Pretendard">3</span></div>
+<div style="flex:1;height:76px;border-radius:14px;border:2px solid #E6A817;box-sizing:border-box;background:#FFF8E6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;position:relative"><span style="position:absolute;top:-8px;padding:0 6px;border-radius:7px;background:#E6A817;font:800 10px/16px Pretendard">첫 클리어</span><span style="width:22px;height:22px;transform:rotate(45deg);border-radius:5px;background:#8E5BD6"></span><span style="font:800 12px Pretendard">50</span></div>
+</div></div>
+<div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:14px;background:#F5EDE2"><span style="width:44px;height:44px;border-radius:50%;background:#D9503A;border:3px solid #fff"></span><div style="display:flex;flex-direction:column"><span style="font:800 13px Pretendard">MVP · 전자레인지</span><span style="font:600 12px Pretendard;color:#5E5046">처치 14 · 전체 피해의 41%</span></div></div>
+</div>
+<div style="position:absolute;left:12px;right:12px;bottom:46px;height:64px;display:flex;gap:8px">
+<div style="width:64px;border-radius:18px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 11px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:24px">home</span>홈</div>
+<div style="width:64px;border-radius:18px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 11px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:24px">replay</span>다시</div>
+<div style="flex:1;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 18px"><span style="font:400 22px Jua;color:#fff">다음 스테이지</span><span style="padding:6px 10px;border-radius:10px;background:#FFF5EA;font:800 13px Pretendard">1-4</span></div>
+</div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard;z-index:70"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+</div></div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">별을 왜 얻었는지·놓쳤는지를 조건별로 보여 주어 다시 도전할 이유를 줍니다. 첫 클리어 보상은 금색 테두리로 강조합니다. 패배 화면도 같은 레이아웃으로 하되, 별 대신 원인 요약(예: “창문 쪽 방어 부족”)과 강화·편성 바로가기를 둡니다(다음 단계).</div>
+</div>
+
+</div>
+<p class="dv-next">다음에 해 볼 것: “소환 연출·패배 화면 추가” · “<a class="dv-oid" href="#2c">2c</a> 편성 슬롯을 6칸으로” · “실제 캐릭터 이미지 넣어서 다시”</p>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">오퍼레이션: 더스트 제로 — 진단 · 홈 2안 · 추천안 상세(홈 + 전투 HUD)</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 28px">
+<span style="padding:6px 12px;border-radius:999px;background:#2B2420;color:#fff;font:700 12px Pretendard">디자인 시안 · Unity 미구현/미검증</span>
+<span style="padding:6px 12px;border-radius:999px;background:#fff;border:1px dashed #B9A894;color:#5E5046;font:600 12px Pretendard">사선 무늬 = 임시 자산(캐릭터·배경 교체 필요)</span>
+<span style="padding:6px 12px;border-radius:999px;background:#FFF1E2;color:#8F3F06;font:600 12px Pretendard">「추측」 = 첨부 화면에서 확인할 수 없는 동작·규칙</span>
+<span style="font:500 12px Pretendard;color:#6B5D51">목업 390×844pt · Unity 기준 1080×1920 (Canvas Scaler 매칭 0.5) · 상세 규격은 <a href="구현 가이드.dc.html">구현 가이드</a></span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;margin:0 0 56px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="font:700 13px Pretendard;color:#5E5046">현재 화면 (첨부)</div>
+<div style="display:flex;gap:12px">
+<img src="uploads/pasted-1792083376771-0.png" style="width:150px;border-radius:10px;border:1px solid rgba(0,0,0,.12);background:#fff">
+<img src="uploads/pasted-1792083396092-0.png" style="width:150px;border-radius:10px;border:1px solid rgba(0,0,0,.12);background:#fff">
+<img src="uploads/pasted-1792083413707-0.png" style="width:150px;border-radius:10px;border:1px solid rgba(0,0,0,.12);background:#fff">
+</div>
+<div style="display:flex;gap:12px;font:500 11px Pretendard;color:#6B5D51"><span style="width:150px">A · 첫 화면(스테이지 목록)</span><span style="width:150px">B · 전투 시작 팝업</span><span style="width:150px">C · 전투 진행</span></div>
+<div style="font:500 11px Pretendard;color:#8A7B6C;max-width:474px">캡처 해상도가 낮아 일부 문구·수치는 추정해서 읽었습니다.</div>
+</div>
+<div style="flex:1;min-width:340px;max-width:620px;display:flex;flex-direction:column;gap:14px">
+<div style="font:700 13px Pretendard;color:#5E5046">관찰한 문제 — 중요도 순</div>
+<div style="display:grid;grid-template-columns:28px 1fr;gap:6px 12px;font:14px/1.55 Pretendard;color:#2B2420">
+<span style="font:400 22px Jua;color:#E8701A">1</span><div><b>게임의 얼굴이 보이지 않음.</b> 첫 화면(A)이 스테이지 표라 가전 캐릭터와 방이 거의 안 보입니다. 수집형 게임의 매력인 캐릭터가 왼쪽 위 작은 아이콘 하나뿐입니다.</div>
+<span style="font:400 22px Jua;color:#E8701A">2</span><div><b>정보 위계와 가독성.</b> 잠긴 스테이지 약 70%가 옅은 주황 위 옅은 글자(대비 약 1.3:1)입니다. 본문은 약 10px이고, 재화·자동 청소·출석이 한 줄 텍스트로 섞여 있습니다.</div>
+<span style="font:400 22px Jua;color:#E8701A">3</span><div><b>팝업이 전장을 가림.</b> 시작 팝업(B)이 경로와 입구를 덮어서, 정작 봐야 할 지형을 시작 전에 확인할 수 없습니다.</div>
+<span style="font:400 22px Jua;color:#E8701A">4</span><div><b>엄지로 누르기 어려운 조작.</b> 배속·일시정지·나가기(추정)가 오른쪽 위에 약 30×16pt 크기로 붙어 있어 손이 닿기 어렵고, 빨간 ‘나가기’를 잘못 누를 위험이 큽니다. 하단 캐릭터 카드도 작고 설명 글자가 겹칩니다.</div>
+<span style="font:400 22px Jua;color:#E8701A">5</span><div><b>전투 상태가 드러나지 않음.</b> 전력은 숫자와 막대 하나뿐이고, 카드에 비용·재배치 대기·사용 불가 상태가 보이지 않습니다. 웨이브와 남은 적 숫자(19)도 이름표가 작아 의미를 알기 어렵습니다. 선택·과열 표시는 정적 캡처라 확인할 수 없습니다(추측).</div>
+</div>
+</div>
+</div>
+
+<div style="font:700 13px Pretendard;color:#5E5046;margin:0 0 16px">홈 — 서로 다른 방향 2안</div>
+<div class="dv-opts" style="margin:0 0 20px">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a><b style="color:#2B2420">방이 주인공 · 5탭 묶음</b><span style="padding:2px 8px;border-radius:999px;background:#E8701A;color:#fff;font:700 11px Pretendard">추천</span><span>· 인터랙티브</span></div>
+<div style="padding:10px">
+<div style="width:{{W}}px;height:{{H}}px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#F2E2CB;user-select:none">
+<div style="position:absolute;left:0;right:0;top:0;height:52%;background:#F2E2CB"></div>
+<div style="position:absolute;left:0;right:0;top:40%;height:12%;background:#E9D4B7;border-top:6px solid #DEC6A3"></div>
+<div style="position:absolute;left:32px;top:17%;width:150px;height:130px;border-radius:14px;border:6px solid #FFF8EE;background:repeating-linear-gradient(135deg,#D3E5EE 0 10px,#C6DCE8 10px 20px);box-sizing:border-box;display:flex;align-items:flex-end;padding:8px;font:500 10px ui-monospace,Menlo,monospace;color:#3F5A6B">창문 · BG 임시</div>
+<div style="position:absolute;left:0;right:0;top:52%;bottom:0;background:repeating-linear-gradient(90deg,#DDB78A 0 62px,#D2AB7C 62px 64px)"></div>
+<div style="position:absolute;left:8%;right:8%;top:57%;height:15%;border-radius:50%;background:#EDD3B4;border:5px solid #E4C29B"></div>
+<div style="position:absolute;left:12px;top:calc(52% + 6px);font:500 10px ui-monospace,Menlo,monospace;color:#7A5B37">BG_Room_Living (1080×1920, 임시)</div>
+<sc-for list="{{ dust }}" as="d" hint-placeholder-count="4"><div style="position:absolute;left:{{d.x}}px;top:{{d.y}}px;width:{{d.s}}px;height:{{d.s}}px;border-radius:50%;background:#9C8F82;opacity:.8"></div></sc-for>
+<sc-for list="{{ chars }}" as="c" hint-placeholder-count="4">
+<div onClick="{{ c.onTap }}" style="position:absolute;left:{{c.x}}px;top:{{c.y}}px;width:76px;display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;transition:left 2.4s ease-in-out,top 2.4s ease-in-out">
+<sc-if value="{{ c.talk }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;bottom:100%;margin-bottom:4px;padding:6px 10px;border-radius:12px;background:#fff;font:700 12px Pretendard;color:#2B2420;white-space:nowrap;box-shadow:0 2px 0 rgba(80,50,20,.15)">{{ c.line }}</div></sc-if>
+<div style="width:60px;height:60px;border-radius:50%;border:3px solid #fff;background:{{c.color}};box-shadow:0 6px 0 rgba(80,50,20,.18);display:flex;align-items:center;justify-content:center;font:600 9px ui-monospace,Menlo,monospace;color:#fff;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 6px,transparent 6px 12px)">SD</div>
+<div style="padding:3px 8px;border-radius:10px;background:rgba(43,36,32,.82);color:#fff;font:700 11px Pretendard;white-space:nowrap">{{ c.name }}</div>
+</div>
+</sc-for>
+
+<div style="position:absolute;left:12px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:8px">
+<div style="height:44px;padding:0 12px 0 4px;border-radius:22px;background:rgba(255,253,248,.94);display:flex;align-items:center;gap:8px;box-shadow:0 2px 0 rgba(80,50,20,.12)">
+<div style="width:36px;height:36px;border-radius:50%;background:#2F4A7A;display:flex;align-items:center;justify-content:center;font:600 8px ui-monospace,Menlo,monospace;color:#fff">IMG</div>
+<div style="display:flex;flex-direction:column;gap:3px"><span style="font:800 13px Pretendard;line-height:1">Lv.12</span><span style="width:52px;height:5px;border-radius:3px;background:#EADFCF;overflow:hidden"><span style="display:block;width:64%;height:100%;background:#3FA66B"></span></span></div>
+</div>
+<div style="flex:1"></div>
+<div style="height:36px;padding:0 10px 0 6px;border-radius:18px;background:rgba(255,253,248,.94);display:flex;align-items:center;gap:6px;box-shadow:0 2px 0 rgba(80,50,20,.12)"><span style="width:22px;height:22px;border-radius:50%;background:#F5C028;box-shadow:inset 0 -2px 0 #D9A30F"></span><span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">{{ coinText }}</span></div>
+<div style="height:36px;padding:0 4px 0 10px;border-radius:18px;background:rgba(255,253,248,.94);display:flex;align-items:center;gap:6px;box-shadow:0 2px 0 rgba(80,50,20,.12)"><span style="width:14px;height:14px;transform:rotate(45deg);border-radius:3px;background:#8E5BD6"></span><span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">2,480</span><span style="width:28px;height:28px;border-radius:50%;background:#E8701A;color:#fff;display:flex;align-items:center;justify-content:center;font:800 18px Pretendard">+</span></div>
+</div>
+
+<div style="position:absolute;right:12px;top:108px;display:flex;flex-direction:column;gap:10px">
+<div onClick="{{ openSheet }}" style="width:56px;height:60px;border-radius:16px;background:rgba(255,253,248,.94);box-shadow:0 2px 0 rgba(80,50,20,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;position:relative;cursor:pointer" style-active="transform:scale(.94)">
+<span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;color:#E8701A">event_available</span><span style="font:700 11px Pretendard">출석</span>
+<sc-if value="{{ attendDot }}" hint-placeholder-val="{{ true }}"><span style="position:absolute;top:-4px;right:-4px;min-width:18px;height:18px;border-radius:9px;background:#E0533D;border:2px solid #fff;color:#fff;font:800 10px/18px Pretendard;text-align:center">!</span></sc-if>
+</div>
+<div onClick="{{ onPass }}" style="width:56px;height:60px;border-radius:16px;background:rgba(255,253,248,.94);box-shadow:0 2px 0 rgba(80,50,20,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;position:relative;cursor:pointer" style-active="transform:scale(.94)">
+<span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;color:#8E5BD6">workspace_premium</span><span style="font:700 11px Pretendard">패스</span>
+<span style="position:absolute;bottom:-6px;padding:1px 6px;border-radius:8px;background:#8E5BD6;color:#fff;font:800 10px Pretendard">Lv.7</span>
+</div>
+<div onClick="{{ onSettings }}" style="width:56px;height:48px;border-radius:16px;background:rgba(255,253,248,.7);display:flex;align-items:center;justify-content:center;cursor:pointer;margin-top:4px" style-active="transform:scale(.94)"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1;color:#6B5D51">settings</span></div>
+</div>
+
+<div style="position:absolute;left:12px;bottom:194px;height:60px;padding:0 8px 0 8px;border-radius:20px;background:rgba(255,253,248,.96);box-shadow:0 3px 0 rgba(80,50,20,.14);display:flex;align-items:center;gap:10px">
+<div style="width:44px;height:44px;border-radius:14px;background:{{acIconBg}};display:flex;align-items:center;justify-content:center"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1;color:#fff">cleaning_services</span></div>
+<div style="display:flex;flex-direction:column;gap:3px;min-width:104px"><span style="font:600 11px Pretendard;color:#6B5D51">{{ acLabel }}</span><span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">{{ acAmount }}</span><span style="width:104px;height:4px;border-radius:2px;background:#EADFCF;overflow:hidden"><span style="display:block;height:100%;width:{{acPct}}%;background:#E8701A"></span></span></div>
+<div onClick="{{ onCollect }}" style="height:44px;padding:0 14px;border-radius:14px;background:{{acBtnBg}};color:{{acBtnFg}};display:flex;align-items:center;font:800 14px Pretendard;cursor:pointer" style-active="transform:translateY(2px)">{{ acBtn }}</div>
+</div>
+
+<div style="position:absolute;left:12px;right:12px;bottom:110px;height:72px;display:flex;gap:10px">
+<div onClick="{{ onRaid }}" style="width:96px;border-radius:20px;background:#2F4A7A;box-shadow:inset 0 -4px 0 #213659;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#fff;cursor:pointer" style-active="transform:translateY(2px);box-shadow:none">
+<span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1">all_inclusive</span><span style="font:800 14px Pretendard">대청소</span><span style="font:600 11px Pretendard;color:#C9D6EC">최고 W27</span>
+</div>
+<div onClick="{{ onCTA }}" style="flex:1;border-radius:20px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 20px;cursor:pointer" style-active="transform:translateY(3px);box-shadow:inset 0 -2px 0 #B9560F">
+<div style="display:flex;flex-direction:column;gap:2px"><span style="font:400 24px Jua;color:#fff;line-height:1.1">다음 스테이지</span><span style="font:700 12px Pretendard;color:#FFE9D4">★★☆ 1-2 클리어</span></div>
+<span style="padding:8px 12px;border-radius:12px;background:#FFF5EA;font:800 15px Pretendard;color:#2B2420">1-3 거실</span>
+</div>
+</div>
+
+<sc-if value="{{ notHome }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:0;right:0;top:0;bottom:98px;background:#FBF6EE;display:flex;flex-direction:column;padding:60px 16px 16px;box-sizing:border-box;gap:14px">
+<div style="font:400 26px Jua">{{ tabTitle }}</div>
+<div style="display:flex;padding:4px;border-radius:14px;background:#EFE5D7;gap:4px">
+<sc-for list="{{ subs }}" as="s" hint-placeholder-count="2"><div style="flex:1;height:44px;border-radius:11px;background:{{s.bg}};display:flex;align-items:center;justify-content:center;font:800 14px Pretendard;color:{{s.fg}}">{{ s.label }}</div></sc-for>
+</div>
+<div style="flex:1;border-radius:18px;border:2px dashed #D9C8B2;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font:500 13px/1.6 Pretendard;color:#6B5D51;white-space:pre-line">{{ tabNote }}</div>
+</div>
+</sc-if>
+
+<div style="position:absolute;left:0;right:0;bottom:0;height:98px;background:#FFFDF8;border-radius:24px 24px 0 0;box-shadow:0 -2px 0 rgba(80,50,20,.08);display:flex;padding:0 6px 34px;box-sizing:border-box">
+<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5">
+<div onClick="{{ t.onTap }}" style="flex:1;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative;cursor:pointer" style-active="transform:scale(.94)">
+<span style="position:absolute;top:0;width:28px;height:4px;border-radius:0 0 3px 3px;background:{{t.bar}}"></span>
+<span style="font-family:'Material Symbols Rounded';font-size:27px;line-height:1;color:{{t.ic}}">{{ t.icon }}</span>
+<span style="font:{{t.w}} 12px Pretendard;color:{{t.fg}}">{{ t.label }}</span>
+<sc-if value="{{ t.badge }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;top:6px;left:50%;margin-left:8px;padding:1px 5px;border-radius:7px;background:#E0533D;color:#fff;font:800 9px Pretendard">{{ t.badgeText }}</span></sc-if>
+</div>
+</sc-for>
+</div>
+
+<sc-if value="{{ sheetOpen }}" hint-placeholder-val="{{ false }}">
+<div onClick="{{ closeSheet }}" style="position:absolute;inset:0;background:rgba(30,20,10,.5);z-index:40"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:41;background:#FFFDF8;border-radius:28px 28px 0 0;padding:18px 16px 46px;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;align-items:center;justify-content:space-between"><div style="display:flex;flex-direction:column;gap:2px"><span style="font:400 24px Jua">출석 체크</span><span style="font:600 13px Pretendard;color:#6B5D51">10월 시즌 · 5일차 · 7일차 보상 소환권</span></div><div onClick="{{ closeSheet }}" style="width:44px;height:44px;border-radius:22px;background:#F1E8DB;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">close</span></div></div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px">
+<sc-for list="{{ days }}" as="d" hint-placeholder-count="7">
+<div style="height:92px;border-radius:14px;background:{{d.bg}};border:{{d.border}};box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;opacity:{{d.op}};position:relative;grid-column:{{d.span}}">
+<span style="font:700 11px Pretendard;color:#6B5D51">{{ d.day }}</span>
+<span style="width:32px;height:32px;border-radius:50%;background:{{d.ic}}"></span>
+<span style="font:800 12px Pretendard">{{ d.amt }}</span>
+<sc-if value="{{ d.done }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;inset:0;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(255,253,248,.55)"><span style="font-family:'Material Symbols Rounded';font-size:34px;line-height:1;color:#3FA66B">check_circle</span></span></sc-if>
+</div>
+</sc-for>
+</div>
+<div onClick="{{ claimDay }}" style="height:56px;border-radius:18px;background:{{claimBg}};box-shadow:{{claimSh}};color:{{claimFg}};display:flex;align-items:center;justify-content:center;font:800 17px Pretendard;cursor:pointer" style-active="transform:translateY(2px)">{{ claimText }}</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:50%;top:104px;transform:translateX(-50%);z-index:60;padding:10px 16px;border-radius:14px;background:rgba(43,36,32,.92);color:#fff;font:700 13px Pretendard;white-space:nowrap">{{ toast }}</div></sc-if>
+
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px 0 34px;z-index:70;pointer-events:none;font:700 15px Pretendard;color:#2B2420"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div><div style="display:flex;gap:5px;align-items:center"><span style="width:17px;height:11px;background:#2B2420;border-radius:2px"></span><span style="width:25px;height:12px;border:1.5px solid #2B2420;border-radius:4px;box-sizing:border-box;padding:1px;display:flex"><span style="width:70%;background:#2B2420;border-radius:1px"></span></span></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+<sc-if value="{{ showSafe }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:0;right:0;top:0;height:47px;background:repeating-linear-gradient(135deg,rgba(224,83,61,.25) 0 6px,transparent 6px 12px);z-index:80;pointer-events:none"></div><div style="position:absolute;left:0;right:0;bottom:0;height:34px;background:repeating-linear-gradient(135deg,rgba(224,83,61,.25) 0 6px,transparent 6px 12px);z-index:80;pointer-events:none;display:flex;align-items:center;justify-content:center;font:600 10px ui-monospace,Menlo,monospace;color:#9B2B1B">SAFE AREA 밖 · 터치 금지</div></sc-if>
+</div>
+</div>
+<div style="max-width:{{W}}px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">
+<b style="color:#2B2420">핵심 생각:</b> 화면의 60%를 방에 내주고, 중요한 행동일수록 엄지가 닿는 아래쪽에 배치했습니다. 하단 7개 메뉴는 5개 탭으로 묶었습니다. <b>스테이지</b> 탭 안에 [스테이지 | 콘텐츠], <b>가전</b> 탭 안에 [보유 가전 | 편성]을 하위 탭으로 두어 모든 기능을 2번 이내 터치로 열 수 있습니다. 대청소 바로가기는 홈에도 남겨 두었습니다.<br><b style="color:#2B2420">눌러 보기:</b> 캐릭터 · 자동 청소 ‘수령’ · 출석 · 하단 탭 · 다음 스테이지
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a><b style="color:#2B2420">작전 보드형 · 7탭 유지</b><span>· 정적</span></div>
+<div style="padding:10px">
+<div style="width:390px;height:844px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#FBF6EE">
+<div style="position:absolute;left:12px;right:12px;top:51px;height:40px;display:flex;align-items:center;gap:6px">
+<div style="height:36px;padding:0 10px 0 4px;border-radius:18px;background:#fff;display:flex;align-items:center;gap:6px;border:1px solid #EADFCF"><span style="width:28px;height:28px;border-radius:50%;background:#2F4A7A"></span><span style="font:800 13px Pretendard">Lv.12</span></div>
+<div style="flex:1"></div>
+<div style="height:32px;padding:0 8px;border-radius:16px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:5px;font:800 13px Pretendard"><span style="width:18px;height:18px;border-radius:50%;background:#F5C028"></span>1.24M</div>
+<div style="height:32px;padding:0 8px;border-radius:16px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:5px;font:800 13px Pretendard"><span style="width:16px;height:16px;border-radius:4px;background:#8A9BB0"></span>36</div>
+<div style="height:32px;padding:0 8px;border-radius:16px;background:#fff;border:1px solid #EADFCF;display:flex;align-items:center;gap:5px;font:800 13px Pretendard"><span style="width:12px;height:12px;transform:rotate(45deg);border-radius:2px;background:#8E5BD6"></span>2,480</div>
+<span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:24px;color:#6B5D51">settings</span>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:100px;height:300px;border-radius:24px;overflow:hidden;background:#F2E2CB">
+<div style="position:absolute;left:0;right:0;top:52%;bottom:0;background:repeating-linear-gradient(90deg,#DDB78A 0 62px,#D2AB7C 62px 64px)"></div>
+<div style="position:absolute;left:20px;top:22px;width:110px;height:90px;border-radius:12px;border:5px solid #FFF8EE;background:repeating-linear-gradient(135deg,#D3E5EE 0 10px,#C6DCE8 10px 20px)"></div>
+<div style="position:absolute;left:40px;top:150px;width:54px;height:54px;border-radius:50%;background:#2F4A7A;border:3px solid #fff"></div>
+<div style="position:absolute;left:140px;top:175px;width:54px;height:54px;border-radius:50%;background:#3E9E92;border:3px solid #fff"></div>
+<div style="position:absolute;left:230px;top:140px;width:54px;height:54px;border-radius:50%;background:#5B93C9;border:3px solid #fff"></div>
+<div style="position:absolute;left:290px;top:200px;width:54px;height:54px;border-radius:50%;background:#D9503A;border:3px solid #fff"></div>
+<div style="position:absolute;left:10px;right:10px;bottom:10px;height:52px;border-radius:16px;background:rgba(255,253,248,.95);display:flex;align-items:center;gap:10px;padding:0 6px 0 12px">
+<span style="font-family:'Material Symbols Rounded';font-size:24px;color:#E8701A">cleaning_services</span>
+<div style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font:800 13px Pretendard">자동 청소 +3,420 코인</span><span style="height:5px;border-radius:3px;background:#EADFCF;overflow:hidden"><span style="display:block;width:72%;height:100%;background:#E8701A"></span></span></div>
+<span style="height:40px;padding:0 14px;border-radius:12px;background:#E8701A;color:#fff;display:flex;align-items:center;font:800 14px Pretendard">수령</span>
+</div>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:412px;border-radius:22px;background:#fff;border:1px solid #EADFCF;padding:16px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:400 20px Jua">챕터 1 · 거실</span><span style="font:700 12px Pretendard;color:#6B5D51">★ 3/15</span></div>
+<div style="display:flex;align-items:center;gap:6px">
+<span style="flex:1;height:36px;border-radius:10px;background:#3FA66B;color:#fff;display:flex;align-items:center;justify-content:center;font:800 13px Pretendard">1-1</span>
+<span style="flex:1;height:36px;border-radius:10px;background:#3FA66B;color:#fff;display:flex;align-items:center;justify-content:center;font:800 13px Pretendard">1-2</span>
+<span style="flex:1;height:36px;border-radius:10px;background:#fff;border:3px solid #E8701A;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font:800 13px Pretendard">1-3</span>
+<span style="flex:1;height:36px;border-radius:10px;background:#EFE7DC;color:#8A7B6C;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:18px">lock</span>
+<span style="flex:1;height:36px;border-radius:10px;background:#EFE7DC;color:#8A7B6C;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:18px">lock</span>
+</div>
+<div style="height:60px;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;align-items:center;justify-content:center;font:400 24px Jua;color:#fff">1-3 거실 출동</div>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:636px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+<div style="height:88px;border-radius:18px;background:#2F4A7A;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px">all_inclusive</span><span style="font:800 13px Pretendard">대청소</span><span style="font:600 11px Pretendard;color:#C9D6EC">최고 W27</span></div>
+<div style="height:88px;border-radius:18px;background:#fff;border:2px solid #E8701A;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;position:relative"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#E8701A">event_available</span><span style="font:800 13px Pretendard">출석</span><span style="font:700 11px Pretendard;color:#C85A0C">수령 가능</span></div>
+<div style="height:88px;border-radius:18px;background:#fff;border:1px solid #EADFCF;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8E5BD6">workspace_premium</span><span style="font:800 13px Pretendard">시즌 패스</span><span style="font:600 11px Pretendard;color:#6B5D51">Lv.7 · 12일</span></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:98px;background:#FFFDF8;border-top:1px solid #EADFCF;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));padding:0 2px 34px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#E8701A">home</span><span style="font:800 11px Pretendard">홈</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8A7B6C">flag</span><span style="font:600 11px Pretendard;color:#6B5D51">스테이지</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8A7B6C">grid_view</span><span style="font:600 11px Pretendard;color:#6B5D51">콘텐츠</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8A7B6C">kitchen</span><span style="font:600 11px Pretendard;color:#6B5D51">가전</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8A7B6C">groups</span><span style="font:600 11px Pretendard;color:#6B5D51">편성</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8A7B6C">auto_awesome</span><span style="font:600 11px Pretendard;color:#6B5D51">소환</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#8A7B6C">storefront</span><span style="font:600 11px Pretendard;color:#6B5D51">상점</span></div>
+</div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;padding:0 34px;font:700 15px Pretendard"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17"></div>
+</div>
+</div>
+<div style="max-width:390px;font:13px/1.6 Pretendard;color:#5E5046;padding:0 10px">
+<b style="color:#2B2420">핵심 생각:</b> 현재 구조(7탭, 스테이지 중심)를 지키면서 정리한 안입니다. 방은 위쪽 카드로 줄이고, 챕터 진행과 출동 버튼, 콘텐츠 3칸을 한눈에 보여 줍니다.<br><b style="color:#2B2420">장점</b> 개발 변경이 적고 모든 기능이 한 화면에 보입니다. <b style="color:#2B2420">단점</b> 방과 캐릭터가 작아 수집의 재미가 줄고, 7탭은 한 칸이 55pt라 글자가 빽빽합니다.
+</div>
+</div>
+
+<div style="flex:1;min-width:280px;max-width:340px;display:flex;flex-direction:column;gap:14px;padding-top:34px">
+<div style="padding:18px;border-radius:16px;background:#FFFDF8;border:2px solid #E8701A;display:flex;flex-direction:column;gap:10px">
+<span style="font:400 20px Jua">추천: <a class="dv-oid" href="#1a">1a</a></span>
+<span style="font:13px/1.65 Pretendard;color:#2B2420">브리프의 중심인 “따뜻한 방과 SD 캐릭터”를 가장 크게 보여 주고, 방치 성장 게임에서 매일 반복하는 행동(수령 → 출동)을 엄지 영역에 모았습니다.</span>
+<span style="font:13px/1.65 Pretendard;color:#5E5046">5탭 묶음은 하위 탭만 추가하면 되므로 기능은 그대로 남습니다. 7탭 유지가 꼭 필요하면 <a class="dv-oid" href="#1b">1b</a>의 하단 바를 <a class="dv-oid" href="#1a">1a</a>에 그대로 붙일 수 있습니다(방 영역 높이는 동일).</span>
+</div>
+<div style="padding:16px;border-radius:16px;background:#fff;border:1px solid #E3D7C7;display:flex;flex-direction:column;gap:8px;font:12.5px/1.6 Pretendard;color:#5E5046">
+<b style="color:#2B2420;font-size:13px">현재 → 시안 비교</b>
+<span>· 첫 화면: 스테이지 표 → 방 + 캐릭터, 스테이지는 출동 버튼과 탭으로 이동</span>
+<span>· 재화: 한 줄 텍스트 → 상단 아이콘 칩(큰 수는 1.24M처럼 축약)</span>
+<span>· 잠긴 스테이지: 옅은 색 → 회색 + 자물쇠 아이콘</span>
+<span>· 시작 팝업 → 위쪽 브리핑 + 아래 시작 버튼, 전장이 가려지지 않음</span>
+<span>· 오른쪽 위 작은 버튼 → 일시정지는 왼쪽 위, 배속은 오른쪽 위(44pt), 나가기는 일시정지 메뉴 안으로</span>
+<span>· 전력 막대 → 카드 바로 위로 이동, 카드마다 비용과 상태 표시</span>
+<span>· 가전 조작 → 전장 위 팝업 대신 하단 동작 패널</span>
+</div>
+</div>
+</div>
+
+<div style="font:700 13px Pretendard;color:#5E5046;margin:36px 0 16px">추천 방향 상세 — 전투 HUD</div>
+<div class="dv-opts">
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a><b style="color:#2B2420">전투 HUD · 브리핑 → 전투</b><span>· 인터랙티브 시뮬레이션</span></div>
+<div style="padding:10px">
+<div style="width:{{W}}px;height:{{H}}px;position:relative;overflow:hidden;border-radius:46px;box-shadow:0 0 0 9px #1E1A17,0 24px 60px rgba(60,35,10,.28);background:#EFE4D3;user-select:none">
+
+<sc-if value="{{ isBrief }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;left:12px;right:12px;top:51px;height:82px;border-radius:18px;background:#FFFDF8;box-shadow:0 2px 0 rgba(80,50,20,.1);padding:10px 14px;box-sizing:border-box;display:flex;flex-direction:column;gap:5px">
+<div style="display:flex;align-items:baseline;gap:8px"><span style="font:400 22px Jua;line-height:1">1-3 거실</span><span style="font:700 12px Pretendard;color:#6B5D51">웨이브 10 · 먼지 30</span></div>
+<span style="font:600 13px/1.4 Pretendard;color:#2B2420">현관·창문 두 곳에서 먼지가 들어와요. 소파까지 오지 못하게 막으세요.</span>
+</div>
+</sc-if>
+<sc-if value="{{ isPlay }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:12px;right:12px;top:51px;height:44px;display:flex;align-items:center;gap:8px">
+<div onClick="{{ onPause }}" style="width:44px;height:44px;border-radius:14px;background:#FFFDF8;box-shadow:inset 0 -3px 0 #E3D5C2;display:flex;align-items:center;justify-content:center;cursor:pointer" style-active="transform:translateY(2px)"><span style="font-family:'Material Symbols Rounded';font-size:26px;line-height:1">pause</span></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:800 16px Pretendard">웨이브 {{ wave }}</span><span style="font:700 12px Pretendard;color:#6B5D51">/ 10 · 1-3 거실</span></div>
+<div style="display:flex;gap:3px"><sc-for list="{{ waveSegs }}" as="w" hint-placeholder-count="10"><span style="flex:1;height:5px;border-radius:3px;background:{{w.bg}}"></span></sc-for></div></div>
+<div style="height:36px;padding:0 10px;border-radius:12px;background:#FFFDF8;display:flex;align-items:center;gap:5px"><span style="width:14px;height:14px;border-radius:50%;background:#8A7F74"></span><span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">{{ remain }}</span></div>
+<div onClick="{{ onSpeed }}" style="width:52px;height:44px;border-radius:14px;background:{{spBg}};color:{{spFg}};box-shadow:inset 0 -3px 0 {{spSh}};display:flex;align-items:center;justify-content:center;gap:1px;font:800 16px Pretendard;cursor:pointer" style-active="transform:translateY(2px)"><span style="font-family:'Material Symbols Rounded';font-size:20px;line-height:1">fast_forward</span>{{ spLabel }}</div>
+</div>
+<div style="position:absolute;left:12px;right:12px;top:101px;height:30px;border-radius:15px;background:#FFFDF8;display:flex;align-items:center;gap:8px;padding:0 12px">
+<span style="font-family:'Material Symbols Rounded';font-size:18px;line-height:1;color:{{cleanColor}}">home</span><span style="font:700 12px Pretendard;color:#5E5046">청결도</span>
+<span style="flex:1;height:10px;border-radius:5px;background:#EADFCF;overflow:hidden"><span style="display:block;height:100%;width:{{clean}}%;background:{{cleanColor}};transition:width .3s"></span></span>
+<span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums;width:40px;text-align:right">{{ clean }}%</span>
+</div>
+</sc-if>
+
+<div style="position:absolute;left:{{fx}}px;top:{{fy}}px;width:{{fw}}px;height:{{fh}}px">
+<sc-for list="{{ tiles }}" as="t" hint-placeholder-count="70">
+<div onClick="{{ t.tap }}" style="position:absolute;left:{{t.x}}px;top:{{t.y}}px;width:{{t.size}}px;height:{{t.size}}px;border-radius:{{t.rad}}px;background:{{t.bg}};box-shadow:{{t.sh}};opacity:{{t.op}};display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .15s">
+<sc-if value="{{ t.hasLabel }}" hint-placeholder-val="{{ false }}"><span style="font:800 11px Pretendard;color:#1F3550">{{ t.label }}</span></sc-if>
+<sc-if value="{{ t.plus }}" hint-placeholder-val="{{ false }}"><span style="font-family:'Material Symbols Rounded';font-size:22px;line-height:1;color:#2E8A55">add</span></sc-if>
+</div>
+</sc-for>
+<sc-if value="{{ hasRange }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:{{rx}}px;top:{{ry}}px;width:{{rd}}px;height:{{rd}}px;border-radius:50%;border:2px dashed #E8701A;background:rgba(232,112,26,.10);pointer-events:none;box-sizing:border-box"></div></sc-if>
+<sc-for list="{{ units }}" as="u" hint-placeholder-count="3">
+<div onClick="{{ u.tap }}" style="position:absolute;left:{{u.x}}px;top:{{u.y}}px;width:{{u.size}}px;height:{{u.size}}px;display:flex;align-items:center;justify-content:center;cursor:pointer">
+<div style="width:{{u.body}}px;height:{{u.body}}px;border-radius:50%;background:{{u.color}};box-shadow:{{u.ring}};filter:{{u.filter}};display:flex;align-items:center;justify-content:center;font:700 9px Pretendard;color:#fff;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 5px,transparent 5px 10px)">{{ u.short }}</div>
+<span style="position:absolute;left:0;bottom:1px;padding:0 4px;border-radius:6px;background:#2B2420;color:#fff;font:800 9px/14px Pretendard">{{ u.lvText }}</span>
+<sc-if value="{{ u.heatShow }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;left:6px;right:6px;top:1px;height:4px;border-radius:2px;background:rgba(43,36,32,.25);overflow:hidden"><span style="display:block;height:100%;width:{{u.heat}}%;background:{{u.heatColor}}"></span></span></sc-if>
+<sc-if value="{{ u.over }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:-3px;top:-3px;width:22px;height:22px;border-radius:50%;background:#E0533D;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:14px;color:#fff">local_fire_department</span></sc-if>
+<sc-if value="{{ u.tap2 }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:-3px;bottom:-3px;width:20px;height:20px;border-radius:50%;background:#F5C028;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:13px;color:#2B2420">power</span></sc-if>
+</div>
+</sc-for>
+<sc-for list="{{ enemies }}" as="e" hint-placeholder-count="0">
+<div style="position:absolute;left:{{e.x}}px;top:{{e.y}}px;width:{{e.s}}px;height:{{e.s}}px;transition:left .1s linear,top .1s linear;pointer-events:none">
+<div style="width:100%;height:100%;border-radius:50%;background:#8A7F74;box-shadow:0 0 0 3px rgba(138,127,116,.35)"></div>
+<span style="position:absolute;left:0;right:0;top:-6px;height:3px;border-radius:2px;background:rgba(43,36,32,.3);overflow:hidden"><span style="display:block;height:100%;width:{{e.hp}}%;background:#E0533D"></span></span>
+</div>
+</sc-for>
+<sc-if value="{{ hasBToast }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:50%;top:6px;transform:translateX(-50%);padding:9px 14px;border-radius:12px;background:{{bToastBg}};color:#fff;font:700 13px Pretendard;white-space:nowrap;pointer-events:none;z-index:5">{{ bToast }}</div></sc-if>
+</div>
+
+<div style="position:absolute;left:0;right:0;bottom:0;height:176px;background:#FFFDF8;border-radius:24px 24px 0 0;box-shadow:0 -2px 0 rgba(80,50,20,.08);padding:10px 12px 34px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px">
+<sc-if value="{{ isBrief }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;gap:6px;height:30px">
+<span style="flex:1;border-radius:10px;background:#F5EDE2;display:flex;align-items:center;justify-content:center;gap:4px;font:700 11px Pretendard;color:#5E5046"><span style="color:#E6A817">★</span>클리어</span>
+<span style="flex:1;border-radius:10px;background:#F5EDE2;display:flex;align-items:center;justify-content:center;gap:4px;font:700 11px Pretendard;color:#5E5046"><span style="color:#E6A817">★</span>청결도 70%↑</span>
+<span style="flex:1;border-radius:10px;background:#F5EDE2;display:flex;align-items:center;justify-content:center;gap:4px;font:700 11px Pretendard;color:#5E5046"><span style="color:#E6A817">★</span>과열 0회 (추측)</span>
+</div>
+<div style="display:flex;gap:6px;align-items:center;font:600 12px Pretendard;color:#5E5046;height:20px"><span style="width:12px;height:12px;border-radius:50%;background:#8A7F74"></span>먼지뭉치 ×24<span style="width:14px;height:14px;border-radius:50%;background:#6E625A;margin-left:8px"></span>털뭉치 ×6 (가칭)</div>
+<div style="display:flex;gap:10px;height:56px">
+<div style="width:118px;border-radius:18px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;align-items:center;justify-content:center;gap:4px;font:800 15px Pretendard;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:20px">groups</span>편성 변경</div>
+<div onClick="{{ onStart }}" style="flex:1;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;display:flex;align-items:center;justify-content:center;font:400 24px Jua;color:#fff;cursor:pointer" style-active="transform:translateY(3px)">작전 시작</div>
+</div>
+</sc-if>
+<sc-if value="{{ isPlay }}" hint-placeholder-val="{{ false }}">
+<div style="height:28px;display:flex;align-items:center;gap:8px">
+<span style="font-family:'Material Symbols Rounded';font-size:22px;line-height:1;color:#E6A817">bolt</span>
+<span style="font:800 18px Pretendard;font-variant-numeric:tabular-nums;min-width:40px">{{ powerText }}</span><span style="font:600 12px Pretendard;color:#6B5D51">/ 1,200W</span>
+<span style="flex:1;height:8px;border-radius:4px;background:#EADFCF;overflow:hidden"><span style="display:block;height:100%;width:{{powerPct}}%;background:#F5C028"></span></span>
+<span style="padding:3px 7px;border-radius:8px;background:#FFF4CF;font:700 11px Pretendard;color:#7A5A00">{{ regenText }}</span>
+</div>
+<sc-if value="{{ noUnitSel }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;gap:6px;height:96px;align-items:flex-end">
+<sc-for list="{{ cards }}" as="k" hint-placeholder-count="5">
+<div onClick="{{ k.tap }}" style="flex:1;min-width:0;height:90px;border-radius:14px;background:{{k.bg}};border:{{k.border}};box-sizing:border-box;transform:translateY({{k.lift}}px);transition:transform .12s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;position:relative;cursor:pointer;overflow:hidden">
+<div style="width:38px;height:38px;border-radius:50%;background:{{k.color}};filter:{{k.filter}};display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:18px;color:#fff;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 5px,transparent 5px 10px)">{{ k.glyph }}</div>
+<span style="font:700 11px Pretendard;color:#2B2420;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding:0 4px;box-sizing:border-box">{{ k.name }}</span>
+<span style="padding:1px 6px;border-radius:7px;background:{{k.costBg}};color:{{k.costFg}};font:800 11px Pretendard;font-variant-numeric:tabular-nums">{{ k.costText }}</span>
+<sc-if value="{{ k.cd }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;background:rgba(43,36,32,.74);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#fff"><span style="font:800 22px Pretendard;font-variant-numeric:tabular-nums">{{ k.cdText }}</span><span style="font:700 10px Pretendard">재배치 대기</span><span style="position:absolute;left:0;bottom:0;height:4px;width:{{k.cdPct}}%;background:#F5C028"></span></div></sc-if>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ unitSel }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;gap:6px;height:96px;align-items:stretch;padding-top:6px;box-sizing:border-box">
+<div style="flex:1;min-width:0;border-radius:14px;background:#F5EDE2;padding:8px 10px;display:flex;flex-direction:column;gap:3px;justify-content:center">
+<span style="font:800 14px Pretendard;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ su.name }}</span>
+<span style="font:600 11px Pretendard;color:#5E5046">{{ su.sub }}</span>
+<span style="font:700 11px Pretendard;color:{{su.stateFg}}">{{ su.state }}</span>
+</div>
+<sc-for list="{{ actions }}" as="a" hint-placeholder-count="3">
+<div onClick="{{ a.tap }}" style="width:64px;border-radius:14px;background:{{a.bg}};box-shadow:inset 0 -3px 0 {{a.sh}};opacity:{{a.op}};display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer" style-active="transform:translateY(2px)">
+<span style="font-family:'Material Symbols Rounded';font-size:22px;line-height:1;color:{{a.fg}}">{{ a.icon }}</span><span style="font:800 12px Pretendard;color:{{a.fg}}">{{ a.label }}</span><span style="font:700 10px Pretendard;color:{{a.subFg}};white-space:nowrap">{{ a.sub }}</span>
+</div>
+</sc-for>
+<div onClick="{{ deselect }}" style="width:40px;border-radius:14px;background:#F1E8DB;display:flex;align-items:center;justify-content:center;cursor:pointer"><span style="font-family:'Material Symbols Rounded';font-size:22px;line-height:1">close</span></div>
+</div>
+</sc-if>
+</sc-if>
+</div>
+
+<sc-if value="{{ paused }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;background:rgba(30,20,10,.6);z-index:40;display:flex;align-items:center;justify-content:center">
+<div style="width:290px;border-radius:26px;background:#FFFDF8;padding:22px 18px 18px;display:flex;flex-direction:column;gap:10px">
+<span style="font:400 26px Jua;text-align:center">일시정지</span>
+<span style="font:600 13px Pretendard;color:#6B5D51;text-align:center;margin-bottom:6px">1-3 거실 · 웨이브 {{ wave }}/10 · 청결도 {{ clean }}%</span>
+<div onClick="{{ onResume }}" style="height:56px;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;color:#fff;display:flex;align-items:center;justify-content:center;font:800 17px Pretendard;cursor:pointer">계속하기</div>
+<div onClick="{{ onRestart }}" style="height:52px;border-radius:16px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;align-items:center;justify-content:center;font:800 15px Pretendard;cursor:pointer">처음부터 다시</div>
+<div style="height:52px;border-radius:16px;background:#F1E8DB;box-shadow:inset 0 -3px 0 #E0D2BE;display:flex;align-items:center;justify-content:center;font:800 15px Pretendard">설정</div>
+<div style="height:44px;display:flex;align-items:center;justify-content:center;font:800 14px Pretendard;color:#C0392B">작전 포기하고 나가기</div>
+</div>
+</div>
+</sc-if>
+
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px 0 34px;z-index:70;pointer-events:none;font:700 15px Pretendard;color:#2B2420"><span>9:41</span><div style="position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;background:#000;border-radius:20px"></div><div style="display:flex;gap:5px;align-items:center"><span style="width:17px;height:11px;background:#2B2420;border-radius:2px"></span><span style="width:25px;height:12px;border:1.5px solid #2B2420;border-radius:4px;box-sizing:border-box;padding:1px;display:flex"><span style="width:70%;background:#2B2420;border-radius:1px"></span></span></div></div>
+<div style="position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:#1E1A17;z-index:70"></div>
+<sc-if value="{{ showSafe }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:0;right:0;top:0;height:47px;background:repeating-linear-gradient(135deg,rgba(224,83,61,.25) 0 6px,transparent 6px 12px);z-index:80;pointer-events:none"></div><div style="position:absolute;left:0;right:0;bottom:0;height:34px;background:repeating-linear-gradient(135deg,rgba(224,83,61,.25) 0 6px,transparent 6px 12px);z-index:80;pointer-events:none"></div></sc-if>
+</div>
+</div>
+</div>
+
+<div style="flex:1;min-width:300px;max-width:420px;display:flex;flex-direction:column;gap:12px;padding-top:34px;font:13px/1.65 Pretendard;color:#5E5046">
+<b style="font:400 20px Jua;color:#2B2420">핵심 상호작용</b>
+<div style="display:grid;grid-template-columns:22px 1fr;gap:8px 10px">
+<span style="font:400 18px Jua;color:#E8701A">1</span><span><b style="color:#2B2420">브리핑이 전장을 가리지 않음.</b> 설명은 위쪽 HUD 자리, 시작 버튼은 아래 카드 자리에 둡니다. 경로는 주황 테두리로 미리 보여 줍니다.</span>
+<span style="font:400 18px Jua;color:#E8701A">2</span><span><b style="color:#2B2420">탭 → 탭 배치.</b> 카드를 누르면 놓을 수 있는 칸만 초록 +로 남고 나머지는 흐려집니다. 드래그가 아니라서 손가락이 목표 칸을 가리지 않습니다. 드래그는 보조 방식으로 두되, 미리보기를 손가락 위 1칸에 띄우는 것을 권장합니다(추측).</span>
+<span style="font:400 18px Jua;color:#E8701A">3</span><span><b style="color:#2B2420">카드 하나로 상태 파악.</b> 일반 · 선택(위로 올라옴 + 주황 테두리) · 전력 부족(흑백 + 빨간 비용) · 재배치 대기(초 단위 숫자 + 노란 진행 막대) · 잠금. 사용할 수 없는 카드를 누르면 이유를 알려 줍니다.</span>
+<span style="font:400 18px Jua;color:#E8701A">4</span><span><b style="color:#2B2420">배치한 가전은 하단 패널에서 조작.</b> 전장 위 팝업 대신 카드 줄이 강화·멀티탭·철수 패널로 바뀝니다. 전장에는 사거리 원만 표시됩니다.</span>
+<span style="font:400 18px Jua;color:#E8701A">5</span><span><b style="color:#2B2420">과열.</b> 머리 위 온도 막대(주황 → 빨강) → 빨간 불꽃 배지 + 흑백 처리 → 냉각 후 복귀. 전자레인지에만 적용(규칙 추측).</span>
+<span style="font:400 18px Jua;color:#E8701A">6</span><span><b style="color:#2B2420">일시정지는 왼쪽 위, 나가기는 메뉴 안으로.</b> 나가기는 일시정지 메뉴 맨 아래 글자 버튼으로 옮겨 실수를 막습니다.</span>
+</div>
+<div style="padding:12px 14px;border-radius:12px;background:#FFF1E2;color:#8F3F06;font:600 12px/1.6 Pretendard">추측 표시: 멀티탭 = 배치한 가전에 연결해 전력 회복을 높이는 소모 아이템으로 가정했습니다(남은 개수 2). 털뭉치·별 조건·전력 상한 1,200W·회복량도 가정값입니다. 실제 규칙을 알려 주시면 맞추겠습니다.</div>
+<div style="font:600 12px Pretendard;color:#6B5D51">눌러 보기: 작전 시작 → 카드 → 칸 · 배치한 가전 → 강화/멀티탭/철수 · 배속 · 일시정지</div>
+</div>
+</div>
+
+<div style="font:700 13px Pretendard;color:#5E5046;margin:48px 0 16px">공통 상태 표현</div>
+<div class="dv-opts">
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a><b style="color:#2B2420">상태 보드</b><span>· 버튼 / 카드 / 칸 / 등급 / 숫자 · 긴 글자</span></div>
+<div style="width:980px;max-width:100%;background:#FFFDF8;border-radius:20px;border:1px solid #E3D7C7;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:28px">
+
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font:800 13px Pretendard">버튼 6가지 상태 (기본 버튼, 높이 56)</span>
+<div style="display:flex;flex-wrap:wrap;gap:14px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:136px;height:56px;border-radius:18px;background:#E8701A;box-shadow:inset 0 -5px 0 #B9560F;color:#fff;display:flex;align-items:center;justify-content:center;font:800 16px Pretendard">출동</div><span style="font:600 11px Pretendard;color:#6B5D51">일반</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:136px;height:56px;border-radius:18px;background:#D9620F;box-shadow:inset 0 -2px 0 #B9560F;transform:translateY(3px);color:#fff;display:flex;align-items:center;justify-content:center;font:800 16px Pretendard">출동</div><span style="font:600 11px Pretendard;color:#6B5D51">눌림 (−3px, 그림자 축소)</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:136px;height:56px;border-radius:18px;background:#FFF1E2;box-shadow:inset 0 0 0 3px #E8701A;color:#8F3F06;display:flex;align-items:center;justify-content:center;font:800 16px Pretendard">선택됨</div><span style="font:600 11px Pretendard;color:#6B5D51">선택</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:136px;height:56px;border-radius:18px;background:#E4DCD1;color:#8A7B6C;display:flex;align-items:center;justify-content:center;font:800 16px Pretendard">출동</div><span style="font:600 11px Pretendard;color:#6B5D51">비활성 (조건 미충족)</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:136px;height:56px;border-radius:18px;background:#E4DCD1;color:#6B5D51;display:flex;align-items:center;justify-content:center;gap:4px;font:800 14px Pretendard"><span style="font-family:'Material Symbols Rounded';font-size:18px">lock</span>Lv.10 개방</div><span style="font:600 11px Pretendard;color:#6B5D51">잠금 (해금 조건 표시)</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:136px;height:56px;border-radius:18px;background:#3FA66B;box-shadow:inset 0 -5px 0 #2D7D4F,0 0 0 4px rgba(63,166,107,.25);color:#fff;display:flex;align-items:center;justify-content:center;font:800 16px Pretendard;position:relative">수령<span style="position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:50%;background:#E0533D;border:2px solid #fff"></span></div><span style="font:600 11px Pretendard;color:#6B5D51">수령 가능 (초록 + 빨간 점)</span></div>
+</div></div>
+
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font:800 13px Pretendard">배치 카드</span>
+<div style="display:flex;gap:10px;align-items:flex-end">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:68px;height:90px;border-radius:14px;background:#fff;border:2px solid #E8DCCB;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px"><span style="width:38px;height:38px;border-radius:50%;background:#2F4A7A"></span><span style="font:700 11px Pretendard">로봇청소기</span><span style="padding:1px 6px;border-radius:7px;background:#FFF4CF;font:800 11px Pretendard;color:#7A5A00">200W</span></div><span style="font:600 11px Pretendard;color:#6B5D51">일반</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:68px;height:90px;border-radius:14px;background:#FFF4E8;border:3px solid #E8701A;box-sizing:border-box;transform:translateY(-8px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px"><span style="width:38px;height:38px;border-radius:50%;background:#2F4A7A"></span><span style="font:700 11px Pretendard">로봇청소기</span><span style="padding:1px 6px;border-radius:7px;background:#E8701A;font:800 11px Pretendard;color:#fff">칸 선택</span></div><span style="font:600 11px Pretendard;color:#6B5D51">선택</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:68px;height:90px;border-radius:14px;background:#F3EEE7;border:2px solid #E8DCCB;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px"><span style="width:38px;height:38px;border-radius:50%;background:#D9503A;filter:grayscale(1) opacity(.55)"></span><span style="font:700 11px Pretendard">전자레인지</span><span style="padding:1px 6px;border-radius:7px;background:#FBE0DA;font:800 11px Pretendard;color:#B23A27">400W</span></div><span style="font:600 11px Pretendard;color:#6B5D51">전력 부족</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:68px;height:90px;border-radius:14px;background:#fff;border:2px solid #E8DCCB;box-sizing:border-box;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:rgba(43,36,32,.74);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff"><span style="font:800 22px Pretendard">6</span><span style="font:700 10px Pretendard">재배치 대기</span><span style="position:absolute;left:0;bottom:0;height:4px;width:40%;background:#F5C028"></span></div></div><span style="font:600 11px Pretendard;color:#6B5D51">재배치 대기</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:68px;height:90px;border-radius:14px;background:#EEE7DC;border:2px dashed #CDBFAE;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#6B5D51"><span style="font-family:'Material Symbols Rounded';font-size:22px">lock</span><span style="font:700 10px Pretendard;text-align:center">편성<br>Lv.10</span></div><span style="font:600 11px Pretendard;color:#6B5D51">슬롯 잠금</span></div>
+</div></div>
+
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font:800 13px Pretendard">전장 칸 · 가전</span>
+<div style="display:flex;gap:12px;align-items:flex-end">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:52px;height:52px;border-radius:10px;background:#E4F5EA;box-shadow:inset 0 0 0 3px #3FA66B;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:22px;color:#2E8A55">add</div><span style="font:600 11px Pretendard;color:#6B5D51">배치 가능</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:52px;height:52px;border-radius:10px;background:#FBE0DA;box-shadow:inset 0 0 0 3px #E0533D;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:22px;color:#B23A27">block</div><span style="font:600 11px Pretendard;color:#6B5D51">배치 불가 (누른 순간)</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:52px;height:52px;border-radius:10px;background:#FFFDF8;opacity:.45;box-shadow:inset 0 -4px 0 #E6D8C5"></div><span style="font:600 11px Pretendard;color:#6B5D51">선택 중 흐림</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:52px;height:52px;display:flex;align-items:center;justify-content:center"><span style="width:38px;height:38px;border-radius:50%;background:#2F4A7A;box-shadow:0 0 0 3px #fff,0 0 0 6px #E8701A"></span></div><span style="font:600 11px Pretendard;color:#6B5D51">선택된 가전</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;position:relative"><span style="width:38px;height:38px;border-radius:50%;background:#D9503A;filter:grayscale(.8);box-shadow:0 0 0 3px #E0533D"></span><span style="position:absolute;right:-2px;top:-2px;width:22px;height:22px;border-radius:50%;background:#E0533D;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:14px;color:#fff">local_fire_department</span></div><span style="font:600 11px Pretendard;color:#6B5D51">과열</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center"><div style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;position:relative"><span style="width:38px;height:38px;border-radius:50%;background:#3E9E92"></span><span style="position:absolute;right:-2px;bottom:-2px;width:20px;height:20px;border-radius:50%;background:#F5C028;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-family:'Material Symbols Rounded';font-size:13px">power</span></div><span style="font:600 11px Pretendard;color:#6B5D51">멀티탭 연결</span></div>
+</div></div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font:800 13px Pretendard">등급 · 미보유 (가전 카드 예시)</span>
+<div style="display:flex;gap:10px">
+<div style="width:84px;height:112px;border-radius:14px;background:#fff;border:3px solid #9AA0A6;box-sizing:border-box;position:relative;display:flex;align-items:center;justify-content:center"><span style="width:48px;height:48px;border-radius:50%;background:#5B93C9"></span><span style="position:absolute;left:6px;top:6px;padding:1px 6px;border-radius:6px;background:#9AA0A6;color:#fff;font:900 10px Pretendard">N</span></div>
+<div style="width:84px;height:112px;border-radius:14px;background:#fff;border:3px solid #3E8ED0;box-sizing:border-box;position:relative;display:flex;align-items:center;justify-content:center"><span style="width:48px;height:48px;border-radius:50%;background:#3E9E92"></span><span style="position:absolute;left:6px;top:6px;padding:1px 6px;border-radius:6px;background:#3E8ED0;color:#fff;font:900 10px Pretendard">R</span></div>
+<div style="width:84px;height:112px;border-radius:14px;background:#fff;border:3px solid #8E5BD6;box-sizing:border-box;position:relative;display:flex;align-items:center;justify-content:center"><span style="width:48px;height:48px;border-radius:50%;background:#2F4A7A"></span><span style="position:absolute;left:6px;top:6px;padding:1px 6px;border-radius:6px;background:#8E5BD6;color:#fff;font:900 10px Pretendard">SR</span></div>
+<div style="width:84px;height:112px;border-radius:14px;background:#FFF8E6;border:3px solid #E6A817;box-sizing:border-box;position:relative;display:flex;align-items:center;justify-content:center"><span style="width:48px;height:48px;border-radius:50%;background:#D9503A"></span><span style="position:absolute;left:6px;top:6px;padding:1px 6px;border-radius:6px;background:#E6A817;color:#2B2420;font:900 10px Pretendard">SSR</span></div>
+<div style="width:84px;height:112px;border-radius:14px;background:#EEE7DC;border:2px dashed #CDBFAE;box-sizing:border-box;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px"><span style="width:48px;height:48px;border-radius:50%;background:#3A322C;opacity:.35"></span><span style="font:700 10px Pretendard;color:#5E5046">미보유</span><span style="position:absolute;left:6px;top:6px;padding:1px 6px;border-radius:6px;background:#CDBFAE;color:#2B2420;font:900 10px Pretendard">SR</span></div>
+</div>
+<span style="font:500 11px Pretendard;color:#6B5D51">등급은 색 + 글자로 함께 구분(색맹 대응) · 미보유는 실루엣 + 점선</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;max-width:380px"><span style="font:800 13px Pretendard">큰 숫자 · 긴 한글</span>
+<div style="display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font:13px Pretendard;align-items:center">
+<span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">9,999</span><span style="color:#6B5D51">1만 미만은 쉼표로 전체 표기</span>
+<span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">12.3K</span><span style="color:#6B5D51">1만 이상: K / M / B, 유효숫자 3자리</span>
+<span style="font:800 15px Pretendard;font-variant-numeric:tabular-nums">1.24M</span><span style="color:#6B5D51">길게 누르면 1,240,512 전체 표시</span>
+</div>
+<div style="width:68px;height:90px;border-radius:14px;background:#fff;border:2px solid #E8DCCB;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:0 4px"><span style="width:38px;height:38px;border-radius:50%;background:#2F4A7A"></span><span style="font:700 11px Pretendard;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%">초고속 듀얼 사이클론 청소기</span></div>
+<span style="font:500 11px Pretendard;color:#6B5D51">카드: 1줄 말줄임 · 상세 화면: 최대 2줄 후 TMP 자동 축소(최소 −2pt)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<p class="dv-next">다음 단계(피드백 후): 가전 상세 · 편성 · 소환 · 상점 · 패스 · 결과 화면. 예시 요청: “<a class="dv-oid" href="#1a">1a</a>로 확정, 7탭 유지” · “전투 카드 6장 버전도” · “멀티탭 실제 규칙은 ○○야”</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSafeArea&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;검토&quot;},&quot;device&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;390×844&quot;,&quot;360×780&quot;,&quot;430×932&quot;],&quot;default&quot;:&quot;390×844&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;검토&quot;}}">
+class Component extends DCLogic {
+  static MAP = ['XXTSTXX','TTTPTTX','WPPPTTT','TTTPPPT','XTTTTPT','TPPPPPT','TPTTTTT','TPPPPTX','XTTTPTX','XXTTGTX'];
+  static TYPES = {
+    vac:{name:'로봇청소기',short:'청소기',cost:200,color:'#2F4A7A',role:'근접 흡입',range:1.5,dps:34,glyph:'mode_fan'},
+    air:{name:'공기청정기',short:'청정기',cost:300,color:'#3E9E92',role:'범위 정화',range:2.2,dps:16,glyph:'air'},
+    fan:{name:'선풍기',short:'선풍기',cost:150,color:'#5B93C9',role:'둔화',range:1.8,dps:10,glyph:'toys_fan'},
+    mw:{name:'전자레인지',short:'레인지',cost:400,color:'#D9503A',role:'고화력 · 과열',range:1.6,dps:70,glyph:'microwave'}
+  };
+  static expand(w){const o=[];for(let i=0;i<w.length-1;i++){let [r,c]=w[i];const [r2,c2]=w[i+1];while(r!==r2||c!==c2){o.push([r,c]);r+=Math.sign(r2-r);c+=Math.sign(c2-c);}}o.push(w[w.length-1]);return o;}
+  static PATHS = {
+    A: Component.expand([[0,3],[3,3],[3,5],[5,5],[5,1],[7,1],[7,4],[9,4]]),
+    B: Component.expand([[2,0],[2,3],[3,3],[3,5],[5,5],[5,1],[7,1],[7,4],[9,4]])
+  };
+  static initBattle(){return {phase:'brief',paused:false,speed:1,power:180,clean:100,wave:3,toSpawn:19,enemies:[],eid:1,uid:10,spawnT:0,
+    cds:{vac:0,air:9,fan:0,mw:0},sel:null,selUnit:null,taps:2,flash:null,bToast:null,bToastBad:false,
+    units:[{id:1,type:'vac',r:1,c:2,lv:2,heat:0,over:0,tap:false},{id:2,type:'mw',r:4,c:4,lv:1,heat:80,over:0,tap:false},{id:3,type:'fan',r:6,c:3,lv:1,heat:0,over:0,tap:true}]};}
+  state = Object.assign({tab:'home',collected:false,sheet:false,claimed:false,toast:null,talk:null,coins:1240512,
+    chars:[{x:10,y:420},{x:90,y:470},{x:170,y:410},{x:240,y:480}]}, Component.initBattle());
+
+  dims(){const m={'390×844':[390,844],'360×780':[360,780],'430×932':[430,932]};return m[this.props.device]||m['390×844'];}
+  componentDidMount(){
+    const place=()=>{const [W,H]=this.dims();const top=H*0.47,span=Math.max(0,(H-194-60-100)-top),lane=(W-90)/4;return [0,1,2,3].map(i=>({x:8+i*lane+Math.random()*(lane-20),y:top+Math.random()*span}));};
+    this.setState({chars:place()});
+    this.roam=setInterval(()=>this.setState({chars:place()}),2600);
+    this.loop=setInterval(()=>this.tick(),100);
+  }
+  componentWillUnmount(){clearInterval(this.roam);clearInterval(this.loop);clearTimeout(this.tt);clearTimeout(this.bt);}
+  toast(t){clearTimeout(this.tt);this.setState({toast:t});this.tt=setTimeout(()=>this.setState({toast:null}),1800);}
+  btoast(t,bad){clearTimeout(this.bt);this.setState({bToast:t,bToastBad:!!bad});this.bt=setTimeout(()=>this.setState({bToast:null,flash:null}),1500);}
+
+  tick(){
+    const s=this.state; if(s.phase!=='play'||s.paused) return;
+    const dt=0.1*s.speed, P=Component.PATHS, TY=Component.TYPES;
+    const taps=s.units.filter(u=>u.tap).length;
+    const power=Math.min(1200,s.power+(15+6*taps)*dt);
+    const cds={...s.cds}; for(const k in cds) cds[k]=Math.max(0,cds[k]-dt);
+    let {spawnT,toSpawn,eid,wave,clean}=s; spawnT-=dt;
+    let en=s.enemies.map(e=>({...e}));
+    if(spawnT<=0&&toSpawn>0){en.push({id:eid,path:eid%3===0?'B':'A',p:0,hp:100});eid++;toSpawn--;spawnT=1.5;}
+    const pos=e=>{const pa=P[e.path];const i=Math.min(Math.floor(e.p),pa.length-1);const j=Math.min(i+1,pa.length-1);const f=e.p-i;return [pa[i][0]+(pa[j][0]-pa[i][0])*f,pa[i][1]+(pa[j][1]-pa[i][1])*f];};
+    const units=s.units.map(u=>({...u}));
+    for(const e of en){let slow=1;for(const u of units){if(u.type==='fan'&&!u.over){const [er,ec]=pos(e);if(Math.hypot(er-u.r,ec-u.c)<=TY.fan.range)slow=.55;}}e.p+=0.7*dt*slow;}
+    for(const u of units){
+      if(u.over>0){u.over=Math.max(0,u.over-dt);u.heat=Math.max(0,u.heat-18*dt);continue;}
+      const t=TY[u.type];const inR=en.filter(e=>{const [er,ec]=pos(e);return Math.hypot(er-u.r,ec-u.c)<=t.range;});
+      if(!inR.length){if(u.type==='mw')u.heat=Math.max(0,u.heat-4*dt);continue;}
+      const dmg=t.dps*(1+0.5*(u.lv-1))*dt;
+      if(u.type==='air') inR.forEach(e=>e.hp-=dmg); else {inR.sort((a,b)=>b.p-a.p)[0].hp-=dmg;}
+      if(u.type==='mw'){u.heat+=11*dt;if(u.heat>=100){u.heat=100;u.over=5;}}
+    }
+    const out=[];en=en.filter(e=>{if(e.hp<=0)return false;if(e.p>=P[e.path].length-1){clean-=4;return false;}return true;});
+    clean=Math.max(0,clean);
+    if(toSpawn===0&&en.length===0&&wave<10){wave++;toSpawn=20;spawnT=2;}
+    this.setState({power,cds,spawnT,toSpawn,eid,wave,clean,enemies:en,units});
+  }
+
+  onTile(r,c){
+    const s=this.state;if(s.phase!=='play')return;
+    const u=s.units.find(x=>x.r===r&&x.c===c);
+    if(u&&!s.sel){this.setState({selUnit:s.selUnit===u.id?null:u.id});return;}
+    if(s.sel){
+      const ch=Component.MAP[r][c];
+      if(ch==='T'&&!u){const t=Component.TYPES[s.sel];this.setState(st=>({power:st.power-t.cost,units:[...st.units,{id:st.uid,type:st.sel,r,c,lv:1,heat:0,over:0,tap:false}],uid:st.uid+1,sel:null}));this.btoast(t.name+' 배치 완료');}
+      else{this.setState({flash:{r,c}});this.btoast(u?'이미 가전이 있는 칸이에요':(ch==='P'?'먼지 길에는 놓을 수 없어요':'이 칸에는 놓을 수 없어요'),true);}
+      return;
+    }
+    this.setState({selUnit:null});
+  }
+  onCard(k){
+    const s=this.state,t=Component.TYPES[k];
+    if(s.cds[k]>0){this.btoast('재배치 대기 중 · '+Math.ceil(s.cds[k])+'초',true);return;}
+    if(s.power<t.cost){this.btoast('전력 부족 · '+Math.ceil(t.cost-s.power)+'W 더 필요',true);return;}
+    this.setState({sel:s.sel===k?null:k,selUnit:null});
+    if(s.sel!==k) this.btoast('초록 칸을 눌러 배치 · 카드를 다시 누르면 취소');
+  }
+  upgrade(){const s=this.state,u=s.units.find(x=>x.id===s.selUnit);if(!u)return;const cost=150*u.lv;if(u.lv>=5){this.btoast('최대 레벨이에요',true);return;}if(s.power<cost){this.btoast('전력 부족 · '+Math.ceil(cost-s.power)+'W 더 필요',true);return;}
+    this.setState(st=>({power:st.power-cost,units:st.units.map(x=>x.id===u.id?{...x,lv:x.lv+1}:x)}));this.btoast('Lv.'+(u.lv+1)+' 강화 완료');}
+  multitap(){const s=this.state,u=s.units.find(x=>x.id===s.selUnit);if(!u)return;
+    if(u.tap){this.setState(st=>({taps:st.taps+1,units:st.units.map(x=>x.id===u.id?{...x,tap:false}:x)}));this.btoast('멀티탭 해제');return;}
+    if(s.taps<=0){this.btoast('남은 멀티탭이 없어요',true);return;}
+    this.setState(st=>({taps:st.taps-1,units:st.units.map(x=>x.id===u.id?{...x,tap:true}:x)}));this.btoast('멀티탭 연결 · 전력 회복 +6/s');}
+  retreat(){const s=this.state,u=s.units.find(x=>x.id===s.selUnit);if(!u)return;const t=Component.TYPES[u.type];
+    this.setState(st=>({power:Math.min(1200,st.power+t.cost/2),taps:st.taps+(u.tap?1:0),units:st.units.filter(x=>x.id!==u.id),selUnit:null,cds:{...st.cds,[u.type]:8}}));this.btoast('철수 · +'+t.cost/2+'W 환급, 8초 후 재배치');}
+
+  fmt(n){if(n<10000)return Math.floor(n).toLocaleString();const u=[[1e9,'B'],[1e6,'M'],[1e3,'K']];for(const [v,l] of u)if(n>=v){const x=n/v;return (x>=100?x.toFixed(0):x>=10?x.toFixed(1):x.toFixed(2))+l;}}
+
+  extra(){
+    const defs=[['home','home','홈'],['stage','flag','스테이지'],['unit','kitchen','가전'],['gacha','auto_awesome','소환'],['shop','storefront','상점']];
+    const nav=k=>defs.map(([key,i,l])=>{const a=key===k;return {icon:i,label:l,ic:a?'#E8701A':'#8A7B6C',fg:a?'#2B2420':'#6B5D51',w:a?'800':'600',bar:a?'#E8701A':'transparent'};});
+    const st=[['1-1','거실 입구','웨이브 5 · 코인 80','clear',3],['1-2','소파 아래','웨이브 8 · 코인 100','clear',2],['1-3','거실 창가','웨이브 10 · 추천 Lv.5','cur',0],['1-4','TV 뒤편','1-3 클리어 시 개방','locked',0],['1-5','먼지 대왕 (보스)','1-4 클리어 시 개방','locked',0]];
+    const stageRows=st.map(([no,name,sub,s,n])=>({no,name,sub,clear:s==='clear',cur:s==='cur',locked:s==='locked',on:'★'.repeat(n),off:'★'.repeat(3-n),h:s==='cur'?80:64,
+      bg:s==='cur'?'#FFF1E2':(s==='locked'?'#F1EBE2':'#fff'),border:s==='cur'?'3px solid #E8701A':'1px solid #E8DCCB',
+      numBg:s==='clear'?'#3FA66B':(s==='cur'?'#E8701A':'#E4DCD1'),numFg:s==='locked'?'#6B5D51':'#fff',fg:s==='locked'?'#5E5046':'#2B2420',fg2:s==='locked'?'#6B5D51':'#5E5046'}));
+    const GC={N:['#9AA0A6','#fff'],R:['#3E8ED0','#fff'],SR:['#8E5BD6','#fff'],SSR:['#E6A817','#2B2420']};
+    const team=[['로봇청소기','#2F4A7A','200W'],['공기청정기','#3E9E92','300W'],['선풍기','#5B93C9','150W'],['전자레인지','#D9503A','400W']];
+    const teamSlots=team.map(([n,c,w])=>({name:n,color:c,glyph:'',sub:w,bg:'#fff',border:'2px solid #E8DCCB',fg:'#2B2420',fg2:'#7A5A00'}));
+    teamSlots.push({name:'편성 Lv.10',color:'#E4DCD1',glyph:'lock',sub:'잠금',bg:'#EEE7DC',border:'2px dashed #CDBFAE',fg:'#5E5046',fg2:'#6B5D51'});
+    const ro=[['전자레인지','SSR','#D9503A','Lv.9',1,1],['로봇청소기','SR','#2F4A7A','Lv.12',1,1],['공기청정기','SR','#3E9E92','Lv.10',1,1],['제습기','SR','#6C8EA8','Lv.4',0,1],['선풍기','R','#5B93C9','Lv.11',1,1],['전기포트','R','#C97A4A','Lv.6',0,1],['스팀다리미','R','#9A7BC2','Lv.3',0,1],['헤어드라이어','N','#E39BB0','Lv.8',0,1],['토스터','N','#D8A35A','Lv.5',0,1],['세탁기','SSR','#3A322C','미보유',0,0],['냉장고','SR','#3A322C','미보유',0,0],['가습기','R','#3A322C','미보유',0,0]];
+    const roster=ro.map(([name,g,color,lv,t,o])=>({name:o?name:'???',grade:g,gc:o?GC[g][0]:'#CDBFAE',gfg:o?GC[g][1]:'#2B2420',color,op:o?1:.3,lv,team:!!t,
+      bg:o?(t?'#F2FAF5':'#fff'):'#EEE7DC',border:o?(t?'2px solid #3FA66B':'1px solid #E8DCCB'):'2px dashed #CDBFAE'}));
+    const cur={crystal:['#8E5BD6','2px','rotate(45deg)'],coin:['#F5C028','50%','none'],krw:['transparent','0','none']};
+    const sh=[['코인 꾸러미','×10,000','50','crystal','#F5C028',''],['부품 상자','×20','5,000','coin','#8A9BB0',''],['소환권','×1','300','crystal','#E8701A','2/5'],['자동 청소 2시간','즉시 수령','100','crystal','#3FA66B','1/3'],['크리스탈','×300','₩3,300','krw','#8E5BD6',''],['강화 촉매','×5','매진','sold','#C97A4A','0/1']];
+    const shopItems=sh.map(([name,amt,price,c,color,limit])=>{const sold=c==='sold',k=cur[c]||cur.krw;return {name,amt,price,color,limit,hasLimit:!!limit,op:sold?.55:1,
+      pbg:sold?'#E4DCD1':(c==='krw'?'#E8701A':'#FFF5EA'),pfg:sold?'#6B5D51':(c==='krw'?'#fff':'#2B2420'),dc:sold?'transparent':k[0],dr:k[1],dt:k[2]};});
+    const pr=[[5,'코인 3,000','#F5C028','크리스탈 100','#8E5BD6','done'],[6,'부품 10','#8A9BB0','소환권 1','#E8701A','ready'],[7,'크리스탈 50','#8E5BD6','SR 선택권','#8E5BD6','ready'],[8,'코인 5,000','#F5C028','전용 스킨','#E39BB0','lock'],[9,'소환권 1','#E8701A','크리스탈 200','#8E5BD6','lock']];
+    const passRows=pr.map(([lv,fn,fc,pn,pc,s])=>({lv,fname:fn,fic:fc,pname:pn,pic:pc,fdone:s==='done',
+      fstate:s==='done'?'받음':(s==='ready'?'받을 수 있음':'Lv.'+lv+' 달성 시'),fsfg:s==='ready'?'#2E8A55':'#6B5D51',
+      fbg:s==='ready'?'#F2FAF5':'#fff',fbd:s==='ready'?'2px solid #3FA66B':'1px solid #E8DCCB',fop:s==='done'?.6:1,
+      nbg:lv<=7?'#8E5BD6':'#E3D7C7',nfg:lv<=7?'#fff':'#5E5046'}));
+    return {navStage:nav('stage'),navUnit:nav('unit'),navGacha:nav('gacha'),navShop:nav('shop'),stageRows,teamSlots,roster,shopItems,passRows};
+  }
+  renderVals(){
+    const s=this.state,[W,H]=this.dims(),TY=Component.TYPES,M=Component.MAP;
+    const names=['로봇청소기','공기청정기','선풍기','전자레인지'],cols=['#2F4A7A','#3E9E92','#5B93C9','#D9503A'],lines=['먼지 발견!','공기 맑음 ✓','시원하죠?','따끈따끈~'];
+    const chars=s.chars.map((c,i)=>({x:c.x,y:c.y,name:names[i],color:cols[i],talk:s.talk===i,line:lines[i],onTap:()=>{this.setState({talk:i});clearTimeout(this.ct);this.ct=setTimeout(()=>this.setState({talk:null}),1600);}}));
+    const dust=[{x:W*0.2,y:H*0.62,s:8},{x:W*0.55,y:H*0.66,s:6},{x:W*0.75,y:H*0.58,s:9},{x:W*0.35,y:H*0.71,s:5}];
+    const tabDefs=[{k:'home',i:'home',l:'홈'},{k:'stage',i:'flag',l:'스테이지',subs:['스테이지','콘텐츠']},{k:'unit',i:'kitchen',l:'가전',subs:['보유 가전','편성'],badge:'강화'},{k:'gacha',i:'auto_awesome',l:'소환',badge:'무료'},{k:'shop',i:'storefront',l:'상점'}];
+    const tabs=tabDefs.map(t=>{const a=s.tab===t.k;return {icon:t.i,label:t.l,ic:a?'#E8701A':'#8A7B6C',fg:a?'#2B2420':'#6B5D51',w:a?'800':'600',bar:a?'#E8701A':'transparent',badge:!!t.badge,badgeText:t.badge,onTap:()=>this.setState({tab:t.k,sheet:false})};});
+    const cur=tabDefs.find(t=>t.k===s.tab);
+    const subs=(cur.subs||[cur.l]).map((l,i)=>({label:l,bg:i===0?'#FFFDF8':'transparent',fg:i===0?'#2B2420':'#6B5D51'}));
+    const notes={stage:'스테이지 탭 = [스테이지 | 콘텐츠] 하위 탭\n콘텐츠에 대청소·이벤트 던전(추측)이 들어갑니다.\n상세 화면은 다음 단계에서 설계',unit:'가전 탭 = [보유 가전 | 편성] 하위 탭\n가전 상세 → “편성에 넣기”로 바로 이동합니다.\n상세 화면은 다음 단계에서 설계',gacha:'소환 — 다음 단계에서 설계',shop:'상점 — 다음 단계에서 설계'};
+    const rewards=[['1일','500','#F5C028'],['2일','30','#8E5BD6'],['3일','5','#8A9BB0'],['4일','1,000','#F5C028'],['5일','50','#8E5BD6'],['6일','10','#8A9BB0'],['7일 · 소환권','×1','#E8701A']];
+    const days=rewards.map((r,i)=>{const done=i<4||(i===4&&s.claimed);const today=i===4&&!s.claimed;return {day:r[0],amt:r[1],ic:r[2],done,op:done?.7:1,bg:today?'#FFF1E2':(i===6?'#FFF8E6':'#fff'),border:today?'3px solid #E8701A':(i===6?'2px solid #E6A817':'1px solid #E8DCCB'),span:i===6?'span 1':'auto'};});
+
+    // battle
+    const T=Math.floor(Math.min(52,(W-26)/7,(H-140-176-12)/10));
+    const fw=T*7,fh=T*10,fx=Math.round((W-fw)/2),fy=Math.round(140+((H-176-140)-fh)/2);
+    const tiles=[];
+    for(let r=0;r<10;r++)for(let c=0;c<7;c++){
+      const ch=M[r][c],occ=s.units.some(u=>u.r===r&&u.c===c);
+      let bg,sh='none',op=1,label='',plus=false,rad=10;
+      if(ch==='T'){bg='#FFFDF8';sh='inset 0 -4px 0 #E6D8C5';}
+      else if(ch==='P'){bg='repeating-linear-gradient(0deg,#DDB98A 0 11px,#D2AC7C 11px 12px)';rad=4;}
+      else if(ch==='X'){bg='#CDBFAE';sh='inset 0 0 0 2px #C2B29E';}
+      else if(ch==='S'||ch==='W'){bg='#8DBBE6';label=ch==='S'?'현관':'창문';sh='inset 0 -4px 0 #6C9FD0';}
+      else {bg='#F2B3A3';label='소파';sh='inset 0 -4px 0 #DE8F7C';}
+      if(s.phase==='brief'&&ch!=='T'&&ch!=='X')sh='inset 0 0 0 2px #E8701A';
+      if(s.sel){if(ch==='T'&&!occ){bg='#E4F5EA';sh='inset 0 0 0 3px #3FA66B';plus=true;}else op=.45;}
+      if(s.flash&&s.flash.r===r&&s.flash.c===c){bg='#FBE0DA';sh='inset 0 0 0 3px #E0533D';op=1;plus=false;}
+      tiles.push({x:c*T,y:r*T,size:T-2,bg,sh,op,rad,label,hasLabel:!!label,plus,tap:()=>this.onTile(r,c)});
+    }
+    const units=s.units.map(u=>{const t=TY[u.type],sel=s.selUnit===u.id,over=u.over>0;
+      return {x:u.c*T,y:u.r*T,size:T-2,body:Math.round(T*0.74),color:t.color,short:t.short,lvText:'Lv'+u.lv,over,tap2:u.tap,
+        heatShow:u.type==='mw'&&u.heat>0,heat:Math.round(u.heat),heatColor:u.heat>70?'#E0533D':'#F2862E',
+        filter:over?'grayscale(.85)':'none',ring:over?'0 0 0 3px #E0533D':(sel?'0 0 0 3px #fff,0 0 0 6px #E8701A':'0 3px 0 rgba(43,36,32,.25)'),
+        tap:()=>this.onTile(u.r,u.c)};});
+    const su0=s.units.find(u=>u.id===s.selUnit);
+    let hasRange=false,rx=0,ry=0,rd=0,su={},actions=[];
+    if(su0){const t=TY[su0.type];hasRange=true;rd=t.range*2*T;rx=su0.c*T+T/2-1-rd/2;ry=su0.r*T+T/2-1-rd/2;
+      const st=su0.over>0?'과열 · '+Math.ceil(su0.over)+'초 후 복귀':(su0.type==='mw'?'온도 '+Math.round(su0.heat)+'%':'정상 작동');
+      su={name:t.name,sub:'Lv.'+su0.lv+' · '+t.role,state:st,stateFg:su0.over>0?'#C0392B':(su0.heat>70?'#C85A0C':'#2E8A55')};
+      const upC=150*su0.lv,canUp=su0.lv<5&&s.power>=upC;
+      actions=[
+        {icon:'arrow_upward',label:'강화',sub:su0.lv>=5?'MAX':upC+'W',bg:canUp?'#E8701A':'#E4DCD1',sh:canUp?'#B9560F':'#D3C9BC',fg:canUp?'#fff':'#6B5D51',subFg:canUp?'#FFE9D4':(su0.lv>=5?'#6B5D51':'#B23A27'),op:1,tap:()=>this.upgrade()},
+        {icon:'power',label:'멀티탭',sub:su0.tap?'연결됨':s.taps+'개 남음',bg:su0.tap?'#FFF4CF':'#F1E8DB',sh:su0.tap?'#E6C65C':'#E0D2BE',fg:'#2B2420',subFg:'#5E5046',op:(!su0.tap&&s.taps<=0)?.5:1,tap:()=>this.multitap()},
+        {icon:'logout',label:'철수',sub:'+'+t.cost/2+'W',bg:'#F1E8DB',sh:'#E0D2BE',fg:'#2B2420',subFg:'#5E5046',op:1,tap:()=>this.retreat()}];}
+    const P=Component.PATHS,es=Math.round(T*0.44);
+    const enemies=s.enemies.map(e=>{const pa=P[e.path];const i=Math.min(Math.floor(e.p),pa.length-1),j=Math.min(i+1,pa.length-1),f=e.p-i;const r=pa[i][0]+(pa[j][0]-pa[i][0])*f,c=pa[i][1]+(pa[j][1]-pa[i][1])*f;return {x:c*T+T/2-1-es/2,y:r*T+T/2-1-es/2,s:es,hp:Math.max(0,e.hp)};});
+    const cards=Object.keys(TY).map(k=>{const t=TY[k],cd=s.cds[k]>0,low=!cd&&s.power<t.cost,sel=s.sel===k;
+      return {name:t.name,color:t.color,glyph:t.glyph,cd,cdText:Math.ceil(s.cds[k]),cdPct:Math.round((1-s.cds[k]/9)*100),
+        costText:sel?'칸 선택':t.cost+'W',bg:sel?'#FFF4E8':(low?'#F3EEE7':'#fff'),border:sel?'3px solid #E8701A':'2px solid #E8DCCB',lift:sel?-8:0,
+        filter:low?'grayscale(1) opacity(.55)':'none',costBg:sel?'#E8701A':(low?'#FBE0DA':'#FFF4CF'),costFg:sel?'#fff':(low?'#B23A27':'#7A5A00'),tap:()=>this.onCard(k)};});
+    cards.push({name:'편성 Lv.10',color:'#CDBFAE',glyph:'lock',cd:false,costText:'잠금',bg:'#EEE7DC',border:'2px dashed #CDBFAE',lift:0,filter:'none',costBg:'#E4DCD1',costFg:'#5E5046',tap:()=>this.btoast('편성 Lv.10에 다섯 번째 슬롯이 열려요',true)});
+    const cleanColor=s.clean>60?'#3FA66B':(s.clean>30?'#E6A817':'#E0533D');
+    const taps=s.units.filter(u=>u.tap).length;
+    const showSafe=!!this.props.showSafeArea;
+
+    return {...this.extra(),W,H,showSafe,chars,dust,tabs,notHome:s.tab!=='home',tabTitle:cur.l,subs,tabNote:notes[s.tab]||'',
+      coinText:this.fmt(s.coins),
+      acLabel:s.collected?'자동 청소 · 누적 중':'자동 청소 · 2시간 14분',acAmount:s.collected?'+0 코인':'+3,420 코인',acPct:s.collected?2:72,
+      acIconBg:s.collected?'#B9AFA3':'#E8701A',acBtn:s.collected?'0분':'수령',acBtnBg:s.collected?'#E4DCD1':'#3FA66B',acBtnFg:s.collected?'#6B5D51':'#fff',
+      onCollect:()=>{if(s.collected){this.toast('최소 10분 후 받을 수 있어요');return;}this.setState(st=>({collected:true,coins:st.coins+3420}));this.toast('+3,420 코인 획득');},
+      attendDot:!s.claimed,sheetOpen:s.sheet,openSheet:()=>this.setState({sheet:true}),closeSheet:()=>this.setState({sheet:false}),days,
+      claimDay:()=>{if(s.claimed)return;this.setState({claimed:true});this.toast('크리스탈 50 획득');},
+      claimText:s.claimed?'내일 다시 받을 수 있어요':'오늘 보상 받기',claimBg:s.claimed?'#E4DCD1':'#3FA66B',claimFg:s.claimed?'#6B5D51':'#fff',claimSh:s.claimed?'none':'inset 0 -5px 0 #2D7D4F',
+      hasToast:!!s.toast,toast:s.toast,
+      onPass:()=>this.toast('시즌 패스 — 다음 단계에서 설계'),onSettings:()=>this.toast('설정 — 다음 단계에서 설계'),
+      onRaid:()=>this.toast('대청소(무한 생존) 입장 — 콘텐츠 탭'),onCTA:()=>this.toast('1-3 거실 브리핑으로 이동 → 1c'),
+      isBrief:s.phase==='brief',isPlay:s.phase==='play',onStart:()=>this.setState({phase:'play'}),
+      paused:s.paused,onPause:()=>this.setState({paused:true}),onResume:()=>this.setState({paused:false}),
+      onRestart:()=>this.setState(Object.assign(Component.initBattle())),
+      onSpeed:()=>this.setState({speed:s.speed===1?2:1}),spLabel:'×'+s.speed,spBg:s.speed===2?'#E8701A':'#FFFDF8',spFg:s.speed===2?'#fff':'#2B2420',spSh:s.speed===2?'#B9560F':'#E3D5C2',
+      wave:s.wave,waveSegs:Array.from({length:10},(_,i)=>({bg:i<s.wave-1?'#E8701A':(i===s.wave-1?'#F5B47A':'#E3D7C7')})),
+      remain:s.toSpawn+s.enemies.length,clean:Math.round(s.clean),cleanColor,
+      fx,fy,fw,fh,tiles,units,enemies,hasRange,rx,ry,rd,
+      hasBToast:!!s.bToast,bToast:s.bToast,bToastBg:s.bToastBad?'rgba(178,58,39,.95)':'rgba(43,36,32,.92)',
+      powerText:Math.floor(s.power).toLocaleString(),powerPct:Math.round(s.power/12),regenText:'+'+(15+6*taps)+'/s',
+      cards,noUnitSel:!su0,unitSel:!!su0,su,actions,deselect:()=>this.setState({selUnit:null})};
+  }
+}
+</script>
+</body>
+</html>

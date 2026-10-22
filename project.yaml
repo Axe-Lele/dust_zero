@@ -1,0 +1,46 @@
+schema_version: 1
+framework:
+  version: 1.1.3
+  last_upgraded: 2026-10-15
+project:
+  name: Clean Girls - Dust Zero
+  genre: Tower defense and survivor
+  stage: Technical Setup
+engine:
+  name: Unity
+  version: 6000.4.5f1
+  language: C#
+specialists:
+  primary: unity-specialist
+  language: unity-specialist
+  shader: unity-shader-specialist
+  ui: unity-ui-specialist
+modes:
+  rigor: minimal
+  automation: autonomous
+  automation_always_ask:
+    - scope_changes
+    - file_deletions
+    - version_bumps
+    - external_calls
+# Intentional override: short documents, but keep meaningful test evidence.
+qa:
+  level: standard
+testing:
+  framework: unity-test-framework
+  strict:
+    logic: true
+    integration: true
+    visual: true
+    ui: true
+    config: true
+platform:
+  multiplayer: false
+  online: false
+features:
+  session_state: on
+commands:
+  smoke: 'bash tools/ccgs-unity.sh compile'
+  test: 'bash tools/ccgs-unity.sh test'
+  build: 'bash tools/ccgs-unity.sh build'
+  run: 'bash tools/ccgs-unity.sh run'

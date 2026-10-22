@@ -1,0 +1,681 @@
+{
+ "ui_common/panel_r40.png": {
+  "w": 128,
+  "h": 128,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ],
+  "tint": true
+ },
+ "ui_common/panel_r40_shadow.png": {
+  "w": 128,
+  "h": 134,
+  "border": [
+   48,
+   48,
+   48,
+   54
+  ],
+  "note": "그림자 포함, 바탕 #FFFDF8로 Tint"
+ },
+ "ui_common/pill.png": {
+  "w": 100,
+  "h": 100,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ],
+  "tint": true
+ },
+ "ui_common/pill_outline.png": {
+  "w": 100,
+  "h": 100,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "ui_common/bar_r12.png": {
+  "w": 48,
+  "h": 24,
+  "border": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "tint": true,
+  "note": "진행 막대 bg/fill 공용"
+ },
+ "ui_common/btn_primary.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_primary_pressed.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_navy.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_navy_pressed.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_success.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_success_pressed.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_secondary.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_secondary_pressed.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_panel.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_panel_pressed.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   70
+  ]
+ },
+ "ui_common/btn_disabled.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   56
+  ],
+  "note": "비활성·잠금 공용"
+ },
+ "ui_common/btn_selected.png": {
+  "w": 160,
+  "h": 176,
+  "border": [
+   56,
+   56,
+   56,
+   56
+  ]
+ },
+ "ui_common/badge_dot.png": {
+  "w": 56,
+  "h": 56
+ },
+ "ui_common/tab_indicator.png": {
+  "w": 80,
+  "h": 12,
+  "tint": true,
+  "note": "#E8701A"
+ },
+ "ui_common/dim_overlay.png": {
+  "w": 120,
+  "h": 120,
+  "border": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "note": "팝업·시트 뒤 딤, Image 색으로 대체 가능"
+ },
+ "battle/card_normal.png": {
+  "w": 192,
+  "h": 250,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "battle/card_selected.png": {
+  "w": 192,
+  "h": 250,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "battle/card_lowpower.png": {
+  "w": 192,
+  "h": 250,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "battle/card_locked.png": {
+  "w": 192,
+  "h": 250,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "battle/card_cooldown_overlay.png": {
+  "w": 192,
+  "h": 250,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ],
+  "note": "Image Type Filled(Vertical)로 남은 시간 표현 가능"
+ },
+ "collection/frame_n.png": {
+  "w": 232,
+  "h": 310,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "collection/grade_n.png": {
+  "w": 96,
+  "h": 48
+ },
+ "collection/frame_r.png": {
+  "w": 232,
+  "h": 310,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "collection/grade_r.png": {
+  "w": 96,
+  "h": 48
+ },
+ "collection/frame_sr.png": {
+  "w": 232,
+  "h": 310,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "collection/grade_sr.png": {
+  "w": 96,
+  "h": 48
+ },
+ "collection/frame_ssr.png": {
+  "w": 232,
+  "h": 310,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "collection/grade_ssr.png": {
+  "w": 96,
+  "h": 48
+ },
+ "collection/frame_notowned.png": {
+  "w": 232,
+  "h": 310,
+  "border": [
+   48,
+   48,
+   48,
+   48
+  ]
+ },
+ "battle/tile_buildable.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_path.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_blocked.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_spawn.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_goal.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_hl_valid.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_hl_invalid.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/tile_hl_brief.png": {
+  "w": 144,
+  "h": 144
+ },
+ "battle/range_ring.png": {
+  "w": 512,
+  "h": 512,
+  "note": "사거리 반지름×2칸 크기로 스케일"
+ },
+ "battle/select_ring.png": {
+  "w": 192,
+  "h": 192
+ },
+ "battle/overheat_ring.png": {
+  "w": 192,
+  "h": 192
+ },
+ "icons/ic_home.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_flag.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_kitchen.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_auto_awesome.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_storefront.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_event_available.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_workspace_premium.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_settings.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_cleaning_services.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_all_inclusive.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_pause.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_play_arrow.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_fast_forward.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_arrow_upward.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_power.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_logout.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_close.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_lock.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_add.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_block.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_check_circle.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_cancel.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_local_fire_department.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_bolt.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_arrow_back.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_chevron_left.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_chevron_right.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_redeem.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_info.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_visibility.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_replay.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_auto_fix_high.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_expand_more.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_groups.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_cyclone.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_mode_fan.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_air.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_toys_fan.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_microwave.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "icons/ic_home_health.png": {
+  "w": 96,
+  "h": 96,
+  "tint": true
+ },
+ "currency/coin.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/crystal.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/parts.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/ticket.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/power.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/exp.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/star_on.png": {
+  "w": 128,
+  "h": 128
+ },
+ "currency/star_off.png": {
+  "w": 128,
+  "h": 128
+ },
+ "characters_temp/ch_vacuum_full.png": {
+  "w": 512,
+  "h": 512,
+  "temp": true,
+  "pivot": "bottom"
+ },
+ "characters_temp/ch_vacuum_portrait.png": {
+  "w": 200,
+  "h": 200,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_vacuum_field.png": {
+  "w": 160,
+  "h": 160,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_purifier_full.png": {
+  "w": 512,
+  "h": 512,
+  "temp": true,
+  "pivot": "bottom"
+ },
+ "characters_temp/ch_purifier_portrait.png": {
+  "w": 200,
+  "h": 200,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_purifier_field.png": {
+  "w": 160,
+  "h": 160,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_fan_full.png": {
+  "w": 512,
+  "h": 512,
+  "temp": true,
+  "pivot": "bottom"
+ },
+ "characters_temp/ch_fan_portrait.png": {
+  "w": 200,
+  "h": 200,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_fan_field.png": {
+  "w": 160,
+  "h": 160,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_microwave_full.png": {
+  "w": 512,
+  "h": 512,
+  "temp": true,
+  "pivot": "bottom"
+ },
+ "characters_temp/ch_microwave_portrait.png": {
+  "w": 200,
+  "h": 200,
+  "temp": true,
+  "pivot": "center"
+ },
+ "characters_temp/ch_microwave_field.png": {
+  "w": 160,
+  "h": 160,
+  "temp": true,
+  "pivot": "center"
+ },
+ "enemies_temp/en_dust.png": {
+  "w": 128,
+  "h": 128,
+  "temp": true
+ },
+ "enemies_temp/en_hairball.png": {
+  "w": 128,
+  "h": 128,
+  "temp": true
+ },
+ "backgrounds_temp/bg_room_living.png": {
+  "w": 1080,
+  "h": 1920,
+  "temp": true,
+  "note": "위 20%·아래 25% UI 겹침 구역"
+ }
+}

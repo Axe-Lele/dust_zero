@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&amp;display=swap"><style>body{margin:0;background:#FBF6EE;color:#2B2420;font-family:Pretendard,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased}a{color:#C85A0C}a:hover{color:#8F3F06}code{font:500 12px ui-monospace,Menlo,monospace;background:#F1E8DB;padding:1px 5px;border-radius:4px}</style></helmet>
+<div style="max-width:960px;margin:0 auto;padding:48px 24px 80px;display:flex;flex-direction:column;gap:44px;font:14px/1.65 Pretendard">
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<a href="더스트 제로 UI 리디자인.dc.html" style="font:700 12px Pretendard">← 시안으로 돌아가기</a>
+<h1 style="margin:0;font:400 36px Jua">오퍼레이션: 더스트 제로 — UI 구현 가이드</h1>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><span style="padding:5px 10px;border-radius:999px;background:#2B2420;color:#fff;font:700 12px Pretendard">디자인 시안 기준 · Unity 미검증</span><span style="padding:5px 10px;border-radius:999px;background:#FFF1E2;color:#8F3F06;font:700 12px Pretendard">수치는 1080×1920 기준 px · 괄호 안은 390pt 목업 기준</span></div>
+<p style="margin:0;color:#5E5046;max-width:720px">아래 값은 HTML 시안에서 정한 것으로, Unity에서는 아직 확인하지 않았습니다. 기기 테스트(iPhone SE / 15 Pro Max / Galaxy S·Z Fold 접은 상태) 뒤 조정할 항목은 ‘검증 필요’로 표시했습니다.</p>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">1. 색상</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#E8701A"></span><div style="display:flex;flex-direction:column"><b>Primary #E8701A</b><span style="font-size:12px;color:#5E5046">주요 행동 · 선택 · 사거리</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#B9560F"></span><div style="display:flex;flex-direction:column"><b>Primary Edge #B9560F</b><span style="font-size:12px;color:#5E5046">버튼 아래 두께 · 눌림</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#2F4A7A"></span><div style="display:flex;flex-direction:column"><b>Navy #2F4A7A</b><span style="font-size:12px;color:#5E5046">보조 행동 (대청소)</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#3FA66B"></span><div style="display:flex;flex-direction:column"><b>Success #3FA66B</b><span style="font-size:12px;color:#5E5046">수령 가능 · 배치 가능</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#E0533D"></span><div style="display:flex;flex-direction:column"><b>Danger #E0533D</b><span style="font-size:12px;color:#5E5046">배치 불가 · 과열 · 알림 점</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#F5C028"></span><div style="display:flex;flex-direction:column"><b>Power #F5C028</b><span style="font-size:12px;color:#5E5046">전력 · 코인 (글자색은 #7A5A00)</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#8E5BD6"></span><div style="display:flex;flex-direction:column"><b>Premium #8E5BD6</b><span style="font-size:12px;color:#5E5046">크리스탈 · 패스 · SR</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#2B2420"></span><div style="display:flex;flex-direction:column"><b>Ink #2B2420</b><span style="font-size:12px;color:#5E5046">본문 · 제목</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#5E5046"></span><div style="display:flex;flex-direction:column"><b>Ink-2 #5E5046 / #6B5D51</b><span style="font-size:12px;color:#5E5046">보조 글자 (흰 바탕 대비 4.5:1↑)</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#FFFDF8;border:1px solid #E8DCCB"></span><div style="display:flex;flex-direction:column"><b>Panel #FFFDF8</b><span style="font-size:12px;color:#5E5046">패널 · 칸 · 하단 바</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#F1E8DB"></span><div style="display:flex;flex-direction:column"><b>Panel-2 #F1E8DB</b><span style="font-size:12px;color:#5E5046">보조 버튼 · 입력 영역 (선 #E8DCCB)</span></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #E8DCCB"><span style="width:40px;height:40px;border-radius:10px;background:#E4DCD1"></span><div style="display:flex;flex-direction:column"><b>Disabled #E4DCD1</b><span style="font-size:12px;color:#5E5046">비활성 · 잠금 (글자 #6B5D51)</span></div></div>
+</div>
+<p style="margin:0;color:#5E5046">등급: N #9AA0A6 · R #3E8ED0 · SR #8E5BD6 · SSR #E6A817(SSR 배지 글자는 Ink). 전장: 먼지 길 #DDB98A, 놓을 수 있는 칸 #FFFDF8, 막힌 칸 #CDBFAE, 입구 #8DBBE6, 지킬 곳 #F2B3A3. 주황 버튼 위 흰 글자는 18px 이상 굵은 글씨(큰 글자 기준 3:1)에만 씁니다. 작은 보조 문구는 크림색 칩 위에 Ink로 씁니다.</p>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">2. 글꼴 · 크기 · 굵기</h2>
+<p style="margin:0;color:#5E5046">글꼴 후보: <b>Pretendard</b>(UI 전체, OFL) + <b>Jua</b>(제목·큰 버튼, OFL). 대안은 Pretendard 단일 사용(디스플레이는 ExtraBold). TMP 폰트 에셋은 KS X 1001 완성형 2,350자 + 영문·숫자·기호로 만들고, 그 밖의 글자는 Dynamic 폴백 에셋으로 처리합니다. 숫자는 고정폭(<code>tnum</code>) 또는 Monospace 옵션을 켭니다.</p>
+<div style="display:grid;grid-template-columns:150px 110px 90px 1fr;gap:0;border:1px solid #E8DCCB;border-radius:12px;overflow:hidden;background:#fff;font-size:13px">
+<b style="padding:8px 12px;background:#F1E8DB">역할</b><b style="padding:8px 12px;background:#F1E8DB">1080 기준</b><b style="padding:8px 12px;background:#F1E8DB">pt</b><b style="padding:8px 12px;background:#F1E8DB">굵기 · 용도</b>
+<span style="padding:8px 12px">Display</span><span style="padding:8px 12px">66–72</span><span style="padding:8px 12px">24–26</span><span style="padding:8px 12px">Jua · 화면 제목, 주요 버튼</span>
+<span style="padding:8px 12px;background:#FBF6EE">Title</span><span style="padding:8px 12px;background:#FBF6EE">55–61</span><span style="padding:8px 12px;background:#FBF6EE">20–22</span><span style="padding:8px 12px;background:#FBF6EE">Jua · 팝업·시트 제목</span>
+<span style="padding:8px 12px">Number L</span><span style="padding:8px 12px">44–50</span><span style="padding:8px 12px">16–18</span><span style="padding:8px 12px">Pretendard ExtraBold · 재화, 전력, 웨이브</span>
+<span style="padding:8px 12px;background:#FBF6EE">Body</span><span style="padding:8px 12px;background:#FBF6EE">36–39</span><span style="padding:8px 12px;background:#FBF6EE">13–14</span><span style="padding:8px 12px;background:#FBF6EE">SemiBold / ExtraBold · 설명, 버튼 문구</span>
+<span style="padding:8px 12px">Label</span><span style="padding:8px 12px">33</span><span style="padding:8px 12px">12</span><span style="padding:8px 12px">Bold · 탭 이름, 칩</span>
+<span style="padding:8px 12px;background:#FBF6EE">Caption (최소)</span><span style="padding:8px 12px;background:#FBF6EE">30</span><span style="padding:8px 12px;background:#FBF6EE">11</span><span style="padding:8px 12px;background:#FBF6EE">Bold · 카드 이름, 비용. 이보다 작게 쓰지 않음(배지 숫자 10pt만 예외)</span>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">3. 여백 · 버튼 · 패널 · 아이콘 규칙</h2>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px">
+<li><b>간격 단위 4pt</b>: 4 / 6 / 8 / 10 / 12 / 16 / 24. 화면 좌우 여백 12pt(33px), 패널 안쪽 14–16pt.</li>
+<li><b>최소 터치 영역 44×44pt(121px)</b>. 아이콘은 24–27pt로 그리되, 터치 영역은 투명 Image(Raycast Target)로 44pt 이상 확보합니다.</li>
+<li><b>버튼 높이</b>: 주요 버튼 56–72pt · 보조 버튼 44–56pt · 아이콘 버튼 44pt. 모서리는 높이의 약 30%(14 / 18 / 20pt).</li>
+<li><b>버튼 입체감</b>: 그라데이션·광택 대신 아래쪽 단색 두께 3–5pt(Edge 색). 누르면 Y −3pt 이동 + 두께 2pt, 시간 60ms.</li>
+<li><b>패널</b>: Panel 색 + 모서리 16–28pt, 그림자는 아래쪽 단색 2pt(Ink 12%)만 사용합니다. 테두리·광택·그라데이션은 넣지 않습니다.</li>
+<li><b>아이콘</b>: 둥근 꼭짓점의 채워진 아이콘, 선 굵기 2pt 상당. 한 색만 쓰고, 상태는 아이콘이 아니라 배지와 바탕색으로 구분합니다. 시안의 아이콘은 임시이며 자체 아이콘 세트로 교체가 필요합니다.</li>
+<li><b>배지</b>: 알림은 빨간 점 18pt + 흰 테두리 2pt, 정보 배지(Lv.7, 무료)는 둥근 직사각형 높이 16pt.</li>
+<li><b>숫자</b>: 9,999까지는 전체, 1만 이상은 K/M/B로 유효숫자 3자리. 길게 누르면 툴팁으로 전체 값을 보여 줍니다.</li>
+<li><b>긴 한글</b>: 카드는 1줄 말줄임. 상세 화면은 2줄까지 쓰고, 넘치면 TMP Auto Size(최소 크기 −2pt)를 적용합니다. 버튼 문구는 8자 이내를 원칙으로 합니다.</li>
+</ul>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">4. Canvas · Safe Area · 앵커</h2>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px">
+<li>Canvas Scaler: <code>Scale With Screen Size</code>, Reference <code>1080×1920</code>, Match <code>0.5</code>(검증 필요: 긴 화면에서 0.6–1.0 비교). 목업 1pt = 2.77px.</li>
+<li><code>SafeAreaRoot</code>: <code>Screen.safeArea</code>를 앵커 min/max에 반영하는 스크립트를 두고, 해상도·회전이 바뀔 때마다 다시 계산합니다. <b>배경과 하단 바 바탕은 SafeArea 밖까지</b> 깔고, 터치 요소만 SafeArea 안에 둡니다.</li>
+<li>홈 인디케이터 영역(하단 약 34pt)에는 버튼을 두지 않습니다. 하단 바 바탕만 그 영역까지 늘립니다.</li>
+<li>긴 화면(19.5:9 이상): 방(홈)과 전장(전투)이 남는 세로 공간을 차지합니다. 짧은 화면(16:9): 전장 칸 크기를 <code>min(가로 ÷ 7, 남은 세로 ÷ 10)</code>으로 줄입니다. 시안 오른쪽 위 Tweaks에서 360×780 / 430×932로 바꿔 볼 수 있습니다.</li>
+<li>폴더블·태블릿: 콘텐츠 최대 폭 600pt로 가운데 정렬하고, 좌우는 배경으로 채웁니다(추측: 지원 기기 범위 확인 필요).</li>
+</ul>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">5. 화면 계층</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+<pre style="margin:0;padding:16px;border-radius:12px;background:#2B2420;color:#F3EADD;font:12px/1.6 ui-monospace,Menlo,monospace;overflow:auto">HomeScreen (Canvas)
+├ BG_Room            stretch, SafeArea 밖
+│ └ RoamLayer        캐릭터 이동 영역 (floor rect)
+├ SafeAreaRoot
+│ ├ TopBar           top-stretch, h44
+│ │ ├ ProfileChip    left
+│ │ └ CurrencyGroup  right, HLayout
+│ ├ SideRail         top-right, VLayout
+│ │ └ RailButton ×3  출석 · 패스 · 설정
+│ ├ AutoCleanChip    bottom-left, y+194
+│ └ ActionRow        bottom-stretch, y+110, h72
+│   ├ RaidButton     w96
+│   └ PrimaryCTA     flex
+├ BottomNav          bottom-stretch, h64+inset
+│ └ TabItem ×5
+├ SheetLayer         (출석 등 바텀 시트)
+└ ToastLayer</pre>
+<pre style="margin:0;padding:16px;border-radius:12px;background:#2B2420;color:#F3EADD;font:12px/1.6 ui-monospace,Menlo,monospace;overflow:auto">BattleScreen
+├ BG_Floor
+├ FieldRoot          center, 7×10 칸 (World/2D)
+│ ├ Tiles · Units · Enemies
+│ └ RangeIndicator · FieldToast
+├ SafeAreaRoot
+│ ├ HUD_Top          top-stretch
+│ │ ├ PauseButton    44
+│ │ ├ WaveInfo       flex
+│ │ ├ RemainChip
+│ │ ├ SpeedToggle    52×44
+│ │ └ CleanBar       h30
+│ ├ BriefPanel       (phase=Brief, HUD_Top 자리)
+│ └ Tray             bottom-stretch, h142
+│   ├ PowerBar       h28
+│   ├ CardRow ×5     (선택 없을 때)
+│   ├ UnitActionBar  (가전 선택 시 교체)
+│   └ BriefActions   (phase=Brief)
+└ PauseOverlay</pre>
+</div>
+<p style="margin:0;color:#5E5046">전장은 uGUI가 아니라 SpriteRenderer + 별도 카메라로 그리고, HUD만 Screen Space Overlay로 두는 방식을 권장합니다(드로콜·입력 분리). 터치 판정은 HUD를 먼저 확인하고, 해당하지 않으면 전장 칸으로 넘깁니다(EventSystem → Physics2D Raycaster).</p>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">6. 스크롤 영역</h2>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px">
+<li>홈: 스크롤 없음(고정). 방은 가로로 넓힐 경우 좌우 패닝(선택 사항, 추측).</li>
+<li>스테이지 탭: 세로 ScrollRect, 챕터 머리말 고정(sticky). 현재 스테이지로 자동 스크롤합니다.</li>
+<li>가전 · 소환 · 상점 목록: 세로 ScrollRect + 화면에 보이는 항목만 만드는 재사용 셀(오브젝트 풀).</li>
+<li>바텀 시트: 내용이 시트 최대 높이(화면의 80%)를 넘을 때만 안쪽 스크롤을 씁니다.</li>
+<li>전투: 스크롤 없음. 카드가 6장 이상이면 CardRow만 가로 스크롤(추측).</li>
+</ul>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">7. 재사용 컴포넌트 · 상태</h2>
+<div style="display:grid;grid-template-columns:170px 1fr;border:1px solid #E8DCCB;border-radius:12px;overflow:hidden;background:#fff;font-size:13px">
+<b style="padding:8px 12px;background:#F1E8DB">컴포넌트</b><b style="padding:8px 12px;background:#F1E8DB">상태 (enum)</b>
+<span style="padding:8px 12px">UIButton</span><span style="padding:8px 12px">Normal · Pressed · Selected · Disabled · Locked(조건 문구) · Claimable(초록 + 점). 종류: Primary / Secondary / Navy / Icon / Text-Danger</span>
+<span style="padding:8px 12px;background:#FBF6EE">CurrencyChip</span><span style="padding:8px 12px;background:#FBF6EE">Normal · Increasing(숫자 증가 연출) · Insufficient(빨강 깜빡임) + 옵션 + 버튼</span>
+<span style="padding:8px 12px">TabItem</span><span style="padding:8px 12px">Normal · Active · Badge(점/글자) · Locked</span>
+<span style="padding:8px 12px;background:#FBF6EE">SegmentedTab</span><span style="padding:8px 12px;background:#FBF6EE">항목 2–4개, Active 표시</span>
+<span style="padding:8px 12px">RailButton</span><span style="padding:8px 12px">Normal · Badge · Info(Lv 배지)</span>
+<span style="padding:8px 12px;background:#FBF6EE">AutoCleanChip</span><span style="padding:8px 12px;background:#FBF6EE">Accumulating(10분 미만) · Claimable · Full(최대치, 빨간 점)</span>
+<span style="padding:8px 12px">DeployCard</span><span style="padding:8px 12px">Normal · Selected · LowPower · Cooldown(남은 초 + 진행 막대) · Locked · Empty</span>
+<span style="padding:8px 12px;background:#FBF6EE">FieldTile</span><span style="padding:8px 12px;background:#FBF6EE">Path · Buildable · Blocked · Spawn · Goal × (Idle · Valid · Dimmed · InvalidFlash · BriefPath)</span>
+<span style="padding:8px 12px">UnitView</span><span style="padding:8px 12px">Idle · Selected(사거리) · Attacking · Heating · Overheated · MultitapLinked</span>
+<span style="padding:8px 12px;background:#FBF6EE">UnitActionBar</span><span style="padding:8px 12px;background:#FBF6EE">Upgrade(가능/전력 부족/MAX) · Multitap(연결/해제/남은 0) · Retreat</span>
+<span style="padding:8px 12px">CharacterCard</span><span style="padding:8px 12px">등급 N/R/SR/SSR × Owned · NotOwned(실루엣) · Upgradable(점) · InTeam</span>
+<span style="padding:8px 12px;background:#FBF6EE">BottomSheet / Toast</span><span style="padding:8px 12px;background:#FBF6EE">Sheet: Open · Closing(아래로 끌어 닫기). Toast: Info · Warning, 1.5초, 전투 중에는 전장 위쪽 끝에 표시</span>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px">
+<h2 style="margin:0;font:400 24px Jua">8. 필요한 이미지 자산</h2>
+<div style="display:grid;grid-template-columns:200px 150px 1fr;border:1px solid #E8DCCB;border-radius:12px;overflow:hidden;background:#fff;font-size:13px">
+<b style="padding:8px 12px;background:#F1E8DB">자산</b><b style="padding:8px 12px;background:#F1E8DB">크기 (px)</b><b style="padding:8px 12px;background:#F1E8DB">요구사항</b>
+<span style="padding:8px 12px">SD 캐릭터 전신 (가전별)</span><span style="padding:8px 12px">512×512</span><span style="padding:8px 12px">투명 PNG, 발밑 피벗, 대기/이동/청소 프레임 또는 Spine. <b>제공된 캐릭터 원본 필요(현재 임시 원)</b></span>
+<span style="padding:8px 12px;background:#FBF6EE">캐릭터 전장 아이콘</span><span style="padding:8px 12px;background:#FBF6EE">160×160</span><span style="padding:8px 12px;background:#FBF6EE">투명, 칸 안에 들어가는 상반신 + 흰 외곽선 6px</span>
+<span style="padding:8px 12px">카드 초상화</span><span style="padding:8px 12px">200×200</span><span style="padding:8px 12px">투명, 미보유용 실루엣은 셰이더로 처리(별도 이미지 불필요)</span>
+<span style="padding:8px 12px;background:#FBF6EE">방 배경 (방마다)</span><span style="padding:8px 12px;background:#FBF6EE">1440×2560</span><span style="padding:8px 12px;background:#FBF6EE">불투명, 벽/바닥 레이어 분리, 위쪽 20%와 아래쪽 25%는 UI가 겹치므로 중요한 그림을 두지 않음</span>
+<span style="padding:8px 12px">전장 칸 세트</span><span style="padding:8px 12px">144×144 ×6</span><span style="padding:8px 12px;background:#fff">길·놓을 수 있는 칸·막힘·입구·지킬 곳·하이라이트. 길은 이어 붙여도 이음새가 보이지 않게(seamless)</span>
+<span style="padding:8px 12px;background:#FBF6EE">패널 · 버튼 바탕</span><span style="padding:8px 12px;background:#FBF6EE">96×96</span><span style="padding:8px 12px;background:#FBF6EE"><b>9-slice</b>(테두리 40px), 흰색으로 만들어 Image 색으로 칠함. 버튼은 아래 두께 포함 버전 1장</span>
+<span style="padding:8px 12px">알약 · 칩 바탕</span><span style="padding:8px 12px">64×64</span><span style="padding:8px 12px">9-slice 32px, 흰색</span>
+<span style="padding:8px 12px;background:#FBF6EE">진행 막대</span><span style="padding:8px 12px;background:#FBF6EE">32×32</span><span style="padding:8px 12px;background:#FBF6EE">9-slice, Image Type Filled 대신 RectMask2D로 너비 조절(둥근 끝 유지)</span>
+<span style="padding:8px 12px">아이콘 세트</span><span style="padding:8px 12px">96×96</span><span style="padding:8px 12px">흰색 단색, 투명, SpriteAtlas 1장 — 탭 5 · 레일 3 · 전투 8 · 재화 3</span>
+<span style="padding:8px 12px;background:#FBF6EE">재화 아이콘</span><span style="padding:8px 12px;background:#FBF6EE">96×96</span><span style="padding:8px 12px;background:#FBF6EE">코인 · 부품 · 크리스탈 · 소환권, 컬러 고정</span>
+<span style="padding:8px 12px">적 (먼지·오염)</span><span style="padding:8px 12px">128×128</span><span style="padding:8px 12px">투명, 종류별, 피격 하양 처리는 셰이더로</span>
+<span style="padding:8px 12px;background:#FBF6EE">이펙트</span><span style="padding:8px 12px;background:#FBF6EE">—</span><span style="padding:8px 12px;background:#FBF6EE">과열 불꽃 · 수령 반짝임 · 배치 먼지 펑. 파티클 + 작은 스프라이트 시트</span>
+</div>
+<p style="margin:0;color:#5E5046">아틀라스: UI_Common / UI_Home / UI_Battle / Characters 4개로 나눕니다. 압축은 ASTC 6×6(iOS·Android 공통), UI 아이콘은 4×4로 지정합니다.</p>
+</div>
+
+<div style="padding:16px 18px;border-radius:14px;background:#fff;border:1px solid #E8DCCB;display:flex;flex-direction:column;gap:6px">
+<b>시안 / 검증 구분</b>
+<span style="color:#5E5046">· 시안에서 확인한 것: 화면 배치, 정보 우선순위, 상태 표현, 터치 흐름(HTML로 흉내 낸 것)</span>
+<span style="color:#5E5046">· Unity에서 확인해야 할 것: TMP 한글 렌더링 선명도, Canvas Scaler 매칭 값, 실제 기기 Safe Area, 전장 터치 정확도, 60fps 유지, 아틀라스 메모리</span>
+<span style="color:#5E5046">· 추측한 규칙: 멀티탭 효과, 과열 조건, 별 조건, 전력 상한·회복량, 콘텐츠 탭의 구성</span>
+</div>
+</div>
+</x-dc>
+</body>
+</html>
