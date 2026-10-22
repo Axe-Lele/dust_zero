@@ -4092,7 +4092,11 @@ namespace DustZero.Editor
                        new Vector2(UiTheme.Px(px + pw), -UiTheme.Py(py)));
 
                 float titleH = UiTheme.Line(UiTheme.Py(titlePx));
-                float rowTop = -UiTheme.Py(9f);
+                // 원본은 글자 상자가 알약 위에서 9 이고 높이가 글자만 하다. 우리 칸은 TMP
+                // 줄 높이(1.5배)라 더 높으므로, 그 칸을 **원본 글자 중심**에 맞춰 띄운다 —
+                // 위에 맞추면 글자가 4 내려앉는다.
+                float rowCenter = UiTheme.Py(9f) + UiTheme.Py(titlePx) * 0.5f;
+                float rowTop = -(rowCenter - titleH * 0.5f);
 
                 // Icon and word share the title row, centred together.
                 float ic = UiTheme.Py(15f);
@@ -4136,10 +4140,12 @@ namespace DustZero.Editor
                 sub = UiKit.Label("Sub", outRt, fonts.Body, UiTheme.Py(11f), UiTheme.Primary,
                                   TextAlignmentOptions.Center, out var srt, string.Empty);
                 sub.textWrappingMode = TextWrappingModes.NoWrap;
+                // 보조 줄도 같은 이유로 중심을 맞춘다 — 원본 글자 상자는 29.6/15 이다.
                 float subH = UiTheme.Line(UiTheme.Py(11f));
+                float subCenter = UiTheme.Py(29.6f + 7.5f);
                 Anchor(srt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                       new Vector2(UiTheme.Px(2f), rowTop - titleH - subH),
-                       new Vector2(-UiTheme.Px(2f), rowTop - titleH));
+                       new Vector2(UiTheme.Px(2f), -subCenter - subH * 0.5f),
+                       new Vector2(-UiTheme.Px(2f), -subCenter + subH * 0.5f));
 
                 fill = null;
                 if (withBar)
@@ -4566,9 +4572,10 @@ namespace DustZero.Editor
             // ---- 대청소 card.
             var survivor = UiKit.Button("Survivor", panel, fonts.Body, "", UiButtonKind.DarkSolid,
                                         out var svRt, UiTheme.Py(57f), UiTheme.Py(14.6f));
+            // 원본 `#btnSurv` 는 697.6 에서 64 높이다 — 탭 줄(78) 위로 92.4 / 156.4.
             Anchor(svRt, Vector2.zero, new Vector2(1f, 0f),
-                   new Vector2(UiTheme.Px(16f), UiTheme.Py(92f)),
-                   new Vector2(-UiTheme.Px(16f), UiTheme.Py(149f)));
+                   new Vector2(UiTheme.Px(16f), UiTheme.Py(92.4f)),
+                   new Vector2(-UiTheme.Px(16f), UiTheme.Py(156.4f)));
 
             var svIconRt = UiKit.Node("Icon", svRt);
             Anchor(svIconRt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
@@ -4582,15 +4589,14 @@ namespace DustZero.Editor
 
             UiKit.Label("Kicker", svRt, fonts.Body, UiTheme.Py(13.4f), UiTheme.DarkInk2,
                         TextAlignmentOptions.Left, out var svkRt, "대청소 모드");
-            Anchor(svkRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(60.6f), -UiTheme.Py(31.2f)),
-                   new Vector2(-UiTheme.Px(37.5f), -UiTheme.Py(10.8f)));
+            CenterBand(svkRt, 28.4f, UiTheme.Row(UiTheme.Py(13.4f), UiTheme.Py(20.4f)),
+                       UiTheme.Px(60.6f), UiTheme.Px(37.5f), fromRight: true);
             var svTitle = UiKit.Label("Title", svRt, fonts.Title, UiTheme.Py(21.5f), UiTheme.DarkInk,
                                       TextAlignmentOptions.Left, out var svtRt, "리더를 골라 출동");
             svTitle.textWrappingMode = TextWrappingModes.NoWrap;
-            Anchor(svtRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(60.6f), -UiTheme.Py(63.7f)),
-                   new Vector2(-UiTheme.Px(37.5f), -UiTheme.Py(31.2f)));
+            // 원본 글자 상자 729.6/22 → 중심 739.6, 단추 위(697.6)에서 42.
+            CenterBand(svtRt, 42f, UiTheme.Row(UiTheme.Py(21.5f), UiTheme.Py(32.5f)),
+                       UiTheme.Px(60.6f), UiTheme.Px(37.5f), fromRight: true);
             UiKit.Label("Arrow", svRt, fonts.Body, UiTheme.Py(26.9f), UiTheme.DarkInk,
                         TextAlignmentOptions.Right, out var svaRt, "▶");
             // 글상자는 글자(26.9pt)가 들어갈 만큼 넓혀 둔다. 원본에서는 24.3px 자리에
@@ -4608,14 +4614,14 @@ namespace DustZero.Editor
                    new Vector2(-UiTheme.Px(16f), UiTheme.Py(84f)));
             UiKit.Label("Kicker", nxRt, fonts.Body, UiTheme.Py(13.4f), UiTheme.Ink,
                         TextAlignmentOptions.Left, out var nxkRt, "다음 스테이지 도전");
-            Anchor(nxkRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(17.6f), -UiTheme.Py(36.5f)),
-                   new Vector2(-UiTheme.Px(37.5f), -UiTheme.Py(16.1f)));
+            // 원본 783.6/18 → 중심 792.6, 단추 위(769.6)에서 23.
+            CenterBand(nxkRt, 23f, UiTheme.Row(UiTheme.Py(13.4f), UiTheme.Py(20.4f)),
+                       UiTheme.Px(17.6f), UiTheme.Px(37.5f), fromRight: true);
             var nextChip = UiKit.Label("Stage", nxRt, fonts.Title, UiTheme.Py(26.9f), UiTheme.Ink,
                                        TextAlignmentOptions.Left, out var nxsRt, "1-1");
-            Anchor(nxsRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(17.6f), -UiTheme.Py(77.3f)),
-                   new Vector2(-UiTheme.Px(37.5f), -UiTheme.Py(36.5f)));
+            // 원본 804.6/26.4 → 중심 817.8, 단추 위에서 48.2.
+            CenterBand(nxsRt, 48.2f, UiTheme.Row(UiTheme.Py(26.9f), UiTheme.Py(40.8f)),
+                       UiTheme.Px(17.6f), UiTheme.Px(37.5f), fromRight: true);
             UiKit.Label("Arrow", nxRt, fonts.Body, UiTheme.Py(26.9f), UiTheme.Ink,
                         TextAlignmentOptions.Right, out var nxaRt, "▶");
             Anchor(nxaRt, new Vector2(1f, 0.5f), new Vector2(1f, 0.5f),
