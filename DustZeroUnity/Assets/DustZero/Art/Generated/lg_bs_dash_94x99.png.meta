@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 1ac51045d8d74eb42b0d2ad6f7c52c55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8449017419151520109
+    second: lg_bs_dash_94x99_0
+  - first:
+      213: -7433409785846837783
+    second: lg_bs_dash_94x99_1
+  - first:
+      213: 3758495531150046972
+    second: lg_bs_dash_94x99_2
+  - first:
+      213: 1263137473737759197
+    second: lg_bs_dash_94x99_3
+  - first:
+      213: 1365001642793900857
+    second: lg_bs_dash_94x99_4
+  - first:
+      213: 5857230745030296850
+    second: lg_bs_dash_94x99_5
+  - first:
+      213: 5226421467297217
+    second: lg_bs_dash_94x99_6
+  - first:
+      213: -175295359683862160
+    second: lg_bs_dash_94x99_7
+  - first:
+      213: -6971230816171141661
+    second: lg_bs_dash_94x99_8
+  - first:
+      213: -5154173709346598792
+    second: lg_bs_dash_94x99_9
+  - first:
+      213: 6150904151673380296
+    second: lg_bs_dash_94x99_10
+  - first:
+      213: 4343066534473675909
+    second: lg_bs_dash_94x99_11
+  - first:
+      213: -4430354323803732956
+    second: lg_bs_dash_94x99_12
+  - first:
+      213: -4821093988436167909
+    second: lg_bs_dash_94x99_13
+  - first:
+      213: -4627543173218419449
+    second: lg_bs_dash_94x99_14
+  - first:
+      213: -3249070244500878391
+    second: lg_bs_dash_94x99_15
+  - first:
+      213: 5167499389988480465
+    second: lg_bs_dash_94x99_16
+  - first:
+      213: 7966892238738463965
+    second: lg_bs_dash_94x99_17
+  - first:
+      213: 5439823109694745089
+    second: lg_bs_dash_94x99_18
+  - first:
+      213: -6396734836013377564
+    second: lg_bs_dash_94x99_19
+  - first:
+      213: 5891485836260676435
+    second: lg_bs_dash_94x99_20
+  - first:
+      213: -5559165938559040866
+    second: lg_bs_dash_94x99_21
+  - first:
+      213: -5440404667227204587
+    second: lg_bs_dash_94x99_22
+  - first:
+      213: -2291842585268949905
+    second: lg_bs_dash_94x99_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d613d91f390f04570800000000000000
+      internalID: 8449017419151520109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 93
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edcfa40f2937d890800000000000000
+      internalID: -7433409785846837783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 94
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf67710b5cbd82430800000000000000
+      internalID: 3758495531150046972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 94
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd99f9807d0978110800000000000000
+      internalID: 1263137473737759197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 94
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b1e8413c571f210800000000000000
+      internalID: 1365001642793900857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 94
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21507056450194150800000000000000
+      internalID: 5857230745030296850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 90
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c531031761921000800000000000000
+      internalID: 5226421467297217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071e4439cc9319df0800000000000000
+      internalID: -175295359683862160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 77
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5dcd20286314f90800000000000000
+      internalID: -6971230816171141661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 64
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8701dbfb152b878b0800000000000000
+      internalID: -5154173709346598792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd97ffacb66c5550800000000000000
+      internalID: 6150904151673380296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 49
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584b037a00ca54c30800000000000000
+      internalID: 4343066534473675909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424009c27383482c0800000000000000
+      internalID: -4430354323803732956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 34
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13bd7e8f88081db0800000000000000
+      internalID: -4821093988436167909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d3881700aa7cfb0800000000000000
+      internalID: -4627543173218419449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 20
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbcb32b3dbf8e2d0800000000000000
+      internalID: -3249070244500878391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5af4d0155a6b740800000000000000
+      internalID: 5167499389988480465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc92ddd746109e60800000000000000
+      internalID: 7966892238738463965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_18
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 6
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ae05efb422e7b40800000000000000
+      internalID: 5439823109694745089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e75e09de8b3a37a0800000000000000
+      internalID: -6396734836013377564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35310955723c2c150800000000000000
+      internalID: 5891485836260676435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_21
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92ccb85800e9d2b0800000000000000
+      internalID: -5559165938559040866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_22
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5149b8797cccf74b0800000000000000
+      internalID: -5440404667227204587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lg_bs_dash_94x99_23
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c6ee7bf4db130e0800000000000000
+      internalID: -2291842585268949905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lg_bs_dash_94x99_0: 8449017419151520109
+      lg_bs_dash_94x99_1: -7433409785846837783
+      lg_bs_dash_94x99_10: 6150904151673380296
+      lg_bs_dash_94x99_11: 4343066534473675909
+      lg_bs_dash_94x99_12: -4430354323803732956
+      lg_bs_dash_94x99_13: -4821093988436167909
+      lg_bs_dash_94x99_14: -4627543173218419449
+      lg_bs_dash_94x99_15: -3249070244500878391
+      lg_bs_dash_94x99_16: 5167499389988480465
+      lg_bs_dash_94x99_17: 7966892238738463965
+      lg_bs_dash_94x99_18: 5439823109694745089
+      lg_bs_dash_94x99_19: -6396734836013377564
+      lg_bs_dash_94x99_2: 3758495531150046972
+      lg_bs_dash_94x99_20: 5891485836260676435
+      lg_bs_dash_94x99_21: -5559165938559040866
+      lg_bs_dash_94x99_22: -5440404667227204587
+      lg_bs_dash_94x99_23: -2291842585268949905
+      lg_bs_dash_94x99_3: 1263137473737759197
+      lg_bs_dash_94x99_4: 1365001642793900857
+      lg_bs_dash_94x99_5: 5857230745030296850
+      lg_bs_dash_94x99_6: 5226421467297217
+      lg_bs_dash_94x99_7: -175295359683862160
+      lg_bs_dash_94x99_8: -6971230816171141661
+      lg_bs_dash_94x99_9: -5154173709346598792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

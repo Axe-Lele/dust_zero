@@ -1,4 +1,4 @@
-// The lobby shell: wallet, side rail, the five-tab bar and the panel each tab shows.
+﻿// The lobby shell: wallet, side rail, the five-tab bar and the panel each tab shows.
 //
 // Redesign 1a consolidates the original's seven bottom menus into five tabs; nothing is
 // dropped, the extra two become sub-tabs inside 스테이지 and 가전. This class owns navigation
@@ -99,6 +99,9 @@ namespace DustZero.Game
         /// <summary>협동 출동. 고른 파트너 id 를 나른다.</summary>
         public event System.Action<string> CoopChosen;
 
+        /// <summary>가전 대청소 리그로 출동. 콘텐츠 탭의 리그 카드가 올린다.</summary>
+        public event System.Action LeagueChosen;
+
         public LobbyTab CurrentTab => _tab;
 
         void Awake()
@@ -122,6 +125,7 @@ namespace DustZero.Game
             {
                 content.SurvivorChosen += () => SurvivorChosen?.Invoke();
                 content.CoopChosen += OpenCoopPick;
+                content.LeagueChosen += () => LeagueChosen?.Invoke();
                 content.Claimed += msg => { Toast(msg); Refresh(); };
             }
             if (bgmDownButton != null) bgmDownButton.SetAction(() => StepBgm(-10));

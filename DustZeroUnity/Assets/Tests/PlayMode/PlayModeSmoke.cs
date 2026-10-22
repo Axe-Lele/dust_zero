@@ -12,6 +12,7 @@ using System.Linq;
 using DustZero.Core.Coop;
 using DustZero.Core.Defense;
 using DustZero.Core.Meta;
+using DustZero.Core.League;
 using DustZero.Core.Survivor;
 using DustZero.Data;
 using DustZero.Game;
@@ -1144,6 +1145,95 @@ namespace DustZero.Tests
             Assert.AreEqual(waves, svc.Profile.CoopBest("rush"),
                             "버틴 웨이브가 최고 기록으로 남지 않았습니다.");
             yield return ShotAt("36-coop-result", 1080, 1920);
+        }
+
+
+        /// <summary>
+        /// 리그 화면: 상점에서 사고, 판에 올리고, 한 라운드를 실제로 끝까지 싸운다.
+        /// 사진만으로는 "눌러서 사지는가" 를 알 수 없어 조작까지 따라 한다.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator LeagueBuysPlacesAndFightsARound()
+        {
+            yield return LoadScene();
+            yield return null;
+            var svc = GameServices.Instance;
+            Assert.IsNotNull(svc, "GameServices 가 생성되지 않았습니다.");
+
+            // 리그는 3-5 를 깨야 열린다. 대조 기준과 같은 방식으로 계정을 고정한다.
+            SeedAuditState(svc);
+            svc.Profile.Data.best = 15;
+            svc.Persist();
+
+            var lobbyScreen = Object.FindFirstObjectByType<LobbyScreen>(FindObjectsInactive.Include);
+            if (lobbyScreen != null) lobbyScreen.gameObject.SetActive(false);
+
+            var league = Object.FindFirstObjectByType<LeagueScreen>(FindObjectsInactive.Include);
+            Assert.IsNotNull(league, "LeagueScreen 이 씬에 없습니다.");
+            league.gameObject.SetActive(true);
+            league.Begin(svc, 1);
+            yield return null;
+            Canvas.ForceUpdateCanvases();
+
+            var sim = (LeagueSim)typeof(LeagueScreen)
+                .GetField("_sim", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(league);
+            Assert.IsNotNull(sim, "리그 판이 열리지 않았습니다.");
+            Assert.AreEqual(LeaguePhase.Prep, sim.Phase);
+
+            AssertNoBlankLabels(league.transform, "리그 준비");
+            yield return ShotAt("26-league-prep", 1080, 1920);
+
+            // ---- 상점에서 살 수 있는 것을 사서 판에 올린다.
+            var cards = FindChild(league.transform, "Shop").GetComponentsInChildren<LeagueShopCard>(true);
+            Assert.AreEqual(sim.Shop.Length, cards.Length, "상점 칸 수가 다릅니다.");
+            int before = sim.Gold;
+            foreach (var c in cards)
+            {
+                var b = c.GetComponent<UnityEngine.UI.Button>();
+                if (b != null) b.onClick.Invoke();
+            }
+            yield return null;
+            Assert.Less(sim.Gold, before, "상점을 눌렀는데 코인이 줄지 않았습니다.");
+
+            int bought = 0;
+            foreach (var p in sim.Bench) if (p != null) bought++;
+            Assert.Greater(bought, 0, "산 가전이 대기석에 없습니다.");
+
+            // 대기석 첫 칸을 골라 판 한가운데에 놓는다.
+            var benchCells = FindChild(league.transform, "Bench")
+                .GetComponentsInChildren<LeagueBenchCell>(true);
+            int slot = System.Array.FindIndex(sim.Bench, x => x != null);
+            benchCells[slot].GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+            var cells = FindChild(league.transform, "Cells").GetComponentsInChildren<UiButton>(true);
+            Assert.AreEqual(LeagueSim.BoardCells, cells.Length, "판 칸이 21개가 아닙니다.");
+            cells[10].GetComponent<UnityEngine.UI.Button>()?.onClick.Invoke();
+            cells[10].SendMessage("OnPointerClick",
+                new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current),
+                SendMessageOptions.DontRequireReceiver);
+            yield return null;
+
+            Assert.Greater(sim.OnBoard, 0, "판에 가전을 올리지 못했습니다.");
+            Canvas.ForceUpdateCanvases();
+            yield return ShotAt("27-league-board", 1080, 1920);
+
+            // ---- 한 라운드를 실제로 싸운다.
+            Assert.IsTrue(sim.StartBattle(), "전투가 시작되지 않았습니다.");
+            yield return null;
+            Assert.AreEqual(LeaguePhase.Battle, sim.Phase);
+            Assert.Greater(sim.Units.Count, 1, "판에 아무도 서지 않았습니다.");
+            Canvas.ForceUpdateCanvases();
+            yield return ShotAt("28-league-battle", 1080, 1920);
+
+            sim.RunBattleToEnd();
+            Assert.IsTrue(sim.BattleOver, "전투가 끝나지 않았습니다.");
+            var last = sim.EndRound();
+            Assert.IsNotNull(last, "라운드 정산이 돌지 않았습니다.");
+            Assert.AreEqual(1, last.Round);
+
+            league.Sync();
+            Canvas.ForceUpdateCanvases();
+            yield return null;
+            AssertNoBlankLabels(league.transform, "리그 라운드 뒤");
         }
 
         [UnityTest]

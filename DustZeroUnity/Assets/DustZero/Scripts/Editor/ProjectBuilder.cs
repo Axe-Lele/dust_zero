@@ -7,6 +7,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using DustZero.Core.League;
 using DustZero.Game;
 using TMPro;
 using UnityEditor;
@@ -32,6 +33,20 @@ namespace DustZero.Editor
         static readonly Color Surface = new(1f, 1f, 1f);
         /// <summary>대청소 아레나 전용 레이어 — 전투 카메라가 아레나를 겹쳐 그리지 않게 가른다.</summary>
         const int ArenaLayer = 8;
+        /// <summary>리그 판 전용 레이어. 같은 이유로 가른다.</summary>
+        const int LeagueLayer = 9;
+
+        /// <summary>
+        /// 글자 칸을 부모 가운데에 두되 **줄 높이만큼** 잡는다. 부모(알약·띠)는 원본 치수를
+        /// 지키고 글자만 넘치게 두는 방법이다 — 칸이 줄보다 낮으면 TMP 는 아무것도 안 그린다.
+        /// </summary>
+        static void CentreLine(RectTransform rt, float lineHeight)
+        {
+            rt.anchorMin = new Vector2(0f, 0.5f);
+            rt.anchorMax = new Vector2(1f, 0.5f);
+            rt.offsetMin = new Vector2(0f, -lineHeight * 0.5f);
+            rt.offsetMax = new Vector2(0f, lineHeight * 0.5f);
+        }
 
         /// <summary>가지 전체를 한 레이어에 올린다.</summary>
         static void SetLayerDeep(GameObject go, int layer)
@@ -423,6 +438,10 @@ namespace DustZero.Editor
             public UiToggleChip DarkChip;
             public SurvivorOptionCard SurvivorOption;
             public SpawnWarnView SpawnWarn;
+            public LeagueBenchCell LeagueBench;
+            public LeagueShopCard LeagueShop;
+            /// <summary>리그 판 위에 겹치는 투명 단추.</summary>
+            public UiButton LeagueCell;
         }
 
         static Prefabs BuildPrefabs(Shapes art, Fonts fonts, SpriteLibrary library)
@@ -446,6 +465,9 @@ namespace DustZero.Editor
             p.DarkChip = BuildChapterChipPrefab(fonts);
             p.SurvivorOption = BuildSurvivorOptionPrefab(fonts);
             p.SpawnWarn = BuildSpawnWarnPrefab(art, fonts);
+            p.LeagueBench = BuildLeagueBenchPrefab(fonts);
+            p.LeagueShop = BuildLeagueShopPrefab(fonts);
+            p.LeagueCell = BuildLeagueCellPrefab(fonts);
             AssertAllSaved(p);
             return p;
         }
@@ -531,6 +553,9 @@ namespace DustZero.Editor
                 DarkChip = Load<UiToggleChip>("ChapterChip"),
                 SurvivorOption = Load<SurvivorOptionCard>("SurvivorOptionCard"),
                 SpawnWarn = Load<SpawnWarnView>("SpawnWarn"),
+                LeagueBench = Load<LeagueBenchCell>("LeagueBenchCell"),
+                LeagueShop = Load<LeagueShopCard>("LeagueShopCard"),
+                LeagueCell = Load<UiButton>("LeagueCell"),
             };
             AssertAllLoaded(reloaded);
             return reloaded;
@@ -3721,7 +3746,7 @@ namespace DustZero.Editor
             camGo.tag = "MainCamera";
 
             // 아레나는 대청소 카메라만 그린다.
-            cam.cullingMask = ~(1 << ArenaLayer);
+            cam.cullingMask = ~((1 << ArenaLayer) | (1 << LeagueLayer));
 
             // 화면 내용은 가운데 기둥에만 있다. 판 카메라도 그 안에서만 그리게 하지 않으면
             // 좌우 여백에 **지난 화면의 월드**가 그대로 남아 비친다(로비에서 전투판 타일이
@@ -3845,6 +3870,10 @@ namespace DustZero.Editor
             SetLayerDeep(survFxGo, ArenaLayer);
             var survivor = BuildSurvivorUI(safe.transform, art, fonts, prefabs, survView, survFx, survCam, library);
 
+            // ---- 가전 대청소 리그: 같은 방식으로 자기 카메라와 월드를 들고 있다.
+            var (lgCam, lgView) = BuildLeagueWorld(art, prefabs, library);
+            var league = BuildLeagueUI(safe.transform, fonts, prefabs, lgView, lgCam, library);
+
             // ---- lobby guide: built last so it renders above every screen above it in the
             // hierarchy, since its flows span the lobby, the battle brief and the result screen.
             var guideOverlay = BuildGuideOverlay(safe.transform, fonts);
@@ -3874,7 +3903,7 @@ namespace DustZero.Editor
             // ---- app root
             var appGo = new GameObject("AppRoot");
             var app = appGo.AddComponent<AppRoot>();
-            Wire(app, ("lobby", lobby), ("battle", battle), ("survivor", survivor),
+            Wire(app, ("lobby", lobby), ("battle", battle), ("survivor", survivor), ("league", league),
                  ("guideOverlay", guideOverlay), ("audioDirector", audio),
                  ("bootRoot", bootGo), ("bootLabel", bootText));
 
@@ -5532,6 +5561,520 @@ namespace DustZero.Editor
             WireArray(tab, "statKeys", statKeys);
             WireArray(tab, "statValues", statValues);
             return panel.gameObject;
+        }
+
+        // ------------------------------------------------------------------ 가전 대청소 리그
+
+        /// <summary>
+        /// 리그 판을 찍는 카메라와 월드. 전투판·아레나와 같은 방식이고, 리그를 하지 않는
+        /// 동안에는 꺼 둔다(켜 두면 화면 여백에 판 바닥이 비친다).
+        /// </summary>
+        static (Camera cam, LeagueView view) BuildLeagueWorld(Shapes art, Prefabs prefabs,
+                                                              SpriteLibrary library)
+        {
+            var camGo = new GameObject("LeagueCamera");
+            var cam = camGo.AddComponent<Camera>();
+            cam.orthographic = true;
+            cam.orthographicSize = 3f;
+            cam.transform.position = new Vector3(3.5f, -3f, -10f);
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = UiTheme.PageBg;
+            cam.cullingMask = 1 << LeagueLayer;
+            cam.enabled = false;
+
+            var worldGo = new GameObject("LeagueWorld");
+
+            var floorGo = new GameObject("Floor");
+            floorGo.transform.SetParent(worldGo.transform, false);
+            var floor = floorGo.AddComponent<SpriteRenderer>();
+            floor.sprite = GeneratedArt.LeagueFloor(LeagueSim.Cols, LeagueSim.Rows,
+                                                    LeagueSim.OurRows);
+            floor.sortingOrder = -1000;
+
+            var selGo = new GameObject("Selection");
+            selGo.transform.SetParent(worldGo.transform, false);
+            var sel = selGo.AddComponent<SpriteRenderer>();
+            sel.sprite = GeneratedArt.RoundedOutlineNineSlice("lg_cell_sel", 8, 3);
+            sel.drawMode = SpriteDrawMode.Sliced;
+            sel.size = Vector2.one;
+            sel.color = UiTheme.Navy;
+            sel.sortingOrder = 200;
+            selGo.SetActive(false);
+
+            var entityRoot = new GameObject("Entities").transform;
+            entityRoot.SetParent(worldGo.transform, false);
+
+            var view = worldGo.AddComponent<LeagueView>();
+            Wire(view, ("entityRoot", entityRoot), ("entityPrefab", prefabs.Entity),
+                 ("sprites", library), ("floor", floor), ("selection", sel),
+                 ("starRing", art.Circle));
+
+            SetLayerDeep(worldGo, LeagueLayer);
+            return (cam, view);
+        }
+
+        /// <summary>
+        /// 판 한 칸에 겹치는 투명 단추. 카메라가 그린 그림은 입력을 받지 못하므로,
+        /// 누를 자리는 UI 쪽에 따로 둔다.
+        /// </summary>
+        static UiButton BuildLeagueCellPrefab(Fonts fonts)
+        {
+            var go = UI("LeagueCell", null, out var rt);
+            rt.sizeDelta = new Vector2(UiTheme.Px(56f), UiTheme.Py(56f));
+            var b = go.AddComponent<UiButton>();
+            var img = go.AddComponent<Image>();
+            img.color = new Color(1f, 1f, 1f, 0f);   // 보이지 않지만 눌린다
+            img.raycastTarget = true;
+            // background 를 **끼우지 않는다.** 끼우면 UiButton 이 제 색(주황)으로 다시 칠해
+            // 판 아래 세 줄이 통째로 덮인다 — 실제로 그렇게 나왔다.
+            return SavePrefab<UiButton>(go, "LeagueCell");
+        }
+
+        static LeagueBenchCell BuildLeagueBenchPrefab(Fonts fonts)
+        {
+            var go = UI("LeagueBenchCell", null, out var rt);
+            rt.sizeDelta = new Vector2(UiTheme.Px(45.4f), UiTheme.Py(48f));
+
+            var face = go.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("lg_bs", Mathf.RoundToInt(UiTheme.Px(10f)));
+            face.type = Image.Type.Sliced;
+            face.color = Color.white;
+
+            var button = go.AddComponent<Button>();
+            button.targetGraphic = face;
+            button.transition = Selectable.Transition.None;
+
+            var lineRt = UiKit.Node("Outline", rt);
+            Stretch(lineRt);
+            var outline = lineRt.gameObject.AddComponent<Image>();
+            outline.type = Image.Type.Sliced;
+            outline.raycastTarget = false;
+
+            var picRt = UiKit.Node("Portrait", rt);
+            picRt.anchorMin = picRt.anchorMax = new Vector2(0.5f, 0.5f);
+            picRt.sizeDelta = new Vector2(UiTheme.Sq(40f), UiTheme.Sq(40f));
+            var portrait = picRt.gameObject.AddComponent<Image>();
+            portrait.preserveAspect = true;
+            portrait.raycastTarget = false;
+
+            var star = UiKit.Label("Star", rt, fonts.Number, UiTheme.Py(9f), UiTheme.Led,
+                                   TextAlignmentOptions.TopLeft, out var starRt, "");
+            star.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(starRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(3f), -UiTheme.Py(1f) - UiTheme.Line(UiTheme.Py(9f))),
+                   new Vector2(0f, -UiTheme.Py(1f)));
+
+            var trial = UiKit.Label("Trial", rt, fonts.Body, UiTheme.Py(8.5f), UiTheme.Ink2,
+                                    TextAlignmentOptions.BottomRight, out var trRt, "체험");
+            trial.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(trRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(0f, UiTheme.Py(1f)),
+                   new Vector2(-UiTheme.Px(2f), UiTheme.Py(1f) + UiTheme.Line(UiTheme.Py(8.5f))));
+
+            var cell = go.AddComponent<LeagueBenchCell>();
+            Wire(cell, ("face", face), ("outline", outline), ("portrait", portrait),
+                 ("starLabel", star), ("trialLabel", trial), ("button", button),
+                 ("dashedOutline", GeneratedArt.DashedRoundedOutline("lg_bs_dash",
+                     Mathf.RoundToInt(UiTheme.Px(45.4f)), Mathf.RoundToInt(UiTheme.Py(48f)),
+                     Mathf.RoundToInt(UiTheme.Px(10f)), UiTheme.Px(1.5f), UiTheme.Px(4f), UiTheme.Px(3f))),
+                 ("solidOutline", GeneratedArt.RoundedOutlineNineSlice("lg_bs_line",
+                     Mathf.RoundToInt(UiTheme.Px(10f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))))));
+            return SavePrefab<LeagueBenchCell>(go, "LeagueBenchCell");
+        }
+
+        static LeagueShopCard BuildLeagueShopPrefab(Fonts fonts)
+        {
+            int radius = Mathf.RoundToInt(UiTheme.Px(12f));
+            var go = UI("LeagueShopCard", null, out var rt);
+            rt.sizeDelta = new Vector2(UiTheme.Px(74.8f), UiTheme.Py(85f));
+
+            var face = go.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("lg_sc", radius);
+            face.type = Image.Type.Sliced;
+            face.color = UiTheme.Panel;
+
+            var button = go.AddComponent<Button>();
+            button.targetGraphic = face;
+            button.transition = Selectable.Transition.None;
+
+            // 등급 물듦: 위쪽만 옅게 깔리는 띠다(원본은 62% 지점까지의 그라데이션).
+            var washRt = UiKit.Node("Wash", rt);
+            Anchor(washRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(53f)), Vector2.zero);
+            var wash = washRt.gameObject.AddComponent<Image>();
+            wash.sprite = GeneratedArt.VerticalFade("lg_sc_wash");
+            wash.raycastTarget = false;
+
+            var lineRt = UiKit.Node("Outline", rt);
+            Stretch(lineRt);
+            var outline = lineRt.gameObject.AddComponent<Image>();
+            outline.sprite = GeneratedArt.RoundedOutlineNineSlice("lg_sc_line", radius,
+                Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            outline.type = Image.Type.Sliced;
+            outline.color = UiTheme.PanelLine;
+            outline.raycastTarget = false;
+
+            var picRt = UiKit.Node("Portrait", rt);
+            picRt.anchorMin = picRt.anchorMax = new Vector2(0.5f, 1f);
+            picRt.pivot = new Vector2(0.5f, 1f);
+            picRt.anchoredPosition = new Vector2(0f, -UiTheme.Py(5f));
+            picRt.sizeDelta = new Vector2(UiTheme.Sq(40f), UiTheme.Sq(40f));
+            var portrait = picRt.gameObject.AddComponent<Image>();
+            portrait.preserveAspect = true;
+            portrait.raycastTarget = false;
+
+            var name = UiKit.Label("Name", rt, fonts.Title, UiTheme.Py(13f), UiTheme.Ink,
+                                   TextAlignmentOptions.Center, out var nameRt, "");
+            name.textWrappingMode = TextWrappingModes.NoWrap;
+            name.overflowMode = TextOverflowModes.Ellipsis;
+            Anchor(nameRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(2f), -UiTheme.Py(67f)), new Vector2(-UiTheme.Px(2f), -UiTheme.Py(47f)));
+
+            var family = UiKit.Label("Family", rt, fonts.Body, UiTheme.Py(9.5f), UiTheme.Ink2,
+                                     TextAlignmentOptions.Center, out var famRt, "");
+            family.textWrappingMode = TextWrappingModes.NoWrap;
+            family.overflowMode = TextOverflowModes.Ellipsis;
+            Anchor(famRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(2f), -UiTheme.Py(81f)), new Vector2(-UiTheme.Px(2f), -UiTheme.Py(66f)));
+
+            // 값표: 오른쪽 위 흰 알약.
+            var costRt = UiKit.Node("Cost", rt);
+            Anchor(costRt, new Vector2(1f, 1f), new Vector2(1f, 1f),
+                   new Vector2(-UiTheme.Px(30f), -UiTheme.Py(19f)),
+                   new Vector2(-UiTheme.Px(3f), -UiTheme.Py(3f)));
+            var costBg = costRt.gameObject.AddComponent<Image>();
+            costBg.sprite = GeneratedArt.RoundedNineSlice("lg_cost", Mathf.RoundToInt(UiTheme.Px(7f)));
+            costBg.type = Image.Type.Sliced;
+            costBg.color = Color.white;
+            costBg.raycastTarget = false;
+            var cost = UiKit.Label("Text", costRt, fonts.Number, UiTheme.Py(12f), UiTheme.Ink,
+                                   TextAlignmentOptions.Center, out var costTxtRt, "0");
+            cost.textWrappingMode = TextWrappingModes.NoWrap;
+            // 알약은 원본 치수(16 높이)를 지키되, 글자 칸은 줄 높이만큼 잡아 가운데에 둔다.
+            CentreLine(costTxtRt, UiTheme.Line(UiTheme.Py(12f)));
+
+            // 꼬리표는 판과 글자를 따로 둔다 — 한 칸에 Image 와 TMP 를 같이 넣을 수 없다.
+            var trPlate = UiKit.Node("Trial", rt);
+            Anchor(trPlate, new Vector2(0f, 1f), new Vector2(0f, 1f),
+                   new Vector2(UiTheme.Px(3f), -UiTheme.Py(16f)),
+                   new Vector2(UiTheme.Px(31f), -UiTheme.Py(3f)));
+            var trialBg = trPlate.gameObject.AddComponent<Image>();
+            trialBg.sprite = GeneratedArt.RoundedNineSlice("lg_trial", Mathf.RoundToInt(UiTheme.Px(5f)));
+            trialBg.type = Image.Type.Sliced;
+            trialBg.color = UiTheme.Ink2;
+            trialBg.raycastTarget = false;
+            var trial = UiKit.Label("Text", trPlate, fonts.Body, UiTheme.Py(8.5f), Color.white,
+                                    TextAlignmentOptions.Center, out var trRt, "체험");
+            trial.textWrappingMode = TextWrappingModes.NoWrap;
+            CentreLine(trRt, UiTheme.Line(UiTheme.Py(8.5f)));
+
+            var ribRt = UiKit.Node("Ribbon", rt);
+            Anchor(ribRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   Vector2.zero, new Vector2(0f, UiTheme.Py(14f)));
+            var ribBg = ribRt.gameObject.AddComponent<Image>();
+            ribBg.color = UiTheme.Led;
+            ribBg.raycastTarget = false;
+            var rib = UiKit.Label("Text", ribRt, fonts.Body, UiTheme.Py(9.5f), Color.white,
+                                  TextAlignmentOptions.Center, out var ribTxtRt, "사면 ★2!");
+            rib.textWrappingMode = TextWrappingModes.NoWrap;
+            CentreLine(ribTxtRt, UiTheme.Line(UiTheme.Py(9.5f)));
+
+            var group = go.AddComponent<CanvasGroup>();
+
+            var card = go.AddComponent<LeagueShopCard>();
+            Wire(card, ("face", face), ("outline", outline), ("wash", wash),
+                 ("portrait", portrait), ("nameLabel", name), ("familyLabel", family),
+                 ("costLabel", cost), ("costPlate", costRt.gameObject),
+                 ("trialTag", trPlate.gameObject), ("ribbon", ribRt.gameObject), ("ribbonLabel", rib),
+                 ("group", group), ("button", button));
+            return SavePrefab<LeagueShopCard>(go, "LeagueShopCard");
+        }
+
+        /// <summary>
+        /// 리그 화면. 원본 `#league` 을 430x932 에서 재서 그대로 쌓는다.
+        /// </summary>
+        static LeagueScreen BuildLeagueUI(Transform parent, Fonts fonts, Prefabs prefabs,
+                                          LeagueView view, Camera cam, SpriteLibrary library)
+        {
+            var go = UI("League", parent, out var rt);
+            Stretch(rt);
+            float pad = UiTheme.Px(16f);
+
+            RectTransform Row(string id, float top, float height)
+            {
+                var r = UiKit.Node(id, rt);
+                Anchor(r, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                       new Vector2(pad, -UiTheme.Py(top + height)), new Vector2(-pad, -UiTheme.Py(top)));
+                return r;
+            }
+
+            // ---- HUD 12 / 106
+            var hud = UiKit.Panel("Hud", rt, out var hudRt, UiTheme.DarkPanel);
+            hud.sprite = GeneratedArt.RoundedNineSlice("ui_modal14", Mathf.RoundToInt(UiTheme.Px(14f)));
+            hud.type = Image.Type.Sliced;
+            Anchor(hudRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(pad, -UiTheme.Py(118f)), new Vector2(-pad, -UiTheme.Py(12f)));
+
+            float inset = UiTheme.Px(12f);
+            var top = UiKit.Node("Top", hudRt);
+            Anchor(top, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(inset, -UiTheme.Py(40f)), new Vector2(-inset, -UiTheme.Py(10f)));
+
+            var kicker = UiKit.Label("Kicker", top, fonts.Number, UiTheme.Py(11f), UiTheme.DarkInk2,
+                                     TextAlignmentOptions.TopLeft, out var kRt, "LEAGUE");
+            kicker.textWrappingMode = TextWrappingModes.NoWrap;
+            kicker.characterSpacing = 6f;
+            // 글자 칸이 줄 높이보다 낮으면 TMP 는 글자를 **아예 그리지 않는다.**
+            Anchor(kRt, new Vector2(0f, 1f), new Vector2(0.6f, 1f),
+                   new Vector2(0f, -UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(14f))), Vector2.zero);
+
+            var chip = UiKit.Label("Chip", top, fonts.Title, UiTheme.Py(17f), UiTheme.DarkInk,
+                                   TextAlignmentOptions.TopLeft, out var chipRt, "");
+            chip.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(chipRt, new Vector2(0f, 1f), new Vector2(0.6f, 1f),
+                   new Vector2(0f, -UiTheme.Py(36f)), new Vector2(0f, -UiTheme.Py(14f)));
+
+            var ctrls = UiKit.Node("Ctrls", top);
+            Anchor(ctrls, new Vector2(0.5f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            var ctrlRow = UiKit.Row(ctrls, UiTheme.Px(6f), TextAnchor.MiddleRight);
+            ctrlRow.childControlWidth = true;
+            ctrlRow.childControlHeight = false;
+            ctrlRow.childForceExpandWidth = false;
+
+            UiButton Ctrl(string id, string text)
+            {
+                var b = UiKit.Button(id, ctrls, fonts.Body, text, UiButtonKind.DarkRaised,
+                                     out var crt, UiTheme.Py(30f), UiTheme.Py(12f));
+                var le = crt.gameObject.AddComponent<LayoutElement>();
+                le.minHeight = le.preferredHeight = UiTheme.Py(30f);
+                le.preferredWidth = UiTheme.Px(text.Length <= 2 ? 44f : 60f);
+                return b;
+            }
+            var speed = Ctrl("Speed", "2×");
+            var exit = Ctrl("Exit", "나가기");
+
+            // 읽는 칸 셋: 청결도 · 코인 · 레벨
+            var readouts = UiKit.Node("Readouts", hudRt);
+            Anchor(readouts, new Vector2(0f, 0f), new Vector2(1f, 1f),
+                   new Vector2(inset, UiTheme.Py(10f)), new Vector2(-inset, -UiTheme.Py(52f)));
+
+            TextMeshProUGUI Readout(string id, string caption, float x0, float x1,
+                                    Color ink, TextAlignmentOptions align)
+            {
+                var r = UiKit.Node(id, readouts);
+                Anchor(r, new Vector2(x0, 0f), new Vector2(x1, 1f), Vector2.zero, Vector2.zero);
+
+                var cap = UiKit.Label("Label", r, fonts.Body, UiTheme.Py(10f), UiTheme.DarkInk2,
+                                      align, out var capRt, caption);
+                cap.textWrappingMode = TextWrappingModes.NoWrap;
+                cap.characterSpacing = 8f;
+                Anchor(capRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                       new Vector2(0f, -UiTheme.Py(15f)), Vector2.zero);
+
+                var value = UiKit.Label("Value", r, fonts.Number, UiTheme.Py(24f), ink,
+                                        align, out var vRt, "0");
+                value.textWrappingMode = TextWrappingModes.NoWrap;
+                Anchor(vRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                       new Vector2(0f, -UiTheme.Py(53f)), new Vector2(0f, -UiTheme.Py(17f)));
+                return value;
+            }
+
+            var life = Readout("Life", "청결도", 0f, 0.3f, UiTheme.LedLife, TextAlignmentOptions.Left);
+            var gold = Readout("Gold", "코인", 0.3f, 0.6f, UiTheme.Led, TextAlignmentOptions.Left);
+
+            var lvRoot = UiKit.Node("Level", readouts);
+            Anchor(lvRoot, new Vector2(0.6f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            var lvLabel = UiKit.Label("Label", lvRoot, fonts.Body, UiTheme.Py(10f), UiTheme.DarkInk2,
+                                      TextAlignmentOptions.Right, out var lvRt, "레벨 3");
+            lvLabel.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(lvRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(15f)), Vector2.zero);
+            var xp = UiKit.Label("Xp", lvRoot, fonts.Number, UiTheme.Py(18f), UiTheme.Led,
+                                 TextAlignmentOptions.Right, out var xpRt, "0/4");
+            xp.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(xpRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(45f)), new Vector2(0f, -UiTheme.Py(17f)));
+            var xpBar = UiKit.Bar("Meter", lvRoot, UiTheme.LedTrack, UiTheme.Led,
+                                  UiTheme.Py(4f), out var xpFill);
+            Anchor(xpBar, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   Vector2.zero, new Vector2(0f, UiTheme.Py(4f)));
+
+            // ---- 시너지 136 / 29
+            var synRow = Row("Synergy", 136f, 29f);
+            var synLayout = UiKit.Row(synRow, UiTheme.Px(5f), TextAnchor.MiddleLeft);
+            synLayout.childControlWidth = true;
+            synLayout.childControlHeight = true;
+            synLayout.childForceExpandWidth = false;
+            synLayout.childForceExpandHeight = false;
+
+            // ---- 판 175 / 336 — 카메라가 그리고, 우리 자리 21칸에 투명 단추를 겹친다.
+            var cellRoot = UiKit.Node("Cells", rt);
+            Anchor(cellRoot, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(pad, -UiTheme.Py(511f)), new Vector2(-pad, -UiTheme.Py(343f)));
+            var cellGrid = cellRoot.gameObject.AddComponent<GridLayoutGroup>();
+            cellGrid.cellSize = new Vector2(UiTheme.Px(398f / LeagueSim.Cols),
+                                            UiTheme.Py(168f / LeagueSim.OurRows));
+            cellGrid.spacing = Vector2.zero;
+            cellGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+            cellGrid.constraintCount = LeagueSim.Cols;
+
+            // ---- 안내 줄 529 / 18
+            var infoRow = Row("Info", 529f, 18f);
+            var infoLeft = UiKit.Label("Left", infoRow, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
+                                       TextAlignmentOptions.Left, out var ilRt, "");
+            infoLeft.textWrappingMode = TextWrappingModes.NoWrap;
+            infoLeft.overflowMode = TextOverflowModes.Ellipsis;
+            Anchor(ilRt, new Vector2(0f, 0f), new Vector2(0.65f, 1f), Vector2.zero, Vector2.zero);
+            var infoRight = UiKit.Label("Right", infoRow, fonts.Body, UiTheme.Py(12f), UiTheme.Ink2,
+                                        TextAlignmentOptions.Right, out var irRt, "");
+            infoRight.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(irRt, new Vector2(0.65f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+
+            // ---- 대기석 561 / 48
+            var benchRow = Row("Bench", 561f, 48f);
+            var benchGrid = benchRow.gameObject.AddComponent<GridLayoutGroup>();
+            benchGrid.cellSize = new Vector2(UiTheme.Px(45.4f), UiTheme.Py(48f));
+            benchGrid.spacing = new Vector2(UiTheme.Px(5f), 0f);
+            benchGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+            benchGrid.constraintCount = 8;
+
+            // ---- 버튼 줄 627 / 36
+            var barRow = Row("Bar", 627f, 36f);
+            var barLayout = UiKit.Row(barRow, UiTheme.Px(6f), TextAnchor.MiddleCenter);
+            barLayout.childControlWidth = true;
+            barLayout.childControlHeight = true;
+            barLayout.childForceExpandWidth = true;
+            barLayout.childForceExpandHeight = true;
+
+            UiButton Bar(string id, string text, UiButtonKind kind, out TextMeshProUGUI label)
+            {
+                var b = UiKit.Button(id, barRow, fonts.Body, text, kind, out var brt,
+                                     UiTheme.Py(36f), UiTheme.Py(12.5f));
+                label = brt.GetComponentInChildren<TextMeshProUGUI>();
+                label.textWrappingMode = TextWrappingModes.NoWrap;
+                label.overflowMode = TextOverflowModes.Ellipsis;
+                return b;
+            }
+            var reroll = Bar("Reroll", "새로고침", UiButtonKind.DarkSolid, out var rerollLabel);
+            var xpBtn = Bar("Xp", "경험치", UiButtonKind.DarkSolid, out var xpBtnLabel);
+            var sell = Bar("Sell", "상점 잠금", UiButtonKind.Secondary, out var sellLabel);
+
+            // ---- 상점 679 / 85
+            var shopRow = Row("Shop", 679f, 85f);
+            var shopGrid = shopRow.gameObject.AddComponent<GridLayoutGroup>();
+            shopGrid.cellSize = new Vector2(UiTheme.Px(74.8f), UiTheme.Py(85f));
+            shopGrid.spacing = new Vector2(UiTheme.Px(6f), 0f);
+            shopGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+            shopGrid.constraintCount = 5;
+
+            // ---- 출발 782 / 46
+            var goRow = Row("Go", 782f, 46f);
+            var goBtn = UiKit.Button("Button", goRow, fonts.Title, "전투 시작", UiButtonKind.Primary,
+                                     out var goRt, UiTheme.Py(46f), UiTheme.Py(19f));
+            Stretch(goRt);
+            var goLabel = goRt.GetComponentInChildren<TextMeshProUGUI>();
+
+            // ---- 힌트 838 / 19.2
+            var hint = UiKit.Label("Hint", Row("Hint", 838f, 19.2f), fonts.Body, UiTheme.Py(12f),
+                                   UiTheme.Ink2, TextAlignmentOptions.Center, out var hintRt, "");
+            hint.textWrappingMode = TextWrappingModes.NoWrap;
+            hint.overflowMode = TextOverflowModes.Ellipsis;
+            Stretch(hintRt);
+
+            // ---- 알림: 판 가운데 떠오르는 글
+            var bannerRt = UiKit.Node("Banner", rt);
+            Anchor(bannerRt, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                   new Vector2(-UiTheme.Px(130f), -UiTheme.Py(360f)),
+                   new Vector2(UiTheme.Px(130f), -UiTheme.Py(290f)));
+            var bannerBg = bannerRt.gameObject.AddComponent<Image>();
+            bannerBg.sprite = GeneratedArt.RoundedNineSlice("ui_modal14", Mathf.RoundToInt(UiTheme.Px(14f)));
+            bannerBg.type = Image.Type.Sliced;
+            bannerBg.color = new Color(UiTheme.Ink.r, UiTheme.Ink.g, UiTheme.Ink.b, 0.88f);
+            bannerBg.raycastTarget = false;
+            var bannerTitle = UiKit.Label("Title", bannerRt, fonts.Title, UiTheme.Py(26f),
+                                          Color.white, TextAlignmentOptions.Center,
+                                          out var btRt, "");
+            bannerTitle.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(btRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(0f, -UiTheme.Py(44f)), new Vector2(0f, -UiTheme.Py(8f)));
+            var bannerNote = UiKit.Label("Note", bannerRt, fonts.Body, UiTheme.Py(12f),
+                                         UiTheme.DarkInk2, TextAlignmentOptions.Center,
+                                         out var bnRt, "");
+            bannerNote.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(bnRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(0f, UiTheme.Py(6f)), new Vector2(0f, UiTheme.Py(24f)));
+            bannerRt.gameObject.SetActive(false);
+
+            // ---- 결과 판
+            var result = UiKit.Panel("Result", rt, out var resRt,
+                                     new Color(UiTheme.Ink.r, UiTheme.Ink.g, UiTheme.Ink.b, 0.55f), 1f);
+            Stretch(resRt);
+            UiKit.Panel("Card", resRt, out var cardRt, UiTheme.Panel, UiTheme.Px(14f));
+            Anchor(cardRt, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                   new Vector2(-UiTheme.Px(165f), -UiTheme.Py(120f)),
+                   new Vector2(UiTheme.Px(165f), UiTheme.Py(120f)));
+
+            var resTitle = UiKit.Label("Title", cardRt, fonts.Title, UiTheme.Py(22f), UiTheme.Ink,
+                                       TextAlignmentOptions.Center, out var rtRt, "");
+            resTitle.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(rtRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(18f), -UiTheme.Py(52f)), new Vector2(-UiTheme.Px(18f), -UiTheme.Py(18f)));
+
+            var resStats = UiKit.Label("Stats", cardRt, fonts.Number, UiTheme.Py(14f), UiTheme.Ink2,
+                                       TextAlignmentOptions.Center, out var rsRt, "");
+            resStats.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(rsRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(18f), -UiTheme.Py(78f)), new Vector2(-UiTheme.Px(18f), -UiTheme.Py(54f)));
+
+            var resRewards = UiKit.Label("Rewards", cardRt, fonts.Body, UiTheme.Py(12.5f), UiTheme.Ink,
+                                         TextAlignmentOptions.TopLeft, out var rwRt, "");
+            resRewards.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(rwRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(18f), -UiTheme.Py(136f)), new Vector2(-UiTheme.Px(18f), -UiTheme.Py(84f)));
+
+            var resNote = UiKit.Label("Note", cardRt, fonts.Body, UiTheme.Py(11.5f), UiTheme.Ink2,
+                                      TextAlignmentOptions.TopLeft, out var rnRt, "");
+            resNote.textWrappingMode = TextWrappingModes.Normal;
+            Anchor(rnRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(18f), -UiTheme.Py(176f)), new Vector2(-UiTheme.Px(18f), -UiTheme.Py(140f)));
+
+            var resBtns = UiKit.Node("Buttons", cardRt);
+            Anchor(resBtns, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(UiTheme.Px(18f), UiTheme.Py(16f)),
+                   new Vector2(-UiTheme.Px(18f), UiTheme.Py(64f)));
+            var resHome = UiKit.Button("Home", resBtns, fonts.Body, "로비로", UiButtonKind.Secondary,
+                                       out var rhRt, UiTheme.Py(48f));
+            Anchor(rhRt, new Vector2(0f, 0f), new Vector2(0.48f, 1f), Vector2.zero, Vector2.zero);
+            var resAgain = UiKit.Button("Again", resBtns, fonts.Body, "다시 하기", UiButtonKind.Primary,
+                                        out var raRt, UiTheme.Py(48f));
+            Anchor(raRt, new Vector2(0.52f, 0f), new Vector2(1f, 1f), Vector2.zero, Vector2.zero);
+            result.gameObject.SetActive(false);
+
+            var screen = go.AddComponent<LeagueScreen>();
+            Wire(screen,
+                 ("view", view), ("boardCamera", cam), ("cellRoot", cellRoot),
+                 ("cellPrefab", prefabs.LeagueCell),
+                 ("chipLabel", chip), ("lifeLabel", life), ("goldLabel", gold),
+                 ("levelLabel", lvLabel), ("xpLabel", xp), ("xpFill", xpFill),
+                 ("speedButton", speed), ("exitButton", exit),
+                 ("synergyRoot", synRow), ("bodyFont", fonts.Body),
+                 ("chipSprite", GeneratedArt.RoundedNineSlice("ui_chip10",
+                     Mathf.RoundToInt(UiTheme.Px(10f)))),
+                 ("infoLeftLabel", infoLeft), ("infoRightLabel", infoRight), ("hintLabel", hint),
+                 ("benchRoot", benchRow), ("benchPrefab", prefabs.LeagueBench),
+                 ("rerollButton", reroll), ("rerollLabel", rerollLabel),
+                 ("xpButton", xpBtn), ("xpButtonLabel", xpBtnLabel),
+                 ("sellButton", sell), ("sellLabel", sellLabel),
+                 ("shopRoot", shopRow), ("shopPrefab", prefabs.LeagueShop),
+                 ("goButton", goBtn), ("goLabel", goLabel),
+                 ("bannerRoot", bannerRt.gameObject), ("bannerTitle", bannerTitle),
+                 ("bannerNote", bannerNote),
+                 ("resultRoot", result.gameObject), ("resultTitle", resTitle),
+                 ("resultStats", resStats), ("resultRewards", resRewards), ("resultNote", resNote),
+                 ("resultHomeButton", resHome), ("resultAgainButton", resAgain),
+                 ("sprites", library));
+            go.SetActive(false);
+            return screen;
         }
 
         static GameObject BuildUnitsPanel(RectTransform parent, Fonts fonts, Prefabs prefabs,

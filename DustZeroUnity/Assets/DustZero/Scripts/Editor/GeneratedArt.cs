@@ -186,6 +186,47 @@ namespace DustZero.Editor
         }
 
         /// <summary>
+        /// 리그 판 바닥. 7x6 칸에 칸선을 긋고 **아래 세 줄(우리 자리)만 밝게** 칠한다 —
+        /// 원본 `lgRender` 가 매 프레임 그리는 것과 같은 그림이라 한 장으로 구워 둔다.
+        /// 한 칸이 월드 1 단위가 되도록 늘려 쓴다.
+        /// </summary>
+        public static Sprite LeagueFloor(int cols, int rows, int ourRows, int pixelsPerCell = 48)
+        {
+            EnsureFolder();
+            string name = $"lg_floor_{cols}x{rows}";
+            int w = cols * pixelsPerCell, h = rows * pixelsPerCell;
+            var px = new Color32[w * h];
+
+            var foe = new Color32(0xDE, 0xE3, 0xE7, 255);   // 먼지 쪽: 차가운 회색
+            var ours = new Color32(0xEC, 0xEF, 0xF1, 255);  // 우리 쪽: 한 단계 밝게
+            var line = new Color32(0xC7, 0xD0, 0xD6, 255);
+
+            for (int y = 0; y < h; y++)
+                for (int x = 0; x < w; x++)
+                {
+                    // 그림은 아래가 0 이고 칸은 위에서 세므로 뒤집어 읽는다.
+                    int row = (h - 1 - y) / pixelsPerCell;
+                    bool mine = row >= rows - ourRows;
+                    bool onLine = x % pixelsPerCell == 0 || (h - 1 - y) % pixelsPerCell == 0;
+                    px[y * w + x] = onLine ? line : mine ? ours : foe;
+                }
+
+            var tex = new Texture2D(w, h, TextureFormat.RGBA32, false);
+            tex.SetPixels32(px);
+            tex.Apply();
+            System.IO.File.WriteAllBytes($"{Folder}/{name}.png", tex.EncodeToPNG());
+            Object.DestroyImmediate(tex);
+            AssetDatabase.ImportAsset($"{Folder}/{name}.png");
+
+            var importer = (TextureImporter)AssetImporter.GetAtPath($"{Folder}/{name}.png");
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spritePixelsPerUnit = pixelsPerCell;   // 한 칸 = 월드 1
+            importer.filterMode = FilterMode.Bilinear;
+            importer.SaveAndReimport();
+            return AssetDatabase.LoadAssetAtPath<Sprite>($"{Folder}/{name}.png");
+        }
+
+        /// <summary>
         /// 모서리만 덮는 가면. 원본 `#svCv { border-radius: 14px }` 처럼 아레나 판의 네 귀를
         /// 둥글게 보이게 한다 — 카메라 뷰포트는 늘 각진 사각형이라 그림으로 덮는 수밖에 없다.
         /// 네 귀퉁이의 **둥근 선 바깥쪽만** 불투명하고 나머지는 완전히 투명해서, 9-slice 로

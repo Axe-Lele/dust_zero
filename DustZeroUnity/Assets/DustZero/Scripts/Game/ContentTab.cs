@@ -68,6 +68,9 @@ namespace DustZero.Game
         /// <summary>협동 청소로 출동. 파트너 고르기를 먼저 띄운다.</summary>
         public event Action CoopChosen;
 
+        /// <summary>가전 대청소 리그로 출동.</summary>
+        public event Action LeagueChosen;
+
         public void Bind(GameServices services)
         {
             _svc = services;
@@ -79,7 +82,7 @@ namespace DustZero.Game
             if (towerCard != null && towerCard.Go != null)
                 towerCard.Go.SetAction(() => Claimed?.Invoke(NotPortedYet));
             if (leagueCard != null && leagueCard.Go != null)
-                leagueCard.Go.SetAction(() => Claimed?.Invoke(NotPortedYet));
+                leagueCard.Go.SetAction(() => LeagueChosen?.Invoke());
             BuildLeaders();
             RefreshPoolCard();
             Refresh();
@@ -299,8 +302,9 @@ namespace DustZero.Game
         }
 
         /// <summary>
-        /// 먼지 타워·리그는 표와 화면만 이식돼 있고 전투 자체가 없다. 카드를 눌렀을 때
-        /// 이 말을 띄운다 — 원본 문구가 아니라 이식 상태를 알리는 우리 쪽 안내다.
+        /// 먼지 타워는 표와 카드만 이식돼 있고 전투가 아직 없다. 카드를 눌렀을 때 이 말을
+        /// 띄운다 — 원본 문구가 아니라 이식 상태를 알리는 우리 쪽 안내다.
+        /// (리그는 2026-10-22 에 들어갔으므로 더는 이 안내를 쓰지 않는다.)
         /// </summary>
         const string NotPortedYet = "이 모드는 아직 이식 중이에요. 카드의 정보만 먼저 보여 줘요.";
 

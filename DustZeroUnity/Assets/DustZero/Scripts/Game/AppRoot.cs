@@ -1,4 +1,4 @@
-// Boots the game and switches between the lobby and a battle.
+﻿// Boots the game and switches between the lobby and a battle.
 //
 // Everything lives in one scene: screens are enabled and disabled rather than loaded, which
 // keeps the appliance sprites and pools warm between runs and makes returning to the lobby
@@ -13,6 +13,7 @@ namespace DustZero.Game
         [SerializeField] LobbyScreen lobby;
         [SerializeField] BattleScreen battle;
         [SerializeField] SurvivorScreen survivor;
+        [SerializeField] LeagueScreen league;
         [SerializeField] GuideOverlay guideOverlay;
         [SerializeField] AudioDirector audioDirector;
 
@@ -60,6 +61,8 @@ namespace DustZero.Game
             battle.Exited += OnBattleExited;
             battle.DeckRequested += () => ShowLobby(LobbyTab.Deck);
             if (survivor != null) survivor.Exited += OnSurvivorExited;
+            if (league != null) league.Exited += OnLeagueExited;
+            if (lobby != null) lobby.LeagueChosen += OnLeagueChosen;
             if (guideOverlay != null) guideOverlay.SkipRequested += () => _services.Guide?.Skip();
             if (audioDirector != null)
             {
@@ -79,6 +82,7 @@ namespace DustZero.Game
         {
             battle.gameObject.SetActive(false);
             if (survivor != null) survivor.gameObject.SetActive(false);
+            if (league != null) league.gameObject.SetActive(false);
             lobby.gameObject.SetActive(true);
             lobby.Refresh();
             if (tab.HasValue) lobby.ShowTab(tab.Value);
@@ -125,6 +129,27 @@ namespace DustZero.Game
         }
 
         void OnSurvivorExited() => ShowLobby();
+
+        /// <summary>
+        /// 가전 대청소 리그. 원본은 티어를 고르는 시트를 먼저 띄우지만, 지금은 열려 있는
+        /// 가장 높은 티어로 바로 들어간다 — 티어 선택 시트는 아직 이식하지 않았다.
+        /// </summary>
+        void OnLeagueChosen()
+        {
+            if (league == null) { lobby.Toast("리그 화면이 아직 없어요."); return; }
+            if (!_services.Profile.LeagueUnlocked)
+            {
+                lobby.Toast(_services.Profile.LeagueLockMessage);
+                return;
+            }
+            lobby.gameObject.SetActive(false);
+            league.gameObject.SetActive(true);
+            FocusCamera(null);
+            league.Begin(_services, _services.Profile.LeagueTierMax);
+            audioDirector?.Play(BgmTrack.Battle);
+        }
+
+        void OnLeagueExited() => ShowLobby();
 
         /// <summary>
         /// \ud611\ub3d9 \uccad\uc18c. \uc6d0\ubcf8\uacfc \uac19\uc774 \uc804\ud22c \ud654\uba74\uc744 \uadf8\ub300\ub85c \uc4f0\uace0 \ub450 \uc904\ub9cc \ubc14\uafc0\uc5b4 \ub2e4\ub294\ub2e4.
