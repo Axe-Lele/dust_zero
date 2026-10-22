@@ -1,4 +1,4 @@
-// The 상점 tab, redesign 2e.
+﻿// The 상점 tab, redesign 2e.
 //
 // Category chips over a grid of product cards. The price button carries the payment method:
 // orange for cash, cream with a currency mark for crystal, grey when sold out. Cash and ads
@@ -60,6 +60,10 @@ namespace DustZero.Game
             {
                 int which = t;
                 var chip = Instantiate(tabChipPrefab, tabRoot);
+                // 칩은 제 글자에 맞춰 줄어드는 물건이다(스테이지 구역 줄에서 그렇게 쓴다).
+                // 상점 탭은 격자가 폭을 정해 주므로 그 맞춤자를 떼야 글자가 칸 가운데에 온다 —
+                // 안 떼면 격자가 칸을 넓혀도 글자는 왼쪽에 붙어 16~27 어긋난다.
+                if (chip.TryGetComponent<ContentSizeFitter>(out var fitter)) Destroy(fitter);
                 chip.Bind(TabName(which), () => { _tab = which; Refresh(); });
                 _chips.Add(chip);
             }

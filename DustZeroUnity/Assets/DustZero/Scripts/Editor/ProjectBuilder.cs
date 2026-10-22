@@ -4987,6 +4987,9 @@ namespace DustZero.Editor
                 lrt.offsetMin = lrt.offsetMax = Vector2.zero;
                 var le = label.gameObject.AddComponent<LayoutElement>();
                 le.minHeight = UiTheme.Py(38f);
+                // 칸이 글자보다 넓게 주어지면(상점 탭은 125.3 고정) 글자 칸이 그 폭을
+                // 다 차지해야 가운데 정렬이 칸 가운데에 온다. 안 그러면 왼쪽에 붙는다.
+                le.flexibleWidth = 1f;
             }
             var layout = chip.gameObject.AddComponent<HorizontalLayoutGroup>();
             layout.padding = new RectOffset((int)UiTheme.S12, (int)UiTheme.S12,
@@ -7425,9 +7428,9 @@ namespace DustZero.Editor
             tabsBg.raycastTarget = false;
 
             var tabRow = UiKit.Node("Row", tabs);
-            Stretch(tabRow, UiTheme.Px(4f));
+            Stretch(tabRow, UiTheme.Px(5f));
             var tabGrid = tabRow.gameObject.AddComponent<GridLayoutGroup>();
-            tabGrid.cellSize = new Vector2(UiTheme.Px(112f), UiTheme.Py(37f));
+            tabGrid.cellSize = new Vector2(UiTheme.Px(125.3f), UiTheme.Py(37f));
             tabGrid.spacing = new Vector2(UiTheme.Px(6f), 0f);
             tabGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             tabGrid.constraintCount = 3;
@@ -7438,6 +7441,7 @@ namespace DustZero.Editor
             // GridLayoutGroup 으로는 그 폭이 안 나오므로 **행을 쌓는 세로 배치**로 둔다.
             // 행은 ShopTab 이 만들고, 한 행 안에서 카드가 폭을 나눠 갖는다.
             var gridLayout = grid.gameObject.AddComponent<VerticalLayoutGroup>();
+            gridLayout.padding = new RectOffset(0, 0, Mathf.RoundToInt(UiTheme.Py(12f)), 0);
             gridLayout.spacing = UiTheme.Sq(10f);
             gridLayout.childForceExpandWidth = true;
             gridLayout.childControlWidth = true;
