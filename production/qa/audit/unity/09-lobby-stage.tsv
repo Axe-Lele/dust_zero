@@ -7,27 +7,27 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count	146.6	92.6	269.8	2
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	146.6	92.6	269.8	27.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Plate	13.6	131.6	402.8	68.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Caption	27.6	143.6	86.0	15.0	#8D99A2FF	10.0	최고 스테이지	27.6,143.6,55.9,15.0
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Best	27.6	161.6	86.0	39.3	#FF9A3CFF	26.0	1-2	27.6,161.7,41.7,39.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Best	27.6	154.8	86.0	39.3	#FF9A3CFF	26.0	1-2	27.6,155.0,41.7,39.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Next	117.6	141.6	284.8	48.0	#E8EDF0FF	12.5	다음 1-3 클리어 시 시급 코인 660, 부품 4, 크리스탈 5	117.6,156.2,272.2,18.7
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Next/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	117.6	141.6	284.8	48.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Card	13.6	211.6	402.8	171.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Title	27.6	222.6	76.0	22.8	#1D2226FF	15.0	전력 스킬	27.6,226.5,50.6,15.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.6	222.6	76.0	22.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Sub	91.4	223.6	311.0	18.4	#5D6871FF	12.0	전투 중 남는 전력으로 쓰는 기술	91.4,223.8,153.3,18.0
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Icon	27.6	258.6	36.0	36.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	73.6	254.6	104.0	19.0	#1D2226FF	13.0	과전류 방출	73.6,257.6,53.8,13.0
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	73.6	254.6	104.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	181.6	255.6	220.8	17.0	#FF9A3CFF	11.0	3-5 클리어 시 해금	181.6,255.8,84.2,16.5
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	181.6	255.6	220.8	17.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	73.6	275.6	328.8	33.0	#5D6871FF	11.5	누른 자리 반경 1.5칸에 과전류를 쏟아 피해를 주고 1.5초 기절시켜요	73.6,275.6,328.8,34.5
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	73.6	275.6	328.8	33.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Icon	27.6	318.6	36.0	36.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label	73.6	314.6	104.0	19.0	#1D2226FF	13.0	전력 증폭	73.6,317.6,43.8,13.0
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	73.6	314.6	104.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label	181.6	315.6	220.8	17.0	#FF9A3CFF	11.0	6-5 클리어 시 해금	181.6,315.8,84.2,16.5
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	181.6	315.6	220.8	17.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label	73.6	335.6	328.8	33.0	#5D6871FF	11.5	8초 동안 모든 가전의 공격력 +25%, 공격 속도 +25%, 스킬 충전	73.6,335.6,297.9,34.5
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	73.6	335.6	328.8	33.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Icon	27.6	256.0	36.0	36.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	73.6	252.0	104.0	19.0	#1D2226FF	13.0	과전류 방출	73.6,255.0,53.8,13.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	73.6	252.0	104.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	89.0	253.0	313.4	17.0	#FF9A3CFF	11.0	3-5 클리어 시 해금	89.0,253.2,84.2,16.5
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	89.0	253.0	313.4	17.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label	73.6	273.0	328.8	33.0	#5D6871FF	11.5	누른 자리 반경 1.5칸에 과전류를 쏟아 피해를 주고 1.5초 기절시켜요	73.6,273.0,328.8,34.5
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_storm/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	73.6	273.0	328.8	33.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Icon	27.6	316.0	36.0	36.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label	73.6	312.0	104.0	19.0	#1D2226FF	13.0	전력 증폭	73.6,315.0,43.8,13.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	73.6	312.0	104.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label	88.0	313.0	314.4	17.0	#FF9A3CFF	11.0	6-5 클리어 시 해금	88.0,313.2,84.2,16.5
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	88.0	313.0	314.4	17.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label	73.6	333.0	328.8	33.0	#5D6871FF	11.5	8초 동안 모든 가전의 공격력 +25%, 공격 속도 +25%, 스킬 충전	73.6,333.0,297.9,34.5
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Rows/ps_boost/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	73.6	333.0	328.8	33.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Sortie/Card	13.6	394.6	402.8	56.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Sortie/Label	27.6	414.3	54.0	16.6	#5D6871FF	11.0	출전 편성	27.6,414.3,41.8,16.5
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Sortie/Minis/mini_vac	81.6	398.3	48.5	48.5	#E3E8ECFF			

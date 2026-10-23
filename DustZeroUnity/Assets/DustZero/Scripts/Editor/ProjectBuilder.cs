@@ -937,8 +937,8 @@ namespace DustZero.Editor
             name.overflowMode = TextOverflowModes.Ellipsis;
             // 18px of box for a 13pt line: at 15 TMP drops it.
             Anchor(nrt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(2f), -UiTheme.Py(50f) - UiTheme.Py(18f)),
-                   new Vector2(-UiTheme.Px(2f), -UiTheme.Py(50f)));
+                   new Vector2(UiTheme.Px(2f), -UiTheme.Py(47.5f) - UiTheme.Py(18f)),
+                   new Vector2(-UiTheme.Px(2f), -UiTheme.Py(47.5f)));
 
             var cost = UiKit.Label("Cost", go.transform, fonts.Number, UiTheme.Py(12f), UiTheme.Ink,
                                    TextAlignmentOptions.Center, out var cort, "0W");
@@ -4083,7 +4083,7 @@ namespace DustZero.Editor
                               float px, float py, float pw, float ph,
                               bool withBar, float titlePx,
                               out RectTransform outRt, out TextMeshProUGUI sub,
-                              out RectTransform fill)
+                              out RectTransform fill, float titleBoxPx = 0f)
             {
                 var b2 = UiKit.Button(id, rail, fonts.Body, string.Empty, UiButtonKind.Dark,
                                       out outRt, UiTheme.Py(ph), UiTheme.Py(titlePx));
@@ -4095,7 +4095,11 @@ namespace DustZero.Editor
                 // 원본은 글자 상자가 알약 위에서 9 이고 높이가 글자만 하다. 우리 칸은 TMP
                 // 줄 높이(1.5배)라 더 높으므로, 그 칸을 **원본 글자 중심**에 맞춰 띄운다 —
                 // 위에 맞추면 글자가 4 내려앉는다.
-                float rowCenter = UiTheme.Py(9f) + UiTheme.Py(titlePx) * 0.5f;
+                // 줄 상자 높이는 글자 크기가 아니라 CSS line-height 다. 보통은 글자
+                // 크기와 비슷해 그대로 써도 맞지만, 시즌 패스의 `.ps` 는 11px 글자에
+                // 줄 상자가 **18** 이라 3.5 가 어긋난다 — 그런 칸만 재서 넘긴다.
+                float rowCenter = UiTheme.Py(9f)
+                                + UiTheme.Py(titleBoxPx > 0f ? titleBoxPx : titlePx) * 0.5f;
                 float rowTop = -(rowCenter - titleH * 0.5f);
 
                 // Icon and word share the title row, centred together.
@@ -4176,7 +4180,8 @@ namespace DustZero.Editor
             // caption / level / bar / status, so the shared status slot moves to the bottom.
             var passButton = HomePill("Pass", "시즌 패스", LoadIcon("pass"),
                                       328f, 128f, 86f, 82f, false, 11f,
-                                      out var passRt, out var passSub, out _);
+                                      out var passRt, out var passSub, out _,
+                                      titleBoxPx: 18f);
             {
                 var ring = UiKit.Node("Ring", passRt);
                 Stretch(ring);
@@ -4550,9 +4555,10 @@ namespace DustZero.Editor
 
             // ---- the translucent note that floats over the floor.
             var noteRt = UiKit.Node("RoomNote", panel);
+            // 원본 `#roomNote` 는 85.4,664.6 에 259.2x25 — 화면 아래에서 재면 267.4~292.4 다.
             Anchor(noteRt, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
-                   new Vector2(-UiTheme.Px(129.5f), UiTheme.Py(157f)),
-                   new Vector2(UiTheme.Px(129.5f), UiTheme.Py(182f)));
+                   new Vector2(-UiTheme.Px(129.5f), UiTheme.Py(164.4f)),
+                   new Vector2(UiTheme.Px(129.5f), UiTheme.Py(189.4f)));
             var noteBg = noteRt.gameObject.AddComponent<Image>();
             noteBg.sprite = UiArt.Panel;
             noteBg.type = Image.Type.Sliced;
@@ -4721,9 +4727,10 @@ namespace DustZero.Editor
             var bestStage = UiKit.Label("Best", progress, fonts.Number, UiTheme.Py(26f),
                                         UiTheme.Primary, TextAlignmentOptions.Left,
                                         out var bsRt, "—");
-            Anchor(bsRt, new Vector2(0f, 1f), new Vector2(0f, 1f),
-                   new Vector2(UiTheme.Px(14f), -UiTheme.Py(69.3f)),
-                   new Vector2(UiTheme.Px(100f), -UiTheme.Py(30f)));
+            // 원본 숫자는 160~189(ink) 로 판 위에서 **42.9** 가 중심이다. 칸을 위에
+            // 맞추면 TMP 줄 높이(39)가 아래로 자라 6.7 내려앉는다.
+            CenterBand(bsRt, 42.9f, UiTheme.Row(UiTheme.Py(26f), UiTheme.Py(29f)),
+                       UiTheme.Px(14f), UiTheme.Px(100f), fromRight: false);
             var nextReward = UiKit.Label("Next", progress, fonts.Body, UiTheme.Py(12.5f),
                                          UiTheme.DarkInk, TextAlignmentOptions.Left,
                                          out var nrRt, "");
@@ -4757,7 +4764,7 @@ namespace DustZero.Editor
             var skillRows = UiKit.Node("Rows", skills);
             Anchor(skillRows, Vector2.zero, Vector2.one,
                    new Vector2(UiTheme.Px(14f), UiTheme.Py(10f)),
-                   new Vector2(-UiTheme.Px(14f), -UiTheme.Py(43f)));
+                   new Vector2(-UiTheme.Px(14f), -UiTheme.Py(40.4f)));
             var skillCol = skillRows.gameObject.AddComponent<VerticalLayoutGroup>();
             skillCol.spacing = UiTheme.Py(6f);
             skillCol.childControlWidth = true;
@@ -7055,12 +7062,11 @@ namespace DustZero.Editor
                    new Vector2(0f, -UiTheme.Py(3f)));
 
             // ---- parts: four upgrade parts and the gear stone, each a pale pill.
+            // 원본 `#partsStrip` 은 **flex-wrap** 이라 칸 폭이 글자에 맞춰 줄었다 늘었다
+            // 한다(필터·열선·모터 83.4, 칩 72.7). 격자로 고정하면 짧은 이름 뒤가
+            // 통째로 밀려 모터가 11 어긋난다. uGUI 에는 wrap 이 없으므로 UnitsTab 이
+            // 폭을 재서 직접 흘린다 — 여기서는 빈 칸만 둔다.
             var parts = Block("Parts", 70f);
-            var partsGrid = parts.gameObject.AddComponent<GridLayoutGroup>();
-            partsGrid.cellSize = new Vector2(UiTheme.Px(83f), UiTheme.Py(32f));
-            partsGrid.spacing = new Vector2(UiTheme.Sq(6f), UiTheme.Sq(6f));
-            partsGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-            partsGrid.constraintCount = 4;
 
             // ---- catalogue: every appliance, four to a row.
             var grid = UiKit.Node("Grid", column);
@@ -7157,9 +7163,15 @@ namespace DustZero.Editor
             CenterBand(dcRt, 18f, UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(18f)),
                        UiTheme.Px(45f), UiTheme.Px(120f), fromRight: false);
 
-            var slots = Block("Slots", 70f);
-            // Six 40-wide slots spread across 398 leaves 31.6 between them (space-between).
-            var slotRow = UiKit.Row(slots, UiTheme.Px(31.6f), TextAnchor.MiddleLeft);
+            // 원본은 머리글 90~120 · 칸 140~202 · 안내문 212~250.4 · 목록 262.4 다.
+            // 이 블록을 70 으로 두면 62 짜리 칸 줄이 **가운데 정렬**되며 3.6 내려가고,
+            // 블록이 8 더 두꺼운 만큼 안내문과 목록이 통째로 9.6 밀린다.
+            // 안내문 212 에서 거꾸로 세면 212 - 12(줄 간격) - 140 = 60 이다.
+            var slots = Block("Slots", 60f);
+            // 원본은 칸 여섯이 398 안에 space-between 으로 선다. 빈 칸은 38 이라
+            // 네 칸 40 + 두 칸 38 = 236, 남는 162 를 다섯으로 나눠 **32.4** 다.
+            // 전부 40 으로 치고 31.6 을 쓰면 다섯째 칸이 3.6 왼쪽으로 온다.
+            var slotRow = UiKit.Row(slots, UiTheme.Px(32.4f), TextAnchor.MiddleLeft);
             slotRow.childForceExpandWidth = false;
             slotRow.childForceExpandHeight = false;
             slotRow.childControlWidth = false;
@@ -7821,7 +7833,7 @@ namespace DustZero.Editor
             roRow.childForceExpandHeight = true;
 
             RectTransform Readout(string id, string caption, float minWidth, bool flexible,
-                                  Color ledColor, TextAlignmentOptions align,
+                                  Color ledColor, TextAlignmentOptions align, bool hasMeter,
                                   out TextMeshProUGUI label, out TextMeshProUGUI value)
             {
                 var rt = UiKit.Node(id, readouts);
@@ -7839,18 +7851,18 @@ namespace DustZero.Editor
                 label.enableAutoSizing = true;
                 label.fontSizeMin = UiTheme.Py(10f) * 0.75f;
                 label.fontSizeMax = UiTheme.Py(10f);
-                // 원본은 캡션을 읽기칸 맨 위가 아니라 7px 내려 놓는다(430 기준에서 쟀다:
-                // 캡션 ink 가 y=69, 우리는 62 였다). 숫자는 이미 맞으므로 캡션만 내린다.
-                float capTop = UiTheme.Py(7f);
+                // 원본 `.readouts` 는 `align-items:end` 라 세 칸이 **바닥(113)에 맞춰** 선다.
+                // 미터가 달린 칸은 그 4px 과 간격 3 만큼 통째로 7 올라간다 — 그래서 캡션이
+                // 62(미터 있음) / 69(없음), 숫자 ink 중심이 30.5 / 37.5 다.
+                // 칸 높이가 아니라 **무엇이 바닥에 붙었는지**가 자리를 정한다.
+                float capTop = hasMeter ? 0f : UiTheme.Py(7f);
                 Anchor(lrt, new Vector2(0f, 1f), new Vector2(1f, 1f),
                        new Vector2(0f, -capTop - UiTheme.Py(15f)), new Vector2(0f, -capTop));
 
-                // CSS crops a 26px line to a 26px box; TMP refuses to and drops the whole
-                // line instead. So the box is 44px - comfortably over the ~80px TMP asks
-                // for - and is CENTRED on where the build puts the digits (18 + 26/2 = 31
-                // below the read-out's top). The extra box overlaps the caption's box, but
-                // neither draws a background so nothing shows.
-                float digitMid = UiTheme.Py(31f), digitBox = UiTheme.Py(44f);
+                // CSS 는 26px 줄을 26px 칸에 잘라 넣지만 TMP 는 자르는 대신 줄을 통째로
+                // 버린다. 그래서 칸은 44 로 넉넉히 두고 **원본 글자 중심**에 띄운다.
+                // 칸이 캡션 칸과 겹치지만 둘 다 배경이 없어 보이지 않는다.
+                float digitMid = UiTheme.Py(hasMeter ? 30.5f : 37.5f), digitBox = UiTheme.Py(44f);
                 value = UiKit.Label("Value", rt, fonts.Number, UiTheme.Py(26f), ledColor,
                                     align, out var vrt, "0");
                 value.textWrappingMode = TextWrappingModes.NoWrap;
@@ -7861,11 +7873,11 @@ namespace DustZero.Editor
             }
 
             var lifeRo = Readout("Life", "청결도", UiTheme.Px(30f), false, UiTheme.LedLife,
-                    TextAlignmentOptions.Left, out var cleanCaption, out var cleanLabel);
+                    TextAlignmentOptions.Left, false, out var cleanCaption, out var cleanLabel);
 
             var powerRo = Readout("Power", "전력 · 초당 +100W",
                                   UiTheme.Px(120f), true, UiTheme.Led,
-                                  TextAlignmentOptions.Left, out var regen, out var powerValue);
+                                  TextAlignmentOptions.Left, true, out var regen, out var powerValue);
             // The meter sits under the number, 4px tall, in a track the colour of burnt amber.
             var powerBarRt = UiKit.Bar("Meter", powerRo, UiTheme.LedTrack, UiTheme.Led,
                                        UiTheme.Py(4f), out var powerFill);
@@ -7873,7 +7885,7 @@ namespace DustZero.Editor
                    Vector2.zero, new Vector2(0f, UiTheme.Py(4f)));
 
             var remainRo = Readout("Remain", "남은 적", UiTheme.Px(34f), false, UiTheme.Led,
-                    TextAlignmentOptions.Right, out var remainCaption, out var remainValue);
+                    TextAlignmentOptions.Right, false, out var remainCaption, out var remainValue);
 
             // ---- 협동 두 줄. 평소엔 꺼져 있고 협동 판에서만 켠다.
             var coopBars = BuildCoopBars(go.transform, fonts, prefabs, library);
@@ -7925,6 +7937,23 @@ namespace DustZero.Editor
             // 원본 `#btnTap` 은 255.5,713 에 158.5x32 — 오른쪽 끝에 붙는다.
             Anchor(mtrt, new Vector2(1f, 0f), new Vector2(1f, 1f),
                    new Vector2(-UiTheme.Px(158.5f), 0f), Vector2.zero);
+            // 원본은 `ico('multitap',16)` 을 글자 앞에 넣는다 — 단추 왼쪽에서 13 에 16px,
+            // 글자는 29 에서 시작한다. 그림을 빼고 글자만 가운데 두면 7.6 어긋나고,
+            // 그림 없이 글자만 29 로 밀면 왼쪽이 통째로 빈 칸이 된다.
+            var mtIcoRt = UiKit.Node("Icon", mtrt);
+            Anchor(mtIcoRt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
+                   new Vector2(UiTheme.Px(13f), -UiTheme.Sq(8f)),
+                   new Vector2(UiTheme.Px(13f) + UiTheme.Sq(16f), UiTheme.Sq(8f)));
+            var mtIco = mtIcoRt.gameObject.AddComponent<Image>();
+            mtIco.sprite = LoadIcon("multitap");
+            mtIco.enabled = mtIco.sprite != null;
+            mtIco.preserveAspect = true;
+            mtIco.raycastTarget = false;
+            multitapLabel.alignment = TextAlignmentOptions.Left;
+            // 글자 칸의 여백은 단추 기준이다(재 보니 8/8 이었다). 29 / 13 으로 바꾼다.
+            var mtlRt = multitapLabel.rectTransform;
+            mtlRt.offsetMin = new Vector2(UiTheme.Px(29f), mtlRt.offsetMin.y);
+            mtlRt.offsetMax = new Vector2(-UiTheme.Px(13f), mtlRt.offsetMax.y);
 
             var deckRoot = UiKit.Node("DeckRoot", dbrt);
             Anchor(deckRoot, new Vector2(0f, 0f), new Vector2(1f, 0f),
@@ -8530,7 +8559,7 @@ namespace DustZero.Editor
             roRow.childForceExpandHeight = true;
 
             RectTransform Readout(string id, string caption, float minWidth, bool flexible,
-                                  Color ledColor, TextAlignmentOptions align,
+                                  Color ledColor, TextAlignmentOptions align, bool hasMeter,
                                   out TextMeshProUGUI label, out TextMeshProUGUI value)
             {
                 var r = UiKit.Node(id, readouts);
@@ -8542,14 +8571,16 @@ namespace DustZero.Editor
                                     align, out var lrt, caption);
                 label.textWrappingMode = TextWrappingModes.NoWrap;
                 label.characterSpacing = 8f;
-                // 원본에서 오른쪽 칸(`.ro.right`)의 라벨만 7 아래에 놓인다.
-                float capTop = align == TextAlignmentOptions.Right ? UiTheme.Py(7f) : 0f;
+                // 원본 `.readouts` 는 `align-items:end` 라 세 칸이 **바닥(113)에 맞춰** 선다.
+                // 미터가 달린 칸은 그 4px 과 간격 3 만큼 통째로 7 올라간다 — 그래서 캡션이
+                // 62(미터 있음) / 69(없음), 숫자 ink 중심이 30.5 / 37.5 다.
+                // 칸 높이가 아니라 **무엇이 바닥에 붙었는지**가 자리를 정한다.
+                float capTop = hasMeter ? 0f : UiTheme.Py(7f);
                 Anchor(lrt, new Vector2(0f, 1f), new Vector2(1f, 1f),
                        new Vector2(0f, -capTop - UiTheme.Py(15f)), new Vector2(0f, -capTop));
 
-                // Same trap as the battle HUD: a 26pt line needs ~80px of box or TMP drops it,
-                // so the box is 44px centred on the build's y=31.
-                float digitMid = UiTheme.Py(31f), digitBox = UiTheme.Py(44f);
+                // 전투 HUD 와 같은 함정 — 26pt 줄은 80px 쯤 되는 칸을 요구한다.
+                float digitMid = UiTheme.Py(hasMeter ? 30.5f : 37.5f), digitBox = UiTheme.Py(44f);
                 value = UiKit.Label("Value", r, fonts.Number, UiTheme.Py(26f), ledColor,
                                     align, out var vrt, "0");
                 value.textWrappingMode = TextWrappingModes.NoWrap;
@@ -8560,21 +8591,21 @@ namespace DustZero.Editor
             }
 
             var hpRo = Readout("Hp", "내구도", UiTheme.Px(30f), false, UiTheme.LedLife,
-                               TextAlignmentOptions.Left, out _, out var hpLabel);
+                               TextAlignmentOptions.Left, true, out _, out var hpLabel);
             var hpBarRt = UiKit.Bar("Meter", hpRo, UiTheme.LedTrack, UiTheme.LedLife,
                                     UiTheme.Py(4f), out var hpFill);
             Anchor(hpBarRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
                    Vector2.zero, new Vector2(0f, UiTheme.Py(4f)));
 
             var timeRo = Readout("Time", "Lv.1 · 버틴 시간", UiTheme.Px(120f), true, UiTheme.Led,
-                                 TextAlignmentOptions.Left, out var levelLabel, out var timeLabel);
+                                 TextAlignmentOptions.Left, true, out var levelLabel, out var timeLabel);
             var xpBarRt = UiKit.Bar("Meter", timeRo, UiTheme.LedTrack, UiTheme.Led,
                                     UiTheme.Py(4f), out var xpFill);
             Anchor(xpBarRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
                    Vector2.zero, new Vector2(0f, UiTheme.Py(4f)));
 
             Readout("Kills", "처치", UiTheme.Px(34f), false, UiTheme.Led,
-                    TextAlignmentOptions.Right, out _, out var killLabel);
+                    TextAlignmentOptions.Right, false, out _, out var killLabel);
 
             // ---- team strip: the leader plus four companion slots, under the arena.
             float teamH = UiTheme.Py(57f);

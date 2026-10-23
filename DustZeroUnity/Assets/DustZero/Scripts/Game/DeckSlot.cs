@@ -70,7 +70,9 @@ namespace DustZero.Game
                 // 원본은 빈 슬롯의 글자를 칸 가운데(위에서 27.4)에 놓고,
                 // 가전이 들어가면 그림 아래(44.9)로 내린다.
                 var nameRt = (RectTransform)nameLabel.transform;
-                float center = UiTheme.Py(filled ? 44.9f : 27.4f), half = UiTheme.Py(9.5f);
+                // 칸 위에서 잰 글자 중심 — 원본 채워진 칸 140 / 글자 ink 182~195 → 48.5,
+                // 빈 칸 145.6 / 글자 ink 162.5~179.5 → 25.4 다.
+                float center = UiTheme.Py(filled ? 48.5f : 25.4f), half = UiTheme.Py(9.5f);
                 nameRt.offsetMin = new Vector2(nameRt.offsetMin.x, -center - half);
                 nameRt.offsetMax = new Vector2(nameRt.offsetMax.x, -center + half);
                 nameLabel.color = filled ? UiTheme.Ink : UiTheme.Ink2;

@@ -1,4 +1,4 @@
-// 스테이지: the house progress plate, the power skills, the sortie strip, the five regions
+﻿// 스테이지: the house progress plate, the power skills, the sortie strip, the five regions
 // and the chapter list for whichever region is open.
 //
 // Laid out from the running 10.16-n build. The 스테이지/콘텐츠 segmented control the five-tab
@@ -197,7 +197,14 @@ namespace DustZero.Game
                                      TextAlignmentOptions.Left);
                 cond.rectTransform.anchorMin = new Vector2(0f, 1f);
                 cond.rectTransform.anchorMax = new Vector2(1f, 1f);
-                cond.rectTransform.offsetMin = new Vector2(UiTheme.Px(154f), -UiTheme.Py(18f));
+                // 원본 `.psr` 은 이름과 안내를 한 줄에 **흘린다** — 안내 글자는 이름이
+                // 끝난 자리에서 간격 4 와 안쪽 여백 6 을 더한 곳에서 시작한다. 154 처럼
+                // 고정 자리를 적으면 이름이 짧은 스킬에서 33 이나 벌어진다.
+                // 막 만든 TMP 는 글자를 아직 한 번도 짜 보지 않아 폭을 0 으로 돌려준다.
+                name.ForceMeshUpdate();
+                float nameRun = name.GetPreferredValues(name.text).x;
+                cond.rectTransform.offsetMin =
+                    new Vector2(UiTheme.Px(46f) + nameRun + UiTheme.Px(10f), -UiTheme.Py(18f));
                 cond.rectTransform.offsetMax = new Vector2(0f, -UiTheme.Py(1f));
                 var at = _svc.Db.StageById(first.unlockStage);
                 bool open = at != null && _svc.Profile.Data.best >= at.Order;

@@ -58,21 +58,21 @@ SafeArea/Column/Lobby/Panels/Home/Room/Leaf1	12.7	247.2	11.2	23.3	#6E9B4CFF
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf2	18.9	244.8	11.2	23.3	#6E9B4CFF			
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf3	25.2	247.2	11.2	23.3	#6E9B4CFF			
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf4	31.4	254.2	11.2	23.3	#6E9B4CFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	95.1	561.7	14.0	14.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	160.0	506.7	14.3	14.3	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	226.7	331.9	15.0	15.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	180.0	533.0	11.0	11.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	109.8	502.4	13.3	13.3	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	278.0	571.3	9.8	9.8	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	108.6	357.6	14.8	14.8	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	141.4	571.6	9.2	9.2	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	303.2	375.1	10.0	10.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	200.5	409.3	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	79.1	568.9	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	297.7	455.7	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	79.8	464.2	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/RoomNote	85.5	672.0	259.0	25.0	#1D222699			
-SafeArea/Column/Lobby/Panels/Home/RoomNote/Text	94.3	672.0	241.4	25.0	#E8EDF0FF	11.5	가전 4/12이 방을 청소하고 있어요 · 눌러서 말 걸기	97.4,675.9,235.2,17.2
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	292.8	336.9	15.6	15.6	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	123.7	387.2	9.7	9.7	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	144.3	592.7	14.4	14.4	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	187.6	364.1	15.6	15.6	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	335.1	509.8	10.1	10.1	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	222.8	351.3	12.7	12.7	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	176.3	540.3	14.6	14.6	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	135.6	468.8	11.5	11.5	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	275.6	556.2	10.8	10.8	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	285.7	449.0	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	89.7	327.1	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	231.0	371.4	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	101.0	459.0	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/RoomNote	85.5	664.6	259.0	25.0	#1D222699			
+SafeArea/Column/Lobby/Panels/Home/RoomNote/Text	94.3	664.6	241.4	25.0	#E8EDF0FF	11.5	가전 4/12이 방을 청소하고 있어요 · 눌러서 말 걸기	97.4,668.5,235.2,17.2
 SafeArea/Column/Lobby/Panels/Home/Survivor	16.0	697.6	398.0	64.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Home/Survivor/Content/Label	24.0	705.6	382.0	48.0	#E8EDF0FF	14.6		
 SafeArea/Column/Lobby/Panels/Home/Survivor/Icon	33.6	711.4	29.8	36.4	#FFFFFFFF			
@@ -127,8 +127,8 @@ SafeArea/Column/Lobby/HomeRail/Settings/Sub	351.0	114.8	61.0	16.5	#FF9A3CFF	11.0
 SafeArea/Column/Lobby/HomeRail/Pass	328.0	128.0	86.0	82.0	#1D2226D6			
 SafeArea/Column/Lobby/HomeRail/Pass/Ring	328.0	128.0	86.0	82.0	#FF9A3CFF			
 SafeArea/Column/Lobby/HomeRail/Pass/Content/Label	336.0	136.0	70.0	66.0	#E8EDF0FF	11.0		
-SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Icon	340.6	135.0	15.0	15.0	#FFFFFFFF			
-SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Title	359.6	134.2	41.8	16.5	#E8EDF0FF	11.0	시즌 패스	359.6,134.3,41.8,16.5
+SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Icon	340.6	138.5	15.0	15.0	#FFFFFFFF			
+SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Title	359.6	137.7	41.8	16.5	#E8EDF0FF	11.0	시즌 패스	359.6,137.8,41.8,16.5
 SafeArea/Column/Lobby/HomeRail/Pass/Sub	332.0	187.5	78.0	16.5	#FF9A3CFF	11.0	받기 1	356.6,187.5,28.8,16.5
 SafeArea/Column/Lobby/HomeRail/Pass/Bar	336.0	179.5	70.0	4.0	#2A3136FF			
 SafeArea/Column/Lobby/HomeRail/Pass/Bar/Mask/Fill	336.0	179.5	70.0	4.0	#FF9A3CFF			

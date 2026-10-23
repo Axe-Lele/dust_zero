@@ -9,35 +9,35 @@ SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Gallery	264.5	92.6	67.0	
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Gallery/Content/Label	272.5	98.4	51.0	18.4	#E8EDF0FF	12.0	일러스트	276.6,98.6,42.8,18.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/GearBag	344.5	92.6	70.0	30.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/GearBag/Content/Label	352.5	98.4	54.0	18.4	#E8EDF0FF	12.0	장비 가방	356.6,98.6,45.6,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101	15.5	134.6	83.0	32.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Outline	15.5	134.6	83.0	32.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101	15.5	134.6	82.2	32.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Outline	15.5	134.6	82.2	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Icon	26.5	141.6	18.0	18.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name	47.5	134.6	43.0	32.0	#5D6871FF	12.0	필터	47.5,141.6,21.4,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	47.5	134.6	43.0	32.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Value	47.5	134.6	43.0	32.0	#1D2226FF	14.0	20	73.7,140.1,16.8,21.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102	104.5	134.6	83.0	32.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Outline	104.5	134.6	83.0	32.0	#C7D0D6FF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Icon	115.5	141.6	18.0	18.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Name	136.5	134.6	43.0	32.0	#5D6871FF	12.0	열선	136.5,141.6,21.4,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	136.5	134.6	43.0	32.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Value	136.5	134.6	43.0	32.0	#1D2226FF	14.0	20	162.7,140.1,16.8,21.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103	193.5	134.6	83.0	32.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Outline	193.5	134.6	83.0	32.0	#C7D0D6FF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Icon	204.5	141.6	18.0	18.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name	225.5	134.6	43.0	32.0	#5D6871FF	12.0	칩	225.5,141.6,10.7,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	225.5	134.6	43.0	32.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Value	225.5	134.6	43.0	32.0	#1D2226FF	14.0	20	251.7,140.1,16.8,21.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104	282.5	134.6	83.0	32.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Outline	282.5	134.6	83.0	32.0	#C7D0D6FF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Icon	293.5	141.6	18.0	18.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Name	314.5	134.6	43.0	32.0	#5D6871FF	12.0	모터	314.5,141.6,21.4,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Value	314.5	134.6	43.0	32.0	#1D2226FF	14.0	20	340.7,140.1,16.8,21.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401	15.5	172.6	83.0	32.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Outline	15.5	172.6	83.0	32.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name	44.5	134.6	42.2	32.0	#5D6871FF	12.0	필터	44.5,141.6,21.4,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	44.5	134.6	42.2	32.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Value	44.5	134.6	42.2	32.0	#1D2226FF	14.0	20	69.9,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102	103.7	134.6	82.2	32.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Outline	103.7	134.6	82.2	32.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Icon	114.7	141.6	18.0	18.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Name	132.7	134.6	42.2	32.0	#5D6871FF	12.0	열선	132.7,141.6,21.4,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	132.7	134.6	42.2	32.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Value	132.7	134.6	42.2	32.0	#1D2226FF	14.0	20	158.2,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103	192.0	134.6	71.5	32.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Outline	192.0	134.6	71.5	32.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Icon	203.0	141.6	18.0	18.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name	221.0	134.6	31.5	32.0	#5D6871FF	12.0	칩	221.0,141.6,10.7,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.0	134.6	31.5	32.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Value	221.0	134.6	31.5	32.0	#1D2226FF	14.0	20	235.7,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104	269.5	134.6	82.2	32.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Outline	269.5	134.6	82.2	32.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Icon	280.5	141.6	18.0	18.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Name	298.5	134.6	42.2	32.0	#5D6871FF	12.0	모터	298.5,141.6,21.4,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Value	298.5	134.6	42.2	32.0	#1D2226FF	14.0	20	323.9,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401	15.5	172.6	84.5	32.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Outline	15.5	172.6	84.5	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Icon	26.5	179.6	18.0	18.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Name	47.5	172.6	43.0	32.0	#5D6871FF	12.0	강화석	47.5,179.6,32.1,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	47.5	172.6	43.0	32.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Value	47.5	172.6	43.0	32.0	#1D2226FF	14.0	0	82.1,178.1,8.4,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Name	44.5	172.6	44.5	32.0	#5D6871FF	12.0	강화석	44.5,179.6,32.1,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.5	172.6	44.5	32.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Value	44.5	172.6	44.5	32.0	#1D2226FF	14.0	0	80.6,178.1,8.4,21.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	15.5	216.6	94.0	137.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	16.5	217.6	92.0	92.0	#DCE9F7FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	22.5	223.6	80.0	80.0	#FFFFFFFF			

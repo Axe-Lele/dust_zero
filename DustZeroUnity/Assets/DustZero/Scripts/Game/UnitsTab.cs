@@ -1,4 +1,4 @@
-// 가전: the catalogue of every appliance, owned or not.
+﻿// 가전: the catalogue of every appliance, owned or not.
 //
 // 10.16-n made this a 도감 rather than a roster - all twelve are listed and the ones you have
 // not recruited show as silhouettes, so the tab doubles as the collection screen. 편성 moved
@@ -40,6 +40,8 @@ namespace DustZero.Game
         GameServices _svc;
         readonly List<UnitCard> _cards = new();
         readonly List<TextMeshProUGUI> _partValues = new();
+        readonly List<TextMeshProUGUI> _partNames = new();
+        readonly List<RectTransform> _partChips = new();
 
         public event Action<UnitDef> DetailRequested;
         public event Action<string> Message;
@@ -64,12 +66,17 @@ namespace DustZero.Game
             if (partsRoot == null || _svc == null) return;
             foreach (Transform c in partsRoot) Destroy(c.gameObject);
             _partValues.Clear();
+            _partNames.Clear();
+            _partChips.Clear();
 
             for (int i = 0; i < Parts.Length; i++)
             {
                 var go = new GameObject("part_" + Parts[i], typeof(RectTransform));
                 var rt = (RectTransform)go.transform;
                 rt.SetParent(partsRoot, false);
+                // 칸은 LayoutParts 가 글자를 재서 자리와 폭을 준다. 왼쪽 위 기준이다.
+                rt.anchorMin = rt.anchorMax = rt.pivot = new Vector2(0f, 1f);
+                _partChips.Add(rt);
                 var bg = go.AddComponent<Image>();
                 if (partPillSprite != null) { bg.sprite = partPillSprite; bg.type = Image.Type.Sliced; }
                 bg.color = UiTheme.Panel;
@@ -108,8 +115,10 @@ namespace DustZero.Game
                 nameRt.SetParent(rt, false);
                 nameRt.anchorMin = new Vector2(0f, 0f);
                 nameRt.anchorMax = new Vector2(1f, 1f);
-                nameRt.offsetMin = new Vector2(UiTheme.Px(32f), 0f);
-                nameRt.offsetMax = new Vector2(-UiTheme.Px(8f), 0f);
+                // 원본은 왼쪽 여백 11 + 아이콘 18 뒤에서 이름이 시작하고,
+                // 숫자는 오른쪽 여백 11 에 붙는다.
+                nameRt.offsetMin = new Vector2(UiTheme.Px(11f) + UiTheme.Py(18f), 0f);
+                nameRt.offsetMax = new Vector2(-UiTheme.Px(11f), 0f);
                 var nameTxt = nameGo.AddComponent<TextMeshProUGUI>();
                 nameTxt.font = bodyFont;
                 nameTxt.fontSize = UiTheme.Py(12f);
@@ -124,8 +133,8 @@ namespace DustZero.Game
                 txtRt.SetParent(rt, false);
                 txtRt.anchorMin = new Vector2(0f, 0f);
                 txtRt.anchorMax = new Vector2(1f, 1f);
-                txtRt.offsetMin = new Vector2(UiTheme.Px(32f), 0f);
-                txtRt.offsetMax = new Vector2(-UiTheme.Px(8f), 0f);
+                txtRt.offsetMin = new Vector2(UiTheme.Px(11f) + UiTheme.Py(18f), 0f);
+                txtRt.offsetMax = new Vector2(-UiTheme.Px(11f), 0f);
                 var txt = txtGo.AddComponent<TextMeshProUGUI>();
                 txt.font = bodyFont;
                 txt.fontSize = UiTheme.Py(14f);
@@ -134,6 +143,42 @@ namespace DustZero.Game
                 txt.raycastTarget = false;
                 txt.textWrappingMode = TextWrappingModes.NoWrap;
                 _partValues.Add(txt);
+                _partNames.Add(nameTxt);
+            }
+            LayoutParts();
+        }
+
+        /// <summary>
+        /// 원본 재료 띠는 flex-wrap 이다 — 칸 폭이 이름과 숫자에 맞춰 줄고, 줄이 꽉 차면
+        /// 다음 줄로 넘어간다. uGUI 에는 wrap 이 없어 여기서 직접 흘린다.
+        /// 숫자가 바뀌면 폭도 바뀌므로 Refresh 뒤에 다시 부른다.
+        /// </summary>
+        void LayoutParts()
+        {
+            if (partsRoot == null || _partChips.Count == 0) return;
+            float padL = UiTheme.Px(11f), padR = UiTheme.Px(11f);
+            float ico = UiTheme.Py(18f), gap = UiTheme.Px(4f);
+            float between = UiTheme.Sq(6f), rowH = UiTheme.Py(32f);
+            // 띠의 폭은 원본에서 잰 398 이다. `partsRoot.rect.width` 를 읽으면 안 된다 —
+            // 이 함수는 Bind 안에서 도는데 그때는 세로 배치가 아직 폭을 안 정해 줘서
+            // 100 짜리 기본값이 돌아오고, 그러면 칸이 한 줄에 하나씩 떨어진다.
+            float strip = UiTheme.Px(398f);
+
+            float x = 0f, y = 0f;
+            for (int i = 0; i < _partChips.Count; i++)
+            {
+                var chip = _partChips[i];
+                if (chip == null) continue;
+                float nameW = i < _partNames.Count && _partNames[i] != null
+                    ? _partNames[i].GetPreferredValues(_partNames[i].text).x : 0f;
+                float valueW = i < _partValues.Count && _partValues[i] != null
+                    ? _partValues[i].GetPreferredValues(_partValues[i].text).x : 0f;
+                float w = padL + ico + nameW + gap + valueW + padR;
+
+                if (x > 0f && x + w > strip) { x = 0f; y -= rowH + between; }
+                chip.sizeDelta = new Vector2(w, rowH);
+                chip.anchoredPosition = new Vector2(x, y);
+                x += w + between;
             }
         }
 
@@ -172,6 +217,7 @@ namespace DustZero.Game
 
             for (int i = 0; i < _partValues.Count && i < Parts.Length; i++)
                 _partValues[i].text = UiTheme.Compact(p.Data.Item(Parts[i]));
+            LayoutParts();
 
             foreach (var c in _cards) c.Sync(p);
         }

@@ -219,7 +219,7 @@ SafeArea/Column/Lobby/Pass/Back/Icon	26.0	22.0	24.0	24.0	#1D2226FF
 SafeArea/Column/Lobby/Pass/Title	68.0	12.0	276.0	44.0	#1D2226FF	24.0	시즌 패스	68.0,22.0,80.9,24.0
 SafeArea/Column/Lobby/Pass/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	12.0	276.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Days	350.0	20.0	64.0	28.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Pass/Days/Value	360.0	22.0	44.0	24.0	#1D2226FF	14.6	D-18	365.2,23.1,33.6,21.8
+SafeArea/Column/Lobby/Pass/Days/Value	360.0	22.0	44.0	24.0	#1D2226FF	14.6	D-17	365.2,23.1,33.6,21.8
 SafeArea/Column/Lobby/Pass/LevelCard	16.0	68.0	398.0	84.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Pass/LevelCard/Knob	30.0	82.0	56.0	56.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/LevelCard/Knob/Level	30.0	82.0	56.0	56.0	#F7F9FAFF	20.0	1	52.0,95.0,12.0,30.0
