@@ -1,4 +1,4 @@
-// Cross-table reference checks.
+﻿// Cross-table reference checks.
 //
 // The original game failed softly - a missing skill_param logged a console warning and the
 // value became 0, so a typo in the spreadsheet showed up as a unit that quietly did nothing.
@@ -17,8 +17,11 @@ namespace DustZero.Data
         /// anything else is a typo that would otherwise make the appliance silently fall back
         /// to a plain attack, which looks like a balance problem rather than a data one.
         /// </summary>
-        static readonly string[] KnownDefenseKits =
-            { "vac", "melee", "fridge", "ac", "micro", "washer", "pc", "fan", "gen" };
+        public static readonly string[] KnownDefenseKits =
+        {
+            "vac", "melee", "fridge", "ac", "micro", "washer", "pc", "fan", "gen",
+            "blender", "purifier", "router", "tv",   // 10.21-f
+        };
         static readonly string[] KnownSurvivorLeaders = { "vac", "robot", "ac" };
         static readonly string[] KnownSurvivorCompanions =
             { "vac", "robot", "fridge", "ac", "micro", "washer", "fan" };

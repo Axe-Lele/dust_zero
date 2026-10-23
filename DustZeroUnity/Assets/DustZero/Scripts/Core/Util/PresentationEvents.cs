@@ -1,4 +1,4 @@
-// The channel between the rules and the screen.
+﻿// The channel between the rules and the screen.
 //
 // The simulation never touches a GameObject; it appends semantic events here and the view
 // drains them each frame, turning them into pooled particles, damage labels and camera shake.
@@ -123,6 +123,12 @@ namespace DustZero.Core
         public const string Fly = "#3A3330";
         public const string Water = "#7FC4F5";
         public const string Spark = "#FFF3B0";
+
+        // 10.21-f 신규 가전 넷. 원본 index.html 의 피해 숫자 색을 그대로 쓴다.
+        public const string Blender = "#B6F09A";
+        public const string Purifier = "#C8F5EC";
+        public const string Router = "#C9D6FF";
+        public const string Tv = "#FFD0DC";
 
         public static string ForEnemyLook(string look) => look switch
         {

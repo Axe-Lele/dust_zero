@@ -1,4 +1,4 @@
-// The defense battle rules, independent of Unity.
+﻿// The defense battle rules, independent of Unity.
 //
 // Tick() advances exactly one simulation step. The view calls it once per frame at 1x and
 // twice at 2x, and not at all while paused or while a blocking tutorial step is showing -
@@ -662,7 +662,10 @@ namespace DustZero.Core.Defense
             foreach (var e in _enemies)
             {
                 if (e.SlowT > 0f) e.SlowT -= dt;
+                if (e.BrkT > 0f) e.BrkT -= dt;
+                if (e.StunT > 0f) e.StunT -= dt;
                 if (e.FrozenT > 0f) { e.FrozenT -= dt; continue; }
+                if (e.StunT > 0f) continue;
 
                 if (e.BlockedBy != null && (e.BlockedBy.Dead || e.BlockedBy.Overheated)) e.BlockedBy = null;
 
@@ -975,8 +978,24 @@ namespace DustZero.Core.Defense
         // ------------------------------------------------------------------ damage helpers
 
         /// <summary>Applies damage and raises the floating number, as the original's hurt() did.</summary>
-        internal void Hurt(BattleEnemy e, float amount, string color = null, BattleUnit by = null)
+        /// <summary>
+        /// 원본 `eArmor` — 적의 방어에서 깎인 만큼을 빼고 위아래로 조인다.
+        /// 아래 끝이 음수(-0.3)인 것은 방어를 0 밑으로 깎으면 **더 아프게** 맞기 때문이다.
+        /// </summary>
+        public float ArmorOf(BattleEnemy e)
         {
+            float a = e.Def.Armor - (e.BrkT > 0f ? e.Brk : 0f);
+            return Mathf2.Clamp(a, -0.3f, _cfg.armorMax);
+        }
+
+        /// <summary>원본 `dmgE` — 방어를 통과한 실제 피해. pierce 1 이면 방어를 무시한다.</summary>
+        public float AfterArmor(BattleEnemy e, float amount, float pierce)
+            => amount * (1f - ArmorOf(e) * (1f - pierce));
+
+        internal void Hurt(BattleEnemy e, float amount, string color = null, BattleUnit by = null,
+                           float pierce = 0f)
+        {
+            amount = AfterArmor(e, amount, pierce);
             // Credit only what landed: overkill would make the MVP share meaningless.
             if (by != null && amount > 0f && !e.Dead)
             {
@@ -997,12 +1016,30 @@ namespace DustZero.Core.Defense
         /// Silent damage, for the beams: they tick every frame, so routing them through Hurt
         /// would print a floating number sixty times a second. The tally is the same.
         /// </summary>
-        internal void Credit(BattleUnit by, BattleEnemy e, float amount)
+        internal void Credit(BattleUnit by, BattleEnemy e, float amount, float pierce = 0f)
         {
+            amount = AfterArmor(e, amount, pierce);
             if (amount <= 0f || e.Dead) return;
             by.Damage += Mathf2.Min(amount, Mathf2.Max(0f, e.Hp));
             if (e.Hp - amount <= 0f) by.Kills++;
             e.Hp -= amount;
+        }
+
+        /// <summary>원본 `stunE` — 보스는 config.stunBossMul 만큼만 걸린다.</summary>
+        internal void Stun(BattleEnemy e, float duration)
+        {
+            float mul = e.Def.Boss ? _cfg.stunBossMul : 1f;
+            e.StunT = Mathf2.Max(e.StunT, duration * mul);
+        }
+
+        /// <summary>
+        /// 방어 깎기. 이미 걸려 있으면 큰 쪽을 남기고, 꺼져 있었다면 새로 쓴다 —
+        /// 원본의 `e.brk=Math.max(e.brkT>0?e.brk:0, …)` 와 같은 뜻이다.
+        /// </summary>
+        internal void Break(BattleEnemy e, float amount, float duration)
+        {
+            e.Brk = Mathf2.Max(e.BrkT > 0f ? e.Brk : 0f, amount);
+            e.BrkT = Mathf2.Max(e.BrkT, duration);
         }
 
         internal void Slow(BattleEnemy e, float amount, float duration)

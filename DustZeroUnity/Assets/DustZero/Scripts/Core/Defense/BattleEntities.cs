@@ -1,4 +1,4 @@
-// Live state for a deployed appliance and an attacking stain.
+﻿// Live state for a deployed appliance and an attacking stain.
 //
 // Stat scaling is baked in at deploy time (level and limit-break multiply attack, heat
 // capacity and cooling), matching the original's deploy(): the table row is the base and
@@ -141,6 +141,13 @@ namespace DustZero.Core.Defense
 
         public float SlowT, SlowAmt;
         public float FrozenT;
+        /// <summary>
+        /// 기절. 얼음(FrozenT)과 똑같이 멈추게 하지만 거는 쪽이 달라 따로 센다 —
+        /// 원본도 `frozenT` 와 `stunT` 를 나눠 들고 있고, 보스는 1/3 만 걸린다.
+        /// </summary>
+        public float StunT;
+        /// <summary>깎인 방어량과 그 남은 시간. BrkT 가 0 이면 Brk 는 효력이 없다.</summary>
+        public float Brk, BrkT;
 
         /// <summary>The unit holding this enemy in place, if any.</summary>
         public BattleUnit BlockedBy;

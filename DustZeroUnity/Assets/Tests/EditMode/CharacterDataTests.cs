@@ -1,4 +1,4 @@
-// Adding an appliance must be a table edit, not a code edit.
+﻿// Adding an appliance must be a table edit, not a code edit.
 //
 // Two things used to be hardcoded per appliance: which sprite it draws and which skill kit it
 // runs. Both moved to 17_Character.xlsx (unit_art / unit_behaviour). These tests hold that
@@ -123,8 +123,9 @@ namespace DustZero.Tests
         {
             var kits = _db.UnitOrder.Select(id => _db.Units[id].DefenseBehaviour)
                 .Where(k => !string.IsNullOrEmpty(k)).Distinct().ToList();
-            CollectionAssert.IsSubsetOf(kits,
-                new[] { "vac", "melee", "fridge", "ac", "micro", "washer", "pc", "fan", "gen" },
+            // 목록을 여기에 또 적지 않는다. 검증기와 테스트에 같은 목록이 둘 있으면
+            // 새 동작을 넣을 때 한쪽만 고치고 다른 쪽에서 터진다 — 실제로 그랬다.
+            CollectionAssert.IsSubsetOf(kits, TableValidator.KnownDefenseKits,
                 "unit_behaviour.defense 에 코드가 모르는 동작 이름이 있습니다.");
             Assert.IsNotEmpty(kits);
         }

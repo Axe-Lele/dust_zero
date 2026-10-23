@@ -77,18 +77,26 @@
  },
  {
   "id": "blender",
-  "support": 0
+  "defense": "blender",
+  "support": 0,
+  "skp": "execHp,execBonus,grindItvMul,grindRadius"
  },
  {
   "id": "purifier",
-  "support": 0
+  "defense": "purifier",
+  "support": 0,
+  "skp": "airMul,tick,skillDmg,skillSlow,skillSlowSec"
  },
  {
   "id": "router",
-  "support": 0
+  "defense": "router",
+  "support": 0,
+  "skp": "chainN,chainRange,chainDecay,skillChainAdd,skillItvMul,stun"
  },
  {
   "id": "tv",
-  "support": 0
+  "defense": "tv",
+  "support": 0,
+  "skp": "adMin,adVuln,vulnSec,splashRadius"
  }
 ]

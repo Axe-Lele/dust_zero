@@ -81,6 +81,13 @@ namespace DustZero.Data
         /// <summary>Breakers ignore detours and push through whatever blocks them.</summary>
         public bool Breaker;
 
+        /// <summary>
+        /// 받는 피해를 이만큼 깎는다(0~1). 표에는 처음부터 있었지만 여기로 옮기지 않아
+        /// **전투에서 통째로 무시되고 있었다** — 비늘먼지 0.4, 보스 비늘 0.45 가 전부
+        /// 맨몸으로 맞고 있었다. 보일러의 방어 깎기와 스마트TV 의 광고 시간이 이것을 쓴다.
+        /// </summary>
+        public float Armor;
+
         public int LeakCost => Weight > 0 ? Weight : 1;
     }
 
@@ -768,6 +775,7 @@ namespace DustZero.Data
                     Look = e.look,
                     Boss = e.boss != 0,
                     Breaker = e.ai == breaker,
+                    Armor = e.armor,
                 };
             }
         }
