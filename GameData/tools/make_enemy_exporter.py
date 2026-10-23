@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""10.16-n 의 실제 drawEnemy 코드를 잘라내 적 스프라이트 내보내기 페이지를 만든다.
+"""활성 버전의 실제 drawEnemy 코드를 잘라내 적 스프라이트 내보내기 페이지를 만든다.
 
 기존 export.html 은 drawEnemy 를 **손으로 베낀 옛 사본**이라 생김새가 3종(dust/grease/
 mold)뿐이었다. 실제 10.16-n 은 11종(mite/hair/scale/rust/emperor/moth 추가)을 그리고
@@ -8,7 +8,13 @@ mold)뿐이었다. 실제 10.16-n 은 11종(mite/hair/scale/rust/emperor/moth �
 import io, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-SRC = os.path.join(ROOT, "GameData", "versions", "10.16-n", "index.html")
+
+# 버전을 적어 두면 안 된다. 예전에 10.16-n 이 박혀 있었고, 그 사본을 지운 뒤로
+# 이 도구는 조용히 못 쓰는 물건이 됐다. 기준은 ACTIVE-VERSION.txt 한 곳이다.
+VERSION = io.open(os.path.join(ROOT, "GameData", "ACTIVE-VERSION.txt"),
+                  encoding="utf-8").read().strip()
+VER_DIR = os.path.join(ROOT, "GameData", "versions", VERSION)
+SRC = os.path.join(VER_DIR, "index.html")
 OUT = os.path.join(ROOT, "GameData", "spriteexport", "enemies.html")
 
 NEEDED = ["rr", "circ", "ell", "eyes", "drawLook", "drawMarks", "drawEnemy", "hpBar"]
@@ -37,8 +43,8 @@ def main():
     parts = [grab(src, n) for n in NEEDED]
     newlook = re.search(r"^const NEW_LOOK=.*$", src, re.M).group(0)
 
-    rows = json.load(io.open(os.path.join(ROOT, "GameData", "versions", "10.16-n",
-                                          "data", "enemy.json"), encoding="utf-8"))
+    rows = json.load(io.open(os.path.join(VER_DIR, "data", "enemy.json"),
+                             encoding="utf-8"))
     if isinstance(rows, dict):
         rows = rows.get("rows", [])
     defs = [{"id": r["id"], "look": r["look"], "r": r["radius"],

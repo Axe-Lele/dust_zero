@@ -13,6 +13,10 @@ Claude Code Game Studios(CCGS)가 이미 적용되어 있다. 새 게임 기획�
 `production/session-state/active.md`를 읽고 실제 파일 상태와 대조하여 이어간다.
 `project.yaml`이 하네스 설정의 원본이다. 사용자 지시와 이 프로젝트의 요구사항이 일반 템플릿보다 우선한다.
 
+상류 웹 빌드에서 가져온 파일(`GameData/tools/*.py`, `tables/*.xlsx`, 스프라이트 내보내기 등)은
+버전을 소스에 박지 않고 `GameData/ACTIVE-VERSION.txt`를 거친다. 새 원본을 반영하는 작업은
+`python tools/check_upstream_drift.py`가 통과해야 끝난다. 까닭은 `.claude/rules/dustzero-project.md`.
+
 ## Actual workspace layout
 
 - Claude 작업 루트: `C:/Users/Master/Documents/Project/clean-girls`

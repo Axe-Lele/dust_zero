@@ -103,12 +103,17 @@ window.READY = true;
 
 async def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--version", default="10.16-n")
+    # 버전을 박아 두지 않는다. 기준은 GameData/ACTIVE-VERSION.txt 한 곳이다 —
+    # 여기 10.16-n 이 박혀 있던 동안 그 사본은 이미 지워져 있었다.
+    ap.add_argument("--version", default=None,
+                    help="version copy to render; defaults to GameData/ACTIVE-VERSION.txt")
     ap.add_argument("--size", type=int, default=256)
     ap.add_argument("--list", action="store_true", help="only report what would be rendered")
     args = ap.parse_args()
 
-    build = REPO / "GameData" / "versions" / args.version
+    version = args.version or (REPO / "GameData" / "ACTIVE-VERSION.txt").read_text(
+        encoding="utf-8").strip()
+    build = REPO / "GameData" / "versions" / version
     if not (build / "index.html").is_file():
         return int(bool(sys.stderr.write(f"no build at {build}\n")))
 

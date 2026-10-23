@@ -7,8 +7,8 @@ would silently break that mapping when the tables are ported.
 
 Run from the repo root:
 
-    python tools/convert_art.py                     # default: 10.16-n -> Unity
-    python tools/convert_art.py --version 10.16-n   # pick a different version copy
+    python tools/convert_art.py                     # ACTIVE-VERSION -> Unity
+    python tools/convert_art.py --version 10.19-e   # pick a different version copy
     python tools/convert_art.py --dry-run
 
 Source is a version copy under GameData/versions/, never the Downloads folder, so a
@@ -17,6 +17,16 @@ re-run reproduces the same bytes without depending on anything outside the repo.
 import argparse
 import pathlib
 import sys
+
+
+def active_version(repo: pathlib.Path) -> str:
+    """The version GameData is currently converted from.
+
+    Hardcoding a literal here is how this tool broke before: the default said
+    10.16-n long after the project had moved on, and the folder it named was
+    eventually deleted. The one source of truth is ACTIVE-VERSION.txt.
+    """
+    return (repo / "GameData" / "ACTIVE-VERSION.txt").read_text(encoding="utf-8").strip()
 
 try:
     from PIL import Image, features
@@ -50,14 +60,16 @@ def convert(src: pathlib.Path, dest: pathlib.Path, dry: bool) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--version", default="10.16-n")
+    ap.add_argument("--version", default=None,
+                    help="version copy to read; defaults to GameData/ACTIVE-VERSION.txt")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+    version = args.version or active_version(REPO)
 
     if not features.check("webp"):
         return int(bool(sys.stderr.write("Pillow was built without webp support.\n")))
 
-    root = REPO / "GameData" / "versions" / args.version / "art"
+    root = REPO / "GameData" / "versions" / version / "art"
     if not root.is_dir():
         return int(bool(sys.stderr.write(f"no art folder at {root}\n")))
 
