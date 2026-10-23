@@ -154,6 +154,20 @@ namespace DustZero.Core.Meta
         public int bgm = 60;
         /// <summary>1 silences the music without losing the volume setting.</summary>
         public int mute;
+
+        // ---- 10.22-b 설정. 원본 `S.opt.{vib,shk,dmg,fx}` 이고 1 이 켬이다.
+        /// <summary>진동.</summary>
+        public int vib = 1;
+        /// <summary>화면 흔들림.</summary>
+        public int shk = 1;
+        /// <summary>피해 숫자 띄우기.</summary>
+        public int dmg = 1;
+        /// <summary>
+        /// 효과 줄이기. 원본은 **문자열**로 `'lo'` 일 때만 줄인다(`S.opt.fx==='lo'`).
+        /// 다른 셋과 달리 0/1 이 아니므로 bool 로 바꾸지 않는다 — 나중에 'mid' 같은
+        /// 단계가 생겨도 그대로 읽힌다.
+        /// </summary>
+        public string fx = "";
     }
 
     /// <summary>
@@ -199,10 +213,125 @@ namespace DustZero.Core.Meta
         public int carry;
     }
 
+    /// <summary>
+    /// 가전 호감도. 원본은 `S.aff[가전id] = {xp, lv, day, talk, gift}` 로 들고 있다.
+    /// day 가 오늘이 아니면 talk·gift 는 0 으로 되돌아간다 — 날짜를 따로 세는 칸을
+    /// 두지 않고 "언제 센 것인지"를 같이 적는 방식이라, 자정에 돌릴 코드가 필요 없다.
+    /// </summary>
+    public sealed class Affinity
+    {
+        public int xp;
+        public int lv = 1;
+        /// <summary>talk·gift 를 센 날("yyyy-M-d").</summary>
+        public string day = "";
+        /// <summary>오늘 말 걸었으면 1(하루 한 번).</summary>
+        public int talk;
+        /// <summary>오늘 준 간식 수. 상한은 config.affGiftDaily.</summary>
+        public int gift;
+    }
+
+    /// <summary>먼지 도감. 원본 `S.codex = {seen, kill, got}`.</summary>
+    public sealed class CodexState
+    {
+        /// <summary>적 id -> 한 번이라도 봤나.</summary>
+        public Dictionary<string, bool> seen = new();
+        /// <summary>적 id -> 누적 처치 수.</summary>
+        public Dictionary<string, double> kill = new();
+        /// <summary>적 id -> 발견 보상(크리스탈)을 받았나.</summary>
+        public Dictionary<string, bool> got = new();
+    }
+
+    /// <summary>
+    /// 미션 한 묶음. 일일·주간은 `k` 가 날/주 열쇠이고 그것이 바뀌면 통째로 새로
+    /// 시작한다(원본 `msSt()` 가 하는 일). 이벤트 묶음은 열쇠 없이 회차마다 하나다.
+    /// </summary>
+    public sealed class MissionBucket
+    {
+        /// <summary>이 묶음이 속한 날/주 열쇠. 이벤트 묶음에서는 빈 문자열.</summary>
+        public string k = "";
+        /// <summary>센 값(미션 key -> 누적).</summary>
+        public Dictionary<string, double> c = new();
+        /// <summary>받은 미션 id.</summary>
+        public Dictionary<string, bool> got = new();
+        /// <summary>받은 상자 id.</summary>
+        public Dictionary<string, bool> ch = new();
+    }
+
+    /// <summary>업적은 날이 바뀌어도 이어지므로 받은 것만 들고 있으면 된다.</summary>
+    public sealed class AchieveState
+    {
+        public Dictionary<string, bool> got = new();
+    }
+
+    /// <summary>미션·업적·이벤트. 원본 `S.ms = {st, d, w, a:{got}, ev}`.</summary>
+    public sealed class MissionState
+    {
+        /// <summary>상태형 값(최고 기록처럼 누적이 아니라 '지금 얼마인지'를 보는 것).</summary>
+        public Dictionary<string, double> st = new();
+        public MissionBucket d = new();
+        public MissionBucket w = new();
+        public AchieveState a = new();
+        /// <summary>이벤트 id(회차 포함) -> 그 회차의 진행.</summary>
+        public Dictionary<string, MissionBucket> ev = new();
+    }
+
+    /// <summary>퀘스트. 원본 `S.quest = {got}` — 받은 퀘스트만 적는다(진행은 미션 쪽 카운터를 본다).</summary>
+    public sealed class QuestState
+    {
+        public Dictionary<string, bool> got = new();
+    }
+
+    /// <summary>가전 스토리 미니게임 기록.</summary>
+    public sealed class StoryGame
+    {
+        public double best;
+        /// <summary>한 번이라도 성공했나(첫 성공에만 호감도를 준다).</summary>
+        public int ok;
+    }
+
+    /// <summary>가전 스토리. 원본 `S.story = {tab, done, game}`.</summary>
+    public sealed class StoryState
+    {
+        /// <summary>가전 id -> 스토리 탭 첫 방문 크리스탈을 받았나.</summary>
+        public Dictionary<string, bool> tab = new();
+        /// <summary>에피소드 id -> 봤나.</summary>
+        public Dictionary<string, bool> done = new();
+        /// <summary>미니게임 id -> 기록.</summary>
+        public Dictionary<string, StoryGame> game = new();
+    }
+
+    /// <summary>우편 한 통. id 는 원본이 'm1', 'm2' 처럼 붙이므로 문자열이다.</summary>
+    public sealed class MailItem
+    {
+        public string id = "";
+        public string from = "";
+        public string title = "";
+        public string body = "";
+        /// <summary>첨부 보상 그룹. 빈 목록이면 읽기만 하는 안내문이다.</summary>
+        public List<int> groups = new();
+        /// <summary>받은 시각(Unix ms).</summary>
+        public long at;
+        /// <summary>사라질 시각(Unix ms). 0 이면 안 사라진다.</summary>
+        public long exp;
+        public int read;
+        /// <summary>보상을 받아 처리가 끝났나.</summary>
+        public int done;
+    }
+
+    /// <summary>우편함. 원본 `S.mail = {sent, list, seq}`.</summary>
+    public sealed class MailState
+    {
+        /// <summary>이미 보낸 우편의 열쇠(표 id 또는 'ev&lt;이벤트id&gt;'). 두 번 보내지 않으려고 둔다.</summary>
+        public Dictionary<string, bool> sent = new();
+        public List<MailItem> list = new();
+        /// <summary>다음 우편 번호. 지운 우편의 번호를 다시 쓰지 않는다.</summary>
+        public int seq;
+    }
+
     public sealed class SaveData
     {
         /// <summary>Current on-disk schema version. Raise it in lockstep with SaveMigrator.</summary>
-        public const int CurrentVersion = 7;
+        public const int CurrentVersion = 8;
 
         public int version = CurrentVersion;
 
@@ -263,6 +392,32 @@ namespace DustZero.Core.Meta
         public PoolState pool = new();
         public AudioOptions opt = new();
 
+        // ---- 10.22-g 에서 들어온 것들. 이름과 모양은 원본 `S.<키>` 를 그대로 따른다.
+
+        /// <summary>가전 id -> 호감도.</summary>
+        public Dictionary<string, Affinity> aff = new();
+        /// <summary>출석 팝업을 자동으로 띄운 날("yyyy-M-d"). 하루 한 번만 띄운다.</summary>
+        public string attAuto = "";
+        public CodexState codex = new();
+        /// <summary>SSR 없이 뽑은 횟수. config.gachaPity 에 닿으면 다음 1회가 확정이다.</summary>
+        public int gpity;
+        /// <summary>심화 모드에서 깬 가장 높은 order.</summary>
+        public int hbest;
+        /// <summary>심화 스테이지 id -> 별 수. 보통 스테이지의 stars 와 따로 센다.</summary>
+        public Dictionary<string, int> hstars = new();
+        /// <summary>리그 판 배속(1·2). 화면 설정이라 판이 끝나도 남는다.</summary>
+        public int lgSpeed = 1;
+        public MailState mail = new();
+        public MissionState ms = new();
+        public QuestState quest = new();
+        public StoryState story = new();
+        /// <summary>무료 첫 소환 안내를 썼나.</summary>
+        public int tutPull;
+        /// <summary>마지막 전투 안내가 뜬 전투 시각. 안내가 몰려 뜨는 것을 막는 데 쓴다.</summary>
+        public float tutLastT;
+        /// <summary>'새 콘텐츠 열림' 안내를 이미 본 콘텐츠 id.</summary>
+        public Dictionary<string, bool> unlSeen = new();
+
         public double Item(int id) => items.TryGetValue(id.ToString(), out var v) ? v : 0d;
 
         public void AddItem(int id, double n)
@@ -291,6 +446,14 @@ namespace DustZero.Core.Meta
         public int GuideStep(string flow) => guide.TryGetValue(flow, out var v) ? v : 0;
 
         public void AdvanceGuide(string flow) => guide[flow] = GuideStep(flow) + 1;
+
+        static MissionBucket CloneBucket(MissionBucket b) => new()
+        {
+            k = b?.k ?? "",
+            c = new Dictionary<string, double>(b?.c ?? new Dictionary<string, double>()),
+            got = new Dictionary<string, bool>(b?.got ?? new Dictionary<string, bool>()),
+            ch = new Dictionary<string, bool>(b?.ch ?? new Dictionary<string, bool>()),
+        };
 
         public SaveData Clone()
         {
@@ -358,6 +521,63 @@ namespace DustZero.Core.Meta
                 day = pool.day, pts = pool.pts, carry = pool.carry,
                 got = new List<string>(pool.got ?? new List<string>()),
             };
+            c.opt = new AudioOptions
+            {
+                bgm = opt.bgm, mute = opt.mute,
+                vib = opt.vib, shk = opt.shk, dmg = opt.dmg, fx = opt.fx,
+            };
+
+            // ---- 10.22-g. 얕게 베끼면 사본을 고칠 때 원본이 같이 바뀐다.
+            c.attAuto = attAuto; c.gpity = gpity; c.hbest = hbest;
+            c.lgSpeed = lgSpeed; c.tutPull = tutPull; c.tutLastT = tutLastT;
+            c.hstars = new Dictionary<string, int>(hstars ?? new Dictionary<string, int>());
+            c.unlSeen = new Dictionary<string, bool>(unlSeen ?? new Dictionary<string, bool>());
+            foreach (var kv in aff ?? new Dictionary<string, Affinity>())
+                c.aff[kv.Key] = new Affinity
+                {
+                    xp = kv.Value.xp, lv = kv.Value.lv, day = kv.Value.day,
+                    talk = kv.Value.talk, gift = kv.Value.gift,
+                };
+            c.codex = new CodexState
+            {
+                seen = new Dictionary<string, bool>(codex.seen ?? new Dictionary<string, bool>()),
+                kill = new Dictionary<string, double>(codex.kill ?? new Dictionary<string, double>()),
+                got = new Dictionary<string, bool>(codex.got ?? new Dictionary<string, bool>()),
+            };
+            c.quest = new QuestState
+            {
+                got = new Dictionary<string, bool>(quest.got ?? new Dictionary<string, bool>()),
+            };
+            c.story = new StoryState
+            {
+                tab = new Dictionary<string, bool>(story.tab ?? new Dictionary<string, bool>()),
+                done = new Dictionary<string, bool>(story.done ?? new Dictionary<string, bool>()),
+            };
+            foreach (var kv in story.game ?? new Dictionary<string, StoryGame>())
+                c.story.game[kv.Key] = new StoryGame { best = kv.Value.best, ok = kv.Value.ok };
+            c.mail = new MailState
+            {
+                seq = mail.seq,
+                sent = new Dictionary<string, bool>(mail.sent ?? new Dictionary<string, bool>()),
+            };
+            foreach (var m in mail.list ?? new List<MailItem>())
+                c.mail.list.Add(new MailItem
+                {
+                    id = m.id, from = m.from, title = m.title, body = m.body,
+                    at = m.at, exp = m.exp, read = m.read, done = m.done,
+                    groups = new List<int>(m.groups ?? new List<int>()),
+                });
+            c.ms = new MissionState
+            {
+                st = new Dictionary<string, double>(ms.st ?? new Dictionary<string, double>()),
+                d = CloneBucket(ms.d), w = CloneBucket(ms.w),
+                a = new AchieveState
+                {
+                    got = new Dictionary<string, bool>(ms.a?.got ?? new Dictionary<string, bool>()),
+                },
+            };
+            foreach (var kv in ms.ev ?? new Dictionary<string, MissionBucket>())
+                c.ms.ev[kv.Key] = CloneBucket(kv.Value);
             return c;
         }
     }

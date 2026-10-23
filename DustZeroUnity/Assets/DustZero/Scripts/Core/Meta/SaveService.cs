@@ -1,4 +1,4 @@
-// Durable save/load.
+﻿// Durable save/load.
 //
 // The browser original wrote straight to localStorage, where a half-written value is not a
 // failure mode. A file on disk is: a crash or a pulled power cable mid-write leaves a
@@ -318,6 +318,53 @@ namespace DustZero.Core.Meta
             data.coop ??= new CoopRecord();
             data.coop.best ??= new Dictionary<string, int>();
             if (string.IsNullOrEmpty(data.coop.last)) data.coop.last = "rush";
+
+            // v7 -> v8: 10.22-g 가 한꺼번에 들여온 것들 — 퀘스트 · 미션/업적 · 이벤트 ·
+            // 스토리 · 호감도 · 우편 · 먼지 도감 · 심화 모드 · 소환 천장.
+            //
+            // **옮길 값이 없다.** 전부 "아직 아무것도 안 했다"가 맞는 시작 상태이고,
+            // 그릇만 만들어 주면 된다. 억지로 과거를 추정해 채우면(예: best 로 퀘스트를
+            // 소급 완료 처리) 보상을 두 번 주거나 건너뛰게 된다 — 원본도 그렇게 하지 않는다.
+            //
+            // 딱 두 가지만 예외로 손을 댄다.
+            data.aff ??= new Dictionary<string, Affinity>();
+            data.codex ??= new CodexState();
+            data.codex.seen ??= new Dictionary<string, bool>();
+            data.codex.kill ??= new Dictionary<string, double>();
+            data.codex.got ??= new Dictionary<string, bool>();
+            data.hstars ??= new Dictionary<string, int>();
+            data.unlSeen ??= new Dictionary<string, bool>();
+            data.mail ??= new MailState();
+            data.mail.sent ??= new Dictionary<string, bool>();
+            data.mail.list ??= new List<MailItem>();
+            data.quest ??= new QuestState();
+            data.quest.got ??= new Dictionary<string, bool>();
+            data.story ??= new StoryState();
+            data.story.tab ??= new Dictionary<string, bool>();
+            data.story.done ??= new Dictionary<string, bool>();
+            data.story.game ??= new Dictionary<string, StoryGame>();
+            data.ms ??= new MissionState();
+            data.ms.st ??= new Dictionary<string, double>();
+            data.ms.d ??= new MissionBucket();
+            data.ms.w ??= new MissionBucket();
+            data.ms.a ??= new AchieveState();
+            data.ms.a.got ??= new Dictionary<string, bool>();
+            data.ms.ev ??= new Dictionary<string, MissionBucket>();
+            if (fromVersion < 8)
+            {
+                // ① 이미 연 콘텐츠의 '새 콘텐츠 열림' 안내는 다시 띄우지 않는다. 예전
+                //    파일은 그 콘텐츠를 이미 쓰고 있었으므로 지금 알리는 것은 거짓말이다.
+                foreach (var id in new[] { "survivor", "coop", "tower", "league" })
+                    data.unlSeen[id] = true;
+                // ② 리그 배속은 예전에 없던 칸이라 0 으로 읽힌다. 0 배속은 멈춤이므로
+                //    1 로 세운다. 다른 수치 칸은 0 이 곧 "아직 없음"이라 그대로 둔다.
+                if (data.lgSpeed < 1) data.lgSpeed = 1;
+            }
+            data.opt ??= new AudioOptions();
+
+            // 원본 `S.plog`(플레이 기록, 10.22-d)는 일부러 옮기지 않았다. 개발용 진단
+            // 기록이고 우리는 PlayMode 증거와 Unity 로그로 같은 일을 한다. 세이브에
+            // 넣으면 파일만 커진다. 필요해지면 그때 칸을 만든다.
 
             data.version = SaveData.CurrentVersion;
         }
