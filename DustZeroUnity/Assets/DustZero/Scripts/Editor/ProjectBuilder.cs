@@ -105,13 +105,34 @@ namespace DustZero.Editor
             {
                 Title = MakeFont("DoHyeon-Regular", "DustZero-Title"),
                 Body = MakeFont("IBMPlexSansKR-Regular", "DustZero-Body"),
-                Number = MakeFont("IBMPlexSansKR-SemiBold", "DustZero-Number"),
+                // 원본의 숫자 글꼴은 `--f-led:'Share Tech Mono'` 다. IBM Plex SemiBold 로
+                // 그리면 26px 에서 `100` 이 42.1 대신 46.8 로 **11% 넓어**, 내용에 맞춰
+                // 늘어나는 읽기칸이 그만큼 다음 칸을 민다(대청소 HUD 에서 4.7).
+                Number = MakeFont("ShareTechMono-Regular", "DustZero-Number"),
             };
 
             // Fall back to the body face so a missing file can never leave text invisible.
             fonts.Title ??= fonts.Body;
             fonts.Number ??= fonts.Body;
+
+            // Share Tech Mono 는 **라틴 전용**이다. 숫자 글꼴로 쓰는 칸에도 한글(`처치`,
+            // `코인 500`)과 ★ 가 섞여 들어오므로 본문 글꼴로 떨어뜨려 준다. 이걸 빼면
+            // 그 글자들이 두부로 나오는데, 빈 라벨 검사는 **빈 문자열만** 보므로 못 잡는다.
+            Fallback(fonts.Number, fonts.Body);
             return fonts;
+        }
+
+        /// <summary>글꼴 하나에 떨어질 글꼴을 하나만 달아 둔다(이미 같으면 아무것도 안 한다).</summary>
+        static void Fallback(TMP_FontAsset font, TMP_FontAsset fallback)
+        {
+            if (font == null || fallback == null || font == fallback) return;
+            font.fallbackFontAssetTable ??= new List<TMP_FontAsset>();
+            if (font.fallbackFontAssetTable.Count == 1
+                && font.fallbackFontAssetTable[0] == fallback) return;
+            font.fallbackFontAssetTable.Clear();
+            font.fallbackFontAssetTable.Add(fallback);
+            EditorUtility.SetDirty(font);
+            AssetDatabase.SaveAssets();
         }
 
         const string IconFolder = "Assets/DustZero/Art/Icon";
@@ -1145,9 +1166,11 @@ namespace DustZero.Editor
             // ---- rarity initials, top-left, no plate.
             var rarity = UiKit.Label("Rarity", rt, fonts.Number, UiTheme.Py(11f), UiTheme.RarityR,
                                      TextAlignmentOptions.TopLeft, out var rarRt, "");
+            // Share Tech Mono 는 같은 크기에서 글자가 칸 위쪽에 더 붙는다(IBM Plex 보다
+            // 2.7 높다). 원본 `.ut .rar` 의 ink 는 카드 위에서 5.0 이다.
             Anchor(rarRt, new Vector2(0f, 1f), new Vector2(0f, 1f),
-                   new Vector2(UiTheme.Px(6f), -UiTheme.Py(21f)),
-                   new Vector2(UiTheme.Px(46f), -UiTheme.Py(3f)));
+                   new Vector2(UiTheme.Px(6f), -UiTheme.Py(23.7f)),
+                   new Vector2(UiTheme.Px(46f), -UiTheme.Py(5.7f)));
 
             // ---- name and level line at the foot of the card.
             var name = UiKit.Label("Name", rt, fonts.Title, UiTheme.Py(14f), UiTheme.Ink,
@@ -5299,8 +5322,8 @@ namespace DustZero.Editor
                 // 29pt of rect for an 18pt line: a 25pt box is one pixel short and TMP
                 // drops the whole number rather than clipping it.
                 Anchor(vvRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                       new Vector2(UiTheme.Px(10f), -UiTheme.Py(53f)),
-                       new Vector2(-UiTheme.Px(10f), -UiTheme.Py(24f)));
+                       new Vector2(UiTheme.Px(10f), -UiTheme.Py(56.4f)),
+                       new Vector2(-UiTheme.Px(10f), -UiTheme.Py(27.4f)));
                 statValues[i] = v;
             }
 

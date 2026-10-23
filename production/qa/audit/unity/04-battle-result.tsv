@@ -1,6 +1,6 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Battle/Hud	16.0	12.0	398.0	113.0	#1D2226FF			
-SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	25.0	30.0	#8D99A2FF	11.5	1-1	28.0,28.4,18.4,17.3
+SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	25.0	30.0	#8D99A2FF	11.5	1-1	28.0,30.5,18.6,13.0
 SafeArea/Column/Battle/Hud/Top/StageName	55.1	22.0	159.9	30.0	#E8EDF0FF	19.0	거실	55.1,27.5,29.2,19.0
 SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	55.1	22.0	159.9	30.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Top/Ctrls/Speed	241.6	12.7	33.2	48.5	#1D2226FF			
@@ -10,14 +10,14 @@ SafeArea/Column/Battle/Hud/Top/Ctrls/Pause/Content/Label	288.9	18.5	47.3	37.0	#E
 SafeArea/Column/Battle/Hud/Top/Ctrls/Exit	350.2	12.7	51.8	48.5	#1D2226FF			
 SafeArea/Column/Battle/Hud/Top/Ctrls/Exit/Content/Label	358.2	18.5	35.8	37.0	#E8EDF0FF	12.0	나가기	359.2,28.0,34.6,18.0
 SafeArea/Column/Battle/Hud/Readouts/Life/Label	28.0	69.0	30.0	15.0	#8D99A2FF	10.0	청결도	28.0,69.0,29.2,15.0
-SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	77.5	30.0	44.0	#FF6B5EFF	26.0	0	28.0,80.0,15.6,39.0
+SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	77.5	30.0	44.0	#FF6B5EFF	26.0	0	28.0,84.8,14.0,29.3
 SafeArea/Column/Battle/Hud/Readouts/Power/Label	70.0	62.0	286.0	15.0	#8D99A2FF	10.0	전력 · 초당 +195W	70.0,62.0,89.3,15.0
 SafeArea/Column/Battle/Hud/Readouts/Power/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	70.0	62.0	286.0	15.0	#FFFFFFFF			
-SafeArea/Column/Battle/Hud/Readouts/Power/Value	70.0	70.5	286.0	44.0	#FF9A3CFF	26.0	1,600W	70.0,73.0,94.9,39.0
+SafeArea/Column/Battle/Hud/Readouts/Power/Value	70.0	70.5	286.0	44.0	#FF9A3CFF	26.0	1,600W	70.0,77.8,84.2,29.3
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter	70.0	109.0	286.0	4.0	#5A3A1EFF			
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	70.0	109.0	49.3	4.0	#FF9A3CFF			
 SafeArea/Column/Battle/Hud/Readouts/Remain/Label	368.0	69.0	34.0	15.0	#8D99A2FF	10.0	남은 적	370.5,69.0,32.3,15.0
-SafeArea/Column/Battle/Hud/Readouts/Remain/Value	368.0	77.5	34.0	44.0	#FF9A3CFF	26.0	11	370.8,80.0,31.2,39.0
+SafeArea/Column/Battle/Hud/Readouts/Remain/Value	368.0	77.5	34.0	44.0	#FF9A3CFF	26.0	11	373.9,84.8,28.1,29.3
 SafeArea/Column/Battle/DeckBar/Slots/Count	16.0	713.0	199.0	32.0	#5D6871FF	12.0	배치 4/8	16.0,720.0,43.2,18.0
 SafeArea/Column/Battle/DeckBar/Slots/Multitap	255.5	713.0	158.5	32.0	#E3E8ECFF			
 SafeArea/Column/Battle/DeckBar/Slots/Multitap/Line	255.5	713.0	158.5	32.0	#C7D0D6FF			
@@ -30,7 +30,7 @@ SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Rarity	17.5	754.5	92.7	5
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Portrait	42.9	760.0	42.0	42.0	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name	18.0	800.5	91.8	18.0	#1D2226FF	13.0	청소기	48.9,803.0,30.0,13.0
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	18.0	800.5	91.8	18.0	#FFFFFFFF			
-SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	18.0	818.5	91.8	22.0	#1D2226FF	12.0	800W	47.4,820.5,33.0,18.0
+SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	18.0	818.5	91.8	22.0	#1D2226FF	12.0	800W	50.9,822.7,25.9,13.5
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Charge	17.5	836.4	92.7	3.0	#FF9A3CFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Selected	14.0	751.0	99.7	91.9	#3D8BD9FF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)	116.8	753.0	95.8	87.9	#F7F9FAFF			
@@ -39,7 +39,7 @@ SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Rarity	118.3	754.5	92.7	
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Portrait	143.6	760.0	42.0	42.0	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name	118.8	800.5	91.8	18.0	#1D2226FF	13.0	에어컨	149.6,803.0,30.0,13.0
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	118.8	800.5	91.8	18.0	#FFFFFFFF			
-SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	118.8	818.5	91.8	22.0	#1D2226FF	12.0	1,200W	142.7,820.5,43.8,18.0
+SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	118.8	818.5	91.8	22.0	#1D2226FF	12.0	1,200W	145.2,822.7,38.9,13.5
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Charge	118.3	836.4	92.7	3.0	#FF9A3CFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Selected	114.8	751.0	99.8	91.9	#3D8BD9FF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)	217.5	753.0	95.7	87.9	#F7F9FAFF			
@@ -48,7 +48,7 @@ SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Rarity	219.0	754.5	92.8	
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Portrait	244.4	760.0	42.0	42.0	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name	219.5	800.5	91.7	18.0	#1D2226FF	13.0	선풍기	250.4,803.0,30.0,13.0
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	219.5	800.5	91.7	18.0	#FFFFFFFF			
-SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	219.5	818.5	91.7	22.0	#1D2226FF	12.0	900W	248.9,820.5,33.0,18.0
+SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	219.5	818.5	91.7	22.0	#1D2226FF	12.0	900W	252.4,822.7,25.9,13.5
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Charge	219.0	836.4	92.8	3.0	#FF9A3CFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Selected	215.5	751.0	99.7	91.9	#3D8BD9FF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)	318.3	753.0	95.7	87.9	#F7F9FAFF			
@@ -57,7 +57,7 @@ SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Rarity	319.8	754.5	92.8	
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Portrait	345.1	760.0	42.0	42.0	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name	320.3	800.5	91.7	18.0	#1D2226FF	13.0	발전기	351.1,803.0,30.0,13.0
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	320.3	800.5	91.7	18.0	#FFFFFFFF			
-SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	320.3	818.5	91.7	22.0	#1D2226FF	12.0	600W	349.6,820.5,33.0,18.0
+SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Cost	320.3	818.5	91.7	22.0	#1D2226FF	12.0	600W	353.2,822.7,25.9,13.5
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Charge	319.8	836.4	92.8	3.0	#FF9A3CFF			
 SafeArea/Column/Battle/DeckBar/DeckRoot/DeckCard(Clone)/Selected	316.3	751.0	99.7	91.9	#3D8BD9FF			
 SafeArea/Column/Battle/DeckBar/Hint	16.0	850.9	398.0	19.2	#5D6871FF	12.0	카드를 고른 뒤 빛나는 칸을 눌러 배치하세요. 스킬은 자동 발동됩니다.	49.2,851.5,331.7,18.0
@@ -68,12 +68,12 @@ SafeArea/Column/Battle/Result/Shade/Card/TitleRow/Title	68.0	288.2	294.1	42.0	#1
 SafeArea/Column/Battle/Result/Shade/Card/TitleRow/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	288.2	294.1	42.0	#FFFFFFFF			
 SafeArea/Column/Battle/Result/Shade/Card/BodyRow/Body	68.0	340.2	294.1	76.0	#5D6871FF	13.0	청결도가 0이 됐어요. 자동 청소로 모은 재화로 가전을 육성하고 다시 도	68.0,340.2,291.0,40.6
 SafeArea/Column/Battle/Result/Shade/Card/BodyRow/Body/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	340.2	294.1	76.0	#FFFFFFFF			
-SafeArea/Column/Battle/Result/Shade/Card/Stats/처치/Value	68.0	426.2	87.4	30.0	#1D2226FF	20.0	1	68.0,426.2,12.0,30.0
+SafeArea/Column/Battle/Result/Shade/Card/Stats/처치/Value	68.0	426.2	87.4	30.0	#1D2226FF	20.0	1	68.0,429.9,10.8,22.5
 SafeArea/Column/Battle/Result/Shade/Card/Stats/처치/Caption	68.0	456.2	87.4	22.0	#5D6871FF	13.0	처치	68.0,457.5,23.2,19.5
 SafeArea/Column/Battle/Result/Shade/Card/Stats/처치/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	456.2	87.4	22.0	#FFFFFFFF			
-SafeArea/Column/Battle/Result/Shade/Card/Stats/청결도/Value	171.3	426.2	87.4	30.0	#1D2226FF	20.0	0	171.3,426.2,12.0,30.0
+SafeArea/Column/Battle/Result/Shade/Card/Stats/청결도/Value	171.3	426.2	87.4	30.0	#1D2226FF	20.0	0	171.3,429.9,10.8,22.5
 SafeArea/Column/Battle/Result/Shade/Card/Stats/청결도/Caption	171.3	456.2	87.4	22.0	#5D6871FF	13.0	청결도	171.3,457.5,34.8,19.5
-SafeArea/Column/Battle/Result/Shade/Card/Stats/시간/Value	274.7	426.2	87.4	30.0	#1D2226FF	20.0	26s	274.7,426.2,34.0,30.0
+SafeArea/Column/Battle/Result/Shade/Card/Stats/시간/Value	274.7	426.2	87.4	30.0	#1D2226FF	20.0	26s	274.7,429.9,32.4,22.5
 SafeArea/Column/Battle/Result/Shade/Card/Stats/시간/Caption	274.7	456.2	87.4	22.0	#5D6871FF	13.0	시간	274.7,457.5,23.2,19.5
 SafeArea/Column/Battle/Result/Shade/Card/Stats/시간/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	274.7	456.2	87.4	22.0	#FFFFFFFF			
 SafeArea/Column/Battle/Result/Shade/Card/Mvp	68.0	544.2	294.1	44.0	#E6EAEDFF			

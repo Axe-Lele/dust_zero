@@ -1,4 +1,4 @@
-// 글꼴 자산이 **의도한 ttf 로** 만들어졌는지 본다.
+﻿// 글꼴 자산이 **의도한 ttf 로** 만들어졌는지 본다.
 //
 // 왜 필요한가: ProjectBuilder 는 자산이 이미 있으면 그냥 돌려줬다. 그래서 셋 다
 // DoHyeon 으로 만들던 시절의 자산이 남아, Body/Number 를 IBM Plex 로 바꾼 뒤에도
@@ -18,11 +18,12 @@ namespace DustZero.Tests
         // 원본 10.16-n 의 배정. index.html 의 computed style 에서 읽었다.
         //   본문·탭    IBM Plex Sans KR   (body 기본값, .tab)
         //   제목·버튼  Do Hyeon           (span.brand, #btnAttend > b)
+        //   숫자·LED   Share Tech Mono    (--f-led; .led, .srow .no, .parts b …)
         static readonly Dictionary<string, string> Expected = new()
         {
             { "DustZero-Title SDF", "DoHyeon-Regular" },
             { "DustZero-Body SDF", "IBMPlexSansKR-Regular" },
-            { "DustZero-Number SDF", "IBMPlexSansKR-SemiBold" },
+            { "DustZero-Number SDF", "ShareTechMono-Regular" },
         };
 
         [Test]
@@ -38,6 +39,20 @@ namespace DustZero.Tests
                 Assert.AreEqual(ttfName, font.sourceFontFile.name,
                     $"{assetName} 가 엉뚱한 ttf 로 만들어져 있습니다.");
             }
+        }
+
+        [Test]
+        public void Number_FallsBackToTheBodyFaceForHangul()
+        {
+            // Share Tech Mono 는 라틴 전용이다. 숫자 칸에도 한글과 ★ 가 섞여 들어오므로
+            // 본문 글꼴이 뒤에 달려 있어야 한다. 빠지면 두부가 나오는데, 빈 라벨 검사는
+            // **빈 문자열만** 보기 때문에 잡히지 않는다.
+            var number = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>($"{Folder}/DustZero-Number SDF.asset");
+            var body = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>($"{Folder}/DustZero-Body SDF.asset");
+            Assert.IsNotNull(number); Assert.IsNotNull(body);
+            Assert.IsNotNull(number.fallbackFontAssetTable, "숫자 글꼴에 떨어질 글꼴이 없습니다.");
+            CollectionAssert.Contains(number.fallbackFontAssetTable, body,
+                "숫자 글꼴이 본문 글꼴로 떨어지지 않습니다 — 한글이 두부로 나옵니다.");
         }
 
         [Test]

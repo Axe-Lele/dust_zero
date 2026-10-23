@@ -111,9 +111,14 @@ if (!S.surv || S.surv.day !== k)
 | 폰트 | 용도 | 라이선스 |
 |---|---|---|
 | Do Hyeon | 제목 | SIL Open Font License 1.1 |
-| IBM Plex Sans KR (Regular/SemiBold) | 본문·숫자 | SIL Open Font License 1.1 |
+| IBM Plex Sans KR (Regular) | 본문 | SIL Open Font License 1.1 |
+| Share Tech Mono | 숫자·LED | SIL Open Font License 1.1 (Carrois Type Design) |
 
 출처: Google Fonts (`github.com/google/fonts`). 라이선스 원문은 `Assets/DustZero/Fonts/OFL-*.txt`에 포함했습니다.
+원본 `index.html`의 `--f-led`가 Share Tech Mono입니다. IBM Plex SemiBold로 그리면 26px에서
+`100`이 42.1 대신 46.8로 11% 넓어져, 내용에 맞춰 늘어나는 읽기칸이 다음 칸을 밀었습니다.
+Share Tech Mono는 **라틴 전용**이라 TMP 자산에 본문 글꼴을 fallback으로 달아 두었습니다
+(`ProjectBuilder.Fallback`). IBMPlexSansKR-SemiBold.ttf는 쓰지 않지만 보존합니다.
 TMP 폰트 에셋은 **Dynamic 아틀라스**입니다. 한글 글리프 수가 많아 미리 구울 수 없기 때문입니다.
 
 ### DOTween

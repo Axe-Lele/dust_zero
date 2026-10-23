@@ -13,8 +13,9 @@ SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)	15.5	
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge	197.5	172.4	35.0	24.3	#F2C14EFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text	205.3	174.3	19.5	20.4	#1D2226FF	10.5	무료	205.3,176.6,20.2,15.7
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	205.3	174.3	19.5	20.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	133.0	209.6	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Amount	177.0	211.4	120.1	36.4	#3D8BD9FF	24.0	크리스탈 30	177.0,211.6,120.1,36.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	130.7	209.6	40.0	40.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Amount	174.7	211.4	124.5	36.4	#3D8BD9FF	24.0	크리스탈 30	174.7,211.6,124.5,36.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Amount/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	174.7	211.4	124.5	36.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	27.2	262.6	375.6	21.4	#1D2226FF	14.0	무료 크리스탈	27.2,262.6,68.7,14.0
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.2	262.6	375.6	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Meta	27.2	290.0	375.6	16.5	#5D6871FF	11.0	오늘 3/3회 남음	27.2,290.0,71.7,16.5
@@ -117,10 +118,10 @@ SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트
 SafeArea/Column/Lobby/TopBar/Brand/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	30.0	32.8	170.0	36.4	#FFFFFFFF			
 SafeArea/Column/Lobby/TopBar/Coin/Caption	198.0	24.0	78.0	15.0	#8D99A2FF	10.0	코인	198.0,24.0,17.8,15.0
 SafeArea/Column/Lobby/TopBar/Coin/Icon	198.0	44.0	20.0	20.0	#FFFFFFFF			
-SafeArea/Column/Lobby/TopBar/Coin/Value	222.0	33.9	54.0	30.1	#FF9A3CFF	20.0	2,000	222.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/Coin/Value	222.0	33.9	54.0	30.1	#FF9A3CFF	20.0	2,000	222.0,37.7,54.0,22.5
 SafeArea/Column/Lobby/TopBar/Crystal/Caption	292.0	24.0	108.0	15.0	#8D99A2FF	10.0	크리스탈	292.0,24.0,35.7,15.0
 SafeArea/Column/Lobby/TopBar/Crystal/Icon	292.0	44.0	20.0	20.0	#FFFFFFFF			
-SafeArea/Column/Lobby/TopBar/Crystal/Value	316.0	33.9	84.0	30.1	#7FC4F5FF	20.0	1,500	316.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/Crystal/Value	316.0	33.9	84.0	30.1	#7FC4F5FF	20.0	1,500	316.0,37.7,54.0,22.5
 SafeArea/Column/Lobby/TopBar/TopUp	378.0	33.0	22.0	22.0	#7FC4F5FF			
 SafeArea/Column/Lobby/TopBar/TopUp/Plus	378.0	33.0	22.0	22.0	#1D2226FF	11.4	+	385.6,35.4,6.9,17.2
 SafeArea/Column/Lobby/BottomNav	0.0	854.0	430.0	78.0	#1D2226FF			

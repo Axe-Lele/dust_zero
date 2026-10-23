@@ -1,6 +1,6 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/League/Hud	16.0	12.0	398.0	106.0	#1D2226FF			
-SafeArea/Column/League/Hud/Top/Kicker	28.0	22.0	224.4	16.5	#8D99A2FF	11.0	LEAGUE	28.0,22.0,45.4,16.5
+SafeArea/Column/League/Hud/Top/Kicker	28.0	22.0	224.4	16.5	#8D99A2FF	11.0	LEAGUE	28.0,22.0,39.6,12.4
 SafeArea/Column/League/Hud/Top/Chip	28.0	36.0	224.4	22.0	#E8EDF0FF	17.0		
 SafeArea/Column/League/Hud/Top/Chip/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	28.0	36.0	224.4	22.0	#FFFFFFFF			
 SafeArea/Column/League/Hud/Top/Ctrls/Speed	292.0	12.7	44.0	48.5	#2A3136FF			
@@ -8,11 +8,11 @@ SafeArea/Column/League/Hud/Top/Ctrls/Speed/Content/Label	300.0	18.5	28.0	37.0	#E
 SafeArea/Column/League/Hud/Top/Ctrls/Exit	342.0	12.7	60.0	48.5	#2A3136FF			
 SafeArea/Column/League/Hud/Top/Ctrls/Exit/Content/Label	350.0	18.5	44.0	37.0	#E8EDF0FF	12.0	나가기	355.9,28.0,32.1,18.0
 SafeArea/Column/League/Hud/Readouts/Life/Label	28.0	64.0	112.2	15.0	#8D99A2FF	10.0	청결도	28.0,64.0,29.2,15.0
-SafeArea/Column/League/Hud/Readouts/Life/Value	28.0	81.0	112.2	36.0	#FF6B5EFF	24.0	0	28.0,81.0,14.4,36.0
+SafeArea/Column/League/Hud/Readouts/Life/Value	28.0	81.0	112.2	36.0	#FF6B5EFF	24.0	0	28.0,85.5,13.0,27.0
 SafeArea/Column/League/Hud/Readouts/Gold/Label	140.2	64.0	112.2	15.0	#8D99A2FF	10.0	코인	140.2,64.0,19.4,15.0
-SafeArea/Column/League/Hud/Readouts/Gold/Value	140.2	81.0	112.2	36.0	#FF9A3CFF	24.0	0	140.2,81.0,14.4,36.0
+SafeArea/Column/League/Hud/Readouts/Gold/Value	140.2	81.0	112.2	36.0	#FF9A3CFF	24.0	0	140.2,85.5,13.0,27.0
 SafeArea/Column/League/Hud/Readouts/Level/Label	252.4	64.0	149.6	15.0	#8D99A2FF	10.0	레벨 3	375.8,64.0,26.2,15.0
-SafeArea/Column/League/Hud/Readouts/Level/Xp	252.4	81.0	149.6	28.0	#FF9A3CFF	18.0	0/4	372.5,81.5,29.5,27.0
+SafeArea/Column/League/Hud/Readouts/Level/Xp	252.4	81.0	149.6	28.0	#FF9A3CFF	18.0	0/4	372.8,84.9,29.2,20.3
 SafeArea/Column/League/Hud/Readouts/Level/Meter	252.4	104.0	149.6	4.0	#5A3A1EFF			
 SafeArea/Column/League/Hud/Readouts/Level/Meter/Mask/Fill	252.4	104.0	149.6	4.0	#FF9A3CFF			
 SafeArea/Column/League/Info/Left	16.0	529.0	258.7	18.0	#5D6871FF	12.0		

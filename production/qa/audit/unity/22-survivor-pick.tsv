@@ -13,18 +13,18 @@ SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)	32.0	314.9	85.5	1
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic	33.0	315.9	83.5	92.0	#E3E8ECFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic/Portrait	34.8	321.9	80.0	80.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Outline	32.0	314.9	85.5	129.3	#C7D0D6FF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Rarity	38.0	317.9	40.0	18.0	#7D8B96FF	11.0	R	38.0,317.9,7.3,16.5
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Rarity	38.0	320.6	40.0	18.0	#7D8B96FF	11.0	R	38.0,320.6,5.9,12.4
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name	34.0	408.9	81.5	19.0	#1D2226FF	14.0	청소기	58.6,411.4,32.3,14.0
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	34.0	408.9	81.5	19.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	34.0	426.9	81.5	19.0	#5D6871FF	10.5	Lv.1	65.1,428.5,19.4,15.8
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	34.0	426.9	81.5	19.0	#5D6871FF	10.5	Lv.1	63.4,430.5,22.7,11.8
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)	125.5	314.9	85.5	129.3	#F7F9FAFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic	126.5	315.9	83.5	92.0	#DCE9F7FF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic/Portrait	128.3	321.9	80.0	80.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Outline	125.5	314.9	85.5	129.3	#C7D0D6FF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Rarity	131.5	317.9	40.0	18.0	#3D8BD9FF	11.0	SR	131.5,317.9,14.0,16.5
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Rarity	131.5	320.6	40.0	18.0	#3D8BD9FF	11.0	SR	131.5,320.6,11.9,12.4
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name	127.5	408.9	81.5	19.0	#1D2226FF	14.0	에어컨	152.1,411.4,32.3,14.0
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	127.5	408.9	81.5	19.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	127.5	426.9	81.5	19.0	#5D6871FF	10.5	Lv.1	158.6,428.5,19.4,15.8
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	127.5	426.9	81.5	19.0	#5D6871FF	10.5	Lv.1	156.9,430.5,22.7,11.8
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/DeckTag	178.8	318.9	28.3	16.9	#1D2226FF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/DeckTag/Text	183.6	319.9	18.5	15.0	#F7F9FAFF	10.0	리더	183.6,319.9,19.2,15.0
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/DeckTag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	183.6	319.9	18.5	15.0	#FFFFFFFF			

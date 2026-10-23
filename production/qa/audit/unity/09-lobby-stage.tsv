@@ -7,7 +7,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count	146.6	92.6	269.8	2
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	146.6	92.6	269.8	27.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Plate	13.6	131.6	402.8	68.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Caption	27.6	143.6	86.0	15.0	#8D99A2FF	10.0	최고 스테이지	27.6,143.6,55.9,15.0
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Best	27.6	154.8	86.0	39.3	#FF9A3CFF	26.0	1-2	27.6,155.0,41.7,39.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Best	27.6	154.8	86.0	39.3	#FF9A3CFF	26.0	1-2	27.6,159.8,42.1,29.3
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Next	117.6	141.6	284.8	48.0	#E8EDF0FF	12.5	다음 1-3 클리어 시 시급 코인 660, 부품 4, 크리스탈 5	117.6,156.2,272.2,18.7
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Progress/Next/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	117.6	141.6	284.8	48.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/PowerSkills/Card	13.6	211.6	402.8	171.0	#F7F9FAFF			
@@ -245,10 +245,10 @@ SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트
 SafeArea/Column/Lobby/TopBar/Brand/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	30.0	32.8	170.0	36.4	#FFFFFFFF			
 SafeArea/Column/Lobby/TopBar/Coin/Caption	198.0	24.0	78.0	15.0	#8D99A2FF	10.0	코인	198.0,24.0,17.8,15.0
 SafeArea/Column/Lobby/TopBar/Coin/Icon	198.0	44.0	20.0	20.0	#FFFFFFFF			
-SafeArea/Column/Lobby/TopBar/Coin/Value	222.0	33.9	54.0	30.1	#FF9A3CFF	20.0	2,000	222.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/Coin/Value	222.0	33.9	54.0	30.1	#FF9A3CFF	20.0	2,000	222.0,37.7,54.0,22.5
 SafeArea/Column/Lobby/TopBar/Crystal/Caption	292.0	24.0	108.0	15.0	#8D99A2FF	10.0	크리스탈	292.0,24.0,35.7,15.0
 SafeArea/Column/Lobby/TopBar/Crystal/Icon	292.0	44.0	20.0	20.0	#FFFFFFFF			
-SafeArea/Column/Lobby/TopBar/Crystal/Value	316.0	33.9	84.0	30.1	#7FC4F5FF	20.0	1,500	316.0,34.0,54.0,30.0
+SafeArea/Column/Lobby/TopBar/Crystal/Value	316.0	33.9	84.0	30.1	#7FC4F5FF	20.0	1,500	316.0,37.7,54.0,22.5
 SafeArea/Column/Lobby/TopBar/TopUp	378.0	33.0	22.0	22.0	#7FC4F5FF			
 SafeArea/Column/Lobby/TopBar/TopUp/Plus	378.0	33.0	22.0	22.0	#1D2226FF	11.4	+	385.6,35.4,6.9,17.2
 SafeArea/Column/Lobby/BottomNav	0.0	854.0	430.0	78.0	#1D2226FF			
