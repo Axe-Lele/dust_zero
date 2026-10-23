@@ -15,6 +15,7 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0	29.5	214.6	
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0/Line	29.5	214.6	119.6	68.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0/Content/Label	37.5	222.6	103.6	52.0	#1D2226FF	11.0		
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0/Pts	29.5	221.6	119.6	17.0	#5D6871FF	11.0	30점	77.8,221.8,23.0,16.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0/Pts/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	221.6	119.6	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0/Crystal	29.5	238.6	119.6	21.0	#1D2226FF	14.0	40	81.8,241.2,15.1,15.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box0/State	29.5	259.6	119.6	17.0	#5D6871FF	11.0	—	85.1,259.8,8.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1	155.2	214.6	119.6	68.0	#F7F9FAFF			
@@ -28,11 +29,12 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2	280.8	214.6
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Line	280.8	214.6	119.6	68.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Content/Label	288.8	222.6	103.6	52.0	#1D2226FF	11.0		
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Pts	280.8	221.6	119.6	17.0	#5D6871FF	11.0	100점	325.8,221.8,29.6,16.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Pts/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	280.8	221.6	119.6	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Crystal	280.8	238.6	119.6	21.0	#1D2226FF	14.0	60	333.1,241.2,15.1,15.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/State	280.8	259.6	119.6	17.0	#5D6871FF	11.0	—	336.4,259.8,8.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note	29.5	290.6	370.9	42.0	#5D6871FF	11.5	어디서든 모아요 · 대청소 버틴 1분 +10 · 협동 막은 웨이브 +3 	29.5,290.6,370.3,34.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	290.6	370.9	42.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	290.6	370.9	42.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	290.6	370.9	42.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard	15.5	352.6	398.9	336.7	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Icon	29.5	368.4	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Kicker	83.5	366.6	316.9	17.0	#FF9A3CFF	11.0	무한 버티기	83.5,366.6,51.7,16.5
@@ -43,13 +45,12 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Leaders/Le
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Leaders/Leader_robot	314.5	370.4	40.0	40.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Leaders/Leader_ac	360.5	370.4	40.0	40.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead	29.5	424.2	370.9	20.9	#E8EDF0FF	13.5	리더 하나를 움직여 쓰러질 때까지 버텨요. 공격은 자동이에요.	29.5,424.2,330.7,20.3
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	424.2	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	424.2	370.9	20.9	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	424.2	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule0	29.5	455.1	370.9	19.0	#8D99A2FF	12.5	· 성장 레벨업마다 편성 가전이 동료로 합류 · 짝이 맞으면 협동기	29.5,455.1,316.4,18.7
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	455.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	455.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule1	29.5	478.1	370.9	19.0	#8D99A2FF	12.5	· 위험 2분마다 보스 · 2분 30초부터 적이 계속 강해짐	29.5,478.1,265.4,18.7
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	478.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	478.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat0	29.5	507.1	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat0/Key	39.5	515.1	98.0	17.0	#8D99A2FF	11.0	청소 일지	39.5,515.1,41.8,16.5
@@ -65,21 +66,20 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub/Sub	29.5	5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	572.1	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	572.1	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub2/Sub2	29.5	600.7	370.9	18.6	#8D99A2FF	12.0	부품·코인·조각 보상 판 3/3 남음 · 30초 미만은 판 수를 쓰지 않	29.5,601.0,322.4,18.0
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub2/Sub2/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	600.7	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub2/Sub2/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	600.7	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go	29.5	629.3	370.9	46.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Label	37.5	637.3	354.9	30.0	#E8EDF0FF	15.0	대청소 시작	179.8,641.0,70.4,22.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Label	37.5	637.3	354.9	30.0	#8D99A2FF	15.0	1-1을 클리어하면 대청소 모드가 열려요.	93.5,641.0,242.9,22.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.5	637.3	354.9	30.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Lock	39.5	641.3	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop	15.5	701.3	398.9	300.4	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Icon	29.5	717.1	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Kicker	99.5	715.3	300.9	18.0	#FF9A3CFF	11.0	봇 파트너 · 랜덤 소환	99.5,715.3,92.5,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	99.5	715.3	300.9	18.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	99.5	715.3	300.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Title	99.5	734.3	300.9	31.0	#E8EDF0FF	26.0	협동 청소	99.5,734.3,87.7,26.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	99.5	734.3	300.9	31.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Lead/Lead	29.5	772.9	370.9	41.8	#E8EDF0FF	13.5	칸을 골라 가전을 무작위로 소환하고, 같은 ★ 두 대를 합쳐 키워요. 위	29.5,772.9,368.9,40.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	772.9	370.9	41.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule0	29.5	824.7	370.9	19.0	#8D99A2FF	12.5	· 파트너 급한 청소기(소환 몰빵형) · 느긋한 냉장고(합치기·강화형)	29.5,824.7,328.3,18.8
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	824.7	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	824.7	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule1	29.5	847.7	370.9	19.0	#8D99A2FF	12.5	· 보상 버틴 웨이브마다 청소 일지 +3 · 코인	29.5,847.7,214.0,18.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	847.7	370.9	19.0	#FFFFFFFF			
@@ -99,8 +99,7 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Stats/Stat2	281.5	876.
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Stats/Stat2/Key	291.5	884.7	98.0	17.0	#8D99A2FF	11.0	청소 일지	291.5,884.7,41.8,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Stats/Stat2/Value	291.5	903.7	98.0	29.0	#FF9A3CFF	18.0	0/100	291.5,903.7,48.6,20.3
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Go/Go	29.5	941.7	370.9	46.0	#2A3136FF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Go/Go/Content/Label	37.5	949.7	354.9	30.0	#8D99A2FF	15.0	1-5를 클리어하면 협동 청소가 열려요.	100.2,953.4,229.5,22.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	37.5	949.7	354.9	30.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Go/Go/Content/Label	37.5	949.7	354.9	30.0	#8D99A2FF	15.0	3-5를 클리어하면 협동 청소가 열려요.	100.2,953.4,229.5,22.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.5	949.7	354.9	30.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Go/Go/Content/Lock	39.5	953.7	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower	15.5	1013.7	398.9	312.8	#1D2226FF			
@@ -121,7 +120,6 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Rules/Rule1/TMP SubMe
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1162.5	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0	29.5	1191.5	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0/Key	39.5	1199.5	98.0	17.0	#8D99A2FF	11.0	청소한 층	39.5,1199.5,41.8,16.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	39.5	1199.5	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0/Value	39.5	1218.5	98.0	29.0	#FF9A3CFF	18.0	0/30	39.5,1218.5,38.9,20.3
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1	155.5	1191.5	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Key	165.5	1199.5	98.0	17.0	#8D99A2FF	11.0	다음 큰 보상	165.5,1199.5,54.2,16.5
@@ -135,25 +133,24 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Key/TMP S
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Value	291.5	1218.5	98.0	29.0	#FF9A3CFF	18.0	0층	291.5,1218.5,25.8,27.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	291.5	1218.5	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go	29.5	1266.5	370.9	46.0	#2A3136FF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Label	37.5	1274.5	354.9	30.0	#8D99A2FF	15.0	2-5를 클리어하면 먼지 타워가 열려요.	100.2,1278.2,229.5,22.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Label	37.5	1274.5	354.9	30.0	#8D99A2FF	15.0	5-5를 클리어하면 먼지 타워가 열려요.	100.2,1278.2,229.5,22.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	37.5	1274.5	354.9	30.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.5	1274.5	354.9	30.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Lock	39.5	1278.5	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League	15.5	1338.5	398.9	314.5	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Icon	29.5	1355.5	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker	83.5	1352.5	316.9	18.0	#FF9A3CFF	11.0	오토배틀러 · 0라운드	83.5,1352.5,93.9,16.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	83.5	1352.5	316.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	83.5	1352.5	316.9	18.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	83.5	1352.5	316.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Title	83.5	1371.5	316.9	31.0	#E8EDF0FF	26.0	가전 대청소 리그	83.5,1371.5,155.4,26.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	83.5	1371.5	316.9	31.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead	29.5	1412.5	370.9	20.9	#E8EDF0FF	13.5	상점에서 가전을 사서 판에 놓으면 전투는 자동이에요. 한 판 4~5분.	29.5,1412.5,361.3,20.3
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1412.5	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1412.5	370.9	20.9	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1412.5	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0	29.5	1443.4	370.9	19.0	#8D99A2FF	12.5	· 합체 같은 가전 3장 → ★2, ★2 3장 → ★3(모습이 바뀜)	29.5,1443.4,288.7,18.7
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1	29.5	1466.4	370.9	19.0	#8D99A2FF	12.5	· 시너지 같은 계열·역할이 모이면 효과 · 키운 가전은 최대 +0%	29.5,1466.4,313.6,18.8
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1466.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1466.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0	29.5	1495.4	118.0	59.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Key	39.5	1503.4	98.0	17.0	#8D99A2FF	11.0	브론즈	39.5,1503.4,29.4,16.5
@@ -175,10 +172,9 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value	29
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	291.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	291.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub	29.5	1564.4	370.9	18.6	#8D99A2FF	12.0	코인·부품 보상 판 0/0 남음 · 이긴 라운드마다 청소 일지 +7	29.5,1564.7,283.6,18.0
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1564.4	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1564.4	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Go/Go	29.5	1593.0	370.9	46.0	#2A3136FF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Go/Go/Content/Label	37.5	1601.0	354.9	30.0	#8D99A2FF	15.0	3-5를 클리어하면 가전 대청소 리그가 열려요.	78.4,1604.7,273.2,22.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Go/Go/Content/Label	37.5	1601.0	354.9	30.0	#8D99A2FF	15.0	6-5를 클리어하면 가전 대청소 리그가 열려요.	78.4,1604.7,273.2,22.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.5	1601.0	354.9	30.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Go/Go/Content/Lock	39.5	1605.0	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon	15.5	1665.0	398.9	101.1	#F7F9FAFF			
@@ -187,8 +183,6 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon/Kicker	29.5	1680.0	370
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon/Title	29.5	1699.0	370.9	24.0	#5D6871FF	20.0	준비 중	29.5,1699.0,52.1,20.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	29.5	1699.0	370.9	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon/Note	29.5	1731.0	370.9	21.0	#5D6871FF	13.0	새 모드가 열리면 여기에 추가돼요.	29.5,1731.0,178.1,19.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1731.0	370.9	21.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Soon/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1731.0	370.9	21.0	#FFFFFFFF			
 SafeArea/Column/Lobby/TopBar/Plate	16.0	12.0	398.0	64.0	#1D2226FF			
 SafeArea/Column/Lobby/TopBar/Kicker	30.0	25.0	150.0	15.0	#FF9A3CFF	10.0	O P E R A T I O N	30.0,25.0,74.5,15.0
 SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트 제로	30.0,39.0,99.4,24.0
@@ -242,19 +236,21 @@ SafeArea/Column/Lobby/Pass/LevelCard/Xp	98.0	116.2	302.0	21.8	#5D6871FF	14.6	다
 SafeArea/Column/Lobby/Pass/LevelCard/Xp/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	98.0	116.2	302.0	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Premium	16.0	160.0	398.0	60.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Premium/Name	32.0	165.7	222.8	24.3	#FFFFFFFF	16.0	프리미엄 패스	32.0,165.9,89.5,24.0
-SafeArea/Column/Lobby/Pass/Premium/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	32.0	165.7	222.8	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Premium/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	165.7	222.8	24.3	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Premium/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	32.0	165.7	222.8	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Premium/Sub	32.0	190.0	222.8	21.8	#EADCFBFF	14.6	₩11,000 · 테스트 결제	32.0,190.0,141.5,21.8
+SafeArea/Column/Lobby/Pass/Premium/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	190.0	222.8	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Premium/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	32.0	190.0	222.8	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Premium/Buy	296.0	168.0	110.0	44.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Pass/Premium/Buy/Line	296.0	168.0	110.0	44.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Pass/Premium/Buy/Content/Label	304.0	176.0	94.0	28.0	#1D2226FF	16.0	구매	336.7,178.0,28.6,24.0
 SafeArea/Column/Lobby/Pass/Premium/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	304.0	176.0	94.0	28.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/FreeHead	16.0	232.0	179.0	21.8	#5D6871FF	14.6	무료	92.5,232.0,26.0,21.8
+SafeArea/Column/Lobby/Pass/FreeHead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	232.0	179.0	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/FreeHead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	232.0	179.0	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/PaidHead	235.0	232.0	179.0	21.8	#3D8BD9FF	14.6	프리미엄	298.5,232.0,52.0,21.8
-SafeArea/Column/Lobby/Pass/PaidHead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	235.0	232.0	179.0	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/PaidHead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	235.0	232.0	179.0	21.8	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/PaidHead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	235.0	232.0	179.0	21.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Pillar	213.0	259.8	4.0	588.2	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Pillar/Fill	213.0	828.4	4.0	19.6	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport	16.0	259.8	398.0	588.2	#00000000			
@@ -262,6 +258,7 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Free	16.0	261.8	177.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Free/Chips/Chip/Icon	26.0	272.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Free/Chips/Chip/Text	47.0	272.6	35.8	18.4	#1D2226FF	12.0	1,100	47.0,275.1,36.6,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Free/State	26.0	293.8	135.0	24.0	#5D6871FF	14.6	받기	26.0,294.9,26.0,21.8
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Free/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	26.0	293.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	261.8	177.0	64.0	#F2EDFAFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	272.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	272.6	35.8	18.4	#1D2226FF	12.0	3,200	268.0,275.1,36.6,13.5
@@ -269,8 +266,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	272.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,272.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	272.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	293.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,294.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	293.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	293.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	293.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	283.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	275.8	36.0	36.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	275.8	36.0	36.0	#F7F9FAFF	14.6	1	211.1,285.6,7.9,16.4
@@ -287,8 +284,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	346.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,346.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	346.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	367.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,368.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	367.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	367.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	367.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	357.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	349.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	349.8	36.0	36.0	#5D6871FF	14.6	2	211.1,359.6,7.9,16.4
@@ -306,8 +303,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	420.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,420.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	420.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	441.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,442.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	441.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	441.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	441.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	431.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	423.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	423.8	36.0	36.0	#5D6871FF	14.6	3	211.1,433.6,7.9,16.4
@@ -324,8 +321,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	494.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,494.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	494.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	515.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,516.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	515.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	515.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	515.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	505.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	497.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	497.8	36.0	36.0	#5D6871FF	14.6	4	211.1,507.6,7.9,16.4
@@ -339,8 +336,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	557.8	177.
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	568.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	568.6	21.1	18.4	#1D2226FF	12.0	150	268.0,571.1,22.0,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	589.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,590.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	589.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	589.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	589.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	579.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	571.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	571.8	36.0	36.0	#5D6871FF	14.6	5	211.1,581.6,7.9,16.4
@@ -358,8 +355,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	642.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,642.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	642.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	663.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,664.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	663.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	663.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	663.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	653.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	645.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	645.8	36.0	36.0	#5D6871FF	14.6	6	211.1,655.6,7.9,16.4
@@ -376,8 +373,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	716.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,716.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	716.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	737.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,738.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	737.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	737.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	737.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	727.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	719.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	719.8	36.0	36.0	#5D6871FF	14.6	7	211.1,729.6,7.9,16.4
@@ -394,8 +391,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	790.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,790.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	790.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	811.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,812.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	811.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	811.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	811.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	801.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	793.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	793.8	36.0	36.0	#5D6871FF	14.6	8	211.1,803.6,7.9,16.4
@@ -413,8 +410,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	864.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,864.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	864.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	885.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,886.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	885.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	885.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	885.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	875.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	867.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	867.8	36.0	36.0	#5D6871FF	14.6	9	211.1,877.6,7.9,16.4
@@ -428,8 +425,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	927.8	177.
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	938.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	938.6	21.1	18.4	#1D2226FF	12.0	150	268.0,941.1,22.0,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	959.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,960.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	959.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	959.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	959.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	949.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	941.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	941.8	36.0	36.0	#5D6871FF	14.6	10	207.1,951.6,15.7,16.4
@@ -446,8 +443,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	1012.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,1012.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	1012.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1033.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1034.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1033.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1033.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1033.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1023.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1015.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1015.8	36.0	36.0	#5D6871FF	14.6	11	207.1,1025.6,15.7,16.4
@@ -465,8 +462,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	1086.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,1086.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	1086.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1107.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1108.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1107.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1107.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1107.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1097.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1089.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1089.8	36.0	36.0	#5D6871FF	14.6	12	207.1,1099.6,15.7,16.4
@@ -483,8 +480,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	1160.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,1160.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	1160.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1181.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1182.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1181.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1181.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1181.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1171.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1163.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1163.8	36.0	36.0	#5D6871FF	14.6	13	207.1,1173.6,15.7,16.4
@@ -501,8 +498,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	1234.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,1234.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	1234.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1255.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1256.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1255.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1255.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1255.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1245.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1237.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1237.8	36.0	36.0	#5D6871FF	14.6	14	207.1,1247.6,15.7,16.4
@@ -519,8 +516,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	330.9	1308.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	351.9	1308.6	21.1	18.4	#1D2226FF	12.0	100	351.9,1311.1,22.0,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1329.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1330.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1329.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1329.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1329.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1319.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1311.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1311.8	36.0	36.0	#5D6871FF	14.6	15	207.1,1321.6,15.7,16.4
@@ -537,8 +534,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	1382.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,1382.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	1382.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1403.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1404.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1403.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1403.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1403.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1393.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1385.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1385.8	36.0	36.0	#5D6871FF	14.6	16	207.1,1395.6,15.7,16.4
@@ -555,8 +552,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	1456.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,1456.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	1456.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1477.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1478.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1477.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1477.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1477.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1467.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1459.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1459.8	36.0	36.0	#5D6871FF	14.6	17	207.1,1469.6,15.7,16.4
@@ -574,8 +571,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	1530.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,1530.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	1530.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1551.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1552.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1551.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1551.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1551.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1541.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1533.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1533.8	36.0	36.0	#5D6871FF	14.6	18	207.1,1543.6,15.7,16.4
@@ -592,8 +589,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	1604.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,1604.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	1604.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1625.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1626.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1625.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1625.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1625.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1615.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1607.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1607.8	36.0	36.0	#5D6871FF	14.6	19	207.1,1617.6,15.7,16.4
@@ -607,8 +604,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	1667.8	177
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	1678.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	1678.6	21.1	18.4	#1D2226FF	12.0	150	268.0,1681.1,22.0,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1699.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1700.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1699.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1699.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1699.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1689.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1681.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1681.8	36.0	36.0	#5D6871FF	14.6	20	207.1,1691.6,15.7,16.4
@@ -625,8 +622,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	1752.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,1752.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	1752.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1773.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1774.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1773.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1773.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1773.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1763.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1755.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1755.8	36.0	36.0	#5D6871FF	14.6	21	207.1,1765.6,15.7,16.4
@@ -643,8 +640,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	1826.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,1826.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	1826.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1847.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1848.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1847.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1847.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1847.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1837.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1829.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1829.8	36.0	36.0	#5D6871FF	14.6	22	207.1,1839.6,15.7,16.4
@@ -661,8 +658,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	1900.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,1900.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	1900.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1921.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1922.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1921.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1921.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1921.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1911.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1903.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1903.8	36.0	36.0	#5D6871FF	14.6	23	207.1,1913.6,15.7,16.4
@@ -680,8 +677,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	1974.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,1974.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	1974.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	1995.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,1996.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1995.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	1995.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	1995.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	1985.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	1977.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	1977.8	36.0	36.0	#5D6871FF	14.6	24	207.1,1987.6,15.7,16.4
@@ -695,8 +692,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	2037.8	177
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	2048.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	2048.6	21.1	18.4	#1D2226FF	12.0	150	268.0,2051.1,22.0,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	2069.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,2070.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2069.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	2069.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2069.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	2059.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	2051.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	2051.8	36.0	36.0	#5D6871FF	14.6	25	207.1,2061.6,15.7,16.4
@@ -713,8 +710,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	2122.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,2122.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	2122.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	2143.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,2144.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2143.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	2143.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2143.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	2133.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	2125.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	2125.8	36.0	36.0	#5D6871FF	14.6	26	207.1,2135.6,15.7,16.4
@@ -732,8 +729,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	330.8	2196.6	25.3	18.4	#1D2226FF	12.0	각 5	330.8,2196.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	330.8	2196.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	2217.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,2218.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2217.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	2217.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2217.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	2207.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	2199.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	2199.8	36.0	36.0	#5D6871FF	14.6	27	207.1,2209.6,15.7,16.4
@@ -750,8 +747,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	308.8	2270.6	25.3	18.4	#1D2226FF	12.0	각 5	308.8,2270.8,26.2,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	308.8	2270.6	25.3	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	2291.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,2292.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2291.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	2291.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2291.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	2281.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	2273.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	2273.8	36.0	36.0	#5D6871FF	14.6	28	207.1,2283.6,15.7,16.4
@@ -765,8 +762,8 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	2333.8	177
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	2344.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	2344.6	13.8	18.4	#1D2226FF	12.0	10	268.0,2347.1,14.6,13.5
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	2365.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,2366.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2365.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	2365.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2365.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	2355.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	2347.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	2347.8	36.0	36.0	#5D6871FF	14.6	29	207.1,2357.6,15.7,16.4
@@ -780,11 +777,10 @@ SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid	237.0	2407.8	177
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Icon	247.0	2418.8	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text	268.0	2418.6	33.8	18.4	#1D2226FF	12.0	세탁기	268.0,2418.8,34.6,18.0
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 2]	268.0	2418.6	33.8	18.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	268.0	2418.6	33.8	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Chips/Chip/Text/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	268.0	2418.6	33.8	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State	247.0	2439.8	135.0	24.0	#5D6871FF	14.6	프리미엄 필요	247.0,2440.9,81.4,21.8
-SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2439.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	247.0	2439.8	135.0	24.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	247.0	2439.8	135.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Paid/Lock	386.0	2429.8	20.0	20.0	#3D8BD9FF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob	197.0	2421.8	36.0	36.0	#E3E8ECFF			
 SafeArea/Column/Lobby/Pass/Viewport/Content/PassRow(Clone)/Knob/Text	197.0	2421.8	36.0	36.0	#5D6871FF	14.6	30	207.1,2431.6,15.7,16.4

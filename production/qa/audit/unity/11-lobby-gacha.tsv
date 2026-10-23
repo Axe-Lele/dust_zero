@@ -7,9 +7,9 @@ SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/UnitMode/Content/Label	2
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/GearMode	216.5	92.6	194.0	41.0	#00000000			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Mode/GearMode/Content/Label	224.5	100.6	178.0	25.0	#5D6871FF	14.0	장비 소환	286.9,102.6,53.3,21.0
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner	15.5	148.6	398.9	309.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Title/Title	31.5	164.6	366.9	38.0	#E8EDF0FF	21.0	겨울맞이 신상 입고	31.5,173.1,141.6,21.0
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Title/Title	31.5	164.6	366.9	38.0	#E8EDF0FF	21.0	신상 가전 입고	31.5,173.1,109.4,21.0
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Title/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	31.5	164.6	366.9	38.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Desc/Desc	31.5	202.6	366.9	40.0	#8D99A2FF	12.5	SSR 보일러가 새로 입고됐어요. 다리미·가스레인지도 함께! 10회 소환	31.5,202.6,358.9,37.5
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Desc/Desc	31.5	202.6	366.9	40.0	#8D99A2FF	12.5	SSR 스마트TV가 새로 입고됐어요. 공유기·공기청정기·믹서기도 함께! 	31.5,202.6,345.8,37.5
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Desc/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	31.5	202.6	366.9	40.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Desc/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	31.5	202.6	366.9	40.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Plate	31.5	254.6	64.0	64.0	#2A3136FF			
@@ -20,7 +20,6 @@ SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Plat
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Plate/Art	108.5	257.6	58.0	58.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Caption	105.5	320.6	64.0	19.0	#8D99A2FF	11.0	SSR 세탁기	111.7,321.8,51.7,16.5
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	105.5	320.6	64.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	105.5	320.6	64.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Plate	179.5	254.6	64.0	64.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Plate/Art	182.5	257.6	58.0	58.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Featured/Featured/Caption	179.5	320.6	64.0	19.0	#8D99A2FF	11.0	SSR 보일러	185.7,321.8,51.7,16.5
@@ -35,54 +34,70 @@ SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Single	31.5	378.
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Single/Content/Label	39.5	388.6	143.0	28.0	#E8EDF0FF	15.0	1회 소환	82.6,391.3,57.9,22.5
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Single/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	39.5	388.6	143.0	28.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Single/Cost	37.5	409.6	147.0	24.0	#E8EDF0FF	12.0	크리스탈 150	77.4,412.6,67.2,18.0
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Single/Cost/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.5	409.6	147.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Multi	198.5	378.6	159.0	63.0	#FF9A3CFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Multi/Content/Label	206.5	388.6	143.0	28.0	#1D2226FF	15.0	10회 소환	244.6,391.3,68.0,22.5
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Multi/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	206.5	388.6	143.0	28.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Multi/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	206.5	388.6	143.0	28.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Multi/Cost	204.5	409.6	147.0	24.0	#1D2226FF	12.0	크리스탈 1,500	239.2,412.6,77.7,18.0
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Banner/Pulls/Multi/Cost/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	204.5	409.6	147.0	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/PoolHead/Title	15.5	469.6	398.9	30.0	#1D2226FF	24.0	소환 목록	15.5,475.6,80.9,24.0
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/PoolHead/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	15.5	469.6	398.9	30.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Grade	15.5	511.6	34.0	21.0	#E8842AFF	12.5	SSR	15.5,511.6,20.2,14.1
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	511.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	511.6	141.0	19.0	#5D6871FF	11.5	냉장고 1.00% · 미보유	77.1,512.5,107.9,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	511.6	141.0	19.0	#5D6871FF	11.5	냉장고 0.75% · 미보유	77.1,512.5,107.9,17.3
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	511.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	511.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	511.6	141.0	19.0	#5D6871FF	11.5	세탁기 1.00% · 미보유	238.1,512.5,107.9,17.3
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.5	511.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	511.6	141.0	19.0	#5D6871FF	11.5	세탁기 0.75% · 미보유	238.1,512.5,107.9,17.3
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	511.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.5	511.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	534.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	534.6	141.0	19.0	#5D6871FF	11.5	보일러 1.00% · 미보유	77.1,535.5,107.9,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	534.6	141.0	19.0	#5D6871FF	11.5	보일러 0.75% · 미보유	77.1,535.5,107.9,17.2
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	534.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	534.6	155.0	19.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	534.6	141.0	19.0	#5D6871FF	11.5	스마트TV 0.75% · 미보유	231.3,535.5,121.6,17.2
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.5	534.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	534.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Grade	15.5	561.6	34.0	21.0	#3D8BD9FF	12.5	SR	15.5,561.6,13.5,14.1
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	561.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	561.6	141.0	19.0	#5D6871FF	11.5	에어컨 3.40% · 보유	82.2,562.5,97.7,17.2
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	561.6	141.0	19.0	#5D6871FF	11.5	에어컨 2.43% · 보유	82.2,562.5,97.7,17.2
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	561.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	561.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	561.6	141.0	19.0	#5D6871FF	11.5	전자레인지 3.40% · 미보유	227.8,562.5,128.4,17.2
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	561.6	141.0	19.0	#5D6871FF	11.5	전자레인지 2.43% · 미보유	227.8,562.5,128.4,17.2
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	561.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	584.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	584.6	141.0	19.0	#5D6871FF	11.5	컴퓨터 3.40% · 미보유	77.1,585.5,107.9,17.2
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	584.6	141.0	19.0	#5D6871FF	11.5	컴퓨터 2.43% · 미보유	77.1,585.5,107.9,17.2
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	584.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	60.5	584.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	584.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	584.6	141.0	19.0	#5D6871FF	11.5	다리미 3.40% · 미보유	238.1,585.5,107.9,17.2
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	584.6	141.0	19.0	#5D6871FF	11.5	다리미 2.43% · 미보유	238.1,585.5,107.9,17.2
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	584.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	607.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	607.6	141.0	19.0	#5D6871FF	11.5	가스레인지 3.40% · 미보유	66.8,608.5,128.4,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	607.6	141.0	19.0	#5D6871FF	11.5	가스레인지 2.43% · 미보유	66.8,608.5,128.4,17.3
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	607.6	141.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Grade	15.5	634.6	34.0	21.0	#7D8B96FF	12.5	R	15.5,634.6,6.7,14.1
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	634.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	634.6	141.0	19.0	#5D6871FF	11.5	청소기 20.00% · 보유	78.8,635.5,104.6,17.3
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	634.6	141.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	634.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	634.6	141.0	19.0	#5D6871FF	11.5	로봇청소기 20.00% · 미보유	224.4,635.5,135.3,17.3
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	634.6	141.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.5	634.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	607.6	155.0	19.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	607.6	141.0	19.0	#5D6871FF	11.5	공기청정기 2.43% · 미보유	227.8,608.5,128.4,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	607.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	630.6	155.0	19.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	630.6	141.0	19.0	#5D6871FF	11.5	공유기 2.42% · 미보유	77.1,631.5,107.9,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	630.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Grade	15.5	657.6	34.0	21.0	#7D8B96FF	12.5	R	15.5,657.6,6.7,14.1
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	657.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	657.6	141.0	19.0	#5D6871FF	11.5	선풍기 20.00% · 보유	78.8,658.5,104.6,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	657.6	141.0	19.0	#5D6871FF	11.5	청소기 16.00% · 보유	78.8,658.5,104.6,17.3
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	657.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	657.6	155.0	19.0	#E6EAEDFF			
-SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	657.6	141.0	19.0	#5D6871FF	11.5	발전기 20.00% · 보유	239.8,658.5,104.6,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	657.6	141.0	19.0	#5D6871FF	11.5	로봇청소기 16.00% · 미보유	224.4,658.5,135.3,17.3
 SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	657.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	680.6	155.0	19.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	680.6	141.0	19.0	#5D6871FF	11.5	선풍기 16.00% · 보유	78.8,681.5,104.6,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	680.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	214.5	680.6	155.0	19.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	221.5	680.6	141.0	19.0	#5D6871FF	11.5	발전기 16.00% · 보유	239.8,681.5,104.6,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.5	680.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip	53.5	703.6	155.0	19.0	#E6EAEDFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text	60.5	703.6	141.0	19.0	#5D6871FF	11.5	믹서기 16.00% · 미보유	73.6,704.5,114.8,17.3
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	60.5	703.6	141.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Gacha/Viewport/Column/Pool/PoolRow/Chips/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	60.5	703.6	141.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/TopBar/Plate	16.0	12.0	398.0	64.0	#1D2226FF			
 SafeArea/Column/Lobby/TopBar/Kicker	30.0	25.0	150.0	15.0	#FF9A3CFF	10.0	O P E R A T I O N	30.0,25.0,74.5,15.0
 SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트 제로	30.0,39.0,99.4,24.0

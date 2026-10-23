@@ -64,24 +64,15 @@ namespace DustZero.Game
         /// <summary>World units per board tile. 1 keeps simulation coordinates and world units aligned.</summary>
         public const float TileSize = 1f;
 
-        // The sprites were captured by running the original's own draw functions, so how big
-        // they are on screen is fixed by the capture box, not by taste. GameData/spriteexport
-        // /one.html draws a unit with k = px/PAD (PAD 1.35) while the game draws it at k =
-        // TS*0.92, so one captured image spans 1.35 x 0.92 tiles. Enemies are captured with
-        // TS = px/2.6, so their image spans 2.6 tiles. Rendering both at scale 1 shrank every
-        // appliance and left the stains as specks.
-        const float UnitSpriteScale = 1.35f * 0.92f;
+        // 적 그림은 여전히 one.html 이 TS = px/2.6 으로 떠 준 것이라 2.6칸을 차지한다.
         const float EnemySpriteScale = 2.6f;
 
-        /// <summary>
-        /// one.html draws a unit about its origin after translating to (px/2, px/2 + k*0.19),
-        /// so the point the original treats as the unit's position sits k*0.19 BELOW the
-        /// image's middle - which is where a centre-pivot sprite puts the transform. Lifting
-        /// the body by the same distance puts that origin back on the tile centre. Measured
-        /// against the exported art: unit_vac's opaque bounds centre on 0.633 of the image
-        /// height, and the predicted origin is 0.641.
-        /// </summary>
-        const float UnitSpriteLift = 0.19f * 0.92f;
+        // 가전은 10.22-f 부터 **그려진 SD 시트**다. 예전 치비는 one.html 의 포장 상자가
+        // 크기를 정해 줘서 고정 배율(1.35 x 0.92)로 맞았지만, 새 시트는 가전마다 그림
+        // 크기가 다르다(576x640 · 537x640 · 412x640 …). 고정 배율을 그대로 두었더니
+        // 가전이 칸 서넛을 덮었다 — 사용자가 화면을 보고 바로 알아봤다.
+        // 지금은 FitSprite 가 원본 drawSpriteSD 의 규칙(0.82 x 0.88칸, 발은 0.33칸 아래)
+        // 으로 **그림마다** 계산한다.
 
         ObjectPool<EntityView> _pool;
         readonly Dictionary<BattleUnit, EntityView> _units = new();
@@ -351,11 +342,44 @@ namespace DustZero.Game
             int frame = m.Pick(u.Overheated, u.SkillT);
             var sprite = frame < 0 ? sprites.Unit(u.Type) : sprites.MotionFrame(u.Type, frame);
             // 모션 칸이 없으면 SD 로. 한 칸 빠졌다고 가전이 사라지면 안 된다.
-            v.Body.sprite = sprite != null ? sprite : sprites.Unit(u.Type);
+            bool motion = sprite != null;
+            v.Body.sprite = motion ? sprite : sprites.Unit(u.Type);
+            FitSprite(v.Body, motion ? sprites.MotionScale(u.Type) : 0f);
+        }
 
-            // 아홉 칸은 SD 보다 여백이 넓다. 같은 배율을 쓰면 재생하는 순간 작아 보인다.
-            float scale = UnitSpriteScale * (frame < 0 ? 1f : sprites.MotionScale(u.Type));
-            v.Body.transform.localScale = Vector3.one * scale;
+        /// <summary>
+        /// 원본 `drawSpriteSD` 의 크기·자리 규칙. 고정 배율을 쓰면 안 된다 — SD 는 가전마다
+        /// 그림 크기가 달라(576x640 · 537x640 …) 한 값으로는 누구는 크고 누구는 작다.
+        /// 실제로 고정 1.24 배를 쓰다가 가전이 칸 서넛을 덮었다.
+        ///
+        ///   SD   : 가로 0.82칸 · 세로 0.88칸 **안에** 비율 그대로 넣고, 발을 칸 중심에서
+        ///          0.33칸 아래에 둔다.
+        ///   모션 : 칸(320x320)이라 한 변이 1.02칸 × 보정배율이고, 그 칸의 아래 6% 가
+        ///          발밑으로 내려간다(원본의 -sz*.94 자리).
+        /// </summary>
+        static void FitSprite(SpriteRenderer body, float motionScale)
+        {
+            var sp = body.sprite;
+            if (sp == null) return;
+            Vector2 size = sp.bounds.size;      // 배율 1 일 때의 월드 크기(PPU 반영)
+            if (size.x <= 0f || size.y <= 0f) return;
+
+            float scale, centreY;
+            if (motionScale > 0f)
+            {
+                float sz = 1.02f * TileSize * motionScale;
+                scale = sz / size.y;
+                centreY = -0.33f * TileSize + 0.44f * sz;
+            }
+            else
+            {
+                scale = Mathf.Min(0.82f * TileSize / size.x, 0.88f * TileSize / size.y);
+                centreY = -0.33f * TileSize + size.y * scale * 0.5f;
+            }
+
+            body.transform.localScale = Vector3.one * scale;
+            var p = body.transform.localPosition;
+            body.transform.localPosition = new Vector3(p.x, centreY, p.z);
         }
 
         void SyncUnits()
@@ -368,9 +392,9 @@ namespace DustZero.Game
                     v.Body.sprite = sprites != null ? sprites.Unit(u.Type) : null;
                     // Scale the body, not the view: the bars hang off the view and are already
                     // sized in tiles.
-                    v.Body.transform.localScale = Vector3.one * UnitSpriteScale;
                     _motions[u] = new MotionState();
-                    v.Body.transform.localPosition = new Vector3(0f, UnitSpriteLift, 0f);
+                    v.Body.transform.localPosition = Vector3.zero;
+                    FitSprite(v.Body, 0f);
                     v.transform.localScale = Vector3.one;
                     _units[u] = v;
                 }

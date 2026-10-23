@@ -5,8 +5,9 @@ SafeArea/Column/Survivor/SurvivorResult/Shade/Card/TitleRow/Title	68.0	320.2	294
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/TitleRow/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	68.0	320.2	294.1	42.0	#FFFFFFFF			
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Value	68.0	372.2	87.4	30.0	#1D2226FF	20.0	0:06	68.0,375.9,43.2,22.5
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Caption	68.0	402.2	87.4	22.0	#5D6871FF	13.0	버틴 시간	68.0,403.5,49.4,19.5
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	68.0	402.2	87.4	22.0	#FFFFFFFF			
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/버틴 시간/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	68.0	402.2	87.4	22.0	#FFFFFFFF			
-SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Value	171.3	372.2	87.4	30.0	#1D2226FF	20.0	0	171.3,375.9,10.8,22.5
+SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Value	171.3	372.2	87.4	30.0	#1D2226FF	20.0	1	171.3,375.9,10.8,22.5
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Caption	171.3	402.2	87.4	22.0	#5D6871FF	13.0	처치	171.3,403.5,23.2,19.5
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/처치/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	171.3	402.2	87.4	22.0	#FFFFFFFF			
 SafeArea/Column/Survivor/SurvivorResult/Shade/Card/Stats/레벨/Value	274.7	372.2	87.4	30.0	#1D2226FF	20.0	1	274.7,375.9,10.8,22.5

@@ -3,7 +3,7 @@ SafeArea/Column/Lobby	0.0	0.0	430.0	932.0	#E6EAEDFF
 SafeArea/Column/Lobby/Panels/Units/Viewport	0.0	76.0	430.0	778.0	#00000000			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Title	15.5	86.4	86.0	36.4	#1D2226FF	24.0	가전 도감	15.5,92.6,80.9,24.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	15.5	86.4	86.0	36.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count	104.5	98.4	91.0	18.4	#5D6871FF	12.0	보유 4/12	104.5,98.6,50.4,18.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count	104.5	98.4	91.0	18.4	#5D6871FF	12.0	보유 4/16	104.5,98.6,50.4,18.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Count/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	104.5	98.4	91.0	18.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Gallery	264.5	92.6	67.0	30.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Head/Gallery/Content/Label	272.5	98.4	51.0	18.4	#E8EDF0FF	12.0	일러스트	276.6,98.6,42.8,18.0
@@ -13,31 +13,35 @@ SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101	15.5	134.6	82.
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Outline	15.5	134.6	82.2	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Icon	26.5	141.6	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name	44.5	134.6	42.2	32.0	#5D6871FF	12.0	필터	44.5,141.6,21.4,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	44.5	134.6	42.2	32.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.5	134.6	42.2	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Value	44.5	134.6	42.2	32.0	#1D2226FF	14.0	20	69.9,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_101/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.5	134.6	42.2	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102	103.7	134.6	82.2	32.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Outline	103.7	134.6	82.2	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Icon	114.7	141.6	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Name	132.7	134.6	42.2	32.0	#5D6871FF	12.0	열선	132.7,141.6,21.4,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	132.7	134.6	42.2	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Value	132.7	134.6	42.2	32.0	#1D2226FF	14.0	20	158.2,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_102/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	132.7	134.6	42.2	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103	192.0	134.6	71.5	32.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Outline	192.0	134.6	71.5	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Icon	203.0	141.6	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name	221.0	134.6	31.5	32.0	#5D6871FF	12.0	칩	221.0,141.6,10.7,18.0
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.0	134.6	31.5	32.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.0	134.6	31.5	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Value	221.0	134.6	31.5	32.0	#1D2226FF	14.0	20	235.7,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_103/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.0	134.6	31.5	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104	269.5	134.6	82.2	32.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Outline	269.5	134.6	82.2	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Icon	280.5	141.6	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Name	298.5	134.6	42.2	32.0	#5D6871FF	12.0	모터	298.5,141.6,21.4,18.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Value	298.5	134.6	42.2	32.0	#1D2226FF	14.0	20	323.9,140.1,16.8,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_104/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	298.5	134.6	42.2	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401	15.5	172.6	84.5	32.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Outline	15.5	172.6	84.5	32.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Icon	26.5	179.6	18.0	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Name	44.5	172.6	44.5	32.0	#5D6871FF	12.0	강화석	44.5,179.6,32.1,18.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.5	172.6	44.5	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Value	44.5	172.6	44.5	32.0	#1D2226FF	14.0	0	80.6,178.1,8.4,21.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Parts/part_401/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	44.5	172.6	44.5	32.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	15.5	216.6	94.0	137.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	16.5	217.6	92.0	92.0	#DCE9F7FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	22.5	223.6	80.0	80.0	#FFFFFFFF			
@@ -109,11 +113,11 @@ SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	220.
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	220.5	473.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	220.5	473.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	320.0	361.6	94.0	137.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	321.0	362.6	92.0	92.0	#DCE9F7FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	321.0	362.6	92.0	92.0	#FFE6CFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	327.0	368.6	80.0	80.0	#40404059			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	320.0	361.6	94.0	137.0	#C7D0D6FF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	326.0	367.3	40.0	18.0	#3D8BD9FF	11.0	SR	326.0,367.3,11.9,12.4
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	322.0	455.6	90.0	19.0	#5D6871FF	14.0	전자레인지	340.2,458.1,53.8,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	326.0	367.3	40.0	18.0	#E8842AFF	11.0	SSR	326.0,367.3,17.8,12.4
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	322.0	455.6	90.0	19.0	#5D6871FF	14.0	스마트TV	343.6,458.1,46.8,14.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	322.0	455.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	322.0	473.6	90.0	19.0	#5D6871FF	10.5	미보유	353.0,475.2,28.1,15.8
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	322.0	473.6	90.0	19.0	#FFFFFFFF			
@@ -123,7 +127,7 @@ SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	16.5
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	22.5	513.6	80.0	80.0	#40404059			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	15.5	506.6	94.0	137.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	21.5	512.3	40.0	18.0	#3D8BD9FF	11.0	SR	21.5,512.3,11.9,12.4
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	17.5	600.6	90.0	19.0	#5D6871FF	14.0	컴퓨터	46.4,603.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	17.5	600.6	90.0	19.0	#5D6871FF	14.0	전자레인지	35.7,603.1,53.8,14.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	17.5	600.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	17.5	618.6	90.0	19.0	#5D6871FF	10.5	미보유	48.5,620.2,28.1,15.7
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	17.5	618.6	90.0	19.0	#FFFFFFFF			
@@ -133,7 +137,7 @@ SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	118.
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	124.0	513.6	80.0	80.0	#40404059			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	117.0	506.6	94.0	137.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	123.0	512.3	40.0	18.0	#3D8BD9FF	11.0	SR	123.0,512.3,11.9,12.4
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	119.0	600.6	90.0	19.0	#5D6871FF	14.0	다리미	147.9,603.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	119.0	600.6	90.0	19.0	#5D6871FF	14.0	컴퓨터	147.9,603.1,32.3,14.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	119.0	600.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	119.0	618.6	90.0	19.0	#5D6871FF	10.5	미보유	150.0,620.2,28.1,15.7
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	119.0	618.6	90.0	19.0	#FFFFFFFF			
@@ -143,22 +147,62 @@ SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	219.
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	225.5	513.6	80.0	80.0	#40404059			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	218.5	506.6	94.0	137.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	224.5	512.3	40.0	18.0	#3D8BD9FF	11.0	SR	224.5,512.3,11.9,12.4
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	220.5	600.6	90.0	19.0	#5D6871FF	14.0	가스레인지	238.7,603.1,53.8,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	220.5	600.6	90.0	19.0	#5D6871FF	14.0	다리미	249.4,603.1,32.3,14.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	220.5	600.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	220.5	618.6	90.0	19.0	#5D6871FF	10.5	미보유	251.5,620.2,28.1,15.7
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	220.5	618.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	220.5	618.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	320.0	506.6	94.0	137.0	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	321.0	507.6	92.0	92.0	#E3E8ECFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	321.0	507.6	92.0	92.0	#DCE9F7FF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	327.0	513.6	80.0	80.0	#40404059			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	320.0	506.6	94.0	137.0	#C7D0D6FF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	326.0	512.3	40.0	18.0	#7D8B96FF	11.0	R	326.0,512.3,5.9,12.4
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	322.0	600.6	90.0	19.0	#5D6871FF	14.0	로봇청소기	340.2,603.1,53.8,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	326.0	512.3	40.0	18.0	#3D8BD9FF	11.0	SR	326.0,512.3,11.9,12.4
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	322.0	600.6	90.0	19.0	#5D6871FF	14.0	가스레인지	340.2,603.1,53.8,14.0
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	322.0	600.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	322.0	618.6	90.0	19.0	#5D6871FF	10.5	미보유	353.0,620.2,28.1,15.7
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	322.0	618.6	90.0	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	322.0	618.6	90.0	19.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Note/Text	15.5	655.6	398.9	44.0	#5D6871FF	12.0	가전을 누르면 레벨 업 · 돌파 · 장비를 관리할 수 있어요. 같은 가전	15.5,655.6,396.0,36.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	15.5	651.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	16.5	652.6	92.0	92.0	#DCE9F7FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	22.5	658.6	80.0	80.0	#40404059			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	15.5	651.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	21.5	657.3	40.0	18.0	#3D8BD9FF	11.0	SR	21.5,657.3,11.9,12.4
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	17.5	745.6	90.0	19.0	#5D6871FF	14.0	공기청정기	35.7,748.1,53.8,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	17.5	745.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	17.5	763.6	90.0	19.0	#5D6871FF	10.5	미보유	48.5,765.2,28.1,15.7
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	17.5	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	17.5	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	117.0	651.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	118.0	652.6	92.0	92.0	#DCE9F7FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	124.0	658.6	80.0	80.0	#40404059			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	117.0	651.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	123.0	657.3	40.0	18.0	#3D8BD9FF	11.0	SR	123.0,657.3,11.9,12.4
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	119.0	745.6	90.0	19.0	#5D6871FF	14.0	공유기	147.9,748.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	119.0	745.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	119.0	763.6	90.0	19.0	#5D6871FF	10.5	미보유	150.0,765.2,28.1,15.7
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	119.0	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	119.0	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	218.5	651.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	219.5	652.6	92.0	92.0	#E3E8ECFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	225.5	658.6	80.0	80.0	#40404059			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	218.5	651.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	224.5	657.3	40.0	18.0	#7D8B96FF	11.0	R	224.5,657.3,5.9,12.4
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	220.5	745.6	90.0	19.0	#5D6871FF	14.0	로봇청소기	238.7,748.1,53.8,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	220.5	745.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	220.5	763.6	90.0	19.0	#5D6871FF	10.5	미보유	251.5,765.2,28.1,15.7
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	220.5	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	220.5	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)	320.0	651.6	94.0	137.0	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic	321.0	652.6	92.0	92.0	#E3E8ECFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Pic/Portrait	327.0	658.6	80.0	80.0	#40404059			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Outline	320.0	651.6	94.0	137.0	#C7D0D6FF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Rarity	326.0	657.3	40.0	18.0	#7D8B96FF	11.0	R	326.0,657.3,5.9,12.4
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name	322.0	745.6	90.0	19.0	#5D6871FF	14.0	믹서기	350.9,748.1,32.3,14.0
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	322.0	745.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub	322.0	763.6	90.0	19.0	#5D6871FF	10.5	미보유	353.0,765.2,28.1,15.7
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	322.0	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Grid/UnitCard(Clone)/Sub/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	322.0	763.6	90.0	19.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Units/Viewport/Column/Note/Text	15.5	800.6	398.9	44.0	#5D6871FF	12.0	가전을 누르면 레벨 업 · 돌파 · 장비를 관리할 수 있어요. 같은 가전	15.5,800.6,396.0,36.0
 SafeArea/Column/Lobby/TopBar/Plate	16.0	12.0	398.0	64.0	#1D2226FF			
 SafeArea/Column/Lobby/TopBar/Kicker	30.0	25.0	150.0	15.0	#FF9A3CFF	10.0	O P E R A T I O N	30.0,25.0,74.5,15.0
 SafeArea/Column/Lobby/TopBar/Brand	30.0	32.8	170.0	36.4	#E8EDF0FF	24.0	더스트 제로	30.0,39.0,99.4,24.0

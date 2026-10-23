@@ -1,7 +1,7 @@
 path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/Battle/Hud	16.0	12.0	398.0	113.0	#1D2226FF			
 SafeArea/Column/Battle/Hud/Top/StageNo	28.0	22.0	25.0	30.0	#8D99A2FF	11.5	협동	28.0,28.4,20.5,17.3
-SafeArea/Column/Battle/Hud/Top/StageNo/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 2]	28.0	22.0	25.0	30.0	#FFFFFFFF			
+SafeArea/Column/Battle/Hud/Top/StageNo/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	28.0	22.0	25.0	30.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Top/StageNo/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	28.0	22.0	25.0	30.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Top/StageName	55.1	22.0	159.9	30.0	#E8EDF0FF	19.0	급한 청소기	55.1,27.5,78.7,19.0
 SafeArea/Column/Battle/Hud/Top/StageName/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	55.1	22.0	159.9	30.0	#FFFFFFFF			
@@ -15,6 +15,7 @@ SafeArea/Column/Battle/Hud/Readouts/Life/Label	28.0	69.0	65.8	15.0	#8D99A2FF	10.
 SafeArea/Column/Battle/Hud/Readouts/Life/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	28.0	69.0	65.8	15.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Readouts/Life/Value	28.0	77.5	65.8	44.0	#FF6B5EFF	26.0	0	28.0,84.8,14.0,29.3
 SafeArea/Column/Battle/Hud/Readouts/Power/Label	105.8	62.0	233.3	15.0	#8D99A2FF	10.0	전력 · 초당 +100W	105.8,62.0,89.3,15.0
+SafeArea/Column/Battle/Hud/Readouts/Power/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	105.8	62.0	233.3	15.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Readouts/Power/Value	105.8	70.5	233.3	44.0	#FF9A3CFF	26.0	300W	105.8,77.8,56.2,29.3
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter	105.8	109.0	233.3	4.0	#5A3A1EFF			
 SafeArea/Column/Battle/Hud/Readouts/Remain/Label	351.0	69.0	51.0	15.0	#8D99A2FF	10.0	버틴 웨이브	351.0,69.0,51.8,15.0

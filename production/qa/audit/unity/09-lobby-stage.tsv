@@ -53,6 +53,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaTabs/Area4/Label	267.0	46
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaTabs/Area4/Lock	317.0	471.6	8.0	7.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaTabs/Area5	336.0	466.6	75.6	47.0	#E6EAEDFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaTabs/Area5/Label	347.6	467.6	52.3	45.1	#5D6871FF	18.4	<size=72%>5구역</size> 왕국	357.3,468.3,32.9,43.5
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaTabs/Area5/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	347.6	467.6	52.3	45.1	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaTabs/Area5/Lock	397.6	471.6	8.0	7.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaCard/Card	13.6	529.6	402.8	212.0	#FFF1E3FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/AreaCard/Art	24.6	540.6	158.0	190.0	#FFFFFFFF			
@@ -90,7 +91,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Numb
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Number/No/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	25.6	909.2	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name	81.6	907.7	204.8	22.8	#1D2226FF	15.0	거실	81.6,908.0,26.8,22.5
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	907.7	204.8	22.8	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	930.5	204.8	24.3	#5D6871FF	16.0	웨이브 17 · 코인 580	81.6,930.5,139.8,24.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	930.5	204.8	24.3	#5D6871FF	16.0	웨이브 14 · 코인 580	81.6,930.5,139.8,24.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	930.5	204.8	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Stars	286.4	898.7	118.0	65.1	#E8842AFF	17.0	<color=#E8842A>★★★</color><color=#C7D0D6	353.4,918.5,51.0,25.5
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Stars/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	286.4	898.7	118.0	65.1	#FFFFFFFF			
@@ -101,7 +102,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Numb
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Number/No/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	25.6	990.3	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name	81.6	980.8	204.8	22.8	#1D2226FF	15.0	거실	81.6,981.1,26.8,22.5
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	980.8	204.8	22.8	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	1019.6	204.8	24.3	#5D6871FF	16.0	웨이브 17 · 코인 660	81.6,1019.6,139.8,24.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	1019.6	204.8	24.3	#5D6871FF	16.0	웨이브 14 · 코인 660	81.6,1019.6,139.8,24.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	1019.6	204.8	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Play	300.4	984.3	104.0	56.0	#FF9A3CFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Play/Content/Label	308.4	992.3	88.0	40.0	#1D2226FF	22.0	도전	335.5,1001.3,33.8,22.0
@@ -113,7 +114,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Numb
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Number/No/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	25.6	1071.4	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name	81.6	1069.8	204.8	22.8	#5D6871FF	15.0	거실	81.6,1070.2,26.8,22.5
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	1069.8	204.8	22.8	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	1092.7	204.8	24.3	#5D6871FF	16.0	웨이브 17 · 코인 760	81.6,1092.7,139.8,24.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	1092.7	204.8	24.3	#5D6871FF	16.0	웨이브 14 · 코인 760	81.6,1092.7,139.8,24.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	1092.7	204.8	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Lock	360.4	1071.4	44.0	44.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_2/Label	15.6	1133.9	58.0	18.0	#5D6871FF	11.0	CH.2	15.6,1134.7,24.2,16.5
@@ -129,7 +130,7 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Numb
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Number/No/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	25.6	1216.5	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name	81.6	1214.9	204.8	22.8	#5D6871FF	15.0	거실	81.6,1215.2,26.8,22.5
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	1214.9	204.8	22.8	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	1237.7	204.8	24.3	#5D6871FF	16.0	웨이브 20 · 코인 870	81.6,1237.7,139.8,24.0
+SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail	81.6	1237.7	204.8	24.3	#5D6871FF	16.0	웨이브 17 · 코인 870	81.6,1237.7,139.8,24.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Text/Detail/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	81.6	1237.7	204.8	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Lock	360.4	1216.5	44.0	44.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)	13.6	1279.0	402.8	65.1	#E6EAEDFF			
@@ -167,7 +168,6 @@ SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_3/Label/TMP SubMe
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_3/Label	75.6	1499.3	340.8	24.0	#1D2226FF	17.0	욕실 대청소	75.6,1502.8,70.4,17.0
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_3/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	75.6	1499.3	340.8	24.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_3/Label	15.6	1526.3	400.8	34.0	#5D6871FF	11.5	배수구는 방 한가운데 있어요. 환풍기와 문까지 세 곳에서 곰팡이 떼가 올	15.6,1526.3,371.9,17.3
-SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_3/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	15.6	1526.3	400.8	34.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/ch_3/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	15.6	1526.3	400.8	34.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)	13.6	1570.3	402.8	65.1	#E6EAEDFF			
 SafeArea/Column/Lobby/Panels/Stage/Viewport/Column/Chapters/StageRow(Clone)/Boss	13.6	1570.3	5.0	65.1	#E0524AFF			

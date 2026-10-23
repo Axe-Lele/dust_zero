@@ -58,26 +58,28 @@ SafeArea/Column/Lobby/Panels/Home/Room/Leaf1	12.7	247.2	11.2	23.3	#6E9B4CFF
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf2	18.9	244.8	11.2	23.3	#6E9B4CFF			
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf3	25.2	247.2	11.2	23.3	#6E9B4CFF			
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf4	31.4	254.2	11.2	23.3	#6E9B4CFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	318.7	476.2	10.6	10.6	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	201.8	539.7	13.5	13.5	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	328.2	367.9	10.1	10.1	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	166.9	345.0	8.2	8.2	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	252.4	389.6	11.0	11.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	220.5	354.0	10.0	10.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	180.2	459.5	7.9	7.9	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	331.8	339.3	8.4	8.4	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	327.6	381.0	7.8	7.8	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	301.3	571.7	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	260.3	581.4	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	120.1	413.5	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	235.6	363.9	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	216.3	516.6	12.3	12.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	277.2	390.8	12.0	12.0	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	300.3	539.8	12.1	12.1	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	151.3	500.2	8.4	8.4	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	98.2	495.3	15.4	15.4	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	189.3	590.1	14.1	14.1	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	158.2	590.3	8.4	8.4	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	254.7	575.4	8.9	8.9	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	109.9	518.8	14.8	14.8	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	252.6	488.1	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	199.2	442.2	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	220.0	454.8	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	84.2	386.9	55.6	55.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Home/RoomNote	85.5	664.6	259.0	25.0	#1D222699			
-SafeArea/Column/Lobby/Panels/Home/RoomNote/Text	94.3	664.6	241.4	25.0	#E8EDF0FF	11.5	가전 4/12이 방을 청소하고 있어요 · 눌러서 말 걸기	97.4,668.5,235.2,17.2
+SafeArea/Column/Lobby/Panels/Home/RoomNote/Text	94.3	664.6	241.4	25.0	#E8EDF0FF	11.5	가전 4/16이 방을 청소하고 있어요 · 눌러서 말 걸기	97.4,668.5,235.2,17.2
+SafeArea/Column/Lobby/Panels/Home/RoomNote/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	94.3	664.6	241.4	25.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Home/Survivor	16.0	697.6	398.0	64.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Home/Survivor/Content/Label	24.0	705.6	382.0	48.0	#E8EDF0FF	14.6		
+SafeArea/Column/Lobby/Panels/Home/Survivor/Content/Label	24.0	705.6	382.0	48.0	#8D99A2FF	14.6		
+SafeArea/Column/Lobby/Panels/Home/Survivor/Content/Lock	26.0	718.6	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Home/Survivor/Icon	33.6	711.4	29.8	36.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Home/Survivor/Kicker	76.6	715.8	299.9	20.4	#8D99A2FF	13.4	대청소 모드	76.6,716.0,62.9,20.1
-SafeArea/Column/Lobby/Panels/Home/Survivor/Title	76.6	723.3	299.9	32.5	#E8EDF0FF	21.5	리더를 골라 출동	76.6,728.9,128.5,21.5
+SafeArea/Column/Lobby/Panels/Home/Survivor/Title	76.6	723.3	299.9	32.5	#E8EDF0FF	21.5	1-1을 클리어하면 열려요	76.6,728.9,186.3,21.5
 SafeArea/Column/Lobby/Panels/Home/Survivor/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	76.6	723.3	299.9	32.5	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Home/Survivor/Arrow	368.8	709.2	32.0	40.8	#E8EDF0FF	26.9	▶	373.9,709.4,26.9,40.4
 SafeArea/Column/Lobby/Panels/Home/NextStage	16.0	770.0	398.0	74.0	#FF9A3CFF			
@@ -106,6 +108,7 @@ SafeArea/Column/Lobby/HomeRail/Attendance/Content/Label	24.0	94.0	70.0	38.0	#E8E
 SafeArea/Column/Lobby/HomeRail/Attendance/TitleRow/Icon	28.1	95.5	15.0	15.0	#FFFFFFFF			
 SafeArea/Column/Lobby/HomeRail/Attendance/TitleRow/Title	47.1	90.9	42.8	24.3	#E8EDF0FF	16.0	출석부	47.1,91.0,42.8,24.0
 SafeArea/Column/Lobby/HomeRail/Attendance/Sub	18.0	114.8	82.0	16.5	#FF9A3CFF	11.0	1일째 받기	34.8,114.9,48.4,16.5
+SafeArea/Column/Lobby/HomeRail/Attendance/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	18.0	114.8	82.0	16.5	#FFFFFFFF			
 SafeArea/Column/Lobby/HomeRail/Attendance/Dot	89.4	77.0	21.6	21.6	#FFFFFFFF			
 SafeArea/Column/Lobby/HomeRail/AutoClean	16.0	148.0	86.0	61.0	#1D2226D6			
 SafeArea/Column/Lobby/HomeRail/AutoClean/Content/Label	24.0	156.0	70.0	45.0	#8D99A2FF	16.0		
@@ -130,6 +133,7 @@ SafeArea/Column/Lobby/HomeRail/Pass/Content/Label	336.0	136.0	70.0	66.0	#E8EDF0F
 SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Icon	340.6	138.5	15.0	15.0	#FFFFFFFF			
 SafeArea/Column/Lobby/HomeRail/Pass/TitleRow/Title	359.6	137.7	41.8	16.5	#E8EDF0FF	11.0	시즌 패스	359.6,137.8,41.8,16.5
 SafeArea/Column/Lobby/HomeRail/Pass/Sub	332.0	187.5	78.0	16.5	#FF9A3CFF	11.0	받기 1	356.6,187.5,28.8,16.5
+SafeArea/Column/Lobby/HomeRail/Pass/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	332.0	187.5	78.0	16.5	#FFFFFFFF			
 SafeArea/Column/Lobby/HomeRail/Pass/Bar	336.0	179.5	70.0	4.0	#2A3136FF			
 SafeArea/Column/Lobby/HomeRail/Pass/Bar/Mask/Fill	336.0	179.5	70.0	4.0	#FF9A3CFF			
 SafeArea/Column/Lobby/HomeRail/Pass/Level	332.0	153.2	78.0	24.3	#E8EDF0FF	16.0	Lv.1	353.7,156.3,34.6,18.0

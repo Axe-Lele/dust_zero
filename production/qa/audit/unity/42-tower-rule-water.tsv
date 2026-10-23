@@ -11,7 +11,7 @@ SafeArea/Column/League/Hud/TowerReadouts/Floor/Label	28.0	62.0	116.7	15.0	#8D99A
 SafeArea/Column/League/Hud/TowerReadouts/Floor/Value	28.0	73.3	116.7	39.3	#FF9A3CFF	26.0	11층	28.0,73.5,51.3,39.0
 SafeArea/Column/League/Hud/TowerReadouts/Floor/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	28.0	73.3	116.7	39.3	#FFFFFFFF			
 SafeArea/Column/League/Hud/TowerReadouts/Goal/Label	156.6	62.0	116.7	15.0	#8D99A2FF	10.0	남은 시간	156.6,62.0,42.0,15.0
-SafeArea/Column/League/Hud/TowerReadouts/Goal/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	156.6	62.0	116.7	15.0	#FFFFFFFF			
+SafeArea/Column/League/Hud/TowerReadouts/Goal/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	156.6	62.0	116.7	15.0	#FFFFFFFF			
 SafeArea/Column/League/Hud/TowerReadouts/Goal/Value	156.6	73.3	116.7	39.3	#FF9A3CFF	26.0	0:45	156.6,78.3,56.2,29.3
 SafeArea/Column/League/Hud/TowerReadouts/Use/Label	285.3	62.0	116.7	15.0	#8D99A2FF	10.0	출전	383.4,62.0,19.4,15.0
 SafeArea/Column/League/Hud/TowerReadouts/Use/Value	285.3	73.3	116.7	39.3	#FF9A3CFF	26.0	4/6	359.9,78.3,42.1,29.3
@@ -21,7 +21,6 @@ SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regul
 SafeArea/Column/League/Synergy/Chip	88.7	136.0	57.4	29.0	#1D2226FF			
 SafeArea/Column/League/Synergy/Chip/Text	96.7	136.0	41.4	29.0	#E8EDF0FF	11.5	계절 2/3	96.7,141.9,41.4,17.3
 SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	96.7	136.0	41.4	29.0	#FFFFFFFF			
-SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	96.7	136.0	41.4	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip	151.1	136.0	57.4	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip/Text	159.1	136.0	41.4	29.0	#5D6871FF	11.5	생활 1/2	159.1,141.9,41.4,17.3
 SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	159.1	136.0	41.4	29.0	#FFFFFFFF			
@@ -29,7 +28,6 @@ SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regul
 SafeArea/Column/League/Synergy/Chip	213.6	136.0	67.7	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip/Text	221.6	136.0	51.7	29.0	#5D6871FF	11.5	디지털 1/2	221.6,141.9,51.7,17.3
 SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.6	136.0	51.7	29.0	#FFFFFFFF			
-SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.6	136.0	51.7	29.0	#FFFFFFFF			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	16.0	343.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	72.9	343.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	129.7	343.0	56.9	56.0	#FFFFFF00			
@@ -52,9 +50,8 @@ SafeArea/Column/League/Cells/LeagueCell(Clone)	243.4	455.0	56.9	56.0	#FFFFFF00
 SafeArea/Column/League/Cells/LeagueCell(Clone)	300.3	455.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	357.1	455.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Info/Left	16.0	602.2	258.7	26.0	#5D6871FF	12.0	목표 · 먼지 전멸	16.0,606.2,76.6,18.0
-SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	16.0	602.2	258.7	26.0	#FFFFFFFF			
-SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	602.2	258.7	26.0	#FFFFFFFF			
 SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	602.2	258.7	26.0	#FFFFFFFF			
+SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	602.2	258.7	26.0	#FFFFFFFF			
 SafeArea/Column/League/Info/Right	274.7	602.2	139.3	26.0	#5D6871FF	12.0		
 SafeArea/Column/League/Info/TowerAuto	346.3	602.2	67.7	26.0	#F7F9FAFF			
 SafeArea/Column/League/Info/TowerAuto/Line	346.3	602.2	67.7	26.0	#C7D0D6FF			
@@ -71,7 +68,6 @@ SafeArea/Column/League/TowerRule/Top/Name	26.0	190.0	23.0	22.8	#8A3A10FF	15.0	�
 SafeArea/Column/League/TowerRule/Top/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	26.0	190.0	23.0	22.8	#FFFFFFFF			
 SafeArea/Column/League/TowerRule/Top/Desc	57.0	190.0	347.0	18.4	#1D2226FF	12.0	물웅덩이 위에선 적도 우리도 이동 −50% · 공격 속도 −25%	57.0,190.0,287.5,18.0
 SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	57.0	190.0	347.0	18.4	#FFFFFFFF			
-SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	57.0	190.0	347.0	18.4	#FFFFFFFF			
 SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	57.0	190.0	347.0	18.4	#FFFFFFFF			
 SafeArea/Column/League/TowerRule/Bonus	26.0	214.8	378.0	16.5	#8A5A10FF	11.0	보너스 · 쓰러진 가전 없이 깨기	26.0,214.8,134.3,16.5
 SafeArea/Column/League/TowerRule/Bonus/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	26.0	214.8	378.0	16.5	#FFFFFFFF			
