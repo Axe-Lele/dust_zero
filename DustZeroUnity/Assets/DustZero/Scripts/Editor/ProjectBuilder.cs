@@ -378,6 +378,28 @@ namespace DustZero.Editor
                     };
                 }).ToArray();
 
+            // 10.22-g 모션. 아홉 칸이 다 있어야 넣는다 — 몇 칸만 있으면 재생 중에
+            // 그 칸에서 가전이 사라진다. 한 장이라도 없으면 아예 SD 로 둔다.
+            Sprite MotionCell(string id, int i)
+                => AssetDatabase.LoadAssetAtPath<Sprite>($"{Root}/Art/Motion/{id}_{i}.png");
+            lib.motions = db.UnitOrder
+                .Select(id =>
+                {
+                    var frames = Enumerable.Range(0, 9).Select(i => MotionCell(id, i)).ToArray();
+                    float scale = db.Units.TryGetValue(id, out var d) && d.Art != null
+                        ? d.Art.motionScale : 1f;
+                    return new UnitMotion
+                    {
+                        id = id,
+                        frames = frames.All(f => f != null) ? frames : null,
+                        scale = scale > 0f ? scale : 1f,
+                    };
+                }).ToArray();
+            var noMotion = lib.motions.Where(m => m.frames == null).Select(m => m.id).ToList();
+            if (noMotion.Count > 0)
+                Debug.LogWarning("모션 아홉 칸이 다 없는 가전 — " + string.Join(", ", noMotion) +
+                                 "  (python tools/convert_motion.py)");
+
             // Per-enemy art where it exists, with look/boss variants as the fallback chain.
             lib.enemies = db.Enemies.Keys
                 .Select(id => new SpriteEntry { id = id, sprite = Load($"enemy_{id}") })

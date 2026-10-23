@@ -1804,6 +1804,27 @@ namespace DustZero.Tests
                 : $"[tutorial] 단계 종료 확인 → 다음 단계 {now.Step.id}");
         }
 
+        /// <summary>
+        /// 10.22-g 모션 칸이 **화면의 그림을 실제로 바꾸는지** 본다. 프레임 번호가 맞는지는
+        /// EditMode(MotionStateTests)가 따로 보증한다 — 둘은 다른 질문이고, 지금 막혀 있는
+        /// 것은 이쪽이다.
+        ///
+        /// 지금까지 확인한 것: 아트 160장이 들어왔고(Art/Sprites 16 · Art/Motion 144),
+        /// SpriteLibrary.asset 에 가전마다 아홉 칸이 들어 있으며(vac 확인), 프레임 고르기
+        /// 로직은 EditMode 에서 전부 맞다. 그런데 23초를 싸워도 화면에는 unit_vac ·
+        /// unit_fan 같은 **SD 한 장만** 나온다. BoardView.SyncMotion 이 늘 −1(가만히)을
+        /// 고르고 있거나, MotionFrame 이 null 을 돌려 SD 로 되돌아가는 것이다. 둘을
+        /// 가르려면 한 프레임만 로그를 찍어 보면 된다.
+        /// </summary>
+        [UnityTest]
+        [Ignore("모션 칸이 아직 화면에 닿지 않는다. 배선이 끊긴 자리를 못 찾았다 — 핸드오프 2.43.")]
+        public IEnumerator BattleDrawsTheMotionFrames()
+        {
+            yield return LoadScene();
+            yield return null;
+            Assert.Fail("아직 구현되지 않았습니다.");
+        }
+
         /// <summary>Reads the battle screen's live tutorial step through its director.</summary>
         static DustZero.Core.Defense.ActiveTutorial GetTutorialState(BattleScreen battle)
         {

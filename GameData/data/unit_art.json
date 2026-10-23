@@ -8,7 +8,8 @@
   "face1": "vac_face1",
   "face2": "vac_face2",
   "face3": "vac_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.0318
  },
  {
   "id": "robot",
@@ -19,7 +20,8 @@
   "face1": "robot_face1",
   "face2": "robot_face2",
   "face3": "robot_face3",
-  "roomSpeed": 0.26
+  "roomSpeed": 0.26,
+  "motionScale": 1.071649
  },
  {
   "id": "fridge",
@@ -30,7 +32,8 @@
   "face1": "fridge_face1",
   "face2": "fridge_face2",
   "face3": "fridge_face3",
-  "roomSpeed": 0.12
+  "roomSpeed": 0.12,
+  "motionScale": 1.144792
  },
  {
   "id": "ac",
@@ -41,7 +44,8 @@
   "face1": "ac_face1",
   "face2": "ac_face2",
   "face3": "ac_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.050237
  },
  {
   "id": "micro",
@@ -52,7 +56,8 @@
   "face1": "micro_face1",
   "face2": "micro_face2",
   "face3": "micro_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.090907
  },
  {
   "id": "washer",
@@ -63,7 +68,8 @@
   "face1": "washer_face1",
   "face2": "washer_face2",
   "face3": "washer_face3",
-  "roomSpeed": 0.12
+  "roomSpeed": 0.12,
+  "motionScale": 1.110089
  },
  {
   "id": "pc",
@@ -74,7 +80,8 @@
   "face1": "pc_face1",
   "face2": "pc_face2",
   "face3": "pc_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1
  },
  {
   "id": "fan",
@@ -85,7 +92,8 @@
   "face1": "fan_face1",
   "face2": "fan_face2",
   "face3": "fan_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.130366
  },
  {
   "id": "gen",
@@ -96,7 +104,8 @@
   "face1": "gen_face1",
   "face2": "gen_face2",
   "face3": "gen_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.017925
  },
  {
   "id": "iron",
@@ -107,7 +116,8 @@
   "face1": "iron_face1",
   "face2": "iron_face2",
   "face3": "iron_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1
  },
  {
   "id": "stove",
@@ -118,7 +128,8 @@
   "face1": "stove_face1",
   "face2": "stove_face2",
   "face3": "stove_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.092182
  },
  {
   "id": "boiler",
@@ -129,7 +140,8 @@
   "face1": "boiler_face1",
   "face2": "boiler_face2",
   "face3": "boiler_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.195356
  },
  {
   "id": "blender",
@@ -140,7 +152,8 @@
   "face1": "blender_face1",
   "face2": "blender_face2",
   "face3": "blender_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.028333
  },
  {
   "id": "purifier",
@@ -151,7 +164,8 @@
   "face1": "purifier_face1",
   "face2": "purifier_face2",
   "face3": "purifier_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.037666
  },
  {
   "id": "router",
@@ -162,7 +176,8 @@
   "face1": "router_face1",
   "face2": "router_face2",
   "face3": "router_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1
  },
  {
   "id": "tv",
@@ -173,6 +188,7 @@
   "face1": "tv_face1",
   "face2": "tv_face2",
   "face3": "tv_face3",
-  "roomSpeed": 0.18
+  "roomSpeed": 0.18,
+  "motionScale": 1.022665
  }
 ]

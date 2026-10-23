@@ -1,4 +1,4 @@
-// Maps unit and enemy ids onto the sprites extracted from the original canvas code.
+﻿// Maps unit and enemy ids onto the sprites extracted from the original canvas code.
 //
 // This is the one place ScriptableObjects are used, and only for asset wiring: it holds
 // prefab/sprite references, never balance numbers. Those stay in the Excel-driven tables.
@@ -30,6 +30,19 @@ namespace DustZero.Game
         public Sprite Face(int index) => index switch { 0 => face1, 1 => face2, _ => face3 };
     }
 
+    /// <summary>
+    /// 가전 한 종의 모션 아홉 칸. 0~2 기본 동작, 3~8 스킬. 비어 있으면 SD 한 장으로
+    /// 그린다 — 원본도 모션 그림이 없으면 그렇게 되돌아간다.
+    /// </summary>
+    [Serializable]
+    public struct UnitMotion
+    {
+        public string id;
+        public Sprite[] frames;
+        /// <summary>unit_art.motionScale. 아홉 칸에 같은 값을 쓴다.</summary>
+        public float scale;
+    }
+
     [CreateAssetMenu(fileName = "SpriteLibrary", menuName = "DustZero/Sprite Library")]
     public sealed class SpriteLibrary : ScriptableObject
     {
@@ -49,6 +62,9 @@ namespace DustZero.Game
         /// which this game has no rarity for.</summary>
         [Header("일러스트 (unit_art 의 6칸)")]
         public UnitIllust[] illusts = Array.Empty<UnitIllust>();
+
+        [Header("모션 (Art/Motion 의 <id>_0..8)")]
+        public UnitMotion[] motions = Array.Empty<UnitMotion>();
 
         [Header("등급 프레임 (R, SR, SSR 순)")]
         public Sprite[] rarityFrames = Array.Empty<Sprite>();
@@ -110,6 +126,31 @@ namespace DustZero.Game
         {
             Index();
             return _units.TryGetValue(unitId, out var s) ? s : null;
+        }
+
+        /// <summary>
+        /// 그 가전의 모션 한 칸. 칸이 없거나 번호가 범위를 벗어나면 null 을 주고,
+        /// 부르는 쪽은 SD 로 되돌아간다 — 그림 하나가 빠졌다고 가전이 사라지면 안 된다.
+        /// </summary>
+        public Sprite MotionFrame(string unitId, int frame)
+        {
+            if (frame < 0 || motions == null) return null;
+            foreach (var m in motions)
+            {
+                if (m.id != unitId) continue;
+                if (m.frames == null || frame >= m.frames.Length) return null;
+                return m.frames[frame];
+            }
+            return null;
+        }
+
+        /// <summary>모션 칸의 크기 보정(unit_art.motionScale). 없으면 1.</summary>
+        public float MotionScale(string unitId)
+        {
+            if (motions == null) return 1f;
+            foreach (var m in motions)
+                if (m.id == unitId) return m.scale > 0f ? m.scale : 1f;
+            return 1f;
         }
 
         /// <summary>

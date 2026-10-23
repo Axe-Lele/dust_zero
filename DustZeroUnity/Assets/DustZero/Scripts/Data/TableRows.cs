@@ -313,6 +313,13 @@ namespace DustZero.Data
         public string full, turn, keys, face1, face2, face3;
         /// <summary>Lobby walk speed, in screen fractions per second.</summary>
         public float roomSpeed = 0.18f;
+
+        /// <summary>
+        /// 모션 칸의 크기 보정. 아홉 칸을 같은 배율로 키워야 재생할 때 캐릭터가
+        /// 커졌다 작아졌다 하지 않는다. 값은 원본 metrics.js 의 DZ_MOTION_SCALE 이고
+        /// tools/convert_motion.py --write-table 이 넣는다. 손으로 적지 않는다.
+        /// </summary>
+        public float motionScale = 1f;
     }
 
     /// <summary>

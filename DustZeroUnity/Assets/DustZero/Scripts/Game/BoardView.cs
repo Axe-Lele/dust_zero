@@ -1,4 +1,4 @@
-// Paints the stage onto a Tilemap and keeps pooled sprites in step with the simulation.
+﻿// Paints the stage onto a Tilemap and keeps pooled sprites in step with the simulation.
 //
 // The board is laid out so tile (0,0) sits at the top-left and y grows downward, matching the
 // table's row-major grids and the original's canvas coordinates. Converting once here means
@@ -99,6 +99,12 @@ namespace DustZero.Game
         SpriteRenderer _rangeRing;
         SpriteRenderer _selectRing;
         readonly Dictionary<BattleUnit, SpriteRenderer> _overheatRings = new();
+
+        /// <summary>
+        /// 가전마다 하나씩 도는 동작 시계. 시뮬에는 없는 값이라 뷰가 들고 있는다 —
+        /// 연출 전용이고 전투 결과에 영향을 주지 않는다는 원본의 약속을 그대로 지킨다.
+        /// </summary>
+        readonly Dictionary<BattleUnit, MotionState> _motions = new();
         readonly SpriteRenderer[] _shade = new SpriteRenderer[4];
 
         // The original's render() redraws a pulsing ring over every stove tile each frame,
@@ -326,6 +332,32 @@ namespace DustZero.Game
             }
         }
 
+        /// <summary>
+        /// 동작 칸을 골라 몸통 그림을 바꾼다. 고를 것이 없으면(가만히 있거나 과열)
+        /// SD 한 장으로 되돌린다. 시간은 `unscaledDeltaTime` 이 아니라 전투 시간과 같이
+        /// 가야 일시정지·배속이 그대로 먹는다 — 원본도 시뮬 시계로 돌린다.
+        /// </summary>
+        void SyncMotion(BattleUnit u, EntityView v)
+        {
+            if (sprites == null || !_motions.TryGetValue(u, out var m)) return;
+
+            // 때리지 않는 지원 가전은 스스로 움직인다(원본 `opt.pulse`).
+            bool support = !u.IsBlocker && u.Def != null && u.Def.Atk <= 0f;
+            // Kick 은 **근접 공격만** 세운다 — 그걸 보면 원거리 가전이 영원히 SD 로 서 있다
+            // (PlayMode 가 그걸 잡았다). AtkT 는 쏘는 순간 간격으로 되돌아가므로 모든 가전이
+            // 같은 신호를 낸다.
+            m.Step(_sim.LastDt, u.AtkT, u.SkillActive, support);
+
+            int frame = m.Pick(u.Overheated, u.SkillT);
+            var sprite = frame < 0 ? sprites.Unit(u.Type) : sprites.MotionFrame(u.Type, frame);
+            // 모션 칸이 없으면 SD 로. 한 칸 빠졌다고 가전이 사라지면 안 된다.
+            v.Body.sprite = sprite != null ? sprite : sprites.Unit(u.Type);
+
+            // 아홉 칸은 SD 보다 여백이 넓다. 같은 배율을 쓰면 재생하는 순간 작아 보인다.
+            float scale = UnitSpriteScale * (frame < 0 ? 1f : sprites.MotionScale(u.Type));
+            v.Body.transform.localScale = Vector3.one * scale;
+        }
+
         void SyncUnits()
         {
             foreach (var u in _sim.Units)
@@ -337,6 +369,7 @@ namespace DustZero.Game
                     // Scale the body, not the view: the bars hang off the view and are already
                     // sized in tiles.
                     v.Body.transform.localScale = Vector3.one * UnitSpriteScale;
+                    _motions[u] = new MotionState();
                     v.Body.transform.localPosition = new Vector3(0f, UnitSpriteLift, 0f);
                     v.transform.localScale = Vector3.one;
                     _units[u] = v;
@@ -345,6 +378,8 @@ namespace DustZero.Game
                 v.transform.localPosition = ToWorld(u.X, u.Y);
                 // Lower rows draw in front, so a unit never hides the one below it.
                 v.Body.sortingOrder = 100 + u.Row * 4;
+
+                SyncMotion(u, v);
 
                 var tint = u.Overheated ? new Color(1f, 0.55f, 0.5f) : Color.white;
                 v.StepFlash(Time.unscaledDeltaTime);

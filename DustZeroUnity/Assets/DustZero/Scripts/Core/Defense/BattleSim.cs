@@ -478,9 +478,17 @@ namespace DustZero.Core.Defense
 
         // ------------------------------------------------------------------ tick
 
+        /// <summary>
+        /// 직전 Tick 이 흘린 시간. 연출이 **전투와 같은 시계**로 돌게 하려고 둔다 —
+        /// 일시정지면 0 이고 2배속이면 두 배다. 규칙에는 쓰지 않는다.
+        /// </summary>
+        public float LastDt { get; private set; }
+
         public void Tick(float dt)
         {
+            LastDt = 0f;
             if (Finished) return;
+            LastDt = dt;
 
             Time += dt;
             Power = Mathf2.Min(_cfg.powerMax, Power + dt * PowerRegen());
