@@ -1,0 +1,79 @@
+[
+ {
+  "id": 1,
+  "kind": "own",
+  "need": 6,
+  "effect": "idleCoin",
+  "value": 3
+ },
+ {
+  "id": 2,
+  "kind": "own",
+  "need": 9,
+  "effect": "idleCoin",
+  "value": 3
+ },
+ {
+  "id": 3,
+  "kind": "own",
+  "need": 12,
+  "effect": "idleCoin",
+  "value": 4
+ },
+ {
+  "id": 4,
+  "kind": "star",
+  "need": 10,
+  "effect": "idlePart",
+  "value": 3
+ },
+ {
+  "id": 5,
+  "kind": "star",
+  "need": 30,
+  "effect": "idlePart",
+  "value": 3
+ },
+ {
+  "id": 6,
+  "kind": "star",
+  "need": 50,
+  "effect": "idlePart",
+  "value": 4
+ },
+ {
+  "id": 7,
+  "kind": "codex",
+  "need": 10,
+  "effect": "idlePart",
+  "value": 5
+ },
+ {
+  "id": 8,
+  "kind": "codex",
+  "need": 19,
+  "effect": "idlePart",
+  "value": 5
+ },
+ {
+  "id": 9,
+  "kind": "aff",
+  "need": 20,
+  "effect": "idleCoin",
+  "value": 2
+ },
+ {
+  "id": 10,
+  "kind": "aff",
+  "need": 50,
+  "effect": "idleCoin",
+  "value": 3
+ },
+ {
+  "id": 11,
+  "kind": "own",
+  "need": 16,
+  "effect": "idleCoin",
+  "value": 3
+ }
+]

@@ -37,6 +37,14 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 8b922bd39f8e3ef409aee410d9ff5f86, type: 3}
   - id: boiler
     sprite: {fileID: 21300000, guid: 3c5d5951b47c9234db6a38733ad64dc5, type: 3}
+  - id: blender
+    sprite: {fileID: 21300000, guid: 0e32fd939a98a5048ad471ce08b68da3, type: 3}
+  - id: purifier
+    sprite: {fileID: 21300000, guid: a522075abffe85143a186549641a45c5, type: 3}
+  - id: router
+    sprite: {fileID: 21300000, guid: b5eeeb6a95d4758459e83045db1b48f3, type: 3}
+  - id: tv
+    sprite: {fileID: 21300000, guid: d715690d47d819c4db331fc4a6a5dd03, type: 3}
   enemies:
   - id: dust
     sprite: {fileID: 21300000, guid: 535beffd69e5fb042aeb6b7a76089996, type: 3}
@@ -201,6 +209,34 @@ MonoBehaviour:
     face1: {fileID: 21300000, guid: c0a44e180cfb74e45ad4eba8d8ed6a92, type: 3}
     face2: {fileID: 21300000, guid: e66793522f28d2d4796e24d52e93466d, type: 3}
     face3: {fileID: 21300000, guid: 1abad5c881e62f44db36e1ec7bd6947f, type: 3}
+  - id: blender
+    full: {fileID: 21300000, guid: 641080d0d9f3a3d4b90c33d93fa86666, type: 3}
+    turn: {fileID: 21300000, guid: f176ece9b7484354c9b57848cf1f760a, type: 3}
+    keys: {fileID: 21300000, guid: d4d2fe13de267f4408eb157e2509c862, type: 3}
+    face1: {fileID: 21300000, guid: d56c1f9b428adc6439210573ecbfae18, type: 3}
+    face2: {fileID: 21300000, guid: 47dd9abbdef9e634fb4d02edf37c799e, type: 3}
+    face3: {fileID: 21300000, guid: 7d55b8901907ad740be613cece3631bb, type: 3}
+  - id: purifier
+    full: {fileID: 21300000, guid: b7acc0b6a810f334a9c2ad2bceb72a1f, type: 3}
+    turn: {fileID: 21300000, guid: 5abec7a4d7a1e41439290aa14f5fc08e, type: 3}
+    keys: {fileID: 21300000, guid: 57bca1af02d520341ae8e22c62ada5d3, type: 3}
+    face1: {fileID: 21300000, guid: 42b9e0f71dc1a7b47935316efd4feff5, type: 3}
+    face2: {fileID: 21300000, guid: fe8717211f37a6145ad57ad5d173a935, type: 3}
+    face3: {fileID: 21300000, guid: e691cbf995175f340863598a497b7bc0, type: 3}
+  - id: router
+    full: {fileID: 21300000, guid: eae8c1e42f9540c4f948b3aecae079b8, type: 3}
+    turn: {fileID: 21300000, guid: e5b537e1fb9846f46ae92bea831472e0, type: 3}
+    keys: {fileID: 21300000, guid: 73396ceeb9eaa064082b1554df8340d2, type: 3}
+    face1: {fileID: 21300000, guid: b95da8090e89aae4b89ec5555a9e5f4c, type: 3}
+    face2: {fileID: 21300000, guid: e553dbd710f80a745a998a3be39de5cf, type: 3}
+    face3: {fileID: 21300000, guid: 75abe0e44be843c4681b42eebf67940f, type: 3}
+  - id: tv
+    full: {fileID: 21300000, guid: 0477ae34590fec344baf2df117ee6f12, type: 3}
+    turn: {fileID: 21300000, guid: 8ffb426c91c9c104699ef277d6ea96a5, type: 3}
+    keys: {fileID: 21300000, guid: 0552b62091e27b146b5b1706b5699949, type: 3}
+    face1: {fileID: 21300000, guid: fd0a5dddecbfb5d40bb22b81c10ad90c, type: 3}
+    face2: {fileID: 21300000, guid: f692cc2b761a71a4b9fff15d6663f064, type: 3}
+    face3: {fileID: 21300000, guid: 4e46571c5f618d84c896633db64514e3, type: 3}
   rarityFrames:
   - {fileID: 21300000, guid: 9c5022736a986294091e768fd4532b70, type: 3}
   - {fileID: 21300000, guid: b79f674c53dbfae458293e831ee9258c, type: 3}
@@ -217,16 +253,26 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 409a9d1c9ca8bd54fa805c0ddd94ec09, type: 3}
   - id: coin
     sprite: {fileID: 21300000, guid: 23e85c9dd371dac4abf1f678dfa6bc82, type: 3}
+  - id: coop
+    sprite: {fileID: 21300000, guid: 7044565dcc100d04eb9b1e009f92bd7a, type: 3}
   - id: crystal
     sprite: {fileID: 21300000, guid: 125b7ded06ca585418d134a2bf2110ea, type: 3}
   - id: essence
     sprite: {fileID: 21300000, guid: 4a9649e05359cd24b9e277daed3af298, type: 3}
+  - id: event
+    sprite: {fileID: 21300000, guid: b15c91c2f0acb0545bb96006cc558c71, type: 3}
   - id: gearbox
     sprite: {fileID: 21300000, guid: c081c43fa4b547a4e8ae42b2e59b3383, type: 3}
+  - id: hard
+    sprite: {fileID: 21300000, guid: e6ced64ae04b14244962145a0be0b3a2, type: 3}
   - id: idle
     sprite: {fileID: 21300000, guid: 267917ab123f47941adf06cadf8c6201, type: 3}
   - id: idleboost
     sprite: {fileID: 21300000, guid: a6cc1dea3bc170c4a8196ac119e80f8d, type: 3}
+  - id: league
+    sprite: {fileID: 21300000, guid: 41dfbb13b6b18974ba07e028e7982008, type: 3}
+  - id: mail
+    sprite: {fileID: 21300000, guid: 3f6697cf0dfe42944ac1c164e85a9ef3, type: 3}
   - id: month
     sprite: {fileID: 21300000, guid: ef1715af674b3a3448404ac84dcb00aa, type: 3}
   - id: multitap
@@ -251,10 +297,14 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 9ae19490cd2d42e4ea73eac330bb3d2c, type: 3}
   - id: ps_storm
     sprite: {fileID: 21300000, guid: 8365e227582fc2c409b3b452a9af2996, type: 3}
+  - id: quest
+    sprite: {fileID: 21300000, guid: e9ce3a28a3fb68c46bec875fc98f5309, type: 3}
   - id: settings
     sprite: {fileID: 21300000, guid: 82e04fa4343eab7498880633b79358fc, type: 3}
   - id: shard_ac
     sprite: {fileID: 21300000, guid: 1df0646bacf469f4d991ad9e5129af29, type: 3}
+  - id: shard_blender
+    sprite: {fileID: 21300000, guid: 42204a891593fdb4089b8533875f62d3, type: 3}
   - id: shard_boiler
     sprite: {fileID: 21300000, guid: ec43835058e1e1b4282698d1ed447f11, type: 3}
   - id: shard_fan
@@ -269,10 +319,16 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 7559b091b554c9348b25ecbd097d1004, type: 3}
   - id: shard_pc
     sprite: {fileID: 21300000, guid: 1ae38ec95ecaa7c449a255fea8b23873, type: 3}
+  - id: shard_purifier
+    sprite: {fileID: 21300000, guid: fdb1121118a0e5a48849a4a694654636, type: 3}
   - id: shard_robot
     sprite: {fileID: 21300000, guid: a7379a0ad58d8604c897d3aa6754a244, type: 3}
+  - id: shard_router
+    sprite: {fileID: 21300000, guid: cd7762e025ea2984fb4ce00521e75206, type: 3}
   - id: shard_stove
     sprite: {fileID: 21300000, guid: bc2a74bbc1844b543be23b948e3bc04c, type: 3}
+  - id: shard_tv
+    sprite: {fileID: 21300000, guid: 0a8b50d19d134f64c84200b5a9eb3a3f, type: 3}
   - id: shard_vac
     sprite: {fileID: 21300000, guid: 4bd0bc954c3c591469153c5575859939, type: 3}
   - id: shard_washer
@@ -281,6 +337,8 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 9e7633854991b054896c84ece1eeb6ee, type: 3}
   - id: stone
     sprite: {fileID: 21300000, guid: 2c32d36bb8f89bb4bb9acebc5bf10a53, type: 3}
+  - id: story
+    sprite: {fileID: 21300000, guid: f4b902feb8327e24d8fe8bd9ea7591e1, type: 3}
   - id: survival
     sprite: {fileID: 21300000, guid: cd2aa1b1fbdd5424493a760aba431e4d, type: 3}
   - id: tab_content
@@ -297,3 +355,5 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: fc2260b02923cb04487fce386aa63074, type: 3}
   - id: tab_stage
     sprite: {fileID: 21300000, guid: 73b95e90bd57a764e85b92bd7423eb35, type: 3}
+  - id: tower
+    sprite: {fileID: 21300000, guid: bede9dc909b53214a9182d357636b8a1, type: 3}

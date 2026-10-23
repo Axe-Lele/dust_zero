@@ -1,4 +1,4 @@
-// Reads data/*.json into RawTables.
+﻿// Reads data/*.json into RawTables.
 //
 // The game never needs Excel or Python at runtime: tools/build.py writes the JSON, the
 // sync step copies it into StreamingAssets, and this loader reads it from there.
@@ -109,6 +109,18 @@ namespace DustZero.Data
                 case "unit_profile": raw.unit_profile = De<List<UnitProfileRow>>(json); break;
                 case "unit_art": raw.unit_art = De<List<UnitArtRow>>(json); break;
                 case "unit_behaviour": raw.unit_behaviour = De<List<UnitBehaviourRow>>(json); break;
+                // ---- 10.22-g
+                case "aff_level": raw.aff_level = De<List<AffLevelRow>>(json); break;
+                case "collect_bonus": raw.collect_bonus = De<List<CollectBonusRow>>(json); break;
+                case "event": raw.@event = De<List<EventRow>>(json); break;
+                case "mail": raw.mail = De<List<MailRow>>(json); break;
+                case "mission": raw.mission = De<List<MissionRow>>(json); break;
+                case "mission_chest": raw.mission_chest = De<List<MissionChestRow>>(json); break;
+                case "quest": raw.quest = De<List<QuestRow>>(json); break;
+                case "quest_line": raw.quest_line = De<List<QuestLineRow>>(json); break;
+                case "stage_hard": raw.stage_hard = De<List<StageHardRow>>(json); break;
+                case "story_ep": raw.story_ep = De<List<StoryEpRow>>(json); break;
+                case "story_line": raw.story_line = De<List<StoryLineRow>>(json); break;
                 default: throw new ArgumentOutOfRangeException(nameof(name), name, "알 수 없는 테이블 이름");
             }
         }

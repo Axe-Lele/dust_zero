@@ -1,4 +1,4 @@
-// 협동 청소 (10.18-h ~ 10.19-d) 회귀 검사.
+﻿// 협동 청소 (10.18-h ~ 10.19-d) 회귀 검사.
 //
 // 원본 index.html 의 coop* 함수와 같은 답이 나오는지 본다. 고리판은 출구가 없고
 // 웨이브가 끝없이 이어지므로, 본편 디펜스 검사로는 잡히지 않는 규칙들만 모았다.
@@ -510,12 +510,28 @@ namespace DustZero.Tests
             return p;
         }
 
+        /// <summary>
+        /// 문턱은 content_unlock 이 정한다. 예전에는 "1-5" 가 테스트에 박혀 있었는데
+        /// 10.21-g 가 협동을 1-5 → 3-5 로 옮기자 그대로 깨졌다. 표가 바뀌면 같이
+        /// 따라가도록 **표에서 읽어** 그 앞뒤를 본다 — 수치는 표에서만 온다.
+        /// </summary>
         [Test]
-        public void CoopIsLockedUntilStageOneFiveIsCleared()
+        public void CoopIsLockedUntilItsUnlockStageIsCleared()
         {
-            Assert.IsFalse(Account(4).CoopUnlocked, "1-5 전에는 잠겨 있어야 합니다.");
-            Assert.IsTrue(Account(5).CoopUnlocked, "1-5 를 깨면 열려야 합니다.");
-            Assert.IsNotEmpty(Account(4).CoopLockMessage, "잠금 안내문이 있어야 합니다.");
+            int gate = UnlockOrder("coop");
+            Assert.Greater(gate, 1, "협동 해금 조건을 표에서 읽지 못했습니다.");
+
+            Assert.IsFalse(Account(gate - 1).CoopUnlocked, "문턱 직전에는 잠겨 있어야 합니다.");
+            Assert.IsTrue(Account(gate).CoopUnlocked, "문턱을 깨면 열려야 합니다.");
+            Assert.IsNotEmpty(Account(gate - 1).CoopLockMessage, "잠금 안내문이 있어야 합니다.");
+        }
+
+        /// <summary>content_unlock 의 조건이 가리키는 스테이지의 order.</summary>
+        int UnlockOrder(string content)
+        {
+            var u = _db.Unlocks[content];
+            var c = _db.Conditions[u.cond];
+            return _db.StageById(int.Parse(c.p1.AsString())).Order;
         }
 
         [Test]

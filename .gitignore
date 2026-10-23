@@ -187,3 +187,8 @@ tools/DustZeroStudio.exe
 # 크래시 덤프 — 작업 결과물이 아닙니다
 bash.exe.stackdump
 *.stackdump
+
+# Unity 가 강제 종료 때 남긴 복구 씬. 커밋도 삭제도 하지 않기로 한 것인데
+# `git add -A` 로 두 번 딸려 들어갔다.
+DustZeroUnity/Assets/_Recovery/
+DustZeroUnity/Assets/_Recovery.meta

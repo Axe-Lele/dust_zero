@@ -102,6 +102,30 @@
   "unitId": "boiler"
  },
  {
+  "id": 313,
+  "nameKey": "item.313.name",
+  "family": 0,
+  "unitId": "blender"
+ },
+ {
+  "id": 314,
+  "nameKey": "item.314.name",
+  "family": 0,
+  "unitId": "purifier"
+ },
+ {
+  "id": 315,
+  "nameKey": "item.315.name",
+  "family": 0,
+  "unitId": "router"
+ },
+ {
+  "id": 316,
+  "nameKey": "item.316.name",
+  "family": 0,
+  "unitId": "tv"
+ },
+ {
   "id": 401,
   "nameKey": "item.401.name",
   "family": 0

@@ -214,5 +214,77 @@
   "blockAdd": 0,
   "rangeAdd": 0.4,
   "spMul": 0.9
+ },
+ {
+  "unitId": "blender",
+  "tier": 2,
+  "costMul": 1,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1
+ },
+ {
+  "unitId": "blender",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 1,
+  "rangeAdd": 0,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "purifier",
+  "tier": 2,
+  "costMul": 1,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1
+ },
+ {
+  "unitId": "purifier",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "router",
+  "tier": 2,
+  "costMul": 1,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1
+ },
+ {
+  "unitId": "router",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.9
+ },
+ {
+  "unitId": "tv",
+  "tier": 2,
+  "costMul": 1,
+  "statMul": 1.35,
+  "blockAdd": 0,
+  "rangeAdd": 0,
+  "spMul": 1
+ },
+ {
+  "unitId": "tv",
+  "tier": 3,
+  "costMul": 1.5,
+  "statMul": 1.75,
+  "blockAdd": 0,
+  "rangeAdd": 0.4,
+  "spMul": 0.85
  }
 ]

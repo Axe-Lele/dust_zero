@@ -33,7 +33,7 @@ namespace DustZero.Data
             var b = u.Behaviour;
             if (b == null)
             {
-                problems.Add($"unit_behaviour: '{id}' 행이 없습니다. (11_Character.xlsx)");
+                problems.Add($"unit_behaviour: '{id}' 행이 없습니다. (17_Character.xlsx)");
                 return;
             }
             Check(b.defense, KnownDefenseKits, "defense");
@@ -67,7 +67,7 @@ namespace DustZero.Data
         {
             if (u.Art == null)
             {
-                problems.Add($"unit_art: '{id}' 행이 없습니다. (11_Character.xlsx)");
+                problems.Add($"unit_art: '{id}' 행이 없습니다. (17_Character.xlsx)");
                 return;
             }
             if (string.IsNullOrWhiteSpace(u.Art.chibi))

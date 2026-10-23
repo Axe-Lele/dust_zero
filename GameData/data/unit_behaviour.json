@@ -74,5 +74,21 @@
  {
   "id": "boiler",
   "support": 0
+ },
+ {
+  "id": "blender",
+  "support": 0
+ },
+ {
+  "id": "purifier",
+  "support": 0
+ },
+ {
+  "id": "router",
+  "support": 0
+ },
+ {
+  "id": "tv",
+  "support": 0
  }
 ]

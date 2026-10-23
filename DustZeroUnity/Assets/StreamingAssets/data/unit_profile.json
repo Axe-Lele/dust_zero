@@ -106,5 +106,41 @@
   "taglineKey": "unit.boiler.tagline",
   "profileKey": "unit.boiler.profile",
   "motifKey": "unit.boiler.motif"
+ },
+ {
+  "unitId": "blender",
+  "art": "art/blender",
+  "keyColor": "#5FB84A",
+  "bgColor": "#E9F6E3",
+  "taglineKey": "unit.blender.tagline",
+  "profileKey": "unit.blender.profile",
+  "motifKey": "unit.blender.motif"
+ },
+ {
+  "unitId": "purifier",
+  "art": "art/purifier",
+  "keyColor": "#3FB6A8",
+  "bgColor": "#E2F6F3",
+  "taglineKey": "unit.purifier.tagline",
+  "profileKey": "unit.purifier.profile",
+  "motifKey": "unit.purifier.motif"
+ },
+ {
+  "unitId": "router",
+  "art": "art/router",
+  "keyColor": "#4A68D8",
+  "bgColor": "#E6ECFB",
+  "taglineKey": "unit.router.tagline",
+  "profileKey": "unit.router.profile",
+  "motifKey": "unit.router.motif"
+ },
+ {
+  "unitId": "tv",
+  "art": "art/tv",
+  "keyColor": "#E0436B",
+  "bgColor": "#FCE6EF",
+  "taglineKey": "unit.tv.tagline",
+  "profileKey": "unit.tv.profile",
+  "motifKey": "unit.tv.motif"
  }
 ]

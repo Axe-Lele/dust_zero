@@ -501,6 +501,21 @@ namespace DustZero.Tests
         /// </summary>
         static readonly int[] ClearedStageIds = { 101, 102 };
 
+        /// <summary>
+        /// content_unlock 이 말하는 그 콘텐츠의 해금 문턱(스테이지 order).
+        /// 테스트에 숫자를 박으면 표가 바뀔 때 조용히 잠긴 화면으로 들어가게 된다 —
+        /// 10.21-g 가 네 콘텐츠를 1-5·3-5·5-5·6-5 로 옮겼을 때 실제로 그랬다.
+        /// </summary>
+        static int UnlockOrder(GameServices svc, string content)
+        {
+            var db = svc.Db;
+            if (!db.Unlocks.TryGetValue(content, out var u)) return 1;
+            if (!db.Conditions.TryGetValue(u.cond, out var c)) return 1;
+            if (!int.TryParse(c.p1.AsString(), out var stageId)) return 1;
+            var st = db.StageById(stageId);
+            return st != null ? st.Order : 1;
+        }
+
         static void SeedAuditState(GameServices svc)
         {
             svc.Profile.Data.best = ClearedStageIds.Length;
@@ -1039,9 +1054,9 @@ namespace DustZero.Tests
             var svc = GameServices.Instance;
             Assert.IsNotNull(svc, "GameServices 가 생성되지 않았습니다.");
 
-            // 협동은 1-5 를 깨야 열린다. 대조 기준과 같은 방식으로 계정을 고정한다.
+            // 협동 문턱은 content_unlock 이 정한다. 대조 기준과 같은 방식으로 계정을 고정한다.
             SeedAuditState(svc);
-            svc.Profile.Data.best = 5;
+            svc.Profile.Data.best = UnlockOrder(svc, "coop");
             svc.Persist();
 
             var battle = Object.FindFirstObjectByType<BattleScreen>(FindObjectsInactive.Include);
@@ -1160,9 +1175,9 @@ namespace DustZero.Tests
             var svc = GameServices.Instance;
             Assert.IsNotNull(svc, "GameServices 가 생성되지 않았습니다.");
 
-            // 리그는 3-5 를 깨야 열린다. 대조 기준과 같은 방식으로 계정을 고정한다.
+            // 리그 문턱은 content_unlock 이 정한다. 대조 기준과 같은 방식으로 계정을 고정한다.
             SeedAuditState(svc);
-            svc.Profile.Data.best = 15;
+            svc.Profile.Data.best = UnlockOrder(svc, "league");
             svc.Persist();
 
             var lobbyScreen = Object.FindFirstObjectByType<LobbyScreen>(FindObjectsInactive.Include);
@@ -1260,9 +1275,9 @@ namespace DustZero.Tests
             var svc = GameServices.Instance;
             Assert.IsNotNull(svc, "GameServices 가 생성되지 않았습니다.");
 
-            // 타워는 2-5 를 깨야 열린다(content_unlock.tower → condition 1011).
+            // 타워 문턱은 content_unlock 이 정한다.
             SeedAuditState(svc);
-            svc.Profile.Data.best = 15;
+            svc.Profile.Data.best = UnlockOrder(svc, "tower");
             svc.Persist();
             Assert.IsTrue(svc.Profile.TowerUnlocked, "타워가 잠겨 있어 들어갈 수 없습니다.");
 
@@ -1392,7 +1407,7 @@ namespace DustZero.Tests
             yield return null;
             var svc = GameServices.Instance;
             SeedAuditState(svc);
-            svc.Profile.Data.best = 15;
+            svc.Profile.Data.best = UnlockOrder(svc, "tower");
             svc.Persist();
 
             var lobbyScreen = Object.FindFirstObjectByType<LobbyScreen>(FindObjectsInactive.Include);

@@ -1,7 +1,7 @@
 // Adding an appliance must be a table edit, not a code edit.
 //
 // Two things used to be hardcoded per appliance: which sprite it draws and which skill kit it
-// runs. Both moved to 11_Character.xlsx (unit_art / unit_behaviour). These tests hold that
+// runs. Both moved to 17_Character.xlsx (unit_art / unit_behaviour). These tests hold that
 // line - they fail if a kit stops being reachable through the data, or if an appliance is
 // added to unit without the art and behaviour rows that make it playable.
 using System.Linq;

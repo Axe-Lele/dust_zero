@@ -130,5 +130,49 @@
   "face2": "boiler_face2",
   "face3": "boiler_face3",
   "roomSpeed": 0.18
+ },
+ {
+  "id": "blender",
+  "chibi": "unit_blender",
+  "full": "blender_full",
+  "turn": "blender_turn",
+  "keys": "blender_keys",
+  "face1": "blender_face1",
+  "face2": "blender_face2",
+  "face3": "blender_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "purifier",
+  "chibi": "unit_purifier",
+  "full": "purifier_full",
+  "turn": "purifier_turn",
+  "keys": "purifier_keys",
+  "face1": "purifier_face1",
+  "face2": "purifier_face2",
+  "face3": "purifier_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "router",
+  "chibi": "unit_router",
+  "full": "router_full",
+  "turn": "router_turn",
+  "keys": "router_keys",
+  "face1": "router_face1",
+  "face2": "router_face2",
+  "face3": "router_face3",
+  "roomSpeed": 0.18
+ },
+ {
+  "id": "tv",
+  "chibi": "unit_tv",
+  "full": "tv_full",
+  "turn": "tv_turn",
+  "keys": "tv_keys",
+  "face1": "tv_face1",
+  "face2": "tv_face2",
+  "face3": "tv_face3",
+  "roomSpeed": 0.18
  }
 ]

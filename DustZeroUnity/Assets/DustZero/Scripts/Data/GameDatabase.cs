@@ -1,4 +1,4 @@
-// Indexed, validated view over the raw tables - the port of the original loadTables().
+﻿// Indexed, validated view over the raw tables - the port of the original loadTables().
 //
 // Everything the simulation needs is derived once here: unit/enemy definitions with their
 // localized strings resolved, stage schedules expanded from wave rows, skill parameters
@@ -263,6 +263,49 @@ namespace DustZero.Data
         {
             foreach (var p in CoopPartners) if (p.id == id) return p;
             return CoopPartners.Count > 0 ? CoopPartners[0] : null;
+        }
+
+        // ---- 10.22-g. 아직 읽는 쪽(화면·규칙)이 없다. 표를 꺼내 볼 수 있는 자리까지만
+        // 만들어 두고, 각 시스템을 구현할 때 그 쪽에서 쓴다. 비어 있으면 빈 목록을
+        // 돌려주므로 표가 빠져도 null 로 터지지 않는다.
+
+        /// <summary>호감도 단계, lv 오름차순.</summary>
+        public IReadOnlyList<AffLevelRow> AffLevels => Raw.aff_level ?? new List<AffLevelRow>();
+        /// <summary>수집 보너스, 표 순서.</summary>
+        public IReadOnlyList<CollectBonusRow> CollectBonuses => Raw.collect_bonus ?? new List<CollectBonusRow>();
+        /// <summary>기간 이벤트. 회차(순환)는 런타임이 만들고 표에는 1회차만 있다.</summary>
+        public IReadOnlyList<EventRow> Events => Raw.@event ?? new List<EventRow>();
+        /// <summary>우편 틀.</summary>
+        public IReadOnlyList<MailRow> Mails => Raw.mail ?? new List<MailRow>();
+        /// <summary>미션·업적·이벤트 미션.</summary>
+        public IReadOnlyList<MissionRow> Missions => Raw.mission ?? new List<MissionRow>();
+        /// <summary>활동 점수 상자.</summary>
+        public IReadOnlyList<MissionChestRow> MissionChests => Raw.mission_chest ?? new List<MissionChestRow>();
+        /// <summary>퀘스트 줄기(0 = 메인).</summary>
+        public IReadOnlyList<QuestLineRow> QuestLines => Raw.quest_line ?? new List<QuestLineRow>();
+        /// <summary>퀘스트.</summary>
+        public IReadOnlyList<QuestRow> Quests => Raw.quest ?? new List<QuestRow>();
+        /// <summary>심화 스테이지, order 오름차순.</summary>
+        public IReadOnlyList<StageHardRow> HardStages => Raw.stage_hard ?? new List<StageHardRow>();
+        /// <summary>가전 스토리 에피소드.</summary>
+        public IReadOnlyList<StoryEpRow> StoryEpisodes => Raw.story_ep ?? new List<StoryEpRow>();
+        /// <summary>스토리 대사.</summary>
+        public IReadOnlyList<StoryLineRow> StoryLines => Raw.story_line ?? new List<StoryLineRow>();
+
+        /// <summary>심화 스테이지 하나. 없으면 null.</summary>
+        public StageHardRow HardStage(int id)
+        {
+            foreach (var h in HardStages) if (h.id == id) return h;
+            return null;
+        }
+
+        /// <summary>그 에피소드의 대사를 seq 순서로.</summary>
+        public List<StoryLineRow> StoryLinesOf(int ep)
+        {
+            var outp = new List<StoryLineRow>();
+            foreach (var l in StoryLines) if (l.ep == ep) outp.Add(l);
+            outp.Sort((a, b) => a.seq.CompareTo(b.seq));
+            return outp;
         }
 
         /// <summary>

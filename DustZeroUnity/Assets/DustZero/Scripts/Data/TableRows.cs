@@ -731,6 +731,186 @@ namespace DustZero.Data
         public int late;
     }
 
+    // ------------------------------------------------------------------ 10.22-g
+    // 퀘스트 · 미션/업적 · 이벤트 · 스토리 · 호감도 · 우편 · 수집 보너스 · 심화 모드.
+    // 열 이름은 data/*.json 그대로다. `goto` 와 `base` 는 C# 예약어라 이름만 바꾸고
+    // JsonProperty 로 실제 열을 적어 둔다 — 바꾼 이름이 표와 어긋나지 않게.
+
+    /// <summary>가전 호감도 한 단계. xp 는 그 레벨에 닿는 **누적** 경험치다.</summary>
+    public sealed class AffLevelRow
+    {
+        public int lv;
+        public int xp;
+        /// <summary>레벨 보상 그룹. 0 이면 보상 없음.</summary>
+        public int rewardGroup;
+        /// <summary>그 가전의 조각 수.</summary>
+        public int shard;
+    }
+
+    /// <summary>
+    /// 수집 보너스 한 줄. kind 는 무엇을 세는지(own 보유 종류 · star 돌파 합 ·
+    /// codex 도감 발견 · aff 호감도 레벨 합), effect 는 어디에 붙는지(idleCoin · idlePart).
+    /// </summary>
+    public sealed class CollectBonusRow
+    {
+        public int id;
+        public string kind;
+        public int need;
+        public string effect;
+        /// <summary>붙는 값(%).</summary>
+        public int value;
+    }
+
+    /// <summary>기간 이벤트. start·end 는 "yyyy-MM-dd" 이고 end 는 그날을 포함한다.</summary>
+    public sealed class EventRow
+    {
+        public int id;
+        public string nameKey;
+        public string descKey;
+        public string start;
+        public string end;
+        /// <summary>이벤트 점수의 이름 문구 키.</summary>
+        public string pointKey;
+        /// <summary>카드 색(#RRGGBB).</summary>
+        public string color;
+    }
+
+    /// <summary>
+    /// 우편 한 통의 **틀**. 실제로 받은 우편은 세이브의 MailState.list 에 쌓인다.
+    /// cond 는 "" 바로 · "best:N" N판 클리어 뒤 · "date:시작~끝" 그 기간 접속.
+    /// </summary>
+    public sealed class MailRow
+    {
+        public int id;
+        public string fromKey;
+        public string titleKey;
+        public string bodyKey;
+        /// <summary>첨부 보상 그룹. 0 이면 읽기만 하는 안내문이다.</summary>
+        public int rewardGroup;
+        public string cond;
+        /// <summary>받은 뒤 사라지기까지 일. 0 이면 안 사라진다.</summary>
+        public int expireDays;
+    }
+
+    /// <summary>
+    /// 미션 한 줄. kind 1 일일 · 2 주간 · 3 업적 · 4 이벤트. 업적은 group 이 줄기,
+    /// tier 가 그 줄기의 단계다. 이벤트는 group 이 이벤트 id 다.
+    /// </summary>
+    public sealed class MissionRow
+    {
+        public int id;
+        public int kind;
+        public int group;
+        public int tier;
+        /// <summary>세는 값 또는 상태(best · stars · own · tower_best · coop_best · codex).</summary>
+        public string key;
+        public int goal;
+        /// <summary>일일·주간 활동 점수 또는 이벤트 점수.</summary>
+        public int pts;
+        /// <summary>0 이면 점수만 준다.</summary>
+        public int rewardGroup;
+        public string textKey;
+    }
+
+    /// <summary>활동 점수 상자. pts 에 닿으면 열린다.</summary>
+    public sealed class MissionChestRow
+    {
+        public int id;
+        public int kind;
+        /// <summary>이벤트 상자일 때의 이벤트 id.</summary>
+        public int group;
+        public int pts;
+        public int rewardGroup;
+        public int passXp;
+    }
+
+    /// <summary>
+    /// 퀘스트 줄기. unlock 은 "" 바로 · "unlock:&lt;콘텐츠&gt;" · "best:N" · "hard".
+    /// id 0 이 메인이고 1 부터가 콘텐츠별 서브다.
+    /// </summary>
+    public sealed class QuestLineRow
+    {
+        public int id;
+        public string nameKey;
+        public string descKey;
+        public string unlock;
+    }
+
+    /// <summary>
+    /// 퀘스트 한 줄. 같은 줄기 안에서 seq 순서대로 하나씩 열린다.
+    /// </summary>
+    public sealed class QuestRow
+    {
+        public int id;
+        public int line;
+        public int seq;
+        /// <summary>메인 퀘스트의 장. 서브는 0.</summary>
+        public int chapter;
+        public string key;
+        public int goal;
+        /// <summary>[이동] 단추가 여는 곳. 표의 열 이름은 `goto` 다.</summary>
+        [JsonProperty("goto")] public string gotoTab;
+        public string textKey;
+        public int rewardGroup;
+    }
+
+    /// <summary>
+    /// 심화 스테이지. 맵과 웨이브는 base 가 가리키는 보통 스테이지에서 빌려 오고,
+    /// 체력·과열 배율과 규칙만 따로 갖는다. 별도 stars 로 세므로 보통 별과 섞이지 않는다.
+    /// </summary>
+    public sealed class StageHardRow
+    {
+        public int id;
+        public int order;
+        /// <summary>맵·웨이브를 빌려 오는 보통 스테이지 id. 표의 열 이름은 `base` 다.</summary>
+        [JsonProperty("base")] public int baseStage;
+        public int chapter;
+        public string no;
+        /// <summary>규칙 — fast · armor · heat · power · elite.</summary>
+        public string rule;
+        public float hpMul;
+        public float dmgMul;
+        public int refLv;
+        public int refStar;
+        public float refGear;
+        /// <summary>열리려면 보통 스테이지를 몇 판 깨야 하는지.</summary>
+        public int needNormal;
+        public int firstRewardGroup;
+    }
+
+    /// <summary>
+    /// 가전 스토리 한 편. game 이 비어 있지 않으면 2화 중간에 미니게임이 끼어든다.
+    /// </summary>
+    public sealed class StoryEpRow
+    {
+        public int id;
+        public string unit;
+        public int ep;
+        public string titleKey;
+        /// <summary>필요 호감도 레벨. 0 이면 영입만으로 열린다.</summary>
+        public int needAff;
+        /// <summary>미니게임 id. 비어 있으면 없다.</summary>
+        public string game;
+        public string gameNameKey;
+        /// <summary>첫 감상 보상.</summary>
+        public int rewardGroup;
+        /// <summary>첫 감상 호감도.</summary>
+        public int affXp;
+    }
+
+    /// <summary>
+    /// 스토리 대사 한 줄. who 는 가전 id · "n" 나레이션 · "me" 나 · "@game" 미니게임 자리.
+    /// </summary>
+    public sealed class StoryLineRow
+    {
+        public int ep;
+        public int seq;
+        public string who;
+        /// <summary>표정 1~3.</summary>
+        public int face;
+        public string textKey;
+    }
+
     /// <summary>A floor modifier. kind "a" applies to allies, "e" to the dust.</summary>
     public sealed class TowerRuleRow
     {
@@ -964,6 +1144,19 @@ namespace DustZero.Data
         public List<TowerRuleRow> tower_rule;
         public List<TowerBonusRow> tower_bonus;
         public List<CoopPartnerRow> coop_partner;
+
+        // ---- 10.22-g
+        public List<AffLevelRow> aff_level;
+        public List<CollectBonusRow> collect_bonus;
+        public List<EventRow> @event;
+        public List<MailRow> mail;
+        public List<MissionRow> mission;
+        public List<MissionChestRow> mission_chest;
+        public List<QuestRow> quest;
+        public List<QuestLineRow> quest_line;
+        public List<StageHardRow> stage_hard;
+        public List<StoryEpRow> story_ep;
+        public List<StoryLineRow> story_line;
         public List<TutorialRow> tutorial;
         public List<SurvParamRow> surv_param;
         public List<SurvComboRow> surv_combo;
@@ -1004,6 +1197,12 @@ namespace DustZero.Data
             // 10.18-c 리그 · 10.18-g 먼지 타워. 타워는 리그 전투판을 그대로 쓴다.
             "league_unit", "league_param", "league_enemy", "league_tier", "league_round",
             "league_syn", "tower_floor", "tower_rule", "tower_bonus", "coop_partner",
+            // 10.21-c~10.22-a: 퀘스트 · 미션/업적 · 이벤트 · 우편 · 스토리 · 호감도 ·
+            // 수집 보너스 · 심화 모드 75판. 이 목록은 손으로 적는 것이라, 표를 만들고도
+            // 여기 적지 않으면 StreamingAssets 만 늘고 게임은 그 표를 모른다.
+            "mission", "mission_chest", "event", "mail",
+            "aff_level", "collect_bonus", "quest_line", "quest",
+            "story_ep", "story_line", "stage_hard",
         };
     }
 }

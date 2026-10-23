@@ -238,5 +238,69 @@
   "key": "burn",
   "op": "mul",
   "val": 1.4
+ },
+ {
+  "gearId": 4013,
+  "unitId": "blender",
+  "slot": "comp",
+  "key": "dmg",
+  "op": "mul",
+  "val": 1.4
+ },
+ {
+  "gearId": 4013,
+  "unitId": "blender",
+  "slot": "comp",
+  "key": "radius",
+  "op": "add",
+  "val": 0.3
+ },
+ {
+  "gearId": 4014,
+  "unitId": "purifier",
+  "slot": "comp",
+  "key": "dmg",
+  "op": "mul",
+  "val": 1.4
+ },
+ {
+  "gearId": 4014,
+  "unitId": "purifier",
+  "slot": "comp",
+  "key": "count",
+  "op": "add",
+  "val": 1
+ },
+ {
+  "gearId": 4015,
+  "unitId": "router",
+  "slot": "comp",
+  "key": "dmg",
+  "op": "mul",
+  "val": 1.4
+ },
+ {
+  "gearId": 4015,
+  "unitId": "router",
+  "slot": "comp",
+  "key": "chain",
+  "op": "add",
+  "val": 2
+ },
+ {
+  "gearId": 4016,
+  "unitId": "tv",
+  "slot": "comp",
+  "key": "freeze",
+  "op": "add",
+  "val": 0.5
+ },
+ {
+  "gearId": 4016,
+  "unitId": "tv",
+  "slot": "comp",
+  "key": "dmg",
+  "op": "mul",
+  "val": 1.4
  }
 ]

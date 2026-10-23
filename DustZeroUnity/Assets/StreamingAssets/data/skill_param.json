@@ -328,5 +328,119 @@
   "key": "skillSlow",
   "value": 0.25,
   "note": "고압 스팀 둔화율"
+ },
+ {
+  "unitId": "blender",
+  "key": "execHp",
+  "value": 0.3,
+  "note": "마무리: 적 체력이 이 비율 이하면 평타 피해 증가"
+ },
+ {
+  "unitId": "blender",
+  "key": "execBonus",
+  "value": 0.7,
+  "note": "마무리 피해 증가(+70%)"
+ },
+ {
+  "unitId": "blender",
+  "key": "grindItvMul",
+  "value": 0.5,
+  "note": "분쇄 모드 중 공격 간격 배율"
+ },
+ {
+  "unitId": "blender",
+  "key": "grindRadius",
+  "value": 1,
+  "note": "분쇄 모드: 때릴 때 함께 맞는 주변 지상 적 범위(칸)"
+ },
+ {
+  "unitId": "purifier",
+  "key": "airMul",
+  "value": 1.8,
+  "note": "공중 적 피해 배율(평타·스킬)"
+ },
+ {
+  "unitId": "purifier",
+  "key": "tick",
+  "value": 0.5,
+  "note": "강력 정화 간격(초)"
+ },
+ {
+  "unitId": "purifier",
+  "key": "skillDmg",
+  "value": 28,
+  "note": "강력 정화 1회 피해"
+ },
+ {
+  "unitId": "purifier",
+  "key": "skillSlow",
+  "value": 0.5,
+  "note": "강력 정화 공중 적 둔화율"
+ },
+ {
+  "unitId": "purifier",
+  "key": "skillSlowSec",
+  "value": 1,
+  "note": "둔화 시간(초)"
+ },
+ {
+  "unitId": "router",
+  "key": "chainN",
+  "value": 2,
+  "note": "평타가 추가로 튀는 적 수"
+ },
+ {
+  "unitId": "router",
+  "key": "chainRange",
+  "value": 1.6,
+  "note": "튀는 거리(칸)"
+ },
+ {
+  "unitId": "router",
+  "key": "chainDecay",
+  "value": 0.65,
+  "note": "튈 때마다 피해 배율"
+ },
+ {
+  "unitId": "router",
+  "key": "skillChainAdd",
+  "value": 3,
+  "note": "신호 폭주 중 추가 연쇄"
+ },
+ {
+  "unitId": "router",
+  "key": "skillItvMul",
+  "value": 0.6,
+  "note": "신호 폭주 중 공격 간격 배율"
+ },
+ {
+  "unitId": "router",
+  "key": "stun",
+  "value": 0.3,
+  "note": "신호 폭주 중 맞은 적 기절(초, 보스 1/3)"
+ },
+ {
+  "unitId": "tv",
+  "key": "adMin",
+  "value": 6,
+  "note": "필드 적이 이 수 이상이면 발동(보스가 있으면 바로)"
+ },
+ {
+  "unitId": "tv",
+  "key": "adVuln",
+  "value": 0.15,
+  "note": "광고 시간 동안·뒤 받는 피해 증가(방어 감소)"
+ },
+ {
+  "unitId": "tv",
+  "key": "vulnSec",
+  "value": 5,
+  "note": "받는 피해 증가 지속(초)"
+ },
+ {
+  "unitId": "tv",
+  "key": "splashRadius",
+  "value": 0.6,
+  "note": "평타 화면 빔 광역 반경(칸)"
  }
 ]
