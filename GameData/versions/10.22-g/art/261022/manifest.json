@@ -1,0 +1,105 @@
+{
+  "build": "10.22-f",
+  "tool": "Built-in image_gen.imagegen",
+  "reference": "Resource/char1.png",
+  "promptSD": "Create one transparent 2.5-head-tall chibi appliance girl matching specified reference character; crisp hand-painted anime sprite, compact full body, standing three-quarter right, 8% clear padding, no text, floor or shadow.",
+  "promptPair": "Create one transparent character design sheet: LEFT HALF full-body 6-head-tall appliance guardian; RIGHT HALF matching 2.5-head chibi. Entire figures inside their half, clear center gap, no text, labels, floor or shadow. Reference sheet is painting style reference.",
+  "assets": [
+    {
+      "id": "boiler",
+      "kind": "sd",
+      "desc": "Boiler girl matching the upper left of reference sheet: copper orange drill twin tails, brass pressure gauge bonnet, white ruffled dress with copper piping, tiny brass steam cannon and copper pipe backpack",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-aadb6de0-c270-4915-bae6-27981ddab743.png"
+    },
+    {
+      "id": "pc",
+      "kind": "sd",
+      "desc": "Computer girl matching upper middle of reference sheet, but violet accents instead of teal: black twin tails with violet tips, violet eyes, headset, white tech jacket, dark pleated skirt, black boots, small violet holographic tablet",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-8cdc0621-9267-412e-a077-b5b9523dfc51.png"
+    },
+    {
+      "id": "washer",
+      "kind": "sd",
+      "desc": "Washing machine girl matching upper right reference: long pale blue hair, blue eyes, white and blue ruffled dress, single round washing drum hair clip on one side, round washing drum shoulder backpack, small bubbles",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-7d8c801c-8b7e-4226-9494-5ac935ec6643.png"
+    },
+    {
+      "id": "stove",
+      "kind": "sd",
+      "desc": "Gas stove girl matching middle left reference: long dark brown hair with orange tips, brass burner goggles on head, dark chef dress with white ruffled apron, black boots, small frying pan with contained orange flame",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-2ef52a81-c2c0-42d1-a3ef-7edcd2fe9f5a.png"
+    },
+    {
+      "id": "iron",
+      "kind": "sd",
+      "desc": "Steam iron girl matching middle center reference: short purple bob haircut, purple eyes, white blouse and violet pleated skirt, white ribbon, white socks, purple shoes, holding a small silver and violet steam iron",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-26a195ae-1f3e-4e58-901a-26dfa2373f58.png"
+    },
+    {
+      "id": "micro",
+      "kind": "sd",
+      "desc": "Microwave girl matching middle right reference: bright orange high ponytail, amber eyes, black and orange digital headband without text, gray outfit with orange accents, gray boots, holding a glowing orange circular microwave turntable",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-634f1470-7cab-4c35-93c2-40ca0cad6a64.png"
+    },
+    {
+      "id": "ac",
+      "kind": "sd",
+      "desc": "Air conditioner girl matching bottom left reference: long ice white pale blue hair, blue eyes, white and ice blue dress with cooling vent motifs, blue shoes, small handheld remote and two folded cooling fins on backpack",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-cd784941-6023-4396-9969-140dd30c485d.png"
+    },
+    {
+      "id": "gen",
+      "kind": "sd",
+      "desc": "Generator girl matching bottom center reference: short golden ponytail, amber eyes, yellow hard hat with lamp, charcoal work overalls with yellow sleeves, black boots, yellow battery backpack with lightning emblem, safe coiled electrical cable",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-bb259fe7-47af-4de8-ab4e-9c847dd29c06.png"
+    },
+    {
+      "id": "robot",
+      "kind": "sd",
+      "desc": "Robot vacuum girl matching bottom right reference: silver white bob haircut, sleepy gray green eyes, white and gray maid uniform, round white robot vacuum beret with green light ring, green trim, tiny brush attachments",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-eb3c2e0f-d023-4147-bab1-1051c0749dec.png"
+    },
+    {
+      "id": "vac",
+      "kind": "pair",
+      "desc": "Vacuum cleaner girl: silver gray twin tails tied with black and rose red ribbons, ruby eyes, charcoal maid uniform with white ruffles and rose red belt, sturdy dark boots, compact black and rose vacuum backpack, vacuum wand and hose",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-6227cf72-2c69-48cb-bdac-c76dec216d79.png"
+    },
+    {
+      "id": "fridge",
+      "kind": "pair",
+      "desc": "Refrigerator girl: long silvery lavender hair, calm blue eyes, white winter coat dress over navy dress, navy headband with small ice crystal, navy boots, compact refrigerator door shield and tiny ice cube floating beside hand",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-ff2e3ea6-b20d-484e-b2bc-8b6ab984ebef.png"
+    },
+    {
+      "id": "fan",
+      "kind": "pair",
+      "desc": "Electric fan girl: long periwinkle blue hair, bright blue eyes, cobalt and white sailor dress, white stockings and shoes, small blue bow and daisy hair clip, small circular fan accessory and translucent blue airflow wing panels",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-308c7560-f4b3-4aed-856c-fe669e31bfea.png"
+    },
+    {
+      "id": "blender",
+      "kind": "pair",
+      "desc": "Blender girl: light lime green hair in two round buns, green eyes, white chef tunic dress with lime trim, green shoes, translucent blender jug backpack with fruit pieces, safe rounded mixing staff, cheerful cooking helper",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-c30a2897-d295-4c35-808d-567d4e2cee09.png"
+    },
+    {
+      "id": "purifier",
+      "kind": "pair",
+      "desc": "Air purifier girl: long very pale mint hair, soft teal eyes, white and mint flowing coat dress, white stockings and teal shoes, small filter grille shoulder panels and glowing teal air quality ring brooch, serene clean breeze",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-3f8011bc-449a-41c2-a823-3b49524bfb71.png"
+    },
+    {
+      "id": "router",
+      "kind": "pair",
+      "desc": "WiFi router girl: navy blue bob hair, blue eyes, black tech jacket dress with electric blue seams, dark leggings and blue shoes, two slim antenna hair accessories, small router backpack with green status lights, holding a blue signal orb",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-a2958a1e-3e32-42a1-b41e-b7895283ec59.png"
+    },
+    {
+      "id": "tv",
+      "kind": "pair",
+      "desc": "Smart television girl: pastel pink twin tails with rose tips, pink eyes, black and rose stage performer dress, black boots with pink details, small TV screen hair ornament with color bars, handheld remote, confident cheerful pose",
+      "generatedPath": "C:\\Users\\zion1\\.codex\\generated_images\\01a162c6-4a81-7462-9600-81e6c8ad2017\\exec-ef9d86d6-483b-46c2-8cd6-97b19e87fd35.png"
+    }
+  ]
+}

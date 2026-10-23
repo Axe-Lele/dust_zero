@@ -1,0 +1,22 @@
+[
+ {
+  "id": "noDown",
+  "nameKey": "tower.bonus.noDown"
+ },
+ {
+  "id": "fast",
+  "nameKey": "tower.bonus.fast"
+ },
+ {
+  "id": "few",
+  "nameKey": "tower.bonus.few"
+ },
+ {
+  "id": "gold",
+  "nameKey": "tower.bonus.gold"
+ },
+ {
+  "id": "pur",
+  "nameKey": "tower.bonus.pur"
+ }
+]

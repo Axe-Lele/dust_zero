@@ -1,0 +1,56 @@
+[
+ {
+  "id": 0,
+  "nameKey": "qline.0.name",
+  "unlock": "",
+  "descKey": "qline.0.desc"
+ },
+ {
+  "id": 1,
+  "nameKey": "qline.1.name",
+  "unlock": "unlock:survivor",
+  "descKey": "qline.1.desc"
+ },
+ {
+  "id": 2,
+  "nameKey": "qline.2.name",
+  "unlock": "unlock:coop",
+  "descKey": "qline.2.desc"
+ },
+ {
+  "id": 3,
+  "nameKey": "qline.3.name",
+  "unlock": "unlock:tower",
+  "descKey": "qline.3.desc"
+ },
+ {
+  "id": 4,
+  "nameKey": "qline.4.name",
+  "unlock": "unlock:league",
+  "descKey": "qline.4.desc"
+ },
+ {
+  "id": 5,
+  "nameKey": "qline.5.name",
+  "unlock": "hard",
+  "descKey": "qline.5.desc"
+ },
+ {
+  "id": 6,
+  "nameKey": "qline.6.name",
+  "unlock": "best:2",
+  "descKey": "qline.6.desc"
+ },
+ {
+  "id": 7,
+  "nameKey": "qline.7.name",
+  "unlock": "best:3",
+  "descKey": "qline.7.desc"
+ },
+ {
+  "id": 8,
+  "nameKey": "qline.8.name",
+  "unlock": "",
+  "descKey": "qline.8.desc"
+ }
+]

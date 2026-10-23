@@ -1,0 +1,27 @@
+{
+  "build": "10.22-f",
+  "assets": 16,
+  "alpha": "pass",
+  "artTabs": "16 characters, full/face/design loaded",
+  "fileProtocol": "pass",
+  "pageErrors": [],
+  "failedArtRequests": [],
+  "stage1": {
+    "win": true,
+    "life": 8,
+    "t": 56,
+    "killed": 18,
+    "leaked": 2,
+    "n": 8,
+    "taps": 0,
+    "comp": "vac(2,8) gen(4,0) ac(2,7) vac(3,7) micro(4,7) ac(2,9) fan(4,6) micro(4,9)",
+    "leakBy": {
+      "dust": 2
+    },
+    "leakAt": "14:dust@0 16:dust@0",
+    "psUse": {
+      "storm": 0,
+      "boost": 0
+    }
+  }
+}

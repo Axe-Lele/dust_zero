@@ -1,0 +1,92 @@
+[
+ {
+  "id": 1,
+  "fromKey": "mail.1.from",
+  "titleKey": "mail.1.title",
+  "bodyKey": "mail.1.body",
+  "rewardGroup": 46001,
+  "cond": "",
+  "expireDays": 0
+ },
+ {
+  "id": 2,
+  "fromKey": "mail.2.from",
+  "titleKey": "mail.2.title",
+  "bodyKey": "mail.2.body",
+  "rewardGroup": 46002,
+  "cond": "date:2026-10-21~2026-11-17",
+  "expireDays": 30
+ },
+ {
+  "id": 3,
+  "fromKey": "mail.3.from",
+  "titleKey": "mail.3.title",
+  "bodyKey": "mail.3.body",
+  "rewardGroup": 46003,
+  "cond": "date:2026-10-21~2026-11-17",
+  "expireDays": 30
+ },
+ {
+  "id": 4,
+  "fromKey": "mail.4.from",
+  "titleKey": "mail.4.title",
+  "bodyKey": "mail.4.body",
+  "rewardGroup": 46004,
+  "cond": "best:10",
+  "expireDays": 0
+ },
+ {
+  "id": 5,
+  "fromKey": "mail.5.from",
+  "titleKey": "mail.5.title",
+  "bodyKey": "mail.5.body",
+  "rewardGroup": 46005,
+  "cond": "best:25",
+  "expireDays": 0
+ },
+ {
+  "id": 6,
+  "fromKey": "mail.6.from",
+  "titleKey": "mail.6.title",
+  "bodyKey": "mail.6.body",
+  "rewardGroup": 46006,
+  "cond": "best:30",
+  "expireDays": 0
+ },
+ {
+  "id": 7,
+  "fromKey": "mail.7.from",
+  "titleKey": "mail.7.title",
+  "bodyKey": "mail.7.body",
+  "rewardGroup": 46007,
+  "cond": "date:2026-11-18~2026-12-15",
+  "expireDays": 30
+ },
+ {
+  "id": 8,
+  "fromKey": "mail.8.from",
+  "titleKey": "mail.8.title",
+  "bodyKey": "mail.8.body",
+  "rewardGroup": 46008,
+  "cond": "date:2026-12-16~2027-01-12",
+  "expireDays": 30
+ },
+ {
+  "id": 9,
+  "fromKey": "mail.9.from",
+  "titleKey": "mail.9.title",
+  "bodyKey": "mail.9.body",
+  "rewardGroup": 46009,
+  "cond": "date:2027-01-13~2027-02-09",
+  "expireDays": 30
+ },
+ {
+  "id": 10,
+  "fromKey": "mail.10.from",
+  "titleKey": "mail.10.title",
+  "bodyKey": "mail.10.body",
+  "rewardGroup": 46010,
+  "cond": "date:2026-10-21~2026-11-17",
+  "expireDays": 30
+ }
+]

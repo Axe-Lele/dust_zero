@@ -1,0 +1,336 @@
+{
+  "build": "10.22-g",
+  "characters": 16,
+  "attackFrames": 48,
+  "skillFrames": 96,
+  "distinctTransparentPoses": "144/144 pass",
+  "attackSequence": [
+    0,
+    1,
+    2
+  ],
+  "skillSequence": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pausedClock": "pass",
+  "instantIronSkill": "pass",
+  "overheatOverride": "pass",
+  "realCombatEvents": {
+    "ac:attack": 142,
+    "vac:attack": 82,
+    "vac:skill": 8,
+    "iron:attack": 43,
+    "gen:skill": 4,
+    "micro:attack": 44,
+    "iron:skill": 6,
+    "ac:skill": 5,
+    "micro:skill": 7
+  },
+  "fileProtocol": "pass",
+  "galleryControls": "pass",
+  "pageErrors": [],
+  "failedAssets": [],
+  "regression": "75 stages +/-3 levels and two seeds identical; league tiers 1/2/3, tower 1/10/20/30, both coop partners, all 3 survivor leaders identical",
+  "modeOutcomes": {
+    "league": [
+      {
+        "bt": 155,
+        "wins": 6,
+        "life": 11,
+        "clear": true,
+        "lv": 6,
+        "board": "vac2 vac2 gen2 micro2 ac2 fan2",
+        "round": 8
+      },
+      {
+        "bt": 172,
+        "wins": 6,
+        "life": 6,
+        "clear": true,
+        "lv": 6,
+        "board": "vac2 vac2 iron1 gen2 ac2 gen2",
+        "round": 8
+      },
+      {
+        "bt": 129,
+        "wins": 1,
+        "life": 0,
+        "clear": false,
+        "lv": 5,
+        "board": "vac2 vac2 gen2 fan2 gen2",
+        "round": 5
+      }
+    ],
+    "tower": [
+      {
+        "floor": 1,
+        "clear": true,
+        "bonus": true,
+        "wins": 4,
+        "best": {
+          "name": "auto",
+          "win": true,
+          "t": 5.3,
+          "hp": 0.94,
+          "bonus": true,
+          "left": 0,
+          "board": "robot vac fridge micro ac"
+        },
+        "res": [
+          {
+            "name": "auto",
+            "win": true,
+            "t": 5.3,
+            "hp": 0.94,
+            "bonus": true,
+            "left": 0,
+            "board": "robot vac fridge micro ac"
+          },
+          {
+            "name": "ranged",
+            "win": true,
+            "t": 4.6,
+            "hp": 0.94,
+            "bonus": true,
+            "left": 0,
+            "board": "vac pc micro ac washer"
+          },
+          {
+            "name": "melee",
+            "win": true,
+            "t": 5.3,
+            "hp": 0.94,
+            "bonus": true,
+            "left": 0,
+            "board": "robot vac fridge micro ac"
+          },
+          {
+            "name": "rule",
+            "win": true,
+            "t": 5.3,
+            "hp": 0.94,
+            "bonus": true,
+            "left": 0,
+            "board": "robot vac fridge micro ac"
+          }
+        ]
+      },
+      {
+        "floor": 10,
+        "clear": true,
+        "bonus": true,
+        "wins": 4,
+        "best": {
+          "name": "ranged",
+          "win": true,
+          "t": 15.7,
+          "hp": 0.85,
+          "bonus": true,
+          "left": 0,
+          "board": "vac pc micro ac washer fan"
+        },
+        "res": [
+          {
+            "name": "auto",
+            "win": true,
+            "t": 18,
+            "hp": 0.7,
+            "bonus": true,
+            "left": 0,
+            "board": "robot vac fridge micro ac washer"
+          },
+          {
+            "name": "ranged",
+            "win": true,
+            "t": 15.7,
+            "hp": 0.85,
+            "bonus": true,
+            "left": 0,
+            "board": "vac pc micro ac washer fan"
+          },
+          {
+            "name": "melee",
+            "win": true,
+            "t": 18,
+            "hp": 0.7,
+            "bonus": true,
+            "left": 0,
+            "board": "robot vac fridge micro ac washer"
+          },
+          {
+            "name": "rule",
+            "win": true,
+            "t": 18,
+            "hp": 0.7,
+            "bonus": true,
+            "left": 0,
+            "board": "robot vac fridge micro ac washer"
+          }
+        ]
+      },
+      {
+        "floor": 20,
+        "clear": false,
+        "bonus": false,
+        "wins": 0,
+        "best": {
+          "name": "auto",
+          "win": false,
+          "t": 25.7,
+          "hp": 0,
+          "bonus": false,
+          "left": 8,
+          "board": "robot vac fridge pc micro ac washer"
+        },
+        "res": [
+          {
+            "name": "auto",
+            "win": false,
+            "t": 25.7,
+            "hp": 0,
+            "bonus": false,
+            "left": 8,
+            "board": "robot vac fridge pc micro ac washer"
+          },
+          {
+            "name": "melee",
+            "win": false,
+            "t": 25.7,
+            "hp": 0,
+            "bonus": false,
+            "left": 8,
+            "board": "robot vac fridge pc micro ac washer"
+          },
+          {
+            "name": "ranged",
+            "win": false,
+            "t": 23.6,
+            "hp": 0,
+            "bonus": false,
+            "left": 9,
+            "board": "vac gen pc micro ac washer fan"
+          },
+          {
+            "name": "rule",
+            "win": false,
+            "t": 31.6,
+            "hp": 0,
+            "bonus": false,
+            "left": 10,
+            "board": "robot vac fridge fan micro ac washer"
+          }
+        ]
+      },
+      {
+        "floor": 30,
+        "clear": false,
+        "bonus": false,
+        "wins": 0,
+        "best": {
+          "name": "auto",
+          "win": false,
+          "t": 23.9,
+          "hp": 0,
+          "bonus": false,
+          "left": 3,
+          "board": "robot vac fridge pc micro ac washer"
+        },
+        "res": [
+          {
+            "name": "auto",
+            "win": false,
+            "t": 23.9,
+            "hp": 0,
+            "bonus": false,
+            "left": 3,
+            "board": "robot vac fridge pc micro ac washer"
+          },
+          {
+            "name": "ranged",
+            "win": false,
+            "t": 23.7,
+            "hp": 0,
+            "bonus": false,
+            "left": 3,
+            "board": "vac gen pc micro ac washer fan"
+          },
+          {
+            "name": "melee",
+            "win": false,
+            "t": 23.9,
+            "hp": 0,
+            "bonus": false,
+            "left": 3,
+            "board": "robot vac fridge pc micro ac washer"
+          },
+          {
+            "name": "rule",
+            "win": false,
+            "t": 28.1,
+            "hp": 0,
+            "bonus": false,
+            "left": 3,
+            "board": "robot vac fridge fan micro ac washer"
+          }
+        ]
+      }
+    ],
+    "coop": [
+      {
+        "snap": "4:11/22 8:24/33 12:41/47 16:49/61",
+        "waves": 19,
+        "t": 398,
+        "peak": 41,
+        "n": 38,
+        "bn": 51,
+        "me": "ac2 ac2 ac2 ac2 ac3 ac3 fan1 fan2 gen2 iron1 iron2 iron3 micro1 micro3 micro3 vac1",
+        "bot": "ac4 gen4 micro4 micro5 robot4 vac1 vac2",
+        "up": "{\"ac\":4,\"micro\":2}",
+        "bup": "{\"gen\":4,\"iron\":4,\"vac\":4,\"ac\":4,\"micro\":4,\"robot\":4}"
+      },
+      {
+        "snap": "4:13/8 8:29/12 12:40/15 16:52/23",
+        "waves": 17,
+        "t": 349,
+        "peak": 40,
+        "n": 32,
+        "bn": 30,
+        "me": "ac2 ac2 ac2 ac2 ac3 fan2 gen1 gen2 iron1 iron2 micro2 micro2 micro2 micro2 vac2 vac2",
+        "bot": "ac4 boiler1 boiler3 fan2 fan3 fridge1 fridge3 gen1 gen2 washer1 washer2",
+        "up": "{\"ac\":3,\"vac\":2,\"micro\":3}",
+        "bup": "{\"fridge\":3,\"ac\":3,\"fan\":3,\"washer\":3,\"boiler\":3,\"gen\":3}"
+      }
+    ],
+    "survivor": [
+      {
+        "t": 223,
+        "kills": 754,
+        "lv": 17,
+        "comps": "fan3 gen3 ac2 robot3",
+        "combos": "tornado",
+        "leaderLv": 5
+      },
+      {
+        "t": 239,
+        "kills": 940,
+        "lv": 18,
+        "comps": "micro3 vac3 gen3 robot3",
+        "combos": "",
+        "leaderLv": 5
+      },
+      {
+        "t": 154,
+        "kills": 392,
+        "lv": 12,
+        "comps": "ac1 vac2 fan2 gen2",
+        "combos": "",
+        "leaderLv": 5
+      }
+    ]
+  }
+}

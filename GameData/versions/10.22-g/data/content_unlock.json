@@ -1,0 +1,27 @@
+[
+ {
+  "id": "idle",
+  "cond": 1,
+  "lockKey": "unlock.idle"
+ },
+ {
+  "id": "survivor",
+  "cond": 1006,
+  "lockKey": "unlock.survivor"
+ },
+ {
+  "id": "league",
+  "cond": 1031,
+  "lockKey": "unlock.league"
+ },
+ {
+  "id": "tower",
+  "cond": 1026,
+  "lockKey": "unlock.tower"
+ },
+ {
+  "id": "coop",
+  "cond": 1016,
+  "lockKey": "unlock.coop"
+ }
+]

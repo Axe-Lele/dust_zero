@@ -1,0 +1,2228 @@
+[
+ {
+  "ep": 101,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.vac.1.1"
+ },
+ {
+  "ep": 101,
+  "seq": 2,
+  "who": "vac",
+  "face": 3,
+  "textKey": "story.vac.1.2"
+ },
+ {
+  "ep": 101,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.vac.1.3"
+ },
+ {
+  "ep": 101,
+  "seq": 4,
+  "who": "vac",
+  "face": 2,
+  "textKey": "story.vac.1.4"
+ },
+ {
+  "ep": 101,
+  "seq": 5,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.vac.1.5"
+ },
+ {
+  "ep": 101,
+  "seq": 6,
+  "who": "vac",
+  "face": 1,
+  "textKey": "story.vac.1.6"
+ },
+ {
+  "ep": 101,
+  "seq": 7,
+  "who": "vac",
+  "face": 2,
+  "textKey": "story.vac.1.7"
+ },
+ {
+  "ep": 102,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.vac.2.1"
+ },
+ {
+  "ep": 102,
+  "seq": 2,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.vac.2.2"
+ },
+ {
+  "ep": 102,
+  "seq": 3,
+  "who": "vac",
+  "face": 3,
+  "textKey": "story.vac.2.3"
+ },
+ {
+  "ep": 102,
+  "seq": 4,
+  "who": "vac",
+  "face": 1,
+  "textKey": "story.vac.2.4"
+ },
+ {
+  "ep": 102,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 102,
+  "seq": 6,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.vac.2.6"
+ },
+ {
+  "ep": 102,
+  "seq": 7,
+  "who": "vac",
+  "face": 2,
+  "textKey": "story.vac.2.7"
+ },
+ {
+  "ep": 102,
+  "seq": 8,
+  "who": "robot",
+  "face": 2,
+  "textKey": "story.vac.2.8"
+ },
+ {
+  "ep": 103,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.vac.3.1"
+ },
+ {
+  "ep": 103,
+  "seq": 2,
+  "who": "vac",
+  "face": 2,
+  "textKey": "story.vac.3.2"
+ },
+ {
+  "ep": 103,
+  "seq": 3,
+  "who": "vac",
+  "face": 1,
+  "textKey": "story.vac.3.3"
+ },
+ {
+  "ep": 103,
+  "seq": 4,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.vac.3.4"
+ },
+ {
+  "ep": 103,
+  "seq": 5,
+  "who": "vac",
+  "face": 2,
+  "textKey": "story.vac.3.5"
+ },
+ {
+  "ep": 103,
+  "seq": 6,
+  "who": "vac",
+  "face": 3,
+  "textKey": "story.vac.3.6"
+ },
+ {
+  "ep": 103,
+  "seq": 7,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.vac.3.7"
+ },
+ {
+  "ep": 201,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.robot.1.1"
+ },
+ {
+  "ep": 201,
+  "seq": 2,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.robot.1.2"
+ },
+ {
+  "ep": 201,
+  "seq": 3,
+  "who": "robot",
+  "face": 2,
+  "textKey": "story.robot.1.3"
+ },
+ {
+  "ep": 201,
+  "seq": 4,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.robot.1.4"
+ },
+ {
+  "ep": 201,
+  "seq": 5,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.robot.1.5"
+ },
+ {
+  "ep": 201,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.robot.1.6"
+ },
+ {
+  "ep": 201,
+  "seq": 7,
+  "who": "robot",
+  "face": 3,
+  "textKey": "story.robot.1.7"
+ },
+ {
+  "ep": 202,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.robot.2.1"
+ },
+ {
+  "ep": 202,
+  "seq": 2,
+  "who": "robot",
+  "face": 2,
+  "textKey": "story.robot.2.2"
+ },
+ {
+  "ep": 202,
+  "seq": 3,
+  "who": "washer",
+  "face": 1,
+  "textKey": "story.robot.2.3"
+ },
+ {
+  "ep": 202,
+  "seq": 4,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.robot.2.4"
+ },
+ {
+  "ep": 202,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 202,
+  "seq": 6,
+  "who": "robot",
+  "face": 3,
+  "textKey": "story.robot.2.6"
+ },
+ {
+  "ep": 202,
+  "seq": 7,
+  "who": "washer",
+  "face": 2,
+  "textKey": "story.robot.2.7"
+ },
+ {
+  "ep": 203,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.robot.3.1"
+ },
+ {
+  "ep": 203,
+  "seq": 2,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.robot.3.2"
+ },
+ {
+  "ep": 203,
+  "seq": 3,
+  "who": "robot",
+  "face": 2,
+  "textKey": "story.robot.3.3"
+ },
+ {
+  "ep": 203,
+  "seq": 4,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.robot.3.4"
+ },
+ {
+  "ep": 203,
+  "seq": 5,
+  "who": "robot",
+  "face": 2,
+  "textKey": "story.robot.3.5"
+ },
+ {
+  "ep": 203,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.robot.3.6"
+ },
+ {
+  "ep": 301,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fridge.1.1"
+ },
+ {
+  "ep": 301,
+  "seq": 2,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.fridge.1.2"
+ },
+ {
+  "ep": 301,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.fridge.1.3"
+ },
+ {
+  "ep": 301,
+  "seq": 4,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.fridge.1.4"
+ },
+ {
+  "ep": 301,
+  "seq": 5,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fridge.1.5"
+ },
+ {
+  "ep": 301,
+  "seq": 6,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.fridge.1.6"
+ },
+ {
+  "ep": 302,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fridge.2.1"
+ },
+ {
+  "ep": 302,
+  "seq": 2,
+  "who": "micro",
+  "face": 1,
+  "textKey": "story.fridge.2.2"
+ },
+ {
+  "ep": 302,
+  "seq": 3,
+  "who": "fridge",
+  "face": 3,
+  "textKey": "story.fridge.2.3"
+ },
+ {
+  "ep": 302,
+  "seq": 4,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.fridge.2.4"
+ },
+ {
+  "ep": 302,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 302,
+  "seq": 6,
+  "who": "micro",
+  "face": 2,
+  "textKey": "story.fridge.2.6"
+ },
+ {
+  "ep": 302,
+  "seq": 7,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.fridge.2.7"
+ },
+ {
+  "ep": 303,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fridge.3.1"
+ },
+ {
+  "ep": 303,
+  "seq": 2,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.fridge.3.2"
+ },
+ {
+  "ep": 303,
+  "seq": 3,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.fridge.3.3"
+ },
+ {
+  "ep": 303,
+  "seq": 4,
+  "who": "gen",
+  "face": 3,
+  "textKey": "story.fridge.3.4"
+ },
+ {
+  "ep": 303,
+  "seq": 5,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.fridge.3.5"
+ },
+ {
+  "ep": 303,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fridge.3.6"
+ },
+ {
+  "ep": 401,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.ac.1.1"
+ },
+ {
+  "ep": 401,
+  "seq": 2,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.ac.1.2"
+ },
+ {
+  "ep": 401,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.ac.1.3"
+ },
+ {
+  "ep": 401,
+  "seq": 4,
+  "who": "ac",
+  "face": 2,
+  "textKey": "story.ac.1.4"
+ },
+ {
+  "ep": 401,
+  "seq": 5,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.ac.1.5"
+ },
+ {
+  "ep": 401,
+  "seq": 6,
+  "who": "ac",
+  "face": 2,
+  "textKey": "story.ac.1.6"
+ },
+ {
+  "ep": 402,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.ac.2.1"
+ },
+ {
+  "ep": 402,
+  "seq": 2,
+  "who": "fan",
+  "face": 3,
+  "textKey": "story.ac.2.2"
+ },
+ {
+  "ep": 402,
+  "seq": 3,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.ac.2.3"
+ },
+ {
+  "ep": 402,
+  "seq": 4,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.ac.2.4"
+ },
+ {
+  "ep": 402,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 402,
+  "seq": 6,
+  "who": "fan",
+  "face": 2,
+  "textKey": "story.ac.2.6"
+ },
+ {
+  "ep": 402,
+  "seq": 7,
+  "who": "ac",
+  "face": 2,
+  "textKey": "story.ac.2.7"
+ },
+ {
+  "ep": 403,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.ac.3.1"
+ },
+ {
+  "ep": 403,
+  "seq": 2,
+  "who": "ac",
+  "face": 2,
+  "textKey": "story.ac.3.2"
+ },
+ {
+  "ep": 403,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.ac.3.3"
+ },
+ {
+  "ep": 403,
+  "seq": 4,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.ac.3.4"
+ },
+ {
+  "ep": 403,
+  "seq": 5,
+  "who": "ac",
+  "face": 2,
+  "textKey": "story.ac.3.5"
+ },
+ {
+  "ep": 403,
+  "seq": 6,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.ac.3.6"
+ },
+ {
+  "ep": 501,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.micro.1.1"
+ },
+ {
+  "ep": 501,
+  "seq": 2,
+  "who": "micro",
+  "face": 3,
+  "textKey": "story.micro.1.2"
+ },
+ {
+  "ep": 501,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.micro.1.3"
+ },
+ {
+  "ep": 501,
+  "seq": 4,
+  "who": "micro",
+  "face": 1,
+  "textKey": "story.micro.1.4"
+ },
+ {
+  "ep": 501,
+  "seq": 5,
+  "who": "micro",
+  "face": 2,
+  "textKey": "story.micro.1.5"
+ },
+ {
+  "ep": 501,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.micro.1.6"
+ },
+ {
+  "ep": 502,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.micro.2.1"
+ },
+ {
+  "ep": 502,
+  "seq": 2,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.micro.2.2"
+ },
+ {
+  "ep": 502,
+  "seq": 3,
+  "who": "micro",
+  "face": 3,
+  "textKey": "story.micro.2.3"
+ },
+ {
+  "ep": 502,
+  "seq": 4,
+  "who": "micro",
+  "face": 1,
+  "textKey": "story.micro.2.4"
+ },
+ {
+  "ep": 502,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 502,
+  "seq": 6,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.micro.2.6"
+ },
+ {
+  "ep": 502,
+  "seq": 7,
+  "who": "micro",
+  "face": 2,
+  "textKey": "story.micro.2.7"
+ },
+ {
+  "ep": 503,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.micro.3.1"
+ },
+ {
+  "ep": 503,
+  "seq": 2,
+  "who": "micro",
+  "face": 2,
+  "textKey": "story.micro.3.2"
+ },
+ {
+  "ep": 503,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.micro.3.3"
+ },
+ {
+  "ep": 503,
+  "seq": 4,
+  "who": "micro",
+  "face": 3,
+  "textKey": "story.micro.3.4"
+ },
+ {
+  "ep": 503,
+  "seq": 5,
+  "who": "micro",
+  "face": 1,
+  "textKey": "story.micro.3.5"
+ },
+ {
+  "ep": 503,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.micro.3.6"
+ },
+ {
+  "ep": 601,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.washer.1.1"
+ },
+ {
+  "ep": 601,
+  "seq": 2,
+  "who": "washer",
+  "face": 3,
+  "textKey": "story.washer.1.2"
+ },
+ {
+  "ep": 601,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.washer.1.3"
+ },
+ {
+  "ep": 601,
+  "seq": 4,
+  "who": "washer",
+  "face": 2,
+  "textKey": "story.washer.1.4"
+ },
+ {
+  "ep": 601,
+  "seq": 5,
+  "who": "washer",
+  "face": 1,
+  "textKey": "story.washer.1.5"
+ },
+ {
+  "ep": 601,
+  "seq": 6,
+  "who": "washer",
+  "face": 3,
+  "textKey": "story.washer.1.6"
+ },
+ {
+  "ep": 602,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.washer.2.1"
+ },
+ {
+  "ep": 602,
+  "seq": 2,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.washer.2.2"
+ },
+ {
+  "ep": 602,
+  "seq": 3,
+  "who": "washer",
+  "face": 2,
+  "textKey": "story.washer.2.3"
+ },
+ {
+  "ep": 602,
+  "seq": 4,
+  "who": "washer",
+  "face": 1,
+  "textKey": "story.washer.2.4"
+ },
+ {
+  "ep": 602,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 602,
+  "seq": 6,
+  "who": "washer",
+  "face": 3,
+  "textKey": "story.washer.2.6"
+ },
+ {
+  "ep": 602,
+  "seq": 7,
+  "who": "robot",
+  "face": 2,
+  "textKey": "story.washer.2.7"
+ },
+ {
+  "ep": 603,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.washer.3.1"
+ },
+ {
+  "ep": 603,
+  "seq": 2,
+  "who": "washer",
+  "face": 2,
+  "textKey": "story.washer.3.2"
+ },
+ {
+  "ep": 603,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.washer.3.3"
+ },
+ {
+  "ep": 603,
+  "seq": 4,
+  "who": "washer",
+  "face": 1,
+  "textKey": "story.washer.3.4"
+ },
+ {
+  "ep": 603,
+  "seq": 5,
+  "who": "washer",
+  "face": 3,
+  "textKey": "story.washer.3.5"
+ },
+ {
+  "ep": 603,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.washer.3.6"
+ },
+ {
+  "ep": 701,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.pc.1.1"
+ },
+ {
+  "ep": 701,
+  "seq": 2,
+  "who": "pc",
+  "face": 1,
+  "textKey": "story.pc.1.2"
+ },
+ {
+  "ep": 701,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.pc.1.3"
+ },
+ {
+  "ep": 701,
+  "seq": 4,
+  "who": "pc",
+  "face": 2,
+  "textKey": "story.pc.1.4"
+ },
+ {
+  "ep": 701,
+  "seq": 5,
+  "who": "pc",
+  "face": 1,
+  "textKey": "story.pc.1.5"
+ },
+ {
+  "ep": 701,
+  "seq": 6,
+  "who": "pc",
+  "face": 3,
+  "textKey": "story.pc.1.6"
+ },
+ {
+  "ep": 702,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.pc.2.1"
+ },
+ {
+  "ep": 702,
+  "seq": 2,
+  "who": "pc",
+  "face": 2,
+  "textKey": "story.pc.2.2"
+ },
+ {
+  "ep": 702,
+  "seq": 3,
+  "who": "fan",
+  "face": 1,
+  "textKey": "story.pc.2.3"
+ },
+ {
+  "ep": 702,
+  "seq": 4,
+  "who": "pc",
+  "face": 1,
+  "textKey": "story.pc.2.4"
+ },
+ {
+  "ep": 702,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 702,
+  "seq": 6,
+  "who": "pc",
+  "face": 3,
+  "textKey": "story.pc.2.6"
+ },
+ {
+  "ep": 702,
+  "seq": 7,
+  "who": "fan",
+  "face": 2,
+  "textKey": "story.pc.2.7"
+ },
+ {
+  "ep": 702,
+  "seq": 8,
+  "who": "pc",
+  "face": 2,
+  "textKey": "story.pc.2.8"
+ },
+ {
+  "ep": 703,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.pc.3.1"
+ },
+ {
+  "ep": 703,
+  "seq": 2,
+  "who": "pc",
+  "face": 2,
+  "textKey": "story.pc.3.2"
+ },
+ {
+  "ep": 703,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.pc.3.3"
+ },
+ {
+  "ep": 703,
+  "seq": 4,
+  "who": "pc",
+  "face": 1,
+  "textKey": "story.pc.3.4"
+ },
+ {
+  "ep": 703,
+  "seq": 5,
+  "who": "pc",
+  "face": 3,
+  "textKey": "story.pc.3.5"
+ },
+ {
+  "ep": 703,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.pc.3.6"
+ },
+ {
+  "ep": 801,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fan.1.1"
+ },
+ {
+  "ep": 801,
+  "seq": 2,
+  "who": "fan",
+  "face": 3,
+  "textKey": "story.fan.1.2"
+ },
+ {
+  "ep": 801,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.fan.1.3"
+ },
+ {
+  "ep": 801,
+  "seq": 4,
+  "who": "fan",
+  "face": 1,
+  "textKey": "story.fan.1.4"
+ },
+ {
+  "ep": 801,
+  "seq": 5,
+  "who": "fan",
+  "face": 2,
+  "textKey": "story.fan.1.5"
+ },
+ {
+  "ep": 801,
+  "seq": 6,
+  "who": "fan",
+  "face": 3,
+  "textKey": "story.fan.1.6"
+ },
+ {
+  "ep": 802,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fan.2.1"
+ },
+ {
+  "ep": 802,
+  "seq": 2,
+  "who": "vac",
+  "face": 2,
+  "textKey": "story.fan.2.2"
+ },
+ {
+  "ep": 802,
+  "seq": 3,
+  "who": "fan",
+  "face": 3,
+  "textKey": "story.fan.2.3"
+ },
+ {
+  "ep": 802,
+  "seq": 4,
+  "who": "fan",
+  "face": 1,
+  "textKey": "story.fan.2.4"
+ },
+ {
+  "ep": 802,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 802,
+  "seq": 6,
+  "who": "vac",
+  "face": 3,
+  "textKey": "story.fan.2.6"
+ },
+ {
+  "ep": 802,
+  "seq": 7,
+  "who": "fan",
+  "face": 2,
+  "textKey": "story.fan.2.7"
+ },
+ {
+  "ep": 803,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fan.3.1"
+ },
+ {
+  "ep": 803,
+  "seq": 2,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.fan.3.2"
+ },
+ {
+  "ep": 803,
+  "seq": 3,
+  "who": "fan",
+  "face": 2,
+  "textKey": "story.fan.3.3"
+ },
+ {
+  "ep": 803,
+  "seq": 4,
+  "who": "fan",
+  "face": 1,
+  "textKey": "story.fan.3.4"
+ },
+ {
+  "ep": 803,
+  "seq": 5,
+  "who": "fan",
+  "face": 3,
+  "textKey": "story.fan.3.5"
+ },
+ {
+  "ep": 803,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.fan.3.6"
+ },
+ {
+  "ep": 901,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.gen.1.1"
+ },
+ {
+  "ep": 901,
+  "seq": 2,
+  "who": "gen",
+  "face": 3,
+  "textKey": "story.gen.1.2"
+ },
+ {
+  "ep": 901,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.gen.1.3"
+ },
+ {
+  "ep": 901,
+  "seq": 4,
+  "who": "gen",
+  "face": 2,
+  "textKey": "story.gen.1.4"
+ },
+ {
+  "ep": 901,
+  "seq": 5,
+  "who": "gen",
+  "face": 1,
+  "textKey": "story.gen.1.5"
+ },
+ {
+  "ep": 901,
+  "seq": 6,
+  "who": "gen",
+  "face": 3,
+  "textKey": "story.gen.1.6"
+ },
+ {
+  "ep": 902,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.gen.2.1"
+ },
+ {
+  "ep": 902,
+  "seq": 2,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.gen.2.2"
+ },
+ {
+  "ep": 902,
+  "seq": 3,
+  "who": "gen",
+  "face": 1,
+  "textKey": "story.gen.2.3"
+ },
+ {
+  "ep": 902,
+  "seq": 4,
+  "who": "gen",
+  "face": 3,
+  "textKey": "story.gen.2.4"
+ },
+ {
+  "ep": 902,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 902,
+  "seq": 6,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.gen.2.6"
+ },
+ {
+  "ep": 902,
+  "seq": 7,
+  "who": "gen",
+  "face": 2,
+  "textKey": "story.gen.2.7"
+ },
+ {
+  "ep": 903,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.gen.3.1"
+ },
+ {
+  "ep": 903,
+  "seq": 2,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.gen.3.2"
+ },
+ {
+  "ep": 903,
+  "seq": 3,
+  "who": "gen",
+  "face": 2,
+  "textKey": "story.gen.3.3"
+ },
+ {
+  "ep": 903,
+  "seq": 4,
+  "who": "gen",
+  "face": 1,
+  "textKey": "story.gen.3.4"
+ },
+ {
+  "ep": 903,
+  "seq": 5,
+  "who": "gen",
+  "face": 3,
+  "textKey": "story.gen.3.5"
+ },
+ {
+  "ep": 903,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.gen.3.6"
+ },
+ {
+  "ep": 1001,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.iron.1.1"
+ },
+ {
+  "ep": 1001,
+  "seq": 2,
+  "who": "iron",
+  "face": 1,
+  "textKey": "story.iron.1.2"
+ },
+ {
+  "ep": 1001,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.iron.1.3"
+ },
+ {
+  "ep": 1001,
+  "seq": 4,
+  "who": "iron",
+  "face": 2,
+  "textKey": "story.iron.1.4"
+ },
+ {
+  "ep": 1001,
+  "seq": 5,
+  "who": "iron",
+  "face": 1,
+  "textKey": "story.iron.1.5"
+ },
+ {
+  "ep": 1001,
+  "seq": 6,
+  "who": "iron",
+  "face": 3,
+  "textKey": "story.iron.1.6"
+ },
+ {
+  "ep": 1002,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.iron.2.1"
+ },
+ {
+  "ep": 1002,
+  "seq": 2,
+  "who": "iron",
+  "face": 2,
+  "textKey": "story.iron.2.2"
+ },
+ {
+  "ep": 1002,
+  "seq": 3,
+  "who": "washer",
+  "face": 1,
+  "textKey": "story.iron.2.3"
+ },
+ {
+  "ep": 1002,
+  "seq": 4,
+  "who": "iron",
+  "face": 1,
+  "textKey": "story.iron.2.4"
+ },
+ {
+  "ep": 1002,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1002,
+  "seq": 6,
+  "who": "iron",
+  "face": 3,
+  "textKey": "story.iron.2.6"
+ },
+ {
+  "ep": 1002,
+  "seq": 7,
+  "who": "washer",
+  "face": 3,
+  "textKey": "story.iron.2.7"
+ },
+ {
+  "ep": 1003,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.iron.3.1"
+ },
+ {
+  "ep": 1003,
+  "seq": 2,
+  "who": "iron",
+  "face": 2,
+  "textKey": "story.iron.3.2"
+ },
+ {
+  "ep": 1003,
+  "seq": 3,
+  "who": "iron",
+  "face": 1,
+  "textKey": "story.iron.3.3"
+ },
+ {
+  "ep": 1003,
+  "seq": 4,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.iron.3.4"
+ },
+ {
+  "ep": 1003,
+  "seq": 5,
+  "who": "iron",
+  "face": 3,
+  "textKey": "story.iron.3.5"
+ },
+ {
+  "ep": 1003,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.iron.3.6"
+ },
+ {
+  "ep": 1101,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.stove.1.1"
+ },
+ {
+  "ep": 1101,
+  "seq": 2,
+  "who": "stove",
+  "face": 3,
+  "textKey": "story.stove.1.2"
+ },
+ {
+  "ep": 1101,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.stove.1.3"
+ },
+ {
+  "ep": 1101,
+  "seq": 4,
+  "who": "stove",
+  "face": 1,
+  "textKey": "story.stove.1.4"
+ },
+ {
+  "ep": 1101,
+  "seq": 5,
+  "who": "stove",
+  "face": 2,
+  "textKey": "story.stove.1.5"
+ },
+ {
+  "ep": 1101,
+  "seq": 6,
+  "who": "stove",
+  "face": 1,
+  "textKey": "story.stove.1.6"
+ },
+ {
+  "ep": 1102,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.stove.2.1"
+ },
+ {
+  "ep": 1102,
+  "seq": 2,
+  "who": "micro",
+  "face": 1,
+  "textKey": "story.stove.2.2"
+ },
+ {
+  "ep": 1102,
+  "seq": 3,
+  "who": "stove",
+  "face": 3,
+  "textKey": "story.stove.2.3"
+ },
+ {
+  "ep": 1102,
+  "seq": 4,
+  "who": "stove",
+  "face": 1,
+  "textKey": "story.stove.2.4"
+ },
+ {
+  "ep": 1102,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1102,
+  "seq": 6,
+  "who": "micro",
+  "face": 3,
+  "textKey": "story.stove.2.6"
+ },
+ {
+  "ep": 1102,
+  "seq": 7,
+  "who": "stove",
+  "face": 2,
+  "textKey": "story.stove.2.7"
+ },
+ {
+  "ep": 1103,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.stove.3.1"
+ },
+ {
+  "ep": 1103,
+  "seq": 2,
+  "who": "stove",
+  "face": 2,
+  "textKey": "story.stove.3.2"
+ },
+ {
+  "ep": 1103,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.stove.3.3"
+ },
+ {
+  "ep": 1103,
+  "seq": 4,
+  "who": "stove",
+  "face": 1,
+  "textKey": "story.stove.3.4"
+ },
+ {
+  "ep": 1103,
+  "seq": 5,
+  "who": "stove",
+  "face": 3,
+  "textKey": "story.stove.3.5"
+ },
+ {
+  "ep": 1103,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.stove.3.6"
+ },
+ {
+  "ep": 1201,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.boiler.1.1"
+ },
+ {
+  "ep": 1201,
+  "seq": 2,
+  "who": "boiler",
+  "face": 1,
+  "textKey": "story.boiler.1.2"
+ },
+ {
+  "ep": 1201,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.boiler.1.3"
+ },
+ {
+  "ep": 1201,
+  "seq": 4,
+  "who": "boiler",
+  "face": 2,
+  "textKey": "story.boiler.1.4"
+ },
+ {
+  "ep": 1201,
+  "seq": 5,
+  "who": "boiler",
+  "face": 1,
+  "textKey": "story.boiler.1.5"
+ },
+ {
+  "ep": 1201,
+  "seq": 6,
+  "who": "boiler",
+  "face": 3,
+  "textKey": "story.boiler.1.6"
+ },
+ {
+  "ep": 1202,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.boiler.2.1"
+ },
+ {
+  "ep": 1202,
+  "seq": 2,
+  "who": "boiler",
+  "face": 2,
+  "textKey": "story.boiler.2.2"
+ },
+ {
+  "ep": 1202,
+  "seq": 3,
+  "who": "gen",
+  "face": 1,
+  "textKey": "story.boiler.2.3"
+ },
+ {
+  "ep": 1202,
+  "seq": 4,
+  "who": "boiler",
+  "face": 1,
+  "textKey": "story.boiler.2.4"
+ },
+ {
+  "ep": 1202,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1202,
+  "seq": 6,
+  "who": "gen",
+  "face": 3,
+  "textKey": "story.boiler.2.6"
+ },
+ {
+  "ep": 1202,
+  "seq": 7,
+  "who": "boiler",
+  "face": 2,
+  "textKey": "story.boiler.2.7"
+ },
+ {
+  "ep": 1203,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.boiler.3.1"
+ },
+ {
+  "ep": 1203,
+  "seq": 2,
+  "who": "boiler",
+  "face": 2,
+  "textKey": "story.boiler.3.2"
+ },
+ {
+  "ep": 1203,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.boiler.3.3"
+ },
+ {
+  "ep": 1203,
+  "seq": 4,
+  "who": "boiler",
+  "face": 1,
+  "textKey": "story.boiler.3.4"
+ },
+ {
+  "ep": 1203,
+  "seq": 5,
+  "who": "boiler",
+  "face": 3,
+  "textKey": "story.boiler.3.5"
+ },
+ {
+  "ep": 1203,
+  "seq": 6,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.boiler.3.6"
+ },
+ {
+  "ep": 1301,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.blender.1.1"
+ },
+ {
+  "ep": 1301,
+  "seq": 2,
+  "who": "blender",
+  "face": 3,
+  "textKey": "story.blender.1.2"
+ },
+ {
+  "ep": 1301,
+  "seq": 3,
+  "who": "micro",
+  "face": 1,
+  "textKey": "story.blender.1.3"
+ },
+ {
+  "ep": 1301,
+  "seq": 4,
+  "who": "blender",
+  "face": 2,
+  "textKey": "story.blender.1.4"
+ },
+ {
+  "ep": 1301,
+  "seq": 5,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.blender.1.5"
+ },
+ {
+  "ep": 1301,
+  "seq": 6,
+  "who": "blender",
+  "face": 1,
+  "textKey": "story.blender.1.6"
+ },
+ {
+  "ep": 1301,
+  "seq": 7,
+  "who": "stove",
+  "face": 3,
+  "textKey": "story.blender.1.7"
+ },
+ {
+  "ep": 1302,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.blender.2.1"
+ },
+ {
+  "ep": 1302,
+  "seq": 2,
+  "who": "blender",
+  "face": 3,
+  "textKey": "story.blender.2.2"
+ },
+ {
+  "ep": 1302,
+  "seq": 3,
+  "who": "fridge",
+  "face": 1,
+  "textKey": "story.blender.2.3"
+ },
+ {
+  "ep": 1302,
+  "seq": 4,
+  "who": "blender",
+  "face": 2,
+  "textKey": "story.blender.2.4"
+ },
+ {
+  "ep": 1302,
+  "seq": 5,
+  "who": "fridge",
+  "face": 2,
+  "textKey": "story.blender.2.5"
+ },
+ {
+  "ep": 1302,
+  "seq": 6,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1302,
+  "seq": 7,
+  "who": "blender",
+  "face": 1,
+  "textKey": "story.blender.2.7"
+ },
+ {
+  "ep": 1302,
+  "seq": 8,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.blender.2.8"
+ },
+ {
+  "ep": 1302,
+  "seq": 9,
+  "who": "blender",
+  "face": 3,
+  "textKey": "story.blender.2.9"
+ },
+ {
+  "ep": 1303,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.blender.3.1"
+ },
+ {
+  "ep": 1303,
+  "seq": 2,
+  "who": "blender",
+  "face": 2,
+  "textKey": "story.blender.3.2"
+ },
+ {
+  "ep": 1303,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.blender.3.3"
+ },
+ {
+  "ep": 1303,
+  "seq": 4,
+  "who": "blender",
+  "face": 1,
+  "textKey": "story.blender.3.4"
+ },
+ {
+  "ep": 1303,
+  "seq": 5,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.blender.3.5"
+ },
+ {
+  "ep": 1303,
+  "seq": 6,
+  "who": "blender",
+  "face": 3,
+  "textKey": "story.blender.3.6"
+ },
+ {
+  "ep": 1303,
+  "seq": 7,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.blender.3.7"
+ },
+ {
+  "ep": 1401,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.purifier.1.1"
+ },
+ {
+  "ep": 1401,
+  "seq": 2,
+  "who": "purifier",
+  "face": 1,
+  "textKey": "story.purifier.1.2"
+ },
+ {
+  "ep": 1401,
+  "seq": 3,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.purifier.1.3"
+ },
+ {
+  "ep": 1401,
+  "seq": 4,
+  "who": "purifier",
+  "face": 3,
+  "textKey": "story.purifier.1.4"
+ },
+ {
+  "ep": 1401,
+  "seq": 5,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.purifier.1.5"
+ },
+ {
+  "ep": 1401,
+  "seq": 6,
+  "who": "purifier",
+  "face": 2,
+  "textKey": "story.purifier.1.6"
+ },
+ {
+  "ep": 1402,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.purifier.2.1"
+ },
+ {
+  "ep": 1402,
+  "seq": 2,
+  "who": "purifier",
+  "face": 2,
+  "textKey": "story.purifier.2.2"
+ },
+ {
+  "ep": 1402,
+  "seq": 3,
+  "who": "fan",
+  "face": 1,
+  "textKey": "story.purifier.2.3"
+ },
+ {
+  "ep": 1402,
+  "seq": 4,
+  "who": "purifier",
+  "face": 3,
+  "textKey": "story.purifier.2.4"
+ },
+ {
+  "ep": 1402,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1402,
+  "seq": 6,
+  "who": "purifier",
+  "face": 1,
+  "textKey": "story.purifier.2.6"
+ },
+ {
+  "ep": 1402,
+  "seq": 7,
+  "who": "fan",
+  "face": 3,
+  "textKey": "story.purifier.2.7"
+ },
+ {
+  "ep": 1402,
+  "seq": 8,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.purifier.2.8"
+ },
+ {
+  "ep": 1403,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.purifier.3.1"
+ },
+ {
+  "ep": 1403,
+  "seq": 2,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.purifier.3.2"
+ },
+ {
+  "ep": 1403,
+  "seq": 3,
+  "who": "purifier",
+  "face": 1,
+  "textKey": "story.purifier.3.3"
+ },
+ {
+  "ep": 1403,
+  "seq": 4,
+  "who": "purifier",
+  "face": 2,
+  "textKey": "story.purifier.3.4"
+ },
+ {
+  "ep": 1403,
+  "seq": 5,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.purifier.3.5"
+ },
+ {
+  "ep": 1403,
+  "seq": 6,
+  "who": "purifier",
+  "face": 3,
+  "textKey": "story.purifier.3.6"
+ },
+ {
+  "ep": 1501,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.router.1.1"
+ },
+ {
+  "ep": 1501,
+  "seq": 2,
+  "who": "router",
+  "face": 3,
+  "textKey": "story.router.1.2"
+ },
+ {
+  "ep": 1501,
+  "seq": 3,
+  "who": "pc",
+  "face": 1,
+  "textKey": "story.router.1.3"
+ },
+ {
+  "ep": 1501,
+  "seq": 4,
+  "who": "router",
+  "face": 2,
+  "textKey": "story.router.1.4"
+ },
+ {
+  "ep": 1501,
+  "seq": 5,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.router.1.5"
+ },
+ {
+  "ep": 1501,
+  "seq": 6,
+  "who": "router",
+  "face": 1,
+  "textKey": "story.router.1.6"
+ },
+ {
+  "ep": 1502,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.router.2.1"
+ },
+ {
+  "ep": 1502,
+  "seq": 2,
+  "who": "router",
+  "face": 2,
+  "textKey": "story.router.2.2"
+ },
+ {
+  "ep": 1502,
+  "seq": 3,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.router.2.3"
+ },
+ {
+  "ep": 1502,
+  "seq": 4,
+  "who": "router",
+  "face": 1,
+  "textKey": "story.router.2.4"
+ },
+ {
+  "ep": 1502,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1502,
+  "seq": 6,
+  "who": "robot",
+  "face": 1,
+  "textKey": "story.router.2.6"
+ },
+ {
+  "ep": 1502,
+  "seq": 7,
+  "who": "router",
+  "face": 3,
+  "textKey": "story.router.2.7"
+ },
+ {
+  "ep": 1502,
+  "seq": 8,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.router.2.8"
+ },
+ {
+  "ep": 1502,
+  "seq": 9,
+  "who": "router",
+  "face": 2,
+  "textKey": "story.router.2.9"
+ },
+ {
+  "ep": 1503,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.router.3.1"
+ },
+ {
+  "ep": 1503,
+  "seq": 2,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.router.3.2"
+ },
+ {
+  "ep": 1503,
+  "seq": 3,
+  "who": "router",
+  "face": 2,
+  "textKey": "story.router.3.3"
+ },
+ {
+  "ep": 1503,
+  "seq": 4,
+  "who": "router",
+  "face": 1,
+  "textKey": "story.router.3.4"
+ },
+ {
+  "ep": 1503,
+  "seq": 5,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.router.3.5"
+ },
+ {
+  "ep": 1503,
+  "seq": 6,
+  "who": "router",
+  "face": 3,
+  "textKey": "story.router.3.6"
+ },
+ {
+  "ep": 1503,
+  "seq": 7,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.router.3.7"
+ },
+ {
+  "ep": 1601,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.tv.1.1"
+ },
+ {
+  "ep": 1601,
+  "seq": 2,
+  "who": "tv",
+  "face": 3,
+  "textKey": "story.tv.1.2"
+ },
+ {
+  "ep": 1601,
+  "seq": 3,
+  "who": "ac",
+  "face": 1,
+  "textKey": "story.tv.1.3"
+ },
+ {
+  "ep": 1601,
+  "seq": 4,
+  "who": "tv",
+  "face": 2,
+  "textKey": "story.tv.1.4"
+ },
+ {
+  "ep": 1601,
+  "seq": 5,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.tv.1.5"
+ },
+ {
+  "ep": 1601,
+  "seq": 6,
+  "who": "tv",
+  "face": 1,
+  "textKey": "story.tv.1.6"
+ },
+ {
+  "ep": 1602,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.tv.2.1"
+ },
+ {
+  "ep": 1602,
+  "seq": 2,
+  "who": "tv",
+  "face": 2,
+  "textKey": "story.tv.2.2"
+ },
+ {
+  "ep": 1602,
+  "seq": 3,
+  "who": "washer",
+  "face": 1,
+  "textKey": "story.tv.2.3"
+ },
+ {
+  "ep": 1602,
+  "seq": 4,
+  "who": "tv",
+  "face": 1,
+  "textKey": "story.tv.2.4"
+ },
+ {
+  "ep": 1602,
+  "seq": 5,
+  "who": "@game",
+  "face": 1,
+  "textKey": ""
+ },
+ {
+  "ep": 1602,
+  "seq": 6,
+  "who": "tv",
+  "face": 3,
+  "textKey": "story.tv.2.6"
+ },
+ {
+  "ep": 1602,
+  "seq": 7,
+  "who": "washer",
+  "face": 2,
+  "textKey": "story.tv.2.7"
+ },
+ {
+  "ep": 1602,
+  "seq": 8,
+  "who": "tv",
+  "face": 1,
+  "textKey": "story.tv.2.8"
+ },
+ {
+  "ep": 1603,
+  "seq": 1,
+  "who": "n",
+  "face": 1,
+  "textKey": "story.tv.3.1"
+ },
+ {
+  "ep": 1603,
+  "seq": 2,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.tv.3.2"
+ },
+ {
+  "ep": 1603,
+  "seq": 3,
+  "who": "tv",
+  "face": 2,
+  "textKey": "story.tv.3.3"
+ },
+ {
+  "ep": 1603,
+  "seq": 4,
+  "who": "me",
+  "face": 1,
+  "textKey": "story.tv.3.4"
+ },
+ {
+  "ep": 1603,
+  "seq": 5,
+  "who": "tv",
+  "face": 1,
+  "textKey": "story.tv.3.5"
+ },
+ {
+  "ep": 1603,
+  "seq": 6,
+  "who": "tv",
+  "face": 3,
+  "textKey": "story.tv.3.6"
+ }
+]
