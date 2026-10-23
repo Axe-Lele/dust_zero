@@ -34,8 +34,6 @@ namespace DustZero.Game
         [SerializeField] TileBase pathTile;
         [SerializeField] TileBase buildableTile;
         [SerializeField] TileBase blockedTile;
-        [SerializeField] TileBase spawnTile;
-        [SerializeField] TileBase goalTile;
         /// <summary>Hazards the pack has no tile for; drawn over the path.</summary>
         [SerializeField] TileBase stoveTile;
         [SerializeField] TileBase wetTile;
@@ -86,6 +84,7 @@ namespace DustZero.Game
         // marker is visible before the player has picked any card.
         readonly List<SpawnWarnView> _warnViews = new();
         readonly SpawnWarningBoard _warnings = new();
+        SpriteRenderer _bakedFloor;
         SpriteRenderer _tutMarker;
         SpriteRenderer _rangeRing;
         SpriteRenderer _selectRing;
@@ -161,27 +160,34 @@ namespace DustZero.Game
             ClearLabels();
             ClearStoveRings();
 
+            // 원본은 판 전체를 캔버스 한 장에 그린다. 우리도 지도마다 한 장을 구워 두고
+            // 그것을 깐다. 구운 장이 없는 판(협동 고리판)만 아래의 타일맵으로 되돌아간다.
+            var baked = sprites != null ? sprites.Board($"board_{stage.MapId}") : null;
+            ShowBakedFloor(baked, stage.Cols, stage.Rows);
+
             for (int r = 0; r < stage.Rows; r++)
                 for (int c = 0; c < stage.Cols; c++)
                 {
                     var cell = new Vector3Int(c, -r, 0);
                     char ch = stage.Tiles[r][c];
 
-                    floorMap.SetTile(cell, ch switch
+                    if (baked == null)
                     {
-                        BattleField.Wall => blockedTile,
-                        BattleField.Furniture => buildableTile,
-                        BattleField.Goal => goalTile,
-                        _ => pathTile,
-                    });
+                        floorMap.SetTile(cell, ch switch
+                        {
+                            BattleField.Wall => blockedTile,
+                            BattleField.Furniture => buildableTile,
+                            _ => pathTile,
+                        });
 
-                    TileBase overlay = ch switch
-                    {
-                        BattleField.Stove => stoveTile,
-                        BattleField.Wet => wetTile,
-                        _ => null,
-                    };
-                    if (overlay != null) overlayMap.SetTile(cell, overlay);
+                        TileBase overlay = ch switch
+                        {
+                            BattleField.Stove => stoveTile,
+                            BattleField.Wet => wetTile,
+                            _ => null,
+                        };
+                        if (overlay != null) overlayMap.SetTile(cell, overlay);
+                    }
 
                     if (ch == BattleField.Stove && stoveRingSprite != null)
                     {
@@ -196,11 +202,13 @@ namespace DustZero.Game
                 }
             _stoveClock = 0f;
 
-            // Entrances: the spawn tile, numbered the way the waves are.
+            // 입구. 원본 buildBoard 는 칸을 칠하지 않고 **위쪽 0.34칸**에 환기구를 얹고,
+            // 번호와 이름을 그 아래(0.7칸)에 적는다. 칸 전체를 파랗게 칠하면 바닥이 사라져
+            // 어느 길에서 나오는지 보이지 않는다 — 사용자가 화면을 보고 짚은 차이다.
             for (int i = 0; i < stage.Paths.Length; i++)
             {
                 var path = stage.Paths[i];
-                floorMap.SetTile(new Vector3Int(path.StartX, -path.StartY, 0), spawnTile);
+                AddBoardArt("vent", path.StartX, path.StartY);
                 string name = i < stage.SpawnNames.Length ? stage.SpawnNames[i] : string.Empty;
                 AddLabel($"{i + 1} {name}", path.StartX + 0.5f, path.StartY + 0.7f, 0.2f,
                          new Color(0.29f, 0.35f, 0.40f));
@@ -208,8 +216,13 @@ namespace DustZero.Game
 
             BuildSpawnWarnViews(stage);
 
-            AddLabel(stage.GoalName, stage.GoalX + 0.5f, stage.GoalY + 0.55f, 0.24f,
-                     new Color(0.114f, 0.133f, 0.149f));
+            // 목표물도 마찬가지로 바닥 위에 그린다. 그림은 바닥 종류마다 다르다(paintGoal).
+            AddBoardArt($"goal_{stage.Floor}", stage.GoalX, stage.GoalY);
+            // 글자 색은 원본 DARK_GOAL 이 정한다 — 어두운 목표물 위에서는 흰 글씨다.
+            bool dark = DarkGoal.Contains(stage.Floor);
+            AddLabel(stage.GoalName, stage.GoalX + 0.5f, stage.GoalY + 0.55f,
+                     stage.GoalName != null && stage.GoalName.Length > 3 ? 0.19f : 0.24f,
+                     dark ? Color.white : new Color(0.114f, 0.133f, 0.149f));
 
             // A tile sits at its cell's centre, so cell (c,-r) lands half a unit ABOVE the
             // cell corner while ToWorld puts the same tile's centre half a unit BELOW it.
@@ -262,6 +275,53 @@ namespace DustZero.Game
                 v.Hide();
                 _warnViews.Add(v);
             }
+        }
+
+        /// <summary>
+        /// 원본 DARK_GOAL. 이 바닥들의 목표물은 어두워서 글자를 **흰색**으로 뒤집는다.
+        /// </summary>
+        static readonly HashSet<string> DarkGoal = new()
+        { "wood", "garage", "sewer", "duct", "throne", "storage", "boiler" };
+
+        /// <summary>
+        /// 구워 둔 판 바닥 한 장을 깐다. 스프라이트는 가로 <paramref name="cols"/>칸 ·
+        /// 세로 <paramref name="rows"/>칸 크기(PPU 가 한 칸)라 가운데만 맞추면 된다.
+        /// null 이면 꺼서 타일맵이 보이게 둔다.
+        /// </summary>
+        void ShowBakedFloor(Sprite baked, int cols, int rows)
+        {
+            if (baked == null)
+            {
+                if (_bakedFloor != null) _bakedFloor.gameObject.SetActive(false);
+                return;
+            }
+            if (_bakedFloor == null)
+            {
+                var go = new GameObject("BakedFloor");
+                go.transform.SetParent(transform, false);
+                _bakedFloor = go.AddComponent<SpriteRenderer>();
+                _bakedFloor.sortingOrder = 0;
+            }
+            _bakedFloor.gameObject.SetActive(true);
+            _bakedFloor.sprite = baked;
+            _bakedFloor.transform.localPosition = ToWorld(cols * 0.5f, rows * 0.5f);
+        }
+
+        /// <summary>구워 둔 판 바닥. 테스트가 자리를 재려고 찾는다.</summary>
+        public SpriteRenderer BakedFloor => _bakedFloor;
+
+        /// <summary>바닥 위에 얹는 그림 한 장(입구 환기구·목표물). 칸 하나를 꽉 채운다.</summary>
+        void AddBoardArt(string key, int x, int y)
+        {
+            var sprite = sprites != null ? sprites.Board(key) : null;
+            if (sprite == null) return;
+            var go = new GameObject(key);
+            go.transform.SetParent(labelRoot != null ? labelRoot : transform, false);
+            var sr = go.AddComponent<SpriteRenderer>();
+            sr.sprite = sprite;
+            sr.sortingOrder = 10;
+            go.transform.localPosition = ToWorld(x + 0.5f, y + 0.5f);
+            _labels.Add(go);
         }
 
         /// <summary>Drops a world-space caption on the board, as the original labels its canvas.</summary>

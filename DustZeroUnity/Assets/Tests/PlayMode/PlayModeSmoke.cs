@@ -882,6 +882,19 @@ namespace DustZero.Tests
             Assert.AreEqual(simCentre.x, cellCentre.x, 0.01f, "타일맵 X 가 시뮬레이션 좌표와 어긋납니다.");
             Assert.AreEqual(simCentre.y, cellCentre.y, 0.01f, "타일맵 Y 가 시뮬레이션 좌표와 어긋납니다.");
 
+            // 10.22-g 부터 바닥은 지도마다 **구운 한 장**이다(BoardPainter). 그 장이 빠지면
+            // 판이 맨바닥으로 보이고, 반 칸 어긋나면 벽이 길 위에 선다 — 둘 다 눈으로는
+            // "좀 이상한데" 로만 보여서 좌표로 잡는다.
+            var floor = board.BakedFloor;
+            Assert.IsNotNull(floor, $"{stage.MapId} 의 구운 바닥이 없습니다.");
+            Assert.IsTrue(floor.gameObject.activeInHierarchy, "구운 바닥이 꺼져 있습니다.");
+            var bounds = floor.bounds;
+            Assert.AreEqual(stage.Cols * BoardView.TileSize, bounds.size.x, 0.01f, "구운 바닥의 가로 칸 수가 다릅니다.");
+            Assert.AreEqual(stage.Rows * BoardView.TileSize, bounds.size.y, 0.01f, "구운 바닥의 세로 칸 수가 다릅니다.");
+            var topLeft = board.ToWorld(0f, 0f);
+            Assert.AreEqual(topLeft.x, bounds.min.x, 0.01f, "구운 바닥 왼쪽 끝이 칸 (0,0) 과 어긋납니다.");
+            Assert.AreEqual(topLeft.y, bounds.max.y, 0.01f, "구운 바닥 위쪽 끝이 칸 (0,0) 과 어긋납니다.");
+
             yield return Shot("02-battle-intro");
 
             // The brief gates the battle until the player taps 작전 시작, so press it the way

@@ -1,13 +1,11 @@
-// Paints the board tiles the way the original's canvas does.
+﻿// 원본 캔버스 그림을 스프라이트로 굽는 소형 래스터라이저와, 칸 하나짜리 그림들.
 //
-// The web build repaints the whole field into an offscreen canvas (buildBoard) every time the
-// stage loads, so its floors carry plank seams, tile grout, wall hatching and furniture
-// shadows. Porting that to a Tilemap means baking the same strokes into sprites once, in the
-// editor: the drawing code below is a transcription of paintFloor/buildBoard, with the cell
-// offsets that vary per column and row turned into the handful of variants they can produce.
+// 판 바닥 전체는 여기가 아니라 BoardPainter 가 **지도 한 장**으로 굽는다(원본 buildBoard
+// 와 같은 방식). 여기 남은 것은 칸 하나로 떨어지는 그림뿐이다 — 화구, 물웅덩이,
+// 입구 환기구, 바닥 종류별 목표물.
 //
-// Coordinates are canvas coordinates - origin top-left, y growing downward - and are flipped
-// when the pixels are written out, so the numbers here can be read against the original.
+// 좌표는 캔버스 좌표다 — 원점 왼쪽 위, y 는 아래로. 픽셀을 쓸 때 뒤집으므로 여기 숫자는
+// 원본과 그대로 견줄 수 있다.
 using System.IO;
 using UnityEditor;
 using UnityEngine;
@@ -17,32 +15,54 @@ namespace DustZero.Editor
     /// <summary>A small software rasteriser: enough of the 2D canvas API to repaint the board.</summary>
     public sealed class TileCanvas
     {
-        /// <summary>Edge length in pixels. Tiles use 64; icons are drawn larger.</summary>
-        public int Size { get; }
+        /// <summary>Canvas size in pixels. A single tile is square; a whole board is not.</summary>
+        public int Width { get; }
+        public int Height { get; }
 
         readonly Color[] _px;
+        // 클립 사각형(픽셀). 원본이 c.save()/c.clip() 으로 한 칸 안에 가두는 빗금 따위가 있다.
+        float _clipX0, _clipY0, _clipX1, _clipY1;
+        bool _clipped;
 
-        /// <summary>Canvas edge in pixels, the original's T.</summary>
-        public float T => Size;
+        /// <summary>One tile's edge in pixels — the original's T. 64 unless a painter says otherwise.</summary>
+        public float T { get; }
 
         public TileCanvas(Color? background = null, int size = 64)
+            : this(1, 1, size, background) { }
+
+        /// <summary>A canvas <paramref name="cols"/> x <paramref name="rows"/> tiles across.</summary>
+        public TileCanvas(int cols, int rows, int tile, Color? background = null)
         {
-            Size = size;
-            _px = new Color[size * size];
+            Width = cols * tile;
+            Height = rows * tile;
+            T = tile;
+            _px = new Color[Width * Height];
             var bg = background ?? new Color(0f, 0f, 0f, 0f);
             for (int i = 0; i < _px.Length; i++) _px[i] = bg;
         }
 
+        /// <summary>The original's c.save()+c.clip(): later paint lands only inside this box.</summary>
+        public void Clip(float x, float y, float w, float h)
+        {
+            _clipped = true;
+            _clipX0 = x; _clipY0 = y; _clipX1 = x + w; _clipY1 = y + h;
+        }
+
+        /// <summary>The matching c.restore().</summary>
+        public void NoClip() => _clipped = false;
+
         /// <summary>Source-over blend of one pixel, with <paramref name="cov"/> scaling alpha.</summary>
         void Blend(int x, int y, Color c, float cov)
         {
-            if (x < 0 || y < 0 || x >= Size || y >= Size) return;
+            if (x < 0 || y < 0 || x >= Width || y >= Height) return;
+            if (_clipped && (x + 0.5f < _clipX0 || x + 0.5f > _clipX1 ||
+                             y + 0.5f < _clipY0 || y + 0.5f > _clipY1)) return;
             float a = c.a * Mathf.Clamp01(cov);
             if (a <= 0f) return;
-            var d = _px[y * Size + x];
+            var d = _px[y * Width + x];
             float outA = a + d.a * (1f - a);
-            if (outA <= 0f) { _px[y * Size + x] = new Color(0, 0, 0, 0); return; }
-            _px[y * Size + x] = new Color(
+            if (outA <= 0f) { _px[y * Width + x] = new Color(0, 0, 0, 0); return; }
+            _px[y * Width + x] = new Color(
                 (c.r * a + d.r * d.a * (1f - a)) / outA,
                 (c.g * a + d.g * d.a * (1f - a)) / outA,
                 (c.b * a + d.b * d.a * (1f - a)) / outA,
@@ -56,8 +76,8 @@ namespace DustZero.Editor
 
         void Paint(Color c, Sdf sdf)
         {
-            for (int y = 0; y < Size; y++)
-                for (int x = 0; x < Size; x++)
+            for (int y = 0; y < Height; y++)
+                for (int x = 0; x < Width; x++)
                 {
                     float cov = Cover(sdf(x + 0.5f, y + 0.5f));
                     if (cov > 0f) Blend(x, y, c, cov);
@@ -70,13 +90,13 @@ namespace DustZero.Editor
         /// </summary>
         void Cut(Sdf sdf)
         {
-            for (int y = 0; y < Size; y++)
-                for (int x = 0; x < Size; x++)
+            for (int y = 0; y < Height; y++)
+                for (int x = 0; x < Width; x++)
                 {
                     float cov = Cover(sdf(x + 0.5f, y + 0.5f));
                     if (cov <= 0f) continue;
-                    var d = _px[y * Size + x];
-                    _px[y * Size + x] = new Color(d.r, d.g, d.b, d.a * (1f - Mathf.Clamp01(cov)));
+                    var d = _px[y * Width + x];
+                    _px[y * Width + x] = new Color(d.r, d.g, d.b, d.a * (1f - Mathf.Clamp01(cov)));
                 }
         }
 
@@ -127,6 +147,28 @@ namespace DustZero.Editor
                 Paint(stroke.Value, (x, y) => Mathf.Abs(BoxSdf(x, y, x0, y0, w, h, r)) - lw * 0.5f);
         }
 
+        /// <summary>
+        /// 점선 테두리. 원본은 setLineDash 로 테두리 한 줄을 끊어 긋는다. 여기서는 네 변을
+        /// 따로 끊으므로 모서리에서 무늬가 한 번 다시 시작한다 — 2px 무늬라 눈에 띄지 않는다.
+        /// </summary>
+        public void DashedRect(float x0, float y0, float w, float h, Color c, float lw, float on, float off)
+        {
+            void Seg(float ax, float ay, float bx, float by)
+            {
+                float len = Mathf.Sqrt((bx - ax) * (bx - ax) + (by - ay) * (by - ay));
+                float ux = (bx - ax) / len, uy = (by - ay) / len;
+                for (float t = 0f; t < len; t += on + off)
+                {
+                    float e = Mathf.Min(t + on, len);
+                    Line(ax + ux * t, ay + uy * t, ax + ux * e, ay + uy * e, c, lw);
+                }
+            }
+            Seg(x0, y0, x0 + w, y0);
+            Seg(x0 + w, y0, x0 + w, y0 + h);
+            Seg(x0 + w, y0 + h, x0, y0 + h);
+            Seg(x0, y0 + h, x0, y0);
+        }
+
         public void StrokeRect(float x0, float y0, float w, float h, Color c, float lw = 1f)
             => RoundRect(x0, y0, w, h, 0f, null, c, lw);
 
@@ -150,6 +192,54 @@ namespace DustZero.Editor
                 return (d - 1f) * Mathf.Min(rx, ry);
             });
 
+        /// <summary>The original's circ(): a filled circle.</summary>
+        public void Circle(float cx, float cy, float r, Color c) => Ellipse(cx, cy, r, r, c);
+
+        /// <summary>
+        /// A filled (and optionally outlined) polygon. The original draws three of the goal
+        /// props as paths — the veranda pot, the throne crystal — and a scanline fill would
+        /// alias badly at 64px, so this uses the usual signed distance to the outline.
+        /// </summary>
+        public void Polygon(float[] xs, float[] ys, Color? fill = null, Color? stroke = null, float lw = 1f)
+        {
+            float Sdf(float px, float py)
+            {
+                int n = xs.Length;
+                float d = (px - xs[0]) * (px - xs[0]) + (py - ys[0]) * (py - ys[0]);
+                float sign = 1f;
+                for (int i = 0, j = n - 1; i < n; j = i++)
+                {
+                    float ex = xs[j] - xs[i], ey = ys[j] - ys[i];
+                    float wx = px - xs[i], wy = py - ys[i];
+                    float t = Mathf.Clamp01((wx * ex + wy * ey) / Mathf.Max(1e-6f, ex * ex + ey * ey));
+                    float bx = wx - ex * t, by = wy - ey * t;
+                    d = Mathf.Min(d, bx * bx + by * by);
+                    // Winding test: three comparisons that flip the sign once per crossing.
+                    bool c1 = py >= ys[i], c2 = py < ys[j], c3 = ex * wy > ey * wx;
+                    if ((c1 && c2 && c3) || (!c1 && !c2 && !c3)) sign = -sign;
+                }
+                return sign * Mathf.Sqrt(d);
+            }
+
+            if (fill.HasValue) Paint(fill.Value, (x, y) => Sdf(x, y));
+            if (stroke.HasValue) Paint(stroke.Value, (x, y) => Mathf.Abs(Sdf(x, y)) - lw * 0.5f);
+        }
+
+        /// <summary>
+        /// The throne's glow: createRadialGradient(cx,cy,r0 .. cx,cy,r1) painted over the
+        /// whole tile. Canvas interpolates the colour stops in straight RGBA, so this does too.
+        /// </summary>
+        public void RadialGradient(float cx, float cy, float r0, float r1, Color inner, Color outer)
+        {
+            for (int y = 0; y < Height; y++)
+                for (int x = 0; x < Width; x++)
+                {
+                    float dx = x + 0.5f - cx, dy = y + 0.5f - cy;
+                    float t = Mathf.Clamp01((Mathf.Sqrt(dx * dx + dy * dy) - r0) / Mathf.Max(1e-6f, r1 - r0));
+                    Blend(x, y, Color.Lerp(inner, outer, t), 1f);
+                }
+        }
+
         public void CircleStroke(float cx, float cy, float r, Color c, float lw)
             => Paint(c, (x, y) =>
             {
@@ -163,12 +253,12 @@ namespace DustZero.Editor
             GeneratedArt.EnsureFolder();
             var path = $"{GeneratedArt.Folder}/{name}.png";
 
-            var tex = new Texture2D(Size, Size, TextureFormat.RGBA32, false);
+            var tex = new Texture2D(Width, Height, TextureFormat.RGBA32, false);
             var flipped = new Color[_px.Length];
             // Canvas y grows downward; texture rows grow upward.
-            for (int y = 0; y < Size; y++)
-                for (int x = 0; x < Size; x++)
-                    flipped[(Size - 1 - y) * Size + x] = _px[y * Size + x];
+            for (int y = 0; y < Height; y++)
+                for (int x = 0; x < Width; x++)
+                    flipped[(Height - 1 - y) * Width + x] = _px[y * Width + x];
             tex.SetPixels(flipped);
             tex.Apply();
             File.WriteAllBytes(path, tex.EncodeToPNG());
@@ -178,7 +268,7 @@ namespace DustZero.Editor
             var importer = (TextureImporter)AssetImporter.GetAtPath(path);
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
-            importer.spritePixelsPerUnit = Size;
+            importer.spritePixelsPerUnit = T;
             importer.alphaIsTransparency = true;
             importer.mipmapEnabled = false;
             importer.filterMode = FilterMode.Bilinear;
@@ -199,79 +289,6 @@ namespace DustZero.Editor
             return c;
         }
 
-        static readonly Color WoodFloor = Hex("#DCC39A");
-        static readonly Color KitchenFloor = Hex("#E4E7E1");
-        static readonly Color BathFloor = Hex("#CDE2E9");
-        static readonly Color Structure = Hex("#C3CBD1");
-
-        /// <summary>Plank seams repeat every three columns, so the floor needs three variants.</summary>
-        public const int WoodVariants = 3;
-        /// <summary>The kitchen checker alternates, so it needs two.</summary>
-        public const int KitchenVariants = 2;
-
-        /// <summary>The variant index a cell uses, matching the original's offset maths.</summary>
-        public static int WoodVariant(int col, int row) => ((col * 7 + row * 3) % 3 + 3) % 3;
-        public static int KitchenVariant(int col, int row) => (col + row) % 2 == 0 ? 0 : 1;
-
-        /// <summary>paintFloor(), for the floor named by <paramref name="floor"/>.</summary>
-        public static void PaintFloor(TileCanvas c, string floor, int variant)
-        {
-            float T = c.T;
-            if (floor == "wood")
-            {
-                c.Fill(WoodFloor);
-                var seam = new Color(120 / 255f, 84 / 255f, 40 / 255f, 0.18f);
-                for (int i = 1; i < 3; i++) c.Line(0, i * T / 3f, T, i * T / 3f, seam);
-                float o = variant * T / 3f;
-                c.Line(o, 0, o, T / 3f, seam);
-                float o2 = (o + T / 2f) % T;
-                c.Line(o2, T / 3f, o2, 2 * T / 3f, seam);
-                return;
-            }
-
-            c.Fill(floor == "bath" ? BathFloor : KitchenFloor);
-            if (floor == "kitchen" && variant == 0)
-                c.Rect(0, 0, T, T, new Color(29 / 255f, 34 / 255f, 38 / 255f, 0.04f));
-            var grout = floor == "bath"
-                ? new Color(40 / 255f, 90 / 255f, 110 / 255f, 0.15f)
-                : new Color(29 / 255f, 34 / 255f, 38 / 255f, 0.10f);
-            c.StrokeRect(0.5f, 0.5f, T - 1f, T - 1f, grout);
-            if (floor == "bath")
-            {
-                c.Line(T / 2f, 0, T / 2f, T, grout);
-                c.Line(0, T / 2f, T, T / 2f, grout);
-            }
-        }
-
-        public static Sprite Floor(string floor, int variant)
-        {
-            var c = new TileCanvas();
-            PaintFloor(c, floor, variant);
-            return c.Save($"tile_{floor}_{variant}");
-        }
-
-        /// <summary>'X' - structural wall, hatched diagonally.</summary>
-        public static Sprite Wall()
-        {
-            var c = new TileCanvas();
-            float T = c.T;
-            c.Fill(Structure);
-            var hatch = new Color(29 / 255f, 34 / 255f, 38 / 255f, 0.07f);
-            for (float i = -T; i < T * 2f; i += 7f) c.Line(i, 0, i - T, T, hatch);
-            return c.Save("tile_wall");
-        }
-
-        /// <summary>'H' - furniture the ranged appliances stand on.</summary>
-        public static Sprite Furniture(string floor)
-        {
-            var c = new TileCanvas();
-            float T = c.T;
-            c.Fill(Structure);
-            c.RoundRect(3, 3, T - 6, T - 6, 6,
-                        floor == "kitchen" ? Hex("#EEF0EC") : Hex("#F3F5F6"), Hex("#AEB9C1"), 1f);
-            c.Rect(4, T - 9, T - 8, 5, new Color(29 / 255f, 34 / 255f, 38 / 255f, 0.06f));
-            return c.Save($"tile_furniture_{floor}");
-        }
 
         /// <summary>'F' - the burner that heats whatever stands on it. Drawn over the floor.</summary>
         public static Sprite Stove()
@@ -295,30 +312,155 @@ namespace DustZero.Editor
             return c.Save("tile_wet");
         }
 
-        /// <summary>The thing the stains are heading for, drawn per floor. Over the floor.</summary>
+        /// <summary>
+        /// 목표물. 원본 paintGoal 의 열다섯 바닥을 그대로 옮겼다 — 예전에는 거실·주방·욕실
+        /// 셋만 알고 나머지 열둘이 전부 욕조로 그려졌다. 치수와 색은 모두 원본 것이다.
+        /// </summary>
         public static Sprite Goal(string floor)
         {
             var c = new TileCanvas();
             float T = c.T;
-            if (floor == "wood")
+            switch (floor)
             {
-                c.RoundRect(3, T * 0.38f, T - 6, T * 0.5f, 6, Hex("#5B7C99"));
-                c.RoundRect(3, T * 0.2f, T - 6, T * 0.28f, 6, Hex("#4A6884"));
-                c.RoundRect(1, T * 0.36f, T * 0.16f, T * 0.5f, 4, Hex("#3E5A74"));
-                c.RoundRect(T * 0.84f - 1f, T * 0.36f, T * 0.16f, T * 0.5f, 4, Hex("#3E5A74"));
-            }
-            else if (floor == "kitchen")
-            {
-                c.RoundRect(3, T * 0.25f, T - 6, T * 0.5f, 5, Hex("#B98A57"));
-                c.Rect(7, T * 0.75f, 4, T * 0.2f, Hex("#8C6238"));
-                c.Rect(T - 11, T * 0.75f, 4, T * 0.2f, Hex("#8C6238"));
-            }
-            else
-            {
-                c.RoundRect(2, T * 0.2f, T - 4, T * 0.7f, T * 0.25f, Hex("#F7FAFB"), Hex("#9AAEBD"), 1.5f);
-                c.RoundRect(7, T * 0.3f, T - 14, T * 0.45f, T * 0.18f, Hex("#9ED0EC"));
+                case "wood":        // 소파
+                    c.RoundRect(3, T * 0.38f, T - 6, T * 0.5f, 6, Hex("#5B7C99"));
+                    c.RoundRect(3, T * 0.2f, T - 6, T * 0.28f, 6, Hex("#4A6884"));
+                    c.RoundRect(1, T * 0.36f, T * 0.16f, T * 0.5f, 4, Hex("#3E5A74"));
+                    c.RoundRect(T * 0.84f - 1f, T * 0.36f, T * 0.16f, T * 0.5f, 4, Hex("#3E5A74"));
+                    break;
+
+                case "kitchen":     // 식탁
+                    c.RoundRect(3, T * 0.25f, T - 6, T * 0.5f, 5, Hex("#B98A57"));
+                    c.Rect(7, T * 0.75f, 4, T * 0.2f, Hex("#8C6238"));
+                    c.Rect(T - 11, T * 0.75f, 4, T * 0.2f, Hex("#8C6238"));
+                    break;
+
+                case "bath":        // 욕조
+                    c.RoundRect(2, T * 0.2f, T - 4, T * 0.7f, T * 0.25f, Hex("#F7FAFB"), Hex("#9AAEBD"), 1.5f);
+                    c.RoundRect(7, T * 0.3f, T - 14, T * 0.45f, T * 0.18f, Hex("#9ED0EC"));
+                    break;
+
+                case "bedroom":     // 침대
+                    c.RoundRect(2, T * 0.12f, T - 4, T * 0.82f, 6, Hex("#F4F7F9"), Hex("#B9A3C2"), 1.5f);
+                    c.RoundRect(6, T * 0.18f, T - 12, T * 0.22f, 5, Hex("#FFFFFF"), Hex("#C9B8D1"), 1f);
+                    c.RoundRect(2, T * 0.44f, T - 4, T * 0.5f, 6, Hex("#E7A6C0"));
+                    c.Line(5, T * 0.6f, T - 5, T * 0.6f, new Color(1f, 1f, 1f, 0.6f), 1.5f);
+                    break;
+
+                case "kids":        // 장난감 상자
+                    c.RoundRect(3, T * 0.3f, T - 6, T * 0.6f, 5, Hex("#E0524A"), Hex("#9E2E28"), 1.5f);
+                    c.RoundRect(1, T * 0.22f, T - 2, T * 0.16f, 4, Hex("#F2C14E"), Hex("#B7791F"), 1.2f);
+                    // 원본은 별 글자를 T*.3 크기로 찍는다. 타일 스프라이트에는 글꼴이 없어
+                    // 같은 자리·같은 크기의 오각 별 도형으로 그린다(모양만 대체).
+                    Star(c, T / 2f, T * 0.62f, T * 0.16f, Hex("#FFFFFF"));
+                    break;
+
+                case "laundry":     // 빨래 바구니
+                    c.RoundRect(4, T * 0.34f, T - 8, T * 0.56f, 7, Hex("#D9B47E"), Hex("#9C7A4A"), 1.5f);
+                    for (int i = 1; i < 4; i++)
+                        c.Line(4, T * (0.34f + i * 0.13f), T - 4, T * (0.34f + i * 0.13f),
+                               new Color(120 / 255f, 90 / 255f, 50 / 255f, 0.5f));
+                    c.Ellipse(T * 0.35f, T * 0.32f, T * 0.18f, T * 0.1f, Hex("#8FC7F5"));
+                    c.Ellipse(T * 0.62f, T * 0.3f, T * 0.16f, T * 0.09f, Hex("#F5A3B5"));
+                    break;
+
+                case "boiler":      // 보일러
+                    c.RoundRect(T * 0.2f, T * 0.08f, T * 0.6f, T * 0.86f, T * 0.25f, Hex("#D07A44"), Hex("#8E4A22"), 1.5f);
+                    c.Circle(T / 2f, T * 0.38f, T * 0.14f, Hex("#F4F7F9"));
+                    c.Line(T / 2f, T * 0.38f, T * 0.58f, T * 0.31f, Hex("#1D2226"), 1.5f);
+                    break;
+
+                case "storage":     // 수납장
+                    c.RoundRect(3, T * 0.28f, T - 6, T * 0.62f, 3, Hex("#C79A5E"), Hex("#8C6A3A"), 1.5f);
+                    c.Rect(T * 0.42f, T * 0.28f, T * 0.16f, T * 0.62f, Hex("#E9D9B8"));
+                    break;
+
+                case "garage":      // 자동차
+                    c.RoundRect(2, T * 0.3f, T - 4, T * 0.5f, T * 0.14f, Hex("#E0524A"), Hex("#9E2E28"), 1.5f);
+                    c.RoundRect(T * 0.18f, T * 0.16f, T * 0.64f, T * 0.26f, T * 0.1f, Hex("#F08A82"), Hex("#9E2E28"), 1.2f);
+                    c.RoundRect(T * 0.24f, T * 0.2f, T * 0.52f, T * 0.16f, T * 0.06f, Hex("#BFE0F2"));
+                    c.Circle(T * 0.25f, T * 0.82f, T * 0.1f, Hex("#1D2226"));
+                    c.Circle(T * 0.75f, T * 0.82f, T * 0.1f, Hex("#1D2226"));
+                    break;
+
+                case "attic":       // 낡은 상자
+                    c.RoundRect(3, T * 0.3f, T - 6, T * 0.6f, 5, Hex("#7A5636"), Hex("#4E3420"), 1.5f);
+                    c.RoundRect(3, T * 0.22f, T - 6, T * 0.18f, T * 0.08f, Hex("#8E6644"), Hex("#4E3420"), 1.2f);
+                    c.Circle(T / 2f, T * 0.52f, T * 0.06f, Hex("#E8B23A"));
+                    break;
+
+                case "veranda":     // 화분
+                    c.Polygon(new[] { T * 0.22f, T * 0.78f, T * 0.68f, T * 0.32f },
+                              new[] { T * 0.5f, T * 0.5f, T * 0.92f, T * 0.92f }, Hex("#C9764A"));
+                    for (int i = 0; i < 5; i++)
+                    {
+                        float an = -Mathf.PI / 2f + (i - 2) * 0.5f;
+                        c.Ellipse(T / 2f + Mathf.Cos(an) * T * 0.2f, T * 0.34f + Mathf.Sin(an) * T * 0.18f,
+                                  T * 0.08f, T * 0.17f, Hex("#6E9B4C"));
+                    }
+                    break;
+
+                case "rooftop":     // 텃밭 상자
+                    c.RoundRect(2, T * 0.4f, T - 4, T * 0.5f, 5, Hex("#8C6238"), Hex("#5E3E22"), 1.5f);
+                    c.Rect(5, T * 0.46f, T - 10, T * 0.38f, Hex("#6B4A2E"));
+                    for (int i = 0; i < 3; i++)
+                    {
+                        float px = T * (0.25f + i * 0.25f);
+                        c.Ellipse(px - 3f, T * 0.4f, 4f, 7f, Hex("#7FC46A"));
+                        c.Ellipse(px + 3f, T * 0.4f, 4f, 7f, Hex("#6EAF5A"));
+                    }
+                    break;
+
+                case "duct":        // 환기구
+                    c.RoundRect(3, T * 0.15f, T - 6, T * 0.75f, 4, Hex("#E8ECEF"), Hex("#7E8A93"), 1.5f);
+                    for (int i = 1; i < 5; i++)
+                    {
+                        float x = 3f + i * (T - 6f) / 5f;
+                        c.Line(x, T * 0.15f, x, T * 0.9f, Hex("#9AA3AB"));
+                    }
+                    break;
+
+                case "sewer":       // 밸브
+                    c.Circle(T / 2f, T * 0.55f, T * 0.36f, Hex("#C0392B"));
+                    c.Circle(T / 2f, T * 0.55f, T * 0.24f, Hex("#93A298"));
+                    for (int i = 0; i < 4; i++)
+                    {
+                        float a = i * Mathf.PI / 2f + 0.4f;
+                        c.Line(T / 2f, T * 0.55f, T / 2f + Mathf.Cos(a) * T * 0.3f,
+                               T * 0.55f + Mathf.Sin(a) * T * 0.3f, Hex("#C0392B"), 3f);
+                    }
+                    c.Circle(T / 2f, T * 0.55f, T * 0.07f, Hex("#7E1F16"));
+                    break;
+
+                case "throne":      // 결정
+                    c.RadialGradient(T / 2f, T * 0.55f, 2f, T * 0.45f,
+                                     new Color(200 / 255f, 245 / 255f, 1f, 0.95f),
+                                     new Color(120 / 255f, 200 / 255f, 240 / 255f, 0f));
+                    c.Polygon(new[] { T / 2f, T * 0.76f, T / 2f, T * 0.24f },
+                              new[] { T * 0.14f, T * 0.5f, T * 0.92f, T * 0.5f },
+                              Hex("#8FE0F5"), Hex("#3D8BD9"), 1.5f);
+                    break;
+
+                default:
+                    Debug.LogWarning($"목표물 그림이 없는 바닥: {floor}");
+                    break;
             }
             return c.Save($"tile_goal_{floor}");
+        }
+
+        /// <summary>오각 별. kids 목표물의 별 글자 자리에만 쓴다.</summary>
+        static void Star(TileCanvas c, float cx, float cy, float r, Color col)
+        {
+            var xs = new float[10];
+            var ys = new float[10];
+            for (int i = 0; i < 10; i++)
+            {
+                float rad = i % 2 == 0 ? r : r * 0.44f;
+                float a = -Mathf.PI / 2f + i * Mathf.PI / 5f;
+                xs[i] = cx + Mathf.Cos(a) * rad;
+                ys[i] = cy + Mathf.Sin(a) * rad;
+            }
+            c.Polygon(xs, ys, col);
         }
 
         /// <summary>The slatted vent each wave walks out of. Over the floor, at a path start.</summary>

@@ -58,19 +58,19 @@ SafeArea/Column/Lobby/Panels/Home/Room/Leaf1	12.7	247.2	11.2	23.3	#6E9B4CFF
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf2	18.9	244.8	11.2	23.3	#6E9B4CFF			
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf3	25.2	247.2	11.2	23.3	#6E9B4CFF			
 SafeArea/Column/Lobby/Panels/Home/Room/Leaf4	31.4	254.2	11.2	23.3	#6E9B4CFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	216.3	516.6	12.3	12.3	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	277.2	390.8	12.0	12.0	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	300.3	539.8	12.1	12.1	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	151.3	500.2	8.4	8.4	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	98.2	495.3	15.4	15.4	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	189.3	590.1	14.1	14.1	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	158.2	590.3	8.4	8.4	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	254.7	575.4	8.9	8.9	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	109.9	518.8	14.8	14.8	#6B6661CC			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	252.6	488.1	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	199.2	442.2	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	220.0	454.8	55.6	55.6	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	84.2	386.9	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	170.5	322.2	13.2	13.2	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	144.0	596.4	12.1	12.1	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	316.5	375.8	8.3	8.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	168.2	588.9	12.3	12.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	204.3	308.1	11.8	11.8	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	272.0	540.6	13.2	13.2	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	240.6	507.0	10.0	10.0	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	104.5	522.6	13.5	13.5	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Dust	326.3	350.7	14.3	14.3	#6B6661CC			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_vac/Body	101.0	572.0	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_ac/Body	122.0	339.6	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_fan/Body	259.3	349.3	55.6	55.6	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Home/Room/Agents/Agent_gen/Body	191.6	359.3	55.6	55.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Home/RoomNote	85.5	664.6	259.0	25.0	#1D222699			
 SafeArea/Column/Lobby/Panels/Home/RoomNote/Text	94.3	664.6	241.4	25.0	#E8EDF0FF	11.5	가전 4/16이 방을 청소하고 있어요 · 눌러서 말 걸기	97.4,668.5,235.2,17.2
 SafeArea/Column/Lobby/Panels/Home/RoomNote/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	94.3	664.6	241.4	25.0	#FFFFFFFF			

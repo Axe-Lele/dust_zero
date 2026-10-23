@@ -251,13 +251,16 @@ namespace DustZero.Editor
 
         /// <summary>
         /// The board tiles. The redesign replaces the original's textured floors with a flat
-        /// semantic set - path, buildable, blocked, spawn, goal - so a glance tells the player
-        /// what a square is for rather than what it is made of. Stove and puddle stay as
-        /// overlays on top of the path, since the pack has no tile for either.
+        /// semantic set - path, buildable, blocked - so a glance tells the player what a square
+        /// is for rather than what it is made of. Stove and puddle stay as overlays on top of
+        /// the path, since the pack has no tile for either.
+        ///
+        /// 입구와 목표 칸은 **타일이 아니다.** 원본처럼 바닥을 그대로 두고 그 위에 그림을
+        /// 얹는다(SpriteLibrary.boardArt). 칸을 통째로 칠하면 길이 끊겨 보인다.
         /// </summary>
         public sealed class Tiles
         {
-            public TileBase Path, Buildable, Blocked, Spawn, Goal;
+            public TileBase Path, Buildable, Blocked;
             public TileBase Stove, Wet;
         }
 
@@ -266,8 +269,6 @@ namespace DustZero.Editor
             Path = MakeTile("tile_path", UiArt.Battle("tile_path"), Color.white),
             Buildable = MakeTile("tile_buildable", UiArt.Battle("tile_buildable"), Color.white),
             Blocked = MakeTile("tile_blocked", UiArt.Battle("tile_blocked"), Color.white),
-            Spawn = MakeTile("tile_spawn", UiArt.Battle("tile_spawn"), Color.white),
-            Goal = MakeTile("tile_goal", UiArt.Battle("tile_goal"), Color.white),
             // Kept from the original's own art: the pack ships no burner or puddle.
             Stove = MakeTile("tile_stove", TilePainter.Stove(), Color.white),
             Wet = MakeTile("tile_wet", TilePainter.Wet(), Color.white),
@@ -456,6 +457,26 @@ namespace DustZero.Editor
                 });
             }
             lib.icons = icons.ToArray();
+
+            // 입구·목표물은 원본이 바닥 위에 그리는 그림이다. 목표물은 바닥 종류마다
+            // 다르므로 map 표에 실제로 쓰이는 바닥만큼 굽는다.
+            var boardArt = new List<SpriteEntry>
+            {
+                new() { id = "vent", sprite = TilePainter.Vent() },
+            };
+            foreach (var floor in db.Raw.map.Select(m => m.floor)
+                                              .Where(f => !string.IsNullOrEmpty(f)).Distinct())
+                boardArt.Add(new SpriteEntry { id = $"goal_{floor}", sprite = TilePainter.Goal(floor) });
+
+            // 판 바닥은 지도마다 한 장으로 굽는다. 무늬 식이 칸의 (열, 행)을 씨앗으로 쓰므로
+            // 타일 스프라이트로는 나눌 수가 없다 — 까닭은 BoardPainter 머리글에 적었다.
+            foreach (var m in db.Raw.map)
+                boardArt.Add(new SpriteEntry
+                {
+                    id = $"board_{m.id}",
+                    sprite = BoardPainter.Board(m.id, m.floor, m.tiles),
+                });
+            lib.boardArt = boardArt.ToArray();
 
             EditorUtility.SetDirty(lib);
             return lib;
@@ -3879,8 +3900,8 @@ namespace DustZero.Editor
                  ("highlightRoot", highlightRoot), ("labelRoot", labelRoot),
                  ("solidSprite", art.Square), ("rangeRingSprite", UiArt.Battle("range_ring")),
                  ("pathTile", tiles.Path), ("buildableTile", tiles.Buildable),
-                 ("blockedTile", tiles.Blocked), ("spawnTile", tiles.Spawn),
-                 ("goalTile", tiles.Goal), ("stoveTile", tiles.Stove), ("wetTile", tiles.Wet),
+                 ("blockedTile", tiles.Blocked),
+                 ("stoveTile", tiles.Stove), ("wetTile", tiles.Wet),
                  ("boardFont", fonts.Body),
                  ("validHighlight", UiArt.Battle("tile_hl_valid")),
                  ("invalidHighlight", UiArt.Battle("tile_hl_invalid")),

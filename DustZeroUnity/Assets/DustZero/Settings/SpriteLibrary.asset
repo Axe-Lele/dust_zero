@@ -550,3 +550,66 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 73b95e90bd57a764e85b92bd7423eb35, type: 3}
   - id: tower
     sprite: {fileID: 21300000, guid: bede9dc909b53214a9182d357636b8a1, type: 3}
+  boardArt:
+  - id: vent
+    sprite: {fileID: 21300000, guid: d999f99487224ed4d8c13f67f3c1ab37, type: 3}
+  - id: goal_wood
+    sprite: {fileID: 21300000, guid: 76697323413295c45afa2e69d14b70a7, type: 3}
+  - id: goal_kitchen
+    sprite: {fileID: 21300000, guid: c66fc7a0d0c02ba45940366bc9ad405e, type: 3}
+  - id: goal_bath
+    sprite: {fileID: 21300000, guid: 8928c3e2c8fed944fa13493502ed2564, type: 3}
+  - id: goal_bedroom
+    sprite: {fileID: 21300000, guid: 5fb2bdf3dfcea3e4d8cb015e2ed0cc95, type: 3}
+  - id: goal_kids
+    sprite: {fileID: 21300000, guid: 4733f62c35e9d8540adce2955ffb29ba, type: 3}
+  - id: goal_laundry
+    sprite: {fileID: 21300000, guid: 1c27165cea823964688f0e5188efe09f, type: 3}
+  - id: goal_boiler
+    sprite: {fileID: 21300000, guid: 02cc2fb11d259584cbdfaadadade7471, type: 3}
+  - id: goal_storage
+    sprite: {fileID: 21300000, guid: b69d34d48824f0f4fb3742fc6494f751, type: 3}
+  - id: goal_garage
+    sprite: {fileID: 21300000, guid: 1455cbe0752f2634bbc30eebaecd9a22, type: 3}
+  - id: goal_attic
+    sprite: {fileID: 21300000, guid: 5c86dc7d34db9864fb9d259fdd11d7d9, type: 3}
+  - id: goal_veranda
+    sprite: {fileID: 21300000, guid: 661731134fdb9324d812ad9eaf51e156, type: 3}
+  - id: goal_rooftop
+    sprite: {fileID: 21300000, guid: 1412f647605bdf245ace0958c126ac3c, type: 3}
+  - id: goal_duct
+    sprite: {fileID: 21300000, guid: 085c5a11f7115bf47b81f41e90550504, type: 3}
+  - id: goal_sewer
+    sprite: {fileID: 21300000, guid: d3a6a15bc4f9cac4da53cbd41acfed2c, type: 3}
+  - id: goal_throne
+    sprite: {fileID: 21300000, guid: 2a33c2206de0b674a878f2af4d563df9, type: 3}
+  - id: board_living
+    sprite: {fileID: 21300000, guid: fffdb5a3b55b76c4d8f4fe4c106a3338, type: 3}
+  - id: board_kitchen
+    sprite: {fileID: 21300000, guid: 7a46821e366647c4f88edc8e8d6cbfc4, type: 3}
+  - id: board_bath
+    sprite: {fileID: 21300000, guid: 2fe19f666205c2f49a25205f73e38c43, type: 3}
+  - id: board_bedroom
+    sprite: {fileID: 21300000, guid: 9215523890d48ad4ab744daa53db88bb, type: 3}
+  - id: board_kids
+    sprite: {fileID: 21300000, guid: a3d35dbb9e922d44e8d18f2712772e86, type: 3}
+  - id: board_laundry
+    sprite: {fileID: 21300000, guid: 5e85bfe55ab49724d9b5e2bd71d0c5e9, type: 3}
+  - id: board_boiler
+    sprite: {fileID: 21300000, guid: 5f6dc4fb97dbaa74bb328fd054052b67, type: 3}
+  - id: board_storage
+    sprite: {fileID: 21300000, guid: 566be03d9210b4a43a75a5fb9fc45253, type: 3}
+  - id: board_garage
+    sprite: {fileID: 21300000, guid: fb8e48f0be6a5144989844ee5eac097a, type: 3}
+  - id: board_attic
+    sprite: {fileID: 21300000, guid: 68787647b2d40f24490582778aafdcc3, type: 3}
+  - id: board_veranda
+    sprite: {fileID: 21300000, guid: f472d8a141b4031498755e3071b09d86, type: 3}
+  - id: board_rooftop
+    sprite: {fileID: 21300000, guid: d429e9e0e56dbe743ab364dde62f1d1b, type: 3}
+  - id: board_duct
+    sprite: {fileID: 21300000, guid: a4e8eee7f03e05f4fb6f6167157b5fe1, type: 3}
+  - id: board_sewer
+    sprite: {fileID: 21300000, guid: a8d923bf629b5a74aaa36c130acb49a0, type: 3}
+  - id: board_throne
+    sprite: {fileID: 21300000, guid: 8e3e80892ebfd394cbedf3f70fd2b49a, type: 3}

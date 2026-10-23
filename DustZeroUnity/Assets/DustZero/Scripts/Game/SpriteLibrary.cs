@@ -81,7 +81,15 @@ namespace DustZero.Game
         [Header("낱개 아이콘 (Art/Icon 파일 이름)")]
         public SpriteEntry[] icons = Array.Empty<SpriteEntry>();
 
-        Dictionary<string, Sprite> _units, _enemies, _looks, _bossLooks, _icons;
+        /// <summary>
+        /// 판 위에 얹는 그림. 원본 buildBoard 가 바닥 위에 따로 그리는 것들이다 —
+        /// 입구 환기구("vent")와 바닥 종류별 목표물("goal_wood" …). 타일이 아니라
+        /// 스프라이트인 까닭은 원본도 바닥을 지우지 않고 **그 위에** 얹기 때문이다.
+        /// </summary>
+        [Header("판 위 그림 (vent, goal_<floor>)")]
+        public SpriteEntry[] boardArt = Array.Empty<SpriteEntry>();
+
+        Dictionary<string, Sprite> _units, _enemies, _looks, _bossLooks, _icons, _boardArt;
 
         void Index()
         {
@@ -91,6 +99,14 @@ namespace DustZero.Game
             _looks = Build(enemyLooks);
             _bossLooks = Build(bossLooks);
             _icons = Build(icons);
+            _boardArt = Build(boardArt);
+        }
+
+        /// <summary>판 위 그림 한 장. 없으면 null — 부르는 쪽이 건너뛴다.</summary>
+        public Sprite Board(string key)
+        {
+            Index();
+            return !string.IsNullOrEmpty(key) && _boardArt.TryGetValue(key, out var s) ? s : null;
         }
 
         /// <summary>An icon by its file name, or null when the pack has none.</summary>
