@@ -18,7 +18,7 @@ WORKBOOKS = [
     ("01_Config.xlsx", ["config", "enums", "string_ko"]),
     ("02_Unit.xlsx", ["unit", "skill_param", "unit_boost", "unit_levelup", "unit_star", "unit_profile"]),
     ("03_Enemy.xlsx", ["enemy"]),
-    ("04_Stage.xlsx", ["area", "power_skill", "stage", "wave", "map", "map_entrance", "map_tile", "star_reward", "tutorial", "guide"]),
+    ("04_Stage.xlsx", ["area", "power_skill", "stage", "stage_hard", "wave", "map", "map_entrance", "map_tile", "star_reward", "tutorial", "guide"]),
     ("05_Reward.xlsx", ["item", "reward_group", "attendance", "condition", "content_unlock", "daily_pool"]),
     ("06_Gacha.xlsx", ["gacha", "gacha_pool", "gear_gacha"]),
     ("09_Gear.xlsx", ["gear", "gear_surv"]),
@@ -26,11 +26,30 @@ WORKBOOKS = [
     ("08_Shop.xlsx", ["shop_product", "pass_level"]),
     ("10_League.xlsx", ["league_unit", "league_param", "league_enemy", "league_tier", "league_round", "league_syn"]),   # 10.18-c 오토배틀러
     ("11_Tower.xlsx", ["tower_floor", "tower_rule", "tower_bonus"]),   # 10.18-g 먼지 타워
-    ("12_Coop.xlsx", ["coop_partner"]),
-    ("13_Character.xlsx", ["unit_art", "unit_behaviour"]),   # Unity 전용. 10.19-e 가 11·12 를 타워·협동에 쓰므로 13 번으로 옮김   # 10.18-h 협동 청소(봇 파트너)
+    ("12_Coop.xlsx", ["coop_partner"]),   # 10.18-h 협동 청소(봇 파트너)
+    ("13_Mission.xlsx", ["mission", "mission_chest", "event", "mail"]),   # 10.21-c 퀘스트·업적·이벤트 · 10.21-d 우편함
+    ("14_Collect.xlsx", ["aff_level", "collect_bonus"]),   # 10.21-d 가전 호감도 · 수집 보너스
+    ("15_Story.xlsx", ["story_ep", "story_line"]),
+    ("16_Quest.xlsx", ["quest_line", "quest"]),   # 10.22-a 메인 · 서브 퀘스트   # 10.21-e 가전 스토리 · 미니게임
+    # ---- 여기부터 Unity 이식 전용. 상류에 없는 표이므로 번호는 상류가 쓰지 않는 뒤쪽을 쓴다.
+    # 10 → 11 → 13 → 17. 상류가 10_League · 11_Tower · 13_Mission 을 차례로 가져갔다.
+    ("17_Character.xlsx", ["unit_art", "unit_behaviour"]),
 ]
 
 DESC = {
+    "quest_line": {"id": "줄기(0 = 메인, 1~ = 서브)", "nameKey": "이름", "unlock": "열림('' 바로 · unlock:<콘텐츠> · best:N · hard)", "descKey": "설명"},
+    "quest": {"id": "줄기 × 1000 + 순서(중간에 끼워 넣지 말 것)", "line": "줄기", "seq": "순서", "chapter": "메인 장(서브 0)", "key": "조건 키(상태 또는 누적 횟수)", "goal": "목표", "goto": "[이동]이 여는 곳", "textKey": "문구", "rewardGroup": "보상"},
+    "stage_hard": {"id": "심화 스테이지 ID(2000 + 순서)", "order": "순서", "base": "맵·웨이브를 빌려 오는 보통 스테이지", "chapter": "챕터", "no": "표시 번호", "rule": "규칙(fast·armor·heat·power·elite)", "hpMul": "적 HP 배율", "dmgMul": "적 과열 배율", "refLv": "기준 계정 레벨", "refStar": "기준 돌파", "refGear": "기준 장비", "needNormal": "열리려면 보통 몇 판 클리어", "firstRewardGroup": "첫 클리어 보상"},
+    "story_ep": {"id": "에피소드 ID(가전 순서 × 100 + 편)", "unit": "가전 ID", "ep": "몇 편", "titleKey": "제목", "needAff": "필요 호감도(0 = 영입만)", "game": "미니게임 ID(index.html MG, 빈칸 = 없음)", "gameNameKey": "미니게임 이름", "rewardGroup": "첫 감상 보상", "affXp": "첫 감상 호감도"},
+    "story_line": {"ep": "에피소드 ID", "seq": "순서", "who": "말하는 이(가전 ID · n 나레이션 · me 나(플레이어) · @game 미니게임 자리)", "face": "표정 1~3", "textKey": "대사"},
+    "mail": {"id": "우편 ID(한 번만 받음)", "fromKey": "보낸 이", "titleKey": "제목", "bodyKey": "본문", "rewardGroup": "첨부 보상(0 = 없음)", "cond": "'' 바로 · best:N N판 클리어 뒤 · date:시작~끝 그 기간 접속", "expireDays": "받은 뒤 사라지기까지 일(0 = 안 사라짐)"},
+    "aff_level": {"lv": "호감도 레벨", "xp": "누적 경험치", "rewardGroup": "레벨 보상", "shard": "그 가전 조각 개수"},
+    "collect_bonus": {"id": "ID", "kind": "own 보유 가전 종류 · star 돌파 합 · codex 먼지 도감 발견 · aff 호감도 레벨 합", "need": "필요 수", "effect": "idleCoin 자동 청소 코인 / idlePart 부품", "value": "+%"},
+    "mission": {"id": "미션 ID(1000번대 일일 · 2000 주간 · 3000 업적 · 4000 이벤트)", "kind": "1 일일 · 2 주간 · 3 업적 · 4 이벤트", "group": "업적 = 같은 줄기 ID / 이벤트 = 이벤트 ID",
+                "tier": "업적 단계(1부터 차례로)", "key": "세는 값(gen_tables.py MS_KEYS) 또는 상태(best·stars·own·tower_best·coop_best·codex)", "goal": "목표", "pts": "일일·주간 활동 점수 / 이벤트 점수",
+                "rewardGroup": "보상(reward_group, 0 = 점수만)", "textKey": "문구({n} = 목표)"},
+    "mission_chest": {"id": "상자 ID", "kind": "1 일일 · 2 주간 · 4 이벤트", "group": "이벤트 ID(이벤트만)", "pts": "필요 점수", "rewardGroup": "보상", "passXp": "시즌 패스 경험치"},
+    "event": {"id": "이벤트 ID(바꾸면 진행이 새로 시작)", "nameKey": "이름", "descKey": "설명", "start": "시작일(YYYY-MM-DD, 0시)", "end": "끝날(포함, 24시)", "pointKey": "이벤트 점수 이름", "color": "카드 색"},
     "league_unit": {"id": "가전 ID", "hp": "체력(★1·성장 0)", "atk": "공격력", "itv": "공격 간격(초)", "range": "사거리(칸, 근접 1)", "spd": "이동 속도(칸/초)", "mana": "스킬까지 마나", "skillKey": "스킬 이름 문구 키", "descKey": "스킬 설명 문구 키({계수}, {계수_pct})"},
     "league_param": {"unitId": "가전 ID", "key": "스킬 계수 이름(radius 칸, dmg 공격력 배율, stun·freeze·dur 초 등)", "value": "값"},
     "league_enemy": {"id": "적 ID(enemy 와 같은 외형)", "hp": "체력(브론즈·1배)", "atk": "공격력", "itv": "공격 간격", "range": "사거리", "spd": "이동 속도", "armor": "받는 피해 감소(0~1)", "fly": "1 = 공중(근접 가전은 못 때림)", "split": "죽으면 나오는 적", "splitN": "그 수"},
@@ -99,7 +118,7 @@ DESC = {
                  "cond": "그룹 조건 비움 / boss / map:맵ID / ps:전력스킬ID / over(처음 과열)", "trigger": "뜨는 조건 1 시작 / 2 앞 스텝 직후 / 3 경과 초 / 4 적 첫 등장 / 5 전력 이상 / 6 과열 비율 / 7 스킬 첫 발동 / 8 보스 등장 / 9 첫 누수 / 10 처음 과열",
                  "param": "조건 값(초, 적 ID, 전력, 비율, 가전 ID)", "until": "닫히는 조건 1 확인 / 2 카드 선택 / 3 배치 / 4 초 뒤 자동(10.16-m부터 안 씀)",
                  "untilParam": "닫힘 값(가전 ID / melee / ranged / 초)", "pause": "1 = 떠 있는 동안 전투 멈춤(10.16-m부터 전부 1)",
-                 "focus": "강조 card:가전ID·melee·ranged / hud:life / hud:power / btn:speed / btn:storm·boost / unit:heat / unit:over", "tile": "배치 칸 고정 x,y(비우면 자유)", "tileStage": "칸 고정이 적용되는 스테이지 ID", "afterPrev": "1 = 앞 스텝을 끝낸 뒤에만 조건 확인", "textKey": "안내 문구 키({unit} = 대상 가전 이름)"},
+                 "focus": "강조 card:가전ID·melee·ranged / hud:life / hud:power / btn:speed / btn:storm·boost / unit:heat / unit:over", "tile": "배치 칸 고정 x,y(비우면 자유)", "tileStage": "칸 고정이 적용되는 스테이지 ID", "afterPrev": "1 = 앞 스텝을 끝낸 뒤에만 조건 확인", "who": "말하는 가전 ID[:표정 1~3]. 비우면 안내 대상 가전(없으면 청소기)", "textKey": "안내 문구 키({unit} = 대상 가전 이름)"},
     "guide": {"flow": "안내 묶음 first(새 계정) / levelup(1-1을 처음 깬 뒤, 아직 안 봤으면 1-1을 깰 때)", "seq": "순서",
               "target": "밝힐 화면 요소 home.cta / battle.start / result.lobby / tab.roster / tab.home / roster.unit:가전ID / detail.levelup / detail.close",
               "textKey": "안내 문구 키"},
@@ -128,12 +147,12 @@ CONFIG_NOTE = {
     "leagueStarMul": "★1·★2·★3 체력·공격 배율", "leagueGrowthMax": "계정 성장(레벨·돌파) 최대 보너스", "leagueGrowthPow": "성장 보너스가 꽉 차는 전투력 증가량(powOf−1)",
     "leagueExclSkill": "전용장비가 있으면 스킬 효과 +(★마다 exclStarBonus 비율로 커짐)", "leagueManaPerAtk": "공격 1번 마나", "leagueManaPerHit": "맞을 때 마나",
     "towerTime": "먼지 타워 한 층 제한 시간(초, 넘기면 실패)", "towerGuestPow": "손님 가전 성장 = 보유 가전 성장 상위 6대 평균 × 이 값", "towerPurHp": "지키기 층 공기청정기 체력(층 hpMul 곱함)", "towerBossEvery": "타워 보스 패턴 간격(초)",
-    "poolSurvPerMin": "청소 일지: 대청소 버틴 1분마다 점수", "poolLeagueWin": "청소 일지: 리그 이긴 라운드마다 점수", "poolLeagueClear": "청소 일지: 리그 8라운드 완주 보너스 점수", "poolCarry": "1 = 못 채운 점수를 다음 날 하루만 어제 몫 상자로", "poolCoopWave": "청소 일지: 협동 청소 막은 웨이브마다 점수", "coopWaveGap": "협동 웨이브 간격(초)", "coopHp0": "협동 적 체력 = 이 값 × 진행 스테이지 기준 계정 힘(refLv·refStar·refGear)", "coopHpG": "협동 웨이브마다 적 체력 배율", "coopBossHp": "협동 보스 체력 추가 배율", "coopLoopMax": "협동: 고리 위 먼지가 이만큼이면 끝(보스 5)", "coopLoopWarn": "협동: 경고 시작", "coopCnt0": "협동 웨이브 기본 마릿수", "coopCntG": "협동 웨이브마다 늘어나는 마릿수", "coopCntMax": "협동 웨이브 최대 마릿수", "coopHoldSpeed": "협동: 근접 가전이 붙잡은 먼지 속도 배율", "coopStartPow": "협동 시작 전력", "coopSum0": "협동 소환 첫 값", "coopSumStep": "협동 소환할 때마다 오르는 값", "coopGenMul": "협동: 발전기 회복·풀가동 충전 배율(× ★)", "coopKillPow": "협동 먼지 처치 전력", "coopBossKillPow": "협동 보스 처치 전력", "coopWavePow0": "협동 웨이브 보너스 기본", "coopWavePowStep": "협동 웨이브 보너스 증가", "coopLineMax": "협동: 고리 칸(근접)에 세울 수 있는 내 가전 수", "coopMoveCd": "협동: 옮긴 가전을 다시 옮기기까지(초)", "coopRerollCost": "협동 바꾸기 값(× ★, 1 = 100W)", "coopStarMax": "협동 최고 ★", "coopStarMul": "협동 ★별 능력 배율", "coopUpCost": "협동 종류 강화 단계별 값", "coopUpStep": "협동 종류 강화 단계마다 공격력", "coopCoinPerWave": "협동 막은 웨이브마다 코인", "coopPassXpPerWave": "협동 웨이브마다 시즌 패스 경험치", "coopPassXpMax": "협동 한 판 시즌 패스 경험치 최대",
+    "poolSurvPerMin": "청소 일지: 대청소 버틴 1분마다 점수", "poolLeagueWin": "청소 일지: 리그 이긴 라운드마다 점수", "poolLeagueClear": "청소 일지: 리그 8라운드 완주 보너스 점수", "poolCarry": "1 = 못 채운 점수를 다음 날 하루만 어제 몫 상자로", "poolCoopWave": "청소 일지: 협동 청소 막은 웨이브마다 점수", "coopWaveGap": "협동 웨이브 간격(초)", "coopHp0": "협동 적 체력 = 이 값 × 진행 스테이지 기준 계정 힘(refLv·refStar·refGear)", "coopHpG": "협동 웨이브마다 적 체력 배율", "coopBossHp": "협동 보스 체력 추가 배율", "coopLoopMax": "협동: 고리 위 먼지가 이만큼이면 끝(보스 5)", "coopLoopWarn": "협동: 경고 시작", "coopCnt0": "협동 웨이브 기본 마릿수", "coopCntG": "협동 웨이브마다 늘어나는 마릿수", "coopCntMax": "협동 웨이브 최대 마릿수", "coopHoldSpeed": "협동: 근접 가전이 붙잡은 먼지 속도 배율", "coopStartPow": "협동 시작 전력", "coopSum0": "협동 소환 첫 값", "coopSumStep": "협동 소환할 때마다 오르는 값", "coopGenMul": "협동: 발전기 회복·풀가동 충전 배율(× ★)", "coopKillPow": "협동 먼지 처치 전력", "coopBossKillPow": "협동 보스 처치 전력", "coopWavePow0": "협동 웨이브 보너스 기본", "coopWavePowStep": "협동 웨이브 보너스 증가", "coopLineMax": "협동: 고리 칸(근접)에 세울 수 있는 내 가전 수", "coopMoveCd": "협동: 옮긴 가전을 다시 옮기기까지(초)", "coopRerollCost": "협동 바꾸기 값(× ★, 1 = 100W)", "coopStarMax": "협동 최고 ★", "coopStarMul": "협동 ★별 능력 배율", "coopUpCost": "협동 종류 강화 단계별 값", "coopUpStep": "협동 종류 강화 단계마다 공격력", "affTalkXp": "호감도: 말 걸기(하루 1번) 경험치", "affGiftXp": "호감도: 간식 경험치", "affGiftCoin": "호감도: 간식 코인(× 다음 레벨)", "affGiftDaily": "호감도: 가전마다 하루 간식 수", "affClearXp": "호감도: 스테이지 클리어 때 편성 가전마다", "gachaPity": "가전 소환 천장: SSR 없이 (이 값 − 1)번 뽑으면 다음 1회 SSR 확정(0 = 끔)", "eventCycleDays": "이벤트 순환: 표의 이벤트가 다 끝나면 이 날수마다 같은 순서로 다시 열림(회차마다 진행 새로, 0 = 안 함)", "leagueWeekCrystal": "리그 주간 시즌: 단계(브론즈·실버·골드)마다 이번 주 첫 완주 크리스탈(월요일에 새로)", "towerWeekCrystal": "타워 주간 재청소: 층마다 크리스탈(주 1회)", "towerWeekFloors": "타워 주간 재청소 대상: 가장 높이 깬 층부터 아래로 몇 층", "storyTabCrystal": "스토리: 영입 후 스토리 탭 첫 방문 크리스탈(가전마다 한 번)", "storyGameAffXp": "스토리: 미니게임 첫 성공 호감도(가전마다 한 번)", "codexFindCrystal": "먼지 도감: 적 하나 처음 발견 보상 크리스탈", "coopCoinPerWave": "협동 막은 웨이브마다 코인", "coopPassXpPerWave": "협동 웨이브마다 시즌 패스 경험치", "coopPassXpMax": "협동 한 판 시즌 패스 경험치 최대",
     "leagueRoundTime": "라운드 제한 시간(초, 넘기면 패배)", "leagueLoseBase": "질 때 기본 청결도 감소(+남은 적 수, 보스 3)", "leagueBench": "대기석 칸",
     "leagueShopSize": "상점 카드 수", "leagueTrialMin": "상점 가전 종류 수(편성에서, 모자라면 다른 보유 → 체험 가전)", "leaguePoolCopies": "가전마다 한 판에 나오는 장수 [R, SR, SSR](사면 줄고 팔면 돌아옴)", "leagueDailyRewards": "리그 하루 보상 판 수", "passXpLeaguePerWin": "리그 승리 1번당 시즌 패스 경험치",
     "deckMax": "편성 최대 수", "lvMax": "최대 레벨", "lvCapBase": "돌파 전(★0) 레벨 상한", "dupeShards": "중복 소환 시 조각(R/SR/SSR)", "shardRecruit": "조각 영입 필요 수(R/SR/SSR)", "survShardPerMin": "대청소 1분당 리더 조각", "survStonePerMin": "대청소 1분당 장비 강화석", "gearMaxLv": "장비 최대 레벨(1·2·3·전용)", "gearStonePerLv": "강화석 비용 계수", "gearCoinPerLv": "코인 비용 계수", "gearStatPerLv": "레벨당 능력 증가", "gearDismantle": "분해 강화석(등급별)", "gearRefund": "분해 시 투자 강화석 환급 비율", "gearFuseNeed": "합성 필요 수", "exclMaxStar": "전용장비 최대 각성", "exclStarBonus": "각성당 스킬 강화 효과 증가", "exclDupeEssence": "각성 초과 중복 → 정수", "gearEssencePerPull": "장비 소환 1회당 정수", "exclExchange": "전용장비 교환 정수", "survShardMax": "대청소 한 판 최대 조각", "starMax": "최대 돌파", "lvBonus": "레벨당 능력치 증가", "starBonus": "돌파당 능력치 증가", "genLvBonus": "발전기 레벨당 전력 회복·풀가동 충전 증가", "genStarBonus": "발전기 돌파당 전력 회복·풀가동 충전 증가", "pcLvBonus": "컴퓨터 레벨당 공격력 버프 증가", "pcStarBonus": "컴퓨터 돌파당 공격력 버프 증가",
     "idleCapHours": "자동 청소 최대 누적 시간", "maxUnits": "전투 동시 배치 최대 수", "tutGuestMax": "튜토리얼 지원 카드 최대 수(안내에 필요한 가전이 편성에 없으면 그 판에만 붙여 줌)", "startPower": "시작 전력(1 = 100W)",
-    "regenPerSec": "초당 전력 회복", "redeployCooldown": "철수 후 재배치 대기(초)", "deployCooldown": "같은 가전 연속 배치 대기(초)", "spawnWarnSec": "적 출현 전 입구 경고 시작(초)", "overheatSec": "과열 정지 시간(초)",
+    "regenPerSec": "초당 전력 회복", "redeployCooldown": "철수 후 재배치 대기(초)", "battleTimeScale": "스테이지 전투 1배속이 게임 시간으로 몇 배인지(0.75 = 실제 1초에 0.75초 진행)", "deployCooldown": "같은 가전 연속 배치 대기(초)", "spawnWarnSec": "적 출현 전 입구 경고 시작(초)", "overheatSec": "과열 정지 시간(초)",
     "lifeMax": "청결도", "startRewardGroup": "시작 지급 reward_group", "attendanceRewardGroup": "출석 reward_group",
     "dupeOverflowRewardGroup": "돌파 최대 이후 중복 전환 reward_group", "repRarityAutoSwap": "더 높은 등급 획득 시 대표 자동 교체(1/0)",
     "starLifeMin": "별 1/2/3개에 필요한 남은 청결도", "queueHeatRatio": "줄 선 적이 가전에 주는 과열 비율",

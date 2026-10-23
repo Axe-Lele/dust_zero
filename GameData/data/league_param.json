@@ -158,5 +158,60 @@
   "unitId": "boiler",
   "key": "dur",
   "value": 4
+ },
+ {
+  "unitId": "blender",
+  "key": "dmg",
+  "value": 2.4
+ },
+ {
+  "unitId": "blender",
+  "key": "exec",
+  "value": 0.35
+ },
+ {
+  "unitId": "purifier",
+  "key": "radius",
+  "value": 1.5
+ },
+ {
+  "unitId": "purifier",
+  "key": "dmg",
+  "value": 1.6
+ },
+ {
+  "unitId": "purifier",
+  "key": "airMul",
+  "value": 2
+ },
+ {
+  "unitId": "router",
+  "key": "n",
+  "value": 4
+ },
+ {
+  "unitId": "router",
+  "key": "dmg",
+  "value": 1.4
+ },
+ {
+  "unitId": "router",
+  "key": "stun",
+  "value": 0.5
+ },
+ {
+  "unitId": "tv",
+  "key": "stun",
+  "value": 1.5
+ },
+ {
+  "unitId": "tv",
+  "key": "brk",
+  "value": 0.2
+ },
+ {
+  "unitId": "tv",
+  "key": "dur",
+  "value": 4
  }
 ]

@@ -1,0 +1,38 @@
+[
+ {
+  "id": 1,
+  "nameKey": "event.1.name",
+  "descKey": "event.1.desc",
+  "start": "2026-10-21",
+  "end": "2026-11-17",
+  "pointKey": "event.1.point",
+  "color": "#D9822B"
+ },
+ {
+  "id": 2,
+  "nameKey": "event.2.name",
+  "descKey": "event.2.desc",
+  "start": "2026-11-18",
+  "end": "2026-12-15",
+  "pointKey": "event.2.point",
+  "color": "#4A8FD9"
+ },
+ {
+  "id": 3,
+  "nameKey": "event.3.name",
+  "descKey": "event.3.desc",
+  "start": "2026-12-16",
+  "end": "2027-01-12",
+  "pointKey": "event.3.point",
+  "color": "#C9A227"
+ },
+ {
+  "id": 4,
+  "nameKey": "event.4.name",
+  "descKey": "event.4.desc",
+  "start": "2027-01-13",
+  "end": "2027-02-09",
+  "pointKey": "event.4.point",
+  "color": "#D9534F"
+ }
+]

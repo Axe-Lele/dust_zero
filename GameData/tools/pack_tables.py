@@ -15,7 +15,7 @@ def pack(data_dir):
     with open(os.path.join(data_dir, "tables.js"), "w", encoding="utf-8") as f:
         f.write("// 자동 생성 파일입니다. 직접 고치지 말고 data/*.json 을 고친 뒤 tools/pack_tables.py 를 실행하세요.\n")
         f.write("window.DUSTZERO_TABLES = ")
-        json.dump(tables, f, ensure_ascii=False)
+        json.dump(tables, f, ensure_ascii=False, separators=(",", ":"))   # 10.18-b 빈칸 없이(용량 약 13% 줄임)
         f.write(";\n")
     return sorted(tables)
 

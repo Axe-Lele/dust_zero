@@ -2,61 +2,81 @@
  {
   "poolId": 1,
   "unitId": "fridge",
-  "weight": 100
+  "weight": 75
  },
  {
   "poolId": 1,
   "unitId": "washer",
-  "weight": 100
+  "weight": 75
  },
  {
   "poolId": 1,
   "unitId": "boiler",
-  "weight": 100
+  "weight": 75
+ },
+ {
+  "poolId": 1,
+  "unitId": "tv",
+  "weight": 75
  },
  {
   "poolId": 1,
   "unitId": "ac",
-  "weight": 340
+  "weight": 243
  },
  {
   "poolId": 1,
   "unitId": "micro",
-  "weight": 340
+  "weight": 243
  },
  {
   "poolId": 1,
   "unitId": "pc",
-  "weight": 340
+  "weight": 243
  },
  {
   "poolId": 1,
   "unitId": "iron",
-  "weight": 340
+  "weight": 243
  },
  {
   "poolId": 1,
   "unitId": "stove",
-  "weight": 340
+  "weight": 243
+ },
+ {
+  "poolId": 1,
+  "unitId": "purifier",
+  "weight": 243
+ },
+ {
+  "poolId": 1,
+  "unitId": "router",
+  "weight": 242
  },
  {
   "poolId": 1,
   "unitId": "vac",
-  "weight": 2000
+  "weight": 1600
  },
  {
   "poolId": 1,
   "unitId": "robot",
-  "weight": 2000
+  "weight": 1600
  },
  {
   "poolId": 1,
   "unitId": "fan",
-  "weight": 2000
+  "weight": 1600
  },
  {
   "poolId": 1,
   "unitId": "gen",
-  "weight": 2000
+  "weight": 1600
+ },
+ {
+  "poolId": 1,
+  "unitId": "blender",
+  "weight": 1600
  }
 ]

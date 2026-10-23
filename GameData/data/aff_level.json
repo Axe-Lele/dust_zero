@@ -1,0 +1,62 @@
+[
+ {
+  "lv": 1,
+  "xp": 0,
+  "rewardGroup": 0,
+  "shard": 0
+ },
+ {
+  "lv": 2,
+  "xp": 30,
+  "rewardGroup": 47002,
+  "shard": 0
+ },
+ {
+  "lv": 3,
+  "xp": 80,
+  "rewardGroup": 47003,
+  "shard": 0
+ },
+ {
+  "lv": 4,
+  "xp": 150,
+  "rewardGroup": 0,
+  "shard": 3
+ },
+ {
+  "lv": 5,
+  "xp": 250,
+  "rewardGroup": 47005,
+  "shard": 0
+ },
+ {
+  "lv": 6,
+  "xp": 380,
+  "rewardGroup": 47006,
+  "shard": 0
+ },
+ {
+  "lv": 7,
+  "xp": 540,
+  "rewardGroup": 0,
+  "shard": 5
+ },
+ {
+  "lv": 8,
+  "xp": 740,
+  "rewardGroup": 47008,
+  "shard": 0
+ },
+ {
+  "lv": 9,
+  "xp": 980,
+  "rewardGroup": 47009,
+  "shard": 0
+ },
+ {
+  "lv": 10,
+  "xp": 1260,
+  "rewardGroup": 47010,
+  "shard": 5
+ }
+]
