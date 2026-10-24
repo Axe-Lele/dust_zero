@@ -245,6 +245,21 @@ namespace DustZero.Game
         /// 층 규칙 종류별 색 — a 판 · b 목표 · c 편성. 바탕 · 테두리 · 글자 차례다.
         /// 규칙이 없는 기본 층이면 흰 바탕에 평소 선 색이다.
         /// </summary>
+        /// <summary>
+        /// 가전 카드의 역할 칩 `.ak` 색. 원본 `index.html` 681~682 행에서 읽었다 —
+        /// 네 갈래가 각자 다른 파스텔 바탕과 짙은 글자를 쓴다.
+        /// </summary>
+        /// <example><code>
+        /// var (face, ink) = UiTheme.RoleChip(unit.RoleLabel);   // "지상" -> 모래색
+        /// </code></example>
+        public static (Color Face, Color Ink) RoleChip(string role) => role switch
+        {
+            "지상" => (Hex("#F1E2CC"), Hex("#7A4A1C")),   // .ak-ground
+            "공중" => (Hex("#D9ECFB"), Hex("#1F6FB8")),   // .ak-air
+            "보조" => (Hex("#DDF0E6"), Hex("#2F7A57")),   // .ak-sup
+            _ => (Hex("#E6E0FA"), Hex("#5B3FBF")),        // .ak-all
+        };
+
         public static (Color Fill, Color Line, Color Ink) TowerRuleKind(string kind) => kind switch
         {
             "a" => (Hex("#FFF4E8"), Hex("#F4B27A"), Hex("#8A3A10")),

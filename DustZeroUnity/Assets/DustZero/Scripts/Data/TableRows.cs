@@ -76,6 +76,21 @@ namespace DustZero.Data
             catch { return false; }
         }
 
+        /// <summary>
+        /// 이름으로 찾는 config 글자. 숫자가 아닌 키(예: 10.18-d 의 <c>tutPullUnit</c>)에 쓴다.
+        /// </summary>
+        /// <example><code>
+        /// if (cfg.TryStr("tutPullUnit", out string id)) { ... }   // "boiler"
+        /// </code></example>
+        public bool TryStr(string key, out string value)
+        {
+            value = null;
+            if (_extra == null || !_extra.TryGetValue(key, out var token) || token == null)
+                return false;
+            try { value = token.ToObject<string>(); return !string.IsNullOrEmpty(value); }
+            catch { return false; }
+        }
+
         public int deckMax;
         /// <summary>Absolute ceiling across all limit-breaks (45 in 10.15-h).</summary>
         public int lvMax;

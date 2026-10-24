@@ -38,6 +38,25 @@ namespace DustZero.Game
         [SerializeField] TextMeshProUGUI multiLabel;
         [SerializeField] TextMeshProUGUI multiCostLabel;
 
+        [Header("천장 · 확률")]
+        /// <summary>`SSR 확정까지 N회` 띠. 천장이 없는 표에서는 통째로 숨는다.</summary>
+        [SerializeField] RectTransform pityRow;
+        [SerializeField] TextMeshProUGUI pityLabel;
+        [SerializeField] RectTransform pityBarFill;
+        [SerializeField] UiButton oddsButton;
+        [SerializeField] TextMeshProUGUI oddsLabel;
+
+        [Header("첫 소환")]
+        [SerializeField] UiButton freePullButton;
+        [SerializeField] TextMeshProUGUI freePullLabel;
+        [SerializeField] TextMeshProUGUI freePullSubLabel;
+
+        [Header("비용 아이콘")]
+        [SerializeField] Image singleCostIcon;
+        [SerializeField] Image multiCostIcon;
+        [SerializeField] Sprite crystalIcon;
+        [SerializeField] Sprite coinIcon;
+
         [Header("소환 목록")]
         [SerializeField] TextMeshProUGUI poolHeadingLabel;
         [SerializeField] RectTransform poolRoot;
@@ -49,8 +68,6 @@ namespace DustZero.Game
         [SerializeField] TMP_FontAsset numberFont;
         [SerializeField] SpriteLibrary sprites;
 
-        /// <summary>How many appliances the banner spotlights.</summary>
-        const int FeaturedCount = 3;
 
         GameServices _svc;
         GachaMode _mode = GachaMode.Unit;
@@ -69,6 +86,7 @@ namespace DustZero.Game
             if (gearModeButton != null) gearModeButton.SetAction(() => SetMode(GachaMode.Gear));
             if (singleButton != null) singleButton.SetAction(() => Pull(1));
             if (multiButton != null) multiButton.SetAction(() => Pull(10));
+            if (freePullButton != null) freePullButton.SetAction(ClaimFreePull);
             Refresh();
         }
 
@@ -130,9 +148,11 @@ namespace DustZero.Game
                 ? (IReadOnlyList<GachaPoolRow>)p0 : System.Array.Empty<GachaPoolRow>();
             double total = pool.Sum(p => (double)p.weight);
 
-            // ---- the three SSRs the banner is selling.
+            // ---- 배너가 파는 SSR **전부**. 원본은 개수를 자르지 않는다
+            // (`POOLS[pid].filter(rar==='SSR')`), 그래서 3 으로 박으면 10.22-g 처럼
+            // SSR 이 넷일 때 본문이 말하는 가전 하나가 화면에서 사라진다.
             foreach (var entry in pool.Where(p => RarityOf(p.unitId) == Rarity.SSR)
-                                      .OrderBy(p => Order(p.unitId)).Take(FeaturedCount))
+                                      .OrderBy(p => Order(p.unitId)))
                 SpawnFeatured(entry.unitId);
 
             // ---- rates, one span per grade.
@@ -157,8 +177,45 @@ namespace DustZero.Game
                 }));
             }
 
-            SetPullButton(singleButton, singleLabel, singleCostLabel, single);
-            SetPullButton(multiButton, multiLabel, multiCostLabel, multi);
+            RefreshPity();
+            RefreshFreePull();
+
+            SetPullButton(singleButton, singleLabel, singleCostLabel, single, singleCostIcon);
+            SetPullButton(multiButton, multiLabel, multiCostLabel, multi, multiCostIcon);
+        }
+
+        /// <summary>
+        /// 원본 `renderGacha` 의 천장 띠. 표에 `gachaPity` 가 없으면 띠 자체가 없다 —
+        /// 숫자를 C# 에 박지 않는다.
+        /// </summary>
+        void RefreshPity()
+        {
+            int pity = _svc.Profile.GachaPity;
+            bool on = pity > 0 && _mode == GachaMode.Unit;
+            if (pityRow != null) pityRow.gameObject.SetActive(on);
+            if (!on) return;
+
+            int left = _svc.Profile.PityLeft;
+            if (pityLabel != null) pityLabel.text = $"SSR 확정까지 {left}회";
+            // 채움은 원본과 같이 (천장 - 남은횟수) / 천장 이다.
+            if (pityBarFill != null)
+            {
+                float f = Mathf.Clamp01((pity - left) / (float)pity);
+                pityBarFill.anchorMax = new Vector2(f, 1f);
+                pityBarFill.offsetMin = Vector2.zero;
+                pityBarFill.offsetMax = Vector2.zero;
+            }
+        }
+
+        /// <summary>10.18-d 첫 소환(무료 · SSR 확정). 쓸 수 없으면 버튼이 없다.</summary>
+        void RefreshFreePull()
+        {
+            bool on = _mode == GachaMode.Unit && _svc.Profile.FreeFirstPullReady;
+            if (freePullButton != null) freePullButton.gameObject.SetActive(on);
+            if (!on) return;
+            if (freePullLabel != null) freePullLabel.text = "첫 소환 · 무료";
+            if (freePullSubLabel != null) freePullSubLabel.text = "SSR 확정";
+            if (freePullButton != null) freePullButton.State = UiButtonState.Normal;
         }
 
         /// <summary>
@@ -219,17 +276,28 @@ namespace DustZero.Game
             => _svc.Db.Banners.FirstOrDefault(b => b.pulls == pulls);
 
         void SetPullButton(UiButton button, TextMeshProUGUI label, TextMeshProUGUI cost,
-                           GachaRow banner)
+                           GachaRow banner, Image costIcon = null)
         {
             if (banner == null)
             {
                 if (label != null) label.text = string.Empty;
                 if (cost != null) cost.text = string.Empty;
+                if (costIcon != null) costIcon.enabled = false;
                 if (button != null) button.State = UiButtonState.Disabled;
                 return;
             }
-            SetCost(label, cost, $"{banner.pulls}회 소환", banner.costCount,
-                    _svc.Db.Text($"item.{banner.costItem}.name"));
+            // 원본은 재화 **아이콘 + 숫자**(`iico(costItem,15) fmt(costCount)`)다.
+            // 글자로 "크리스탈 150" 이라고 쓰면 폭도 모양도 달라진다.
+            var icon = CostIcon(banner.costItem);
+            if (costIcon != null)
+            {
+                costIcon.sprite = icon;
+                costIcon.enabled = icon != null;
+                costIcon.preserveAspect = true;
+            }
+            // 이름은 표가 적는다 — `gacha.1.name` = "1회 소환".
+            SetCost(label, cost, _svc.Db.Text(banner.nameKey), banner.costCount,
+                    icon != null ? string.Empty : _svc.Db.Text($"item.{banner.costItem}.name"));
             if (button != null)
                 button.State = _svc.Profile.CanPull(banner)
                     ? UiButtonState.Normal : UiButtonState.Disabled;
@@ -240,9 +308,30 @@ namespace DustZero.Game
         {
             if (label != null) label.text = text;
             if (cost != null)
-                cost.text = unit == null
-                    ? $"크리스탈 {UiTheme.Compact(amount)}"
+                cost.text = string.IsNullOrEmpty(unit)
+                    ? UiTheme.Compact(amount)
                     : $"{unit} {UiTheme.Compact(amount)}";
+        }
+
+        /// <summary>
+        /// 비용 재화의 아이콘. 표의 item id 로 고른다 — 1 코인 · 2 크리스탈.
+        /// 모르는 재화는 null 이고, 그때만 글자로 이름을 적는다.
+        /// </summary>
+        Sprite CostIcon(int itemId) => itemId switch
+        {
+            1 => coinIcon,
+            2 => crystalIcon,
+            _ => null,
+        };
+
+        /// <summary>첫 소환(무료). 원본과 같이 편성을 건드리지 않고 가전만 더한다.</summary>
+        void ClaimFreePull()
+        {
+            string id = _svc.Profile.FreeFirstPullUnit;
+            var tag = _svc.Profile.ClaimFreeFirstPull();
+            if (tag == null || id == null) return;
+            Pulled?.Invoke(new List<(string, DuplicateResult)> { (id, tag.Value) });
+            Refresh();
         }
 
         // ------------------------------------------------------------------ pulling

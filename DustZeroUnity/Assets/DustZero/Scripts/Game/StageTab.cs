@@ -25,6 +25,17 @@ namespace DustZero.Game
         [SerializeField] RectTransform powerSkillRoot;
         /// <summary>전력 스킬 아이콘. 표의 id(storm·boost) 순서로 넣는다.</summary>
         [SerializeField] Sprite[] powerSkillIcons = new Sprite[2];
+        /// <summary>해금 알약 바탕(반경 6 둥근 9-slice).</summary>
+        [SerializeField] Sprite condPillSprite;
+        /// <summary>챕터 머리의 `.chip` 바탕(알약, 반경이 높이보다 크다).</summary>
+        [SerializeField] Sprite chapterChipSprite;
+        /// <summary>`.milestones` 판(반경 10) 과 `.msb` 버튼(반경 9) 바탕.</summary>
+        [SerializeField] Sprite milestonePanelSprite;
+        [SerializeField] Sprite milestoneButtonSprite;
+        /// <summary>`.ms-bar` 의 트랙·채움(반경 3).</summary>
+        [SerializeField] Sprite milestoneBarSprite;
+        /// <summary>보상 칩의 숫자 글꼴(원본은 LED 글꼴을 쓴다).</summary>
+        [SerializeField] TMP_FontAsset numberFont;
         [SerializeField] string[] powerSkillIconIds = new string[2];
 
         [Header("출전 편성")]
@@ -34,7 +45,7 @@ namespace DustZero.Game
 
         [Header("구역")]
         [SerializeField] RectTransform areaTabRoot;
-        [SerializeField] UiToggleChip areaChipPrefab;
+        [SerializeField] AreaChip areaChipPrefab;
         [SerializeField] TextMeshProUGUI areaKickerLabel;
         [SerializeField] TextMeshProUGUI areaTitleLabel;
         [SerializeField] TextMeshProUGUI areaSubLabel;
@@ -57,7 +68,29 @@ namespace DustZero.Game
 
         GameServices _svc;
         readonly List<StageRow> _rows = new();
-        readonly List<UiToggleChip> _areaChips = new();
+        readonly List<AreaChip> _areaChips = new();
+
+        /// <summary>원본 `.psr em` 알약 색 — 글자 `#B7791F` 가 바탕 `#FFF1C2` 위에 앉는다.</summary>
+        static readonly Color CondPillInk = new Color32(0xB7, 0x79, 0x1F, 0xFF);
+        static readonly Color CondPillFace = new Color32(0xFF, 0xF1, 0xC2, 0xFF);
+
+        /// <summary>
+        /// 전력 스킬 한 줄에서 **탭이 켜진 뒤에** 손봐야 하는 것들.
+        ///
+        /// 왜 나중인가: 이름 폭을 재야 해금 알약을 그 뒤에 붙일 수 있는데, TMP 는
+        /// 꺼져 있는 동안 글자를 짜지 않아 폭을 0 에 가깝게 돌려준다. 실제로 그래서
+        /// 알약이 이름 위에 겹쳐 찍혀 둘 다 못 읽었다(이름 ink 53.8 인데 알약이 15.4 에서 시작).
+        /// </summary>
+        sealed class PowerRow
+        {
+            public string skillId;
+            public int unlockStage;
+            public TextMeshProUGUI name, cond;
+            public RectTransform pill;
+            public CanvasGroup fade;
+        }
+
+        readonly List<PowerRow> _powerRows = new();
         readonly List<GameObject> _spawned = new();
         int _area = 1;
 
@@ -86,41 +119,23 @@ namespace DustZero.Game
 
             foreach (var a in _svc.Db.Areas)
             {
-                int id = a.id;
                 var chip = Instantiate(areaChipPrefab, areaTabRoot);
-                chip.name = "Area" + id;
-                // 원본 칩은 세 줄이다: 작은 '1구역' · 굵은 '1층' · 진행 중이면 '진행 중'.
-                // 가운데 줄만 쓰면 어느 구역인지, 지금 어디를 하고 있는지가 사라진다.
-                // 원본 칩은 76x47 세 줄이다. 기본 칩은 한 줄이라 먼저 풀어 준다.
-                chip.AllowMultiLine(UiTheme.Py(47f));
-                chip.Bind(AreaChipText(a), () => { _area = id; Refresh(); });
-                // 글자를 넣은 뒤 실제 높이로 맞춘다. 줄 수는 글꼴이 정한다.
-                chip.FitToText(UiTheme.Py(47f));
-                // 폭은 원본과 같이 **고정 75.6** 이다. 칩 프리팹에는 가로를 내용에 맞추는
-                // ContentSizeFitter 가 붙어 있어 먼저 꺼야 한다 — 켜 둔 채로는 칩이 넓어져
-                // 다섯 개가 398 줄에 안 들어가고 마지막 구역이 화면 밖으로 밀린다.
-                var fit = chip.GetComponent<ContentSizeFitter>();
-                if (fit != null) fit.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+                chip.name = "Area" + a.id;
+                // 폭은 원본 그리드가 내는 고정 75.6 이다(398 줄에 5칸 · 간격 5).
+                // 높이는 칩 자신의 ContentSizeFitter 가 글자 줄 수에서 뽑는다.
                 var chipRt = (RectTransform)chip.transform;
                 chipRt.sizeDelta = new Vector2(UiTheme.Px(75.6f), chipRt.sizeDelta.y);
-                var chipLe = chip.GetComponent<LayoutElement>();
-                if (chipLe != null) { chipLe.preferredWidth = UiTheme.Px(75.6f); chipLe.minWidth = UiTheme.Px(75.6f); }
                 _areaChips.Add(chip);
             }
         }
 
         /// <summary>
-        /// 구역 칩의 세 줄. 원본 `.atab` 은 small(구역 번호) · b(이름) · i.here(진행 중)
-        /// 를 쌓는다. 우리 칩은 라벨이 하나라 서식으로 줄을 나눈다.
+        /// 구역 색. 표의 `color` 가 원본 `--ac` 다 — 구역마다 달라서 테마에 박지 않는다.
+        /// 읽지 못하면 선택 칩이 투명해지므로 주황(SSR)으로 떨어뜨린다.
         /// </summary>
-        string AreaChipText(AreaRow a)
-        {
-            string name = _svc.Db.Text(a.shortKey);
-            string head = $"<size=72%>{a.id}구역</size>";
-            bool here = CurrentArea() == a.id;
-            string foot = here ? "<size=68%>진행 중</size>" : string.Empty;
-            return here ? $"{head}\n{name}\n{foot}" : $"{head}\n{name}";
-        }
+        Color AreaAccent(AreaRow a)
+            => ColorUtility.TryParseHtmlString(a.color ?? string.Empty, out var c)
+               ? c : UiTheme.RaritySSR;
 
         /// <summary>구역 중 지금 진행 중인 곳 — 최고 스테이지가 속한 구역이다.</summary>
         int CurrentArea()
@@ -153,6 +168,7 @@ namespace DustZero.Game
             if (powerSkillRoot == null || _svc == null || bodyFont == null) return;
             foreach (var go in _spawned) if (go != null) Destroy(go);
             _spawned.Clear();
+            _powerRows.Clear();
 
             foreach (var kv in _svc.Db.PowerSkills)
             {
@@ -193,23 +209,34 @@ namespace DustZero.Game
                 name.rectTransform.offsetMax = new Vector2(UiTheme.Px(150f), 0f);
                 name.text = _svc.Db.Text($"ps.{kv.Key}.name");
 
-                var cond = MakeLabel(rt, bodyFont, UiTheme.Py(11f), UiTheme.Primary,
-                                     TextAlignmentOptions.Left);
-                cond.rectTransform.anchorMin = new Vector2(0f, 1f);
-                cond.rectTransform.anchorMax = new Vector2(1f, 1f);
-                // 원본 `.psr` 은 이름과 안내를 한 줄에 **흘린다** — 안내 글자는 이름이
-                // 끝난 자리에서 간격 4 와 안쪽 여백 6 을 더한 곳에서 시작한다. 154 처럼
-                // 고정 자리를 적으면 이름이 짧은 스킬에서 33 이나 벌어진다.
-                // 막 만든 TMP 는 글자를 아직 한 번도 짜 보지 않아 폭을 0 으로 돌려준다.
-                name.ForceMeshUpdate();
-                float nameRun = name.GetPreferredValues(name.text).x;
-                cond.rectTransform.offsetMin =
-                    new Vector2(UiTheme.Px(46f) + nameRun + UiTheme.Px(10f), -UiTheme.Py(18f));
-                cond.rectTransform.offsetMax = new Vector2(0f, -UiTheme.Py(1f));
-                var at = _svc.Db.StageById(first.unlockStage);
-                bool open = at != null && _svc.Profile.Data.best >= at.Order;
-                cond.text = at == null ? "" : open ? "해금됨" : $"{at.No} 클리어 시 해금";
-                cond.color = open ? UiTheme.Ink2 : UiTheme.Primary;
+                // 원본 `.psr em` 은 맨 글자가 아니라 **작은 호박색 알약**이다:
+                //   font 11/600 · 글자 #B7791F · 바탕 #FFF1C2 · 반경 6 · 안쪽 0 6 · 왼쪽 간격 4
+                var pillGo = new GameObject("CondPill", typeof(RectTransform));
+                var pillRt = (RectTransform)pillGo.transform;
+                pillRt.SetParent(rt, false);
+                pillRt.anchorMin = pillRt.anchorMax = new Vector2(0f, 1f);
+                pillRt.pivot = new Vector2(0f, 1f);
+                var pill = pillGo.AddComponent<Image>();
+                pill.sprite = condPillSprite;
+                pill.type = Image.Type.Sliced;
+                pill.color = CondPillFace;
+                pill.raycastTarget = false;
+
+                var cond = MakeLabel(pillRt, bodyFont, UiTheme.Py(11f), CondPillInk,
+                                     TextAlignmentOptions.Center);
+                cond.rectTransform.anchorMin = Vector2.zero;
+                cond.rectTransform.anchorMax = Vector2.one;
+                cond.rectTransform.offsetMin = Vector2.zero;
+                cond.rectTransform.offsetMax = Vector2.zero;
+
+                // `.psr.off` 는 줄 전체를 .55 로 흐린다.
+                var fade = row.AddComponent<CanvasGroup>();
+
+                _powerRows.Add(new PowerRow
+                {
+                    skillId = kv.Key, unlockStage = first.unlockStage,
+                    name = name, cond = cond, pill = pillRt, fade = fade,
+                });
 
                 var desc = MakeLabel(rt, bodyFont, UiTheme.Py(11.5f), UiTheme.Ink2,
                                      TextAlignmentOptions.TopLeft);
@@ -220,6 +247,37 @@ namespace DustZero.Game
                 desc.rectTransform.offsetMin = new Vector2(UiTheme.Px(46f), 0f);
                 desc.rectTransform.offsetMax = new Vector2(0f, -UiTheme.Py(21f));
                 desc.text = FillSkillText(_svc.Db.Text($"ps.{kv.Key}.desc"), first);
+            }
+        }
+
+        /// <summary>
+        /// 해금 알약의 글귀·색·자리를 잡는다. 이름 폭을 재야 하므로 **탭이 켜진 뒤**
+        /// <see cref="Refresh"/> 에서 부른다 — 지어질 때 재면 0 이 나온다.
+        /// </summary>
+        void RefreshPowerSkills()
+        {
+            foreach (var r in _powerRows)
+            {
+                if (r.name == null || r.cond == null || r.pill == null) continue;
+
+                var at = _svc.Db.StageById(r.unlockStage);
+                bool open = at != null && _svc.Profile.Data.best >= at.Order;
+                r.cond.text = at == null ? string.Empty : open ? "해금됨" : $"{at.No} 클리어 시 해금";
+                // `.psr.off` — 아직 못 쓰는 스킬은 줄 전체가 흐리다.
+                if (r.fade != null) r.fade.alpha = open ? 1f : 0.55f;
+
+                // 이름이 실제로 차지한 폭(advance)을 재고 그 뒤 4 에 알약을 붙인다.
+                // 원본 `em` 은 `margin-left:4` · `padding:0 6` 이다.
+                r.name.ForceMeshUpdate();
+                r.cond.ForceMeshUpdate();
+                float nameRun = r.name.preferredWidth;
+                float condRun = r.cond.preferredWidth;
+                float pad = UiTheme.Px(6f);
+                float h = UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(17f));
+                r.pill.sizeDelta = new Vector2(condRun + pad * 2f, h);
+                r.pill.anchoredPosition = new Vector2(
+                    UiTheme.Px(46f) + nameRun + UiTheme.Px(4f), -UiTheme.Py(2f));
+                r.pill.gameObject.SetActive(!string.IsNullOrEmpty(r.cond.text));
             }
         }
 
@@ -257,6 +315,15 @@ namespace DustZero.Game
         static string Trim(double v) => v == System.Math.Floor(v)
             ? ((long)v).ToString()
             : v.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+
+        /// <summary>빈 RectTransform 한 개. 에디터의 UiKit 은 런타임에서 못 쓴다.</summary>
+        static RectTransform MakeNode(string name, RectTransform parent)
+        {
+            var go = new GameObject(name, typeof(RectTransform));
+            var rt = (RectTransform)go.transform;
+            rt.SetParent(parent, false);
+            return rt;
+        }
 
         TextMeshProUGUI MakeLabel(RectTransform parent, TMP_FontAsset font, float size,
                                   Color color, TextAlignmentOptions align)
@@ -297,17 +364,21 @@ namespace DustZero.Game
 
             RefreshAreas();
             RefreshDeckStrip();
+            RefreshPowerSkills();
             RefreshList();
         }
 
         void RefreshAreas()
         {
             var areas = _svc.Db.Areas;
+            int here = CurrentArea();
             for (int i = 0; i < _areaChips.Count && i < areas.Count; i++)
             {
-                bool open = AreaOpen(areas[i]);
-                _areaChips[i].State = areas[i].id == _area ? ChipState.Selected
-                                    : open ? ChipState.Normal : ChipState.Locked;
+                var a = areas[i];
+                int id = a.id;
+                _areaChips[i].Bind($"{a.id}구역", _svc.Db.Text(a.shortKey), AreaAccent(a),
+                                   selected: id == _area, locked: !AreaOpen(a), here: id == here,
+                                   onTap: () => { _area = id; Refresh(); });
             }
 
             AreaRow area = null;
@@ -384,7 +455,11 @@ namespace DustZero.Game
             var want = new List<StageDef>();
             foreach (var s in _svc.Db.Stages) if (s.Area == _area) want.Add(s);
 
-            foreach (var h in _chapterHeads) if (h != null) Destroy(h);
+            // **부모에서 먼저 뗀다.** `Destroy` 는 프레임 끝에야 적용되므로 그냥 부르면
+            // 옛 머리글이 아직 자식으로 남아 아래의 `SetSiblingIndex` 를 전부 밀어낸다 —
+            // 실제로 챕터당 5줄이어야 할 것이 3/3/9 로 갈라져 있었다.
+            foreach (var h in _chapterHeads)
+                if (h != null) { h.transform.SetParent(null, false); Destroy(h); }
             _chapterHeads.Clear();
 
             while (_rows.Count < want.Count) _rows.Add(Instantiate(rowPrefab, listRoot));
@@ -407,51 +482,298 @@ namespace DustZero.Game
                 seen = want[i].Chapter;
                 var head = BuildChapterHead(want[i]);
                 head.transform.SetSiblingIndex(slot);
-                slot += 2;
+                slot++;
+                // 원본은 머리글 **바로 다음에** 챕터 별 보상 칸을 둔다.
+                var ms = BuildMilestones(want[i].Chapter);
+                if (ms != null) { ms.transform.SetSiblingIndex(slot); slot++; }
+                slot++;
             }
         }
 
         readonly List<GameObject> _chapterHeads = new();
 
         /// <summary>
-        /// 한 챕터의 머리글. 원본 `article.chapter` 의 글 부분을 옮긴 것이다 —
-        /// 'CH.N' · 챕터 이름 · 맵 설명. 썸네일은 아직 없다.
+        /// 한 챕터의 머리글. 원본 `.ch-head` 를 그대로 옮긴다 (index.html 2216~2218):
+        /// 왼쪽 70x100 미니맵 + 간격 12 + 폭 290 글자 칸, 칸 안에는
+        /// `CH.N` + 챕터 이름 한 줄 · 설명 두 줄 · 방/기믹 칩 한 줄.
+        ///
+        /// **설명 칸을 290 으로 묶는 것이 핵심이다.** 전체 폭을 주면 설명이 한 줄로
+        /// 펴지면서 챕터마다 약 30px 씩 짧아지고, 그 차이가 아래로 쌓여 욕실 구간에서는
+        /// 원본과 448px 어긋난다(전수 대조로 확인).
         /// </summary>
         GameObject BuildChapterHead(StageDef first)
         {
             var go = new GameObject($"ch_{first.Chapter}", typeof(RectTransform));
             var rt = (RectTransform)go.transform;
             rt.SetParent(listRoot, false);
+            // 원본 `.chapter` 는 패딩 `12px 12px 4px` 이고 목록 간격이 10 이다
+            // (우리 목록 간격은 8). 그래서 챕터마다 12+4+2 = **18** 이 비는데,
+            // 그 몫을 머리글 위 여백으로 넣는다 — 안 넣으면 챕터가 아래로 갈수록
+            // 원본보다 위로 밀린다(CH.3 에서 46px).
+            const float TopPad = 18f;
             var le = go.AddComponent<LayoutElement>();
-            le.minHeight = le.preferredHeight = UiTheme.Py(64f);
+            le.minHeight = le.preferredHeight = UiTheme.Py(106f + TopPad);
             _chapterHeads.Add(go);
 
-            var no = MakeLabel(rt, bodyFont, UiTheme.Py(11f), UiTheme.Ink2, TextAlignmentOptions.Left);
-            no.rectTransform.anchorMin = new Vector2(0f, 1f);
-            no.rectTransform.anchorMax = new Vector2(0f, 1f);
-            no.rectTransform.offsetMin = new Vector2(UiTheme.Px(2f), -UiTheme.Py(18f));
-            no.rectTransform.offsetMax = new Vector2(UiTheme.Px(60f), 0f);
+            // 원본 좌표는 `.app`(좌 16) 안에서 x=29 이므로, 목록 기준으로는 13 이다.
+            const float Left = 13f;        // 29 - 16
+            const float ThumbW = 70f, Gap = 12f, MetaW = 290f;
+            float metaLeft = Left + ThumbW + Gap;
+            float top0 = UiTheme.Py(TopPad);
+
+            // ---- 미니맵. 판 그림이 없으면 자리만 비워 둔다(칸을 접지는 않는다).
+            var mapRt = MakeNode("Map", rt);
+            mapRt.anchorMin = mapRt.anchorMax = new Vector2(0f, 1f);
+            mapRt.pivot = new Vector2(0f, 1f);
+            mapRt.sizeDelta = new Vector2(UiTheme.Px(ThumbW), UiTheme.Py(100f));
+            mapRt.anchoredPosition = new Vector2(UiTheme.Px(Left), -top0);
+            var map = mapRt.gameObject.AddComponent<Image>();
+            map.sprite = sprites != null ? sprites.Board(first.MapId) : null;
+            map.enabled = map.sprite != null;
+            map.preserveAspect = true;
+            map.raycastTarget = false;
+
+            // ---- `.ttl` — CH.N(13) 과 이름(21/23.1) 이 간격 8 로 나란히.
+            float ttlH = UiTheme.Row(UiTheme.Py(13f), UiTheme.Py(23.1f));
+            var no = MakeLabel(rt, bodyFont, UiTheme.Py(13f), UiTheme.Ink2, TextAlignmentOptions.Left);
+            no.rectTransform.anchorMin = no.rectTransform.anchorMax = new Vector2(0f, 1f);
+            no.rectTransform.pivot = new Vector2(0f, 1f);
+            no.rectTransform.sizeDelta = new Vector2(UiTheme.Px(34f), ttlH);
+            no.rectTransform.anchoredPosition = new Vector2(UiTheme.Px(metaLeft), -top0);
             no.text = $"CH.{first.Chapter}";
 
-            var name = MakeLabel(rt, titleFont != null ? titleFont : bodyFont, UiTheme.Py(17f),
+            var name = MakeLabel(rt, titleFont != null ? titleFont : bodyFont, UiTheme.Py(21f),
                                  UiTheme.Ink, TextAlignmentOptions.Left);
-            name.rectTransform.anchorMin = new Vector2(0f, 1f);
-            name.rectTransform.anchorMax = new Vector2(1f, 1f);
-            name.rectTransform.offsetMin = new Vector2(UiTheme.Px(62f), -UiTheme.Py(25f));
-            name.rectTransform.offsetMax = new Vector2(0f, -UiTheme.Py(1f));
+            name.rectTransform.anchorMin = name.rectTransform.anchorMax = new Vector2(0f, 1f);
+            name.rectTransform.pivot = new Vector2(0f, 1f);
+            name.rectTransform.sizeDelta = new Vector2(UiTheme.Px(MetaW - 42f), ttlH);
+            name.rectTransform.anchoredPosition = new Vector2(UiTheme.Px(metaLeft + 42f), -top0);
             name.text = _svc.Db.Text($"chapter.{first.Chapter}.name");
 
-            var desc = MakeLabel(rt, bodyFont, UiTheme.Py(11.5f), UiTheme.Ink2,
+            // ---- `p.sc-desc` — 12.5px, 줄 높이 19.375, **두 줄**.
+            float descTop = ttlH + UiTheme.Py(5f);
+            var desc = MakeLabel(rt, bodyFont, UiTheme.Py(12.5f), UiTheme.Ink2,
                                  TextAlignmentOptions.TopLeft);
             desc.textWrappingMode = TextWrappingModes.Normal;
-            desc.rectTransform.anchorMin = new Vector2(0f, 0f);
-            desc.rectTransform.anchorMax = new Vector2(1f, 1f);
-            desc.rectTransform.offsetMin = new Vector2(UiTheme.Px(2f), UiTheme.Py(2f));
-            desc.rectTransform.offsetMax = new Vector2(0f, -UiTheme.Py(28f));
+            desc.overflowMode = TextOverflowModes.Overflow;
+            desc.lineSpacing = LineSpacingFor(UiTheme.Py(12.5f), UiTheme.Py(19.375f));
+            desc.rectTransform.anchorMin = desc.rectTransform.anchorMax = new Vector2(0f, 1f);
+            desc.rectTransform.pivot = new Vector2(0f, 1f);
+            desc.rectTransform.sizeDelta = new Vector2(UiTheme.Px(MetaW), UiTheme.Py(38.8f));
+            desc.rectTransform.anchoredPosition = new Vector2(UiTheme.Px(metaLeft), -(top0 + descTop));
             desc.text = first.Desc ?? string.Empty;
+
+            // ---- `.chips` — 방 이름, 그리고 기믹이 있으면 주황 경고 칩.
+            float chipsTop = descTop + UiTheme.Py(38.8f) + UiTheme.Py(5f);
+            float x = UiTheme.Px(metaLeft);
+            x = SpawnChapterChip(rt, first.Name, false, x, top0 + chipsTop);
+            if (!string.IsNullOrEmpty(first.Gimmick))
+                SpawnChapterChip(rt, first.Gimmick, true, x + UiTheme.Px(4f), top0 + chipsTop);
 
             return go;
         }
+
+        /// <summary>
+        /// 챕터 별 보상 칸. 원본 `.milestones` 를 그대로 옮긴다 —
+        /// 372x135.7 · 바탕 #E6EAED · 반경 10 · 안쪽 10, 안에 머리줄(22) · 막대(6) ·
+        /// 버튼 셋(71.7)이 간격 8 로 쌓인다.
+        ///
+        /// 이 칸이 없으면 챕터마다 135.7 씩 짧아져 아래 챕터가 전부 위로 밀린다
+        /// (전수 대조에서 CH.3 이 359px 어긋나 있었다).
+        /// </summary>
+        GameObject BuildMilestones(int chapter)
+        {
+            if (!_svc.Db.StarRewards.TryGetValue(chapter, out var rows) || rows.Count == 0)
+                return null;
+
+            const float Left = 13f, W = 372f, Pad = 10f;
+            float inner = W - Pad * 2f;          // 352
+
+            var go = new GameObject($"ms_{chapter}", typeof(RectTransform));
+            var rt = (RectTransform)go.transform;
+            rt.SetParent(listRoot, false);
+            var le = go.AddComponent<LayoutElement>();
+            le.minHeight = le.preferredHeight = UiTheme.Py(135.7f);
+            _chapterHeads.Add(go);
+
+            var panelRt = MakeNode("Panel", rt);
+            panelRt.anchorMin = panelRt.anchorMax = new Vector2(0f, 1f);
+            panelRt.pivot = new Vector2(0f, 1f);
+            panelRt.sizeDelta = new Vector2(UiTheme.Px(W), UiTheme.Py(135.7f));
+            panelRt.anchoredPosition = new Vector2(UiTheme.Px(Left), 0f);
+            var panel = panelRt.gameObject.AddComponent<Image>();
+            panel.sprite = milestonePanelSprite;
+            panel.type = Image.Type.Sliced;
+            panel.color = new Color32(0xE6, 0xEA, 0xED, 0xFF);
+            panel.raycastTarget = false;
+
+            int have = _svc.Profile.ChapterStars(chapter);
+            int need = 0;
+            foreach (var r in rows) if (r.needStars > need) need = r.needStars;
+
+            // ---- `.ms-head` — 왼쪽 "챕터 별", 오른쪽 "★ have/need".
+            float headH = UiTheme.Row(UiTheme.Py(12f), UiTheme.Py(22f));
+            var cap = MakeLabel(panelRt, bodyFont, UiTheme.Py(12f), UiTheme.Ink2,
+                                TextAlignmentOptions.Left);
+            cap.rectTransform.anchorMin = cap.rectTransform.anchorMax = new Vector2(0f, 1f);
+            cap.rectTransform.pivot = new Vector2(0f, 1f);
+            cap.rectTransform.sizeDelta = new Vector2(UiTheme.Px(inner * 0.5f), headH);
+            cap.rectTransform.anchoredPosition = new Vector2(UiTheme.Px(Pad), -UiTheme.Py(Pad));
+            cap.text = "챕터 별";
+
+            var tally = MakeLabel(panelRt, titleFont != null ? titleFont : bodyFont,
+                                  UiTheme.Py(16f), UiTheme.RaritySSR,
+                                  TextAlignmentOptions.Right);
+            tally.rectTransform.anchorMin = tally.rectTransform.anchorMax = new Vector2(1f, 1f);
+            tally.rectTransform.pivot = new Vector2(1f, 1f);
+            tally.rectTransform.sizeDelta = new Vector2(UiTheme.Px(inner * 0.5f), headH);
+            tally.rectTransform.anchoredPosition = new Vector2(-UiTheme.Px(Pad), -UiTheme.Py(Pad));
+            tally.text = $"★ {have}<size=75%>/{need}</size>";
+
+            // ---- `.ms-bar` — 트랙 위에 채움, 그리고 각 문턱 자리에 눈금 2x10.
+            float barTop = Pad + 22f + 8f;
+            var trackRt = MakeNode("Track", panelRt);
+            trackRt.anchorMin = trackRt.anchorMax = new Vector2(0f, 1f);
+            trackRt.pivot = new Vector2(0f, 1f);
+            trackRt.sizeDelta = new Vector2(UiTheme.Px(inner), UiTheme.Py(6f));
+            trackRt.anchoredPosition = new Vector2(UiTheme.Px(Pad), -UiTheme.Py(barTop));
+            var track = trackRt.gameObject.AddComponent<Image>();
+            track.sprite = milestoneBarSprite;
+            track.type = Image.Type.Sliced;
+            track.color = UiTheme.PanelLine;
+            track.raycastTarget = false;
+
+            var fillRt = MakeNode("Fill", trackRt);
+            fillRt.anchorMin = Vector2.zero;
+            fillRt.anchorMax = new Vector2(need > 0 ? Mathf.Clamp01(have / (float)need) : 0f, 1f);
+            fillRt.offsetMin = Vector2.zero;
+            fillRt.offsetMax = Vector2.zero;
+            var fill = fillRt.gameObject.AddComponent<Image>();
+            fill.sprite = milestoneBarSprite;
+            fill.type = Image.Type.Sliced;
+            fill.color = UiTheme.Primary;
+            fill.raycastTarget = false;
+
+            foreach (var r in rows)
+            {
+                if (need <= 0) break;
+                var tickRt = MakeNode("Tick", trackRt);
+                tickRt.anchorMin = tickRt.anchorMax = new Vector2(r.needStars / (float)need, 0.5f);
+                tickRt.pivot = new Vector2(1f, 0.5f);
+                tickRt.sizeDelta = new Vector2(UiTheme.Px(2f), UiTheme.Py(10f));
+                tickRt.anchoredPosition = Vector2.zero;
+                var tick = tickRt.gameObject.AddComponent<Image>();
+                tick.color = UiTheme.Ink2;
+                tick.raycastTarget = false;
+            }
+
+            // ---- `.ms-btns` — 폭 113.33 짜리 버튼 셋, 간격 6.
+            float btnTop = barTop + 6f + 8f;
+            float btnW = (inner - 6f * 2f) / 3f;
+            for (int i = 0; i < rows.Count && i < 3; i++)
+                BuildMilestoneButton(panelRt, rows[i], have,
+                                     Pad + (btnW + 6f) * i, btnTop, btnW);
+
+            return go;
+        }
+
+        /// <summary>`.msb` 한 개 — 위에 `★N`, 아래에 보상 아이콘+숫자.</summary>
+        void BuildMilestoneButton(RectTransform parent, StarRewardRow row, int have,
+                                  float left, float top, float width)
+        {
+            bool claimed = _svc.Profile.Data.IsStarRewardClaimed(row.id);
+            bool ready = !claimed && have >= row.needStars;
+
+            var btnRt = MakeNode($"msb_{row.id}", parent);
+            btnRt.anchorMin = btnRt.anchorMax = new Vector2(0f, 1f);
+            btnRt.pivot = new Vector2(0f, 1f);
+            btnRt.sizeDelta = new Vector2(UiTheme.Px(width), UiTheme.Py(71.7f));
+            btnRt.anchoredPosition = new Vector2(UiTheme.Px(left), -UiTheme.Py(top));
+            var face = btnRt.gameObject.AddComponent<Image>();
+            face.sprite = milestoneButtonSprite;
+            face.type = Image.Type.Sliced;
+            // `.msb.ready` 는 주황 #FF9A3C, 평소는 #F7F9FA 에 #C7D0D6 테두리.
+            face.color = ready ? UiTheme.Primary : UiTheme.Panel;
+            face.raycastTarget = true;
+
+            var btn = btnRt.gameObject.AddComponent<Button>();
+            btn.targetGraphic = face;
+            btn.transition = Selectable.Transition.None;
+            btn.interactable = ready;
+            if (ready)
+            {
+                var claim = row;
+                btn.onClick.AddListener(() =>
+                {
+                    _svc.Profile.ClaimStarReward(claim);
+                    _svc.Persist();
+                    Refresh();
+                });
+            }
+
+            var star = MakeLabel(btnRt, bodyFont, UiTheme.Py(14f),
+                                 ready ? UiTheme.Ink : UiTheme.Ink2, TextAlignmentOptions.Center);
+            star.rectTransform.anchorMin = star.rectTransform.anchorMax = new Vector2(0.5f, 1f);
+            star.rectTransform.pivot = new Vector2(0.5f, 1f);
+            star.rectTransform.sizeDelta = new Vector2(UiTheme.Px(width),
+                                                       UiTheme.Row(UiTheme.Py(14f), UiTheme.Py(18.9f)));
+            star.rectTransform.anchoredPosition = new Vector2(0f, -UiTheme.Py(6f));
+            star.text = $"★{row.needStars}";
+
+            var chipRt = MakeNode("Chips", btnRt);
+            chipRt.anchorMin = chipRt.anchorMax = new Vector2(0.5f, 1f);
+            chipRt.pivot = new Vector2(0.5f, 1f);
+            chipRt.sizeDelta = new Vector2(UiTheme.Px(width - 8f), UiTheme.Py(37.8f));
+            chipRt.anchoredPosition = new Vector2(0f, -UiTheme.Py(26.9f));
+            var flow = chipRt.gameObject.AddComponent<HorizontalLayoutGroup>();
+            flow.spacing = UiTheme.Px(4f);
+            flow.childAlignment = TextAnchor.MiddleCenter;
+            flow.childControlWidth = flow.childControlHeight = true;
+            flow.childForceExpandWidth = flow.childForceExpandHeight = false;
+            var chips = chipRt.gameObject.AddComponent<RewardChipRow>();
+            chips.Configure(numberFont != null ? numberFont : bodyFont, sprites);
+            chips.Ink = ready ? UiTheme.Ink : UiTheme.Ink2;
+            chips.Show(_svc.Profile.GroupChips(row.rewardGroup));
+        }
+
+        /// <summary>원본 `.chips .chip` 한 개. 돌려주는 값은 그 칩의 오른쪽 끝이다.</summary>
+        float SpawnChapterChip(RectTransform parent, string text, bool warn, float x, float top)
+        {
+            var chipRt = MakeNode("Chip", parent);
+            chipRt.anchorMin = chipRt.anchorMax = new Vector2(0f, 1f);
+            chipRt.pivot = new Vector2(0f, 1f);
+            var img = chipRt.gameObject.AddComponent<Image>();
+            img.sprite = chapterChipSprite;
+            img.type = Image.Type.Sliced;
+            // `.chip` #E6EAED/#5D6871 · `.chip.warn` #FCE3D1/#9A4A12
+            img.color = warn ? new Color32(0xFC, 0xE3, 0xD1, 0xFF) : new Color32(0xE6, 0xEA, 0xED, 0xFF);
+            img.raycastTarget = false;
+
+            var label = MakeLabel(chipRt, bodyFont, UiTheme.Py(11f),
+                                  warn ? (Color)new Color32(0x9A, 0x4A, 0x12, 0xFF)
+                                       : (Color)new Color32(0x5D, 0x68, 0x71, 0xFF),
+                                  TextAlignmentOptions.Center);
+            label.rectTransform.anchorMin = Vector2.zero;
+            label.rectTransform.anchorMax = Vector2.one;
+            label.rectTransform.offsetMin = Vector2.zero;
+            label.rectTransform.offsetMax = Vector2.zero;
+            label.text = text;
+            label.ForceMeshUpdate();
+
+            // `padding: 2px 8px` — 칩은 글자 폭에 좌우 8 씩 더한 만큼이다.
+            float w = label.preferredWidth + UiTheme.Px(16f);
+            float h = UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(21f));
+            chipRt.sizeDelta = new Vector2(w, h);
+            chipRt.anchoredPosition = new Vector2(x, -top);
+            return x + w;
+        }
+
+        /// <summary>
+        /// 원본의 `line-height` 를 TMP 의 `lineSpacing` 으로 옮긴다. TMP 는 글자 크기
+        /// 대비 **추가** 간격을 쓰므로 원하는 줄 높이에서 글자 몫을 빼야 한다.
+        /// </summary>
+        static float LineSpacingFor(float fontSize, float wantedLineHeight)
+            => fontSize <= 0f ? 0f : (wantedLineHeight - fontSize * 1.2f) / fontSize * 100f;
 
         /// <summary>The lobby guide's "stage.first" spotlight target.</summary>
         public RectTransform FirstStageRow()

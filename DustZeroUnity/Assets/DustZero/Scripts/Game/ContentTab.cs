@@ -251,7 +251,7 @@ namespace DustZero.Game
                                  "· 30초 미만은 판 수를 쓰지 않아요";
 
             if (goLabel != null)
-                goLabel.text = open ? "대청소 시작" : "1-1을 클리어하면 대청소 모드가 열려요.";
+                goLabel.text = open ? "대청소 시작" : _svc.Profile.SurvivorLockMessage;
             if (goButton != null)
                 goButton.State = open ? UiButtonState.Normal : UiButtonState.Locked;
         }

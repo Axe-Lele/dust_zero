@@ -214,6 +214,16 @@ namespace DustZero.Core.Meta
         public bool IdleUnlocked => Db.Unlocks.TryGetValue("idle", out var u) && ConditionMet(u.cond);
         public bool SurvivorUnlocked => !Db.Unlocks.TryGetValue("survivor", out var u) || ConditionMet(u.cond);
 
+        /// <summary>
+        /// 대청소가 잠긴 까닭. 타워·리그와 같이 <see cref="LockMessage"/> 로 표에서 읽는다 —
+        /// 해금 스테이지는 빌드마다 움직이므로(10.19-e 1-1→1-2, 10.22-g 1-5) 화면에 적으면 틀린다.
+        /// </summary>
+        /// <example><code>
+        /// // "1-5를 클리어하면 대청소 모드가 열려요." (string_ko 의 unlock.survivor)
+        /// label.text = profile.SurvivorUnlocked ? "리더를 골라 출동" : profile.SurvivorLockMessage;
+        /// </code></example>
+        public string SurvivorLockMessage => LockMessage("survivor");
+
         /// <summary>2-5 를 깨야 열린다. 표에 조건이 없으면 열어 둔다.</summary>
         public bool TowerUnlocked => !Db.Unlocks.TryGetValue("tower", out var u) || ConditionMet(u.cond);
         public string TowerLockMessage => LockMessage("tower");
@@ -438,9 +448,19 @@ namespace DustZero.Core.Meta
             Data.AddItem(banner.costItem, -banner.costCount);
             var pool = Db.Pools[banner.poolId];
 
+            int pity = GachaPity;
             for (int i = 0; i < banner.pulls; i++)
             {
                 var t = RollFrom(pool);
+
+                // 10.22-d 천장. 원본 순서를 그대로 지킨다 — 먼저 뽑고, 천장이 걸리면
+                // SSR 풀에서 다시 뽑고, **그 다음에** 10연 확정을 본다.
+                if (pity > 0 && Data.gpity >= pity - 1 && Db.Units[t].Rarity != Rarity.SSR)
+                {
+                    var ssr = pool.Where(p => Db.Units[p.unitId].Rarity == Rarity.SSR).ToList();
+                    if (ssr.Count > 0) t = RollFrom(ssr);
+                }
+
                 if (banner.guaranteeRarity != 0 && i == banner.pulls - 1)
                 {
                     int need = RarityRank(banner.guaranteeRarity);
@@ -452,10 +472,60 @@ namespace DustZero.Core.Meta
                     }
                 }
                 result.Add((t, AddUnit(t)));
+                // SSR 이 나오면 쌓인 횟수가 0 으로 돌아간다.
+                Data.gpity = Db.Units[t].Rarity == Rarity.SSR ? 0 : Data.gpity + 1;
             }
 
             MarkDirty();
             return result;
+        }
+
+        /// <summary>config 의 천장 횟수. 0 이면 천장이 없다(표가 정한다).</summary>
+        public int GachaPity
+            => Db.Config.TryNum("gachaPity", out float n) ? (int)System.Math.Round(n) : 0;
+
+        /// <summary>
+        /// 원본 `pityLeft` — SSR 확정까지 남은 횟수. 천장이 없으면 0.
+        /// </summary>
+        /// <example><code>
+        /// // gachaPity 80, gpity 0 -> 80회 남음
+        /// label.text = $"SSR 확정까지 {profile.PityLeft}회";
+        /// </code></example>
+        public int PityLeft
+        {
+            get
+            {
+                int pity = GachaPity;
+                return pity <= 0 ? 0 : System.Math.Max(1, pity - Data.gpity);
+            }
+        }
+
+        /// <summary>
+        /// 10.18-d 첫 소환(무료 · SSR 확정)을 아직 쓸 수 있는가.
+        /// 원본 조건은 `!S.tutPull && S.best>=2 && UNITS[tutPullUnit]` 이다.
+        /// </summary>
+        public bool FreeFirstPullReady
+            => Data.tutPull == 0 && Data.best >= 2
+               && Db.Config.TryStr("tutPullUnit", out string id) && Db.Units.ContainsKey(id);
+
+        /// <summary>첫 소환으로 받는 가전. 쓸 수 없으면 null.</summary>
+        public string FreeFirstPullUnit
+            => FreeFirstPullReady && Db.Config.TryStr("tutPullUnit", out string id) ? id : null;
+
+        /// <summary>
+        /// 첫 소환을 쓴다. 원본 `tutPull` 과 같이 **편성을 건드리지 않고** 가전만 더한다.
+        /// </summary>
+        public DuplicateResult? ClaimFreeFirstPull()
+        {
+            string id = FreeFirstPullUnit;
+            if (id == null) return null;
+            var keep = new List<string>(Data.deck);
+            var tag = AddUnit(id);
+            Data.deck.Clear();
+            Data.deck.AddRange(keep);
+            Data.tutPull = 1;
+            MarkDirty();
+            return tag;
         }
 
         // ------------------------------------------------------------------ battle result

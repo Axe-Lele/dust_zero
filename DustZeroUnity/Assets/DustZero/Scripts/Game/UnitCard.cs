@@ -23,6 +23,9 @@ namespace DustZero.Game
         [SerializeField] TextMeshProUGUI rarityLabel;
         [SerializeField] TextMeshProUGUI nameLabel;
         [SerializeField] TextMeshProUGUI subLabel;
+        /// <summary>원본 `.ak` — 이름 아래 역할 알약(지상·공중·전체·보조).</summary>
+        [SerializeField] Image roleChip;
+        [SerializeField] TextMeshProUGUI roleLabel;
         [SerializeField] GameObject deckTag;
         [SerializeField] TextMeshProUGUI deckLabel;
         [SerializeField] GameObject hotTag;
@@ -65,6 +68,27 @@ namespace DustZero.Game
             if (picBackground != null)
                 picBackground.color = unit != null
                     ? UiTheme.RarityBg(UiTheme.Tier(unit.Rarity)) : UiTheme.Panel2;
+
+            // `.ak` 는 보유 여부와 무관하게 항상 보인다 — 미보유 카드에도 역할이 적혀 있다.
+            if (roleChip != null)
+            {
+                roleChip.gameObject.SetActive(unit != null);
+                if (unit != null)
+                {
+                    var (face, ink) = UiTheme.RoleChip(unit.RoleLabel);
+                    roleChip.color = face;
+                    if (roleLabel != null)
+                    {
+                        roleLabel.text = unit.RoleLabel;
+                        roleLabel.color = ink;
+                        // `padding:0 5px` — 알약은 글자 폭에 좌우 5 씩 더한 만큼이다.
+                        roleLabel.ForceMeshUpdate();
+                        var rt = (RectTransform)roleChip.transform;
+                        rt.sizeDelta = new Vector2(roleLabel.preferredWidth + UiTheme.Px(10f),
+                                                   rt.sizeDelta.y);
+                    }
+                }
+            }
             if (portrait != null)
             {
                 portrait.sprite = unit != null && sprites != null ? sprites.Unit(unit.Id) : null;

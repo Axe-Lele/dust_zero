@@ -127,10 +127,12 @@ namespace DustZero.Game
             {
                 bool open = _svc.Profile.SurvivorUnlocked;
                 survivorButton.State = open ? UiButtonState.Normal : UiButtonState.Locked;
+                // 잠긴 까닭은 표가 적는다(`content_unlock.lockKey` -> string_ko).
+                // 해금 스테이지는 빌드마다 바뀌어서 화면에 적으면 틀린 조건이 보인다.
                 if (survivorTitleLabel != null)
                     survivorTitleLabel.text = open
                         ? "리더를 골라 출동"
-                        : "1-1을 클리어하면 열려요";
+                        : _svc.Profile.SurvivorLockMessage;
             }
 
             RefreshRoomNote();

@@ -49,6 +49,24 @@ namespace DustZero.Data
         public string SurvivorLeader => Behaviour?.survLeader ?? string.Empty;
         public string SurvivorCompanion => Behaviour?.survComp ?? string.Empty;
         public bool IsSupport => Behaviour != null && Behaviour.support != 0;
+
+        /// <summary>
+        /// 카드에 붙는 역할 글자 — 원본 `atkChip` 과 같은 규칙이다
+        /// (`index.html` 의 `AK={1:지상,2:공중,3:전체}` 와 `atkKind`):
+        /// 평타가 없으면 `보조`, 있으면 평타가 치는 대상을 적는다.
+        /// </summary>
+        /// <example><code>
+        /// // 청소기: Atk 75, AtkTarget Ground -> "지상"
+        /// // 선풍기: Atk 0                    -> "보조"
+        /// </code></example>
+        public string RoleLabel => Atk > 0f
+            ? AtkTarget switch
+              {
+                  TargetType.Ground => "지상",
+                  TargetType.Air => "공중",
+                  _ => "전체",
+              }
+            : "보조";
         /// <summary>Lobby walk speed; the table default stands in when art is missing.</summary>
         public float RoomSpeed => Art?.roomSpeed ?? 0.18f;
 

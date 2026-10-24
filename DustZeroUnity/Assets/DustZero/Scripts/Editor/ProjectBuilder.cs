@@ -500,6 +500,7 @@ namespace DustZero.Editor
             public CoopUpgradeCell CoopUpgradeCell;
             public PassRow PassRow;
             public UiToggleChip DarkChip;
+            public AreaChip AreaChip;
             public SurvivorOptionCard SurvivorOption;
             public SpawnWarnView SpawnWarn;
             public LeagueBenchCell LeagueBench;
@@ -532,6 +533,7 @@ namespace DustZero.Editor
             p.CoopUpgradeCell = BuildCoopUpgradeCellPrefab(fonts, library);
             p.PassRow = BuildPassRowPrefab(fonts, library);
             p.DarkChip = BuildChapterChipPrefab(fonts);
+            p.AreaChip = BuildAreaChipPrefab(fonts);
             p.SurvivorOption = BuildSurvivorOptionPrefab(fonts);
             p.SpawnWarn = BuildSpawnWarnPrefab(art, fonts);
             p.LeagueBench = BuildLeagueBenchPrefab(fonts);
@@ -623,6 +625,7 @@ namespace DustZero.Editor
                 CoopUpgradeCell = Load<CoopUpgradeCell>("CoopUpgradeCell"),
                 PassRow = Load<PassRow>("PassRow"),
                 DarkChip = Load<UiToggleChip>("ChapterChip"),
+                AreaChip = Load<AreaChip>("AreaChip"),
                 SurvivorOption = Load<SurvivorOptionCard>("SurvivorOptionCard"),
                 SpawnWarn = Load<SpawnWarnView>("SpawnWarn"),
                 LeagueBench = Load<LeagueBenchCell>("LeagueBenchCell"),
@@ -1088,52 +1091,66 @@ namespace DustZero.Editor
             var boss = UiKit.Surface("Boss", rt, UiTheme.Danger, UiTheme.Px(3f), out var brt);
             Anchor(brt, Vector2.zero, new Vector2(0f, 1f), Vector2.zero, new Vector2(UiTheme.Px(5f), 0f));
 
-            // ---- number tile
-            float tile = UiTheme.Py(44f);
-            var numberFace = UiKit.Surface("Number", rt, UiTheme.Panel2, UiTheme.Px(12f), out var nfrt);
-            Anchor(nfrt, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
-                   new Vector2(UiTheme.Px(12f), -tile * 0.5f),
-                   new Vector2(UiTheme.Px(12f) + tile, tile * 0.5f));
-            var no = UiKit.Label("No", nfrt, fonts.Body, UiTheme.Px(14f), UiTheme.Ink,
-                                 TextAlignmentOptions.Center, out var nort, "1-1");
-            Stretch(nort);
+            // 원본 `.srow` 격자: `40px | 1fr | auto` 간격 10, 좌 13, 폭 372.
+            // 위에 1px 구분선(`border-top`)이 있고 세 칸은 **세로 가운데**로 맞춘다.
+            const float RowLeft = 13f, RowWidth = 372f, NoWidth = 40f, Gap = 10f, BtnWidth = 64.8f;
+            float infoLeft = RowLeft + NoWidth + Gap;
+            float infoWidth = RowWidth - NoWidth - Gap - BtnWidth - Gap;   // 247.2
 
-            // ---- name over summary. Both sit inside one band so the pair stays centred
-            // whichever height the row takes.
-            float textLeft = UiTheme.Px(12f) + tile + UiTheme.Px(12f);
-            float trailing = UiTheme.Px(130f);
-            var text = UiKit.Node("Text", rt);
-            Anchor(text, Vector2.zero, Vector2.one,
-                   new Vector2(textLeft, StageRow.RowPad), new Vector2(-trailing, -StageRow.RowPad));
+            // ---- 구분선
+            var divRt = UiKit.Node("Divider", rt);
+            Anchor(divRt, new Vector2(0f, 1f), new Vector2(0f, 1f),
+                   new Vector2(UiTheme.Px(RowLeft), -StageRow.DividerHeight),
+                   new Vector2(UiTheme.Px(RowLeft + RowWidth), 0f));
+            var divider = divRt.gameObject.AddComponent<Image>();
+            divider.color = UiTheme.PanelLine;
+            divider.raycastTarget = false;
 
-            // Each line gets its own line box rather than half the band. Splitting 50/50 left
-            // the name 3px short of what its 15px face needs and TMP drew nothing at all.
-            var name = UiKit.Label("Name", text, fonts.Body, UiTheme.Px(15f), UiTheme.Ink,
-                                   TextAlignmentOptions.BottomLeft, out var nrt, "거실");
-            Anchor(nrt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(0f, -StageRow.NameLine), Vector2.zero);
-            var detail = UiKit.Label("Detail", text, fonts.Body, UiTheme.LabelSize, UiTheme.Ink2,
-                                     TextAlignmentOptions.TopLeft, out var drt, "");
-            Anchor(drt, Vector2.zero, new Vector2(1f, 0f), Vector2.zero,
-                   new Vector2(0f, StageRow.DetailLine));
+            // ---- `.no` — LED 글꼴 16, 폭 40, 세로 가운데.
+            var no = UiKit.Label("No", rt, fonts.Number, UiTheme.Px(16f), UiTheme.Ink,
+                                 TextAlignmentOptions.Left, out var nort, "1-1");
+            float noLine = UiTheme.Row(UiTheme.Px(16f), UiTheme.Py(18f));
+            Anchor(nort, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
+                   new Vector2(UiTheme.Px(RowLeft), -noLine * 0.5f),
+                   new Vector2(UiTheme.Px(RowLeft + NoWidth), noLine * 0.5f));
 
-            // ---- trailing: exactly one of these is visible at a time
-            var stars = UiKit.Label("Stars", rt, fonts.Body, UiTheme.Px(17f), UiTheme.RaritySSR,
-                                    TextAlignmentOptions.Right, out var strt, "★★★");
-            stars.richText = true;
-            Anchor(strt, new Vector2(1f, 0f), new Vector2(1f, 1f),
-                   new Vector2(-trailing, 0f), new Vector2(-UiTheme.Px(12f), 0f));
+            // ---- `.info` — 별 · 권장 레벨 · 시급이 간격 10 으로 흐른다.
+            var info = UiKit.Node("Info", rt);
+            float infoLine = UiTheme.Row(UiTheme.Px(12f), UiTheme.Py(18f));
+            Anchor(info, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f),
+                   new Vector2(UiTheme.Px(infoLeft), -infoLine * 0.5f),
+                   new Vector2(UiTheme.Px(infoLeft + infoWidth), infoLine * 0.5f));
+            var infoRow = UiKit.Row(info, UiTheme.Px(Gap), TextAnchor.MiddleLeft);
+            infoRow.childControlWidth = true;
+            infoRow.childControlHeight = true;
+            infoRow.childForceExpandWidth = false;
+            infoRow.childForceExpandHeight = false;
 
-            var play = UiKit.Button("Play", rt, fonts.Title, "도전", UiButtonKind.Primary,
-                                    out var playRt, UiTheme.Px(56f), UiTheme.Px(22f));
+            TextMeshProUGUI InfoPart(string id, string text)
+            {
+                var t = UiKit.Label(id, info, fonts.Body, UiTheme.Px(12f), UiTheme.Ink2,
+                                    TextAlignmentOptions.Left, out _, text);
+                t.textWrappingMode = TextWrappingModes.NoWrap;
+                t.richText = true;
+                return t;
+            }
+            var stars = InfoPart("Stars", "★★★");
+            var rec = InfoPart("Rec", "권장 <b>Lv.1</b>");
+            var idle = InfoPart("Idle", "시급 코인 <b>500</b>");
+
+            // ---- `.sbtn.ghost` — 64.8x35 · 반경 9 · 테두리 1.5 --line. Secondary 가
+            // 같은 모양이다(바탕 --card + 외곽선). 원본은 깬 줄에도 `재도전` 이 남는다.
+            var play = UiKit.Button("Play", rt, fonts.Body, "도전", UiButtonKind.Secondary,
+                                    out var playRt, UiTheme.Py(35f), UiTheme.Px(13f));
             Anchor(playRt, new Vector2(1f, 0.5f), new Vector2(1f, 0.5f),
-                   new Vector2(-UiTheme.Px(12f) - UiTheme.Px(104f), -UiTheme.Py(28f)),
-                   new Vector2(-UiTheme.Px(12f), UiTheme.Py(28f)));
+                   new Vector2(-UiTheme.Px(RowLeft + BtnWidth), -UiTheme.Py(17.5f)),
+                   new Vector2(-UiTheme.Px(RowLeft), UiTheme.Py(17.5f)));
 
             var lockRt = UiKit.Node("Lock", rt);
+            float tile = UiTheme.Sq(18f);
             Anchor(lockRt, new Vector2(1f, 0.5f), new Vector2(1f, 0.5f),
-                   new Vector2(-UiTheme.Px(12f) - tile, -tile * 0.5f),
-                   new Vector2(-UiTheme.Px(12f), tile * 0.5f));
+                   new Vector2(-UiTheme.Px(RowLeft) - tile, -tile * 0.5f),
+                   new Vector2(-UiTheme.Px(RowLeft), tile * 0.5f));
             var padlock = lockRt.gameObject.AddComponent<Image>();
             padlock.sprite = UiArt.Icon("lock");
             padlock.color = UiTheme.Ink3;
@@ -1141,8 +1158,9 @@ namespace DustZero.Editor
             padlock.raycastTarget = false;
 
             var row = go.AddComponent<StageRow>();
-            Wire(row, ("face", face), ("numberFace", numberFace), ("noLabel", no),
-                 ("nameLabel", name), ("detailLabel", detail), ("starsLabel", stars),
+            Wire(row, ("face", face), ("numberFace", face), ("noLabel", no),
+                 ("starsLabel", stars), ("recLabel", rec), ("idleLabel", idle),
+                 ("divider", divider),
                  ("playButton", play), ("lockMark", lockRt.gameObject), ("bossMark", boss),
                  ("layout", le));
 
@@ -1163,7 +1181,8 @@ namespace DustZero.Editor
         {
             int radius = Mathf.RoundToInt(UiTheme.Px(12f));
             var go = UI("UnitCard", null, out var rt);
-            rt.sizeDelta = new Vector2(UiTheme.Px(94f), UiTheme.Py(137f));
+            // 원본 `.ut` 는 93.5 x 153.3 이다 — 이름과 Lv 사이에 역할 칩 `.ak` 한 줄이 있다.
+            rt.sizeDelta = new Vector2(UiTheme.Px(94f), UiTheme.Py(153.3f));
 
             var fill = go.AddComponent<Image>();
             fill.sprite = GeneratedArt.RoundedNineSlice("ui_card", radius);
@@ -1176,12 +1195,18 @@ namespace DustZero.Editor
             button.transition = Selectable.Transition.None;
 
             // ---- picture: 92x92 inset 1px, tinted by rarity, portrait 80x80 centred in it.
+            // 원본 `.pic` 은 **정사각형**이다 — 가전 탭에서 91.5x91.5, 대청소 리더
+            // 선택처럼 카드가 좁아지면 83.5x83.5 로 같이 줄어든다. 높이를 숫자로 박으면
+            // 좁은 카드에서 그림만 길어져 아래 글자가 전부 밀린다(실측 +9px).
             var picRt = UiKit.Node("Pic", rt);
-            // Page-square, not screen-square: the two axes scale differently, so the picture
-            // keeps its 92/137 share of the card's height and 92/94 of its width.
-            Anchor(picRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(1f), -UiTheme.Py(93f)),
-                   new Vector2(-UiTheme.Sq(1f), -UiTheme.Sq(1f)));
+            picRt.anchorMin = new Vector2(0f, 1f);
+            picRt.anchorMax = new Vector2(1f, 1f);
+            picRt.pivot = new Vector2(0.5f, 1f);
+            picRt.offsetMin = new Vector2(UiTheme.Px(1f), 0f);
+            picRt.offsetMax = new Vector2(-UiTheme.Px(1f), -UiTheme.Px(1f));
+            var picFit = picRt.gameObject.AddComponent<AspectRatioFitter>();
+            picFit.aspectMode = AspectRatioFitter.AspectMode.WidthControlsHeight;
+            picFit.aspectRatio = 1f;
             var picBg = picRt.gameObject.AddComponent<Image>();
             picBg.sprite = GeneratedArt.RoundedTopNineSlice("ui_card_pic", radius);
             picBg.type = Image.Type.Sliced;
@@ -1220,16 +1245,47 @@ namespace DustZero.Editor
                                    TextAlignmentOptions.Center, out var nameRt, "");
             name.textWrappingMode = TextWrappingModes.NoWrap;
             name.overflowMode = TextOverflowModes.Ellipsis;
-            Anchor(nameRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(2f), -UiTheme.Py(113f)),
-                   new Vector2(-UiTheme.Px(2f), -UiTheme.Py(94f)));
+            // 글자 세 줄은 **카드 아래쪽** 기준으로 쌓는다. 위에서부터 숫자로 적으면
+            // 카드가 좁아질 때(대청소 리더 선택 85.5) 정사각형 그림이 짧아진 만큼
+            // 글자만 그대로 남아 어긋난다. 원본도 `padding:0 0 8` 에 간격 2 다.
+            const float CardPadBottom = 8f, CardGap = 2f;
+            float lvH = UiTheme.Row(UiTheme.Py(10.5f), UiTheme.Py(15f));
+            float akH = UiTheme.Row(UiTheme.Py(10f), UiTheme.Py(15f));
+            float nmH = UiTheme.Row(UiTheme.Py(14f), UiTheme.Py(16.8f));
+            float lvBottom = UiTheme.Py(CardPadBottom);
+            float akBottom = lvBottom + lvH + UiTheme.Py(CardGap);
+            float nmBottom = akBottom + akH + UiTheme.Py(CardGap);
+
+            Anchor(nameRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(UiTheme.Px(2f), nmBottom),
+                   new Vector2(-UiTheme.Px(2f), nmBottom + nmH));
+
+            // ---- 역할 칩 `.ak`: 10px 700 · 반경 5 · 안쪽 0 5 · 가운데 정렬.
+            var roleRt = UiKit.Node("RoleChip", rt);
+            roleRt.anchorMin = roleRt.anchorMax = new Vector2(0.5f, 0f);
+            roleRt.pivot = new Vector2(0.5f, 0f);
+            roleRt.sizeDelta = new Vector2(UiTheme.Px(30f), akH);
+            roleRt.anchoredPosition = new Vector2(0f, akBottom);
+            var roleChip = roleRt.gameObject.AddComponent<Image>();
+            roleChip.sprite = GeneratedArt.RoundedNineSlice("ui_role_chip",
+                Mathf.RoundToInt(UiTheme.Px(5f)));
+            roleChip.type = Image.Type.Sliced;
+            roleChip.raycastTarget = false;
+            var roleLabel = UiKit.Label("Label", roleRt, fonts.Body, UiTheme.Py(10f),
+                                        UiTheme.Ink, TextAlignmentOptions.Center,
+                                        out var roleLabelRt, "");
+            Stretch(roleLabelRt);
+            roleLabel.fontStyle = FontStyles.Bold;
+            roleLabel.textWrappingMode = TextWrappingModes.NoWrap;
 
             var sub = UiKit.Label("Sub", rt, fonts.Number, UiTheme.Py(10.5f), UiTheme.Ink2,
                                   TextAlignmentOptions.Center, out var subRt, "");
             sub.textWrappingMode = TextWrappingModes.NoWrap;
-            Anchor(subRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
-                   new Vector2(UiTheme.Px(2f), -UiTheme.Py(131f)),
-                   new Vector2(-UiTheme.Px(2f), -UiTheme.Py(112f)));
+            // 15 로 그냥 적으면 TMP 가 'Lv.1'/'미보유' 를 **통째로 안 그린다**(30.9 < 32.4).
+            // 그래서 높이는 `Row()` 를 거치고, 자리는 아래쪽 기준으로 잡는다.
+            Anchor(subRt, new Vector2(0f, 0f), new Vector2(1f, 0f),
+                   new Vector2(UiTheme.Px(2f), lvBottom),
+                   new Vector2(-UiTheme.Px(2f), lvBottom + lvH));
 
             var deckTag = CornerTag("DeckTag", rt, fonts.Body, UiTheme.Ink, UiTheme.Panel,
                                     "편성", 4f, out var deckLabel, out _);
@@ -1239,7 +1295,8 @@ namespace DustZero.Editor
             var card = go.AddComponent<UnitCard>();
             Wire(card, ("cardFill", fill), ("cardOutline", outline), ("picBackground", picBg),
                  ("portrait", portrait), ("rarityLabel", rarity), ("nameLabel", name),
-                 ("subLabel", sub), ("deckTag", deckTag.gameObject), ("deckLabel", deckLabel),
+                 ("subLabel", sub), ("roleChip", roleChip), ("roleLabel", roleLabel),
+                 ("deckTag", deckTag.gameObject), ("deckLabel", deckLabel),
                  ("hotTag", hotTag.gameObject),
                  ("hotLabel", hotLabel), ("hotRect", hotRect),
                  ("button", button), ("sprites", library));
@@ -4940,7 +4997,7 @@ namespace DustZero.Editor
                  ("headCountLabel", headCount), ("bestStageLabel", bestStage),
                  ("nextRewardLabel", nextReward), ("powerSkillRoot", skillRows),
                  ("deckMiniRoot", minis), ("deckChangeButton", change),
-                 ("areaTabRoot", areaTabs), ("areaChipPrefab", prefabs.DarkChip),
+                 ("areaTabRoot", areaTabs), ("areaChipPrefab", prefabs.AreaChip),
                  ("areaKickerLabel", areaKicker), ("areaTitleLabel", areaTitle),
                  ("areaSubLabel", areaSub), ("areaDescLabel", areaDesc),
                  ("areaStatLabel", areaStat), ("areaArtImage", areaArt),
@@ -4951,6 +5008,21 @@ namespace DustZero.Editor
             // 전력 스킬 아이콘. 표의 id 와 같은 순서로 넣는다 — StageTab 이 id 로 고른다.
             WireArray(tab, "powerSkillIcons", new Object[] { LoadIcon("ps_storm"), LoadIcon("ps_boost") });
             WireStrings(tab, "powerSkillIconIds", new[] { "storm", "boost" });
+            // `.psr em` 의 호박색 알약 바탕 — border-radius 6.
+            Wire(tab, ("condPillSprite", GeneratedArt.RoundedNineSlice("ui_cond_pill",
+                Mathf.RoundToInt(UiTheme.Px(6f)))));
+            // `.chip` 은 `border-radius:999px` — 높이의 절반이면 알약이 된다.
+            Wire(tab, ("chapterChipSprite", GeneratedArt.RoundedNineSlice("ui_room_chip",
+                Mathf.RoundToInt(UiTheme.Py(10.5f)))));
+            // 챕터 별 보상 칸: 판 반경 10 · 버튼 반경 9 · 막대 반경 3.
+            Wire(tab,
+                 ("milestonePanelSprite", GeneratedArt.RoundedNineSlice("ui_ms_panel",
+                     Mathf.RoundToInt(UiTheme.Px(10f)))),
+                 ("milestoneButtonSprite", GeneratedArt.RoundedNineSlice("ui_ms_btn",
+                     Mathf.RoundToInt(UiTheme.Px(9f)))),
+                 ("milestoneBarSprite", GeneratedArt.RoundedNineSlice("ui_ms_bar",
+                     Mathf.RoundToInt(UiTheme.Px(3f)))),
+                 ("numberFont", fonts.Number));
 
             // 구역 다섯 곳의 집 단면도를 한 번 구워 둔다.
             WireArray(tab, "houseArt", new Object[]
@@ -5035,6 +5107,138 @@ namespace DustZero.Editor
                                  UiTheme.Ink2, UiTheme.Ink, UiTheme.Ink3, false);
             chip.Bind(text, null);
             return chip;
+        }
+
+        /// <summary>
+        /// 구역 칩. 원본 `.atab` 의 상자 모형을 그대로 쌓는다 —
+        /// 테두리 1.5 · 반경 11 · 안쪽 여백 7/2/6 · 세로 가운데 · 줄 간격 1,
+        /// 위에 LED 글꼴 11 짜리 '1구역', 아래에 Do Hyeon 14 짜리 이름.
+        /// 오른쪽 위 자물쇠와 아래로 7 내려 붙는 '진행 중' 알약은 칸 밖에 뜬다.
+        /// </summary>
+        static AreaChip BuildAreaChipPrefab(Fonts fonts)
+        {
+            var go = UI("AreaChip", null, out var rt);
+            // 폭은 원본 그리드(5칸 · 간격 5)가 398 줄에서 내는 값이다: (398 - 4*5) / 5.
+            rt.sizeDelta = new Vector2(UiTheme.Px(75.6f), UiTheme.Py(43f));
+
+            var face = go.AddComponent<Image>();
+            face.sprite = GeneratedArt.RoundedNineSlice("ui_area_chip",
+                Mathf.RoundToInt(UiTheme.Px(11f)));
+            face.type = Image.Type.Sliced;
+            face.color = UiTheme.Panel;
+            face.raycastTarget = true;
+
+            // 바탕과 테두리는 색이 따로 논다(선택되면 둘 다 구역 색, 아니면 회색 테두리에
+            // 흰 바탕). 스프라이트 하나로는 두 색을 낼 수 없어 고리를 따로 얹는다.
+            var edgeGo = UI("Edge", go.transform, out var edgeRt);
+            Stretch(edgeRt);
+            var edge = edgeGo.AddComponent<Image>();
+            edge.sprite = GeneratedArt.RoundedOutlineNineSlice("ui_area_chip_line",
+                Mathf.RoundToInt(UiTheme.Px(11f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            edge.type = Image.Type.Sliced;
+            edge.color = UiTheme.PanelLine;
+            edge.raycastTarget = false;
+            // 고리는 칸 전체를 덮는 **장식**이다. 레이아웃에서 빼지 않으면 아래의 세로
+            // 그룹이 이것에도 한 줄을 내준다 — 테두리가 위쪽 71.7x22.3 짜리 띠로
+            // 쪼그라들고 칩 높이가 47.1 -> 67.5 로 불어난다(런타임 덤프로 확인).
+            edgeGo.AddComponent<LayoutElement>().ignoreLayout = true;
+
+            var layout = go.AddComponent<VerticalLayoutGroup>();
+            // 원본 여백은 `7px 2px 6px` 이고 테두리 1.5 가 **상자 밖으로** 더해진다
+            // (높이 47.1 = 7+15+1+16.1+6 + 1.5*2). 우리 고리는 칸 안쪽에 그려지므로
+            // 그 1.5 를 위아래 여백에 얹어야 같은 높이가 된다.
+            layout.padding = new RectOffset(
+                Mathf.RoundToInt(UiTheme.Px(2f)), Mathf.RoundToInt(UiTheme.Px(2f)),
+                Mathf.RoundToInt(UiTheme.Py(8.5f)), Mathf.RoundToInt(UiTheme.Py(7.5f)));
+            layout.spacing = UiTheme.Py(1f);
+            layout.childAlignment = TextAnchor.UpperCenter;
+            layout.childControlWidth = true;
+            layout.childControlHeight = true;
+            layout.childForceExpandWidth = true;
+            layout.childForceExpandHeight = false;
+            var fit = go.AddComponent<ContentSizeFitter>();
+            fit.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+
+            // small — Share Tech Mono 11. 줄 높이는 글꼴이 정하게 둔다(칸을 직접 적으면
+            // 줄 높이보다 짧아질 때 TMP 가 글자를 아예 안 그린다).
+            var number = UiKit.Label("Number", go.transform, fonts.Number, UiTheme.Px(11f),
+                                     UiTheme.Ink2, TextAlignmentOptions.Center, out _);
+            // b — Do Hyeon 14, 한 줄에 말줄임.
+            var name = UiKit.Label("Name", go.transform, fonts.Title, UiTheme.Px(14f),
+                                   UiTheme.Ink, TextAlignmentOptions.Center, out _);
+
+            // .lk — 오른쪽 위 자물쇠. 몸통 8x7(반경 2) 위에 고리 5x5(테두리 1.5, 아래 없음).
+            var lockGo = UI("Lock", go.transform, out var lockRt);
+            lockRt.anchorMin = lockRt.anchorMax = new Vector2(1f, 1f);
+            lockRt.pivot = new Vector2(1f, 1f);
+            lockRt.sizeDelta = new Vector2(UiTheme.Px(8f), UiTheme.Py(11f));
+            lockRt.anchoredPosition = new Vector2(-UiTheme.Px(5f), -UiTheme.Py(4f));
+            lockGo.AddComponent<LayoutElement>().ignoreLayout = true;
+
+            var bodyGo = UI("Body", lockGo.transform, out var bodyRt);
+            bodyRt.anchorMin = new Vector2(0f, 0f);
+            bodyRt.anchorMax = new Vector2(1f, 0f);
+            bodyRt.pivot = new Vector2(0.5f, 0f);
+            bodyRt.offsetMin = new Vector2(0f, 0f);
+            bodyRt.offsetMax = new Vector2(0f, UiTheme.Py(7f));
+            var body = bodyGo.AddComponent<Image>();
+            body.sprite = GeneratedArt.RoundedNineSlice("ui_lock_body",
+                Mathf.RoundToInt(UiTheme.Px(2f)));
+            body.type = Image.Type.Sliced;
+            body.raycastTarget = false;
+
+            var shackGo = UI("Shackle", lockGo.transform, out var shackRt);
+            shackRt.anchorMin = shackRt.anchorMax = new Vector2(0.5f, 0f);
+            shackRt.pivot = new Vector2(0.5f, 0f);
+            shackRt.sizeDelta = new Vector2(UiTheme.Px(5f), UiTheme.Py(5f));
+            shackRt.anchoredPosition = new Vector2(0f, UiTheme.Py(5f));
+            var shack = shackGo.AddComponent<Image>();
+            // 아래가 뚫린 고리라 테두리만 그린다. 반경 4 는 원본 border-radius 4 4 0 0.
+            shack.sprite = GeneratedArt.RoundedOutlineNineSlice("ui_lock_shackle",
+                Mathf.RoundToInt(UiTheme.Px(4f)), Mathf.Max(1, Mathf.RoundToInt(UiTheme.Px(1.5f))));
+            shack.type = Image.Type.Sliced;
+            shack.raycastTarget = false;
+
+            // .here — 칩 **아래로 7** 내려 붙는 주황 알약(--ssr). 안쪽 여백은 좌우 5.
+            var pillGo = UI("Here", go.transform, out var pillRt);
+            pillRt.anchorMin = pillRt.anchorMax = new Vector2(0.5f, 0f);
+            pillRt.pivot = new Vector2(0.5f, 0f);
+            // 알약 높이는 글자를 거쳐서 적는다. Py(14)=28.8 은 9.5px 글자가 필요로 하는
+            // 29.4 보다 **아주 조금** 모자라서, TMP 가 '진행 중' 을 잘라 내는 대신
+            // 통째로 안 그렸다(PlayModeSmoke 의 빈 라벨 검사가 잡았다).
+            pillRt.sizeDelta = new Vector2(UiTheme.Px(44f),
+                                           UiTheme.Row(UiTheme.Px(9.5f), UiTheme.Py(14f)));
+            pillRt.anchoredPosition = new Vector2(0f, -UiTheme.Py(7f));
+            pillGo.AddComponent<LayoutElement>().ignoreLayout = true;
+            var pill = pillGo.AddComponent<Image>();
+            pill.sprite = GeneratedArt.RoundedNineSlice("ui_here_pill",
+                Mathf.RoundToInt(UiTheme.Px(6f)));
+            pill.type = Image.Type.Sliced;
+            pill.color = UiTheme.PrimaryEdge;
+            pill.raycastTarget = false;
+
+            var hereLabel = UiKit.Label("Label", pillGo.transform, fonts.Body, UiTheme.Px(9.5f),
+                                        Color.white, TextAlignmentOptions.Center, out var hereRt,
+                                        "진행 중");
+            Stretch(hereRt);
+            hereLabel.fontStyle = FontStyles.Bold;
+
+            var button = go.AddComponent<Button>();
+            button.targetGraphic = face;
+            button.transition = Selectable.Transition.None;
+
+            var chip = go.AddComponent<AreaChip>();
+            Wire(chip, ("face", face), ("edge", edge), ("numberLabel", number),
+                 ("nameLabel", name), ("button", button), ("lockBadge", lockRt),
+                 ("lockBody", body), ("lockShackle", shack), ("herePill", pillRt),
+                 ("hereLabel", hereLabel));
+            WireValues(chip, ("inkNormal", UiTheme.Ink), ("mutedNormal", UiTheme.Ink2),
+                      ("faceNormal", UiTheme.Panel), ("edgeNormal", UiTheme.PanelLine));
+
+            var group = go.AddComponent<CanvasGroup>();
+            Wire(chip, ("group", group));
+
+            return SavePrefab<AreaChip>(go, "AreaChip");
         }
 
         /// <summary>
@@ -7137,7 +7341,7 @@ namespace DustZero.Editor
             // ---- catalogue: every appliance, four to a row.
             var grid = UiKit.Node("Grid", column);
             var gridLayout = grid.gameObject.AddComponent<GridLayoutGroup>();
-            gridLayout.cellSize = new Vector2(UiTheme.Px(94f), UiTheme.Py(137f));
+            gridLayout.cellSize = new Vector2(UiTheme.Px(94f), UiTheme.Py(153.3f));
             gridLayout.spacing = new Vector2(UiTheme.Px(7.5f), UiTheme.Py(8f));
             gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             gridLayout.constraintCount = 4;
@@ -7253,7 +7457,7 @@ namespace DustZero.Editor
 
             var pool = UiKit.Node("Pool", column);
             var poolGrid = pool.gameObject.AddComponent<GridLayoutGroup>();
-            poolGrid.cellSize = new Vector2(UiTheme.Px(94f), UiTheme.Py(137f));
+            poolGrid.cellSize = new Vector2(UiTheme.Px(94f), UiTheme.Py(153.3f));
             poolGrid.spacing = new Vector2(UiTheme.Px(7.5f), UiTheme.Py(8f));
             poolGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             poolGrid.constraintCount = 4;
@@ -7344,7 +7548,8 @@ namespace DustZero.Editor
             var gearMode = Half("GearMode", false, out var gearModeLabel, out var gearModePlate);
 
             // ---- the dark banner.
-            var banner = Block("Banner", 309f);
+            // 309 -> 385: 천장 띠(18)와 첫 소환 버튼(46)이 각각 간격 6 과 함께 들어간다.
+            var banner = Block("Banner", 385f);
             var bannerBg = banner.gameObject.AddComponent<Image>();
             bannerBg.sprite = GeneratedArt.RoundedNineSlice("ui_modal", Mathf.RoundToInt(UiTheme.Px(16f)));
             bannerBg.type = Image.Type.Sliced;
@@ -7384,7 +7589,59 @@ namespace DustZero.Editor
             rateRow.childControlHeight = false;
             rateRow.childForceExpandWidth = false;
 
-            var pulls = BannerRow("Pulls", 230f, 63f);
+            // ---- 천장 띠 `#pityBar`: 왼쪽 글귀 + 오른쪽으로 차는 막대.
+            var pityRow = BannerRow("Pity", 225f, 18f);   // 확률 줄(203~219) 바로 아래
+            var pityLabel = UiKit.Label("Label", pityRow, fonts.Body, UiTheme.Py(11.5f),
+                                        UiTheme.DarkInk2, TextAlignmentOptions.Left,
+                                        out var pityLabelRt, "");
+            pityLabel.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(pityLabelRt, new Vector2(0f, 0f), new Vector2(0f, 1f),
+                   Vector2.zero, new Vector2(UiTheme.Px(120f), 0f));
+            var pityTrackRt = UiKit.Node("Track", pityRow);
+            Anchor(pityTrackRt, new Vector2(0f, 0.5f), new Vector2(1f, 0.5f),
+                   new Vector2(UiTheme.Px(126f), -UiTheme.Py(3f)),
+                   new Vector2(0f, UiTheme.Py(3f)));
+            var pityTrack = pityTrackRt.gameObject.AddComponent<Image>();
+            pityTrack.sprite = GeneratedArt.RoundedNineSlice("ui_pity_track",
+                Mathf.RoundToInt(UiTheme.Px(3f)));
+            pityTrack.type = Image.Type.Sliced;
+            pityTrack.color = UiTheme.DarkPanel2;
+            pityTrack.raycastTarget = false;
+            var pityFillRt = UiKit.Node("Fill", pityTrackRt);
+            pityFillRt.anchorMin = Vector2.zero;
+            pityFillRt.anchorMax = new Vector2(0f, 1f);
+            pityFillRt.offsetMin = Vector2.zero;
+            pityFillRt.offsetMax = Vector2.zero;
+            var pityFill = pityFillRt.gameObject.AddComponent<Image>();
+            pityFill.sprite = pityTrack.sprite;
+            pityFill.type = Image.Type.Sliced;
+            pityFill.color = UiTheme.RaritySSR;
+            pityFill.raycastTarget = false;
+
+            // ---- 첫 소환(무료 · SSR 확정). 원본은 소환 버튼 줄 위에 한 칸을 다 쓴다.
+            var freeRow = BannerRow("FreePull", 249f, 46f);
+            var freePull = UiKit.Button("Button", freeRow, fonts.Body, "", UiButtonKind.Primary,
+                                        out var freeRt, UiTheme.Py(46f), UiTheme.Py(14f));
+            Stretch(freeRt);
+            var freeLabel = freeRt.GetComponentInChildren<TextMeshProUGUI>();
+            freeLabel.fontStyle = FontStyles.Bold;
+            // 두 줄은 **붙여 쌓는다**. 각 줄 높이는 글자가 필요로 하는 값을 거쳐 적는다 —
+            // 눈대중으로 겹쳐 두면 큰 글자의 아랫부분이 작은 글자를 덮는다(실제로 5px 겹쳤다).
+            float freeTop = UiTheme.Py(4f);
+            float freeLabelH = UiTheme.Row(UiTheme.Py(14f), UiTheme.Py(22f));
+            float freeSubH = UiTheme.Row(UiTheme.Py(11f), UiTheme.Py(18f));
+            var freeLabelRt = (RectTransform)freeLabel.transform;
+            Anchor(freeLabelRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(8f), -(freeTop + freeLabelH)),
+                   new Vector2(-UiTheme.Px(8f), -freeTop));
+            var freeSub = UiKit.Label("Sub", freeRt, fonts.Body, UiTheme.Py(11f), UiTheme.Ink,
+                                      TextAlignmentOptions.Center, out var freeSubRt, "");
+            freeSub.textWrappingMode = TextWrappingModes.NoWrap;
+            Anchor(freeSubRt, new Vector2(0f, 1f), new Vector2(1f, 1f),
+                   new Vector2(UiTheme.Px(6f), -(freeTop + freeLabelH + freeSubH)),
+                   new Vector2(-UiTheme.Px(6f), -(freeTop + freeLabelH)));
+
+            var pulls = BannerRow("Pulls", 301f, 63f);
             var pullGrid = pulls.gameObject.AddComponent<GridLayoutGroup>();
             pullGrid.cellSize = new Vector2(UiTheme.Px(159f), UiTheme.Py(63f));
             pullGrid.spacing = new Vector2(UiTheme.Px(8f), 0f);
@@ -7392,7 +7649,8 @@ namespace DustZero.Editor
             pullGrid.constraintCount = 2;
 
             UiButton PullButton(string id, UiButtonKind kind,
-                                out TextMeshProUGUI label, out TextMeshProUGUI cost)
+                                out TextMeshProUGUI label, out TextMeshProUGUI cost,
+                                out Image costIcon)
             {
                 var b = UiKit.Button(id, pulls, fonts.Body, "", kind, out var rt,
                                      UiTheme.Py(63f), UiTheme.Py(15f));
@@ -7408,15 +7666,26 @@ namespace DustZero.Editor
                 cost.textWrappingMode = TextWrappingModes.NoWrap;
                 cost.overflowMode = TextOverflowModes.Ellipsis;
                 Anchor(crt, Vector2.zero, new Vector2(1f, 0f),
-                       new Vector2(UiTheme.Px(6f), UiTheme.Py(8f)),
+                       new Vector2(UiTheme.Px(14f), UiTheme.Py(8f)),
                        new Vector2(-UiTheme.Px(6f), UiTheme.Py(32f)));
+                // 원본 `iico(costItem,15)` — 숫자 왼쪽에 재화 그림이 붙는다.
+                var iconRt = UiKit.Node("CostIcon", rt);
+                iconRt.anchorMin = iconRt.anchorMax = new Vector2(0.5f, 0f);
+                iconRt.pivot = new Vector2(1f, 0.5f);
+                iconRt.sizeDelta = new Vector2(UiTheme.Sq(15f), UiTheme.Sq(15f));
+                iconRt.anchoredPosition = new Vector2(-UiTheme.Px(16f), UiTheme.Py(20f));
+                costIcon = iconRt.gameObject.AddComponent<Image>();
+                costIcon.raycastTarget = false;
+                costIcon.preserveAspect = true;
                 return b;
             }
             // 원본 `.pull.one` 은 `--panel-2`(#2A3136) — 배너 카드보다 밝다.
             var single = PullButton("Single", UiButtonKind.DarkRaised,
-                                    out var singleLabel, out var singleCost);
+                                    out var singleLabel, out var singleCost,
+                                    out var singleCostIcon);
             var multi = PullButton("Multi", UiButtonKind.Primary,
-                                   out var multiLabel, out var multiCost);
+                                   out var multiLabel, out var multiCost,
+                                   out var multiCostIcon);
 
             // ---- 소환 목록
             var poolHead = Block("PoolHead", 30f);
@@ -7447,6 +7716,11 @@ namespace DustZero.Editor
                  ("singleCostLabel", singleCost),
                  ("multiButton", multi), ("multiLabel", multiLabel),
                  ("multiCostLabel", multiCost),
+                 ("pityRow", pityRow), ("pityLabel", pityLabel), ("pityBarFill", pityFillRt),
+                 ("freePullButton", freePull), ("freePullLabel", freeLabel),
+                 ("freePullSubLabel", freeSub),
+                 ("singleCostIcon", singleCostIcon), ("multiCostIcon", multiCostIcon),
+                 ("crystalIcon", LoadIcon("crystal")), ("coinIcon", LoadIcon("coin")),
                  ("poolHeadingLabel", poolHeading), ("poolRoot", pool),
                  ("cellSprite", GeneratedArt.RoundedNineSlice("ui_card",
                      Mathf.RoundToInt(UiTheme.Px(12f)))),
@@ -8439,7 +8713,8 @@ namespace DustZero.Editor
             leaderGrid.spacing = new Vector2(UiTheme.Px(8f), UiTheme.Px(8f));
             leaderGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             leaderGrid.constraintCount = 4;
-            leaderGrid.cellSize = new Vector2(UiTheme.Px(85.5f), UiTheme.Py(129.3f));
+            // 원본 리더 카드는 85.5 x 145.3 — 그림 83.5 에 글자 블록 61.8 이다.
+            leaderGrid.cellSize = new Vector2(UiTheme.Px(85.5f), UiTheme.Py(145.3f));
 
             // ---- `.sv-sel`: 고른 리더의 생존 스킬. --bg 바탕에 radius 10, padding 8/10.
             // 설명이 한 줄이면 57, 두 줄이면 75 — 원본처럼 글에 맞춰 늘어난다.

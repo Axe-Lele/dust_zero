@@ -81,5 +81,20 @@ namespace DustZero.Game
 
         /// <summary>Lets a screen tint the numbers without rebuilding the row's wiring.</summary>
         public Color Ink { get => ink; set => ink = value; }
+
+        /// <summary>
+        /// 런타임에 만든 줄에 글꼴과 그림집을 넣는다. 빌더가 프리팹으로 굽지 않고
+        /// 화면 쪽에서 직접 만드는 자리(스테이지 탭의 챕터 별 보상)에서 쓴다.
+        /// </summary>
+        /// <example><code>
+        /// var row = go.AddComponent&lt;RewardChipRow&gt;();
+        /// row.Configure(numberFont, spriteLibrary);
+        /// row.Show(profile.GroupChips(groupId));
+        /// </code></example>
+        public void Configure(TMP_FontAsset numberFont, SpriteLibrary library)
+        {
+            if (numberFont != null) font = numberFont;
+            if (library != null) sprites = library;
+        }
     }
 }
