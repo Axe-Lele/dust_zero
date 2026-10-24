@@ -44,7 +44,14 @@ SCREENS = [
     ("battle-brief", "08-battle-brief", "전투 브리핑"),
     ("surv", "23-survivor-arena", "대청소"),
     ("surv-pick", "22-survivor-pick", "대청소 리더 선택"),
+    # 2026-10-24 에 10.22-g 로 새로 뜬 화면들.
+    ("unit-detail", "13-unit-detail", "가전 상세"),
+    ("gear-bag", "18-gear-bag", "장비 가방"),
+    ("art-viewer", "15-art-profile", "일러스트 뷰어"),
+    ("pass", "14-pass", "시즌 패스"),
 ]
+
+UNITY_FOR = {o: u for o, u, _ in SCREENS}
 
 # 글자가 없어 자동으로 못 맞추는 상자. (원본 path 조각, 이식 path 조각, 이름)
 PAIRS = {
@@ -101,6 +108,31 @@ def norm(t):
     return NUM.sub("#", (t or "").strip()).replace(" ", "")
 
 
+# 시트로 열리는 화면은 **시트 안만** 비교한다.
+#
+# 왜: 두 쪽의 모달 캡처는 뒤에 깔린 탭이 서로 다르다(원본은 가전 탭, 이식본 덤프는
+# 그때 열려 있던 탭). 배경까지 같이 재면 "원본에만 있는 글자" 가 50개씩 나오고 그게
+# 전부 허수다. 시트 바깥을 걷어내면 남는 숫자가 실제 작업 대상이다.
+#
+# 원본 쪽 기준 상자는 캡처 안에 그대로 들어 있다(`#mbox` 등). 이식본 쪽은 시트 뿌리의
+# 경로 조각으로 고른다.
+SHEETS = {
+    "unit-detail": ("#mbox", "/UnitDetail"),
+    "gear-bag": ("#mbox", "/GearBag"),
+    "art-viewer": ("#artOv", "/ArtViewer"),
+    "pass": ("#passOv", "/Pass"),
+    "surv-pick": ("#mbox", "/LeaderSelect"),
+}
+
+
+def inside(box, clip, slack=2.0):
+    """상자가 기준 상자 안에 (거의) 들어가는가."""
+    return (box["x"] >= clip["x"] - slack
+            and box["y"] >= clip["y"] - slack
+            and box["x"] + box["w"] <= clip["x"] + clip["w"] + slack
+            and box["y"] + box["h"] <= clip["y"] + clip["h"] + slack)
+
+
 def load_original(name):
     p = os.path.join(ORIG, name + ".json")
     if not os.path.exists(p):
@@ -109,6 +141,13 @@ def load_original(name):
     for n in nodes:
         n["colour"] = css_rgb(n.get("style", {}).get("bg", ""))
         n["fg"] = css_rgb(n.get("style", {}).get("color", ""))
+    sheet = SHEETS.get(name)
+    if sheet:
+        root = next((n for n in nodes if n.get("path") == sheet[0]), None)
+        # 전체 화면을 덮는 뿌리(#artOv 등)는 자르는 의미가 없다 — 그때는 그대로 둔다.
+        if root and root["box"]["h"] < 900:
+            clip = root["box"]
+            nodes = [n for n in nodes if inside(n["box"], clip)]
     return nodes
 
 
@@ -133,6 +172,11 @@ def load_unity(name):
                          "fg": None})
         except ValueError:
             pass
+    sheet = next((v for k, v in SHEETS.items() if UNITY_FOR.get(k) == name), None)
+    if sheet:
+        kept = [r for r in rows if sheet[1] in r["path"]]
+        if kept:
+            rows = kept
     return rows
 
 

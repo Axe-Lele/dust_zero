@@ -34,7 +34,6 @@ SafeArea/Column/Battle/DeckBar/UnitActionBar/Info/Meta/TMP SubMeshUI [IBM Plex S
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Info/Status	22.0	810.5	88.2	21.8	#5D6871FF	14.6	정상 작동	22.0,810.5,55.4,21.8
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Boost	126.2	753.0	75.3	117.1	#E3E8ECFF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Boost/Content/Label	134.2	761.0	59.3	83.3	#5D6871FF	18.4	강화	147.4,788.8,32.9,27.7
-SafeArea/Column/Battle/DeckBar/UnitActionBar/Boost/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	134.2	761.0	59.3	83.3	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Boost/Content/Sub	134.2	844.3	59.3	21.8	#5D6871FF	14.6	900W	144.2,844.3,39.2,21.8
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Boost/Content/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	134.2	844.3	59.3	21.8	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Multitap	209.4	753.0	75.3	117.1	#E3E8ECFF			
@@ -46,7 +45,7 @@ SafeArea/Column/Battle/DeckBar/UnitActionBar/Multitap/Content/Sub/TMP SubMeshUI 
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat	292.7	753.0	75.3	117.1	#F7F9FAFF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat/Line	292.7	753.0	75.3	117.1	#C7D0D6FF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat/Content/Label	300.7	761.0	59.3	83.3	#1D2226FF	18.4	철수	313.9,788.8,32.9,27.7
-SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	300.7	761.0	59.3	83.3	#FFFFFFFF			
+SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	300.7	761.0	59.3	83.3	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat/Content/Sub	300.7	844.3	59.3	21.8	#1D2226FF	14.6	+600W	306.4,844.3,47.9,21.8
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Retreat/Content/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	300.7	844.3	59.3	21.8	#FFFFFFFF			
 SafeArea/Column/Battle/DeckBar/UnitActionBar/Close	376.0	753.0	44.0	117.1	#F7F9FAFF			

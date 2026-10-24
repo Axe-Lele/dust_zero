@@ -1,0 +1,64 @@
+- generic [ref=f3e3]:
+  - banner [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - generic [ref=f3e6]: OPERATION
+      - text: 더스트 제로
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]:
+        - generic [ref=f3e9]: 코인
+        - generic [ref=f3e10]: 2,000
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]: 크리스탈
+        - generic [ref=f3e15]:
+          - generic [ref=f3e17]: 1,500
+          - button "크리스탈 충전" [ref=f3e18] [cursor=pointer]: +
+  - generic:
+    - generic "가전들이 청소하는 방" [ref=f3e19] [cursor=pointer]
+    - generic:
+      - generic [ref=f3e20]:
+        - button "출석부 1일째 받기" [ref=f3e21] [cursor=pointer]:
+          - generic [ref=f3e22]: 출석부
+          - generic [ref=f3e24]: 1일째 받기
+        - button "퀘스트 받기 2" [ref=f3e25] [cursor=pointer]:
+          - generic [ref=f3e26]: 퀘스트
+          - generic [ref=f3e28]: 받기 2
+        - button "자동 청소 잠김" [ref=f3e29] [cursor=pointer]:
+          - generic [ref=f3e30]: 자동 청소
+          - generic [ref=f3e32]: 잠김
+      - generic [ref=f3e34]:
+        - generic [ref=f3e35]:
+          - button "게임 초기화" [ref=f3e36] [cursor=pointer]
+          - button "설정" [ref=f3e38] [cursor=pointer]
+        - button "시즌 패스 Lv.1 받기 1" [ref=f3e41] [cursor=pointer]:
+          - generic [ref=f3e42]: 시즌 패스
+          - generic [ref=f3e44]: Lv.1
+          - generic [ref=f3e46]: 받기 1
+        - button "우편함 새 우편 4" [ref=f3e47] [cursor=pointer]:
+          - generic [ref=f3e48]: 우편함
+          - generic [ref=f3e50]: 새 우편 4
+      - generic [ref=f3e51]:
+        - paragraph [ref=f3e52]: 가전 4/16이 방을 청소하고 있어요 · 눌러서 말 걸기
+        - button "메인 1장 1-1 거실 지키기 1/1 받기" [ref=f3e53] [cursor=pointer]:
+          - generic [ref=f3e54]: 메인 1장
+          - generic [ref=f3e55]: 1-1 거실 지키기
+          - generic [ref=f3e59]: 1/1
+          - generic [ref=f3e60]: 받기
+        - button "대청소 모드 · 무한 버티기 · 청소 일지 0/100 리더를 골라 출동 ▶" [ref=f3e61] [cursor=pointer]:
+          - generic [ref=f3e63]:
+            - generic [ref=f3e64]: 대청소 모드 · 무한 버티기 · 청소 일지 0/100
+            - generic [ref=f3e65]: 리더를 골라 출동
+          - generic [ref=f3e66]: ▶
+        - button "다음 스테이지 도전 2-1 주방 ▶" [ref=f3e67] [cursor=pointer]:
+          - generic [ref=f3e68]:
+            - generic [ref=f3e69]: 다음 스테이지 도전
+            - generic [ref=f3e70]: 2-1 주방
+          - generic [ref=f3e71]: ▶
+  - navigation "메뉴" [ref=f3e72]:
+    - tablist [ref=f3e73]:
+      - tab "홈" [selected] [ref=f3e74] [cursor=pointer]
+      - tab "스테이지" [ref=f3e76] [cursor=pointer]
+      - tab "콘텐츠" [ref=f3e78] [cursor=pointer]
+      - tab "가전" [ref=f3e80] [cursor=pointer]
+      - tab "편성" [ref=f3e82] [cursor=pointer]
+      - tab "소환" [ref=f3e84] [cursor=pointer]
+      - tab "상점" [ref=f3e86] [cursor=pointer]

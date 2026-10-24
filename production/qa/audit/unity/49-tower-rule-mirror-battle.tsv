@@ -2,14 +2,15 @@ path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/League/Hud	16.0	12.0	398.0	106.0	#1D2226FF			
 SafeArea/Column/League/Hud/Top/Kicker	28.0	22.0	224.4	16.5	#8D99A2FF	11.0	TOWER	28.0,22.0,33.0,12.4
 SafeArea/Column/League/Hud/Top/Chip	28.0	36.0	224.4	22.0	#E8EDF0FF	17.0	13층 · 거울 많은 드레스룸	28.0,36.0,157.9,19.0
-SafeArea/Column/League/Hud/Top/Chip/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	28.0	36.0	224.4	22.0	#FFFFFFFF			
 SafeArea/Column/League/Hud/Top/Chip/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	28.0	36.0	224.4	22.0	#FFFFFFFF			
 SafeArea/Column/League/Hud/Top/Ctrls/Speed	292.0	12.7	44.0	48.5	#2A3136FF			
 SafeArea/Column/League/Hud/Top/Ctrls/Speed/Content/Label	300.0	18.5	28.0	37.0	#E8EDF0FF	12.0	2×	306.8,28.0,14.4,18.0
 SafeArea/Column/League/Hud/Top/Ctrls/Exit	342.0	12.7	60.0	48.5	#2A3136FF			
 SafeArea/Column/League/Hud/Top/Ctrls/Exit/Content/Label	350.0	18.5	44.0	37.0	#E8EDF0FF	12.0	나가기	355.9,28.0,32.1,18.0
 SafeArea/Column/League/Hud/TowerReadouts/Floor/Label	28.0	62.0	116.7	15.0	#8D99A2FF	10.0	층	28.0,62.0,9.7,15.0
+SafeArea/Column/League/Hud/TowerReadouts/Floor/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	28.0	62.0	116.7	15.0	#FFFFFFFF			
 SafeArea/Column/League/Hud/TowerReadouts/Floor/Value	28.0	73.3	116.7	39.3	#FF9A3CFF	26.0	13층	28.0,73.5,51.3,39.0
+SafeArea/Column/League/Hud/TowerReadouts/Floor/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	28.0	73.3	116.7	39.3	#FFFFFFFF			
 SafeArea/Column/League/Hud/TowerReadouts/Floor/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	28.0	73.3	116.7	39.3	#FFFFFFFF			
 SafeArea/Column/League/Hud/TowerReadouts/Goal/Label	156.6	62.0	116.7	15.0	#8D99A2FF	10.0	남은 시간	156.6,62.0,42.0,15.0
 SafeArea/Column/League/Hud/TowerReadouts/Goal/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	156.6	62.0	116.7	15.0	#FFFFFFFF			
@@ -24,11 +25,18 @@ SafeArea/Column/League/Synergy/Chip/Text	96.7	136.0	41.4	29.0	#E8EDF0FF	11.5	계
 SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	96.7	136.0	41.4	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip	151.1	136.0	57.4	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip/Text	159.1	136.0	41.4	29.0	#5D6871FF	11.5	생활 1/2	159.1,141.9,41.4,17.3
-SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	159.1	136.0	41.4	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	159.1	136.0	41.4	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip	213.6	136.0	67.7	29.0	#FFFFFFFF			
 SafeArea/Column/League/Synergy/Chip/Text	221.6	136.0	51.7	29.0	#5D6871FF	11.5	디지털 1/2	221.6,141.9,51.7,17.3
-SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	221.6	136.0	51.7	29.0	#FFFFFFFF			
+SafeArea/Column/League/Synergy/Chip/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	221.6	136.0	51.7	29.0	#FFFFFFFF			
+SafeArea/Column/League/Synergy/Chip	190.7	126.2	48.5	48.5	#1D2226FF			
+SafeArea/Column/League/Synergy/Chip/Text	198.7	126.2	32.5	48.5	#E8EDF0FF	11.5	원거리 3/4	189.2,141.9,51.7,17.3
+SafeArea/Column/League/Synergy/Chip	190.7	126.2	48.5	48.5	#1D2226FF			
+SafeArea/Column/League/Synergy/Chip/Text	198.7	126.2	32.5	48.5	#E8EDF0FF	11.5	계절 2/3	194.3,141.9,41.4,17.3
+SafeArea/Column/League/Synergy/Chip	190.7	126.2	48.5	48.5	#FFFFFFFF			
+SafeArea/Column/League/Synergy/Chip/Text	198.7	126.2	32.5	48.5	#5D6871FF	11.5	생활 1/2	194.3,141.9,41.4,17.3
+SafeArea/Column/League/Synergy/Chip	190.7	126.2	48.5	48.5	#FFFFFFFF			
+SafeArea/Column/League/Synergy/Chip/Text	198.7	126.2	32.5	48.5	#5D6871FF	11.5	디지털 1/2	189.2,141.9,51.7,17.3
 SafeArea/Column/League/Cells/LeagueCell(Clone)	16.0	343.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	72.9	343.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Cells/LeagueCell(Clone)	129.7	343.0	56.9	56.0	#FFFFFF00			
@@ -52,12 +60,10 @@ SafeArea/Column/League/Cells/LeagueCell(Clone)	300.3	455.0	56.9	56.0	#FFFFFF00
 SafeArea/Column/League/Cells/LeagueCell(Clone)	357.1	455.0	56.9	56.0	#FFFFFF00			
 SafeArea/Column/League/Info/Left	16.0	602.2	258.7	26.0	#5D6871FF	12.0	13층 전투 중	16.0,606.2,62.9,18.0
 SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	602.2	258.7	26.0	#FFFFFFFF			
-SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	602.2	258.7	26.0	#FFFFFFFF			
+SafeArea/Column/League/Info/Left/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	16.0	602.2	258.7	26.0	#FFFFFFFF			
 SafeArea/Column/League/Info/Right	274.7	602.2	139.3	26.0	#5D6871FF	12.0	남은 먼지 6	358.3,606.2,55.7,18.0
-SafeArea/Column/League/Info/Right/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	274.7	602.2	139.3	26.0	#FFFFFFFF			
 SafeArea/Column/League/Go/Button	16.0	714.2	398.0	46.0	#FF9A3CFF			
 SafeArea/Column/League/Go/Button/Content/Label	24.0	722.2	382.0	30.0	#1D2226FF	19.0	결과 바로 보기	165.5,727.7,99.0,19.0
-SafeArea/Column/League/Go/Button/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	24.0	722.2	382.0	30.0	#FFFFFFFF			
 SafeArea/Column/League/Go/Button/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	24.0	722.2	382.0	30.0	#FFFFFFFF			
 SafeArea/Column/League/Hint/Hint	16.0	770.2	398.0	38.4	#5D6871FF	12.0	전투는 자동이에요. 배속을 바꾸거나 결과를 바로 볼 수 있어요.	66.6,780.4,296.8,18.0
 SafeArea/Column/League/Hint/Hint/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	16.0	770.2	398.0	38.4	#FFFFFFFF			
@@ -65,7 +71,6 @@ SafeArea/Column/League/Hint/Hint/TMP SubMeshUI [IBM Plex Sans KR - Regular Mater
 SafeArea/Column/League/TowerRule	16.0	182.0	398.0	56.2	#FFF4E8FF			
 SafeArea/Column/League/TowerRule/Line	16.0	182.0	398.0	56.2	#F4B27AFF			
 SafeArea/Column/League/TowerRule/Top/Name	26.0	190.0	50.6	22.8	#8A3A10FF	15.0	거울 먼지	26.0,190.0,50.6,15.0
-SafeArea/Column/League/TowerRule/Top/Name/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	26.0	190.0	50.6	22.8	#FFFFFFFF			
 SafeArea/Column/League/TowerRule/Top/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	26.0	190.0	50.6	22.8	#FFFFFFFF			
 SafeArea/Column/League/TowerRule/Top/Desc	84.6	190.0	319.4	18.4	#1D2226FF	12.0	먼지가 내 편성 앞 3대를 흉내 낸 가짜 가전을 데려와요(능력 60%)	84.6,190.0,315.2,18.0
 SafeArea/Column/League/TowerRule/Top/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	84.6	190.0	319.4	18.4	#FFFFFFFF			

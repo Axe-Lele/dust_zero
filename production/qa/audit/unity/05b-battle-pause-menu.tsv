@@ -16,7 +16,7 @@ SafeArea/Column/Battle/Hud/Readouts/Power/Label	70.0	62.0	286.0	15.0	#8D99A2FF	1
 SafeArea/Column/Battle/Hud/Readouts/Power/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	70.0	62.0	286.0	15.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Readouts/Power/Value	70.0	70.5	286.0	44.0	#FF9A3CFF	26.0	600W	70.0,77.8,56.2,29.3
 SafeArea/Column/Battle/Hud/Readouts/Power/Meter	70.0	109.0	286.0	4.0	#5A3A1EFF			
-SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	70.0	109.0	143.0	4.0	#FF9A3CFF			
+SafeArea/Column/Battle/Hud/Readouts/Power/Meter/Mask/Fill	70.0	109.0	147.8	4.0	#FF9A3CFF			
 SafeArea/Column/Battle/Hud/Readouts/Remain/Label	368.0	69.0	34.0	15.0	#8D99A2FF	10.0	남은 적	370.5,69.0,32.3,15.0
 SafeArea/Column/Battle/Hud/Readouts/Remain/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	368.0	69.0	34.0	15.0	#FFFFFFFF			
 SafeArea/Column/Battle/Hud/Readouts/Remain/Value	368.0	77.5	34.0	44.0	#FF9A3CFF	26.0	20	373.9,84.8,28.1,29.3
@@ -71,8 +71,8 @@ SafeArea/Column/Battle/PauseOverlay/Card	43.0	331.2	344.0	269.6	#F7F9FAFF
 SafeArea/Column/Battle/PauseOverlay/Card/Title	59.0	355.2	312.0	42.2	#1D2226FF	28.2	전투를 멈췄어요	135.1,362.3,159.8,28.2
 SafeArea/Column/Battle/PauseOverlay/Card/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	59.0	355.2	312.0	42.2	#FFFFFFFF			
 SafeArea/Column/Battle/PauseOverlay/Card/Desc	59.0	405.4	312.0	55.3	#5D6871FF	18.4	다시 하거나 나가면 이번 판은 보상 없이 끝나요.	59.9,405.4,310.1,55.3
-SafeArea/Column/Battle/PauseOverlay/Card/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	59.0	405.4	312.0	55.3	#FFFFFFFF			
 SafeArea/Column/Battle/PauseOverlay/Card/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	59.0	405.4	312.0	55.3	#FFFFFFFF			
+SafeArea/Column/Battle/PauseOverlay/Card/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	59.0	405.4	312.0	55.3	#FFFFFFFF			
 SafeArea/Column/Battle/PauseOverlay/Card/Resume	59.0	476.8	312.0	46.0	#FF9A3CFF			
 SafeArea/Column/Battle/PauseOverlay/Card/Resume/Content/Label	67.0	484.8	296.0	30.0	#1D2226FF	18.4	계속하기	182.1,486.0,65.8,27.7
 SafeArea/Column/Battle/PauseOverlay/Card/Resume/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	67.0	484.8	296.0	30.0	#FFFFFFFF			

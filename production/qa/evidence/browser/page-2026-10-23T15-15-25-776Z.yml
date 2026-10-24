@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - heading "Directory listing for /" [level=1] [ref=e2]
+  - separator [ref=e3]
+  - list [ref=e4]:
+    - listitem [ref=e5]:
+      - link ".thumbnail" [ref=e6] [cursor=pointer]:
+        - /url: .thumbnail
+    - listitem [ref=e7]:
+      - link "assets/" [ref=e8] [cursor=pointer]:
+        - /url: assets/
+    - listitem [ref=e9]:
+      - link "support.js" [ref=e10] [cursor=pointer]:
+        - /url: support.js
+    - listitem [ref=e11]:
+      - link "구현 가이드.dc.html" [ref=e12] [cursor=pointer]:
+        - /url: "%EA%B5%AC%ED%98%84%20%EA%B0%80%EC%9D%B4%EB%93%9C.dc.html"
+    - listitem [ref=e13]:
+      - link "더스트 제로 UI 리디자인.dc.html" [ref=e14] [cursor=pointer]:
+        - /url: "%EB%8D%94%EC%8A%A4%ED%8A%B8%20%EC%A0%9C%EB%A1%9C%20UI%20%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8.dc.html"
+  - separator [ref=e15]

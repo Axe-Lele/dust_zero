@@ -7,26 +7,32 @@ SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub	139.4	224.9	258.6	30.0	#5D687
 SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	139.4	224.9	258.6	30.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Head/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	139.4	224.9	258.6	30.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text	32.0	266.9	366.0	36.0	#5D6871FF	12.0	리더를 고르세요. 화면을 끌거나 WASD·방향키로 움직이고, 공격은 자동	32.0,266.9,363.3,36.0
-SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	266.9	366.0	36.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	32.0	266.9	366.0	36.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)	32.0	314.9	85.5	129.3	#F7F9FAFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic	33.0	315.9	83.5	92.0	#E3E8ECFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic/Portrait	34.8	321.9	80.0	80.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Outline	32.0	314.9	85.5	129.3	#C7D0D6FF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Note/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	266.9	366.0	36.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)	32.0	314.9	85.5	145.3	#F7F9FAFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic	33.0	315.9	83.5	83.5	#E3E8ECFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic/Portrait	34.8	317.7	80.0	80.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Outline	32.0	314.9	85.5	145.3	#C7D0D6FF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Rarity	38.0	320.6	40.0	18.0	#7D8B96FF	11.0	R	38.0,320.6,5.9,12.4
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name	34.0	408.9	81.5	19.0	#1D2226FF	14.0	청소기	58.6,411.4,32.3,14.0
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	34.0	408.9	81.5	19.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	34.0	426.9	81.5	19.0	#5D6871FF	10.5	Lv.1	63.4,430.5,22.7,11.8
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)	125.5	314.9	85.5	129.3	#F7F9FAFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic	126.5	315.9	83.5	92.0	#DCE9F7FF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic/Portrait	128.3	321.9	80.0	80.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Outline	125.5	314.9	85.5	129.3	#C7D0D6FF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name	34.0	395.8	81.5	21.4	#1D2226FF	14.0	청소기	58.6,399.5,32.3,14.0
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	34.0	395.8	81.5	21.4	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/RoleChip	60.5	419.1	28.5	15.0	#F1E2CCFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/RoleChip/Label	60.5	419.1	28.5	15.0	#7A4A1CFF	10.0	지상	65.5,419.2,19.2,15.0
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	34.0	436.2	81.5	16.0	#5D6871FF	10.5	Lv.1	63.4,438.3,22.7,11.8
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)	125.5	314.9	85.5	145.3	#F7F9FAFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic	126.5	315.9	83.5	83.5	#DCE9F7FF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Pic/Portrait	128.3	317.7	80.0	80.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Outline	125.5	314.9	85.5	145.3	#C7D0D6FF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Rarity	131.5	320.6	40.0	18.0	#3D8BD9FF	11.0	SR	131.5,320.6,11.9,12.4
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name	127.5	408.9	81.5	19.0	#1D2226FF	14.0	에어컨	152.1,411.4,32.3,14.0
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	127.5	408.9	81.5	19.0	#FFFFFFFF			
-SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	127.5	426.9	81.5	19.0	#5D6871FF	10.5	Lv.1	156.9,430.5,22.7,11.8
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name	127.5	395.8	81.5	21.4	#1D2226FF	14.0	에어컨	152.1,399.5,32.3,14.0
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	127.5	395.8	81.5	21.4	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/RoleChip	154.0	419.1	28.5	15.0	#E6E0FAFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/RoleChip/Label	154.0	419.1	28.5	15.0	#5B3FBFFF	10.0	전체	159.0,419.2,19.2,15.0
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/RoleChip/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	154.0	419.1	28.5	15.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/Sub	127.5	436.2	81.5	16.0	#5D6871FF	10.5	Lv.1	156.9,438.3,22.7,11.8
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/DeckTag	178.8	318.9	28.3	16.9	#1D2226FF			
 SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/DeckTag/Text	183.6	319.9	18.5	15.0	#F7F9FAFF	10.0	리더	183.6,319.9,19.2,15.0
+SafeArea/Column/Survivor/LeaderSelect/Box/List/UnitCard(Clone)/DeckTag/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	183.6	319.9	18.5	15.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Skill	32.0	456.2	366.0	74.9	#E6EAEDFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Skill/Name	42.2	464.0	345.6	21.4	#1D2226FF	14.0	냉기 탄	42.2,467.6,36.5,14.0
 SafeArea/Column/Survivor/LeaderSelect/Box/Skill/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	42.2	464.0	345.6	21.4	#FFFFFFFF			
@@ -46,9 +52,10 @@ SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Minis/gen	176.0	554.1	34.0	34.0	
 SafeArea/Column/Survivor/LeaderSelect/Box/Comps/Minis/gen/Icon	179.0	557.1	28.0	28.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Rewards/Text	32.0	611.1	366.0	36.0	#5D6871FF	12.0	청소 일지 <b>0/100</b> · 1분 +10   보상 판 <b>3/	32.0,611.1,205.8,36.0
 SafeArea/Column/Survivor/LeaderSelect/Box/Rewards/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	32.0	611.1	366.0	36.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Rewards/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	32.0	611.1	366.0	36.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Close	32.0	659.1	179.0	48.0	#F7F9FAFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Close/Line	32.0	659.1	179.0	48.0	#C7D0D6FF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Close/Content/Label	40.0	667.1	163.0	32.0	#1D2226FF	18.4	닫기	105.1,669.3,32.9,27.7
-SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Close/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	40.0	667.1	163.0	32.0	#FFFFFFFF			
+SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Close/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	40.0	667.1	163.0	32.0	#FFFFFFFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Go	219.0	659.1	179.0	48.0	#FF9A3CFF			
 SafeArea/Column/Survivor/LeaderSelect/Box/Buttons/Go/Content/Label	227.0	667.1	163.0	32.0	#1D2226FF	18.4	출동	292.0,669.3,32.9,27.7

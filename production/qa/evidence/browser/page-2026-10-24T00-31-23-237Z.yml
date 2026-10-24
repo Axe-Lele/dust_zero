@@ -1,0 +1,63 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - generic [ref=f1e6]: OPERATION
+        - text: 더스트 제로
+      - generic [ref=f1e7]:
+        - generic [ref=f1e8]:
+          - generic [ref=f1e9]: 코인
+          - generic [ref=f1e10]: 2,000
+        - generic [ref=f1e13]:
+          - generic [ref=f1e14]: 크리스탈
+          - generic [ref=f1e15]:
+            - generic [ref=f1e17]: 1,500
+            - button "크리스탈 충전" [ref=f1e18] [cursor=pointer]: +
+    - generic:
+      - generic "가전들이 청소하는 방" [ref=f1e19] [cursor=pointer]
+      - generic:
+        - generic [ref=f1e20]:
+          - button "출석부 1일째 받기" [ref=f1e21] [cursor=pointer]:
+            - generic [ref=f1e22]: 출석부
+            - generic [ref=f1e24]: 1일째 받기
+          - button "퀘스트 받기 1" [ref=f1e25] [cursor=pointer]:
+            - generic [ref=f1e26]: 퀘스트
+            - generic [ref=f1e28]: 받기 1
+          - button "자동 청소 잠김" [ref=f1e29] [cursor=pointer]:
+            - generic [ref=f1e30]: 자동 청소
+            - generic [ref=f1e32]: 잠김
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]:
+            - button "게임 초기화" [ref=f1e36] [cursor=pointer]
+            - button "설정" [ref=f1e38] [cursor=pointer]
+          - button "시즌 패스 Lv.1 받기 1" [ref=f1e41] [cursor=pointer]:
+            - generic [ref=f1e42]: 시즌 패스
+            - generic [ref=f1e44]: Lv.1
+            - generic [ref=f1e46]: 받기 1
+          - button "우편함 새 우편 4" [ref=f1e47] [cursor=pointer]:
+            - generic [ref=f1e48]: 우편함
+            - generic [ref=f1e50]: 새 우편 4
+        - generic [ref=f1e51]:
+          - paragraph [ref=f1e52]: 가전 4/16이 방을 청소하고 있어요 · 눌러서 말 걸기
+          - button "대청소 모드 1-5를 클리어하면 대청소 모드가 열려요. 잠김" [ref=f1e53] [cursor=pointer]:
+            - generic [ref=f1e55]:
+              - generic [ref=f1e56]: 대청소 모드
+              - generic [ref=f1e57]: 1-5를 클리어하면 대청소 모드가 열려요.
+            - generic [ref=f1e58]: 잠김
+          - button "다음 스테이지 도전 1-3 거실 ▶" [ref=f1e59] [cursor=pointer]:
+            - generic [ref=f1e60]:
+              - generic [ref=f1e61]: 다음 스테이지 도전
+              - generic [ref=f1e62]: 1-3 거실
+            - generic [ref=f1e63]: ▶
+    - navigation "메뉴" [ref=f1e64]:
+      - tablist [ref=f1e65]:
+        - tab "홈" [selected] [ref=f1e66] [cursor=pointer]
+        - tab "스테이지" [ref=f1e68] [cursor=pointer]
+        - tab "콘텐츠" [ref=f1e70] [cursor=pointer]
+        - tab "가전" [ref=f1e72] [cursor=pointer]
+        - tab "편성" [ref=f1e74] [cursor=pointer]
+        - tab "소환" [ref=f1e76] [cursor=pointer]
+        - tab "상점" [ref=f1e78] [cursor=pointer]
+  - generic [ref=f1e84]:
+    - paragraph [ref=f1e85]: 첫 출동이에요! 거실에 먼지가 몰려오고 있어요. 1-1을 눌러 지켜 주세요.
+    - button "안내 건너뛰기" [ref=f1e86] [cursor=pointer]

@@ -22,19 +22,17 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1	155.2	214.6
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1/Line	155.2	214.6	119.6	68.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1/Content/Label	163.2	222.6	103.6	52.0	#1D2226FF	11.0		
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1/Pts	155.2	221.6	119.6	17.0	#5D6871FF	11.0	60점	203.5,221.8,23.0,16.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1/Pts/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	155.2	221.6	119.6	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1/Crystal	155.2	238.6	119.6	21.0	#1D2226FF	14.0	50	207.4,241.2,15.1,15.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box1/State	155.2	259.6	119.6	17.0	#5D6871FF	11.0	—	210.7,259.8,8.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2	280.8	214.6	119.6	68.0	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Line	280.8	214.6	119.6	68.0	#C7D0D6FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Content/Label	288.8	222.6	103.6	52.0	#1D2226FF	11.0		
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Pts	280.8	221.6	119.6	17.0	#5D6871FF	11.0	100점	325.8,221.8,29.6,16.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Pts/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	280.8	221.6	119.6	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/Crystal	280.8	238.6	119.6	21.0	#1D2226FF	14.0	60	333.1,241.2,15.1,15.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Boxes/Box2/State	280.8	259.6	119.6	17.0	#5D6871FF	11.0	—	336.4,259.8,8.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note	29.5	290.6	370.9	42.0	#5D6871FF	11.5	어디서든 모아요 · 대청소 버틴 1분 +10 · 협동 막은 웨이브 +3 	29.5,290.6,370.3,34.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	290.6	370.9	42.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	290.6	370.9	42.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Pool/Note/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	290.6	370.9	42.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard	15.5	352.6	398.9	336.7	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Icon	29.5	368.4	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Kicker	83.5	366.6	316.9	17.0	#FF9A3CFF	11.0	무한 버티기	83.5,366.6,51.7,16.5
@@ -45,22 +43,24 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Leaders/Le
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Leaders/Leader_robot	314.5	370.4	40.0	40.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Top/Leaders/Leader_ac	360.5	370.4	40.0	40.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead	29.5	424.2	370.9	20.9	#E8EDF0FF	13.5	리더 하나를 움직여 쓰러질 때까지 버텨요. 공격은 자동이에요.	29.5,424.2,330.7,20.3
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	424.2	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	424.2	370.9	20.9	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	424.2	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule0	29.5	455.1	370.9	19.0	#8D99A2FF	12.5	· 성장 레벨업마다 편성 가전이 동료로 합류 · 짝이 맞으면 협동기	29.5,455.1,316.4,18.7
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	455.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	455.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule1	29.5	478.1	370.9	19.0	#8D99A2FF	12.5	· 위험 2분마다 보스 · 2분 30초부터 적이 계속 강해짐	29.5,478.1,265.4,18.7
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	478.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	478.1	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat0	29.5	507.1	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat0/Key	39.5	515.1	98.0	17.0	#8D99A2FF	11.0	청소 일지	39.5,515.1,41.8,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat0/Value	39.5	534.5	98.0	29.0	#FF9A3CFF	18.0	0/100	39.5,534.5,48.6,20.3
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat1	155.5	507.1	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat1/Key	165.5	515.1	98.0	17.0	#8D99A2FF	11.0	오늘 최고	165.5,515.1,41.8,16.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat1/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	165.5	515.1	98.0	17.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat1/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	165.5	515.1	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat1/Value	165.5	534.5	98.0	29.0	#FF9A3CFF	18.0	0:00	165.5,534.5,38.9,20.3
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat2	281.5	507.1	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat2/Key	291.5	515.1	98.0	17.0	#8D99A2FF	11.0	역대 최고	291.5,515.1,41.8,16.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat2/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	291.5	515.1	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Stats/Stat2/Value	291.5	534.5	98.0	29.0	#FF9A3CFF	18.0	0:00	291.5,534.5,38.9,20.3
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub/Sub	29.5	572.1	370.9	18.6	#8D99A2FF	12.0	버틴 1분마다 청소 일지 +10점 · 여러 판에 나눠 모아도 돼요	29.5,572.4,285.8,18.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	572.1	370.9	18.6	#FFFFFFFF			
@@ -68,18 +68,20 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub/Sub/TMP Su
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub2/Sub2	29.5	600.7	370.9	18.6	#8D99A2FF	12.0	부품·코인·조각 보상 판 3/3 남음 · 30초 미만은 판 수를 쓰지 않	29.5,601.0,322.4,18.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Sub2/Sub2/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	600.7	370.9	18.6	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go	29.5	629.3	370.9	46.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Label	37.5	637.3	354.9	30.0	#8D99A2FF	15.0	1-1을 클리어하면 대청소 모드가 열려요.	93.5,641.0,242.9,22.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Label	37.5	637.3	354.9	30.0	#8D99A2FF	15.0	1-5를 클리어하면 대청소 모드가 열려요.	93.5,641.0,242.9,22.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.5	637.3	354.9	30.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/SurvivorCard/Go/Go/Content/Lock	39.5	641.3	22.0	22.0	#5D6871FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop	15.5	701.3	398.9	300.4	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Icon	29.5	717.1	44.0	44.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Kicker	99.5	715.3	300.9	18.0	#FF9A3CFF	11.0	봇 파트너 · 랜덤 소환	99.5,715.3,92.5,16.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	99.5	715.3	300.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Kicker/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	99.5	715.3	300.9	18.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Title	99.5	734.3	300.9	31.0	#E8EDF0FF	26.0	협동 청소	99.5,734.3,87.7,26.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Top/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	99.5	734.3	300.9	31.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Lead/Lead	29.5	772.9	370.9	41.8	#E8EDF0FF	13.5	칸을 골라 가전을 무작위로 소환하고, 같은 ★ 두 대를 합쳐 키워요. 위	29.5,772.9,368.9,40.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	772.9	370.9	41.8	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule0	29.5	824.7	370.9	19.0	#8D99A2FF	12.5	· 파트너 급한 청소기(소환 몰빵형) · 느긋한 냉장고(합치기·강화형)	29.5,824.7,328.3,18.8
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	824.7	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	824.7	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule1	29.5	847.7	370.9	19.0	#8D99A2FF	12.5	· 보상 버틴 웨이브마다 청소 일지 +3 · 코인	29.5,847.7,214.0,18.8
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Coop/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	847.7	370.9	19.0	#FFFFFFFF			
@@ -120,17 +122,20 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Rules/Rule1/TMP SubMe
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1162.5	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0	29.5	1191.5	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0/Key	39.5	1199.5	98.0	17.0	#8D99A2FF	11.0	청소한 층	39.5,1199.5,41.8,16.5
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	39.5	1199.5	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat0/Value	39.5	1218.5	98.0	29.0	#FF9A3CFF	18.0	0/30	39.5,1218.5,38.9,20.3
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1	155.5	1191.5	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Key	165.5	1199.5	98.0	17.0	#8D99A2FF	11.0	다음 큰 보상	165.5,1199.5,54.2,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	165.5	1199.5	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	165.5	1199.5	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Value	165.5	1218.5	98.0	29.0	#FF9A3CFF	18.0	5층	165.5,1218.5,25.8,27.0
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	165.5	1218.5	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat1/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	165.5	1218.5	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2	281.5	1191.5	118.0	55.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Key	291.5	1199.5	98.0	17.0	#8D99A2FF	11.0	보너스 남음	291.5,1199.5,51.7,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	291.5	1199.5	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Value	291.5	1218.5	98.0	29.0	#FF9A3CFF	18.0	0층	291.5,1218.5,25.8,27.0
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	291.5	1218.5	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	291.5	1218.5	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go	29.5	1266.5	370.9	46.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/Tower/Go/Go/Content/Label	37.5	1274.5	354.9	30.0	#8D99A2FF	15.0	5-5를 클리어하면 먼지 타워가 열려요.	100.2,1278.2,229.5,22.5
@@ -145,31 +150,29 @@ SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Kicker/TMP SubMe
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Title	83.5	1371.5	316.9	31.0	#E8EDF0FF	26.0	가전 대청소 리그	83.5,1371.5,155.4,26.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Top/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	83.5	1371.5	316.9	31.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead	29.5	1412.5	370.9	20.9	#E8EDF0FF	13.5	상점에서 가전을 사서 판에 놓으면 전투는 자동이에요. 한 판 4~5분.	29.5,1412.5,361.3,20.3
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1412.5	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1412.5	370.9	20.9	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Lead/Lead/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1412.5	370.9	20.9	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0	29.5	1443.4	370.9	19.0	#8D99A2FF	12.5	· 합체 같은 가전 3장 → ★2, ★2 3장 → ★3(모습이 바뀜)	29.5,1443.4,288.7,18.7
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule0/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1443.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1	29.5	1466.4	370.9	19.0	#8D99A2FF	12.5	· 시너지 같은 계열·역할이 모이면 효과 · 키운 가전은 최대 +0%	29.5,1466.4,313.6,18.8
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	29.5	1466.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Rules/Rule1/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1466.4	370.9	19.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0	29.5	1495.4	118.0	59.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Key	39.5	1503.4	98.0	17.0	#8D99A2FF	11.0	브론즈	39.5,1503.4,29.4,16.5
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	39.5	1503.4	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	39.5	1503.4	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Value	39.5	1522.4	98.0	29.0	#FF9A3CFF	18.0	0승	39.5,1522.4,25.8,27.0
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 2]	39.5	1522.4	98.0	29.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	39.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat0/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	39.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat1	155.5	1495.4	118.0	59.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat1/Key	165.5	1503.4	98.0	17.0	#8D99A2FF	11.0	실버	165.5,1503.4,19.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat1/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	165.5	1503.4	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat1/Value	165.5	1522.4	98.0	29.0	#FF9A3CFF	18.0	잠김	165.5,1522.4,32.1,27.0
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat1/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	165.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat1/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	165.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2	281.5	1495.4	118.0	59.0	#2A3136FF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Key	291.5	1503.4	98.0	17.0	#8D99A2FF	11.0	골드	291.5,1503.4,19.6,16.5
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Key/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	291.5	1503.4	98.0	17.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value	291.5	1522.4	98.0	29.0	#FF9A3CFF	18.0	잠김	291.5,1522.4,32.1,27.0
-SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	291.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Stats/Stat2/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	291.5	1522.4	98.0	29.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub	29.5	1564.4	370.9	18.6	#8D99A2FF	12.0	코인·부품 보상 판 0/0 남음 · 이긴 라운드마다 청소 일지 +7	29.5,1564.7,283.6,18.0
 SafeArea/Column/Lobby/Panels/Content/Viewport/Column/League/Sub/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	29.5	1564.4	370.9	18.6	#FFFFFFFF			
@@ -242,6 +245,7 @@ SafeArea/Column/Lobby/UnitDetail/Band/Role/Value/TMP SubMeshUI [IBM Plex Sans KR
 SafeArea/Column/Lobby/UnitDetail/Band/Role/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	26.0	411.4	90.0	22.0	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Band/Tile	132.0	409.4	74.0	26.0	#F7F9FAFF			
 SafeArea/Column/Lobby/UnitDetail/Band/Tile/Value	142.0	411.4	54.0	22.0	#1D2226FF	14.6	가구	156.0,411.4,26.0,21.8
+SafeArea/Column/Lobby/UnitDetail/Band/Tile/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	142.0	411.4	54.0	22.0	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Band/Stars	215.0	409.4	199.0	26.0	#E8842AFF	15.0	<color=#E8842A></color><color=#C7D0D6>★★	339.0,411.1,75.0,22.5
 SafeArea/Column/Lobby/UnitDetail/Band/Stars/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	215.0	409.4	199.0	26.0	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet	0.0	447.4	430.0	484.6	#F7F9FAFF			
@@ -258,7 +262,6 @@ SafeArea/Column/Lobby/UnitDetail/Sheet/SubTabs/Story/Label	292.4	468.3	118.7	33.
 SafeArea/Column/Lobby/UnitDetail/Sheet/SubTabs/Story/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	292.4	468.3	118.7	33.2	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/Level	12.0	520.4	72.0	24.3	#1D2226FF	16.0	Lv.1	12.0,523.5,34.6,18.0
 SafeArea/Column/Lobby/UnitDetail/Sheet/Cap	86.0	520.4	56.0	24.3	#5D6871FF	14.6	/ 20	86.0,521.6,26.5,21.8
-SafeArea/Column/Lobby/UnitDetail/Sheet/Cap/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	86.0	520.4	56.0	24.3	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/LevelBar	146.0	528.5	188.0	8.0	#E6EAEDFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/Next	338.0	520.4	80.0	24.3	#5D6871FF	14.6	다음 Lv.2	362.8,521.6,55.2,21.8
 SafeArea/Column/Lobby/UnitDetail/Sheet/Next/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	338.0	520.4	80.0	24.3	#FFFFFFFF			
@@ -268,7 +271,6 @@ SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellPower/Value	116.0	556.6	88.0
 SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Rule	218.0	583.0	192.0	1.5	#C7D0D6FF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Caption	218.0	556.6	96.0	21.4	#5D6871FF	12.5	사거리	218.0,557.9,33.4,18.7
 SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	218.0	556.6	96.0	21.4	#FFFFFFFF			
-SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	218.0	556.6	96.0	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Value	322.0	556.6	88.0	21.4	#1D2226FF	14.0	1칸	390.0,556.8,20.0,21.0
 SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas + IBM Plex Sans KR - Regular Atlas 1]	322.0	556.6	88.0	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/StatBody/CellRange/Value/TMP SubMeshUI [Share Tech Mono - Regular Material + IBM Plex Sans KR - Regular Atlas]	322.0	556.6	88.0	21.4	#FFFFFFFF			
@@ -294,6 +296,7 @@ SafeArea/Column/Lobby/UnitDetail/Sheet/DeckToggle	12.0	856.0	118.0	64.0	#3FAE7AF
 SafeArea/Column/Lobby/UnitDetail/Sheet/DeckToggle/Label	20.0	860.0	106.0	56.0	#F7F9FAFF	18.4	편성 중	46.1,874.2,53.7,27.7
 SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade	138.0	856.0	280.0	64.0	#FF9A3CFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/Content/Label	146.0	864.0	82.0	48.0	#1D2226FF	22.0	강화	170.1,877.0,33.8,22.0
+SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	146.0	864.0	82.0	48.0	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/Content/Label/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	146.0	864.0	82.0	48.0	#FFFFFFFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/PartCost	238.0	873.1	84.0	29.8	#F7F9FAFF			
 SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/PartCost/Text	242.0	877.1	76.0	21.8	#1D2226FF	14.6	2	276.1,879.8,7.9,16.4
@@ -301,5 +304,6 @@ SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/CoinCost	326.0	873.1	84.0	29.8	#F
 SafeArea/Column/Lobby/UnitDetail/Sheet/Upgrade/CoinCost/Text	330.0	877.1	76.0	21.8	#1D2226FF	14.6	100	356.2,879.8,23.6,16.4
 SafeArea/Column/Lobby/Toast	25.8	778.0	378.4	60.0	#1C1A17EB			
 SafeArea/Column/Lobby/Toast/Text	37.8	790.0	354.4	36.0	#FFFFFFFF	14.6	고속 충전 도크 획득!	155.8,797.1,118.4,21.8
+SafeArea/Column/Lobby/Toast/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	37.8	790.0	354.4	36.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Toast/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	37.8	790.0	354.4	36.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Toast/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	37.8	790.0	354.4	36.0	#FFFFFFFF			

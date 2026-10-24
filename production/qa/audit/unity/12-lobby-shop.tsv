@@ -21,36 +21,37 @@ SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.2	262.6	375.6	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Meta	27.2	290.0	375.6	16.5	#5D6871FF	11.0	오늘 3/3회 남음	27.2,290.0,71.7,16.5
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Meta/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	27.2	290.0	375.6	16.5	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Meta/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	27.2	290.0	375.6	16.5	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	27.2	318.5	375.6	41.0	#F2C14EFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	35.2	326.5	359.6	25.0	#7A5A00FF	14.0	광고 보고 받기	174.2,328.5,81.5,21.0
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	35.2	326.5	359.6	25.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Currency	37.2	331.0	16.0	16.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)	15.5	381.2	194.0	187.9	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First	78.2	392.8	68.7	24.3	#E0524AFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text	86.0	394.8	53.1	20.4	#FFFFFFFF	10.5	첫 구매 2배	86.0,397.1,53.9,15.7
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	86.0	394.8	53.1	20.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	86.0	394.8	53.1	20.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	92.5	430.1	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	27.2	483.1	170.7	21.4	#1D2226FF	14.0	크리스탈 60	27.2,483.1,62.7,14.0
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.2	483.1	170.7	21.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	27.2	516.4	170.7	41.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	35.2	524.4	154.7	25.0	#E8EDF0FF	14.0	₩1,200	87.2,526.4,50.7,21.0
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	35.2	524.4	154.7	25.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	35.2	524.4	154.7	25.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)	15.5	381.2	194.5	187.9	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First	78.4	392.8	68.7	24.3	#E0524AFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text	86.2	394.8	53.1	20.4	#FFFFFFFF	10.5	첫 구매 2배	86.2,397.1,53.9,15.7
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	86.2	394.8	53.1	20.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	86.2	394.8	53.1	20.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	92.8	430.1	40.0	40.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	27.2	483.1	171.2	21.4	#1D2226FF	14.0	크리스탈 60	27.2,483.1,62.7,14.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.2	483.1	171.2	21.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	27.2	516.4	171.2	41.0	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	35.2	524.4	155.2	25.0	#E8EDF0FF	14.0	₩1,200	87.4,526.4,50.7,21.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	35.2	524.4	155.2	25.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	35.2	524.4	155.2	25.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Currency	37.2	528.9	16.0	16.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)	219.5	381.2	195.0	187.9	#F7F9FAFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First	282.7	392.8	68.7	24.3	#E0524AFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text	290.4	394.8	53.1	20.4	#FFFFFFFF	10.5	첫 구매 2배	290.4,397.1,53.9,15.7
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	290.4	394.8	53.1	20.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	290.4	394.8	53.1	20.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	297.0	430.1	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	231.2	483.1	171.7	21.4	#1D2226FF	14.0	크리스탈 300	231.2,483.1,69.6,14.0
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	231.2	483.1	171.7	21.4	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	231.2	516.4	171.7	41.0	#1D2226FF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	239.2	524.4	155.7	25.0	#E8EDF0FF	14.0	₩5,900	291.6,526.4,50.7,21.0
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	239.2	524.4	155.7	25.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	239.2	524.4	155.7	25.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Currency	241.2	528.9	16.0	16.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)	220.0	381.2	194.5	187.9	#F7F9FAFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First	282.9	392.8	68.7	24.3	#E0524AFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text	290.7	394.8	53.1	20.4	#FFFFFFFF	10.5	첫 구매 2배	290.7,397.1,53.9,15.7
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	290.7	394.8	53.1	20.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	290.7	394.8	53.1	20.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	297.2	430.1	40.0	40.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	231.7	483.1	171.2	21.4	#1D2226FF	14.0	크리스탈 300	231.7,483.1,68.0,14.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	231.7	483.1	171.2	21.4	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	231.7	516.4	171.2	41.0	#1D2226FF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	239.7	524.4	155.2	25.0	#E8EDF0FF	14.0	₩5,900	291.9,526.4,50.7,21.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	239.7	524.4	155.2	25.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	239.7	524.4	155.2	25.0	#FFFFFFFF			
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Currency	241.7	528.9	16.0	16.0	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)	15.5	590.8	194.5	187.9	#F7F9FAFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First	35.4	602.5	68.7	24.3	#E0524AFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/First/Text	43.1	604.4	53.1	20.4	#FFFFFFFF	10.5	첫 구매 2배	43.1,606.7,53.9,15.7
@@ -76,11 +77,10 @@ SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badge
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text	336.6	592.7	50.3	20.4	#1D2226FF	10.5	보너스 9%	336.6,595.0,51.0,15.7
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	336.6	592.7	50.3	20.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	297.2	628.0	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	231.7	681.0	171.2	21.4	#1D2226FF	14.0	크리스탈 1,800	231.7,681.0,77.5,14.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	231.7	681.0	171.2	21.4	#1D2226FF	14.0	크리스탈 1,800	231.7,681.0,75.8,14.0
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	231.7	681.0	171.2	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Desc	231.7	708.4	171.2	17.5	#5D6871FF	11.5	10회 소환 1번 분량	231.7,708.4,90.4,17.3
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	231.7	708.4	171.2	17.5	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	231.7	708.4	171.2	17.5	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	231.7	737.8	171.2	41.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	239.7	745.8	155.2	25.0	#E8EDF0FF	14.0	₩33,000	287.7,747.8,59.1,21.0
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	239.7	745.8	155.2	25.0	#FFFFFFFF			
@@ -95,7 +95,7 @@ SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badge
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text	126.9	814.1	57.3	20.4	#1D2226FF	10.5	보너스 14%	126.9,816.4,58.1,15.8
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	126.9	814.1	57.3	20.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	92.8	849.4	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	27.2	902.4	171.2	21.4	#1D2226FF	14.0	크리스탈 3,700	27.2,902.4,79.7,14.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	27.2	902.4	171.2	21.4	#1D2226FF	14.0	크리스탈 3,700	27.2,902.4,78.0,14.0
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	27.2	902.4	171.2	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	27.2	935.8	171.2	41.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	35.2	943.8	155.2	25.0	#E8EDF0FF	14.0	₩65,000	83.2,945.8,59.1,21.0
@@ -111,7 +111,7 @@ SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badge
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text	331.3	814.1	57.3	20.4	#1D2226FF	10.5	보너스 18%	331.3,816.4,58.1,15.8
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Badges/Badge/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	331.3	814.1	57.3	20.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Art/Icon	297.2	849.4	40.0	40.0	#FFFFFFFF			
-SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	231.7	902.4	171.2	21.4	#1D2226FF	14.0	크리스탈 7,000	231.7,902.4,80.3,14.0
+SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name	231.7	902.4	171.2	21.4	#1D2226FF	14.0	크리스탈 7,000	231.7,902.4,77.0,14.0
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	231.7	902.4	171.2	21.4	#FFFFFFFF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy	231.7	935.8	171.2	41.0	#1D2226FF			
 SafeArea/Column/Lobby/Panels/Shop/Viewport/Column/Grid/Row/ShopCard(Clone)/Buy/Content/Label	239.7	943.8	155.2	25.0	#E8EDF0FF	14.0	₩119,000	283.5,945.8,67.5,21.0

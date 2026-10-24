@@ -90,19 +90,17 @@ SafeArea/Column/Battle/Result/Shade/Card/Mvp/Pic	74.0	572.2	32.0	32.0	#FFFFFFFF
 SafeArea/Column/Battle/Result/Shade/Card/Mvp/Name	112.0	566.2	242.1	44.0	#1D2226FF	12.5	MVP · 에어컨  처치 13	112.0,578.8,114.9,18.7
 SafeArea/Column/Battle/Result/Shade/Card/Mvp/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	112.0	566.2	242.1	44.0	#FFFFFFFF			
 SafeArea/Column/Battle/Result/Shade/Card/Mvp/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	112.0	566.2	242.1	44.0	#FFFFFFFF			
+SafeArea/Column/Battle/Result/Shade/Card/Mvp/Name/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 3]	112.0	566.2	242.1	44.0	#FFFFFFFF			
 SafeArea/Column/Battle/Result/Shade/Card/Buttons/Home	68.0	620.2	143.0	48.0	#F7F9FAFF			
 SafeArea/Column/Battle/Result/Shade/Card/Buttons/Home/Line	68.0	620.2	143.0	48.0	#C7D0D6FF			
 SafeArea/Column/Battle/Result/Shade/Card/Buttons/Home/Content/Label	76.0	628.2	127.0	32.0	#1D2226FF	15.0	로비로	119.4,633.0,40.1,22.5
 SafeArea/Column/Battle/Result/Shade/Card/Buttons/Next	219.0	620.2	143.0	48.0	#1D2226FF			
 SafeArea/Column/Battle/Result/Shade/Card/Buttons/Next/Content/Label	227.0	628.2	127.0	32.0	#E8EDF0FF	15.0	다음 1-2	263.3,633.0,54.3,22.5
-SafeArea/Column/Battle/Result/Shade/Card/Buttons/Next/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	227.0	628.2	127.0	32.0	#FFFFFFFF			
 SafeArea/Column/GuideOverlay/BandTop	0.0	0.0	430.0	620.2	#0D0F12AD			
 SafeArea/Column/GuideOverlay/BandBottom	0.0	668.2	430.0	263.8	#0D0F12AD			
 SafeArea/Column/GuideOverlay/BandLeft	0.0	620.2	94.4	48.0	#0D0F12AD			
 SafeArea/Column/GuideOverlay/BandRight	211.7	620.2	218.3	48.0	#0D0F12AD			
 SafeArea/Column/GuideOverlay/Bubble	34.4	443.1	361.2	158.4	#F7F9FAFF			
 SafeArea/Column/GuideOverlay/Bubble/Text	50.4	459.1	329.2	93.4	#1D2226FF	16.0	첫 청소 성공! 로비로 돌아가 가전을 키워 볼까요?	50.4,459.1,310.1,24.0
-SafeArea/Column/GuideOverlay/Bubble/Text/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	50.4	459.1	329.2	93.4	#FFFFFFFF			
 SafeArea/Column/GuideOverlay/Bubble/Skip	50.4	560.6	329.2	33.0	#00000000			
 SafeArea/Column/GuideOverlay/Bubble/Skip/Content/Label	58.4	566.2	313.2	21.8	#E0524AFF	14.6	안내 건너뛰기	174.3,566.2,81.4,21.8
-SafeArea/Column/GuideOverlay/Bubble/Skip/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	58.4	566.2	313.2	21.8	#FFFFFFFF			

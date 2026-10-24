@@ -2,14 +2,11 @@ path	x	y	w	h	color	fs	text	ink
 SafeArea/Column/League/TowerFloorInfo	0.0	0.0	430.0	932.0	#1D22268C			
 SafeArea/Column/League/TowerFloorInfo/Box	16.0	248.5	398.0	434.9	#F7F9FAFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Title	32.0	264.5	282.5	36.0	#1D2226FF	22.0	4층 · 초파리 부엌	32.0,270.2,140.9,24.6
-SafeArea/Column/League/TowerFloorInfo/Box/Title/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	32.0	264.5	282.5	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Title/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	32.0	264.5	282.5	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/State	234.9	264.5	163.1	36.0	#5D6871FF	12.0	첫 도전	363.1,273.5,34.9,18.0
-SafeArea/Column/League/TowerFloorInfo/Box/State/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	234.9	264.5	163.1	36.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Rule	32.0	312.5	366.0	62.8	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Rule/Line	32.0	312.5	366.0	62.8	#C7D0D6FF			
 SafeArea/Column/League/TowerFloorInfo/Box/Rule/Name	43.0	322.5	344.0	25.7	#1D2226FF	17.0	기본 층	43.0,326.9,44.3,17.0
-SafeArea/Column/League/TowerFloorInfo/Box/Rule/Name/TMP SubMeshUI [Do Hyeon - Regular Material + Do Hyeon - Regular Atlas 1]	43.0	322.5	344.0	25.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Rule/Name/TMP SubMeshUI [Do Hyeon - Regular Material + LiberationSans SDF Atlas]	43.0	322.5	344.0	25.7	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Rule/Desc	43.0	346.5	344.0	22.0	#1D2226FF	12.5	규칙 없는 기본 층이에요. 먼지를 모두 치우면 클리어.	43.0,346.5,261.6,18.7
 SafeArea/Column/League/TowerFloorInfo/Box/Rule/Desc/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	43.0	346.5	344.0	22.0	#FFFFFFFF			
@@ -20,8 +17,8 @@ SafeArea/Column/League/TowerFloorInfo/Box/Goal/Caption	41.0	394.3	162.0	16.5	#5D
 SafeArea/Column/League/TowerFloorInfo/Box/Goal/Caption/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	41.0	394.3	162.0	16.5	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Goal/Value	41.0	411.3	162.0	18.4	#1D2226FF	12.0	먼지 전멸	41.0,411.3,45.6,18.0
 SafeArea/Column/League/TowerFloorInfo/Box/Goal/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	41.0	411.3	162.0	18.4	#FFFFFFFF			
-SafeArea/Column/League/TowerFloorInfo/Box/Goal/Value/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	41.0	411.3	162.0	18.4	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Goal/Sub	41.0	430.3	162.0	16.0	#5D6871FF	10.5	제한 45초 · 출전 5대	41.0,430.3,88.4,15.8
+SafeArea/Column/League/TowerFloorInfo/Box/Goal/Sub/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	41.0	430.3	162.0	16.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus	218.0	387.3	180.0	66.0	#FFFBEFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Line	218.0	387.3	180.0	66.0	#E8A82EFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Bonus/Value	227.0	394.3	162.0	36.0	#1D2226FF	12.0	보너스 20초 안에 깨기	227.0,394.3,73.6,36.0
@@ -48,7 +45,7 @@ SafeArea/Column/League/TowerFloorInfo/Box/Reward/TMP SubMeshUI [IBM Plex Sans KR
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back	32.0	620.0	175.7	48.0	#F7F9FAFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back/Line	32.0	620.0	175.7	48.0	#C7D0D6FF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back/Content/Label	40.0	628.0	159.7	32.0	#1D2226FF	18.4	층 목록	93.0,630.2,53.7,27.7
-SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	40.0	628.0	159.7	32.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 2]	40.0	628.0	159.7	32.0	#FFFFFFFF			
+SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Back/Content/Label/TMP SubMeshUI [IBM Plex Sans KR - Regular Material + IBM Plex Sans KR - Regular Atlas 1]	40.0	628.0	159.7	32.0	#FFFFFFFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Start	222.3	620.0	175.7	48.0	#FF9A3CFF			
 SafeArea/Column/League/TowerFloorInfo/Box/Buttons/Start/Content/Label	230.3	628.0	159.7	32.0	#1D2226FF	18.4	편성하기	277.3,630.2,65.8,27.7
